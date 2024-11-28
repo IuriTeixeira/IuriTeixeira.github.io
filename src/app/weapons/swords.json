@@ -1,0 +1,205 @@
+{
+    "Sword":{
+      "name_jp": "ソード",
+      "name_global": null,
+      "type":"OT",
+      "req":{
+        "stat": "S-ATK",
+        "value":1
+      },
+      "S-ATK":94,
+      "default_abilities":null,
+      "potential1":null
+    },
+    "Gigush":{
+      "name_jp": "ギガッシュ",
+      "name_global": null,
+      "type":"OT",
+      "req":{
+        "stat": "S-ATK",
+        "value":57
+      },
+      "S-ATK":101,
+      "default_abilities":null,
+      "potential1":null
+    },
+    "Breaker":{
+      "name_jp": "ブレイカー",
+      "name_global": null,
+      "type":"OT",
+      "req":{
+        "stat": "S-ATK",
+        "value":124
+      },
+      "S-ATK":146,
+      "default_abilities":{
+        "ab1":"Body I"
+      },
+      "potential1":null
+    },
+    "Sword-NT":{
+      "name_jp": "ソード-NT",
+      "name_global": "Sword",
+      "type":"NT",
+      "req":{
+        "stat": "S-ATK",
+        "value":1
+      },
+      "S-ATK":204,
+      "default_abilities":{
+        "ab1":"Body III"
+      },
+      "potential1":"New-Type's Law"
+    },
+    "Alva Sword":{
+      "name_jp": "アルバソード",
+      "name_global": null,
+      "type":"OT",
+      "req":{
+        "stat": "S-ATK",
+        "value":191
+      },
+      "S-ATK":172,
+      "default_abilities":null,
+      "potential1":null
+    },
+    "Alva Gigush":{
+      "name_jp": "アルバギガッシュ",
+      "name_global": null,
+      "type":"OT",
+      "req":{
+        "stat": "S-ATK",
+        "value":259
+      },
+      "S-ATK":198,
+      "default_abilities":null,
+      "potential1":null
+    },
+    "Alva Breaker":{
+      "name_jp": "アルバブレイカー",
+      "name_global": null,
+      "type":"OT",
+      "req":{
+        "stat": "S-ATK",
+        "value":326
+      },
+      "S-ATK":225,
+      "default_abilities":{
+        "ab1":"Body I"
+      },
+      "potential1":null
+    },
+    "Alva Sword-NT":{
+      "name_jp": "アルバソード-NT",
+      "name_global": "Alva Sword",
+      "type":"NT",
+      "req":{
+        "stat": "S-ATK",
+        "value":150
+      },
+      "S-ATK":255,
+      "default_abilities":{
+        "ab1":"Body III"
+      },
+      "potential1":"New-Type's Law"
+    },
+    "Vita Sword":{
+      "name_jp": "ヴィタソード",
+      "name_global": null,
+      "type":"OT",
+      "req":{
+        "stat": "S-ATK",
+        "value":393
+      },
+      "S-ATK":251,
+      "default_abilities":null,
+      "potential1":null
+    },
+    "Vita Gigush":{
+      "name_jp": "ヴィタギガッシュ",
+      "name_global": null,
+      "type":"OT",
+      "req":{
+        "stat": "S-ATK",
+        "value":460
+      },
+      "S-ATK":257,
+      "default_abilities":null,
+      "potential1":null
+    },
+    "Vita Breaker":{
+      "name_jp": "ヴィタブレイカー",
+      "name_global": null,
+      "type":"OT",
+      "req":{
+        "stat": "S-ATK",
+        "value":528
+      },
+      "S-ATK":273,
+      "default_abilities":null,
+      "potential1":null
+    },
+    "Vita Sword-NT":{
+      "name_jp": "ヴィタソード-NT",
+      "name_global": "Vita Sword",
+      "type":"NT",
+      "req":{
+        "stat": "S-ATK",
+        "value":300
+      },
+      "S-ATK":205,
+      "default_abilities":{
+        "ab1":"Body III"
+      },
+      "potential1":"New-Type's Law"
+    },
+    "Claymore":{
+      "name_jp": "クレイモア",
+      "name_global": null,
+      "type":"OT",
+      "req":{
+        "stat": "S-ATK",
+        "value":155
+      },
+      "S-ATK":176,
+      "default_abilities":null,
+      "potential1":"Breath of Bladed Essence"
+    },
+    "Calibur":{
+      "name_jp": "キャリバー",
+      "name_global": null,
+      "type":"OT",
+      "req":{
+        "stat": "S-ATK",
+        "value":237
+      },
+      "S-ATK":211,
+      "default_abilities":null,
+      "potential1":null
+    },
+    "Claymore-NT":{
+      "name_jp": "クレイモア-NT",
+      "name_global": null,
+      "type":"NT",
+      "req":{
+        "stat": "S-ATK",
+        "value":150
+      },
+      "S-ATK":331,
+      "default_abilities":null,
+      "potential1":"New-Type's Law",
+      "potential2":"Breath of Bladed Essence"
+    },
+    "Calibur-NT":{
+      "name_jp": "キャリバー-NT",
+      "name_global": null,
+      "type":"NT",
+      "req":{
+        "stat": "S-ATK",
+        "value":200
+      },
+      "S-ATK":352,
+      "default_abilities":null,
+      "potential1":null
+    }
+}
