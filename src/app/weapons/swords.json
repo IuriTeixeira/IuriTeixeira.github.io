@@ -2,204 +2,2584 @@
     "Sword":{
       "name_jp": "ソード",
       "name_global": null,
-      "type":"OT",
+      "rarity": 1,
+      "old_type":true,
       "req":{
         "stat": "S-ATK",
         "value":1
       },
       "S-ATK":94,
-      "default_abilities":null,
-      "potential1":null
+      "ab1":null,
+      "potential":null
     },
     "Gigush":{
       "name_jp": "ギガッシュ",
       "name_global": null,
-      "type":"OT",
+      "rarity": 1,
+      "old_type":true,
       "req":{
         "stat": "S-ATK",
         "value":57
       },
       "S-ATK":101,
-      "default_abilities":null,
-      "potential1":null
+      "ab1":null,
+      "potential":null
     },
     "Breaker":{
       "name_jp": "ブレイカー",
       "name_global": null,
-      "type":"OT",
+      "rarity": 1,
+      "old_type":true,
       "req":{
         "stat": "S-ATK",
         "value":124
       },
       "S-ATK":146,
-      "default_abilities":{
-        "ab1":"Body I"
-      },
-      "potential1":null
+      "ab1":"Body I",
+      "potential":null
     },
     "Sword-NT":{
       "name_jp": "ソード-NT",
       "name_global": "Sword",
-      "type":"NT",
+      "rarity": 1,
       "req":{
         "stat": "S-ATK",
         "value":1
       },
       "S-ATK":204,
-      "default_abilities":{
-        "ab1":"Body III"
-      },
-      "potential1":"New-Type's Law"
+      "SAF":"Body III",
+      "potential":"New-Type's Law"
     },
     "Alva Sword":{
       "name_jp": "アルバソード",
       "name_global": null,
-      "type":"OT",
+      "rarity": 2,
+      "old_type":true,
       "req":{
         "stat": "S-ATK",
         "value":191
       },
       "S-ATK":172,
-      "default_abilities":null,
-      "potential1":null
+      "ab1":null,
+      "potential":null
     },
     "Alva Gigush":{
       "name_jp": "アルバギガッシュ",
       "name_global": null,
-      "type":"OT",
+      "rarity": 2,
+      "old_type":true,
       "req":{
         "stat": "S-ATK",
         "value":259
       },
       "S-ATK":198,
-      "default_abilities":null,
-      "potential1":null
+      "ab1":null,
+      "potential":null
     },
     "Alva Breaker":{
       "name_jp": "アルバブレイカー",
       "name_global": null,
-      "type":"OT",
+      "rarity": 2,
+      "old_type":true,
       "req":{
         "stat": "S-ATK",
         "value":326
       },
       "S-ATK":225,
-      "default_abilities":{
-        "ab1":"Body I"
-      },
-      "potential1":null
+      "ab1":"Body I",
+      "potential":null
     },
     "Alva Sword-NT":{
       "name_jp": "アルバソード-NT",
       "name_global": "Alva Sword",
-      "type":"NT",
+      "rarity": 2,
       "req":{
         "stat": "S-ATK",
         "value":150
       },
       "S-ATK":255,
-      "default_abilities":{
-        "ab1":"Body III"
-      },
-      "potential1":"New-Type's Law"
+      "SAF":"Body III",
+      "potential":"New-Type's Law"
     },
     "Vita Sword":{
       "name_jp": "ヴィタソード",
       "name_global": null,
-      "type":"OT",
+      "rarity": 3,
+      "old_type":true,
       "req":{
         "stat": "S-ATK",
         "value":393
       },
       "S-ATK":251,
-      "default_abilities":null,
-      "potential1":null
+      "ab1":null,
+      "potential":null
     },
     "Vita Gigush":{
       "name_jp": "ヴィタギガッシュ",
       "name_global": null,
-      "type":"OT",
+      "rarity": 3,
+      "old_type":true,
       "req":{
         "stat": "S-ATK",
         "value":460
       },
       "S-ATK":257,
-      "default_abilities":null,
-      "potential1":null
+      "ab1":null,
+      "potential":null
     },
     "Vita Breaker":{
       "name_jp": "ヴィタブレイカー",
+      "rarity": 3,
       "name_global": null,
-      "type":"OT",
+      "old_type":true,
       "req":{
         "stat": "S-ATK",
         "value":528
       },
       "S-ATK":273,
-      "default_abilities":null,
-      "potential1":null
+      "ab1":null,
+      "potential":null
     },
     "Vita Sword-NT":{
       "name_jp": "ヴィタソード-NT",
       "name_global": "Vita Sword",
-      "type":"NT",
+      
+      "rarity": 3,
       "req":{
         "stat": "S-ATK",
         "value":300
       },
       "S-ATK":205,
-      "default_abilities":{
-        "ab1":"Body III"
-      },
-      "potential1":"New-Type's Law"
+      "SAF":"Body III",
+      "potential":"New-Type's Law"
     },
     "Claymore":{
       "name_jp": "クレイモア",
       "name_global": null,
-      "type":"OT",
+      "rarity": 4,
+      "old_type":true,
       "req":{
         "stat": "S-ATK",
         "value":155
       },
       "S-ATK":176,
-      "default_abilities":null,
-      "potential1":"Breath of Bladed Essence"
+      "ab1":null,
+      "potential":"Breath of Bladed Essence"
     },
     "Calibur":{
       "name_jp": "キャリバー",
       "name_global": null,
-      "type":"OT",
+      "rarity": 4,
+      "old_type":true,
       "req":{
         "stat": "S-ATK",
         "value":237
       },
       "S-ATK":211,
-      "default_abilities":null,
-      "potential1":null
+      "ab1":null,
+      "potential":null
     },
     "Claymore-NT":{
       "name_jp": "クレイモア-NT",
-      "name_global": null,
-      "type":"NT",
+      "name_global": "Claymore",
+      "rarity": 4,
       "req":{
         "stat": "S-ATK",
         "value":150
       },
       "S-ATK":331,
-      "default_abilities":null,
-      "potential1":"New-Type's Law",
+      "SAF":"Blow Resist III",
+      "potential":"New-Type's Law",
       "potential2":"Breath of Bladed Essence"
     },
     "Calibur-NT":{
       "name_jp": "キャリバー-NT",
-      "name_global": null,
-      "type":"NT",
+      "name_global": "Calibur",
+      "rarity": 4,
       "req":{
         "stat": "S-ATK",
         "value":200
       },
       "S-ATK":352,
-      "default_abilities":null,
-      "potential1":null
+      "SAF":"Blow Resist III",
+      "potential":"New-Type's Law"
+    },
+    "Alva Claymore":{
+      "name_jp": "アルバクレイモア",
+      "name_global": null,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":320
+      },
+      "S-ATK":246,
+      "ab1": null,
+      "potential":null
+    },
+    "Alva Calibur":{
+      "name_jp": "アルバキャリバー",
+      "name_global": null,
+      "rarity": 5,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":403
+      },
+      "S-ATK":280,
+      "ab1":null,
+      "potential":null
+    },
+    "Alva Claymore-NT":{
+      "name_jp": "アルバクレイモア-NT",
+      "name_global": "Alva Claymore",
+      "rarity": 5,
+      
+      "req":{
+        "stat": "S-ATK",
+        "value":250
+      },
+      "S-ATK":356,
+      "SAF":"Blow Resist III",
+      "potential":"New-Type's Law"
+    },
+    "Alva Calibur-NT":{
+      "name_jp": "アルバキャリバー-NT",
+      "name_global": null,
+      "rarity": 5,
+      "req":{
+        "stat": "S-ATK",
+        "value":300
+      },
+      "S-ATK":377,
+      "SAF":"Blow Resist III",
+      "potential":"New-Type's Law"
+    },
+    "Vita Claymore":{
+      "name_jp": "ヴィタクレイモア",
+      "name_global": null,
+      "rarity": 6,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":485
+      },
+      "S-ATK":292,
+      "ab1": null,
+      "potential":null
+    },
+    "Vita Calibur":{
+      "name_jp": "ヴィタキャリバー",
+      "name_global": null,
+      "rarity": 6,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":568
+      },
+      "S-ATK":308,
+      "ab1":null,
+      "potential":null
+    },
+    "Vita Claymore-NT":{
+      "name_jp": "ヴィタクレイモア-NT",
+      "name_global": "Vita Claymore",
+      "rarity": 6,
+      "req":{
+        "stat": "S-ATK",
+        "value":350
+      },
+      "S-ATK":382,
+      "SAF":"Blow Resist III",
+      "potential":"New-Type's Law"
+    },
+    "Vita Calibur-NT":{
+      "name_jp": "ヴィタキャリバー-NT",
+      "name_global": null,
+      "rarity": 6,
+      "req":{
+        "stat": "S-ATK",
+        "value":400
+      },
+      "S-ATK":403,
+      "SAF":"Blow Resist III",
+      "potential":"New-Type's Law"
+    },
+    "Zaxe":{
+      "name_jp": "ザックス",
+      "name_global": null,
+      "rarity": 7,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":1
+      },
+      "S-ATK":174,
+      "ab1":null,
+      "potential":"Enraged Stance"
+    },
+    "Tradicion ／ Nacht":{
+      "name_jp": "トラディシオン／ナハト",
+      "name_global": null,
+      "rarity": 7,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":1
+      },
+      "S-ATK":192,
+      "ab1": "EXP Boost I",
+      "potential":null
+    },
+    "Wing Spada":{
+      "name_jp": "ウィングスパーダ",
+      "name_global": null,
+      "rarity": 7,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":1
+      },
+      "S-ATK":192,
+      "ab1":"Another History",
+      "potential":null,
+      "element":{
+        "element":"Light",
+        "value": 50
+      },
+      "class_enabled":"All"
+    },
+    "Zanba":{
+      "name_jp": "ザンバ",
+      "name_global": null,
+      "rarity": 7,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":309
+      },
+      "S-ATK":229,
+      "ab1":"Another History",
+      "potential":"Spiral Edge",
+      "potential2":"Soaring Burst"
+    },
+    "Steel Hearts":{
+      "name_jp": "スティールハーツ",
+      "name_global": null,
+      "rarity": 7,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":1
+      },
+      "S-ATK":230,
+      "ab1":"Another History",
+      "ab2":"Freeze IV",
+      "potential":"Guilty Edge",
+      "element":{
+        "element":"Ice",
+        "value":50
+      },
+      "PA_enabled":"Guilty Break",
+      "class_enabled":"All"
+    },
+    "Last Survivor":{
+      "name_jp": "ラストサバイバー",
+      "name_global": null,
+      "rarity": 7,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":400
+      },
+      "S-ATK":267,
+      "ab1":"Stamina II",
+      "potential":"Obstinate Spirit"
+    },
+    "Zaxe-NT":{
+      "name_jp": "ザックス-NT",
+      "name_global": "Zax",
+      "rarity": 7,
+      "req":{
+        "stat": "S-ATK",
+        "value":1
+      },
+      "S-ATK":407,
+      "SAF":"Mutation I",
+      "potential":"Enraged Stance"
+    },
+    "Wave Board":{
+      "name_jp": "ウェーブボード",
+      "name_global": null,
+      "rarity": 7,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":300
+      },
+      "S-ATK":382,
+      "ab1":null,
+      "potential":"Blade Surfing"
+    },
+    "Last Survivor-NT":{
+      "name_jp": "ラストサバイバー-NT",
+      "name_global": "Last Survivor",
+      "rarity": 7,
+      "req":{
+        "stat": "S-DEF",
+        "value":250
+      },
+      "S-ATK":499,
+      "SAF":"Power III",
+      "potential":"Obstinate Spirit"
+    },
+    "Blizaxe":{
+      "name_jp": "ブリザックス",
+      "name_global": null,
+      "rarity": 7,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":514
+      },
+      "S-ATK":391,
+      "ab1":null,
+      "potential":"Enraged Stance"
+    },
+    "Red Sword":{
+      "name_jp": "赤のソード",
+      "name_global": null,
+      "rarity": 7,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":597
+      },
+      "S-ATK":448,
+      "ab1":null,
+      "potential":"Red Recalescence"
+    },
+    "Red Sword-NT":{
+      "name_jp": null,
+      "name_global": "Red Sword",
+      "rarity": 7,
+      "req":{
+        "stat": "S-ATK",
+        "value":597
+      },
+      "S-ATK":581,
+      "ab1":null,
+      "potential":"Immediate Strike"
+    },
+    "Blue Sword":{
+      "name_jp": "青のソード",
+      "name_global": null,
+      "rarity": 7,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":600
+      },
+      "S-ATK":532,
+      "ab1":null,
+      "potential":null
+    },
+    "Space Tuna":{
+      "name_jp": "スペース・ツナ",
+      "name_global": null,
+      "rarity": 8,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":222
+      },
+      "S-ATK":199,
+      "ab1":"Meseta Fever II",
+      "potential":"Stunning Edge",
+      "class_enabled":"All"
+    },
+    "Vol Scale":{
+      "name_jp": "ヴォルスケイル",
+      "name_global": null,
+      "rarity": 8,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":338
+      },
+      "S-ATK":247,
+      "ab1":"Burn II",
+      "potential":"Dragon Hunter",
+      "set":"Vol"
+    },
+    "Tarnada":{
+      "name_jp": "タルナーダ",
+      "name_global": null,
+      "rarity": 8,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":407
+      },
+      "S-ATK":281,
+      "ab1":null,
+      "potential":"Stunning Edge",
+      "potential2":"Mortality's Ante"
+    },
+    "Aristin":{
+      "name_jp": "アリスティン",
+      "name_global": null,
+      "rarity": 8,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":272
+      },
+      "S-ATK":286,
+      "ab1":null,
+      "potential":"Defensive Stance",
+      "set":"Fan"
+    },
+    "Freeze Tuna":{
+      "name_jp": "フリーズ・ツナ",
+      "name_global": null,
+      "rarity": 8,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":420
+      },
+      "S-ATK":287,
+      "ab1":"Freeze II",
+      "potential":"Stunning Edge",
+      "class_enabled":"All"
+    },
+    "Dinia Edge":{
+      "name_jp": "ディニアエッジ",
+      "name_global": null,
+      "rarity": 8,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":454
+      },
+      "S-ATK":295,
+      "ab1":"Burn I",
+      "potential":"Dragon Hunter"
+    },
+    "Holy Tree":{
+      "name_jp": "ホーリーツリー",
+      "name_global": null,
+      "rarity": 8,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":320
+      },
+      "S-ATK":382,
+      "T-ATK":266,
+      "ab1":null,
+      "potential":"Aurora Blessing",
+      "class_enabled":"All"
+    },
+    "Coat Edge":{
+      "name_jp": "コートエッジ",
+      "name_global": null,
+      "rarity": 8,
+      "old_type":true,
+      "req":{
+        "stat": "T-ATK",
+        "value":360
+      },
+      "S-ATK":393,
+      "T-ATK":240,
+      "ab1":null,
+      "potential":"Soaring Edge",
+      "potential2":"Mortality's Ante"
+    },
+    "Lambda Aristin":{
+      "name_jp": "ラムダアリスティン",
+      "name_global": null,
+      "rarity": 8,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":345
+      },
+      "S-ATK":418,
+      "ab1":null,
+      "potential":"Defensive Stance",
+      "set":"Fen",
+      "class_enabled":"All"
+    },
+    "Lambda Aristin-NT":{
+      "name_jp": null,
+      "name_global": "Lambda Aristene",
+      "rarity": 8,
+      "req":{
+        "stat": "DEX",
+        "value":345
+      },
+      "S-ATK":542,
+      "SAF":"Power III",
+      "potential":"Defensive Stance",
+      "class_enabled":"All"
+    },
+    "Abi":{
+      "name_jp": "阿鼻",
+      "name_global": null,
+      "rarity": 9,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":1
+      },
+      "S-ATK":234,
+      "ab1":"Burn IV",
+      "ab2":"Power III",
+      "ab3":"Stamina III",
+      "ab4":"Spirita III",
+      "potential":"Enraged Stance",
+      "PA_enabled":"Twister Fall",
+      "class_enabled":"All"
+    },
+    "Ikutachi":{
+      "name_jp": "イクタチ",
+      "name_global": null,
+      "rarity": 9,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":374
+      },
+      "S-ATK":274,
+      "ab1":null,
+      "potential":"Splendid Recovery",
+      "potential2":"Native Hunter"
+    },
+    "Ardillo":{
+      "name_jp": "アーディロウ",
+      "name_global": null,
+      "rarity": 9,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":458
+      },
+      "S-ATK":310,
+      "ab1":null,
+      "potential":"Immediate Strike",
+      "potential2":"Glimmering Rhythm"
+    },
+    "Azzurro Ringer":{
+      "name_jp": "アズロリンガー",
+      "name_global": null,
+      "rarity": 9,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":470
+      },
+      "S-ATK":337,
+      "ab1":null,
+      "potential":"Dragon Hunter",
+      "potential2":"Determination"
+    },
+    "Lambda Ardillo":{
+      "name_jp": "ラムダアーディロウ",
+      "name_global": null,
+      "rarity": 9,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":578
+      },
+      "S-ATK":451,
+      "ab1":null,
+      "potential":"Immediate Strike"
+    },
+    "Ardillo-NT":{
+      "name_jp": "アーディロウ-NT",
+      "name_global": "Ardillo",
+      "rarity": 9,
+      "req":{
+        "stat": "S-ATK",
+        "value":458
+      },
+      "S-ATK":616,
+      "SAF":"Mutation I",
+      "potential":"Immediate Strike",
+      "potential2":"Glimmering Rhythm"
+    },
+    "Blazaxe":{
+      "name_jp": "ブレイザックス",
+      "name_global": null,
+      "rarity": 9,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":625
+      },
+      "S-ATK":514,
+      "ab1":null,
+      "potential":"Enraged Stance"
+    },
+    "Coat Edge D":{
+      "name_jp": "コートエッジD",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "T-ATK",
+        "value":450
+      },
+      "S-ATK":333,
+      "T-ATK":420,
+      "ab1":"Technique III",
+      "potential":"Negative Hunter",
+      "potential2":"Crescent Blade",
+      "class_enabled":"All"
+    },
+    "Ruin Gloam":{
+      "name_jp": "ルイングローム",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":450
+      },
+      "S-ATK":358,
+      "ab1":"Power III",
+      "ab2":"Mutation I",
+      "potential":"Negative Hunter",
+      "element":{
+        "element":"Light",
+        "value":30
+      },
+      "class_enabled":"All"
+    },
+    "Fortuna":{
+      "name_jp": "フォルトゥナ",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":500
+      },
+      "S-ATK":423,
+      "ab1":"Power III",
+      "ab2":"Ability III",
+      "ab3":"Stamina II",
+      "ab4":"Lucky Rise I",
+      "potential":"Adverse Vanity",
+      "element":{
+        "element":"Wind",
+        "value":30
+      },
+      "class_enabled":"All"
+    },
+    "Ruin Charm":{
+      "name_jp": "ルインシャルム",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":520
+      },
+      "S-ATK":433,
+      "ab1":null,
+      "potential":"Negative Hunter"
+    },
+    "Chelate Edia":{
+      "name_jp": "キレートエディア",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":530
+      },
+      "S-ATK":440,
+      "ab1":null,
+      "potential":"Immediate Strike"
+    },
+    "Madam's Umbrella":{
+      "name_jp": "マダムノアマガサ",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "T-ATK",
+        "value":540
+      },
+      "S-ATK":446,
+      "T-ATK":280,
+      "ab1":null,
+      "potential":"Splendid Recovery",
+      "potential2":"Skilled Trainer",
+      "potential3":"Glimmering Rhythm",
+      "class_enabled":"All"
+    },
+    "Darvle Sword":{
+      "name_jp": "ダーヴルソード",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":540
+      },
+      "S-ATK":453,
+      "ab1":null,
+      "potential":"Negative Hunter"
+    },
+    "Sadiena Edge":{
+      "name_jp": "サディーナエッジ",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":560
+      },
+      "S-ATK":460,
+      "ab1":"Freeze I",
+      "potential":"Dragon Hunter",
+      "potential2":"Dragon Emblem"
+    },
+    "Elder Pain":{
+      "name_jp": "エルダーペイン",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":580
+      },
+      "S-ATK":474,
+      "ab1":null,
+      "potential":"Vampiric Blade",
+      "set": "Eld"
+    },
+    "Kagudachi":{
+      "name_jp": "カグダチ",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":600
+      },
+      "S-ATK":488,
+      "ab1":null,
+      "potential":"Splendid Recovery"
+    },
+    "Dalvada Sword":{
+      "name_jp": "ダルバダソード",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":410
+      },
+      "S-ATK":493,
+      "ab1":null,
+      "potential":"Negative Hunter",
+      "class_enabled":"Techer"
+    },
+    "Grid Edia":{
+      "name_jp": "グリッドエディア",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":610
+      },
+      "S-ATK":497,
+      "ab1":null,
+      "potential":"Immediate Strike"
+    },
+    "Gearfried":{
+      "name_jp": "ギアフレイド",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":615
+      },
+      "S-ATK":502,
+      "ab1":null,
+      "potential":"Enraged Stance"
+    },
+    "Burn Spada":{
+      "name_jp": "バーンスパーダ",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":620
+      },
+      "S-ATK":506,
+      "ab1":"Burn IV",
+      "potential":"Dragon Hunter",
+      "set":"Burn"
+    },
+    "Ruin Mirage":{
+      "name_jp": "ルインミラーシ",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":620
+      },
+      "S-ATK":512,
+      "ab1":null,
+      "potential":"Negative Hunter"
+    },
+    "Rosso Ringer":{
+      "name_jp": "ロッソリンガー",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":620
+      },
+      "S-ATK":517,
+      "ab1":null,
+      "potential":"Dragon Hunter",
+      "potential2":"Determination"
+    },
+    "Kurahadachi":{
+      "name_jp": "クラハダチ",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":635
+      },
+      "S-ATK":531,
+      "ab1":null,
+      "potential":"Splendid Recovery",
+      "class_enabled":"Fighter"
+    },
+    "Flamme Brand":{
+      "name_jp": "フラメブランド",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":640
+      },
+      "S-ATK":532,
+      "ab1":"Burn IV",
+      "potential":"Immediate Strike",
+      "potential2":"Pursuit of Flame"
+    },
+    "Dio Aristin":{
+      "name_jp": "ディオアリスティン",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":440
+      },
+      "S-ATK":533,
+      "potential":"Defensive Stance",
+      "set":"Fobi"
+    },
+    "Falast Edia":{
+      "name_jp": "ファラストエディア",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":645
+      },
+      "S-ATK":534,
+      "ab1":null,
+      "potential":"Immediate Strike"
+    },
+    "Dragon Slayer":{
+      "name_jp": "ドラゴンスレイヤー",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":650
+      },
+      "S-ATK":536,
+      "ab1":null,
+      "potential":"Dragon Emblem",
+      "potential2":"Dragon Hunter",
+      "potential3":"Sealing Dragon's Roar"
+    },
+    "Dio Ardillo":{
+      "name_jp": "ディオアーディロウ",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":655
+      },
+      "S-ATK":543,
+      "ab1":null,
+      "potential":"Immediate Strike"
+    },
+    "Ruin Love":{
+      "name_jp": "ルインレーヴェ",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":620
+      },
+      "S-ATK":543,
+      "ab1":null,
+      "potential":"Negative Hunter"
+    },
+    "Verde Ringer":{
+      "name_jp": "ヴェルデリンガー",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":665
+      },
+      "S-ATK":551,
+      "ab1":null,
+      "potential":"Dragon Hunter"
+    },
+    "Traitor Linear":{
+      "name_jp": "トレイターリニア",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":420
+      },
+      "S-ATK":553,
+      "R-ATK":300,
+      "T-ATK":300,
+      "ab1":null,
+      "potential":"Splendid Recovery",
+      "set":"Far/Abyss",
+      "class_enabled":"Ranger",
+      "class_enabled2":"Techer"
+    },
+    "Dragon Slayer-NT":{
+      "name_jp": "ドラゴンスレイヤー-NT",
+      "name_global": "Dragon Slayer",
+      "rarity": 10,
+      "req":{
+        "stat": "S-ATK",
+        "value":620
+      },
+      "S-ATK":779,
+      "SAF":"Burn III",
+      "ab1":null,
+      "potential":"Dragon Hunter",
+      "potential2":"Sealing Dragon's Roar"
+    },
+    "Crusade Lore":{
+      "name_jp": "クルセイドロア",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":680
+      },
+      "S-ATK":566,
+      "ab1":null,
+      "potential":"Enraged Stance"
+    },
+    "Zapper Edge":{
+      "name_jp": "ザッパーエッジ",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":685
+      },
+      "S-ATK":574,
+      "ab1":null,
+      "potential":"Sacrificial Inspiration",
+      "potential2":"Spirit Reversal"
+    },
+    "Pristine Greatsword":{
+      "name_jp": "新光大刃",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":425
+      },
+      "S-ATK":574,
+      "ab1":null,
+      "potential":"Star Breaker",
+      "class_enabled":"Bouncer"
+    },
+    "Raytrus":{
+      "name_jp": "レイトラス",
+      "name_global": null,
+      "rarity": 10,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":450
+      },
+      "S-ATK":576,
+      "ab1":"Spirita III",
+      "potential":"Dynamic Reflection",
+      "class_enabled":"Braver"
+    },
+    "Crusade Lore-NT":{
+      "name_jp": "クルセイドロア-NT",
+      "name_global": "Crusade Lore",
+      "rarity": 10,
+      "req":{
+        "stat": "S-ATK",
+        "value":680
+      },
+      "S-ATK":824,
+      "SAF":"Burn III",
+      "ab1":null,
+      "potential":"Enraged Stance"
+    },
+    "Dio Ardillo-NT":{
+      "name_jp": "ディオアーディロウ-NT",
+      "name_global": "Deo Ardillo",
+      "rarity": 10,
+      "req":{
+        "stat": "S-ATK",
+        "value":655
+      },
+      "S-ATK":827,
+      "SAF":"Power III",
+      "ab1":"Power III",
+      "potential":"Immediate Strike"
+    },
+    "Flamme Brand-NT":{
+      "name_jp": "フラメブランド-NT",
+      "name_global": "Flamme Brand",
+      "rarity": 10,
+      "req":{
+        "stat": "S-ATK",
+        "value":640
+      },
+      "S-ATK":831,
+      "SAF":"Ability III",
+      "ab1":null,
+      "potential":"Immediate Strike",
+      "potential2":"Pursuit of Flame"
+    },
+    "Rainbow Board":{
+      "name_jp": "レインボーボード",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":400
+      },
+      "S-ATK":487,
+      "ab1":"Summer Fever",
+      "potential":"Blade Surfing",
+      "PA_enabled":"Ride Slasher",
+      "class_enabled":"All"
+    },
+    "Urushi Harisen":{
+      "name_jp": "ウルシハリセン",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":400
+      },
+      "S-ATK":490,
+      "ab1":null,
+      "potential":"Immediate End",
+      "PA_enabled":"Stun Concido",
+      "class_enabled":"All"
+    },
+    "Weddle Rabiate":{
+      "name_jp": "ウェドルラビエイト",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":400
+      },
+      "S-ATK":515,
+      "ab1":"Power III",
+      "ab2":"Ability III",
+      "ab3":"Stamina III",
+      "ab4":"Mizer Soul",
+      "potential":"Dynamic Reflection",
+      "PA_enabled":"Ignition Parry",
+      "class_enabled":"All"
+    },
+    "Rosadolieses":{
+      "name_jp": "ロサードリーゼス",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":400
+      },
+      "S-ATK":519,
+      "ab1":"Power III",
+      "ab2":"Stamina III",
+      "ab3":"Ragne Soul",
+      "potential":"Precision Sniping",
+      "PA_enabled":"Sonic Arrow",
+      "class_enabled":"All"
+    },
+    "Leadtrus":{
+      "name_jp": "リードトラス",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":400
+      },
+      "S-ATK":520,
+      "ab1":null,
+      "potential":"Living Conduit",
+      "PA_enabled":"Cruel Throw",
+      "class_enabled":"All"
+    },
+    "Sapphivier":{
+      "name_jp": "サファイフィーア",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":400
+      },
+      "S-ATK":522,
+      "ab1":"Org Soul",
+      "ab2":"Power III",
+      "ab3":"Ability III",
+      "ab4":"Stamina III",
+      "potential":"Aerial Attack",
+      "PA_enabled":"Rising Edge",
+      "class_enabled":"All"
+    },
+    "Daisy Chain":{
+      "name_jp": "デイジーチェイン",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":600
+      },
+      "S-ATK":527,
+      "ab1":null,
+      "potential":"Splendid Recovery",
+      "class_enabled":"All"
+    },
+    "Rose Steward":{
+      "name_jp": "ローズスチュワード",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":410
+      },
+      "S-ATK":552,
+      "ab1":"Freeze IV",
+      "potential":"Shackles of Ice",
+      "class_enabled":"All"
+    },
+    "Momijihime":{
+      "name_jp": "紅葉姫",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":500
+      },
+      "S-ATK":556,
+      "ab1":null,
+      "potential":"Great Sun Deity",
+      "potential2":"Soaring Burst"
+    },
+    "Bio Glion":{
+      "name_jp": "バイオグリオン",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":400
+      },
+      "S-ATK":568,
+      "ab1":null,
+      "potential":"Immediate Destruction",
+      "class_enabled":"All"
+    },
+    "Fahren Ender":{
+      "name_jp": "ファーレンエンダー",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":600
+      },
+      "S-ATK":570,
+      "ab1":null,
+      "potential":"Craft Mastery",
+      "potential2":"Defensive Stance",
+      "set":"Fahren"
+    },
+    "Phonlieses":{
+      "name_jp": "フォンリーゼス",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":435
+      },
+      "S-ATK":571,
+      "ab1":null,
+      "potential":"Fragile Assault",
+      "potential2":"Judgment Time",
+      "class_enabled":"Braver"
+    },
+    "Jugroque":{
+      "name_jp": "ジャグローク",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":650
+      },
+      "S-ATK":573,
+      "ab1":null,
+      "potential":"Soaring Edge",
+      "class_enabled":"Fighter",
+      "class_enabled2":"Braver"
+    },
+    "Sharp Cycler":{
+      "name_jp": "シャープサイクラー",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":400
+      },
+      "S-ATK":575,
+      "ab1":null,
+      "potential":"Visage of Light",
+      "class_enabled":"Fighter"
+    },
+    "Break Liner":{
+      "name_jp": "ブレイクライナー",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "R-DEF",
+        "value":430
+      },
+      "S-ATK":575,
+      "ab1":null,
+      "potential":"Guilty Edge",
+      "class_enabled":"Ranger",
+      "class_enabled2":"Force"
+    },
+    "Sapphizaria":{
+      "name_jp": "サファイザリア",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":690
+      },
+      "S-ATK":577,
+      "ab1":null,
+      "potential":"Direct Style",
+      "class_enabled":"Fighter"
+    },
+    "Weddle Aid":{
+      "name_jp": "ウェドルエイド",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":690
+      },
+      "S-ATK":580,
+      "ab1":null,
+      "potential":"Enraged Stance"
+    },
+    "Gigur Domina":{
+      "name_jp": "シャープサイクラー",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "R-DEF",
+        "value":430
+      },
+      "S-ATK":583,
+      "ab1":null,
+      "potential":"Last Stand"
+    },
+    "Alceras":{
+      "name_jp": "アルケラス",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":695
+      },
+      "S-ATK":585,
+      "ab1":null,
+      "potential":"Benevolent Wind"
+    },
+    "Dalz Soleid":{
+      "name_jp": "ダルスソレイド",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "T-DEF",
+        "value":430
+      },
+      "S-ATK":586,
+      "T-ATK":450,
+      "ab1":null,
+      "potential":"Negative Emblem",
+      "set":"Loser"
+    },
+    "Gelate":{
+      "name_jp": "ジェラーテ",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":430
+      },
+      "S-ATK":588,
+      "T-ATK":500,
+      "ab1":null,
+      "potential":"Spiral Edge",
+      "class_enabled":"Fighter",
+      "class_enabled2":"Bouncer"
+    },
+    "Davial Sword":{
+      "name_jp": "ダヴィアルソード",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":700
+      },
+      "S-ATK":592,
+      "ab1":null,
+      "potential":"Negative Hunter"
+    },
+    "Tousharou":{
+      "name_jp": "トウシャロウ",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":700
+      },
+      "S-ATK":594,
+      "ab1":null,
+      "potential":"Demon Hunter"
+    },
+    "Daisy Chain-NT":{
+      "name_jp": "デイジーチェイン-NT",
+      "name_global": "Daisy Chain",
+      "rarity": 11,
+      "req":{
+        "stat": "S-ATK",
+        "value":600
+      },
+      "S-ATK":860,
+      "SAF":"Alter Arma",
+      "ab1":null,
+      "potential":"Ancient Oath",
+      "class_enabled":"All"
+    },
+    "Traitor Glyph":{
+      "name_jp": "トレイターグリフ",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":435
+      },
+      "S-ATK":596,
+      "R-ATK":350,
+      "T-ATK":350,
+      "ab1":null,
+      "potential":"Spirit Collector",
+      "set":"Far/Abyss",
+      "class_enabled":"Ranger",
+      "class_enabled2":"Techer"
+    },
+    "Stradio":{
+      "name_jp": "ストラジオ",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":700
+      },
+      "S-ATK":598,
+      "ab1":null,
+      "potential":"Physical Defense Stance"
+    },
+    "Keen Cycler":{
+      "name_jp": "キーンサイクラー",
+      "name_global": null,
+      "rarity": 11,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":440
+      },
+      "S-ATK":598,
+      "ab1":null,
+      "potential":"Visage of Shadow",
+      "class_enabled":"Fighter",
+      "class_enabled2":"Braver"
+    },
+    "Kadhimceras":{
+      "name_jp": "カディムケラス",
+      "name_global": null,
+      "rarity": 11,
+      "req":{
+        "stat": "DEX",
+        "value":300
+      },
+      "S-ATK":880,
+      "SAF":"Stigma",
+      "ab1":null,
+      "potential":"Spirit Collector",
+      "PA_enabled":"Sacrifice's Bite",
+      "class_enabled":"All"
+    },
+    "Sharp Cycler-NT":{
+      "name_jp": "シャープサイクラー-NT",
+      "name_global": "Sharp Cycler",
+      "rarity": 11,
+      "req":{
+        "stat": "DEX",
+        "value":400
+      },
+      "S-ATK":887,
+      "SAF":"Ability III",
+      "ab1":null,
+      "potential":"Visage of Light",
+      "class_enabled":"Fighter"
+    },
+    "Rig Zeredder":{
+      "name_jp": "リグゼレッダー",
+      "name_global": null,
+      "rarity": 12,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":440
+      },
+      "S-ATK":578,
+      "ab1":null,
+      "potential":"Dragon's Authority",
+      "PA_enabled":"Overend",
+      "class_enabled":"All"
+    },
+    "Ely-Sion":{
+      "name_jp": "エリュシオーヌ",
+      "name_global": null,
+      "rarity": 12,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":700
+      },
+      "S-ATK":585,
+      "ab1":null,
+      "potential":"Obstinate Spirit",
+      "potential2":"Celestial Cleave",
+      "potential3":"Myriad Blessings",
+      "class_enabled":"Fighter"
+    },
+    "Sigma Zeredder":{
+      "name_jp": "ジグマゼレッダー",
+      "name_global": null,
+      "rarity": 12,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":440
+      },
+      "S-ATK":585,
+      "ab1":"Power III",
+      "ab2":"Stamina III",
+      "ab3":"Ability III",
+      "ab4":"Soul Receptor",
+      "potential":"Dragon's Infuriation",
+      "PA_enabled":"Guilty Break",
+      "class_enabled":"All"
+    },
+    "Sigma Zeredder-NT":{
+      "name_jp": null,
+      "name_global": "Sigma Zeredder",
+      "rarity": 12,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":440
+      },
+      "S-ATK":867,
+      "SAF":"Power IV",
+      "ab1":null,
+      "potential":"Dragon's Infuriation",
+      "PA_enabled":"Guilty Break",
+      "class_enabled":"All"
+    },
+    "Live Glion":{
+      "name_jp": "ライブグリオン",
+      "name_global": null,
+      "rarity": 12,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":450
+      },
+      "S-ATK":585,
+      "ab1":null,
+      "potential":"Twinkling Chain",
+      "class_enabled":"All"
+    },
+    "Lindcray":{
+      "name_jp": "リンドクレイ",
+      "name_global": null,
+      "rarity": 12,
+      "old_type":true,
+      "req":{
+        "stat": "T-DEF",
+        "value":440
+      },
+      "S-ATK":604,
+      "T-ATK":550,
+      "ab1":"Ability III",
+      "potential":"Devouring Edge",
+      "potential2":"Phantasmal Source",
+      "PA_enabled":"Sacrifice's Bite",
+      "class_enabled":"Force",
+      "class_enabled2":"Techer",
+      "class_enabled3":"Bouncer"
+    },
+    "Lightning Espada":{
+      "name_jp": "ライトニングエスパーダ",
+      "name_global": null,
+      "rarity": 12,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":720
+      },
+      "S-ATK":611,
+      "ab1":"Shock IV",
+      "potential":"Black Heart",
+      "potential2":"Sure-Strike Assault"
+    },
+    "Nox Kvelle":{
+      "name_jp": "ノクスクヴェル",
+      "name_global": null,
+      "rarity": 12,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":425
+      },
+      "S-ATK":615,
+      "ab1":"Ability III",
+      "potential":"Armor Mastery",
+      "class_enabled":"Techer"
+    },
+    "Chainsawd":{
+      "name_jp": "チェインソード",
+      "name_global": null,
+      "rarity": 12,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":700
+      },
+      "S-ATK":621,
+      "ab1":"Stamina IV",
+      "potential":"Vampiric Blade"
+    },
+    "Ikusa Kousha":{
+      "name_jp": "イクサコウシャ",
+      "name_global": null,
+      "rarity": 12,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":450
+      },
+      "S-ATK":623,
+      "ab1":"Ability III",
+      "potential":"Immediate Counter"
+    },
+    "Nox Kvelle-NT":{
+      "name_jp": "ノクスクヴェル-NT",
+      "name_global": null,
+      "rarity": 12,
+      "req":{
+        "stat": "S-DEF",
+        "value":425
+      },
+      "S-ATK":1017,
+      "SAF":"Power IV",
+      "ab1":"Ability III",
+      "potential":"Armor Mastery",
+      "class_enabled":"Techer"
+    },
+    "Keen Cycler-NT":{
+      "name_jp": "キーンサイクラー-NT",
+      "name_global": null,
+      "rarity": 12,
+      "req":{
+        "stat": "S-DEF",
+        "value":440
+      },
+      "S-ATK":1027,
+      "SAF":"Power IV",
+      "ab1":null,
+      "potential":"Visage of Shadow",
+      "class_enabled":"Fighter",
+      "class_enabled2":"Braver"
+    },
+    "Coat Edge Ver2":{
+      "name_jp": "コートエッジVer2",
+      "name_global": "Coated Edge v2",
+      "rarity": 13,
+      "req":{
+        "stat": "DEX",
+        "value":400
+      },
+      "S-ATK":978,
+      "T-ATK":880,
+      "SAF":"Spirita Alpha",
+      "ab1":null,
+      "potential":"New-Type's Oath",
+      "PA_enabled":"Rising Edge",
+      "class_enabled":"All"
+    },
+    "Sakuou":{
+      "name_jp": "朔桜",
+      "name_global": null,
+      "rarity": 13,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":725
+      },
+      "S-ATK":974,
+      "ab1":"Ability III",
+      "ab2":"Power III",
+      "ab3":"Mutation I",
+      "potential":"Dancing Night Blossom",
+      "element":{
+        "element":"Fire",
+        "value":30
+      }
+    },
+    "Ideal Edge":{
+      "name_jp": "イデアルエッジ",
+      "name_global": null,
+      "rarity": 13,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":460
+      },
+      "S-ATK":1002,
+      "ab1":"Vinculum",
+      "ab2":"Stamina III",
+      "ab3":"Spirita III",
+      "potential":"Colossal Spirit",
+      "element":{
+        "element":"Light",
+        "value":20
+      },
+      "set":"Ideal Yard"
+    },
+    "Nemesis Calibur":{
+      "name_jp": "ネメシスキャリバー",
+      "name_global": null,
+      "rarity": 13,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":450
+      },
+      "S-ATK":1080,
+      "ab1":null,
+      "potential":"Negative Destroyer"
+    },
+    "Ares Sword":{
+      "name_jp": "アーレスソード",
+      "name_global": null,
+      "rarity": 13,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":730
+      },
+      "S-ATK":1083,
+      "ab1":null,
+      "potential":"Phantasmal Blessing",
+      "potential2":"Phantasmal Source"
+    },
+    "Slave Calibur":{
+      "name_jp": "スレイヴキャリバー",
+      "name_global": null,
+      "rarity": 13,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":735
+      },
+      "S-ATK":1086,
+      "ab1":null,
+      "potential":"Magic Pledge"
+    },
+    "Sekka Tsubaki":{
+      "name_jp": "雪華椿",
+      "name_global": "Snow Camellia",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":730
+      },
+      "S-ATK":1127,
+      "SAF":"Phrase Chase",
+      "ab1":"Freeze V",
+      "potential":"Snow-White Sacrifice",
+      "potential2":"Perennial Conqueror"
+    },
+    "Ray Sword":{
+      "name_jp": "レイソード",
+      "name_global": "Ray Sword",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":730
+      },
+      "S-ATK":1130,
+      "SAF":"Astral Soul",
+      "ab1":null,
+      "potential":"Heavenly Blessing",
+      "set":"Circa Ray"
+    },
+    "Huge Cutter":{
+      "name_jp": "ヒュージカッター",
+      "name_global": null,
+      "rarity": 13,
+      "req":{
+        "stat": "DEX",
+        "value":450
+      },
+      "S-ATK":1131,
+      "SAF":"Another History",
+      "ab1":null,
+      "potential":"Astral Spirit's Blessing",
+      "class_enabled":"Fighter"
+    },
+    "Dainsleif Orbit":{
+      "name_jp": "ディンスルフオービット",
+      "name_global": null,
+      "rarity": 13,
+      "old_type":true,
+      "req":{
+        "stat": "DEX",
+        "value":465
+      },
+      "S-ATK":1093,
+      "T-ATK":750,
+      "ab1":null,
+      "potential":"Urgent Maneuver 1",
+      "potential2":"Urgent Maneuver 2",
+      "set":"Orbit Cell"
+    },
+    "Seiga Sword":{
+      "name_jp": "セイガーソード",
+      "name_global": null,
+      "rarity": 13,
+      "old_type":true,
+      "req":{
+        "stat": "S-DEF",
+        "value":450
+      },
+      "S-ATK":1097,
+      "ab1":null,
+      "potential":"Testament to Courage"
+    },
+    "Kvelle Arion":{
+      "name_jp": "クヴェルアリオン",
+      "name_global": null,
+      "rarity": 13,
+      "req":{
+        "stat": "DEX",
+        "value":430
+      },
+      "S-ATK":1140,
+      "SAF":"Extreceptor",
+      "ab1":null,
+      "potential":"Immediate Exstrike",
+      "PA_enabled":"Nova Strike",
+      "class_enabled":"All"
+    },
+    "Sword Revolucio":{
+      "name_jp": "ソードレボルシオ",
+      "name_global": "Sword Revolsio",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":730
+      },
+      "S-ATK":1143,
+      "SAF":"Burn V",
+      "ab1":null,
+      "potential":"Immediate Attack",
+      "potential2":"Refining Operation"
+    },
+    "Lightning Espada-NT":{
+      "name_jp": "ライトニングエスパーダ-NT",
+      "name_global": "Lightning Espada",
+      "rarity": 13,
+      "req":{
+        "stat": "DEX",
+        "value":450
+      },
+      "S-ATK":1143,
+      "SAF":"Soul Receptor",
+      "ab1":null,
+      "potential":"Thunderblade Knight",
+      "potential2":"Prestigious Protection",
+      "class_enabled":"All"
+    },
+    "Space Tuna-NT":{
+      "name_jp": "スペース・ツナ-NT",
+      "name_global": null,
+      "rarity": 13,
+      "req":{
+        "stat": "DEX",
+        "value":450
+      },
+      "S-ATK":1165,
+      "SAF":"Soul Receptor",
+      "ab1":null,
+      "potential":"Stunning Edge",
+      "class_enabled":"All",
+      "SSA_Slot1":true
+    },
+    "Rose Saber-NT":{
+      "name_jp": "ローズセイバー-NT",
+      "name_global": null,
+      "rarity": 13,
+      "req":{
+        "stat": "DEX",
+        "value":450
+      },
+      "S-ATK":1166,
+      "SAF":"Soul Receptor",
+      "ab1":null,
+      "potential":"Shackles of Ice",
+      "class_enabled":"All",
+      "SSA_Slot2":true
+    },
+    "Ely-Sion-NT":{
+      "name_jp": "エリュシオーヌ-NT",
+      "name_global": null,
+      "rarity": 13,
+      "req":{
+        "stat": "DEX",
+        "value":450
+      },
+      "S-ATK":1167,
+      "SAF":"Soul Receptor",
+      "ab1":null,
+      "potential":"Obstinate Spirit",
+      "potential2":"Celestial Cleave",
+      "potential3":"Myriad Blessings",
+      "class_enabled":"All",
+      "SSA_Slot2":true
+    },
+    "Invade Calibur":{
+      "name_jp": "インヴェイドカリバー",
+      "name_global": null,
+      "rarity": 13,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":730
+      },
+      "S-ATK":1137,
+      "ab1":null,
+      "potential":"Sure-Strike Stance",
+      "set":"Invade Reef"
+    },
+    "D-A.I.S. Saber":{
+      "name_jp": "D-A.I.Sセイバー",
+      "name_global": "D-AIS Saber",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":750
+      },
+      "S-ATK":1179,
+      "SAF":"Spirita V",
+      "ab1":null,
+      "potential":"Machine's Mark",
+      "potential2":"Tempering Trainer"
+    },
+    "Austere Calibur":{
+      "name_jp": "オフスティアカリバー",
+      "name_global": null,
+      "rarity": 13,
+      "old_type":true,
+      "req":{
+        "stat": "S-ATK",
+        "value":750
+      },
+      "S-ATK":1169,
+      "ab1":"Darkness Soul",
+      "ab2":"Power III",
+      "ab3":"Vinculum",
+      "ab4":"Spirita III",
+      "ab5":"Mutation I",
+      "potential":"Darkness Release",
+      "set":"Austerif"
+    },
+    "Union Sword":{
+      "name_jp": "ユニオンソード",
+      "name_global": "Union Sword",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":740
+      },
+      "S-ATK":1215,
+      "SAF":"Astral Soul",
+      "ab1":null,
+      "potential":"Heavenly Blessing: Light Wings"
+    },
+    "Fornis Diene":{
+      "name_jp": "フォルニスジエン",
+      "name_global": "Fornis Diene",
+      "rarity": 13,
+      "req":{
+        "stat": "DEX",
+        "value":460
+      },
+      "S-ATK":1217,
+      "SAF":"Phrase Weak",
+      "ab1":null,
+      "potential":"Element Tracking - Fire/Light"
+    },
+    "Welk Radome":{
+      "name_jp": "ウェルクレドーム",
+      "name_global": "Welk Redome",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":740
+      },
+      "S-ATK":1219,
+      "SAF":"Vinculum",
+      "ab1":"Ability III",
+      "potential":"Phantom Devourer"
+    },
+    "Raede Kvelle":{
+      "name_jp": "レーテクヴェル",
+      "name_global": null,
+      "rarity": 13,
+      "req":{
+        "stat": "DEX",
+        "value":435
+      },
+      "S-ATK":1220,
+      "SAF":"Extreceptor",
+      "ab1":null,
+      "potential":"Immediate Exstrike",
+      "PA_enabled":"Nova Strike",
+      "class_enabled":"All"
+    },
+    "Golem Bluffs":{
+      "name_jp": "ゴレムブラフス",
+      "name_global": "Golem Bluffs",
+      "rarity": 13,
+      "req":{
+        "stat": "S-DEF",
+        "value":465
+      },
+      "S-ATK":1222,
+      "SAF":"Omega Buster",
+      "ab1":null,
+      "potential":"Daemon Destroyer"
+    },
+    "Seikaiser Sword":{
+      "name_jp": "セイカイザーソード",
+      "name_global": "Siegkaiser Sword",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":465
+      },
+      "S-ATK":1222,
+      "SAF":"Power VI",
+      "ab1":null,
+      "potential":"Hope Symbol"
+    },
+    "Detonation Rage":{
+      "name_jp": "ディトネションレイジ",
+      "name_global": "Detonation Rage",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":750
+      },
+      "S-ATK":1225,
+      "SAF":"Modulator",
+      "ab1":null,
+      "potential":"Darkness Roar",
+      "class_enabled":"Braver"
+    },
+    "Astra Separ":{
+      "name_jp": "アストラセパル",
+      "name_global": "Astral Sepal",
+      "rarity": 13,
+      "req":{
+        "stat": "S-DEF",
+        "value":470
+      },
+      "S-ATK":1228,
+      "SAF":"Phrase Response",
+      "ab1":null,
+      "potential":"Starlight Remnants"
+    },
+    "Sword Dominacio":{
+      "name_jp": "ソードドミナシオ",
+      "name_global": null,
+      "rarity": 13,
+      "req":{
+        "stat": "DEX",
+        "value":440
+      },
+      "S-ATK":1229,
+      "SAF":"Factor Receptor",
+      "ab1":null,
+      "potential":"Offensive Defensive"
+    },
+    "Zeinesis Calibur":{
+      "name_jp": "ゼイネシスキャリバー",
+      "name_global": "Zeinesis Calibur",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":755
+      },
+      "S-ATK":1232,
+      "SAF":"Sentence Triple",
+      "ab1":null,
+      "potential":"Anthesis Trainer",
+      "potential2":"Guidance of Life",
+      "potential3":"Blessing of Life"
+    },
+    "Qliphad Calibur":{
+      "name_jp": "ゼイネシスキャリバー",
+      "name_global": "Clifard Calibur",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":755
+      },
+      "S-ATK":1232,
+      "SAF":"Sentence Triple",
+      "ab1":null,
+      "potential":"Anthesis Trainer (Qliphad)"
+    },
+    "Altacray":{
+      "name_jp": "アルタクレイ",
+      "name_global": "Alta Clay",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":750
+      },
+      "S-ATK":1245,
+      "SAF":"Spirita VI",
+      "ab1":null,
+      "potential":"Elusive Offense"
+    },
+    "Golem Graphol":{
+      "name_jp": "ゴレムグラフォール",
+      "name_global": "Golem Grafoil",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":660
+      },
+      "S-ATK":1250,
+      "SAF":"Omega Buster",
+      "ab1":null,
+      "potential":"Daemon Destroyer",
+      "potential2":"Demolisher Conqueror",
+      "SSA_Slot3":true
+    },
+    "Val Farder":{
+      "name_jp": "バルファーダ",
+      "name_global": "Val Farder",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":700
+      },
+      "S-ATK":1256,
+      "SAF":"S3:Flowing Exhilaration",
+      "ab1":null,
+      "potential":"Millenium Blaze",
+      "SSA_Slot1":true,
+      "SSA_Slot2":true,
+      "SSA_Slot3":true
+    },
+    "Acht Anzhi":{
+      "name_jp": "アハトアンジ",
+      "name_global": "Acht Ange",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":740
+      },
+      "S-ATK":1259,
+      "SAF":"S2:Instant Reduction",
+      "ab1":null,
+      "potential":"Hawkeyed Phoenix",
+      "SSA_Slot2":true,
+      "SSA_Slot3":true
+    },
+    "Evleda Hander":{
+      "name_jp": "イヴリダハンダー",
+      "name_global": "Ivlida Hander",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":720
+      },
+      "S-ATK":1250,
+      "SAF":"Sentence Arma",
+      "ab1":null,
+      "potential":"Deathblow Fury"
+    },
+    "Cleasis Hander":{
+      "name_jp": "イヴリダハンダー",
+      "name_global": "Cleasis Hander",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":720
+      },
+      "S-ATK":1250,
+      "SAF":"Sentence Arma",
+      "ab1":null,
+      "potential":"Deathblow Fury - Defense"
+    },
+    "Schvelle Hander":{
+      "name_jp": "イヴリダハンダー",
+      "name_global": "Schvelle Hander",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":720
+      },
+      "S-ATK":1250,
+      "SAF":"Sentence Arma",
+      "ab1":null,
+      "potential":"Deathblow Fury - Advance Attack"
+    },
+    "Basilis Panific":{
+      "name_jp": "バジリスバニフィク",
+      "name_global": "Basilisk Panifique",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":720
+      },
+      "S-ATK":1274,
+      "SAF":"Phrase Decay",
+      "ab1":null,
+      "potential":"Flashing Blades"
+    },
+    "Homura no Odachi":{
+      "name_jp": "ホムラノオオダチ",
+      "name_global": "Homura no Ohdachi",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":700
+      },
+      "S-ATK":1280,
+      "SAF":"Phrase Weak",
+      "ab1":null,
+      "potential":"Flame Oath"
+    },
+    "Gix Zangulum":{
+      "name_jp": "ギクスザングルム",
+      "name_global": "Gix Zangulum",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":720
+      },
+      "S-ATK":1274,
+      "SAF":"Sentence Power",
+      "ab1":null,
+      "potential":"Offensive Inspiration",
+      "set":"Gix Khudu"
+    },
+    "Jutus Lamina":{
+      "name_jp": "ジュティスラーミナ",
+      "name_global": "Jutus Lamina",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":760
+      },
+      "S-ATK":1286,
+      "SAF":"S2:Rupturing Intent",
+      "ab1":null,
+      "potential":"Dauntless Knight",
+      "SSA_Slot1":true,
+      "SSA_Slot2":true
+    },
+    "Ceres Fouls":{
+      "name_jp": "セレファウルス",
+      "name_global": "Ceres Fouls",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":720
+      },
+      "S-ATK":1289,
+      "SAF":"Doom Break",
+      "ab1":null,
+      "potential":"Eternal History",
+      "SSA_Slot1":true
+    },
+    "Momijihime-NT":{
+      "name_jp": "紅葉姫-NT",
+      "name_global": "Autumn Princess",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":730
+      },
+      "S-ATK":1329,
+      "SAF":"Power V",
+      "ab1":null,
+      "potential":"Divine Great Sun Deity",
+      "SSA_Slot1":true,
+      "SSA_Slot2":true,
+      "SSA_Slot3":true
+    },
+    "Invade Calibur-NT":{
+      "name_jp": "インヴェイドカリバー-NT",
+      "name_global": "Invade Calibur",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":730
+      },
+      "S-ATK":1332,
+      "SAF":"Darkness Soul",
+      "ab1":null,
+      "potential":"Sure-Strike Field",
+      "SSA_Slot1":true,
+      "SSA_Slot2":true,
+      "SSA_Slot3":true
+    },
+    "Nemesis Calibur-NT":{
+      "name_jp": "ネメシスキャリバー-NT",
+      "name_global": "Nemesis Calibur",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":770
+      },
+      "S-ATK":1335,
+      "SAF":"All Resist III",
+      "ab1":null,
+      "potential":"Sacred Shield"
+    },
+    "Slave Calibur-NT":{
+      "name_jp": "スレイヴキャリバー-NT",
+      "name_global": "Raven Calibur",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":770
+      },
+      "S-ATK":1341,
+      "SAF":"Spirita VI",
+      "ab1":null,
+      "potential":"Enticing Ward"
+    },
+    "Dia Zangulum":{
+      "name_jp": "ディアザングルム",
+      "name_global": "Dia Zangulum",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":770
+      },
+      "S-ATK":1344,
+      "SAF":"S3:Furious Inspiration",
+      "ab1":null,
+      "potential":"Furious Inspiration",
+      "SSA_Slot2":true,
+      "SSA_Slot3":true
+    },
+    "Grates Zangulum":{
+      "name_jp": "グラテスザングルム",
+      "name_global": "Gratis Zangulum",
+      "rarity": 13,
+      "req":{
+        "stat": "DEX",
+        "value":460
+      },
+      "S-ATK":1353,
+      "SAF":"Lesser Stamina IV",
+      "ab1":null,
+      "potential":"Offensive Inspiration"
+    },
+    "Profound Dimenxion":{
+      "name_jp": "深遠剣ディメシオン",
+      "name_global": "Profound Sword Dimexion",
+      "rarity": 13,
+      "req":{
+        "stat": "S-ATK",
+        "value":700
+      },
+      "S-ATK":1386,
+      "SAF":"Reverie Catalyst",
+      "ab1":null,
+      "potential":"Malicious Return",
+      "SSA_Slot1":true,
+      "SSA_Slot2":true,
+      "SSA_Slot3":true
+    },
+    "Shien no Odachi":{
+      "name_jp": "シエンノオオダチ",
+      "name_global": "Xien no Ohdachi",
+      "rarity": 14,
+      "req":{
+        "stat": "S-ATK",
+        "value":730
+      },
+      "S-ATK":1335,
+      "SAF":"Phrase Weak",
+      "ab1":null,
+      "potential":"Violet Flame Oath",
+      "SSA_Slot1":true,
+      "SSA_Slot2":true,
+      "SSA_Slot3":true
+    },
+    "Ceres Fouls Zara":{
+      "name_jp": "セレファウルス・ザラ",
+      "name_global": "Ceres Fouls-Zara",
+      "rarity": 14,
+      "req":{
+        "stat": "S-ATK",
+        "value":740
+      },
+      "S-ATK":1347,
+      "SAF":"Doom Break II",
+      "ab1":null,
+      "potential":"Immortal Breath",
+      "potential2":"Immortal Beat",
+      "SSA_Slot1":true,
+      "SSA_Slot2":true,
+      "SSA_Slot3":true
+    },
+    "Guren no Odachi":{
+      "name_jp": "シエンノオオダチ",
+      "name_global": "Guren no Ohdachi",
+      "rarity": 14,
+      "req":{
+        "stat": "S-ATK",
+        "value":730
+      },
+      "S-ATK":1383,
+      "SAF":"Phrase Weak",
+      "ab1":null,
+      "potential":"Crimson Flame Oath"
+    },
+    "Lumiere Lamina":{
+      "name_jp": "リュミエルラーミナ",
+      "name_global": "Lumiere Lamina",
+      "rarity": 14,
+      "req":{
+        "stat": "S-ATK",
+        "value":760
+      },
+      "S-ATK":1420,
+      "SAF":"S2:Rupturing Intent",
+      "ab1":null,
+      "potential":"Dauntless Templar",
+      "SSA_Slot1":true,
+      "SSA_Slot2":true,
+      "SSA_Slot3":true
     }
 }
