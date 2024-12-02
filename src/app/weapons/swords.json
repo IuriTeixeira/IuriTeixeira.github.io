@@ -5,10 +5,7 @@
     "name_global": null,
     "rarity": 1,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":1
-    },
+    "req":["S-ATK",1],
     "S-ATK":94,
     "abilities":null,
     "potential":null
@@ -20,10 +17,7 @@
     "name_global": null,
     "rarity": 1,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":57
-    },
+    "req":["S-ATK",57],
     "S-ATK":101,
     "abilities":null,
     "potential":null
@@ -35,10 +29,7 @@
     "name_global": null,
     "rarity": 1,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":124
-    },
+    "req":["S-ATK",124],
     "S-ATK":146,
     "abilities":["Body I"],
     "potential":null
@@ -49,10 +40,7 @@
     "name_en": "Sword-NT",
     "name_global": "Sword",
     "rarity": 1,
-    "req":{
-      "stat": "S-ATK",
-      "value":1
-    },
+    "req":["S-ATK",1],
     "S-ATK":204,
     "SAF":"Body III",
     "potential":["New-Type's Law"]
@@ -64,10 +52,7 @@
     "name_global": null,
     "rarity": 2,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":191
-    },
+    "req":["S-ATK",191],
     "S-ATK":172,
     "abilities":null,
     "potential":null
@@ -79,10 +64,7 @@
     "name_global": null,
     "rarity": 2,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":259
-    },
+    "req":["S-ATK",259],
     "S-ATK":198,
     "abilities":null,
     "potential":null
@@ -94,10 +76,7 @@
     "name_global": null,
     "rarity": 2,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":326
-    },
+    "req":["S-ATK",326],
     "S-ATK":225,
     "abilities":["Body I"],
     "potential":null
@@ -108,10 +87,7 @@
     "name_en":"Alva Sword-NT",
     "name_global": "Alva Sword",
     "rarity": 2,
-    "req":{
-      "stat": "S-ATK",
-      "value":150
-    },
+    "req":["S-ATK",150],
     "S-ATK":255,
     "SAF":"Body III",
     "potential":["New-Type's Law"]
@@ -123,10 +99,7 @@
     "name_global": null,
     "rarity": 3,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":393
-    },
+    "req":["S-ATK",393],
     "S-ATK":251,
     "abilities":null,
     "potential":null
@@ -138,10 +111,7 @@
     "name_global": null,
     "rarity": 3,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":460
-    },
+    "req":["S-ATK",460],
     "S-ATK":257,
     "abilities":null,
     "potential":null
@@ -153,10 +123,7 @@
     "name_en":"Vita Breaker",
     "name_global": null,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":528
-    },
+    "req":["S-ATK",528],
     "S-ATK":273,
     "abilities":null,
     "potential":null
@@ -168,10 +135,7 @@
     "name_global": "Vita Sword",
     
     "rarity": 3,
-    "req":{
-      "stat": "S-ATK",
-      "value":300
-    },
+    "req":["S-ATK",300],
     "S-ATK":205,
     "SAF":"Body III",
     "potential":["New-Type's Law"]
@@ -183,10 +147,7 @@
     "name_global": null,
     "rarity": 4,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":155
-    },
+    "req":["S-ATK",155],
     "S-ATK":176,
     "abilities":null,
     "potential":["Breath of Bladed Essence"]
@@ -198,10 +159,7 @@
     "name_global": null,
     "rarity": 4,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":237
-    },
+    "req":["S-ATK",237],
     "S-ATK":211,
     "abilities":null,
     "potential":null
@@ -212,10 +170,7 @@
     "name_en":"Claymore-NT",
     "name_global": "Claymore",
     "rarity": 4,
-    "req":{
-      "stat": "S-ATK",
-      "value":150
-    },
+    "req":["S-ATK",150],
     "S-ATK":331,
     "SAF":"Blow Resist III",
     "potential":["New-Type's Law","Breath of Bladed Essence"]
@@ -226,10 +181,7 @@
     "name_en":"Calibur-NT",
     "name_global": "Calibur",
     "rarity": 4,
-    "req":{
-      "stat": "S-ATK",
-      "value":200
-    },
+    "req":["S-ATK",200],
     "S-ATK":352,
     "SAF":"Blow Resist III",
     "potential":["New-Type's Law"]
@@ -240,10 +192,7 @@
     "name_en":"Alva Claymore",
     "name_global": null,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":320
-    },
+    "req":["S-ATK",320],
     "S-ATK":246,
     "abilities": null,
     "potential":null
@@ -255,10 +204,7 @@
     "name_global": null,
     "rarity": 5,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":403
-    },
+    "req":["S-ATK",403],
     "S-ATK":280,
     "abilities":null,
     "potential":null
@@ -270,10 +216,7 @@
     "name_global": "Alva Claymore",
     "rarity": 5,
     
-    "req":{
-      "stat": "S-ATK",
-      "value":250
-    },
+    "req":["S-ATK",250],
     "S-ATK":356,
     "SAF":"Blow Resist III",
     "potential":["New-Type's Law"]
@@ -284,10 +227,7 @@
     "name_en":"Alva Calibur-NT",
     "name_global": null,
     "rarity": 5,
-    "req":{
-      "stat": "S-ATK",
-      "value":300
-    },
+    "req":["S-ATK",300],
     "S-ATK":377,
     "SAF":"Blow Resist III",
     "potential":["New-Type's Law"]
@@ -299,10 +239,7 @@
     "name_global": null,
     "rarity": 6,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":485
-    },
+    "req":["S-ATK",485],
     "S-ATK":292,
     "abilities": null,
     "potential":null
@@ -314,10 +251,7 @@
     "name_global": null,
     "rarity": 6,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":568
-    },
+    "req":["S-ATK",568],
     "S-ATK":308,
     "abilities":null,
     "potential":null
@@ -328,10 +262,7 @@
     "name_en":"Vita Claymore-NT",
     "name_global": "Vita Claymore",
     "rarity": 6,
-    "req":{
-      "stat": "S-ATK",
-      "value":350
-    },
+    "req":["S-ATK",350],
     "S-ATK":382,
     "SAF":"Blow Resist III",
     "potential":["New-Type's Law"]
@@ -342,10 +273,7 @@
     "name_en":"Vita Calibur-NT",
     "name_global": null,
     "rarity": 6,
-    "req":{
-      "stat": "S-ATK",
-      "value":400
-    },
+    "req":["S-ATK",400],
     "S-ATK":403,
     "SAF":"Blow Resist III",
     "potential":["New-Type's Law"]
@@ -357,10 +285,7 @@
     "name_global": null,
     "rarity": 7,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":1
-    },
+    "req":["S-ATK",1],
     "S-ATK":174,
     "abilities":null,
     "potential":["Enraged Stance"]
@@ -372,10 +297,7 @@
     "name_global": null,
     "rarity": 7,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":1
-    },
+    "req":["S-ATK",1],
     "S-ATK":192,
     "abilities": "EXP Boost I",
     "potential":null
@@ -387,17 +309,11 @@
     "name_global": null,
     "rarity": 7,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":1
-    },
+    "req":["S-ATK",1],
     "S-ATK":192,
     "abilities":["Another History"],
     "potential":null,
-    "element":{
-      "element":"Light",
-      "value": 50
-    },
+    "element":["Light",50],
     "class_enabled":["All"]
   },
   {
@@ -407,10 +323,7 @@
     "name_global": null,
     "rarity": 7,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":309
-    },
+    "req":["S-ATK",309],
     "S-ATK":229,
     "abilities":["Another History"],
     "potential":["Spiral Edge","Soaring Burst"]
@@ -422,17 +335,11 @@
     "name_global": null,
     "rarity": 7,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":1
-    },
+    "req":["DEX",1],
     "S-ATK":230,
     "abilities":["Another History","Freeze IV"],
     "potential":["Guilty Edge"],
-    "element":{
-      "element":"Ice",
-      "value":50
-    },
+    "element":["Ice",50],
     "PA_enabled":"Guilty Break",
     "class_enabled":["All"]
   },
@@ -443,10 +350,7 @@
     "name_global": null,
     "rarity": 7,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":400
-    },
+    "req":["S-DEF",400],
     "S-ATK":267,
     "abilities":["Stamina II"],
     "potential":["Obstinate Spirit"]
@@ -457,10 +361,7 @@
     "name_en":"Zaxe-NT",
     "name_global": "Zax",
     "rarity": 7,
-    "req":{
-      "stat": "S-ATK",
-      "value":1
-    },
+    "req":["S-ATK",1],
     "S-ATK":407,
     "SAF":"Mutation I",
     "potential":["Enraged Stance"]
@@ -472,10 +373,7 @@
     "name_global": null,
     "rarity": 7,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":300
-    },
+    "req":["DEX",300],
     "S-ATK":382,
     "abilities":null,
     "potential":["Blade Surfing"]
@@ -486,10 +384,7 @@
     "name_en":"Last Survivor-NT",
     "name_global": "Last Survivor",
     "rarity": 7,
-    "req":{
-      "stat": "S-DEF",
-      "value":250
-    },
+    "req":["S-DEF",250],
     "S-ATK":499,
     "SAF":"Power III",
     "potential":["Obstinate Spirit"]
@@ -501,10 +396,7 @@
     "name_global": null,
     "rarity": 7,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":514
-    },
+    "req":["S-ATK",514],
     "S-ATK":391,
     "abilities":null,
     "potential":["Enraged Stance"]
@@ -516,10 +408,7 @@
     "name_global": null,
     "rarity": 7,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":597
-    },
+    "req":["S-ATK",597],
     "S-ATK":448,
     "abilities":null,
     "potential":["Red Recalescence"]
@@ -530,10 +419,7 @@
     "name_en":"Red Sword-NT",
     "name_global": "Red Sword",
     "rarity": 7,
-    "req":{
-      "stat": "S-ATK",
-      "value":597
-    },
+    "req":["S-ATK",597],
     "S-ATK":581,
     "abilities":null,
     "potential":["Immediate Strike"]
@@ -545,10 +431,7 @@
     "name_global": null,
     "rarity": 7,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":600
-    },
+    "req":["S-ATK",600],
     "S-ATK":532,
     "abilities":null,
     "potential":null
@@ -560,10 +443,7 @@
     "name_global": null,
     "rarity": 8,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":222
-    },
+    "req":["S-ATK",222],
     "S-ATK":199,
     "abilities":["Meseta Fever II"],
     "potential":["Stunning Edge"],
@@ -576,10 +456,7 @@
     "name_global": null,
     "rarity": 8,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":338
-    },
+    "req":["S-ATK",338],
     "S-ATK":247,
     "abilities":["Burn II"],
     "potential":["Dragon Hunter"],
@@ -592,10 +469,7 @@
     "name_global": null,
     "rarity": 8,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":407
-    },
+    "req":["S-ATK",407],
     "S-ATK":281,
     "abilities":null,
     "potential":["Stunning Edge","Mortality's Ante"]
@@ -607,10 +481,7 @@
     "name_global": null,
     "rarity": 8,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":272
-    },
+    "req":["DEX",272],
     "S-ATK":286,
     "abilities":null,
     "potential":["Defensive Stance"],
@@ -623,10 +494,7 @@
     "name_global": null,
     "rarity": 8,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":420
-    },
+    "req":["S-DEF",420],
     "S-ATK":287,
     "abilities":["Freeze II"],
     "potential":["Stunning Edge"],
@@ -639,10 +507,7 @@
     "name_global": null,
     "rarity": 8,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":454
-    },
+    "req":["S-ATK",454],
     "S-ATK":295,
     "abilities":["Burn I"],
     "potential":["Dragon Hunter"]
@@ -654,10 +519,7 @@
     "name_global": null,
     "rarity": 8,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":320
-    },
+    "req":["DEX",320],
     "S-ATK":382,
     "T-ATK":266,
     "abilities":null,
@@ -671,10 +533,7 @@
     "name_global": null,
     "rarity": 8,
     "old_type":true,
-    "req":{
-      "stat": "T-ATK",
-      "value":360
-    },
+    "req":["T-ATK",360],
     "S-ATK":393,
     "T-ATK":240,
     "abilities":null,
@@ -687,10 +546,7 @@
     "name_global": null,
     "rarity": 8,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":345
-    },
+    "req":["DEX",345],
     "S-ATK":418,
     "abilities":null,
     "potential":["Defensive Stance"],
@@ -703,10 +559,7 @@
     "name_en":"Lambda Aristin-NT",
     "name_global": "Lambda Aristene",
     "rarity": 8,
-    "req":{
-      "stat": "DEX",
-      "value":345
-    },
+    "req":["DEX",345],
     "S-ATK":542,
     "SAF":"Power III",
     "potential":["Defensive Stance"],
@@ -719,10 +572,7 @@
     "name_global": null,
     "rarity": 9,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":1
-    },
+    "req":["S-DEF",1],
     "S-ATK":234,
     "abilities":["Burn IV","Power III","Stamina III","Spirita III"],
     "potential":["Enraged Stance"],
@@ -736,10 +586,7 @@
     "name_global": null,
     "rarity": 9,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":374
-    },
+    "req":["S-ATK",374],
     "S-ATK":274,
     "abilities":null,
     "potential":["Splendid Recovery","Native Hunter"]
@@ -751,10 +598,7 @@
     "name_global": null,
     "rarity": 9,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":458
-    },
+    "req":["S-ATK",458],
     "S-ATK":310,
     "abilities":null,
     "potential":["Immediate Strike","Glimmering Rhythm"]
@@ -766,10 +610,7 @@
     "name_global": null,
     "rarity": 9,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":470
-    },
+    "req":["S-ATK",470],
     "S-ATK":337,
     "abilities":null,
     "potential":["Dragon Hunter","Determination"]
@@ -781,10 +622,7 @@
     "name_global": null,
     "rarity": 9,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":578
-    },
+    "req":["S-ATK",578],
     "S-ATK":451,
     "abilities":null,
     "potential":["Immediate Strike"]
@@ -795,10 +633,7 @@
     "name_en":"Ardillo-NT",
     "name_global": "Ardillo",
     "rarity": 9,
-    "req":{
-      "stat": "S-ATK",
-      "value":458
-    },
+    "req":["S-ATK",458],
     "S-ATK":616,
     "SAF":"Mutation I",
     "potential":["Immediate Strike","Glimmering Rhythm"]
@@ -810,10 +645,7 @@
     "name_global": null,
     "rarity": 9,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":625
-    },
+    "req":["S-ATK",625],
     "S-ATK":514,
     "abilities":null,
     "potential":["Enraged Stance"]
@@ -825,10 +657,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "T-ATK",
-      "value":450
-    },
+    "req":["T-ATK",450],
     "S-ATK":333,
     "T-ATK":420,
     "abilities":["Technique III"],
@@ -842,17 +671,11 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":450
-    },
+    "req":["S-DEF",450],
     "S-ATK":358,
     "abilities":["Power III","Mutation I"],
     "potential":["Negative Hunter"],
-    "element":{
-      "element":"Light",
-      "value":30
-    },
+    "element":["Light",30],
     "class_enabled":["All"]
   },
   {
@@ -862,17 +685,11 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":500
-    },
+    "req":["S-ATK",500],
     "S-ATK":423,
     "abilities":["Power III","Ability III","Stamina II","Lucky Rise I"],
     "potential":["Adverse Vanity"],
-    "element":{
-      "element":"Wind",
-      "value":30
-    },
+    "element":["Wind",30],
     "class_enabled":["All"]
   },
   {
@@ -882,10 +699,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":520
-    },
+    "req":["S-ATK",520],
     "S-ATK":433,
     "abilities":null,
     "potential":["Negative Hunter"]
@@ -897,10 +711,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":530
-    },
+    "req":["S-ATK",530],
     "S-ATK":440,
     "abilities":null,
     "potential":["Immediate Strike"]
@@ -912,10 +723,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "T-ATK",
-      "value":540
-    },
+    "req":["T-ATK",540],
     "S-ATK":446,
     "T-ATK":280,
     "abilities":null,
@@ -929,10 +737,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":540
-    },
+    "req":["S-ATK",540],
     "S-ATK":453,
     "abilities":null,
     "potential":["Negative Hunter"]
@@ -944,10 +749,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":560
-    },
+    "req":["S-ATK",560],
     "S-ATK":460,
     "abilities":["Freeze I"],
     "potential":["Dragon Hunter","Dragon Emblem"]
@@ -959,10 +761,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":580
-    },
+    "req":["S-ATK",580],
     "S-ATK":474,
     "abilities":null,
     "potential":["Vampiric Blade"],
@@ -975,10 +774,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":600
-    },
+    "req":["S-ATK",600],
     "S-ATK":488,
     "abilities":null,
     "potential":["Splendid Recovery"]
@@ -990,10 +786,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":410
-    },
+    "req":["S-DEF",410],
     "S-ATK":493,
     "abilities":null,
     "potential":["Negative Hunter"],
@@ -1006,10 +799,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":610
-    },
+    "req":["S-ATK",610],
     "S-ATK":497,
     "abilities":null,
     "potential":["Immediate Strike"]
@@ -1021,10 +811,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":615
-    },
+    "req":["S-ATK",615],
     "S-ATK":502,
     "abilities":null,
     "potential":["Enraged Stance"]
@@ -1036,10 +823,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":620
-    },
+    "req":["S-ATK",620],
     "S-ATK":506,
     "abilities":["Burn IV"],
     "potential":["Dragon Hunter"],
@@ -1052,10 +836,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":620
-    },
+    "req":["S-ATK",620],
     "S-ATK":512,
     "abilities":null,
     "potential":["Negative Hunter"]
@@ -1067,10 +848,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":620
-    },
+    "req":["S-ATK",620],
     "S-ATK":517,
     "abilities":null,
     "potential":["Dragon Hunter","Determination"]
@@ -1082,10 +860,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":635
-    },
+    "req":["S-ATK",635],
     "S-ATK":531,
     "abilities":null,
     "potential":["Splendid Recovery"],
@@ -1098,10 +873,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":640
-    },
+    "req":["S-ATK",640],
     "S-ATK":532,
     "abilities":["Burn IV"],
     "potential":["Immediate Strike","Pursuit of Flame"]
@@ -1113,10 +885,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":440
-    },
+    "req":["DEX",440],
     "S-ATK":533,
     "potential":["Defensive Stance"],
     "set":"Fobi"
@@ -1128,10 +897,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":645
-    },
+    "req":["S-ATK",645],
     "S-ATK":534,
     "abilities":null,
     "potential":["Immediate Strike"]
@@ -1143,10 +909,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":650
-    },
+    "req":["S-ATK",650],
     "S-ATK":536,
     "abilities":null,
     "potential":["Dragon Emblem","Dragon Hunter","Sealing Dragon's Roar"]
@@ -1158,10 +921,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":655
-    },
+    "req":["S-ATK",655],
     "S-ATK":543,
     "abilities":null,
     "potential":["Immediate Strike"]
@@ -1173,10 +933,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":620
-    },
+    "req":["S-ATK",620],
     "S-ATK":543,
     "abilities":null,
     "potential":["Negative Hunter"]
@@ -1188,10 +945,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":665
-    },
+    "req":["S-ATK",665],
     "S-ATK":551,
     "abilities":null,
     "potential":["Dragon Hunter"]
@@ -1203,10 +957,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":420
-    },
+    "req":["S-DEF",420],
     "S-ATK":553,
     "R-ATK":300,
     "T-ATK":300,
@@ -1221,10 +972,7 @@
     "name_en":"Dragon Slayer-NT",
     "name_global": "Dragon Slayer",
     "rarity": 10,
-    "req":{
-      "stat": "S-ATK",
-      "value":620
-    },
+    "req":["S-ATK",620],
     "S-ATK":779,
     "SAF":"Burn III",
     "abilities":null,
@@ -1237,10 +985,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":680
-    },
+    "req":["S-ATK",680],
     "S-ATK":566,
     "abilities":null,
     "potential":["Enraged Stance"]
@@ -1252,10 +997,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":685
-    },
+    "req":["S-ATK",685],
     "S-ATK":574,
     "abilities":null,
     "potential":["Sacrificial Inspiration","Spirit Reversal"]
@@ -1267,10 +1009,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":425
-    },
+    "req":["DEX",425],
     "S-ATK":574,
     "abilities":null,
     "potential":["Star Breaker"],
@@ -1283,10 +1022,7 @@
     "name_global": null,
     "rarity": 10,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":450
-    },
+    "req":["DEX",450],
     "S-ATK":576,
     "abilities":["Spirita III"],
     "potential":["Dynamic Reflection"],
@@ -1298,10 +1034,7 @@
     "name_en":"Crusade Lore-NT",
     "name_global": "Crusade Lore",
     "rarity": 10,
-    "req":{
-      "stat": "S-ATK",
-      "value":680
-    },
+    "req":["S-ATK",680],
     "S-ATK":824,
     "SAF":"Burn III",
     "abilities":null,
@@ -1313,10 +1046,7 @@
     "name_en":"Dio Ardillo-NT",
     "name_global": "Deo Ardillo",
     "rarity": 10,
-    "req":{
-      "stat": "S-ATK",
-      "value":655
-    },
+    "req":["S-ATK",655],
     "S-ATK":827,
     "SAF":"Power III",
     "abilities":["Power III"],
@@ -1328,10 +1058,7 @@
     "name_en":"Flamme Brand-NT",
     "name_global": "Flamme Brand",
     "rarity": 10,
-    "req":{
-      "stat": "S-ATK",
-      "value":640
-    },
+    "req":["S-ATK",640],
     "S-ATK":831,
     "SAF":"Ability III",
     "abilities":null,
@@ -1344,10 +1071,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":400
-    },
+    "req":["DEX",400],
     "S-ATK":487,
     "abilities":["Summer Fever"],
     "potential":["Blade Surfing"],
@@ -1361,10 +1085,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":400
-    },
+    "req":["DEX",400],
     "S-ATK":490,
     "abilities":null,
     "potential":["Immediate End"],
@@ -1378,10 +1099,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":400
-    },
+    "req":["DEX",400],
     "S-ATK":515,
     "abilities":["Power III","Ability III","Stamina III","Mizer Soul"],
     "potential":["Dynamic Reflection"],
@@ -1395,10 +1113,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":400
-    },
+    "req":["DEX",400],
     "S-ATK":519,
     "abilities":["Power III","Stamina III","Ragne Soul"],
     "potential":["Precision Sniping"],
@@ -1412,10 +1127,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":400
-    },
+    "req":["DEX",400],
     "S-ATK":520,
     "abilities":null,
     "potential":["Living Conduit"],
@@ -1429,10 +1141,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":400
-    },
+    "req":["DEX",400],
     "S-ATK":522,
     "abilities":["Org Soul","Power III","Ability III","Stamina III"],
     "potential":["Aerial Attack"],
@@ -1446,10 +1155,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":600
-    },
+    "req":["S-ATK",600],
     "S-ATK":527,
     "abilities":null,
     "potential":["Splendid Recovery"],
@@ -1462,10 +1168,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":410
-    },
+    "req":["DEX",410],
     "S-ATK":552,
     "abilities":["Freeze IV"],
     "potential":["Shackles of Ice"],
@@ -1478,10 +1181,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":500
-    },
+    "req":["S-ATK",500],
     "S-ATK":556,
     "abilities":null,
     "potential":["Great Sun Deity","Soaring Burst"]
@@ -1493,10 +1193,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":400
-    },
+    "req":["S-DEF",400],
     "S-ATK":568,
     "abilities":null,
     "potential":["Immediate Destruction"],
@@ -1509,10 +1206,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":600
-    },
+    "req":["S-ATK",600],
     "S-ATK":570,
     "abilities":null,
     "potential":["Craft Mastery","Defensive Stance"],
@@ -1525,10 +1219,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":435
-    },
+    "req":["DEX",435],
     "S-ATK":571,
     "abilities":null,
     "potential":["Fragile Assault","Judgment Time"],
@@ -1541,10 +1232,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":650
-    },
+    "req":["S-ATK",650],
     "S-ATK":573,
     "abilities":null,
     "potential":["Soaring Edge"],
@@ -1557,10 +1245,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":400
-    },
+    "req":["DEX",400],
     "S-ATK":575,
     "abilities":null,
     "potential":["Visage of Light"],
@@ -1573,10 +1258,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "R-DEF",
-      "value":430
-    },
+    "req":["R-DEF",430],
     "S-ATK":575,
     "abilities":null,
     "potential":["Guilty Edge"],
@@ -1589,10 +1271,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":690
-    },
+    "req":["S-ATK",690],
     "S-ATK":577,
     "abilities":null,
     "potential":["Direct Style"],
@@ -1605,10 +1284,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":690
-    },
+    "req":["S-ATK",690],
     "S-ATK":580,
     "abilities":null,
     "potential":["Enraged Stance"]
@@ -1620,10 +1296,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "R-DEF",
-      "value":430
-    },
+    "req":["R-DEF",430],
     "S-ATK":583,
     "abilities":null,
     "potential":["Last Stand"]
@@ -1635,10 +1308,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":695
-    },
+    "req":["S-ATK",695],
     "S-ATK":585,
     "abilities":null,
     "potential":["Benevolent Wind"]
@@ -1650,10 +1320,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "T-DEF",
-      "value":430
-    },
+    "req":["T-DEF",430],
     "S-ATK":586,
     "T-ATK":450,
     "abilities":null,
@@ -1667,10 +1334,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":430
-    },
+    "req":["DEX",430],
     "S-ATK":588,
     "T-ATK":500,
     "abilities":null,
@@ -1684,10 +1348,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":700
-    },
+    "req":["S-ATK",700],
     "S-ATK":592,
     "abilities":null,
     "potential":["Negative Hunter"]
@@ -1699,10 +1360,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":700
-    },
+    "req":["S-ATK",700],
     "S-ATK":594,
     "abilities":null,
     "potential":["Demon Hunter"]
@@ -1713,10 +1371,7 @@
     "name_en":"Daisy Chain-NT",
     "name_global": "Daisy Chain",
     "rarity": 11,
-    "req":{
-      "stat": "S-ATK",
-      "value":600
-    },
+    "req":["S-ATK",600],
     "S-ATK":860,
     "SAF":"Alter Arma",
     "abilities":null,
@@ -1730,10 +1385,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":435
-    },
+    "req":["S-DEF",435],
     "S-ATK":596,
     "R-ATK":350,
     "T-ATK":350,
@@ -1749,10 +1401,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":700
-    },
+    "req":["S-ATK",700],
     "S-ATK":598,
     "abilities":null,
     "potential":["Physical Defense Stance"]
@@ -1764,10 +1413,7 @@
     "name_global": null,
     "rarity": 11,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":440
-    },
+    "req":["S-DEF",440],
     "S-ATK":598,
     "abilities":null,
     "potential":["Visage of Shadow"],
@@ -1779,10 +1425,7 @@
     "name_en":"Kadhimceras",
     "name_global": null,
     "rarity": 11,
-    "req":{
-      "stat": "DEX",
-      "value":300
-    },
+    "req":["DEX",300],
     "S-ATK":880,
     "SAF":"Stigma",
     "abilities":null,
@@ -1796,10 +1439,7 @@
     "name_en":"Sharp Cycler-NT",
     "name_global": "Sharp Cycler",
     "rarity": 11,
-    "req":{
-      "stat": "DEX",
-      "value":400
-    },
+    "req":["DEX",400],
     "S-ATK":887,
     "SAF":"Ability III",
     "abilities":null,
@@ -1813,10 +1453,7 @@
     "name_global": null,
     "rarity": 12,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":440
-    },
+    "req":["DEX",440],
     "S-ATK":578,
     "abilities":null,
     "potential":["Dragon's Authority"],
@@ -1830,10 +1467,7 @@
     "name_global": null,
     "rarity": 12,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":700
-    },
+    "req":["S-ATK",700],
     "S-ATK":585,
     "abilities":null,
     "potential":["Obstinate Spirit","Celestial Cleave","Myriad Blessings"],
@@ -1846,10 +1480,7 @@
     "name_global": null,
     "rarity": 12,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":440
-    },
+    "req":["DEX",440],
     "S-ATK":585,
     "abilities":["Power III","Stamina III","Ability III","Soul Receptor"],
     "potential":["Dragon's Infuriation"],
@@ -1863,10 +1494,7 @@
     "name_global": "Sigma Zeredder",
     "rarity": 12,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":440
-    },
+    "req":["DEX",440],
     "S-ATK":867,
     "SAF":"Power IV",
     "abilities":null,
@@ -1881,10 +1509,7 @@
     "name_global": null,
     "rarity": 12,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":450
-    },
+    "req":["DEX",450],
     "S-ATK":585,
     "abilities":null,
     "potential":["Twinkling Chain"],
@@ -1897,10 +1522,7 @@
     "name_global": null,
     "rarity": 12,
     "old_type":true,
-    "req":{
-      "stat": "T-DEF",
-      "value":440
-    },
+    "req":["T-DEF",440],
     "S-ATK":604,
     "T-ATK":550,
     "abilities":["Ability III","Devouring Edge","Phantasmal Source"],
@@ -1914,10 +1536,7 @@
     "name_global": null,
     "rarity": 12,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":720
-    },
+    "req":["S-ATK",720],
     "S-ATK":611,
     "abilities":["Shock IV"],
     "potential":["Black Heart","Sure-Strike Assault"]
@@ -1929,10 +1548,7 @@
     "name_global": null,
     "rarity": 12,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":425
-    },
+    "req":["S-DEF",425],
     "S-ATK":615,
     "abilities":["Ability III"],
     "potential":["Armor Mastery"],
@@ -1945,10 +1561,7 @@
     "name_global": null,
     "rarity": 12,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":700
-    },
+    "req":["S-ATK",700],
     "S-ATK":621,
     "abilities":["Stamina IV"],
     "potential":["Vampiric Blade"]
@@ -1960,10 +1573,7 @@
     "name_global": null,
     "rarity": 12,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":450
-    },
+    "req":["DEX",450],
     "S-ATK":623,
     "abilities":["Ability III"],
     "potential":["Immediate Counter"]
@@ -1974,10 +1584,7 @@
     "name_en":"Nox Kvelle-NT",
     "name_global": null,
     "rarity": 12,
-    "req":{
-      "stat": "S-DEF",
-      "value":425
-    },
+    "req":["S-DEF",425],
     "S-ATK":1017,
     "SAF":"Power IV",
     "abilities":["Ability III"],
@@ -1990,10 +1597,7 @@
     "name_en":"Keen Cycler-NT",
     "name_global": null,
     "rarity": 12,
-    "req":{
-      "stat": "S-DEF",
-      "value":440
-    },
+    "req":["S-DEF",440],
     "S-ATK":1027,
     "SAF":"Power IV",
     "abilities":null,
@@ -2006,10 +1610,7 @@
     "name_en":"Coat Edge Ver2",
     "name_global": "Coated Edge v2",
     "rarity": 13,
-    "req":{
-      "stat": "DEX",
-      "value":400
-    },
+    "req":["DEX",400],
     "S-ATK":978,
     "T-ATK":880,
     "SAF":"Spirita Alpha",
@@ -2025,17 +1626,11 @@
     "name_global": null,
     "rarity": 13,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":725
-    },
+    "req":["S-ATK",725],
     "S-ATK":974,
     "abilities":["Ability III","Power III","Mutation I"],
     "potential":["Dancing Night Blossom"],
-    "element":{
-      "element":"Fire",
-      "value":30
-    }
+    "element":["Fire",30]
   },
   {
     "id":130,
@@ -2044,17 +1639,11 @@
     "name_global": null,
     "rarity": 13,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":460
-    },
+    "req":["S-DEF",460],
     "S-ATK":1002,
     "abilities":["Vinculum","Stamina III","Spirita III"],
     "potential":["Colossal Spirit"],
-    "element":{
-      "element":"Light",
-      "value":20
-    },
+    "element":["Light",20],
     "set":"Ideal Yard"
   },
   {
@@ -2064,10 +1653,7 @@
     "name_global": null,
     "rarity": 13,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":450
-    },
+    "req":["S-DEF",450],
     "S-ATK":1080,
     "abilities":null,
     "potential":["Negative Destroyer"]
@@ -2079,10 +1665,7 @@
     "name_global": null,
     "rarity": 13,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":730
-    },
+    "req":["S-ATK",730],
     "S-ATK":1083,
     "abilities":null,
     "potential":["Phantasmal Blessing","Phantasmal Source"]
@@ -2094,10 +1677,7 @@
     "name_global": null,
     "rarity": 13,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":735
-    },
+    "req":["S-ATK",735],
     "S-ATK":1086,
     "abilities":null,
     "potential":["Magic Pledge"]
@@ -2108,10 +1688,7 @@
     "name_en":"Sekka Tsubaki",
     "name_global": "Snow Camellia",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":730
-    },
+    "req":["S-ATK",730],
     "S-ATK":1127,
     "SAF":"Phrase Chase",
     "abilities":["Freeze V"],
@@ -2123,10 +1700,7 @@
     "name_en":"Ray Sword",
     "name_global": "Ray Sword",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":730
-    },
+    "req":["S-ATK",730],
     "S-ATK":1130,
     "SAF":"Astral Soul",
     "abilities":null,
@@ -2139,10 +1713,7 @@
     "name_en":"Huge Cutter",
     "name_global": null,
     "rarity": 13,
-    "req":{
-      "stat": "DEX",
-      "value":450
-    },
+    "req":["DEX",450],
     "S-ATK":1131,
     "SAF":"Another History",
     "abilities":null,
@@ -2156,10 +1727,7 @@
     "name_global": null,
     "rarity": 13,
     "old_type":true,
-    "req":{
-      "stat": "DEX",
-      "value":465
-    },
+    "req":["DEX",465],
     "S-ATK":1093,
     "T-ATK":750,
     "abilities":null,
@@ -2173,10 +1741,7 @@
     "name_global": null,
     "rarity": 13,
     "old_type":true,
-    "req":{
-      "stat": "S-DEF",
-      "value":450
-    },
+    "req":["S-DEF",450],
     "S-ATK":1097,
     "abilities":null,
     "potential":["Testament to Courage"]
@@ -2187,10 +1752,7 @@
     "name_en":"Kvelle Arion",
     "name_global": null,
     "rarity": 13,
-    "req":{
-      "stat": "DEX",
-      "value":430
-    },
+    "req":["DEX",430],
     "S-ATK":1140,
     "SAF":"Extreceptor",
     "abilities":null,
@@ -2204,10 +1766,7 @@
     "name_en":"Sword Revolucio",
     "name_global": "Sword Revolsio",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":730
-    },
+    "req":["S-ATK",730],
     "S-ATK":1143,
     "SAF":"Burn V",
     "abilities":null,
@@ -2219,10 +1778,7 @@
     "name_en":"Lightning Espada-NT",
     "name_global": "Lightning Espada",
     "rarity": 13,
-    "req":{
-      "stat": "DEX",
-      "value":450
-    },
+    "req":["DEX",450],
     "S-ATK":1143,
     "SAF":"Soul Receptor",
     "abilities":null,
@@ -2235,10 +1791,7 @@
     "name_en":"Space Tuna-NT",
     "name_global": null,
     "rarity": 13,
-    "req":{
-      "stat": "DEX",
-      "value":450
-    },
+    "req":["DEX",450],
     "S-ATK":1165,
     "SAF":"Soul Receptor",
     "abilities":null,
@@ -2252,10 +1805,7 @@
     "name_en":"Rose Saber-NT",
     "name_global": null,
     "rarity": 13,
-    "req":{
-      "stat": "DEX",
-      "value":450
-    },
+    "req":["DEX",450],
     "S-ATK":1166,
     "SAF":"Soul Receptor",
     "abilities":null,
@@ -2269,10 +1819,7 @@
     "name_en":"Ely-Sion-NT",
     "name_global": null,
     "rarity": 13,
-    "req":{
-      "stat": "DEX",
-      "value":450
-    },
+    "req":["DEX",450],
     "S-ATK":1167,
     "SAF":"Soul Receptor",
     "abilities":null,
@@ -2287,10 +1834,7 @@
     "name_global": null,
     "rarity": 13,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":730
-    },
+    "req":["S-ATK",730],
     "S-ATK":1137,
     "abilities":null,
     "potential":["Sure-Strike Stance"],
@@ -2302,10 +1846,7 @@
     "name_en":"D-A.I.S. Saber",
     "name_global": "D-AIS Saber",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":750
-    },
+    "req":["S-ATK",750],
     "S-ATK":1179,
     "SAF":"Spirita V",
     "abilities":null,
@@ -2318,10 +1859,7 @@
     "name_global": null,
     "rarity": 13,
     "old_type":true,
-    "req":{
-      "stat": "S-ATK",
-      "value":750
-    },
+    "req":["S-ATK",750],
     "S-ATK":1169,
     "abilities":["Darkness Soul","Power III","Vinculum","Spirita III","Mutation I"],
     "potential":["Darkness Release"],
@@ -2333,10 +1871,7 @@
     "name_en":"Union Sword",
     "name_global": "Union Sword",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":740
-    },
+    "req":["S-ATK",740],
     "S-ATK":1215,
     "SAF":"Astral Soul",
     "abilities":null,
@@ -2348,10 +1883,7 @@
     "name_en":"Fornis Diene",
     "name_global": "Fornis Diene",
     "rarity": 13,
-    "req":{
-      "stat": "DEX",
-      "value":460
-    },
+    "req":["DEX",460],
     "S-ATK":1217,
     "SAF":"Phrase Weak",
     "abilities":null,
@@ -2363,10 +1895,7 @@
     "name_en":"Welk Radome",
     "name_global": "Welk Redome",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":740
-    },
+    "req":["S-ATK",740],
     "S-ATK":1219,
     "SAF":"Vinculum",
     "abilities":["Ability III"],
@@ -2378,10 +1907,7 @@
     "name_en":"Raede Kvelle",
     "name_global": null,
     "rarity": 13,
-    "req":{
-      "stat": "DEX",
-      "value":435
-    },
+    "req":["DEX",435],
     "S-ATK":1220,
     "SAF":"Extreceptor",
     "abilities":null,
@@ -2395,10 +1921,7 @@
     "name_en":"Golem Bluffs",
     "name_global": "Golem Bluffs",
     "rarity": 13,
-    "req":{
-      "stat": "S-DEF",
-      "value":465
-    },
+    "req":["S-DEF",465],
     "S-ATK":1222,
     "SAF":"Omega Buster",
     "abilities":null,
@@ -2410,10 +1933,7 @@
     "name_en":"Seikaiser Sword",
     "name_global": "Siegkaiser Sword",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":465
-    },
+    "req":["S-ATK",465],
     "S-ATK":1222,
     "SAF":"Power VI",
     "abilities":null,
@@ -2425,10 +1945,7 @@
     "name_en":"Detonation Rage",
     "name_global": "Detonation Rage",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":750
-    },
+    "req":["S-ATK",750],
     "S-ATK":1225,
     "SAF":"Modulator",
     "abilities":null,
@@ -2441,10 +1958,7 @@
     "name_en":"Astra Separ",
     "name_global": "Astral Sepal",
     "rarity": 13,
-    "req":{
-      "stat": "S-DEF",
-      "value":470
-    },
+    "req":["S-DEF",470],
     "S-ATK":1228,
     "SAF":"Phrase Response",
     "abilities":null,
@@ -2456,10 +1970,7 @@
     "name_en":"Sword Dominacio",
     "name_global": null,
     "rarity": 13,
-    "req":{
-      "stat": "DEX",
-      "value":440
-    },
+    "req":["DEX",440],
     "S-ATK":1229,
     "SAF":"Factor Receptor",
     "abilities":null,
@@ -2471,10 +1982,7 @@
     "name_en":"Zeinesis Calibur",
     "name_global": "Zeinesis Calibur",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":755
-    },
+    "req":["S-ATK",755],
     "S-ATK":1232,
     "SAF":"Sentence Triple",
     "abilities":null,
@@ -2486,10 +1994,7 @@
     "name_en":"Qliphad Calibur",
     "name_global": "Clifard Calibur",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":755
-    },
+    "req":["S-ATK",755],
     "S-ATK":1232,
     "SAF":"Sentence Triple",
     "abilities":null,
@@ -2501,10 +2006,7 @@
     "name_en":"Altacray",
     "name_global": "Alta Clay",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":750
-    },
+    "req":["S-ATK",750],
     "S-ATK":1245,
     "SAF":"Spirita VI",
     "abilities":null,
@@ -2516,10 +2018,7 @@
     "name_en":"Golem Graphol",
     "name_global": "Golem Grafoil",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":660
-    },
+    "req":["S-ATK",660],
     "S-ATK":1250,
     "SAF":"Omega Buster",
     "abilities":null,
@@ -2532,10 +2031,7 @@
     "name_en":"Val Farder",
     "name_global": "Val Farder",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":700
-    },
+    "req":["S-ATK",700],
     "S-ATK":1256,
     "SAF":"S3:Flowing Exhilaration",
     "abilities":null,
@@ -2548,10 +2044,7 @@
     "name_en":"Acht Anzhi",
     "name_global": "Acht Ange",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":740
-    },
+    "req":["S-ATK",740],
     "S-ATK":1259,
     "SAF":"S2:Instant Reduction",
     "abilities":null,
@@ -2564,10 +2057,7 @@
     "name_en":"Evleda Hander",
     "name_global": "Ivlida Hander",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":720
-    },
+    "req":["S-ATK",720],
     "S-ATK":1250,
     "SAF":"Sentence Arma",
     "abilities":null,
@@ -2579,10 +2069,7 @@
     "name_en":"Cleasis Hander",
     "name_global": "Cleasis Hander",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":720
-    },
+    "req":["S-ATK",720],
     "S-ATK":1250,
     "SAF":"Sentence Arma",
     "abilities":null,
@@ -2594,10 +2081,7 @@
     "name_en":"Schvelle Hander",
     "name_global": "Schvelle Hander",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":720
-    },
+    "req":["S-ATK",720],
     "S-ATK":1250,
     "SAF":"Sentence Arma",
     "abilities":null,
@@ -2609,10 +2093,7 @@
     "name_en":"Basilis Panific",
     "name_global": "Basilisk Panifique",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":720
-    },
+    "req":["S-ATK",720],
     "S-ATK":1274,
     "SAF":"Phrase Decay",
     "abilities":null,
@@ -2624,10 +2105,7 @@
     "name_en":"Homura no Odachi",
     "name_global": "Homura no Ohdachi",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":700
-    },
+    "req":["S-ATK",700],
     "S-ATK":1280,
     "SAF":"Phrase Weak",
     "abilities":null,
@@ -2639,10 +2117,7 @@
     "name_en":"Gix Zangulum",
     "name_global": "Gix Zangulum",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":720
-    },
+    "req":["S-ATK",720],
     "S-ATK":1274,
     "SAF":"Sentence Power",
     "abilities":null,
@@ -2655,10 +2130,7 @@
     "name_en":"Jutus Lamina",
     "name_global": "Jutus Lamina",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":760
-    },
+    "req":["S-ATK",760],
     "S-ATK":1286,
     "SAF":"S2:Rupturing Intent",
     "abilities":null,
@@ -2671,10 +2143,7 @@
     "name_en":"Ceres Fouls",
     "name_global": "Ceres Fouls",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":720
-    },
+    "req":["S-ATK",720],
     "S-ATK":1289,
     "SAF":"Doom Break",
     "abilities":null,
@@ -2687,10 +2156,7 @@
     "name_en":"Momijihime-NT",
     "name_global": "Autumn Princess",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":730
-    },
+    "req":["S-ATK",730],
     "S-ATK":1329,
     "SAF":"Power V",
     "abilities":null,
@@ -2703,10 +2169,7 @@
     "name_en":"Invade Calibur-NT",
     "name_global": "Invade Calibur",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":730
-    },
+    "req":["S-ATK",730],
     "S-ATK":1332,
     "SAF":"Darkness Soul",
     "abilities":null,
@@ -2719,10 +2182,7 @@
     "name_en":"Nemesis Calibur-NT",
     "name_global": "Nemesis Calibur",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":770
-    },
+    "req":["S-ATK",770],
     "S-ATK":1335,
     "SAF":"All Resist III",
     "abilities":null,
@@ -2734,10 +2194,7 @@
     "name_en":"Slave Calibur-NT",
     "name_global": "Raven Calibur",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":770
-    },
+    "req":["S-ATK",770],
     "S-ATK":1341,
     "SAF":"Spirita VI",
     "abilities":null,
@@ -2749,10 +2206,7 @@
     "name_en":"Dia Zangulum",
     "name_global": "Dia Zangulum",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":770
-    },
+    "req":["S-ATK",770],
     "S-ATK":1344,
     "SAF":"S3:Furious Inspiration",
     "abilities":null,
@@ -2765,10 +2219,7 @@
     "name_en":"Grates Zangulum",
     "name_global": "Gratis Zangulum",
     "rarity": 13,
-    "req":{
-      "stat": "DEX",
-      "value":460
-    },
+    "req":["DEX",460],
     "S-ATK":1353,
     "SAF":"Lesser Stamina IV",
     "abilities":null,
@@ -2780,10 +2231,7 @@
     "name_en":"Profound Dimenxion",
     "name_global": "Profound Sword Dimexion",
     "rarity": 13,
-    "req":{
-      "stat": "S-ATK",
-      "value":700
-    },
+    "req":["S-ATK",700],
     "S-ATK":1386,
     "SAF":"Reverie Catalyst",
     "abilities":null,
@@ -2796,10 +2244,7 @@
     "name_en":"Shien no Odachi",
     "name_global": "Xien no Ohdachi",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":730
-    },
+    "req":["S-ATK",730],
     "S-ATK":1335,
     "SAF":"Phrase Weak",
     "abilities":null,
@@ -2812,10 +2257,7 @@
     "name_en":"Ceres Fouls Zara",
     "name_global": "Ceres Fouls-Zara",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":740
-    },
+    "req":["S-ATK",740],
     "S-ATK":1347,
     "SAF":"Doom Break II",
     "abilities":null,
@@ -2828,10 +2270,7 @@
     "name_en":"Guren no Odachi",
     "name_global": "Guren no Ohdachi",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":730
-    },
+    "req":["S-ATK",730],
     "S-ATK":1383,
     "SAF":"Phrase Weak",
     "abilities":null,
@@ -2843,10 +2282,7 @@
     "name_en":"Lumiere Lamina",
     "name_global": "Lumiere Lamina",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":760
-    },
+    "req":["S-ATK",760],
     "S-ATK":1420,
     "SAF":"S2:Rupturing Intent",
     "abilities":null,
@@ -2859,10 +2295,7 @@
     "name_en":"Aletheia Lamina",
     "name_global": null,
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":770
-    },
+    "req":["S-ATK",770],
     "S-ATK":1438,
     "SAF":"S3:Flowing Exhilaration",
     "abilities":null,
@@ -2875,10 +2308,7 @@
     "name_en":"Ares Sword-NT",
     "name_global": "Ares Sword",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":810
-    },
+    "req":["S-ATK",810],
     "S-ATK":1445,
     "SAF":"S1:Phantasmal Intent",
     "abilities":null,
@@ -2891,10 +2321,7 @@
     "name_en":"Atlas Farder",
     "name_global": "Atlas Farder",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":780
-    },
+    "req":["S-ATK",780],
     "S-ATK":1451,
     "SAF":"S4:Marvelous Aegis",
     "abilities":null,
@@ -2907,10 +2334,7 @@
     "name_en":"Awake Edge",
     "name_global": "Awake Edge",
     "rarity": 14,
-    "req":{
-      "stat": "S-DEF",
-      "value":575
-    },
+    "req":["S-DEF",575],
     "S-ATK":1458,
     "SAF":"S2:Powering Intent",
     "abilities":null,
@@ -2923,10 +2347,7 @@
     "name_en":"Elder Pain-NT",
     "name_global": null,
     "rarity": 14,
-    "req":{
-      "stat": "DEX",
-      "value":460
-    },
+    "req":["DEX",460],
     "S-ATK":1494,
     "SAF":"Soul Receptor",
     "abilities":null,
@@ -2940,10 +2361,7 @@
     "name_en":"Dainsleif Mirage",
     "name_global": "Dainsleif Mirage",
     "rarity": 14,
-    "req":{
-      "stat": "DEX",
-      "value":470
-    },
+    "req":["DEX",470],
     "S-ATK":1507,
     "T-ATK":852,
     "SAF":"Phrase Recovery",
@@ -2957,10 +2375,7 @@
     "name_en":"Dim Sword",
     "name_global": "Dim Sword",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":730
-    },
+    "req":["S-ATK",730],
     "S-ATK":1553,
     "SAF":"Power VI",
     "abilities":null,
@@ -2973,10 +2388,7 @@
     "name_en":"Demonia Saber",
     "name_global": "Demonia Saber",
     "rarity": 14,
-    "req":{
-      "stat": "DEX",
-      "value":480
-    },
+    "req":["DEX",480],
     "S-ATK":1564,
     "SAF":"Ability IV",
     "abilities":null,
@@ -2988,10 +2400,7 @@
     "name_en":"Celestial Dimenxion",
     "name_global": "Starquake Sword Dimexion",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":730
-    },
+    "req":["S-ATK",730],
     "S-ATK":1570,
     "SAF":"Reverie Catalyst",
     "abilities":null,
@@ -3004,10 +2413,7 @@
     "name_en":"Blood Glion",
     "name_global": "Starquake Sword Dimexion",
     "rarity": 14,
-    "req":{
-      "stat": "DEX",
-      "value":470
-    },
+    "req":["DEX",470],
     "S-ATK":1574,
     "SAF":"S1:Immediate Intent",
     "abilities":null,
@@ -3022,10 +2428,7 @@
     "name_en":"Phobos Espadio",
     "name_global": "Starquake Sword Dimexion",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":810
-    },
+    "req":["S-ATK",810],
     "S-ATK":1577,
     "SAF":"Sentence Power",
     "abilities":null,
@@ -3038,10 +2441,7 @@
     "name_en":"Strages",
     "name_global": "Stragies",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":770
-    },
+    "req":["S-ATK",770],
     "S-ATK":1579,
     "SAF":"S3:Furious Inspiration",
     "abilities":null,
@@ -3054,10 +2454,7 @@
     "name_en":"Akatsuki",
     "name_global": "Akatsuki",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":800
-    },
+    "req":["S-ATK",800],
     "S-ATK":1590,
     "SAF":"Ability IV",
     "abilities":null,
@@ -3069,10 +2466,7 @@
     "name_en":"Sakuou-NT",
     "name_global": "Blossom of the New Moon",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":810
-    },
+    "req":["S-ATK",810],
     "S-ATK":1592,
     "SAF":"Power VI",
     "abilities":["Ability IV"],
@@ -3085,10 +2479,7 @@
     "name_en":"Aculd Diene",
     "name_global": "Occuld Diene",
     "rarity": 14,
-    "req":{
-      "stat": "DEX",
-      "value":460
-    },
+    "req":["DEX",460],
     "S-ATK":1610,
     "SAF":"Phrase Weak",
     "abilities":null,
@@ -3102,10 +2493,7 @@
     "name_en":"Silent Tree",
     "name_global": "Silent Tree",
     "rarity": 14,
-    "req":{
-      "stat": "DEX",
-      "value":450
-    },
+    "req":["DEX",450],
     "S-ATK":1628,
     "SAF":"S1:Collaborator Liberator",
     "abilities":null,
@@ -3119,10 +2507,7 @@
     "name_en":"Elder Pain Omega",
     "name_global": "Elder Pain Omega",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":810
-    },
+    "req":["S-ATK",810],
     "S-ATK":1631,
     "SAF":"Ability IV",
     "abilities":null,
@@ -3134,10 +2519,7 @@
     "name_en":"Nike Espadio",
     "name_global": "Nike Espadio",
     "rarity": 14,
-    "req":{
-      "stat": "S-ATK",
-      "value":820
-    },
+    "req":["S-ATK",820],
     "S-ATK":1659,
     "SAF":"Phrase Response",
     "abilities":null,
@@ -3150,10 +2532,7 @@
     "name_en":"Dyne Hespera",
     "name_global": "Dyne Hespelaro",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":860
-    },
+    "req":["S-ATK",860],
     "S-ATK":1662,
     "SAF":"Power VI",
     "abilities":null,
@@ -3166,10 +2545,7 @@
     "name_en":"Oblisana Wuft",
     "name_global": "Oblisana Wucht",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":860
-    },
+    "req":["S-ATK",860],
     "S-ATK":1664,
     "SAF":"Spirita VI",
     "abilities":null,
@@ -3182,10 +2558,7 @@
     "name_en":"Austere Calibur-NT",
     "name_global": "Ophistia Calibur",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":850
-    },
+    "req":["S-ATK",850],
     "S-ATK":1706,
     "SAF":"Power VI",
     "abilities":null,
@@ -3198,10 +2571,7 @@
     "name_en":"Sword Inclusio",
     "name_global": null,
     "rarity": 15,
-    "req":{
-      "stat": "DEX",
-      "value":500
-    },
+    "req":["DEX",500],
     "S-ATK":1772,
     "SAF":"Doom Break III",
     "abilities":null,
@@ -3215,10 +2585,7 @@
     "name_en":"Atlas Farder Ex",
     "name_global": "Atlas Farder EX",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":850
-    },
+    "req":["S-ATK",850],
     "S-ATK":1786,
     "SAF":"S4:Marvelous Aegis",
     "abilities":null,
@@ -3231,10 +2598,7 @@
     "name_en":"Novel Sword",
     "name_global": "Novel Sword",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":850
-    },
+    "req":["S-ATK",850],
     "S-ATK":1792,
     "SAF":"Sentence Triple",
     "abilities":null,
@@ -3247,10 +2611,7 @@
     "name_en":"Gen Puras",
     "name_global": "Jen Puras",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":900
-    },
+    "req":["S-ATK",900],
     "S-ATK":1836,
     "SAF":"Power VI",
     "abilities":null,
@@ -3263,10 +2624,7 @@
     "name_en":"Nebulos Panific",
     "name_global": null,
     "rarity": 15,
-    "req":{
-      "stat": "DEX",
-      "value":500
-    },
+    "req":["DEX",500],
     "S-ATK":1842,
     "SAF":"ARKS MAX",
     "abilities":null,
@@ -3280,10 +2638,7 @@
     "name_en":"Lightstream Dimenxion",
     "name_global": "Trailblazer Sword Dimexion",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":900
-    },
+    "req":["S-ATK",900],
     "S-ATK":1848,
     "SAF":"S1:Strike Boost",
     "abilities":null,
@@ -3296,10 +2651,7 @@
     "name_en":"Million Brand",
     "name_global": "Millionaire Brand",
     "rarity": 15,
-    "req":{
-      "stat": "DEX",
-      "value":555
-    },
+    "req":["DEX",555],
     "S-ATK":1861,
     "SAF":"Ability V",
     "abilities":null,
@@ -3312,10 +2664,7 @@
     "name_en":"Krisa Brand",
     "name_global": "Croesus Brand",
     "rarity": 15,
-    "req":{
-      "stat": "DEX",
-      "value":300
-    },
+    "req":["DEX",300],
     "S-ATK":1870,
     "SAF":"Ability V",
     "abilities":null,
@@ -3328,10 +2677,7 @@
     "name_en":"Dainsleif Nova",
     "name_global": "Dainsleif Nova",
     "rarity": 15,
-    "req":{
-      "stat": "DEX",
-      "value":500
-    },
+    "req":["DEX",500],
     "S-ATK":1870,
     "T-ATK":963,
     "SAF":"S3:Radiating Grace",
@@ -3345,10 +2691,7 @@
     "name_en":"Folgore Weben",
     "name_global": "Fol Golweven",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":880
-    },
+    "req":["S-ATK",880],
     "S-ATK":1876,
     "SAF":"S2:Instant Reduction",
     "abilities":null,
@@ -3361,10 +2704,7 @@
     "name_en":"Chaval Eubelle",
     "name_global": "Shaval Ueber",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":900
-    },
+    "req":["S-ATK",900],
     "S-ATK":1883,
     "SAF":"Persona Reverie",
     "abilities":null,
@@ -3377,10 +2717,7 @@
     "name_en":"Bonds Hachette",
     "name_global": "Bonds Ashett",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":900
-    },
+    "req":["S-ATK",900],
     "S-ATK":1925,
     "SAF":"Varuna Glare",
     "abilities":null,
@@ -3393,10 +2730,7 @@
     "name_en":"Liberate Sword",
     "name_global": "Rivalate Sword",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":900
-    },
+    "req":["S-ATK",900],
     "S-ATK":2012,
     "SAF":"S5:Release Parry",
     "abilities":null,
@@ -3409,10 +2743,7 @@
     "name_en":"Gen Stil",
     "name_global": "Jen Steel",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":920
-    },
+    "req":["S-ATK",920],
     "S-ATK":2104,
     "SAF":"Power VI",
     "abilities":null,
@@ -3425,10 +2756,7 @@
     "name_en":"Sealed J-Sword",
     "name_global": "Sealed Nodachi",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":920
-    },
+    "req":["S-ATK",920],
     "S-ATK":2115,
     "SAF":"Ability V",
     "abilities":null,
@@ -3441,10 +2769,7 @@
     "name_en":"Darkbanisher Ayer Edge",
     "name_global": "Darkweave Agile Edge",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":930
-    },
+    "req":["S-ATK",930],
     "S-ATK":2121,
     "SAF":"S4:Marvelous Aegis",
     "abilities":null,
@@ -3457,10 +2782,7 @@
     "name_en":"Adel Linea",
     "name_global": "Adell Lienea",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":930
-    },
+    "req":["S-ATK",930],
     "S-ATK":2126,
     "SAF":"Guidance Trainer",
     "abilities":null,
@@ -3473,10 +2795,7 @@
     "name_en":"Fluxio Verla",
     "name_global": "Fluxio Vella",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":940
-    },
+    "req":["S-ATK",940],
     "S-ATK":2174,
     "SAF":"Ether Factor",
     "abilities":null,
@@ -3489,10 +2808,7 @@
     "name_en":"Rinza Verla",
     "name_global": "Rinser Vella",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":940
-    },
+    "req":["S-ATK",940],
     "S-ATK":2174,
     "SAF":"Ether Factor",
     "abilities":null,
@@ -3505,10 +2821,7 @@
     "name_en":"Lightweaver Cras Edge",
     "name_global": "Lightweave Klauz Edge",
     "rarity": 15,
-    "req":{
-      "stat": "S-ATK",
-      "value":950
-    },
+    "req":["S-ATK",950],
     "S-ATK":2243,
     "SAF":"S5:Release Parry",
     "abilities":null,
