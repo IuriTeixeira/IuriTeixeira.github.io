@@ -69,7 +69,21 @@ export default function TableComponent({ theadData, tbodyData }) {
                                         if (row[key]) {
                                             let maxSATK = 0;
                                             if (row['old_type']) {
-                                                maxSATK = row[key] * 1.5
+                                                switch(row['Rarity']){
+                                                    case 1:
+                                                    case 2:
+                                                    case 3: maxSATK = row[key] * 1.5; break;
+                                                    case 4: 
+                                                    case 5: 
+                                                    case 6: maxSATK = row[key] * 1.6; break;
+                                                    case 7: 
+                                                    case 8: 
+                                                    case 9: maxSATK = row[key] * 1.75; break;
+                                                    case 10: maxSATK = row[key] * 1.9; break;
+                                                    case 11: maxSATK = row[key] * 1.95; break;
+                                                    case 12: maxSATK = row[key] * 2; break;
+                                                    case 13: maxSATK = row[key] * 1.4; break;
+                                                }
                                             } else {
                                                 maxSATK = row[key] * 1.35
                                             };
@@ -80,7 +94,21 @@ export default function TableComponent({ theadData, tbodyData }) {
                                     case 'R-ATK': if (row[key]) {
                                         let maxRATK = 0;
                                         if (row['old_type']) {
-                                            maxRATK = row[key] * 1.4
+                                            switch(row['Rarity']){
+                                                case 1:
+                                                case 2:
+                                                case 3: maxRATK = row[key] * 1.5; break;
+                                                case 4: 
+                                                case 5: 
+                                                case 6: maxRATK = row[key] * 1.6; break;
+                                                case 7: 
+                                                case 8: 
+                                                case 9: maxRATK = row[key] * 1.75; break;
+                                                case 10: maxRATK = row[key] * 1.9
+                                                case 11: maxRATK = row[key] * 1.95
+                                                case 12: maxRATK = row[key] * 2
+                                                case 13: maxRATK = row[key] * 1.4
+                                            }
                                         } else {
                                             maxRATK = row[key] * 1.35
                                         };
@@ -91,7 +119,21 @@ export default function TableComponent({ theadData, tbodyData }) {
                                     case 'T-ATK': if (row[key]) {
                                         let maxTATK = 0;
                                         if (row['old_type']) {
-                                            maxTATK = row[key] * 1.4
+                                            switch(row['Rarity']){
+                                                case 1:
+                                                case 2:
+                                                case 3: maxTATK = row[key] * 1.5; break;
+                                                case 4: 
+                                                case 5: 
+                                                case 6: maxTATK = row[key] * 1.6; break
+                                                case 7: 
+                                                case 8: 
+                                                case 9: maxTATK = row[key] * 1.75; break
+                                                case 10: maxTATK = row[key] * 1.9
+                                                case 11: maxTATK = row[key] * 1.95
+                                                case 12: maxTATK = row[key] * 2
+                                                case 13: maxTATK = row[key] * 1.4
+                                            }
                                         } else {
                                             maxTATK = row[key] * 1.35
                                         };
