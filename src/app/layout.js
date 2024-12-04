@@ -1,29 +1,31 @@
-import localFont from "next/font/local";
 import "./globals.css";
 import LanguageProvider from "./language-provider";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import '@mantine/core/styles.css';
+import { createTheme, ColorSchemeScript, MantineProvider } from '@mantine/core';
 
 export const metadata = {
-  title: "PSO2 Character Simulator",
-  description: "",
+    title: "PSO2 Character Simulator",
+    description: "",
 };
 
+const theme = createTheme({
+    fontFamily: 'Open Sans, sans-serif',
+    primaryColor: 'cyan',
+})
+
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <LanguageProvider>{children}</LanguageProvider>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en" suppressHydrationWarning>
+            <head>
+                <ColorSchemeScript />
+            </head>
+            <body>
+                <MantineProvider theme={theme} defaultColorScheme="dark">
+                    <LanguageProvider>
+                        {children}
+                    </LanguageProvider>
+                </MantineProvider>
+            </body>
+        </html>
+    );
 }
