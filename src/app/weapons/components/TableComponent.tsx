@@ -1,37 +1,39 @@
 'use client'
 
 import Image from "next/image";
-import React, { useContext } from 'react';
-import { LanguageContext } from '@/app/language-provider';
+import React from 'react';
+import { useLanguageContext } from "../../language-provider";
 import { Table } from '@mantine/core';
 
 export default function TableComponent({ theadData, tbodyData }) {
-    const [language, setLanguage] = useContext(LanguageContext);
+    const {language/*, setLanguage*/} = useLanguageContext()
 
-    const calculateMaxAtk = (baseATK, rarity, old_type) => {
+    function calculateMaxAtk(baseATK:number, rarity:number, old_type:boolean):number{
+        let maxATK:number = 0;
         if (old_type) {
             switch (rarity) {
                 case 1:
                 case 2:
-                case 3: return baseATK * 1.5;
+                case 3: maxATK = baseATK * 1.5; break;
                 case 4:
                 case 5:
-                case 6: return baseATK * 1.6;
+                case 6: maxATK = baseATK * 1.6; break;
                 case 7:
                 case 8:
-                case 9: return baseATK * 1.75;
-                case 10: return baseATK * 1.9;
-                case 11: return baseATK * 1.95;
-                case 12: return baseATK * 2;
-                case 13: return baseATK * 1.4;
+                case 9: maxATK = baseATK * 1.75; break;
+                case 10: maxATK = baseATK * 1.9; break;
+                case 11: maxATK = baseATK * 1.95; break;
+                case 12: maxATK = baseATK * 2; break;
+                case 13: maxATK = baseATK * 1.4; break;
             }
         } else {
-            return baseATK * 1.35
+            maxATK = baseATK * 1.35
         }
+        return maxATK
     }
 
-    const displaySSA = (array) => {
-        let buffer = []
+    function displaySSA(array:Element):Element{
+        let buffer: Element[] = []
         for(let i=0; i<array.length; i++){
             buffer.push(<Image src={`/icons/UIItemSClassAbility${array[i]}.png`} alt={`SSA slot ${i} enabled`} width={16} height={16}/>)
         }
@@ -44,13 +46,13 @@ export default function TableComponent({ theadData, tbodyData }) {
                 <Table.Tr>
                     {theadData.map(heading => {
                         if (heading != 'old_type') {
-                            if (language == 'e') {
+                            if (language == 'en') {
                                 if (heading != 'name_global') {
                                     switch (heading) {
                                         case 'name_en': return <Table.Th key={heading}>Name</Table.Th>;
-                                        case 'S-ATK': return <Table.Th key={heading} colSpan='2'><Image src="/icons/UIStatS-ATK.png" alt="S-ATK" width={16} height={16} /></Table.Th>
-                                        case 'R-ATK': return <Table.Th key={heading} colSpan='2'><Image src="/icons/UIStatR-ATK.png" alt="R-ATK" width={16} height={16} /></Table.Th>
-                                        case 'T-ATK': return <Table.Th key={heading} colSpan='2'><Image src="/icons/UIStatT-ATK.png" alt="T-ATK" width={16} height={16} /></Table.Th>
+                                        case 'S-ATK': return <React.Fragment><Table.Th key={heading}><Image src="/icons/UIStatS-ATK.png" alt="S-ATK" width={16} height={16} /></Table.Th><Table.Th key={heading+' (Max)'}><Image src="/icons/UIStatS-ATK.png" alt="S-ATK" width={16} height={16} /> (Max)</Table.Th></React.Fragment>
+                                        case 'R-ATK': return <React.Fragment><Table.Th key={heading}><Image src="/icons/UIStatR-ATK.png" alt="R-ATK" width={16} height={16} /></Table.Th><Table.Th key={heading+' (Max)'}><Image src="/icons/UIStatR-ATK.png" alt="R-ATK" width={16} height={16} /> (Max)</Table.Th></React.Fragment>
+                                        case 'T-ATK': return <React.Fragment><Table.Th key={heading}><Image src="/icons/UIStatT-ATK.png" alt="T-ATK" width={16} height={16} /></Table.Th><Table.Th key={heading+' (Max)'}><Image src="/icons/UIStatT-ATK.png" alt="T-ATK" width={16} height={16} /> (Max)</Table.Th></React.Fragment>
                                         case 'SAF': return <Table.Th key={heading}><Image src="/icons/SpecialAbilityIcon.png" alt="Special Ability Factor" width={16} height={16} /></Table.Th>
                                         case 'Abilities': return <Table.Th key={heading}><Image src="/icons/Ability.png" alt="Default Abilities" width={16} height={16} /></Table.Th>
                                         case 'Potential': return <Table.Th key={heading}><Image src="/icons/Potential.png" alt="Potential" width={16} height={16} /></Table.Th>
