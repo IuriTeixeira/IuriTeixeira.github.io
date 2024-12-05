@@ -1,0 +1,17 @@
+[
+    {
+        "Name (JP)": "ワイヤードランス",
+        "name_en": "Wired Lance",
+        "name_global": null,
+        "Rarity": 1,
+        "old_type":true,
+        "Requirement":["S-ATK",1],
+        "S-ATK":81,
+        "R-ATK":null,
+        "T-ATK":null,
+        "SAF":null,
+        "Abilities":null,
+        "Potential":null,
+        "SSA Slots":null
+    }
+]

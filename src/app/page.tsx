@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+//import styles from "./page.module.css";
 import Link from "next/link";
 import React from "react";
 
@@ -9,7 +9,11 @@ export default function Home() {
         <div>
             <Link href="/weapons">Weapons page</Link>
         </div>
-        <div className={styles.page}>
+    </>
+  );
+}
+
+/*<div className={styles.page}>
             <main className={styles.main}>
             <Image
                 className={styles.logo}
@@ -96,7 +100,4 @@ export default function Home() {
                 Go to nextjs.org →
             </a>
             </footer>
-        </div>
-    </>
-  );
-}
+        </div>*/
