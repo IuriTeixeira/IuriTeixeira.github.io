@@ -406,7 +406,7 @@
     },
     {
         "Name (JP)": "トラディシオン／ナハト",
-        "name_en":"Tradicion ／ Nacht",
+        "name_en":"Tradicion / Nacht",
         "name_global": null,
         "Rarity": 7,
         "old_type":true,
@@ -904,7 +904,6 @@
         "Abilities":["Power III","Mutation I"],
         "Potential":["Negative Hunter"],
         "Element":["Light",30],
-        "Element": null,
         "Classes":["All"],
         "SSA Slots":null
     },
@@ -921,7 +920,6 @@
         "Abilities":["Power III","Ability III","Stamina II","Lucky Rise I"],
         "Potential":["Adverse Vanity"],
         "Element":["Wind",30],
-        "Element": null,
         "Classes":["All"],
         "SSA Slots":null
     },
@@ -1076,7 +1074,7 @@
     },
     {
         "Name (JP)": "ギアフレイド",
-        "name_en":"Gearfried",
+        "name_en":"Gearfreid",
         "name_global": null,
         "Rarity": 10,
         "old_type":true,
@@ -1239,7 +1237,7 @@
     },
     {
         "Name (JP)": "ルインレーヴェ",
-        "name_en":"Ruin Love",
+        "name_en":"Ruin Lowe",
         "name_global": null,
         "Rarity": 10,
         "old_type":true,
@@ -2140,7 +2138,6 @@
         "Abilities":["Ability III","Power III","Mutation I"],
         "Potential":["Dancing Night Blossom"],
         "Element":["Fire",30],
-        "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":null
     },
@@ -2157,7 +2154,6 @@
         "Abilities":["Vinculum","Stamina III","Spirita III"],
         "Potential":["Colossal Spirit"],
         "Element":["Light",20],
-        "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":null,
         "set":"Ideal Yard"
@@ -2491,7 +2487,7 @@
     },
     {
         "Name (JP)": "レーテクヴェル",
-        "name_en":"Raede Kvelle",
+        "name_en":"Raete Kvelle",
         "name_global": null,
         "Rarity": 13,
         "Requirement":["DEX",435],

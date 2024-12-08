@@ -8,10 +8,11 @@ import { useState } from "react";
 
 export default function Weapons() {
     const [weaponData, setWeaponData]:any = useState(swords)
+    const [weaponType, setWeaponType]:any = useState("swords")
     return (
         <>
-            <HeaderComponent weaponData={weaponData} setWeaponData={setWeaponData}/>
-            <TableComponent data={weaponData}/>
+            <HeaderComponent setWeaponData={setWeaponData} setWeaponType={setWeaponType}/>
+            <TableComponent data={weaponData} type={weaponType}/>
         </>
     )
 }

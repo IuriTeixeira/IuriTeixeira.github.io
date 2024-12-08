@@ -4,11 +4,11 @@ import { Button, Group } from '@mantine/core';
 import swords from '../weapon-data/swords.json'
 import wiredlances from '../weapon-data/wiredlances.json'
 
-export default function WeaponHeaderComponent({ weaponData: any, setWeaponData }) {
+export default function WeaponHeaderComponent({ setWeaponData, setWeaponType }) {
     return (
         <Group justify="center" mt="sm">
-            <Button onClick={() => { setWeaponData(swords) }}><Image src="/icons/SwordSmall.png" alt="Sword" width={16} height={16} /> Sword</Button>
-            <Button onClick={() => { setWeaponData(wiredlances) }}><Image src="/icons/WiredLanceSmall.png" alt="Wired Lances" width={16} height={16} /> Wired Lance</Button>
+            <Button onClick={() => { setWeaponData(swords); setWeaponType("swords")}}><Image src="/icons/SwordSmall.png" alt="Sword" width={16} height={16} /> Sword</Button>
+            <Button onClick={() => { setWeaponData(wiredlances); setWeaponType('wiredlances') }}><Image src="/icons/WiredLanceSmall.png" alt="Wired Lances" width={16} height={16} /> Wired Lance</Button>
             <Button><Image src="/icons/PartizanSmall.png" alt="Partizan" width={16} height={16} /> Partizan</Button>
             <Button><Image src="/icons/DoubleSaberSmall.png" alt="Double Saber" width={16} height={16} /> Double Saber</Button>
             <Button><Image src="/icons/TwinDaggerSmall.png" alt="Twin Daggers" width={16} height={16} /> Twin Daggers</Button>
