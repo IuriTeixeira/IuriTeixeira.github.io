@@ -1,7 +1,7 @@
 [
     {
-        "Name (JP)": "リア／ソードバーゴストゥα",
-        "name_en": "Rear / Berwyn α",
+        "Name (JP)": "リア／ソードバーゴストゥa",
+        "name_en": "Rear / Berwyn a",
         "name_global": "Back / Verwyn A",
         "Rarity": 2,
         "Requirement":["S-DEF",34],
@@ -25,8 +25,8 @@
         "set":"Ber"
     },
     {
-        "Name (JP)": "リア／バーティウィアα",
-        "name_en": "Rear / Bertiwea α",
+        "Name (JP)": "リア／バーティウィアa",
+        "name_en": "Rear / Bertiwea a",
         "name_global": "Back / Vertiwyr A",
         "Rarity": 2,
         "Requirement":["S-DEF",137],
@@ -50,8 +50,8 @@
         "set":"Ber"
     },
     {
-        "Name (JP)": "リア／バーゴストゥα",
-        "name_en": "Rear / Bergost α",
+        "Name (JP)": "リア／バーゴストゥa",
+        "name_en": "Rear / Bergost a",
         "name_global": "Back / Vergostu A",
         "Rarity": 2,
         "Requirement":["S-DEF",239],
@@ -75,8 +75,8 @@
         "set":"Ber"
     },
     {
-        "Name (JP)": "リア／サーキュエンデα",
-        "name_en": "Rear / Circuende α",
+        "Name (JP)": "リア／サーキュエンデa",
+        "name_en": "Rear / Circuende a",
         "name_global": "Back / Circuende A",
         "Rarity": 2,
         "Requirement":["T-DEF",102],
@@ -100,8 +100,8 @@
         "set":"Circu"
     },
     {
-        "Name (JP)": "リア／ソードバーゴストゥβ",
-        "name_en": "Rear / Berwyn β",
+        "Name (JP)": "リア／ソードバーゴストゥb",
+        "name_en": "Rear / Berwyn b",
         "name_global": "Back / Verwyn B",
         "Rarity": 3,
         "Requirement":["S-DEF",85],
@@ -125,8 +125,8 @@
         "set":"Ber"
     },
     {
-        "Name (JP)": "リア／ソードバーゴストゥγ",
-        "name_en": "Rear / Berwyn γ",
+        "Name (JP)": "リア／ソードバーゴストゥc",
+        "name_en": "Rear / Berwyn c",
         "name_global": "Back / Verwyn C",
         "Rarity": 6,
         "Requirement":["S-DEF",450],

@@ -130,7 +130,7 @@ export default function WeaponTableComponent({ data, type }) {
     })
 
     return (
-        <Table striped stickyHeader withTableBorder withColumnBorders border={1}>
+        <Table striped stickyHeader withTableBorder withColumnBorders>
             <Table.Thead>
                 <Table.Tr>
                     <Table.Th className="centerCell">Icon</Table.Th>
@@ -167,9 +167,9 @@ export default function WeaponTableComponent({ data, type }) {
                     })}
                 </Table.Tr>
             </Table.Thead>
-            {<tbody>
+            {<Table.Tbody>
                 {tbodyData.map((row: any, index: any) => {
-                    return <tr key={index}>
+                    return <Table.Tr key={index}>
                         {row['Name (JP)'] && <Table.Td key={row.id + 1000} className="centerCell"><Image src={`/weapons/${type}/${row['name_en'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${row['name_en']}`} width={64} height={64} /></Table.Td>}
                         {theadData.map((key: string, index: any) => {
                             let buffer: any[] = [];
@@ -243,9 +243,9 @@ export default function WeaponTableComponent({ data, type }) {
                                 }
                             }
                         })}
-                    </tr>;
+                    </Table.Tr>;
                 })}
-            </tbody>}
+            </Table.Tbody>}
         </Table>
     );
 }
