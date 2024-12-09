@@ -1582,7 +1582,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":8
+        "Dark Resistance":9
     },
     {
         "Name (JP)": "サブ／フレイムリヴォルト",
@@ -1726,7 +1726,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":8
+        "Dark Resistance":12
     },
     {
         "Name (JP)": "サブ／ステラウォール",

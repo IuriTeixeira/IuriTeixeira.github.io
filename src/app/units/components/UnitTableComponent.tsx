@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from 'react';
 import { useLanguageContext } from "../../language-provider";
-import { Table } from '@mantine/core';
+import { Container, Group, SimpleGrid, Table } from '@mantine/core';
+import setEffects from "../../sets/sets.json"
 import './UnitTableComponent.css';
 import '@mantine/core/styles/Table.layer.css';
 
@@ -19,7 +20,7 @@ export default function UnitTableComponent({ data, type }) {
 
     function displayStat(key: string, value: number): any[] {
         let buffer: any[] = []
-        buffer.push(<Image src={`/icons/UIStat${key}.png`} alt={key} width={16} height={16} />, ' ', value,)
+        buffer.push(<Image src={`/icons/${key}.png`} alt={key} width={16} height={16} />, ' ', value,)
         return buffer
     }
 
@@ -29,19 +30,60 @@ export default function UnitTableComponent({ data, type }) {
         return buffer
     }
 
+    function displaySet(array: any[]): any[] {
+        let bufferHeader: any[] = [<Image src="/icons/Set1.png" alt="Ability" width={63} height={18} />, <br />, array[0], ' pieces required', <br />]
+        let set = setEffects.find(set => set.Name === array[1])
+        let bufferEffect: any[] = []
+        if (set) {
+            set.Effect.forEach((value: any, index: number) => {
+                if (index % 2 === 0) bufferEffect.push(<Image src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} width={16} height={16} />);
+                else {
+                    bufferEffect.push(set.Effect[index]);
+                    if (set.Effect[index + 1]) {
+                        bufferEffect.push(<br />);
+                    }
+                }
+            })
+            bufferEffect.push(<br />)
+        }
+        let bufferMembers: any[] = []
+        if (array) {
+            for (let i = 2; i < array.length; i++) {
+                if (i % 2 === 0) {
+                    bufferMembers.push(<Image src={`/icons/${array[i]}.png`} alt={array[i]} width={16} height={16} />);
+                } else {
+                    bufferMembers.push(array[i - 1], " / ", array[i])
+                    if (array[i + 1]) {
+                        bufferMembers.push(<br />)
+                    }
+                }
+            }
+        }
+        let containers: any = 
+            <SimpleGrid cols={2}>
+                <div>Effect:</div>
+                <div>Set Pieces:</div>
+                <div>{bufferEffect}</div>
+                <div>{bufferMembers}</div>
+            </SimpleGrid>
+        let bufferReturn: any = <React.Fragment>{bufferHeader}<br />{containers}</React.Fragment>
+        return bufferReturn;
+    }
+
     tbodyData.map((item: any, id: number) => {
         Object.assign(item, { id })
     })
 
     return (
-        <Table striped stickyHeader withTableBorder withColumnBorders>
+        <Table striped stickyHeader withColumnBorders>
             <Table.Thead>
-                <Table.Tr>
-                    {<Table.Th className="centerCell">Icon</Table.Th>}
+                <Table.Tr key={-1000}>
+                    {<Table.Th key={0} className="centerCell">Icon</Table.Th>}
                     {theadData.map((heading, index) => {
                         if (language === 'en') {
                             if (heading !== 'name_global') {
                                 switch (heading) {
+                                    case 'Name (JP)': return
                                     case 'name_en': return <Table.Th key={index - 25} className="centerCell">Name</Table.Th>;
                                     case 'S-DEF': return <React.Fragment><Table.Th key={index - 25} className="centerCell">DEF</Table.Th><Table.Th key='S-DEF (Max)' className="centerCell">DEF<br />(Max)</Table.Th></React.Fragment>
                                     case 'R-DEF': return
@@ -68,10 +110,6 @@ export default function UnitTableComponent({ data, type }) {
                             if(heading && heading !== 'name_en' && heading !== 'name_jp'){
                                 switch(heading){
                                     case 'name_global': return <Table.Th key={heading}>Name</Table.Th>;
-                                    case 'S-DEF': return <Table.Th key={heading} colSpan='2'><Image src="/icons/UIStatSDEF.png" alt="MEL" width={16} height={16} /></Table.Th>
-                                    case 'R-DEF': return <Table.Th key={heading} colSpan='2'><Image src="/icons/UIStatRDEF.png" alt="RNG" width={16} height={16} /></Table.Th>
-                                    case 'T-DEF': return <Table.Th key={heading} colSpan='2'><Image src="/icons/UIStatTDEF.png" alt="TEC" width={16} height={16} /></Table.Th>
-                                    default: return <Table.Th key={heading}>{heading}</Table.Th>
                                 }
                             }
                         }*/
@@ -91,21 +129,21 @@ export default function UnitTableComponent({ data, type }) {
                             if (row['Name (JP)']) {
                                 switch (key) {
                                     case 'Name (JP)':
-                                        return <Table.Td key={((row['id'] + 1) * 30) + index}>{row[key]}</Table.Td>
+                                        return <Table.Td key={((row['id'] + 1) * 30) + index}>{row['name_en']}<br />{row['Name (JP)']}</Table.Td>
                                     case 'name_en':
-                                        return <Table.Td key={((row['id'] + 1) * 30) + index}>{row[key]}</Table.Td>
+                                        return
                                     case 'name_global':
                                         return
                                     case 'Rarity':
                                         return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell"><Image src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} width={16} height={16} /></Table.Td>
                                     case 'Requirement':
-                                        return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell"><Image src={`/icons/UIStat${row[key][0]}.png`} alt={row[key][0]} width={16} height={16} /> {row[key][1]}</Table.Td>
+                                        return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell"><Image src={`/icons/${row[key][0]}.png`} alt={row[key][0]} width={16} height={16} /> {row[key][1]}</Table.Td>
                                     case 'S-DEF':
                                     case 'R-DEF':
                                     case 'T-DEF':
                                         if (row['S-DEF']) {
-                                            bufferDEF.push(<br />, displayStat('S-DEF', row['S-DEF']));
-                                            bufferDEFMax.push(<br />, displayStat('S-DEF', calculateMaxDef(row['S-DEF'])));
+                                            bufferDEF.push(displayStat('S-DEF', row['S-DEF']));
+                                            bufferDEFMax.push(displayStat('S-DEF', calculateMaxDef(row['S-DEF'])));
                                         }
                                         if (row['R-DEF']) {
                                             if (bufferDEF[0]) bufferDEF.push(<br />, displayStat('R-DEF', row['R-DEF']));
@@ -120,14 +158,14 @@ export default function UnitTableComponent({ data, type }) {
                                             else bufferDEFMax.push(displayStat('T-DEF', calculateMaxDef(row['T-DEF'])));
                                         }
                                         if (index === 5) {
-                                            if (bufferDEF[0]) return <React.Fragment><Table.Td key={((row['id'] + 1) * 30) + index}>{bufferDEF}</Table.Td><Table.Td key={((row['id'] + 1) * 30) + index+1}>{bufferDEFMax}</Table.Td></React.Fragment>
+                                            if (bufferDEF[0]) return <React.Fragment><Table.Td key={((row['id'] + 1) * 30) + index}>{bufferDEF}</Table.Td><Table.Td key={((row['id'] + 1) * 30) + index + 1}>{bufferDEFMax}</Table.Td></React.Fragment>
                                             else return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">-</Table.Td>
                                         }
                                     case 'S-ATK':
                                     case 'R-ATK':
                                     case 'T-ATK':
                                         if (row['S-ATK']) {
-                                            bufferATK.push(<br />, displayStat('S-ATK', row['S-ATK']));
+                                            bufferATK.push(displayStat('S-ATK', row['S-ATK']));
                                         }
                                         if (row['R-ATK']) {
                                             if (bufferATK[0]) bufferATK.push(<br />, displayStat('R-ATK', row['R-ATK']));
@@ -191,6 +229,8 @@ export default function UnitTableComponent({ data, type }) {
                                             else return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">-</Table.Td>
                                         }
                                         else return
+                                    case 'set':
+                                        return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">{displaySet(row[key])}</Table.Td>
                                     case 'Default Sub Icon':
                                         return
                                     case 'id':

@@ -1,0 +1,6 @@
+[
+    {
+        "Name": "Ber",
+        "Effect": ["DEX", 20, "Fire Resistance", 10, "Wind Resistance", 10]
+    }
+]

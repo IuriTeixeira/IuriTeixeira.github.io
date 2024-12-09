@@ -1019,6 +1019,7 @@
         "SAF":null,
         "Abilities":null,
         "Potential":["Vampiric Blade"],
+        "Classes": ["Hu", "Hr"],
         "set": "Eld"
     },
     {
@@ -1101,6 +1102,7 @@
         "T-ATK":null,
         "Abilities":["Burn IV"],
         "Potential":["Dragon Hunter"],
+        "Classes":["Hu","Hr"],
         "set":"Burn"
     },
     {
@@ -2237,6 +2239,7 @@
         "SAF":"Astral Soul",
         "Abilities":null,
         "Potential":["Heavenly Blessing"],
+        "Classes":["Hu","Hr"],
         "set":"Circa Ray"
     },
     {
@@ -2658,6 +2661,7 @@
         "SAF":"S3:Flowing Exhilaration",
         "Abilities":null,
         "Potential":["Millenium Blaze"],
+        "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
         },
     {
@@ -2672,6 +2676,7 @@
         "SAF":"S2:Instant Reduction",
         "Abilities":null,
         "Potential":["Hawkeyed Phoenix"],
+        "Classes":["Hu","Hr"],
         "SSA Slots":[2,3]
         },
     {
