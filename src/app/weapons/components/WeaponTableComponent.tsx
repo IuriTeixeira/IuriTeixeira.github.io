@@ -6,12 +6,10 @@ import './WeaponTableComponent.css';
 import '@mantine/core/styles/Table.layer.css';
 
 export default function WeaponTableComponent({ data, type }) {
-    console.log(type)
     const { language/*, setLanguage*/ } = useLanguageContext()
     const getHeadings: any = () => {
         return Object.keys(data[0]);
     }
-    //theadData, tbodyData
     let theadData: any = getHeadings();
     let tbodyData: any = data;
 
@@ -73,7 +71,7 @@ export default function WeaponTableComponent({ data, type }) {
         return buffer;
     }
 
-    function displayElement(array: [string,number]): any[] {
+    function displayElement(array: [string, number]): any[] {
         let buffer: any[] = []
         if (!isNaN(array[1])) {
             buffer.push(<Image src={`/icons/UI${array[0]}Icon.png`} alt="Element" width={16} height={16} />, ' ', array[1])
@@ -81,10 +79,18 @@ export default function WeaponTableComponent({ data, type }) {
         return buffer;
     }
 
-    function displayPA(array: string[], key: string): any[] {
+    function displayPA(array: string[]): any[] {
         let buffer: any[] = []
         if (array) {
             buffer.push(<Image src={`/icons/Photon_Art.png`} alt="Enables Photon Art" width={16} height={16} />, ' ', array)
+        }
+        return buffer;
+    }
+
+    function displaySet(array: any[]): any {
+        let buffer: any[] = []
+        if (array) {
+            buffer.push(<Image src={`/icons/UIUnitRearIcon.png`} alt="Set Effect" width={16} height={16} />, ' ', array)
         }
         return buffer;
     }
@@ -119,8 +125,8 @@ export default function WeaponTableComponent({ data, type }) {
     }
 
 
-    tbodyData.map((item:any,id:number) => {
-        Object.assign(item,{id})
+    tbodyData.map((item: any, id: number) => {
+        Object.assign(item, { id })
     })
 
     return (
@@ -133,21 +139,21 @@ export default function WeaponTableComponent({ data, type }) {
                             if (language === 'en') {
                                 if (heading !== 'name_global') {
                                     switch (heading) {
-                                        case 'name_en': return <Table.Th key={index} className="centerCell">Name</Table.Th>;
-                                        case 'S-ATK': return <React.Fragment><Table.Th key={index} className="centerCell"><Image src="/icons/UIStatS-ATK.png" alt="S-ATK" width={16} height={16} /></Table.Th><Table.Th key='S-ATK (Max)' className="centerCell"><Image src="/icons/UIStatS-ATK.png" alt="S-ATK" width={16} height={16} /><br />(Max)</Table.Th></React.Fragment>
-                                        case 'R-ATK': return <React.Fragment><Table.Th key={index} className="centerCell"><Image src="/icons/UIStatR-ATK.png" alt="R-ATK" width={16} height={16} /></Table.Th><Table.Th key='R-ATK (Max)' className="centerCell"><Image src="/icons/UIStatR-ATK.png" alt="R-ATK" width={16} height={16} /><br />(Max)</Table.Th></React.Fragment>
-                                        case 'T-ATK': return <React.Fragment><Table.Th key={index} className="centerCell"><Image src="/icons/UIStatT-ATK.png" alt="T-ATK" width={16} height={16} /></Table.Th><Table.Th key='T-ATK (Max)' className="centerCell"><Image src="/icons/UIStatT-ATK.png" alt="T-ATK" width={16} height={16} /><br />(Max)</Table.Th></React.Fragment>
-                                        case 'SAF': return <Table.Th key={index} className="centerCell"><Image src="/icons/SpecialAbilityIcon.png" alt="Special Ability Factor" width={16} height={16} /> SAF</Table.Th>
-                                        case 'Abilities': return <Table.Th key={index} className="centerCell">Default Properties</Table.Th>
+                                        case 'name_en': return <Table.Th key={index-16} className="centerCell">Name</Table.Th>;
+                                        case 'S-ATK': return <React.Fragment><Table.Th key={index-16} className="centerCell"><Image src="/icons/UIStatS-ATK.png" alt="S-ATK" width={16} height={16} /></Table.Th><Table.Th key='S-ATK (Max)' className="centerCell"><Image src="/icons/UIStatS-ATK.png" alt="S-ATK" width={16} height={16} /><br />(Max)</Table.Th></React.Fragment>
+                                        case 'R-ATK': return <React.Fragment><Table.Th key={index-16} className="centerCell"><Image src="/icons/UIStatR-ATK.png" alt="R-ATK" width={16} height={16} /></Table.Th><Table.Th key='R-ATK (Max)' className="centerCell"><Image src="/icons/UIStatR-ATK.png" alt="R-ATK" width={16} height={16} /><br />(Max)</Table.Th></React.Fragment>
+                                        case 'T-ATK': return <React.Fragment><Table.Th key={index-16} className="centerCell"><Image src="/icons/UIStatT-ATK.png" alt="T-ATK" width={16} height={16} /></Table.Th><Table.Th key='T-ATK (Max)' className="centerCell"><Image src="/icons/UIStatT-ATK.png" alt="T-ATK" width={16} height={16} /><br />(Max)</Table.Th></React.Fragment>
+                                        case 'SAF': return <Table.Th key={index-16} className="centerCell"><Image src="/icons/SpecialAbilityIcon.png" alt="Special Ability Factor" width={16} height={16} /> SAF</Table.Th>
+                                        case 'Abilities': return <Table.Th key={index-16} className="centerCell">Default Properties</Table.Th>
                                         case 'Element': return;
                                         case 'id': return;
-                                        case 'Potential': return <Table.Th key={index} className="centerCell"><Image src="/icons/Potential.png" alt="Potential" width={16} height={16} /> Potential</Table.Th>
-                                        case 'SSA Slots': return <Table.Th key={index} className="centerCell"><Image src="/icons/SClassAbilityIcon.png" alt="SSA Slots" width={16} height={16} /> SSA Slots</Table.Th>
-                                        default: return <Table.Th key={index} className="centerCell">{heading}</Table.Th>
+                                        case 'Potential': return <Table.Th key={index-16} className="centerCell"><Image src="/icons/Potential.png" alt="Potential" width={16} height={16} /> Potential</Table.Th>
+                                        case 'SSA Slots': return <Table.Th key={index-16} className="centerCell"><Image src="/icons/SClassAbilityIcon.png" alt="SSA Slots" width={16} height={16} /> SSA Slots</Table.Th>
+                                        default: return <Table.Th key={index-16} className="centerCell">{heading}</Table.Th>
                                     }
                                 }
                             }/*else{
-                            if(heading !== null && heading !== 'name_en' && heading !== 'name_jp'){
+                            if(heading && heading !== 'name_en' && heading !== 'name_jp'){
                                 switch(heading){
                                     case 'name_global': return <Table.Th key={heading}>Name</Table.Th>;
                                     case 'S-ATK': return <Table.Th key={heading} colSpan='2'><Image src="/icons/UIStatSATK.png" alt="MEL" width={16} height={16} /></Table.Th>
@@ -164,65 +170,76 @@ export default function WeaponTableComponent({ data, type }) {
             {<tbody>
                 {tbodyData.map((row: any, index: any) => {
                     return <tr key={index}>
-                        {row['Name (JP)'] && <Table.Td key={row.id+1000} className="centerCell"><Image src={`/weapons/${type}/${row['name_en'].replace('\'','').replace(/ /g, '').replace('/','').replace('-NT','')}.png`} alt={`Icon of ${row['name_en']}`} width={64} height={64} /></Table.Td>}
+                        {row['Name (JP)'] && <Table.Td key={row.id + 1000} className="centerCell"><Image src={`/weapons/${type}/${row['name_en'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${row['name_en']}`} width={64} height={64} /></Table.Td>}
                         {theadData.map((key: string, index: any) => {
                             let buffer: any[] = [];
-                            if (row['Name (JP)'] !== null && key !== 'name_global' && key !== 'old_type' && key !== 'id') {
+                            if (row['Name (JP)'] && key !== 'name_global' && key !== 'old_type' && key !== 'id') {
                                 let indexProperties = -1;
                                 switch (key) {
+                                    case 'Name (JP)':
+                                        return <Table.Td key={((row['id'] + 1) * 24) + index}>{row[key]}</Table.Td>
+                                    case 'name_en':
+                                        return <Table.Td key={((row['id'] + 1) * 24) + index}>{row[key]}</Table.Td>
                                     case 'Rarity':
-                                        return <Table.Td key={((row['id']+1)*16)+index} className="centerCell"><Image src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} width={16} height={16} /></Table.Td>
+                                        return <Table.Td key={((row['id'] + 1) * 24) + index} className="centerCell"><Image src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} width={16} height={16} /></Table.Td>
                                     case 'Requirement':
-                                        return <Table.Td key={((row['id']+1)*16)+index}><Image src={`/icons/UIStat${row[key][0]}.png`} alt="S-ATK" width={16} height={16} /> {row[key][1]}</Table.Td>
+                                        return <Table.Td key={((row['id'] + 1) * 24) + index} className="centerCell"><Image src={`/icons/UIStat${row[key][0]}.png`} alt={row[key][0]} width={16} height={16} /> {row[key][1]}</Table.Td>
                                     case 'S-ATK':
                                     case 'R-ATK':
                                     case 'T-ATK':
                                         if (row[key]) {
-                                            return <React.Fragment><Table.Td key={((row['id']+1)*16)+index} className="rightCell">{row[key]}</Table.Td><Table.Td key={index + 500} className="rightCell">{Math.trunc(calculateMaxAtk(row[key], row['Rarity'], row['old_type']))}</Table.Td></React.Fragment>
+                                            return <React.Fragment><Table.Td key={((row['id'] + 1) * 16) + index} className="centerCell">{row[key]}</Table.Td><Table.Td key={index + 500} className="centerCell">{Math.trunc(calculateMaxAtk(row[key], row['Rarity'], row['old_type']))}</Table.Td></React.Fragment>
                                         } else {
-                                            return <React.Fragment><Table.Td key={((row['id']+1)*16)+index} className="centerCell">-</Table.Td><Table.Td className="centerCell">-</Table.Td></React.Fragment>
+                                            return <React.Fragment><Table.Td key={((row['id'] + 1) * 16) + index} className="centerCell">-</Table.Td><Table.Td className="centerCell">-</Table.Td></React.Fragment>
                                         }
                                     case 'Potential':
                                         if (row[key]) {
-                                            return <Table.Td key={((row['id']+1)*16)+index}>{displayPotentials(row[key])}</Table.Td>
+                                            return <Table.Td key={((row['id'] + 1) * 16) + index}>{displayPotentials(row[key])}</Table.Td>
                                         } else {
-                                            return <Table.Td key={((row['id']+1)*16)+index} className="centerCell">-</Table.Td>
+                                            return <Table.Td key={((row['id'] + 1) * 16) + index} className="centerCell">-</Table.Td>
                                         }
                                     case 'Abilities':
                                         indexProperties = index;
                                     case 'Element':
                                     case 'PA_enabled':
+                                    case 'set':
                                         if (row['Abilities']) {
                                             buffer.push(displayAbilities(row['Abilities']))
                                         }
                                         if (row['Element']) {
-                                            if (row['Abilities'] !== null) buffer.push(<br />, displayElement(row['Element']))
+                                            if (buffer[0]) buffer.push(<br />, displayElement(row['Element']))
                                             else buffer.push(displayElement(row['Element']))
                                         }
                                         if (row['PA_enabled']) {
-                                            if (row['Abilities'] || row['Element']) buffer.push(<br />, displayPA(row['PA_enabled'], key))
-                                            else buffer.push(displayPA(row[key], key))
+                                            if (buffer[0]) buffer.push(<br />, displayPA(row['PA_enabled']))
+                                            else buffer.push(displayPA(row[key]))
                                         }
-                                        if(index===indexProperties){
-                                            if (buffer[0]) return <Table.Td key={((row['id']+1)*16)+index}>{buffer}</Table.Td>
-                                            else return <Table.Td key={((row['id']+1)*16)+index} className="centerCell">-</Table.Td>
-                                        }else{
+                                        if (row['set']) {
+                                            if (buffer[0]) buffer.push(<br />, displaySet(row['set']))
+                                            else buffer.push(displaySet(row[key]))
+                                        }
+                                        if (index === indexProperties) {
+                                            if (buffer[0]) return <Table.Td key={((row['id'] + 1) * 16) + index}>{buffer}</Table.Td>
+                                            else return <Table.Td key={((row['id'] + 1) * 16) + index} className="centerCell">-</Table.Td>
+                                        } else {
                                             return;
                                         }
                                     case 'SAF':
                                         if (row['old_type']) {
-                                            return <Table.Td key={((row['id']+1)*16)+index} className="centerCell">-</Table.Td>
+                                            return <Table.Td key={((row['id'] + 1) * 16) + index} className="centerCell">-</Table.Td>
                                         } else {
-                                            return <Table.Td key={((row['id']+1)*16)+index}><Image src="/icons/SpecialAbilityIcon.png" alt="Ability" width={16} height={16} /> {row[key]}</Table.Td>
+                                            return <Table.Td key={((row['id'] + 1) * 16) + index}><Image src="/icons/SpecialAbilityIcon.png" alt="Ability" width={16} height={16} /> {row[key]}</Table.Td>
                                         }
                                     case 'SSA Slots':
                                         if (row[key]) {
-                                            return <Table.Td key={((row['id']+1)*16)+index}>{displaySSA(row[key])}</Table.Td>
+                                            return <Table.Td key={((row['id'] + 1) * 16) + index}>{displaySSA(row[key])}</Table.Td>
                                         } else {
-                                            return <Table.Td key={((row['id']+1)*16)+index} className="centerCell">-</Table.Td>
+                                            return <Table.Td key={((row['id'] + 1) * 16) + index} className="centerCell">-</Table.Td>
                                         }
-                                    case 'Classes': return <Table.Td key={((row['id']+1)*16)+index}>{displayClasses(row[key])}</Table.Td>
-                                    default: return <Table.Td key={((row['id']+1)*16)+index}>{row[key]}</Table.Td>
+                                    case 'Classes': return <Table.Td key={((row['id'] + 1) * 16) + index}>{displayClasses(row[key])}</Table.Td>
+                                    default:
+                                        if (row[key]) return <Table.Td key={((row['id'] + 1) * 16) + index} className="centerCell">{row[key]}</Table.Td>
+                                        else return <Table.Td key={((row['id'] + 1) * 16) + index} className="centerCell">-</Table.Td>
                                 }
                             }
                         })}
