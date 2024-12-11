@@ -62,7 +62,7 @@ export default function UnitTableComponent({ data, type }) {
             let name: string = name_en.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('Rear / ', '').replace('Arm / ', '').replace('Leg / ', '')
             if (set.Pieces[i + 1] === name) bufferMembers.push(<strong>{set.Pieces[i + 1]}</strong>)
             else bufferMembers.push(set.Pieces[i + 1])
-            members.push(<div>{bufferMembers}</div>)
+            members.push(<span>{bufferMembers}</span>)
         }
 
         let bufferMembers: any[] = []
