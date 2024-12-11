@@ -10,8 +10,8 @@ export default function WeaponHeaderComponent({ setWeaponData, setWeaponType }) 
             <Button onClick={() => { setWeaponData(swords); setWeaponType("swords")}}><Image src="/icons/SwordSmall.png" alt="Sword" width={16} height={16} /> Sword</Button>
             <Button onClick={() => { setWeaponData(wiredlances); setWeaponType('wiredlances') }}><Image src="/icons/WiredLanceSmall.png" alt="Wired Lances" width={16} height={16} /> Wired Lance</Button>
             <Button><Image src="/icons/PartizanSmall.png" alt="Partizan" width={16} height={16} /> Partizan</Button>
-            <Button><Image src="/icons/DoubleSaberSmall.png" alt="Double Saber" width={16} height={16} /> Double Saber</Button>
             <Button><Image src="/icons/TwinDaggerSmall.png" alt="Twin Daggers" width={16} height={16} /> Twin Daggers</Button>
+            <Button><Image src="/icons/DoubleSaberSmall.png" alt="Double Saber" width={16} height={16} /> Double Saber</Button>
             <Button><Image src="/icons/KnucklesSmall.png" alt="Knuckles" width={16} height={16} /> Knuckles</Button>
             <Button><Image src="/icons/KatanaSmall.png" alt="Katana" width={16} height={16} /> Katana</Button>
             <Button><Image src="/icons/DualBladeSmall.png" alt="Dual Blades" width={16} height={16} /> Dual Blades</Button>

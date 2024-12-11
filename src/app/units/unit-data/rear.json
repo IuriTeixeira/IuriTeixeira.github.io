@@ -22,7 +22,7 @@
         "Wind Resistance":4,
         "Light Resistance":null,
         "Dark Resistance":null,
-        "set":[3,"Ber","Rear","Berwyn","Rear","Bergost","Rear","Bertiwea","Arm","Berchesta","Arm","Bergoilan","Arm","Bertigal","Leg","Bersize","Leg","Bertiray","Leg","Berglide"]
+        "Set":"Ber"
     },
     {
         "Name (JP)": "リア／バーティウィアa",
@@ -47,7 +47,7 @@
         "Wind Resistance":4,
         "Light Resistance":null,
         "Dark Resistance":null,
-        "set":"Ber"
+        "Set":"Ber"
     },
     {
         "Name (JP)": "リア／バーゴストゥa",
@@ -72,7 +72,7 @@
         "Wind Resistance":4,
         "Light Resistance":null,
         "Dark Resistance":null,
-        "set":"Ber"
+        "Set":"Ber"
     },
     {
         "Name (JP)": "リア／ライザックa",
@@ -97,7 +97,7 @@
         "Wind Resistance":null,
         "Light Resistance":null,
         "Dark Resistance":4,
-        "set":"Zac"
+        "Set":"Zac"
     },
     {
         "Name (JP)": "リア／ラジルザックa",
@@ -122,7 +122,7 @@
         "Wind Resistance":null,
         "Light Resistance":null,
         "Dark Resistance":4,
-        "set":"Zac"
+        "Set":"Zac"
     },
     {
         "Name (JP)": "リア／ラズリアザックa",
@@ -147,7 +147,7 @@
         "Wind Resistance":null,
         "Light Resistance":null,
         "Dark Resistance":4,
-        "set":"Zac"
+        "Set":"Zac"
     },
     {
         "Name (JP)": "リア／サーキュエンデa",
@@ -172,7 +172,7 @@
         "Wind Resistance":null,
         "Light Resistance":null,
         "Dark Resistance":null,
-        "set":"Circu"
+        "Set":"Circu"
     },
     {
         "Name (JP)": "リア／ソードバーゴストゥb",
@@ -197,7 +197,7 @@
         "Wind Resistance":4,
         "Light Resistance":null,
         "Dark Resistance":null,
-        "set":"Ber"
+        "Set":"Ber"
     },
     {
         "Name (JP)": "リア／ソードバーゴストゥc",
@@ -222,6 +222,6 @@
         "Wind Resistance":6,
         "Light Resistance":null,
         "Dark Resistance":null,
-        "set":"Ber"
+        "Set":"Ber"
     }
 ]

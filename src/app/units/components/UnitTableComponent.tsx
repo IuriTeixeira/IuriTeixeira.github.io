@@ -30,43 +30,54 @@ export default function UnitTableComponent({ data, type }) {
         return buffer
     }
 
-    function displaySet(array: any[]): any[] {
-        let bufferHeader: any[] = [<Image src="/icons/Set1.png" alt="Ability" width={63} height={18} />, <br />, array[0], ' pieces required', <br />]
-        let set = setEffects.find(set => set.Name === array[1])
-        let bufferEffect: any[] = []
-        if (set) {
-            set.Effect.forEach((value: any, index: number) => {
-                if (index % 2 === 0) bufferEffect.push(<Image src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} width={16} height={16} />);
-                else {
-                    bufferEffect.push(set.Effect[index]);
-                    if (set.Effect[index + 1]) {
-                        bufferEffect.push(<br />);
-                    }
+    function displaySetEffect(set: any, doubleEffect: boolean): any {
+        let effect: any[] = []
+        set.Effect.forEach((value: any, index: number) => {
+            if (index % 2 === 0) {
+                if (set.Effect[index] === 'HP' || set.Effect[index] === 'PP') effect.push(<strong>{set.Effect[index]}</strong>);
+                else effect.push(<Image src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} width={16} height={16} />);
+            }
+            else {
+                if (doubleEffect) effect.push(' ', set.Effect[index] * 2);
+                else effect.push(' ', set.Effect[index]);
+                if (set.Effect[index + 1]) {
+                    effect.push(<br />);
                 }
-            })
-            bufferEffect.push(<br />)
-        }
-        let bufferMembers: any[] = []
-        if (array) {
-            for (let i = 2; i < array.length; i++) {
-                if (i % 2 === 0) {
-                    bufferMembers.push(<Image src={`/icons/${array[i]}.png`} alt={array[i]} width={16} height={16} />);
-                } else {
-                    bufferMembers.push(array[i - 1], " / ", array[i])
-                    if (array[i + 1]) {
-                        bufferMembers.push(<br />)
-                    }
+            }
+        })
+        return effect
+    }
+
+    function displaySetMembers(set: any): any {
+        let members: any[] = []
+        for (let i = 0; i < set.Pieces.length; i++) {
+            if (i % 2 === 0) {
+                members.push(<Image src={`/icons/${set.Pieces[i].replace(' ','')}.png`} alt={set.Pieces[i]} width={16} height={16} />);
+            } else {
+                //TODO: popover to display a/b/c on the unit names to explain any of them works
+                if(set.Pieces[i-1] == 'Rear' || set.Pieces[i-1] == 'Arm' || set.Pieces[i-1] == 'Leg') members.push(' ', set.Pieces[i - 1], " / ", set.Pieces[i])
+                else members.push(' ', set.Pieces[i])
+                if (set.Pieces[i + 1]) {
+                    members.push(<br />)
                 }
             }
         }
-        let containers: any = 
-            <SimpleGrid cols={2}>
-                <div>Effect:</div>
-                <div>Set Pieces:</div>
-                <div>{bufferEffect}</div>
-                <div>{bufferMembers}</div>
-            </SimpleGrid>
-        let bufferReturn: any = <React.Fragment>{bufferHeader}<br />{containers}</React.Fragment>
+        return members
+    }
+
+    function displaySet(setName: string): any[] {
+        let set = setEffects.find(set => set.Name === setName)
+        let bufferReturn: any = []
+        let header: any[] = [<Image src={`/icons/Set1.png`} alt="Set 1" width={63} height={18} />, <br />, <strong>{`${set.Required} pieces required`}</strong>, <br />]
+        let setEffect = displaySetEffect(set,false)
+        bufferReturn.push(header, setEffect)
+        if (set.Doubles) {
+            header = [];
+            header.push(<br />, <Image src={`/icons/Set2.png`} alt="Set 2" width={63} height={18} />, <br />, set.Required + 1, ' pieces required');
+            setEffect = displaySetEffect(set, true);
+            bufferReturn.push(<br />, header, <br />, setEffect)
+        }
+        bufferReturn.push(<br />,<br/>, <strong>Set Pieces:</strong>, <br />, displaySetMembers(set))
         return bufferReturn;
     }
 
@@ -101,7 +112,7 @@ export default function UnitTableComponent({ data, type }) {
                                     case 'Light Resistance': return
                                     case 'Dark Resistance': return
                                     case 'id': return;
-                                    case 'set': return <Table.Th key={index - 25} className="centerCell">Set</Table.Th>
+                                    case 'Set': return <Table.Th key={index - 25} className="centerCell">Set</Table.Th>
                                     case 'Default Sub Icon': return
                                     default: return <Table.Th key={index - 25} className="centerCell">{heading}</Table.Th>
                                 }
@@ -126,6 +137,7 @@ export default function UnitTableComponent({ data, type }) {
                             let bufferDEFMax: any[] = [];
                             let bufferResistance: any[] = [];
                             let bufferATK: any[] = [];
+                            let bufferSet: any[] = [];
                             if (row['Name (JP)']) {
                                 switch (key) {
                                     case 'Name (JP)':
@@ -229,8 +241,9 @@ export default function UnitTableComponent({ data, type }) {
                                             else return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">-</Table.Td>
                                         }
                                         else return
-                                    case 'set':
-                                        return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">{displaySet(row[key])}</Table.Td>
+                                    case 'Set':
+                                        if (row[key]) return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">{displaySet(row['Set'])}</Table.Td>
+                                        else return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">-</Table.Td>
                                     case 'Default Sub Icon':
                                         return
                                     case 'id':

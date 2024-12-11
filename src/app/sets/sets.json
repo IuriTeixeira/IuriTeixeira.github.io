@@ -1,6 +1,3233 @@
 [
     {
         "Name": "Ber",
-        "Effect": ["DEX", 20, "Fire Resistance", 10, "Wind Resistance", 10]
+        "Required": 3,
+        "Effect": [
+            "DEX",
+            20,
+            "Fire Resistance",
+            10,
+            "Wind Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Berwyn",
+            "Rear",
+            "Bergost",
+            "Rear",
+            "Bertiwea",
+            "Arm",
+            "Berchesta",
+            "Arm",
+            "Bergoilan",
+            "Arm",
+            "Bertigal",
+            "Leg",
+            "Bersize",
+            "Leg",
+            "Bertiray",
+            "Leg",
+            "Berglide"
+        ]
+    },
+    {
+        "Name": "Cross",
+        "Required": 3,
+        "Effect": [
+            "DEX",
+            20,
+            "Ice Resistance",
+            10,
+            "Light Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Crossgainer",
+            "Rear",
+            "Crossdomain",
+            "Rear",
+            "Crossarian",
+            "Arm",
+            "Crossupper",
+            "Arm",
+            "Crossmain",
+            "Arm",
+            "Crossarmor",
+            "Leg",
+            "Crossblow",
+            "Leg",
+            "Crossremain",
+            "Leg",
+            "Crosserlen"
+        ]
+    },
+    {
+        "Name": "Zac",
+        "Required": 3,
+        "Effect": [
+            "DEX",
+            20,
+            "Lightning Resistance",
+            10,
+            "Dark Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Lyzac",
+            "Rear",
+            "Lazilzac",
+            "Rear",
+            "Lazuliazac",
+            "Arm",
+            "Lypouch",
+            "Arm",
+            "Ladiupouch",
+            "Arm",
+            "Lazuliapouch",
+            "Leg",
+            "Lystock",
+            "Leg",
+            "Lazilstock",
+            "Leg",
+            "Lazuliastock"
+        ]
+    },
+    {
+        "Name": "Br",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            20,
+            "S-ATK",
+            20,
+            "S-DEF",
+            30
+        ],
+        "Pieces": [
+            "Rear",
+            "Brostol",
+            "Rear",
+            "Brodang",
+            "Rear",
+            "Browile",
+            "Arm",
+            "Bristea",
+            "Arm",
+            "Brideinn",
+            "Arm",
+            "Brimoier",
+            "Leg",
+            "Breasn",
+            "Leg",
+            "Brazgalon",
+            "Leg",
+            "Brandydos"
+        ]
+    },
+    {
+        "Name": "Ti",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            30,
+            "R-ATK",
+            20,
+            "R-DEF",
+            30
+        ],
+        "Pieces": [
+            "Rear",
+            "Tiltwin",
+            "Rear",
+            "Tiraflove",
+            "Rear",
+            "Tireigear",
+            "Arm",
+            "Titastin",
+            "Arm",
+            "Titeldum",
+            "Arm",
+            "Titodigo",
+            "Leg",
+            "Destren",
+            "Leg",
+            "Distrol",
+            "Leg",
+            "Deurotolc"
+        ]
+    },
+    {
+        "Name": "Circu",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            30,
+            "T-ATK",
+            20,
+            "T-DEF",
+            30
+        ],
+        "Pieces": [
+            "Rear",
+            "Circuende",
+            "Rear",
+            "Circuedge",
+            "Rear",
+            "Circuhorn",
+            "Arm",
+            "Circluder",
+            "Arm",
+            "Circlidua",
+            "Arm",
+            "Circaledia",
+            "Leg",
+            "Cirglows",
+            "Leg",
+            "Circlion",
+            "Leg",
+            "Circlignos"
+        ]
+    },
+    {
+        "Name": "Dot",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            50,
+            "S-ATK",
+            20
+        ],
+        "Pieces": [
+            "Rear",
+            "Shouldot",
+            "Rear",
+            "Shouldicter",
+            "Rear",
+            "Shoulbacudol",
+            "Arm",
+            "Apdot",
+            "Arm",
+            "Apdicter",
+            "Arm",
+            "Apbacudol",
+            "Leg",
+            "Legadot",
+            "Leg",
+            "Legadicter",
+            "Leg",
+            "Legabacudol"
+        ]
+    },
+    {
+        "Name": "Psy",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            50,
+            "R-ATK",
+            20
+        ],
+        "Pieces": [
+            "Rear",
+            "Psymalice",
+            "Rear",
+            "Psyboard",
+            "Rear",
+            "Psytegral",
+            "Arm",
+            "Psymurm",
+            "Arm",
+            "Psybariam",
+            "Arm",
+            "Psytalgiram",
+            "Leg",
+            "Psymalg",
+            "Leg",
+            "Psyberile",
+            "Leg",
+            "Psytregner"
+        ]
+    },
+    {
+        "Name": "Flecu",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            40,
+            "R-ATK",
+            40,
+            "T-ATK",
+            40,
+            "DEX",
+            30,
+            "Fire Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Flecuov",
+            "Rear",
+            "Flecuixa",
+            "Rear",
+            "Flecuhate",
+            "Arm",
+            "Flecuray",
+            "Arm",
+            "Flecuete",
+            "Arm",
+            "Flecubeny",
+            "Leg",
+            "Flecuras",
+            "Leg",
+            "Flegrance",
+            "Leg",
+            "Fleciante"
+        ]
+    },
+    {
+        "Name": "Aije",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            40,
+            "R-ATK",
+            40,
+            "T-ATK",
+            40,
+            "DEX",
+            30,
+            "Ice Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Aijefie",
+            "Rear",
+            "Aijeixa",
+            "Rear",
+            "Aijehate",
+            "Arm",
+            "Aijoin",
+            "Arm",
+            "Aijigrey",
+            "Arm",
+            "Aijiwight",
+            "Leg",
+            "Aijurea",
+            "Leg",
+            "Aijukeen",
+            "Leg",
+            "Aijulaura"
+        ]
+    },
+    {
+        "Name": "Eleg",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            40,
+            "R-ATK",
+            40,
+            "T-ATK",
+            40,
+            "DEX",
+            30,
+            "Lightning Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Eleguile",
+            "Rear",
+            "Elegaixa",
+            "Rear",
+            "Elegahate",
+            "Arm",
+            "Elegister",
+            "Arm",
+            "Elegirack",
+            "Arm",
+            "Elegiwatt",
+            "Leg",
+            "Elegosk",
+            "Leg",
+            "Eledial",
+            "Leg",
+            "Elegalga"
+        ]
+    },
+    {
+        "Name": "Fan",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "S-ATK",
+            45
+        ],
+        "Pieces": [
+            "Sword",
+            "Aristin",
+            "Wired Lance",
+            "Hyperion",
+            "Partizan",
+            "Patty Lumeria",
+            "Dual Blade",
+            "Lextear",
+            "Gunslash",
+            "Twizzler",
+            "Jet Boots",
+            "Arestice",
+            "Rear",
+            "Fan Blair",
+            "Arm",
+            "Fan Blam",
+            "Leg",
+            "Fan Broi"
+        ]
+    },
+    {
+        "Name": "Fen",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "S-ATK",
+            22.5
+        ],
+        "Pieces": [
+            "Sword",
+            "Lambda Aristin",
+            "Wired Lance",
+            "Lambda Hyperion",
+            "Partizan",
+            "Lambda Patty Lumeria",
+            "Dual Blade",
+            "Lambda Lextear",
+            "Gunslash",
+            "Lambda Twizzler",
+            "Jet Boots",
+            "Lambda Arestice",
+            "Rear",
+            "Fen Ibiel",
+            "Arm",
+            "Fen Urion",
+            "Leg",
+            "Fen Aegis"
+        ]
+    },
+    {
+        "Name": "Fobi",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "S-ATK",
+            60
+        ],
+        "Pieces": [
+            "Sword",
+            "Dio Aristin",
+            "Wired Lance",
+            "Dio Hyperion",
+            "Partizan",
+            "Dio Patty Lumeria",
+            "Dual Blade",
+            "Dio Lextear",
+            "Gunslash",
+            "Dio Twizzler",
+            "Jet Boots",
+            "Dio Arestice",
+            "Rear",
+            "Fobi Riss",
+            "Arm",
+            "Fobi Rashiram",
+            "Leg",
+            "Fobi Resist"
+        ]
+    },
+    {
+        "Name": "Pink Minst",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            40,
+            "S-ATK",
+            20,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20,
+            "DEX",
+            60,
+            "Fire Resistance",
+            10,
+            "Wind Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Minst Rose",
+            "Arm",
+            "Minst Roch",
+            "Leg",
+            "Minst Mocha"
+        ]
+    },
+    {
+        "Name": "Blue Minst",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            40,
+            "S-ATK",
+            20,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20,
+            "DEX",
+            60,
+            "Ice Resistance",
+            10,
+            "Light Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Minst Blan",
+            "Arm",
+            "Minst Boole",
+            "Leg",
+            "Minst Rela"
+        ]
+    },
+    {
+        "Name": "Black Minst",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            40,
+            "S-ATK",
+            20,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20,
+            "DEX",
+            60,
+            "Lightning Resistance",
+            10,
+            "Dark Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Minst Fon",
+            "Arm",
+            "Minst Free",
+            "Leg",
+            "Minst Bal"
+        ]
+    },
+    {
+        "Name": "Gold Luxe",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            30,
+            "PP",
+            10,
+            "DEX",
+            20
+        ],
+        "Pieces": [
+            "Rear",
+            "Luxe Aile",
+            "Arm",
+            "Luxe Fin",
+            "Leg",
+            "Luxe Near"
+        ]
+    },
+    {
+        "Name": "Black Luxe",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            50,
+            "PP",
+            10,
+            "DEX",
+            40
+        ],
+        "Pieces": [
+            "Rear",
+            "Luxe Soir",
+            "Arm",
+            "Luxe Ende",
+            "Leg",
+            "Luxe Nero"
+        ]
+    },
+    {
+        "Name": "Blue Luxe",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            60,
+            "PP",
+            10,
+            "DEX",
+            60
+        ],
+        "Pieces": [
+            "Rear",
+            "Luxe Calm",
+            "Arm",
+            "Luxe Sully",
+            "Leg",
+            "Luxe Pal"
+        ]
+    },
+    {
+        "Name": "Amei Roses",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            4,
+            "S-ATK",
+            40,
+            "R-ATK",
+            40,
+            "T-ATK",
+            40
+        ],
+        "Pieces": [
+            "Partizan",
+            "Sly Roses",
+            "Rod",
+            "Silica Roses",
+            "Rear",
+            "Amei Xal",
+            "Rear",
+            "Amei Hula",
+            "Rear",
+            "Amei Haqua"
+        ]
+    },
+    {
+        "Name": "Negro",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            10,
+            "T-ATK",
+            90,
+            "Ice Resistance",
+            8,
+            "Dark Resistance",
+            8
+        ],
+        "Pieces": [
+            "Rear",
+            "Negro Ouida",
+            "Arm",
+            "Negro Rouble",
+            "Leg",
+            "Negro Witch"
+        ]
+    },
+    {
+        "Name": "Midia",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            10,
+            "T-ATK",
+            90,
+            "Ice Resistance",
+            8,
+            "Dark Resistance",
+            8
+        ],
+        "Pieces": [
+            "Rear",
+            "Midia Ouida",
+            "Arm",
+            "Midia Rouble",
+            "Leg",
+            "Midia Witch"
+        ]
+    },
+    {
+        "Name": "Hera",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            10,
+            "S-ATK",
+            60,
+            "T-ATK",
+            60,
+            "Wind Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Hera Sutra",
+            "Arm",
+            "Hera Thrust",
+            "Leg",
+            "Hera Grind"
+        ]
+    },
+    {
+        "Name": "Resan",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            10,
+            "S-ATK",
+            60,
+            "T-ATK",
+            60,
+            "Wind Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Resan Sutra",
+            "Arm",
+            "Resan Thrust",
+            "Leg",
+            "Resan Grind"
+        ]
+    },
+    {
+        "Name": "Calvaria",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            10,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60,
+            "Fire Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Calvaria Wing",
+            "Arm",
+            "Calvaria Toll",
+            "Leg",
+            "Calvaria Fin"
+        ]
+    },
+    {
+        "Name": "Calbun",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            10,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60,
+            "Fire Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Calbun Wing",
+            "Arm",
+            "Calbun Toll",
+            "Leg",
+            "Calbun Fin"
+        ]
+    },
+    {
+        "Name": "Bloom",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            10,
+            "S-ATK",
+            60,
+            "T-ATK",
+            60,
+            "Light Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Bloom Feather",
+            "Arm",
+            "Bloom Art",
+            "Leg",
+            "Bloom Helio"
+        ]
+    },
+    {
+        "Name": "Primula",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            10,
+            "S-ATK",
+            60,
+            "T-ATK",
+            60,
+            "Light Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Primula Feather",
+            "Arm",
+            "Primula Art",
+            "Leg",
+            "Primula Helio"
+        ]
+    },
+    {
+        "Name": "Vento",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            10,
+            "S-ATK",
+            40,
+            "R-ATK",
+            40,
+            "T-ATK",
+            40,
+            "Ice Resistance",
+            10
+        ],
+        "Pieces": [
+            "Arm",
+            "Vento Hexa",
+            "Leg",
+            "Vento Tetra"
+        ]
+    },
+    {
+        "Name": "Uranus",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            10,
+            "S-ATK",
+            40,
+            "R-ATK",
+            40,
+            "T-ATK",
+            40,
+            "Ice Resistance",
+            10
+        ],
+        "Pieces": [
+            "Arm",
+            "Uranus Hexa",
+            "Leg",
+            "Uranus Tetra"
+        ]
+    },
+    {
+        "Name": "Fegali",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            10,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60,
+            "Dark Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Fegali Cut",
+            "Leg",
+            "Fegali Piece"
+        ]
+    },
+    {
+        "Name": "Folly",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            10,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60,
+            "Dark Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Folly Cut",
+            "Leg",
+            "Folly Piece"
+        ]
+    },
+    {
+        "Name": "Blitz",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            10,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "Lightning Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Blitz Symbol",
+            "Arm",
+            "Blitz Sign"
+        ]
+    },
+    {
+        "Name": "Gloam",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            10,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "Lightning Resistance",
+            10
+        ],
+        "Pieces": [
+            "Rear",
+            "Gloam Symbol",
+            "Arm",
+            "Gloam Sign"
+        ]
+    },
+    {
+        "Name": "Chiffon",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            10,
+            "S-ATK",
+            40,
+            "R-ATK",
+            40,
+            "T-ATK",
+            40,
+            "Wind Resistance",
+            8,
+            "Light Resistance",
+            8
+        ],
+        "Pieces": [
+            "Rear",
+            "Chiffon Prapa",
+            "Arm",
+            "Chiffon Dore",
+            "Leg",
+            "Chiffon Korse"
+        ]
+    },
+    {
+        "Name": "Folia",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            10,
+            "S-ATK",
+            40,
+            "R-ATK",
+            40,
+            "T-ATK",
+            40,
+            "Wind Resistance",
+            8,
+            "Light Resistance",
+            8
+        ],
+        "Pieces": [
+            "Rear",
+            "Folia Prapa",
+            "Arm",
+            "Folia Dore",
+            "Leg",
+            "Folia Korse"
+        ]
+    },
+    {
+        "Name": "Tian",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            10,
+            "R-ATK",
+            90,
+            "Lightning Resistance",
+            8,
+            "Wind Resistance",
+            8
+        ],
+        "Pieces": [
+            "Rear",
+            "Tian Rin",
+            "Arm",
+            "Tian En"
+        ]
+    },
+    {
+        "Name": "Gwanman",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            10,
+            "R-ATK",
+            90,
+            "Lightning Resistance",
+            8,
+            "Wind Resistance",
+            8
+        ],
+        "Pieces": [
+            "Rear",
+            "Gwanman Rin",
+            "Arm",
+            "Gwanman En"
+        ]
+    },
+    {
+        "Name": "Heretic",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            5,
+            "S-ATK",
+            20,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20,
+            "Light Resistance",
+            5,
+            "Dark Resistance",
+            5
+        ],
+        "Pieces": [
+            "Wired Lance",
+            "Heretic End",
+            "Dual Blade",
+            "Heretic Pair",
+            "Twin Machinegun",
+            "Heretically",
+            "Talis",
+            "Heretic Saw",
+            "Rear",
+            "Zan Grease",
+            "Arm",
+            "Zan Fellow",
+            "Leg",
+            "Zan Thrust"
+        ]
+    },
+    {
+        "Name": "Heretic Jua",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            5,
+            "S-ATK",
+            20,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20,
+            "Light Resistance",
+            5,
+            "Dark Resistance",
+            5
+        ],
+        "Pieces": [
+            "Wired Lance",
+            "Heretic End",
+            "Dual Blade",
+            "Heretic Pair",
+            "Twin Machinegun",
+            "Heretically",
+            "Talis",
+            "Heretic Saw",
+            "Rear",
+            "Jua Grease",
+            "Arm",
+            "Jua Fellow",
+            "Leg",
+            "Jua Thrust"
+        ]
+    },
+    {
+        "Name": "Traitor",
+        "Required": 2,
+        "Effect": [
+            "HP",
+            10,
+            "S-ATK",
+            40,
+            "R-ATK",
+            40,
+            "T-ATK",
+            40
+        ],
+        "Pieces": [
+            "Sword",
+            "Traitor Linear",
+            "Sword",
+            "Traitor Glyph",
+            "Dual Blade",
+            "Kae Traitor",
+            "Launcher",
+            "Till Traitor",
+            "Launcher",
+            "Fran Traitor",
+            "Wand",
+            "Traitor Peak",
+            "Wand",
+            "Traitor Cage",
+            "Rear",
+            "Far Minion",
+            "Rear",
+            "Abyss Minion"
+        ]
+    },
+    {
+        "Name": "Hiei",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            10,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60
+        ],
+        "Pieces": [
+            "Rear",
+            "Hiei Houyoku",
+            "Arm",
+            "Hiei Sou",
+            "Leg",
+            "Hiei Shoku"
+        ]
+    },
+    {
+        "Name": "Saiki",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            25,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60,
+            "DEX",
+            80
+        ],
+        "Pieces": [
+            "Rear",
+            "Saiki Houyoku",
+            "Arm",
+            "Saiki Sou",
+            "Leg",
+            "Saiki Shoku"
+        ]
+    },
+    {
+        "Name": "Jagd",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            30,
+            "R-ATK",
+            30,
+            "T-ATK",
+            30
+        ],
+        "Pieces": [
+            "Twin Dagger",
+            "Nagel Banther",
+            "Twin Dagger",
+            "Nagel Ong",
+            "Rear",
+            "Jagd Fell",
+            "Arm",
+            "Jagd Klaue",
+            "Leg",
+            "Jagd Coda"
+        ]
+    },
+    {
+        "Name": "Schlacht",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            45,
+            "R-ATK",
+            45,
+            "T-ATK",
+            45
+        ],
+        "Pieces": [
+            "Twin Machinegun",
+            "Banshee's Roar",
+            "Rear",
+            "Schlacht Fell",
+            "Arm",
+            "Schlacht Klaue",
+            "Leg",
+            "Schlacht Coda"
+        ]
+    },
+    {
+        "Name": "Vol",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            30,
+            "R-ATK",
+            30,
+            "T-ATK",
+            30
+        ],
+        "Pieces": [
+            "Sword",
+            "Vol Scale",
+            "Twin Dagger",
+            "Fin Volg",
+            "Rear",
+            "Vol Wing",
+            "Arm",
+            "Vol Hands",
+            "Leg",
+            "Vol Tail"
+        ]
+    },
+    {
+        "Name": "Burn",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60
+        ],
+        "Pieces": [
+            "Sword",
+            "Burn Spada",
+            "Twin Dagger",
+            "Draal Volg",
+            "Rear",
+            "Burn Wing",
+            "Arm",
+            "Burn Hands",
+            "Leg",
+            "Burn Tail"
+        ]
+    },
+    {
+        "Name": "Quartz",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            30,
+            "R-ATK",
+            30,
+            "T-ATK",
+            30
+        ],
+        "Pieces": [
+            "Wired Lance",
+            "Razrail",
+            "Double Saber",
+            "Quartz Calibur",
+            "Rear",
+            "Quartz Wing",
+            "Arm",
+            "Quartz Hands",
+            "Leg",
+            "Quartz Tail"
+        ]
+    },
+    {
+        "Name": "Crys",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60
+        ],
+        "Pieces": [
+            "Wired Lance",
+            "Crysrail",
+            "Double Saber",
+            "Crys Calibur",
+            "Rear",
+            "Crys Wing",
+            "Arm",
+            "Crys Hands",
+            "Leg",
+            "Crys Tail"
+        ]
+    },
+    {
+        "Name": "Ragne",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            45,
+            "R-ATK",
+            45,
+            "T-ATK",
+            45
+        ],
+        "Pieces": [
+            "Partizan",
+            "Ragne Answerer",
+            "Rear",
+            "Ragne Cuil",
+            "Arm",
+            "Ragne Ancaire",
+            "Leg",
+            "Ragne Coise"
+        ]
+    },
+    {
+        "Name": "Agrani",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60
+        ],
+        "Pieces": [
+            "Partizan",
+            "Agrani Answerer",
+            "Rear",
+            "Agrani Cuil",
+            "Arm",
+            "Agrani Ancaire",
+            "Leg",
+            "Agrani Coise"
+        ]
+    },
+    {
+        "Name": "Vibrace",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60
+        ],
+        "Pieces": [
+            "Wired Lance",
+            "Vibrace Lance",
+            "Launcher",
+            "Vibrace Cannon",
+            "Bullet Bow",
+            "Vibrace Bow",
+            "Rod",
+            "Vibrace Rod",
+            "Rear",
+            "Vibrace Corno",
+            "Arm",
+            "Vibrace Grief",
+            "Leg",
+            "Vibrace Canaz"
+        ]
+    },
+    {
+        "Name": "Zesh",
+        "Required": 2,
+        "Effect": [
+            "HP",
+            80,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60,
+            "S-DEF",
+            50
+        ],
+        "Pieces": [
+            "Katana",
+            "Zeshuu",
+            "Arm",
+            "Zesh Silt"
+        ]
+    },
+    {
+        "Name": "Vardha",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            45,
+            "R-ATK",
+            45,
+            "T-ATK",
+            45
+        ],
+        "Pieces": [
+            "Twin Dagger",
+            "Mizer Ripper",
+            "Double Saber",
+            "Excelan Blade",
+            "Knuckles",
+            "Mizer Claw",
+            "Launcher",
+            "Vardha Cannon",
+            "Twin Machinegun",
+            "Mizer Bullet",
+            "Talis",
+            "Vardha Bit",
+            "Rear",
+            "Vardha Pack",
+            "Arm",
+            "Vardha Arm",
+            "Leg",
+            "Vardha Legs"
+        ]
+    },
+    {
+        "Name": "Kings",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60
+        ],
+        "Pieces": [
+            "Twin Dagger",
+            "Zexia Ripper",
+            "Double Saber",
+            "Kingdom Blade",
+            "Knuckles",
+            "Zexia Claw",
+            "Launcher",
+            "King Cannon",
+            "Twin Machinegun",
+            "Zexia Bullet",
+            "Talis",
+            "Kings Bit",
+            "Rear",
+            "Kings Pack",
+            "Arm",
+            "Kings Arm",
+            "Leg",
+            "Kings Legs"
+        ]
+    },
+    {
+        "Name": "Chrome",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "HP",
+            30,
+            "PP",
+            3
+        ],
+        "Pieces": [
+            "Partizan",
+            "Chrome Odio",
+            "Assault Rifle",
+            "Chrome Via",
+            "Rod",
+            "Chrome Evol",
+            "Rear",
+            "Chrome Vel",
+            "Arm",
+            "Chrome Hands",
+            "Leg",
+            "Chrome Tail"
+        ]
+    },
+    {
+        "Name": "Haze",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60
+        ],
+        "Pieces": [
+            "Partizan",
+            "Haze Odio",
+            "Assault Rifle",
+            "Haze Via",
+            "Rod",
+            "Haze Evol",
+            "Rear",
+            "Haze Vel",
+            "Arm",
+            "Haze Hands",
+            "Leg",
+            "Haze Tail"
+        ]
+    },
+    {
+        "Name": "Elder",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60
+        ],
+        "Pieces": [
+            "Sword",
+            "Elder Pain",
+            "Knuckles",
+            "Elder Fist",
+            "Assault Rifle",
+            "Elder Rifle",
+            "Rod",
+            "Elder Rod",
+            "Rear",
+            "Eldihete",
+            "Rear",
+            "Elder Aroa",
+            "Arm",
+            "Eldial",
+            "Arm",
+            "Elder Blazo",
+            "Leg",
+            "Eldigahna",
+            "Leg",
+            "Elder Piedes"
+        ]
+    },
+    {
+        "Name": "Ex",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "HP",
+            30,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60
+        ],
+        "Pieces": [
+            "Knuckles",
+            "Ex Blow",
+            "Gunslash",
+            "Ex Lieser",
+            "Wand",
+            "Ex Wand",
+            "Rear",
+            "Hexys Ex",
+            "Arm",
+            "Irvis Ex",
+            "Leg",
+            "Resleg Ex"
+        ]
+    },
+    {
+        "Name": "Noire",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "HP",
+            30,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60
+        ],
+        "Pieces": [
+            "Knuckles",
+            "Noire Blow",
+            "Gunslash",
+            "Noire Lieser",
+            "Wand",
+            "Noire Wand",
+            "Rear",
+            "Hexys Noire",
+            "Arm",
+            "Irvis Noire",
+            "Leg",
+            "Resleg Noire"
+        ]
+    },
+    {
+        "Name": "Loser",
+        "Required": 3,
+        "Doubles": true,
+        "Effect": [
+            "PP",
+            5,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60
+        ],
+        "Pieces": [
+            "Sword",
+            "Dalz Soleid",
+            "Partizan",
+            "Dalz Ferza",
+            "Gunslash",
+            "Dalz Heian",
+            "Assault Rifle",
+            "Dalz Feral",
+            "Bullet Bow",
+            "Dalz Varley",
+            "Talis",
+            "Dalz Ferita",
+            "Wand",
+            "Dalz Woleid",
+            "Jet Boots",
+            "Zirenheit",
+            "Rear",
+            "Loser Penna",
+            "Arm",
+            "Loser Felz",
+            "Leg",
+            "Loser Delota"
+        ]
+    },
+    {
+        "Name": "Magatsu",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            7,
+            "S-ATK",
+            80,
+            "R-ATK",
+            80,
+            "T-ATK",
+            80
+        ],
+        "Pieces": [
+            "Wired Lance",
+            "Evil Yukuka",
+            "Twin Dagger",
+            "Evil Ikukiri",
+            "Katana",
+            "Evil Rakuka",
+            "Twin Machinegun",
+            "Evil Riruyupuke",
+            "Rod",
+            "Evil Nochiuhau",
+            "Jet Boots",
+            "Evil Pirikanet",
+            "Rear",
+            "Magatsuhi"
+        ]
+    },
+    {
+        "Name": "Diabo",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            6,
+            "S-ATK",
+            100,
+            "R-ATK",
+            100,
+            "T-ATK",
+            100
+        ],
+        "Pieces": [
+            "Partizan",
+            "Diabo Keras",
+            "Rear",
+            "Diabo Lix",
+            "Leg",
+            "Diabo Zanuff"
+        ]
+    },
+    {
+        "Name": "Brisa",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            80,
+            "PP",
+            5,
+            "S-ATK",
+            70,
+            "R-ATK",
+            70,
+            "T-ATK",
+            70,
+            "DEX",
+            50,
+            "Ice Resistance",
+            9,
+            "Lightning Resistance",
+            9,
+            "Dark Resistance",
+            9
+        ],
+        "Pieces": [
+            "Rear",
+            "Brisa Aeri",
+            "Arm",
+            "Brisa Oggi",
+            "Leg",
+            "Brisa Magni"
+        ]
+    },
+    {
+        "Name": "Ronia",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Wind Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Ronia Pointa",
+            "Arm",
+            "Ronia Shell",
+            "Leg",
+            "Ronia Port"
+        ]
+    },
+    {
+        "Name": "Eques",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Ice Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Eques Flin",
+            "Arm",
+            "Eques Cyril",
+            "Leg",
+            "Eques Flag"
+        ]
+    },
+    {
+        "Name": "Close",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Fire Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Close Packer",
+            "Arm",
+            "Close Aim",
+            "Leg",
+            "Close Rig"
+        ]
+    },
+    {
+        "Name": "Jaeger",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Fire Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Jaeger Bid",
+            "Arm",
+            "Jaeger Nel",
+            "Leg",
+            "Jaeger Leda"
+        ]
+    },
+    {
+        "Name": "Thousand",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Ice Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Thousand Dim",
+            "Arm",
+            "Thouser Id",
+            "Leg",
+            "Thousand Melia"
+        ]
+    },
+    {
+        "Name": "Fauma",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Fire Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Fauma Pearl",
+            "Arm",
+            "Fauma Ruel",
+            "Leg",
+            "Fauma Twirl"
+        ]
+    },
+    {
+        "Name": "Dista",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Light Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Dista Lie",
+            "Arm",
+            "Dista Gol",
+            "Leg",
+            "Dista Deo"
+        ]
+    },
+    {
+        "Name": "Sensuous",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Light Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Sensuous Em",
+            "Arm",
+            "Sensuous Ar",
+            "Leg",
+            "Sensuous Oz"
+        ]
+    },
+    {
+        "Name": "Magica",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Lightning Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Magica Craft",
+            "Arm",
+            "Magica Wika",
+            "Leg",
+            "Magica Micon"
+        ]
+    },
+    {
+        "Name": "Neighbor",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Dark Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Neighbor Wolf",
+            "Arm",
+            "Neighbor Urus",
+            "Leg",
+            "Neighbor Lion"
+        ]
+    },
+    {
+        "Name": "Deal",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Dark Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Deal Mail",
+            "Arm",
+            "Deal Seal",
+            "Leg",
+            "Deal Kneel"
+        ]
+    },
+    {
+        "Name": "Weiss",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Wind Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Resti Weiss",
+            "Arm",
+            "Ruine Weiss",
+            "Leg",
+            "Ruina Weiss"
+        ]
+    },
+    {
+        "Name": "Rose",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Lightning Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Rose Pick",
+            "Arm",
+            "Rose Prana",
+            "Leg",
+            "Rose Lilia"
+        ]
+    },
+    {
+        "Name": "Wing",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Lightning Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Wing Ceres",
+            "Arm",
+            "Wing Shilda",
+            "Leg",
+            "Wing Wand"
+        ]
+    },
+    {
+        "Name": "Feel",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Dark Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Feel Feal",
+            "Arm",
+            "Feel Arda",
+            "Leg",
+            "Feel Nymph"
+        ]
+    },
+    {
+        "Name": "Raven",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Light Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Raven Maska",
+            "Arm",
+            "Raven Heed",
+            "Leg",
+            "Raven Stell"
+        ]
+    },
+    {
+        "Name": "Sharp",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Wind Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Sharp Rucke",
+            "Arm",
+            "Sharp Schilt",
+            "Leg",
+            "Sharp Bein"
+        ]
+    },
+    {
+        "Name": "Fanen",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "T-ATK",
+            90,
+            "Ice Resistance",
+            15
+        ],
+        "Pieces": [
+            "Rear",
+            "Fanen Schild",
+            "Arm",
+            "Fanen Biss",
+            "Leg",
+            "Fanen Rig"
+        ]
+    },
+    {
+        "Name": "Ideal",
+        "Required": 2,
+        "Effect": [
+            "HP",
+            50,
+            "PP",
+            5,
+            "S-ATK",
+            75,
+            "R-ATK",
+            75,
+            "T-ATK",
+            75,
+            "DEX",
+            40,
+            "R-DEF",
+            80,
+            "T-DEF",
+            80,
+            "Ice Resistance",
+            2,
+            "Wind Resistance",
+            2,
+            "Dark Resistance",
+            2
+        ],
+        "Pieces": [
+            "Rear",
+            "Ideal Deal",
+            "Leg",
+            "Ideal Lana"
+        ]
+    },
+    {
+        "Name": "Ideal Weapon",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            8,
+            "S-ATK",
+            75,
+            "R-ATK",
+            75,
+            "T-ATK",
+            75,
+            "DEX",
+            40,
+            "S-DEF",
+            80,
+            "Fire Resistance",
+            4,
+            "Lightning Resistance",
+            4,
+            "Light Resistance",
+            4
+        ],
+        "Pieces": [
+            "Sword",
+            "Ideal Edge",
+            "Wired Lance",
+            "Ideal Scissors",
+            "Partizan",
+            "Ideal Strader",
+            "Twin Dagger",
+            "Ideal Ster",
+            "Double Saber",
+            "Ideal Rafale",
+            "Knuckles",
+            "Ideal Hunt",
+            "Katana",
+            "Ideal Karen",
+            "Dual Blade",
+            "Ideal Duos",
+            "Gunslash",
+            "Ideal Banette",
+            "Assault Rifle",
+            "Ideal Larc",
+            "Launcher",
+            "Ideal Proud",
+            "Twin Machinegun",
+            "Ideal Trigger",
+            "Bullet Bow",
+            "Ideal Shooter",
+            "Rod",
+            "Ideal Prayer",
+            "Talis",
+            "Ideal Aile",
+            "Wand",
+            "Ideal Hexe",
+            "Jet Boots",
+            "Ideal Walker",
+            "Arm",
+            "Ideal Yard"
+        ]
+    },
+    {
+        "Name": "Orbit",
+        "Required": 2,
+        "Effect": [
+            "S-ATK",
+            50,
+            "R-ATK",
+            50,
+            "T-ATK",
+            50,
+            "DEX",
+            30,
+            "Light Resistance",
+            10
+        ],
+        "Pieces": [
+            "Sword",
+            "Dainsleif Orbit",
+            "Knuckles",
+            "Glayer Orbit",
+            "Dual Blade",
+            "Fafnir Orbit",
+            "Launcher",
+            "Vitol Orbit",
+            "Twin Machinegun",
+            "Mistral Orbit",
+            "Bullet Bow",
+            "Gaels Orbit",
+            "Talis",
+            "Flotia Orbit",
+            "Wand",
+            "Eightrei Orbit",
+            "Leg",
+            "Orbit Cell"
+        ]
+    },
+    {
+        "Name": "Kaiser",
+        "Required": 2,
+        "Effect": [
+            "S-ATK",
+            90,
+            "R-ATK",
+            90,
+            "DEX",
+            50
+        ],
+        "Pieces": [
+            "Rear",
+            "Kaiser Elte",
+            "Arm",
+            "Kaiser Kaphte"
+        ]
+    },
+    {
+        "Name": "Saiha",
+        "Required": 2,
+        "Effect": [
+            "S-ATK",
+            90,
+            "T-ATK",
+            90,
+            "DEX",
+            50
+        ],
+        "Pieces": [
+            "Rear",
+            "Saiha Juuji",
+            "Leg",
+            "Saiha Nisen"
+        ]
+    },
+    {
+        "Name": "Fahren",
+        "Required": 3,
+        "Doubles":true,
+        "Effect": [
+            "HP",
+            45,
+            "PP",
+            4.5,
+            "S-ATK",
+            50,
+            "R-ATK",
+            50,
+            "T-ATK",
+            50,
+            "DEX",
+            30
+        ],
+        "Pieces": [
+            "Sword",
+            "Fahren Ender",
+            "Wired Lance",
+            "Fahren Trigger",
+            "Partizan",
+            "Fahren Bullova",
+            "Twin Dagger",
+            "Fahren Dios",
+            "Double Saber",
+            "Fahren Crime",
+            "Knuckles",
+            "Fahren Glow",
+            "Katana",
+            "Fahren Takezuchi",
+            "Dual Blade",
+            "Fahren Kreutz",
+            "Gunslash",
+            "Fahren Steg",
+            "Assault Rifle",
+            "Fahren Grid",
+            "Launcher",
+            "Fahren Gravion",
+            "Twin Machinegun",
+            "Fahren Storm",
+            "Bullet Bow",
+            "Fahren Frein",
+            "Rod",
+            "Fahren Keion",
+            "Talis",
+            "Fahren Lapis",
+            "Wand",
+            "Fahren Cuse",
+            "Jet Boots",
+            "Fahren Glyph",
+            "Rear",
+            "Fahren Pulse",
+            "Rear",
+            "Fahren Darts",
+            "Rear",
+            "Fahren Myrna",
+            "Rear",
+            "Fahren Tray",
+            "Arm",
+            "Fahren Paua",
+            "Arm",
+            "Fahren Dard",
+            "Arm",
+            "Fahren Marv",
+            "Arm",
+            "Fahren Tredd",
+            "Leg",
+            "Fahren Paris",
+            "Leg",
+            "Fahren Dyne",
+            "Leg",
+            "Fahren Masker",
+            "Leg",
+            "Fahren Torque"
+        ]
+    },
+    {
+        "Name": "Double",
+        "Required": 2,
+        "Effect": [
+            "HP",
+            120,
+            "PP",
+            20,
+            "DEX",
+            60
+        ],
+        "Pieces": [
+            "Arm",
+            "Dolanfis",
+            "Leg",
+            "Dalilufis"
+        ]
+    },
+    {
+        "Name": "Noirega",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            160,
+            "PP",
+            6,
+            "S-ATK",
+            70,
+            "R-ATK",
+            70,
+            "T-ATK",
+            70
+        ],
+        "Pieces": [
+            "Rear",
+            "Eig Noirega",
+            "Arm",
+            "Atram Noirega",
+            "Leg",
+            "Redra Noirega"
+        ]
+    },
+    {
+        "Name": "Invade",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            10,
+            "S-ATK",
+            70,
+            "R-ATK",
+            70,
+            "T-ATK",
+            70,
+            "DEX",
+            50
+        ],
+        "Pieces": [
+            "Rear",
+            "Invalum",
+            "Arm",
+            "Invand"
+        ]
+    },
+    {
+        "Name": "Invade Weapon",
+        "Required": 2,
+        "Effect": [
+            "S-ATK",
+            70,
+            "R-ATK",
+            70,
+            "T-ATK",
+            70,
+            "DEX",
+            100
+        ],
+        "Pieces": [
+            "Sword",
+            "Invade Calibur",
+            "Wired Lance",
+            "Invade Wing",
+            "Partizan",
+            "Invade Spear",
+            "Twin Dagger",
+            "Invade Fencer",
+            "Double Saber",
+            "Invade Edge",
+            "Knuckles",
+            "Invade Fist",
+            "Katana",
+            "Invade Galland",
+            "Dual Blade",
+            "Invade Savior",
+            "Gunslash",
+            "Invade Buster",
+            "Assault Rifle",
+            "Invade Shooter",
+            "Launcher",
+            "Invade Cannon",
+            "Twin Machinegun",
+            "Invade Rain",
+            "Bullet Bow",
+            "Invade Bogen",
+            "Rod",
+            "Invade Sorcerer",
+            "Talis",
+            "Invade Arm",
+            "Wand",
+            "Invade Axe",
+            "Jet Boots",
+            "Invade Slider",
+            "Leg",
+            "Invarif"
+        ]
+    },
+    {
+        "Name": "Austere",
+        "Required": 2,
+        "Effect": [
+            "HP",
+            50,
+            "PP",
+            20,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60,
+            "DEX",
+            50,
+            "Ice Resistance",
+            3,
+            "Wind Resistance",
+            3,
+            "Light Resistance",
+            3
+        ],
+        "Pieces": [
+            "Rear",
+            "Austelum",
+            "Arm",
+            "Austend"
+        ]
+    },
+    {
+        "Name": "Austere Weapon",
+        "Required": 2,
+        "Effect": [
+            "DEX",
+            50,
+            "S-DEF",
+            80,
+            "R-DEF",
+            80,
+            "T-DEF",
+            80,
+            "Ice Resistance",
+            3,
+            "Wind Resistance",
+            3,
+            "Light Resistance",
+            3
+        ],
+        "Pieces": [
+            "Sword",
+            "Austere Calibur",
+            "Wired Lance",
+            "Austere Wing",
+            "Partizan",
+            "Austere Spear",
+            "Twin Dagger",
+            "Austere Fencer",
+            "Double Saber",
+            "Austere Edge",
+            "Knuckles",
+            "Austere Fist",
+            "Katana",
+            "Austere Galland",
+            "Dual Blade",
+            "Austere Savior",
+            "Gunslash",
+            "Austere Buster",
+            "Assault Rifle",
+            "Austere Shooter",
+            "Launcher",
+            "Austere Cannon",
+            "Twin Machinegun",
+            "Austere Rain",
+            "Bullet Bow",
+            "Austere Bogen",
+            "Rod",
+            "Austere Sorcerer",
+            "Talis",
+            "Austere Arm",
+            "Wand",
+            "Austere Axe",
+            "Jet Boots",
+            "Austere Slider",
+            "Leg",
+            "Austerif"
+        ]
+    },
+    {
+        "Name": "Guran",
+        "Required": 2,
+        "Effect": [
+            "S-ATK",
+            70,
+            "R-ATK",
+            70
+        ],
+        "Pieces": [
+            "Rear",
+            "Guran Schild",
+            "Arm",
+            "Guran Pike"
+        ]
+    },
+    {
+        "Name": "Benda",
+        "Required": 3,
+        "Effect": [
+            "S-ATK",
+            30,
+            "R-ATK",
+            30,
+            "T-ATK",
+            30
+        ],
+        "Pieces": [
+            "Rear",
+            "Benda Aeri",
+            "Arm",
+            "Benda Oggi",
+            "Leg",
+            "Benda Magni"
+        ]
+    },
+    {
+        "Name": "Tagami",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            15,
+            "S-ATK",
+            50,
+            "R-ATK",
+            50,
+            "T-ATK",
+            50,
+            "DEX",
+            40,
+            "Lightning Resistance",
+            5,
+            "Light Resistance",
+            5
+        ],
+        "Pieces": [
+            "Arm",
+            "AThunder Tagashiki",
+            "Leg",
+            "Thunder Tagatsuchi"
+        ]
+    },
+    {
+        "Name": "Tagami Weapon",
+        "Required": 2,
+        "Effect": [
+            "PP",
+            15,
+            "S-ATK",
+            50,
+            "R-ATK",
+            50,
+            "T-ATK",
+            50,
+            "DEX",
+            40,
+            "Lightning Resistance",
+            5,
+            "Light Resistance",
+            5
+        ],
+        "Pieces": [
+            "Knuckles",
+            "Thunder Bite Tagamikouga",
+            "Katana",
+            "Thunder Crack Tagamikouga",
+            "Twin Machinegun",
+            "Thunder Gun Tagamikouga",
+            "Jet Boots",
+            "Thunder Claw Tagamikouga",
+            "Rear",
+            "Thunder Tagaishi"
+        ]
+    },
+    {
+        "Name": "Deadleon",
+        "Required": 2,
+        "Effect": [
+            "S-DEF",
+            60
+        ],
+        "Pieces": [
+            "Wand",
+            "Deadlio Gridder",
+            "Arm",
+            "Deadliost"
+        ]
+    },
+    {
+        "Name": "Ray",
+        "Required": 2,
+        "Effect": [
+            "DEX",
+            60
+        ],
+        "Pieces": [
+            "Sword",
+            "Ray Sword",
+            "Wired Lance",
+            "Ray Lance",
+            "Partizan",
+            "Ray Partizan",
+            "Twin Dagger",
+            "Ray Twin Dagger",
+            "Double Saber",
+            "Ray Saber",
+            "Knuckles",
+            "Ray Knuckle",
+            "Katana",
+            "Ray Katana",
+            "Dual Blade",
+            "Ray Dual Blade",
+            "Gunslash",
+            "Ray Slash",
+            "Assault Rifle",
+            "Ray Rifle",
+            "Launcher",
+            "Ray Launcher",
+            "Twin Machinegun",
+            "Ray Twin Machineguns",
+            "Bullet Bow",
+            "Ray Bow",
+            "Rod",
+            "Ray Rod",
+            "Talis",
+            "Ray Talis",
+            "Wand",
+            "Ray Wand",
+            "Jet Boots",
+            "Ray Jet Boots",
+            "Rear",
+            "Circu Ray",
+            "Arm",
+            "Circa Ray",
+            "Leg",
+            "Circ Ray"
+        ]
+    },
+    {
+        "Name": "Union",
+        "Required": 2,
+        "Effect": [
+            "DEX",
+            60
+        ],
+        "Pieces": [
+            "Sword",
+            "Union Sword",
+            "Wired Lance",
+            "Union Lance",
+            "Partizan",
+            "Union Partizan",
+            "Twin Dagger",
+            "Union Twin Dagger",
+            "Double Saber",
+            "Union Saber",
+            "Knuckles",
+            "Union Knuckle",
+            "Katana",
+            "Union Katana",
+            "Dual Blade",
+            "Union Dual Blade",
+            "Gunslash",
+            "Union Slash",
+            "Assault Rifle",
+            "Union Rifle",
+            "Launcher",
+            "Union Launcher",
+            "Twin Machinegun",
+            "Union Twin Machineguns",
+            "Bullet Bow",
+            "Union Bow",
+            "Rod",
+            "Union Rod",
+            "Talis",
+            "Union Talis",
+            "Wand",
+            "Union Wand",
+            "Jet Boots",
+            "Union Jet Boots",
+            "Rear",
+            "Circu Union",
+            "Arm",
+            "Circa Union",
+            "Leg",
+            "Circ Union"
+        ]
+    },
+    {
+        "Name": "Gix",
+        "Required": 2,
+        "Effect": [
+            "DEX",
+            20,
+            "Light Resistance",
+            2,
+            "Dark Resistance",
+            2
+        ],
+        "Pieces": [
+            "Sword",
+            "Gix Zangulum",
+            "Wired Lance",
+            "Gix Gilminadu",
+            "Partizan",
+            "Gix Jinraod",
+            "Twin Dagger",
+            "Gix Jhikdrenn",
+            "Double Saber",
+            "Gix Zelvran",
+            "Knuckles",
+            "Gix Disanga",
+            "Katana",
+            "Gix Bascht",
+            "Dual Blade",
+            "Gix Khutriv",
+            "Gunslash",
+            "Gix Granas",
+            "Assault Rifle",
+            "Gix Shadoke",
+            "Launcher",
+            "Gix Verata",
+            "Twin Machinegun",
+            "Gix Kafir",
+            "Bullet Bow",
+            "Gix Viset",
+            "Rod",
+            "Gix Jeud",
+            "Talis",
+            "Gix Ernoe",
+            "Wand",
+            "Gix Renan",
+            "Jet Boots",
+            "Gix Karina",
+            "Arm",
+            "Gix Khudu"
+        ]
+    },
+    {
+        "Name": "Astra",
+        "Required": 2,
+        "Effect": [
+            "DEX",
+            60
+        ],
+        "Pieces": [
+            "Sword",
+            "Astra Separ",
+            "Wired Lance",
+            "Astra Adom",
+            "Partizan",
+            "Astra Gorge",
+            "Twin Dagger",
+            "Astra Punish",
+            "Double Saber",
+            "Astra Diren",
+            "Knuckles",
+            "Astra Break",
+            "Katana",
+            "Astra Reap",
+            "Dual Blade",
+            "Astra End",
+            "Gunslash",
+            "Astra Diffie",
+            "Assault Rifle",
+            "Astra Tremb",
+            "Launcher",
+            "Astra Bellow",
+            "Twin Machinegun",
+            "Astra Screa",
+            "Bullet Bow",
+            "Astra Snarl",
+            "Rod",
+            "Astra Ridic",
+            "Talis",
+            "Astra Hate",
+            "Wand",
+            "Astra Depri",
+            "Jet Boots",
+            "Astra Drive",
+            "Arm",
+            "Circu Pioh"
+        ]
+    },
+    {
+        "Name": "Austere-NT",
+        "Required": 2,
+        "Effect": [
+            "HP",
+            50,
+            "PP",
+            20,
+            "S-ATK",
+            80,
+            "R-ATK",
+            80,
+            "T-ATK",
+            80,
+            "DEX",
+            50,
+            "Ice Resistance",
+            3,
+            "Wind Resistance",
+            3,
+            "Light Resistance",
+            3
+        ],
+        "Pieces": [
+            "Rear",
+            "Austerios",
+            "Arm",
+            "Austerico"
+        ]
+    },
+    {
+        "Name": "Austere-NT Weapon",
+        "Required": 2,
+        "Effect": [
+            "DEX",
+            50,
+            "S-DEF",
+            100,
+            "R-DEF",
+            100,
+            "T-DEF",
+            100,
+            "Ice Resistance",
+            3,
+            "Wind Resistance",
+            3,
+            "Light Resistance",
+            3
+        ],
+        "Pieces": [
+            "Sword",
+            "Austere Calibur-NT",
+            "Wired Lance",
+            "Austere Wing-NT",
+            "Partizan",
+            "Austere Spear-NT",
+            "Twin Dagger",
+            "Austere Fencer-NT",
+            "Double Saber",
+            "Austere Edge-NT",
+            "Knuckles",
+            "Austere Fist-NT",
+            "Katana",
+            "Austere Galland-NT",
+            "Dual Blade",
+            "Austere Savior-NT",
+            "Gunslash",
+            "Austere Buster-NT",
+            "Assault Rifle",
+            "Austere Shooter-NT",
+            "Launcher",
+            "Austere Cannon-NT",
+            "Twin Machinegun",
+            "Austere Rain-NT",
+            "Bullet Bow",
+            "Austere Bogen-NT",
+            "Rod",
+            "Austere Sorcerer-NT",
+            "Talis",
+            "Austere Arm-NT",
+            "Wand",
+            "Austere Axe-NT",
+            "Jet Boots",
+            "Austere Slider-NT",
+            "Leg",
+            "Austology"
+        ]
+    },
+    {
+        "Name": "Zeinesis Weapon",
+        "Required": 2,
+        "Effect": [
+            "DEX",
+            60
+        ],
+        "Pieces": [
+            "Sword",
+            "Zeinesis Calibur",
+            "Wired Lance",
+            "Zeinesis Wing",
+            "Partizan",
+            "Zeinesis Valdis",
+            "Twin Dagger",
+            "Zeinesis Baselard",
+            "Double Saber",
+            "Zeinesis Vapen",
+            "Knuckles",
+            "Zeinesis Breackle",
+            "Katana",
+            "Zeinesis Sheath",
+            "Dual Blade",
+            "Zeinesis Saber",
+            "Gunslash",
+            "Zeinesis Gunscissor",
+            "Assault Rifle",
+            "Zeinesis Laser",
+            "Launcher",
+            "Zeinesis Cannon",
+            "Twin Machinegun",
+            "Zeinesis Vulcan",
+            "Bullet Bow",
+            "Zeinesis Arrow",
+            "Rod",
+            "Zeinesis Clutch",
+            "Talis",
+            "Zeinesis Fidell",
+            "Wand",
+            "Zeinesis Scepter",
+            "Jet Boots",
+            "Zeinesis Gear",
+            "Takt",
+            "Zeinesis Pick",
+            "Arm",
+            "Zeinesis Lita"
+        ]
+    },
+    {
+        "Name": "Qliphad Weapon",
+        "Required": 2,
+        "Effect": [
+            "DEX",
+            60
+        ],
+        "Pieces": [
+            "Sword",
+            "Qliphad Calibur",
+            "Wired Lance",
+            "Qliphad Wing",
+            "Partizan",
+            "Qliphad Valdis",
+            "Twin Dagger",
+            "Qliphad Baselard",
+            "Double Saber",
+            "Qliphad Vapen",
+            "Knuckles",
+            "Qliphad Breackle",
+            "Katana",
+            "Qliphad Sheath",
+            "Dual Blade",
+            "Qliphad Saber",
+            "Gunslash",
+            "Qliphad Gunscissor",
+            "Assault Rifle",
+            "Qliphad Laser",
+            "Launcher",
+            "Qliphad Cannon",
+            "Twin Machinegun",
+            "Qliphad Vulcan",
+            "Bullet Bow",
+            "Qliphad Arrow",
+            "Rod",
+            "Qliphad Clutch",
+            "Talis",
+            "Qliphad Fidell",
+            "Wand",
+            "Qliphad Scepter",
+            "Jet Boots",
+            "Qliphad Gear",
+            "Takt",
+            "Qliphad Pick",
+            "Arm",
+            "Qliphad Lita"
+        ]
+    },
+    {
+        "Name": "Divide",
+        "Required": 3,
+        "Effect": [
+            "HP",
+            200,
+            "PP",
+            20,
+            "S-ATK",
+            150,
+            "R-ATK",
+            150,
+            "T-ATK",
+            150,
+            "S-DEF",
+            200,
+            "R-DEF",
+            200,
+            "T-DEF",
+            200
+        ],
+        "Pieces": [
+            "Rear",
+            "Neighbor Voss",
+            "Rear",
+            "Thousand Deri",
+            "Rear",
+            "Magica Kurt",
+            "Rear",
+            "Raven Mai",
+            "Rear",
+            "Jaeger Bill",
+            "Rear",
+            "Rest Weisse",
+            "Rear",
+            "Eques Full",
+            "Rear",
+            "Wing Sene",
+            "Rear",
+            "Feel Phara",
+            "Rear",
+            "Close Parka",
+            "Rear",
+            "Sharp Riube",
+            "Rear",
+            "Sensias Air",
+            "Rear",
+            "Rose Peer",
+            "Rear",
+            "Deal Mehr",
+            "Rear",
+            "Fanen Sheer",
+            "Rear",
+            "Ronia Pound",
+            "Rear",
+            "Dista Ran",
+            "Rear",
+            "Fauma Pare",
+            "Arm",
+            "Neighbor Out",
+            "Arm",
+            "Thousand In",
+            "Arm",
+            "Magica Will",
+            "Arm",
+            "Raven Hill",
+            "Arm",
+            "Jaeger Near",
+            "Arm",
+            "Lua Weisse",
+            "Arm",
+            "Eques Shizu",
+            "Arm",
+            "Wing Sheer",
+            "Arm",
+            "Feel Ane",
+            "Arm",
+            "Close El",
+            "Arm",
+            "Sharp Silhoue",
+            "Arm",
+            "Sensias Ai",
+            "Arm",
+            "Rose Pull",
+            "Arm",
+            "Deal Sees",
+            "Arm",
+            "Fanen Via",
+            "Arm",
+            "Ronia Sim",
+            "Arm",
+            "Dista Goa",
+            "Arm",
+            "Fauma Relube",
+            "Leg",
+            "Neighbor Riru",
+            "Leg",
+            "Thousand Mel",
+            "Leg",
+            "Magica Mirr",
+            "Leg",
+            "Raven Star",
+            "Leg",
+            "Jaeger Ray",
+            "Leg",
+            "Ruili Weisse",
+            "Leg",
+            "Eques Gra",
+            "Leg",
+            "Wing Val",
+            "Leg",
+            "Feel Niere",
+            "Leg",
+            "Close Lee",
+            "Leg",
+            "Sharp Bal",
+            "Leg",
+            "Sensias All",
+            "Leg",
+            "Rose Lee",
+            "Leg",
+            "Deal Nie",
+            "Leg",
+            "Fanen Rio",
+            "Leg",
+            "Ronia Pol",
+            "Leg",
+            "Dista Demi",
+            "Leg",
+            "Fauma Toano"
+        ]
     }
 ]
