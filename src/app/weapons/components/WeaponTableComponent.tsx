@@ -1,7 +1,10 @@
 import Image from "next/image";
 import React from 'react';
 import { useLanguageContext } from "../../language-provider";
-import { Table } from '@mantine/core';
+import { useDisclosure } from "@mantine/hooks";
+import { SimpleGrid, Table, Popover, Text } from '@mantine/core';
+import setEffects from "../../sets/sets.json"
+import variantSet from "../../sets/letter-variant-sets.json"
 import './WeaponTableComponent.css';
 import '@mantine/core/styles/Table.layer.css';
 
@@ -39,14 +42,14 @@ export default function WeaponTableComponent({ data, type }) {
 
     function displayStat(key: string, value: number): any[] {
         let buffer: any[] = []
-        buffer.push(<Image src={`/icons/UIStat${key}.png`} alt={key} width={16} height={16} />, ' ', value,)
+        buffer.push(<Image src={`/icons/${key}.png`} alt={key} width={16} height={16} />, ' ', value,)
         return buffer
     }
 
     function displaySSA(array: any[]): any[] {
         let buffer: any[] = []
         for (let i = 0; i < array.length; i++) {
-            buffer.push(<Image src={`/icons/UIItemSClassAbility${array[i]}.png`} alt={`SSA slot ${i} enabled`} width={16} height={16} />)
+            buffer.push(<Image src={`/icons/SClassAbility${array[i]}.png`} alt={`SSA slot ${i} enabled`} width={16} height={16} />)
         }
         return buffer;
     }
@@ -80,7 +83,7 @@ export default function WeaponTableComponent({ data, type }) {
     function displayElement(array: [string, number]): any[] {
         let buffer: any[] = []
         if (!isNaN(array[1])) {
-            buffer.push(<Image src={`/icons/UI${array[0]}Icon.png`} alt="Element" width={16} height={16} />, ' ', array[1])
+            buffer.push(<Image src={`/icons/${array[0]}.png`} alt="Element" width={16} height={16} />, ' ', array[1])
         }
         return buffer;
     }
@@ -93,12 +96,84 @@ export default function WeaponTableComponent({ data, type }) {
         return buffer;
     }
 
-    function displaySet(array: any[]): any {
-        let buffer: any[] = []
-        if (array) {
-            buffer.push(<Image src={`/icons/UIUnitRearIcon.png`} alt="Set Effect" width={16} height={16} />, ' ', array)
+    function displaySetEffect(set: any, doubleEffect: boolean): any {
+        let effect: any[] = []
+        set.Effect.forEach((value: any, index: number) => {
+            if (index % 2 === 0) {
+                if (set.Effect[index] === 'HP' || set.Effect[index] === 'PP') effect.push(<strong>{set.Effect[index]}</strong>);
+                else effect.push(<Image src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} width={16} height={16} />);
+            }
+            else {
+                if (doubleEffect) effect.push(' ', set.Effect[index] * 2);
+                else effect.push(' ', set.Effect[index]);
+                if (set.Effect[index + 1]) {
+                    effect.push(<br />);
+                }
+            }
+        })
+        return effect
+    }
+
+    function displaySetMembers(set: any, name_en: string, doubleEffect: boolean): any {
+        let members: any[] = []
+        for (let i = 0; i < set.Pieces.length; i += 2) {
+            let bufferMembers: any[] = []
+            if (set.Pieces[i - 1] == 'Rear' || set.Pieces[i - 1] == 'Arm' || set.Pieces[i - 1] == 'Leg') {
+                bufferMembers.push(<Image src={`/icons/${set.Pieces[i].replace(' ', '')}.png`} alt={set.Pieces[i]} width={16} height={16} />, ' ', set.Pieces[i], ' / ')
+            } else {
+                bufferMembers.push(<Image src={`/icons/${set.Pieces[i].replace(' ', '')}.png`} alt={set.Pieces[i]} width={16} height={16} />, ' ')
+            }
+            let name: string = name_en.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('Rear / ', '').replace('Arm / ', '').replace('Leg / ', '')
+            if (set.Pieces[i + 1] === name) bufferMembers.push(<strong>{set.Pieces[i + 1]}</strong>)
+            else bufferMembers.push(set.Pieces[i + 1])
+            members.push(<div>{bufferMembers}</div>)
         }
-        return buffer;
+
+        let bufferMembers: any[] = []
+        if (doubleEffect) bufferMembers.push(`Requires ${set.Required + 1} pieces`, <br />, <br />)
+        else bufferMembers.push(`Requires ${set.Required} pieces`, <br />, <br />)
+
+        bufferMembers.push(<SimpleGrid cols={3} spacing="sm" verticalSpacing="sm">{members}</SimpleGrid>)
+
+        if (variantSet.find(variant => variant.Set === set.Name)) bufferMembers.push(<br />, <strong>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
+
+        return bufferMembers
+    }
+
+    function displaySet(setName: string, name_en: string): any[] {
+        let set = setEffects.find(set => set.Name === setName)
+        const [opened1, { close: close1, open: open1 }] = useDisclosure(false);
+        const [opened2, { close: close2, open: open2 }] = useDisclosure(false);
+        if (set) {
+            let bufferReturn: any = []
+            bufferReturn.push(
+                <Popover width={400} position="bottom" withArrow shadow="md" opened={opened1} arrowSize={12}>
+                    <Popover.Target>
+                        <Text onMouseEnter={open1} onMouseLeave={close1}>
+                            <Image src={`/icons/Set1.png`} alt="Set 1" width={63} height={18} />
+                        </Text>
+                    </Popover.Target>
+                    <Popover.Dropdown style={{ pointerEvents: 'none' }}>
+                        <Text size="sm"><strong>Effect:</strong><br /><br />{displaySetEffect(set, false)}<br /><br /><strong>Set Pieces:</strong><br />{displaySetMembers(set, name_en, false)}</Text>
+                    </Popover.Dropdown>
+                </Popover>)
+            if (set.Doubles) {
+                bufferReturn.push(
+                    <Popover width={400} position="bottom" withArrow shadow="md" opened={opened2} arrowSize={12}>
+                        <Popover.Target>
+                            <Text onMouseEnter={open2} onMouseLeave={close2}>
+                                <Image src={`/icons/Set2.png`} alt="Set 1" width={63} height={18} />
+                            </Text>
+                        </Popover.Target>
+                        <Popover.Dropdown style={{ pointerEvents: 'none' }}>
+                            <Text size="sm"><strong>Effect:</strong><br /><br />{displaySetEffect(set, true)}<br /><br /><strong>Set Pieces:</strong><br />{displaySetMembers(set, name_en, true)}</Text>
+                        </Popover.Dropdown>
+                    </Popover>)
+            }
+            return bufferReturn;
+        } else {
+            return
+        }
     }
 
     function displayClasses(array: any[]): any[] {
@@ -107,23 +182,23 @@ export default function WeaponTableComponent({ data, type }) {
             if (array[0] === 'All') {
                 buffer.push(
                     <React.Fragment>
-                        <Image src={`/icons/UIClassHuIcon.png`} alt={`Hunter`} width={16} height={16} />
-                        <Image src={`/icons/UIClassFiIcon.png`} alt={`Fighter`} width={16} height={16} />
-                        <Image src={`/icons/UIClassRaIcon.png`} alt={`Ranger`} width={16} height={16} />
-                        <Image src={`/icons/UIClassGuIcon.png`} alt={`Gunner`} width={16} height={16} />
-                        <Image src={`/icons/UIClassFoIcon.png`} alt={`Force`} width={16} height={16} />
-                        <Image src={`/icons/UIClassTeIcon.png`} alt={`Techer`} width={16} height={16} />
-                        <Image src={`/icons/UIClassBrIcon.png`} alt={`Braver`} width={16} height={16} />
-                        <Image src={`/icons/UIClassBoIcon.png`} alt={`Bouncer`} width={16} height={16} />
-                        <Image src={`/icons/UIClassSuIcon.png`} alt={`Summoner`} width={16} height={16} />
-                        <Image src={`/icons/UIClassHrIcon.png`} alt={`Hero`} width={16} height={16} />
-                        <Image src={`/icons/UIClassPhIcon.png`} alt={`Phantom`} width={16} height={16} />
-                        <Image src={`/icons/UIClassEtIcon.png`} alt={`Etoile`} width={16} height={16} />
-                        <Image src={`/icons/UIClassLuIcon.png`} alt={`Luster`} width={16} height={16} />
+                        <Image src={`/icons/Hu.png`} alt={`Hunter`} width={16} height={16} />
+                        <Image src={`/icons/Fi.png`} alt={`Fighter`} width={16} height={16} />
+                        <Image src={`/icons/Ra.png`} alt={`Ranger`} width={16} height={16} />
+                        <Image src={`/icons/Gu.png`} alt={`Gunner`} width={16} height={16} />
+                        <Image src={`/icons/Fo.png`} alt={`Force`} width={16} height={16} />
+                        <Image src={`/icons/Te.png`} alt={`Techer`} width={16} height={16} />
+                        <Image src={`/icons/Br.png`} alt={`Braver`} width={16} height={16} />
+                        <Image src={`/icons/Bo.png`} alt={`Bouncer`} width={16} height={16} />
+                        <Image src={`/icons/Su.png`} alt={`Summoner`} width={16} height={16} />
+                        <Image src={`/icons/Hr.png`} alt={`Hero`} width={16} height={16} />
+                        <Image src={`/icons/Ph.png`} alt={`Phantom`} width={16} height={16} />
+                        <Image src={`/icons/Et.png`} alt={`Etoile`} width={16} height={16} />
+                        <Image src={`/icons/Lu.png`} alt={`Luster`} width={16} height={16} />
                     </React.Fragment>)
             } else {
                 for (let i = 0; i < array.length; i++) {
-                    buffer.push(<Image src={`/icons/UIClass${array[i]}Icon.png`} alt={`SSA slot ${i} enabled`} width={16} height={16} />)
+                    buffer.push(<Image src={`/icons/${array[i]}.png`} alt={`SSA slot ${i} enabled`} width={16} height={16} />)
                 }
             }
             return buffer
@@ -150,12 +225,12 @@ export default function WeaponTableComponent({ data, type }) {
                                         case 'S-ATK': return <React.Fragment><Table.Th key={index - 25} className="centerCell">ATK</Table.Th><Table.Th key='S-ATK (Max)' className="centerCell">ATK<br />(Max)</Table.Th></React.Fragment>
                                         case 'R-ATK': return;
                                         case 'T-ATK': return;
-                                        case 'SAF': return <Table.Th key={index - 25} className="centerCell"><Image src="/icons/SpecialAbilityIcon.png" alt="Special Ability Factor" width={16} height={16} /> SAF</Table.Th>
+                                        case 'SAF': return <Table.Th key={index - 25} className="centerCell"><Image src="/icons/SpecialAbility.png" alt="Special Ability Factor" width={16} height={16} /> SAF</Table.Th>
                                         case 'Abilities': return <Table.Th key={index - 25} className="centerCell">Default Properties</Table.Th>
                                         case 'Element': return;
                                         case 'id': return;
                                         case 'Potential': return <Table.Th key={index - 25} className="centerCell"><Image src="/icons/Potential.png" alt="Potential" width={16} height={16} /> Potential</Table.Th>
-                                        case 'SSA Slots': return <Table.Th key={index - 25} className="centerCell"><Image src="/icons/SClassAbilityIcon.png" alt="SSA Slots" width={16} height={16} /> SSA Slots</Table.Th>
+                                        case 'SSA Slots': return <Table.Th key={index - 25} className="centerCell"><Image src="/icons/SClassAbility.png" alt="SSA Slots" width={16} height={16} /> SSA Slots</Table.Th>
                                         default: return <Table.Th key={index - 25} className="centerCell">{heading}</Table.Th>
                                     }
                                 }
@@ -163,9 +238,9 @@ export default function WeaponTableComponent({ data, type }) {
                             if(heading && heading !== 'name_en' && heading !== 'name_jp'){
                                 switch(heading){
                                     case 'name_global': return <Table.Th key={heading}>Name</Table.Th>;
-                                    case 'S-ATK': return <Table.Th key={heading} colSpan='2'><Image src="/icons/UIStatSATK.png" alt="MEL" width={16} height={16} /></Table.Th>
-                                    case 'R-ATK': return <Table.Th key={heading} colSpan='2'><Image src="/icons/UIStatRATK.png" alt="RNG" width={16} height={16} /></Table.Th>
-                                    case 'T-ATK': return <Table.Th key={heading} colSpan='2'><Image src="/icons/UIStatTATK.png" alt="TEC" width={16} height={16} /></Table.Th>
+                                    case 'S-ATK': return <Table.Th key={heading} colSpan='2'><Image src="/icons/SATK.png" alt="MEL" width={16} height={16} /></Table.Th>
+                                    case 'R-ATK': return <Table.Th key={heading} colSpan='2'><Image src="/icons/RATK.png" alt="RNG" width={16} height={16} /></Table.Th>
+                                    case 'T-ATK': return <Table.Th key={heading} colSpan='2'><Image src="/icons/TATK.png" alt="TEC" width={16} height={16} /></Table.Th>
                                     default: return <Table.Th key={heading}>{heading}</Table.Th>
                                 }
                             }
@@ -183,7 +258,6 @@ export default function WeaponTableComponent({ data, type }) {
                                 let bufferProperties: any[] = [];
                                 let bufferATK: any[] = [];
                                 let bufferATKMax: any[] = [];
-                                if(((row['id'] + 1) * 30) + index === 30) console.log(row['id'], ((row['id'] + 1) * 30) + index)
                                 switch (key) {
                                     case 'Name (JP)':
                                         return <Table.Td key={((row['id'] + 1) * 30) + index}>{row['name_en']}<br />{row['Name (JP)']}</Table.Td>
@@ -192,7 +266,7 @@ export default function WeaponTableComponent({ data, type }) {
                                     case 'Rarity':
                                         return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell"><Image src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} width={16} height={16} /></Table.Td>
                                     case 'Requirement':
-                                        return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell"><Image src={`/icons/UIStat${row[key][0]}.png`} alt={row[key][0]} width={16} height={16} /> {row[key][1]}</Table.Td>
+                                        return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell"><Image src={`/icons/${row[key][0]}.png`} alt={row[key][0]} width={16} height={16} /> {row[key][1]}</Table.Td>
                                     case 'S-ATK':
                                     case 'R-ATK':
                                     case 'T-ATK':
@@ -231,16 +305,16 @@ export default function WeaponTableComponent({ data, type }) {
                                             bufferProperties.push(displayAbilities(row['Abilities']))
                                         }
                                         if (row['Element']) {
-                                            if (bufferProperties[0]) bufferProperties.push(<br />, displayElement(row['Element']))
-                                            else bufferProperties.push(displayElement(row['Element']))
+                                            if (bufferProperties[0]) bufferProperties.push(<br />);
+                                            bufferProperties.push(displayElement(row['Element']));
                                         }
                                         if (row['PA_enabled']) {
-                                            if (bufferProperties[0]) bufferProperties.push(<br />, displayPA(row['PA_enabled']))
-                                            else bufferProperties.push(displayPA(row[key]))
+                                            if (bufferProperties[0]) bufferProperties.push(<br />);
+                                            bufferProperties.push(displayPA(row['PA_enabled']));
                                         }
-                                        if (row['set']) {
-                                            if (bufferProperties[0]) bufferProperties.push(<br />, displaySet(row['set']))
-                                            else bufferProperties.push(displaySet(row[key]))
+                                        if (row['Set']) {
+                                            if (bufferProperties[0]) bufferProperties.push(<br />,<br/>);
+                                            bufferProperties.push(displaySet(row['Set'], row['name_en']));
                                         }
                                         if (index === 10) {
                                             if (bufferProperties[0]) return <Table.Td key={((row['id'] + 1) * 30) + index}>{bufferProperties}</Table.Td>
@@ -252,7 +326,7 @@ export default function WeaponTableComponent({ data, type }) {
                                         if (row['old_type']) {
                                             return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">-</Table.Td>
                                         } else {
-                                            return <Table.Td key={((row['id'] + 1) * 30) + index}><Image src="/icons/SpecialAbilityIcon.png" alt="Ability" width={16} height={16} /> {row[key]}</Table.Td>
+                                            return <Table.Td key={((row['id'] + 1) * 30) + index}><Image src="/icons/SpecialAbility.png" alt="Ability" width={16} height={16} /> {row[key]}</Table.Td>
                                         }
                                     case 'SSA Slots':
                                         if (row[key]) {

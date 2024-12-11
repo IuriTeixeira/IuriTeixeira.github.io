@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React from 'react';
 import { useLanguageContext } from "../../language-provider";
-import { Container, Group, SimpleGrid, Table } from '@mantine/core';
+import { useDisclosure } from "@mantine/hooks";
+import { SimpleGrid, Table, Popover, Text } from '@mantine/core';
 import setEffects from "../../sets/sets.json"
+import variantSet from "../../sets/letter-variant-sets.json"
 import './UnitTableComponent.css';
 import '@mantine/core/styles/Table.layer.css';
 
@@ -48,37 +50,68 @@ export default function UnitTableComponent({ data, type }) {
         return effect
     }
 
-    function displaySetMembers(set: any): any {
+    function displaySetMembers(set: any, name_en: string, doubleEffect: boolean): any {
         let members: any[] = []
-        for (let i = 0; i < set.Pieces.length; i++) {
-            if (i % 2 === 0) {
-                members.push(<Image src={`/icons/${set.Pieces[i].replace(' ','')}.png`} alt={set.Pieces[i]} width={16} height={16} />);
+        for (let i = 0; i < set.Pieces.length; i += 2) {
+            let bufferMembers: any[] = []
+            if (set.Pieces[i - 1] == 'Rear' || set.Pieces[i - 1] == 'Arm' || set.Pieces[i - 1] == 'Leg') {
+                bufferMembers.push(<Image src={`/icons/${set.Pieces[i].replace(' ', '')}.png`} alt={set.Pieces[i]} width={16} height={16} />, ' ', set.Pieces[i], ' / ')
             } else {
-                //TODO: popover to display a/b/c on the unit names to explain any of them works
-                if(set.Pieces[i-1] == 'Rear' || set.Pieces[i-1] == 'Arm' || set.Pieces[i-1] == 'Leg') members.push(' ', set.Pieces[i - 1], " / ", set.Pieces[i])
-                else members.push(' ', set.Pieces[i])
-                if (set.Pieces[i + 1]) {
-                    members.push(<br />)
-                }
+                bufferMembers.push(<Image src={`/icons/${set.Pieces[i].replace(' ', '')}.png`} alt={set.Pieces[i]} width={16} height={16} />, ' ')
             }
+            let name: string = name_en.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('Rear / ', '').replace('Arm / ', '').replace('Leg / ', '')
+            if (set.Pieces[i + 1] === name) bufferMembers.push(<strong>{set.Pieces[i + 1]}</strong>)
+            else bufferMembers.push(set.Pieces[i + 1])
+            members.push(<div>{bufferMembers}</div>)
         }
-        return members
+
+        let bufferMembers: any[] = []
+        if (doubleEffect) bufferMembers.push(`Requires ${set.Required + 1} pieces`, <br />, <br />)
+        else bufferMembers.push(`Requires ${set.Required} pieces`, <br />, <br />)
+
+        if (set.Pieces.length > 12) bufferMembers.push(<SimpleGrid cols={3} spacing="sm" verticalSpacing="sm">{members}</SimpleGrid>)
+        else if (set.Pieces.length > 6) bufferMembers.push(<SimpleGrid cols={2} spacing="sm" verticalSpacing="sm">{members}</SimpleGrid>)
+        else bufferMembers.push(<SimpleGrid cols={1} spacing="sm" verticalSpacing="sm">{members}</SimpleGrid>)
+
+        if (variantSet.find(variant => variant.Set === set.Name)) bufferMembers.push(<br />, <strong>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
+
+        return bufferMembers
     }
 
-    function displaySet(setName: string): any[] {
+    function displaySet(setName: string, name_en: string): any[] {
         let set = setEffects.find(set => set.Name === setName)
-        let bufferReturn: any = []
-        let header: any[] = [<Image src={`/icons/Set1.png`} alt="Set 1" width={63} height={18} />, <br />, <strong>{`${set.Required} pieces required`}</strong>, <br />]
-        let setEffect = displaySetEffect(set,false)
-        bufferReturn.push(header, setEffect)
-        if (set.Doubles) {
-            header = [];
-            header.push(<br />, <Image src={`/icons/Set2.png`} alt="Set 2" width={63} height={18} />, <br />, set.Required + 1, ' pieces required');
-            setEffect = displaySetEffect(set, true);
-            bufferReturn.push(<br />, header, <br />, setEffect)
+        const [opened1, { close: close1, open: open1 }] = useDisclosure(false);
+        const [opened2, { close: close2, open: open2 }] = useDisclosure(false);
+        if (set) {
+            let bufferReturn: any = []
+            bufferReturn.push(
+                <Popover width={400} position="bottom" withArrow shadow="md" opened={opened1} arrowSize={12}>
+                    <Popover.Target>
+                        <Text onMouseEnter={open1} onMouseLeave={close1}>
+                            <Image src={`/icons/Set1.png`} alt="Set 1" width={63} height={18} />
+                        </Text>
+                    </Popover.Target>
+                    <Popover.Dropdown style={{ pointerEvents: 'none' }}>
+                        <Text size="sm"><strong>Effect:</strong><br /><br />{displaySetEffect(set, false)}<br /><br /><strong>Set Pieces:</strong><br />{displaySetMembers(set, name_en, false)}</Text>
+                    </Popover.Dropdown>
+                </Popover>)
+            if (set.Doubles) {
+                bufferReturn.push(
+                    <Popover width={400} position="bottom" withArrow shadow="md" opened={opened2} arrowSize={12}>
+                        <Popover.Target>
+                            <Text onMouseEnter={open2} onMouseLeave={close2}>
+                                <Image src={`/icons/Set2.png`} alt="Set 1" width={63} height={18} />
+                            </Text>
+                        </Popover.Target>
+                        <Popover.Dropdown style={{ pointerEvents: 'none' }}>
+                            <Text size="sm"><strong>Effect:</strong><br /><br />{displaySetEffect(set, true)}<br /><br /><strong>Set Pieces:</strong><br />{displaySetMembers(set, name_en, true)}</Text>
+                        </Popover.Dropdown>
+                    </Popover>)
+            }
+            return bufferReturn;
+        } else {
+            return
         }
-        bufferReturn.push(<br />,<br/>, <strong>Set Pieces:</strong>, <br />, displaySetMembers(set))
-        return bufferReturn;
     }
 
     tbodyData.map((item: any, id: number) => {
@@ -242,7 +275,7 @@ export default function UnitTableComponent({ data, type }) {
                                         }
                                         else return
                                     case 'Set':
-                                        if (row[key]) return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">{displaySet(row['Set'])}</Table.Td>
+                                        if (row[key] && displaySet(row[key], row['name_en'])) return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">{displaySet(row[key], row['name_en'])}</Table.Td>
                                         else return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">-</Table.Td>
                                     case 'Default Sub Icon':
                                         return

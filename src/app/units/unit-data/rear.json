@@ -223,5 +223,30 @@
         "Light Resistance":null,
         "Dark Resistance":null,
         "Set":"Ber"
+    },
+    {
+        "Name (JP)": "リア／ファンブレア",
+        "name_en": "Rear / Fan Blair",
+        "name_global": "Back / Fanblare",
+        "Rarity": 8,
+        "Requirement":["S-DEF",294],
+        "S-DEF":135,
+        "R-DEF":121,
+        "T-DEF":81,
+        "HP":15,
+        "PP":2,
+        "S-ATK":null,
+        "R-ATK":null,
+        "T-ATK":null,
+        "Strike Resistance":4,
+        "Ranged Resistance":null,
+        "Tech Resistance":null,
+        "Fire Resistance":6,
+        "Ice Resistance":null,
+        "Lightning Resistance":null,
+        "Wind Resistance":4,
+        "Light Resistance":null,
+        "Dark Resistance":null,
+        "Set":"Fan"
     }
 ]

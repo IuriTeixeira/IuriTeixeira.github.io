@@ -3003,7 +3003,7 @@
         ]
     },
     {
-        "Name": "Zeinesis Weapon",
+        "Name": "Zeinesis",
         "Required": 2,
         "Effect": [
             "DEX",
@@ -3051,7 +3051,7 @@
         ]
     },
     {
-        "Name": "Qliphad Weapon",
+        "Name": "Qliphad",
         "Required": 2,
         "Effect": [
             "DEX",
