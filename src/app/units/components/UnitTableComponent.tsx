@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React from 'react';
 import { useLanguageContext } from "../../language-provider";
-import { useDisclosure } from "@mantine/hooks";
-import { SimpleGrid, Table, Popover, Text } from '@mantine/core';
+import { SimpleGrid, Table, Tooltip } from '@mantine/core';
 import setEffects from "../../sets/sets.json"
 import variantSet from "../../sets/letter-variant-sets.json"
 import './UnitTableComponent.css';
@@ -54,15 +53,22 @@ export default function UnitTableComponent({ data, type }) {
         let members: any[] = []
         for (let i = 0; i < set.Pieces.length; i += 2) {
             let bufferMembers: any[] = []
-            if (set.Pieces[i - 1] == 'Rear' || set.Pieces[i - 1] == 'Arm' || set.Pieces[i - 1] == 'Leg') {
-                bufferMembers.push(<Image src={`/icons/${set.Pieces[i].replace(' ', '')}.png`} alt={set.Pieces[i]} width={16} height={16} />, ' ', set.Pieces[i], ' / ')
-            } else {
-                bufferMembers.push(<Image src={`/icons/${set.Pieces[i].replace(' ', '')}.png`} alt={set.Pieces[i]} width={16} height={16} />, ' ')
-            }
+            bufferMembers.push(<Image src={`/icons/${set.Pieces[i].replace(' ', '')}.png`} alt={set.Pieces[i]} width={16} height={16} />, ' ')
             let name: string = name_en.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('Rear / ', '').replace('Arm / ', '').replace('Leg / ', '')
-            if (set.Pieces[i + 1] === name) bufferMembers.push(<strong>{set.Pieces[i + 1]}</strong>)
-            else bufferMembers.push(set.Pieces[i + 1])
-            members.push(<span>{bufferMembers}</span>)
+            if (set.Pieces[i + 1] === name) {
+                if (set.Pieces[i] == 'Rear' || set.Pieces[i] == 'Arm' || set.Pieces[i] == 'Leg') {
+                    bufferMembers.push(<strong>{set.Pieces[i]} / {set.Pieces[i + 1]}</strong>)
+                } else {
+                    bufferMembers.push(<strong>{set.Pieces[i + 1]}</strong>)
+                }
+            } else {
+                if (set.Pieces[i] == 'Rear' || set.Pieces[i] == 'Arm' || set.Pieces[i] == 'Leg') {
+                    bufferMembers.push(set.Pieces[i], ' / ', set.Pieces[i + 1])
+                } else {
+                    bufferMembers.push(set.Pieces[i + 1])
+                }
+            }
+            members.push(<span key={set + name_en}>{bufferMembers}</span>)
         }
 
         let bufferMembers: any[] = []
@@ -73,40 +79,36 @@ export default function UnitTableComponent({ data, type }) {
         else if (set.Pieces.length > 6) bufferMembers.push(<SimpleGrid cols={2} spacing="sm" verticalSpacing="sm">{members}</SimpleGrid>)
         else bufferMembers.push(<SimpleGrid cols={1} spacing="sm" verticalSpacing="sm">{members}</SimpleGrid>)
 
-        if (variantSet.find(variant => variant.Set === set.Name)) bufferMembers.push(<br />, <strong>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
+        let variant = variantSet.find(variant => variant.Set === set.Name)
+        if (variant) {
+            if (variant.Type == 1) {
+                bufferMembers.push(<br />, <strong>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
+            } else {
+                bufferMembers.push(<br />, <strong>Note: </strong>, 'Any variant (a,b) combination works for this set');
+            }
+        }
 
         return bufferMembers
     }
 
     function displaySet(setName: string, name_en: string): any[] {
         let set = setEffects.find(set => set.Name === setName)
-        const [opened1, { close: close1, open: open1 }] = useDisclosure(false);
-        const [opened2, { close: close2, open: open2 }] = useDisclosure(false);
         if (set) {
             let bufferReturn: any = []
+            let bufferSetInfo: any = [<strong>Effect:</strong>, <br />, <br />, displaySetEffect(set, false), <br />, <br />, <strong>Set Pieces:</strong>, <br />, displaySetMembers(set, name_en, false)]
             bufferReturn.push(
-                <Popover width={400} position="bottom" withArrow shadow="md" opened={opened1} arrowSize={12}>
-                    <Popover.Target>
-                        <Text onMouseEnter={open1} onMouseLeave={close1}>
-                            <Image src={`/icons/Set1.png`} alt="Set 1" width={63} height={18} />
-                        </Text>
-                    </Popover.Target>
-                    <Popover.Dropdown style={{ pointerEvents: 'none' }}>
-                        <Text size="sm"><strong>Effect:</strong><br /><br />{displaySetEffect(set, false)}<br /><br /><strong>Set Pieces:</strong><br />{displaySetMembers(set, name_en, false)}</Text>
-                    </Popover.Dropdown>
-                </Popover>)
+                <Tooltip label={bufferSetInfo} color="dark">
+                    <Image src={`/icons/Set1.png`} alt="Set 1" width={63} height={18} />
+                </Tooltip>
+            )
             if (set.Doubles) {
+                let bufferSetInfo: any = [<strong>Effect:</strong>, <br />, <br />, displaySetEffect(set, true), <br />, <br />, <strong>Set Pieces:</strong>, <br />, displaySetMembers(set, name_en, false)]
                 bufferReturn.push(
-                    <Popover width={400} position="bottom" withArrow shadow="md" opened={opened2} arrowSize={12}>
-                        <Popover.Target>
-                            <Text onMouseEnter={open2} onMouseLeave={close2}>
-                                <Image src={`/icons/Set2.png`} alt="Set 1" width={63} height={18} />
-                            </Text>
-                        </Popover.Target>
-                        <Popover.Dropdown style={{ pointerEvents: 'none' }}>
-                            <Text size="sm"><strong>Effect:</strong><br /><br />{displaySetEffect(set, true)}<br /><br /><strong>Set Pieces:</strong><br />{displaySetMembers(set, name_en, true)}</Text>
-                        </Popover.Dropdown>
-                    </Popover>)
+                    <br />,
+                    <Tooltip label={bufferSetInfo} color="dark">
+                        <Image src={`/icons/Set2.png`} alt="Set 1" width={63} height={18} />
+                    </Tooltip>
+                )
             }
             return bufferReturn;
         } else {
@@ -129,7 +131,7 @@ export default function UnitTableComponent({ data, type }) {
                                 switch (heading) {
                                     case 'Name (JP)': return
                                     case 'name_en': return <Table.Th key={index - 25} className="centerCell">Name</Table.Th>;
-                                    case 'S-DEF': return <React.Fragment><Table.Th key={index - 25} className="centerCell">DEF</Table.Th><Table.Th key='S-DEF (Max)' className="centerCell">DEF<br />(Max)</Table.Th></React.Fragment>
+                                    case 'S-DEF': return <React.Fragment key='Fragment Header DEF'><Table.Th key={index - 25} className="centerCell">DEF</Table.Th><Table.Th key='S-DEF (Max)' className="centerCell">DEF<br />(Max)</Table.Th></React.Fragment>
                                     case 'R-DEF': return
                                     case 'T-DEF': return
                                     case 'S-ATK': return <Table.Th key={index - 25} className="centerCell">ATK</Table.Th>
@@ -170,19 +172,18 @@ export default function UnitTableComponent({ data, type }) {
                             let bufferDEFMax: any[] = [];
                             let bufferResistance: any[] = [];
                             let bufferATK: any[] = [];
-                            let bufferSet: any[] = [];
                             if (row['Name (JP)']) {
                                 switch (key) {
                                     case 'Name (JP)':
-                                        return <Table.Td key={((row['id'] + 1) * 30) + index}>{row['name_en']}<br />{row['Name (JP)']}</Table.Td>
+                                        return <Table.Td key={((row['id'] + 1) * 30) + index}>{((row['id']) * 30) + index + 1}<br/>{row['name_en']}<br />{row['Name (JP)']}</Table.Td>
                                     case 'name_en':
-                                        return
+                                        return <Table.Td key={((row['id']) * 30) + index + 1}>{((row['id']) * 30) + index + 1}<br/></Table.Td>
                                     case 'name_global':
                                         return
                                     case 'Rarity':
-                                        return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell"><Image src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} width={16} height={16} /></Table.Td>
+                                        return <Table.Td key={((row['id']) * 30) + index + 1} className="centerCell">{((row['id']) * 30) + index + 1}<br/><Image src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} width={16} height={16} /></Table.Td>
                                     case 'Requirement':
-                                        return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell"><Image src={`/icons/${row[key][0]}.png`} alt={row[key][0]} width={16} height={16} /> {row[key][1]}</Table.Td>
+                                        return <Table.Td key={((row['id']) * 30) + index + 1} className="centerCell">{((row['id']) * 30) + index + 1}<br/><Image src={`/icons/${row[key][0]}.png`} alt={row[key][0]} width={16} height={16} /> {row[key][1]}</Table.Td>
                                     case 'S-DEF':
                                     case 'R-DEF':
                                     case 'T-DEF':
@@ -203,9 +204,14 @@ export default function UnitTableComponent({ data, type }) {
                                             else bufferDEFMax.push(displayStat('T-DEF', calculateMaxDef(row['T-DEF'])));
                                         }
                                         if (index === 5) {
-                                            if (bufferDEF[0]) return <React.Fragment><Table.Td key={((row['id'] + 1) * 30) + index}>{bufferDEF}</Table.Td><Table.Td key={((row['id'] + 1) * 30) + index + 1}>{bufferDEFMax}</Table.Td></React.Fragment>
-                                            else return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">-</Table.Td>
+                                            return (
+                                                <React.Fragment key='Fragment DEF'>
+                                                    <Table.Td key={((row['id']) * 30) + index + 1}>{((row['id']) * 30) + index + 1}<br/>{bufferDEF}</Table.Td>
+                                                    <Table.Td key={((row['id']) * 30) + index + 2}>{((row['id']) * 30) + index + 2}<br/>{bufferDEFMax}</Table.Td>
+                                                </React.Fragment>
+                                            )
                                         }
+
                                     case 'S-ATK':
                                     case 'R-ATK':
                                     case 'T-ATK':
@@ -282,7 +288,7 @@ export default function UnitTableComponent({ data, type }) {
                                     case 'id':
                                         return
                                     default:
-                                        if (row[key]) return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">{row[key]}</Table.Td>
+                                        if (row[key]) return <Table.Td key={((row['id']) * 30) + index + 2 } className="centerCell">{((row['id']) * 30) + index + 2}</Table.Td>
                                         else return <Table.Td key={((row['id'] + 1) * 30) + index} className="centerCell">-</Table.Td>
                                 }
                             }

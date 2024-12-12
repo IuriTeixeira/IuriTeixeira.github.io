@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React from 'react';
 import { useLanguageContext } from "../../language-provider";
-import { useDisclosure } from "@mantine/hooks";
-import { SimpleGrid, Table, Popover, Text } from '@mantine/core';
+import { SimpleGrid, Table, Tooltip } from '@mantine/core';
 import setEffects from "../../sets/sets.json"
 import variantSet from "../../sets/letter-variant-sets.json"
 import './WeaponTableComponent.css';
@@ -142,33 +141,22 @@ export default function WeaponTableComponent({ data, type }) {
 
     function displaySet(setName: string, name_en: string): any[] {
         let set = setEffects.find(set => set.Name === setName)
-        const [opened1, { close: close1, open: open1 }] = useDisclosure(false);
-        const [opened2, { close: close2, open: open2 }] = useDisclosure(false);
         if (set) {
             let bufferReturn: any = []
+            let bufferSetInfo: any = [<strong>Effect:</strong>, <br />, <br />, displaySetEffect(set, false), <br />, <br />, <strong>Set Pieces:</strong>, <br />, displaySetMembers(set, name_en, false)]
             bufferReturn.push(
-                <Popover width={400} position="bottom" withArrow shadow="md" opened={opened1} arrowSize={12}>
-                    <Popover.Target>
-                        <Text onMouseEnter={open1} onMouseLeave={close1}>
-                            <Image src={`/icons/Set1.png`} alt="Set 1" width={63} height={18} />
-                        </Text>
-                    </Popover.Target>
-                    <Popover.Dropdown style={{ pointerEvents: 'none' }}>
-                        <Text size="sm"><strong>Effect:</strong><br /><br />{displaySetEffect(set, false)}<br /><br /><strong>Set Pieces:</strong><br />{displaySetMembers(set, name_en, false)}</Text>
-                    </Popover.Dropdown>
-                </Popover>)
+                <Tooltip label={bufferSetInfo} color="dark">
+                    <Image src={`/icons/Set1.png`} alt="Set 1" width={63} height={18} />
+                </Tooltip>
+            )
             if (set.Doubles) {
+                let bufferSetInfo: any = [<strong>Effect:</strong>, <br />, <br />, displaySetEffect(set, true), <br />, <br />, <strong>Set Pieces:</strong>, <br />, displaySetMembers(set, name_en, false)]
                 bufferReturn.push(
-                    <Popover width={400} position="bottom" withArrow shadow="md" opened={opened2} arrowSize={12}>
-                        <Popover.Target>
-                            <Text onMouseEnter={open2} onMouseLeave={close2}>
-                                <Image src={`/icons/Set2.png`} alt="Set 1" width={63} height={18} />
-                            </Text>
-                        </Popover.Target>
-                        <Popover.Dropdown style={{ pointerEvents: 'none' }}>
-                            <Text size="sm"><strong>Effect:</strong><br /><br />{displaySetEffect(set, true)}<br /><br /><strong>Set Pieces:</strong><br />{displaySetMembers(set, name_en, true)}</Text>
-                        </Popover.Dropdown>
-                    </Popover>)
+                    <br/>,
+                    <Tooltip label={bufferSetInfo} color="dark">
+                        <Image src={`/icons/Set2.png`} alt="Set 1" width={63} height={18} />
+                    </Tooltip>
+                )
             }
             return bufferReturn;
         } else {
