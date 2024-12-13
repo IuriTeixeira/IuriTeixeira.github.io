@@ -1,34 +1,26 @@
 [
     {
-        "Set": "Ber",
-        "Type": 1
+        "Set": "Ber"
     },
     {
-        "Set": "Cross",
-        "Type": 2
+        "Set": "Cross"
     },
     {
-        "Set": "Zac",
-        "Type": 1
+        "Set": "Zac"
     },
     {
-        "Set": "Br",
-        "Type": 2
+        "Set": "Br"
     },
     {
-        "Set": "Ti",
-        "Type": 1
+        "Set": "Ti"
     },
     {
-        "Set": "Circu",
-        "Type": 1
+        "Set": "Circu"
     },
     {
-        "Set": "Dot",
-        "Type": 2
+        "Set": "Dot"
     },
     {
-        "Set": "Psy",
-        "Type": 1
+        "Set": "Psy"
     }
 ]

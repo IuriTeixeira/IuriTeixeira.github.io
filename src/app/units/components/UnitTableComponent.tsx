@@ -32,6 +32,20 @@ export default function UnitTableComponent({ data, type }) {
         return buffer
     }
 
+    function displayAbilities(array: any[]): any[] {
+        let buffer: any[] = []
+        if (array) {
+            for (let i = 0; i < array.length; i++) {
+                buffer.push(<Image key={uuidv4()} src="/icons/Ability.png" alt="Ability" width={16} height={16} />)
+                buffer.push(" " + array[i])
+                if (array[i + 1]) {
+                    buffer.push(<br key={uuidv4()} />)
+                }
+            }
+        }
+        return buffer;
+    }
+
     function displaySetEffect(set: any, doubleEffect: boolean): any {
         let effect: any[] = []
         set.Effect.forEach((value: any, index: number) => {
@@ -40,8 +54,8 @@ export default function UnitTableComponent({ data, type }) {
                 else effect.push(<Image key={uuidv4()} src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} width={16} height={16} />);
             }
             else {
-                if (doubleEffect) effect.push(' ', set.Effect[index] * 2);
-                else effect.push(' ', set.Effect[index]);
+                if (doubleEffect) effect.push(' ', Math.trunc(set.Effect[index] * 2));
+                else effect.push(' ', Math.trunc(set.Effect[index]));
                 if (set.Effect[index + 1]) {
                     effect.push(<br key={uuidv4()} />);
                 }
@@ -81,13 +95,7 @@ export default function UnitTableComponent({ data, type }) {
         else bufferMembers.push(<SimpleGrid key={uuidv4()} cols={1} spacing="sm" verticalSpacing="sm">{members}</SimpleGrid>)
 
         let variant = variantSet.find(variant => variant.Set === set.Name)
-        if (variant) {
-            if (variant.Type == 1) {
-                bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
-            } else {
-                bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b) combination works for this set');
-            }
-        }
+        if (variant) bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
 
         return bufferMembers
     }
@@ -103,7 +111,7 @@ export default function UnitTableComponent({ data, type }) {
                 </Tooltip>
             )
             if (set.Doubles) {
-                let bufferSetInfo: any = [<strong key={uuidv4()}>Effect:</strong>, <br key={uuidv4()} />, <br key={uuidv4()} />, displaySetEffect(set, true), <br key={uuidv4()} />, <br key={uuidv4()} />, <strong key={uuidv4()}>Set Pieces:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name_en, false)]
+                let bufferSetInfo: any = [<strong key={uuidv4()}>Effect:</strong>, <br key={uuidv4()} />, <br key={uuidv4()} />, displaySetEffect(set, true), <br key={uuidv4()} />, <br key={uuidv4()} />, <strong key={uuidv4()}>Set Pieces:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name_en, true)]
                 bufferReturn.push(
                     <br key={uuidv4()} />,
                     <Tooltip key={uuidv4()} label={bufferSetInfo} color="dark">
@@ -126,7 +134,7 @@ export default function UnitTableComponent({ data, type }) {
             <Table.Thead>
                 <Table.Tr>
                     {<Table.Th className="centerCell">Icon</Table.Th>}
-                    {theadData.map((heading, index) => {
+                    {theadData.map((heading:string) => {
                         if (language === 'en') {
                             if (heading !== 'name_global') {
                                 switch (heading) {
@@ -148,7 +156,8 @@ export default function UnitTableComponent({ data, type }) {
                                     case 'Light Resistance': return
                                     case 'Dark Resistance': return
                                     case 'id': return;
-                                    case 'Set': return <Table.Th key={uuidv4()} className="centerCell">Set</Table.Th>
+                                    case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
+                                    case 'Set': return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
                                     case 'Default Sub Icon': return
                                     default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
                                 }
@@ -285,6 +294,9 @@ export default function UnitTableComponent({ data, type }) {
                                             else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                         }
                                         else return
+                                    case 'Abilities':
+                                        if(row[key])return <Table.Td key={uuidv4()}>{displayAbilities(row['Abilities'])}</Table.Td>
+                                        else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                     case 'Set':
                                         if (row[key] && displaySet(row[key], row['name_en'])) return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['name_en'])}</Table.Td>
                                         else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>

@@ -104,8 +104,8 @@ export default function WeaponTableComponent({ data, type }) {
                 else effect.push(<Image key={uuidv4()} src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} width={16} height={16} />);
             }
             else {
-                if (doubleEffect) effect.push(' ', set.Effect[index] * 2);
-                else effect.push(' ', set.Effect[index]);
+                if (doubleEffect) effect.push(' ', Math.trunc(set.Effect[index] * 2));
+                else effect.push(' ', Math.trunc(set.Effect[index]));
                 if (set.Effect[index + 1]) {
                     effect.push(<br key={uuidv4()} />);
                 }
@@ -146,11 +146,7 @@ export default function WeaponTableComponent({ data, type }) {
 
         let variant = variantSet.find(variant => variant.Set === set.Name)
         if (variant) {
-            if (variant.Type == 1) {
-                bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
-            } else {
-                bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b) combination works for this set');
-            }
+            bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
         }
 
         return bufferMembers
@@ -220,7 +216,7 @@ export default function WeaponTableComponent({ data, type }) {
             <Table.Thead>
                 <Table.Tr>
                     <Table.Th className="centerCell">Icon</Table.Th>
-                    {theadData.map((heading, index) => {
+                    {theadData.map((heading:string) => {
                         if (heading !== 'old_type') {
                             if (language === 'en') {
                                 if (heading !== 'name_global') {
@@ -318,7 +314,7 @@ export default function WeaponTableComponent({ data, type }) {
                                             bufferProperties.push(displayPA(row['PA_enabled']));
                                         }
                                         if (row['Set']) {
-                                            if (bufferProperties[0]) bufferProperties.push(<br key={uuidv4()} />, <br key={uuidv4()} />);
+                                            if (bufferProperties[0]) bufferProperties.push(<br key={uuidv4()} />);
                                             bufferProperties.push(displaySet(row['Set'], row['name_en']));
                                         }
                                         if (index === 10) {

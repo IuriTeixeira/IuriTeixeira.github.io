@@ -252,7 +252,7 @@
         ]
     },
     {
-        "Name": "Flecu",
+        "Name": "Flacu",
         "Required": 3,
         "Effect": [
             "S-ATK",
@@ -268,23 +268,23 @@
         ],
         "Pieces": [
             "Rear",
-            "Flecuov",
+            "Flacuov",
             "Rear",
-            "Flecuixa",
+            "Flacuixa",
             "Rear",
-            "Flecuhate",
+            "Flacuhate",
             "Arm",
-            "Flecuray",
+            "Flacuray",
             "Arm",
-            "Flecuete",
+            "Flacuete",
             "Arm",
-            "Flecubeny",
+            "Flacubeny",
             "Leg",
-            "Flecuras",
+            "Flacuras",
             "Leg",
-            "Flegrance",
+            "Flagrance",
             "Leg",
-            "Fleciante"
+            "Flaciante"
         ]
     },
     {
@@ -523,7 +523,7 @@
         ],
         "Pieces": [
             "Rear",
-            "Minst Fon",
+            "Minst Phon",
             "Arm",
             "Minst Free",
             "Leg",
