@@ -1336,7 +1336,7 @@
             "Partizan",
             "Ragne Answerer",
             "Rear",
-            "Ragne Cuil",
+            "Ragne Suile",
             "Arm",
             "Ragne Ancaire",
             "Leg",
@@ -1361,7 +1361,7 @@
             "Partizan",
             "Agrani Answerer",
             "Rear",
-            "Agrani Cuil",
+            "Agrani Suile",
             "Arm",
             "Agrani Ancaire",
             "Leg",
@@ -1457,7 +1457,7 @@
         ]
     },
     {
-        "Name": "Kings",
+        "Name": "King's",
         "Required": 3,
         "Doubles": true,
         "Effect": [
@@ -1484,11 +1484,11 @@
             "Talis",
             "Kings Bit",
             "Rear",
-            "Kings Pack",
+            "King's Pack",
             "Arm",
-            "Kings Arm",
+            "King's Arm",
             "Leg",
-            "Kings Legs"
+            "King's Legs"
         ]
     },
     {
@@ -1604,7 +1604,7 @@
             "Wand",
             "Ex Wand",
             "Rear",
-            "Hexys Ex",
+            "Exys Ex",
             "Arm",
             "Irvis Ex",
             "Leg",

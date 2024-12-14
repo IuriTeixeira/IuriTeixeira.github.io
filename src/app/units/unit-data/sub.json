@@ -21,8 +21,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドリアクトa",
@@ -46,8 +45,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドマインドa",
@@ -71,8 +69,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドスタミナa",
@@ -96,8 +93,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドスピリタa",
@@ -121,8 +117,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ブロウレジストa",
@@ -146,8 +141,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ショットレジストa",
@@ -171,8 +165,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／フレイムレジストa",
@@ -196,8 +189,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アイスレジストa",
@@ -221,8 +213,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ボルトレジストa",
@@ -246,8 +237,7 @@
         "Lightning Resistance":4,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ストームレジストa",
@@ -271,8 +261,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":4,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ルミナスレジストa",
@@ -296,8 +285,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":4,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／グルームレジストa",
@@ -321,8 +309,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":4,
-        "Default Sub Icon":true
+        "Dark Resistance":4
     },
     {
         "Name (JP)": "サブ／アドウォールb",
@@ -346,8 +333,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドリアクトb",
@@ -371,8 +357,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドマインドb",
@@ -396,8 +381,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドスタミナb",
@@ -421,8 +405,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドスピリタb",
@@ -446,8 +429,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ブロウレジストb",
@@ -471,8 +453,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ショットレジストb",
@@ -496,8 +477,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／フレイムレジストb",
@@ -521,8 +501,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アイスレジストb",
@@ -546,8 +525,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ボルトレジストb",
@@ -571,8 +549,7 @@
         "Lightning Resistance":6,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ストームレジストb",
@@ -596,8 +573,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":6,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ルミナスレジストb",
@@ -621,8 +597,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":6,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／グルームレジストb",
@@ -646,8 +621,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":6,
-        "Default Sub Icon":true
+        "Dark Resistance":6
     },
     {
         "Name (JP)": "サブ／アドウォールc",
@@ -671,8 +645,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドリアクトc",
@@ -696,8 +669,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドマインドc",
@@ -721,8 +693,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドスタミナc",
@@ -746,8 +717,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドスピリタc",
@@ -771,8 +741,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ブロウレジストc",
@@ -796,8 +765,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ショットレジストc",
@@ -821,8 +789,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／フレイムレジストc",
@@ -846,8 +813,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アイスレジストc",
@@ -871,8 +837,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ボルトレジストc",
@@ -896,8 +861,7 @@
         "Lightning Resistance":8,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ストームレジストc",
@@ -921,8 +885,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":8,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ルミナスレジストc",
@@ -946,8 +909,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":8,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／グルームレジストc",
@@ -971,8 +933,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":8,
-        "Default Sub Icon":true
+        "Dark Resistance":8
     },
     {
         "Name (JP)": "サブ／アドウォールd",
@@ -996,8 +957,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドリアクトd",
@@ -1021,8 +981,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドマインドd",
@@ -1046,8 +1005,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドスタミナd",
@@ -1071,8 +1029,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドスピリタd",
@@ -1096,8 +1053,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドウォールe",
@@ -1121,8 +1077,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドリアクトe",
@@ -1146,8 +1101,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドマインドe",
@@ -1171,8 +1125,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドスタミナe",
@@ -1196,8 +1149,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／アドスピリタe",
@@ -1221,8 +1173,7 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":null,
-        "Default Sub Icon":true
+        "Dark Resistance":null
     },
     {
         "Name (JP)": "サブ／ウェポンズバリア",
