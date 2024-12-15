@@ -1,12 +1,15 @@
-import { Image } from '@mantine/core';
 import React from 'react';
-import { useLanguageContext } from "../../language-provider";
-import { Flex, SimpleGrid, Table, Tooltip } from '@mantine/core';
-import setEffects from "../../sets/sets.json"
-import variantSet from "../../sets/letter-variant-sets.json"
+import { useLanguageContext } from "../language-provider";
+import { Image, Flex, SimpleGrid, Table, Tooltip } from '@mantine/core';
 import './UnitTableComponent.css';
 import '@mantine/core/styles/Table.layer.css';
 import { v4 as uuidv4 } from 'uuid';
+import displaySet from './displaySet';
+import displayAbilities from './displayAbilities';
+
+//import localFont from 'next/font/local'
+
+//const myFont = localFont({src: '/Eurostile/eurostile-round-extended-medium.otf'})
 
 export default function UnitTableComponent({ data, type }) {
     const { language/*, setLanguage*/ } = useLanguageContext()
@@ -30,95 +33,6 @@ export default function UnitTableComponent({ data, type }) {
         let buffer: any[] = []
         buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${key.replace(' ', '')}.png`} alt={key} title={key} w={16} h={16} />, ' ', value, '%')
         return <Flex align="center" key={uuidv4()} gap={5}>{buffer}</Flex>
-    }
-
-    function displayAbilities(ability: any[]): any {
-        let buffer: any[] = []
-        if (ability) {
-            for (let i = 0; i < ability.length; i++) {
-                buffer.push(<Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Ability.png" alt="Ability" title='Ability' w={16} h={16} />{ability[i]}</Flex>)
-            }
-        }
-        return <SimpleGrid key={uuidv4()} cols={2} spacing="lg" verticalSpacing={0}>{buffer}</SimpleGrid>
-    }
-
-    function displaySetEffect(set: any, doubleEffect: boolean): any {
-        let effect: any[] = []
-        set.Effect.forEach((value: any, index: number) => {
-            if (doubleEffect) {
-                if (index % 2 === 0) {
-                    if (set.Effect[index] === 'HP' || set.Effect[index] === 'PP') effect.push(<Flex key={uuidv4()} gap={5}><strong key={uuidv4()}>{set.Effect[index]}</strong> {Math.trunc(set.Effect[index + 1] * 2)}</Flex>);
-                    else effect.push(<Flex key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} title={`${set.Effect[index]}`} w={16} h={16} /> {Math.trunc(set.Effect[index + 1] * 2)}</Flex>);
-                }
-            } else {
-                if (index % 2 === 0) {
-                    if (set.Effect[index] === 'HP' || set.Effect[index] === 'PP') effect.push(<Flex key={uuidv4()} gap={5}><strong key={uuidv4()}>{set.Effect[index]}</strong> {Math.trunc(set.Effect[index + 1])}</Flex>);
-                    else effect.push(<Flex key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} title={`${set.Effect[index]}`} w={16} h={16} /> {Math.trunc(set.Effect[index + 1])}</Flex>);
-                }
-            }
-        }
-        )
-        return <Flex justify="center" align="center" direction="column" key={uuidv4()} gap={5}>{effect}</Flex>
-    }
-
-    function displaySetMembers(set: any, name_en: string, doubleEffect: boolean): any {
-        let members: any[] = []
-        for (let i = 0; i < set.Pieces.length; i += 2) {
-            let bufferMembers: any[] = []
-            bufferMembers.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${set.Pieces[i].replace(' ', '')}.png`} alt={set.Pieces[i]} title={set.Pieces[i]} w={16} h={16} />, ' ')
-            let name: string = name_en.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('Rear / ', '').replace('Arm / ', '').replace('Leg / ', '')
-            if (set.Pieces[i + 1] === name) {
-                if (set.Pieces[i] == 'Rear' || set.Pieces[i] == 'Arm' || set.Pieces[i] == 'Leg') {
-                    bufferMembers.push(<strong key={uuidv4()}>{set.Pieces[i]} / {set.Pieces[i + 1]}</strong>)
-                } else {
-                    bufferMembers.push(<strong key={uuidv4()}>{set.Pieces[i + 1]}</strong>)
-                }
-            } else {
-                if (set.Pieces[i] == 'Rear' || set.Pieces[i] == 'Arm' || set.Pieces[i] == 'Leg') {
-                    bufferMembers.push(set.Pieces[i], ' / ', set.Pieces[i + 1])
-                } else {
-                    bufferMembers.push(set.Pieces[i + 1])
-                }
-            }
-            members.push(<Flex align="center" key={uuidv4()} gap={5}>{bufferMembers}</Flex>)
-        }
-
-        let bufferMembers: any[] = []
-        if (doubleEffect) bufferMembers.push(`Requires ${set.Required + 1} pieces`, <br key={uuidv4()} />, <br key={uuidv4()} />)
-        else bufferMembers.push(`Requires ${set.Required} pieces`, <br key={uuidv4()} />, <br key={uuidv4()} />)
-
-        bufferMembers.push(<SimpleGrid key={uuidv4()} cols={3} spacing="xs" verticalSpacing={0}>{members}</SimpleGrid>)
-
-        let variant = variantSet.find(variant => variant.Set === set.Name)
-        if (variant) {
-            bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
-        }
-
-        return bufferMembers
-    }
-
-    function displaySet(setName: string, name_en: string): any {
-        let set = setEffects.find(set => set.Name === setName)
-        if (set) {
-            let bufferReturn: any = []
-            let bufferSetInfo: any = [<strong key={uuidv4()}>Effect:</strong>, <br key={uuidv4()} />, displaySetEffect(set, false), <br key={uuidv4()} />, <strong key={uuidv4()}>Set Pieces:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name_en, false)]
-            bufferReturn.push(
-                <Tooltip className='centerCell' key={uuidv4()} label={bufferSetInfo} color="dark">
-                    <Flex align="center" justify="center" key={uuidv4()} gap="xs"><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Set1.png`} alt="Set Effect 1: Hover to show details" w={63} h={18} /></Flex>
-                </Tooltip>
-            )
-            if (set.Doubles) {
-                let bufferSetInfo: any = [<strong key={uuidv4()}>Effect:</strong>, <br key={uuidv4()} />, displaySetEffect(set, true), <br key={uuidv4()} />, <strong key={uuidv4()}>Set Pieces:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name_en, false)]
-                bufferReturn.push(
-                    <Tooltip className='centerCell' key={uuidv4()} label={bufferSetInfo} color="dark">
-                        <Flex align="center" justify="center" key={uuidv4()} gap="xs"><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Set2.png`} alt="Set Effect 2: Hover to show details" w={63} h={18} /></Flex>
-                    </Tooltip>
-                )
-            }
-            return <Flex align="center" justify="center" key={uuidv4()} gap="xs">{bufferReturn}</Flex>
-        } else {
-            return
-        }
     }
 
     tbodyData.map((item: any, id: number) => {
@@ -274,11 +188,9 @@ export default function UnitTableComponent({ data, type }) {
                                         }
                                         else return
                                     case 'Abilities':
-                                        if (row[key]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayAbilities(row['Abilities'])}</Flex></Table.Td>
-                                        else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                                        return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayAbilities(row['Abilities'],false)}</Flex></Table.Td>
                                     case 'Set':
-                                        if (row[key] && displaySet(row[key], row['name_en'])) return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['name_en'])}</Table.Td>
-                                        else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                                        return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['name_en'])}</Table.Td>
                                     case 'Default Sub Icon':
                                         return
                                     case 'id':

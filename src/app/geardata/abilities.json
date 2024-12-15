@@ -1,0 +1,3837 @@
+[
+    {
+        "Name": "Power I",
+        "Effect": [
+            "S-ATK",
+            10
+        ]
+    },
+    {
+        "Name": "Power II",
+        "Effect": [
+            "S-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Power III",
+        "Effect": [
+            "S-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Power IV",
+        "Effect": [
+            "S-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "Power V",
+        "Effect": [
+            "S-ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Shoot I",
+        "Effect": [
+            "R-ATK",
+            10
+        ]
+    },
+    {
+        "Name": "Shoot II",
+        "Effect": [
+            "R-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Shoot III",
+        "Effect": [
+            "R-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Shoot IV",
+        "Effect": [
+            "R-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "Shoot V",
+        "Effect": [
+            "R-ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Technique I",
+        "Effect": [
+            "T-ATK",
+            10
+        ]
+    },
+    {
+        "Name": "Technique II",
+        "Effect": [
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Technique III",
+        "Effect": [
+            "T-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Technique IV",
+        "Effect": [
+            "T-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "Technique V",
+        "Effect": [
+            "T-ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Arm I",
+        "Effect": [
+            "DEX",
+            10
+        ]
+    },
+    {
+        "Name": "Arm II",
+        "Effect": [
+            "DEX",
+            20
+        ]
+    },
+    {
+        "Name": "Arm III",
+        "Effect": [
+            "DEX",
+            30
+        ]
+    },
+    {
+        "Name": "Arm IV",
+        "Effect": [
+            "DEX",
+            35
+        ]
+    },
+    {
+        "Name": "Arm V",
+        "Effect": [
+            "DEX",
+            40
+        ]
+    },
+    {
+        "Name": "Body I",
+        "Effect": [
+            "S-DEF",
+            10
+        ]
+    },
+    {
+        "Name": "Body II",
+        "Effect": [
+            "S-DEF",
+            20
+        ]
+    },
+    {
+        "Name": "Body III",
+        "Effect": [
+            "S-DEF",
+            30
+        ]
+    },
+    {
+        "Name": "Body IV",
+        "Effect": [
+            "S-DEF",
+            35
+        ]
+    },
+    {
+        "Name": "Body V",
+        "Effect": [
+            "S-DEF",
+            40
+        ]
+    },
+    {
+        "Name": "React I",
+        "Effect": [
+            "R-DEF",
+            10
+        ]
+    },
+    {
+        "Name": "React II",
+        "Effect": [
+            "R-DEF",
+            20
+        ]
+    },
+    {
+        "Name": "React III",
+        "Effect": [
+            "R-DEF",
+            30
+        ]
+    },
+    {
+        "Name": "React IV",
+        "Effect": [
+            "R-DEF",
+            35
+        ]
+    },
+    {
+        "Name": "React V",
+        "Effect": [
+            "R-DEF",
+            40
+        ]
+    },
+    {
+        "Name": "Mind I",
+        "Effect": [
+            "T-DEF",
+            10
+        ]
+    },
+    {
+        "Name": "Mind II",
+        "Effect": [
+            "T-DEF",
+            20
+        ]
+    },
+    {
+        "Name": "Mind III",
+        "Effect": [
+            "T-DEF",
+            30
+        ]
+    },
+    {
+        "Name": "Mind IV",
+        "Effect": [
+            "T-DEF",
+            35
+        ]
+    },
+    {
+        "Name": "Mind V",
+        "Effect": [
+            "T-DEF",
+            40
+        ]
+    },
+    {
+        "Name": "Ability I",
+        "Effect": [
+            "All Stats",
+            5
+        ]
+    },
+    {
+        "Name": "Ability II",
+        "Effect": [
+            "All Stats",
+            10
+        ]
+    },
+    {
+        "Name": "Ability III",
+        "Effect": [
+            "All Stats",
+            15
+        ]
+    },
+    {
+        "Name": "Ability IV",
+        "Effect": [
+            "All Stats",
+            20
+        ]
+    },
+    {
+        "Name": "Ability V",
+        "Effect": [
+            "All Stats",
+            30
+        ]
+    },
+    {
+        "Name": "Returner I",
+        "Effect": [
+            "PP",
+            1,
+            "All Stats",
+            3
+        ]
+    },
+    {
+        "Name": "Returner II",
+        "Effect": [
+            "PP",
+            2,
+            "All Stats",
+            5
+        ]
+    },
+    {
+        "Name": "Returner III",
+        "Effect": [
+            "PP",
+            3,
+            "All Stats",
+            10
+        ]
+    },
+    {
+        "Name": "Returner IV",
+        "Effect": [
+            "PP",
+            4,
+            "All Stats",
+            15
+        ]
+    },
+    {
+        "Name": "Returner V",
+        "Effect": [
+            "PP",
+            5,
+            "All Stats",
+            30
+        ]
+    },
+    {
+        "Name": "Crack I",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "ATK",
+            3,
+            "DEF",
+            5
+        ]
+    },
+    {
+        "Name": "Crack II",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            1,
+            "ATK",
+            5,
+            "DEF",
+            10
+        ]
+    },
+    {
+        "Name": "Crack III",
+        "Effect": [
+            "HP",
+            15,
+            "PP",
+            1,
+            "ATK",
+            10,
+            "DEF",
+            15
+        ]
+    },
+    {
+        "Name": "Crack IV",
+        "Effect": [
+            "HP",
+            30,
+            "PP",
+            2,
+            "ATK",
+            15,
+            "DEF",
+            30
+        ]
+    },
+    {
+        "Name": "Crack V",
+        "Effect": [
+            "HP",
+            50,
+            "PP",
+            2,
+            "ATK",
+            30,
+            "DEF",
+            50
+        ]
+    },
+    {
+        "Name": "Stamina I",
+        "Effect": [
+            "HP",
+            20
+        ]
+    },
+    {
+        "Name": "Stamina II",
+        "Effect": [
+            "HP",
+            40
+        ]
+    },
+    {
+        "Name": "Stamina III",
+        "Effect": [
+            "HP",
+            50
+        ]
+    },
+    {
+        "Name": "Stamina IV",
+        "Effect": [
+            "HP",
+            60
+        ]
+    },
+    {
+        "Name": "Stamina V",
+        "Effect": [
+            "HP",
+            70
+        ]
+    },
+    {
+        "Name": "Spirita I",
+        "Effect": [
+            "PP",
+            2
+        ]
+    },
+    {
+        "Name": "Spirita II",
+        "Effect": [
+            "PP",
+            3
+        ]
+    },
+    {
+        "Name": "Spirita III",
+        "Effect": [
+            "PP",
+            4
+        ]
+    },
+    {
+        "Name": "Spirita IV",
+        "Effect": [
+            "PP",
+            5
+        ]
+    },
+    {
+        "Name": "Spirita V",
+        "Effect": [
+            "PP",
+            6
+        ]
+    },
+    {
+        "Name": "Power Boost",
+        "Effect": [
+            "S-ATK",
+            25
+        ]
+    },
+    {
+        "Name": "Shoot Boost",
+        "Effect": [
+            "R-ATK",
+            25
+        ]
+    },
+    {
+        "Name": "Technique Boost",
+        "Effect": [
+            "T-ATK",
+            25
+        ]
+    },
+    {
+        "Name": "Stamina Boost",
+        "Effect": [
+            "HP",
+            45
+        ]
+    },
+    {
+        "Name": "Spirita Boost",
+        "Effect": [
+            "PP",
+            5
+        ]
+    },
+    {
+        "Name": "Noble Power",
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Noble Shoot",
+        "Effect": [
+            "PP",
+            3,
+            "R-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Noble Technique",
+        "Effect": [
+            "PP",
+            3,
+            "T-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Noble Stamina",
+        "Effect": [
+            "HP",
+            50,
+            "PP",
+            3
+        ]
+    },
+    {
+        "Name": "Tenora Boost",
+        "Effect": [
+            "S-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "GRM Boost",
+        "Effect": [
+            "R-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "Yohmei Boost",
+        "Effect": [
+            "T-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "Elegant Power",
+        "Effect": [
+            "PP",
+            4,
+            "S-ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Elegant Shoot",
+        "Effect": [
+            "PP",
+            4,
+            "R-ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Elegant Technique",
+        "Effect": [
+            "PP",
+            4,
+            "T-ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Elegant Stamina",
+        "Effect": [
+            "HP",
+            70,
+            "PP",
+            4
+        ]
+    },
+    {
+        "Name": "Grace Power",
+        "Effect": [
+            "PP",
+            5,
+            "S-ATK",
+            50
+        ]
+    },
+    {
+        "Name": "Grace Shoot",
+        "Effect": [
+            "PP",
+            5,
+            "R-ATK",
+            50
+        ]
+    },
+    {
+        "Name": "Grace Technique",
+        "Effect": [
+            "PP",
+            5,
+            "T-ATK",
+            50
+        ]
+    },
+    {
+        "Name": "Grace Stamina",
+        "Effect": [
+            "HP",
+            80,
+            "PP",
+            5
+        ]
+    },
+    {
+        "Name": "Spirita Alpha",
+        "Effect": [
+            "PP",
+            3,
+            "DEX",
+            30
+        ]
+    },
+    {
+        "Name": "Grand Power",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            5,
+            "S-ATK",
+            60
+        ]
+    },
+    {
+        "Name": "Grand Shoot",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            5,
+            "R-ATK",
+            60
+        ]
+    },
+    {
+        "Name": "Grand Technique",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            5,
+            "T-ATK",
+            60
+        ]
+    },
+    {
+        "Name": "Grand Stamina",
+        "Effect": [
+            "HP",
+            100,
+            "PP",
+            6
+        ]
+    },
+    {
+        "Name": "Grand Spirita",
+        "Effect": [
+            "PP",
+            15
+        ]
+    },
+    {
+        "Name": "Mutation I",
+        "Effect": [
+            "HP",
+            10,
+            "S-ATK",
+            10,
+            "R-ATK",
+            10,
+            "T-ATK",
+            10
+        ]
+    },
+    {
+        "Name": "Mutation II",
+        "Effect": [
+            "HP",
+            15,
+            "S-ATK",
+            15,
+            "R-ATK",
+            15,
+            "T-ATK",
+            15
+        ]
+    },
+    {
+        "Name": "Stigma",
+        "Effect": [
+            "PP",
+            5,
+            "DEX",
+            20
+        ]
+    },
+    {
+        "Name": "Vinculum",
+        "Effect": [
+            "ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Modulator",
+        "Effect": [
+            "ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Flict Arma",
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Flict Tiro",
+        "Effect": [
+            "PP",
+            3,
+            "R-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Flict Magia",
+        "Effect": [
+            "PP",
+            3,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Alter Arma",
+        "Effect": [
+            "HP",
+            30,
+            "S-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Alter Tiro",
+        "Effect": [
+            "HP",
+            30,
+            "R-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Alter Magia",
+        "Effect": [
+            "HP",
+            30,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Ligand Arma",
+        "Effect": [
+            "HP",
+            30,
+            "PP",
+            3,
+            "S-ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Ligand Tiro",
+        "Effect": [
+            "HP",
+            30,
+            "PP",
+            3,
+            "R-ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Ligand Magia",
+        "Effect": [
+            "HP",
+            30,
+            "PP",
+            3,
+            "T-ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Yamato Factor",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            1,
+            "S-ATK",
+            10,
+            "R-ATK",
+            20,
+            "T-ATK",
+            10
+        ]
+    },
+    {
+        "Name": "Mother Factor",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            1,
+            "S-ATK",
+            10,
+            "R-ATK",
+            10,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Deus Factor",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            1,
+            "S-ATK",
+            20,
+            "R-ATK",
+            10,
+            "T-ATK",
+            10
+        ]
+    },
+    {
+        "Name": "Ether Factor",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            6,
+            "All Stats",
+            30
+        ]
+    },
+    {
+        "Name": "Omega Reverie",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            1,
+            "ATK",
+            15
+        ]
+    },
+    {
+        "Name": "Elder Reverie",
+        "Effect": [
+            "PP",
+            -2,
+            "S-ATK",
+            40,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Loser Reverie",
+        "Effect": [
+            "HP",
+            -20,
+            "S-ATK",
+            20,
+            "R-ATK",
+            20,
+            "T-ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Appregina Reverie",
+        "Effect": [
+            "HP",
+            -10,
+            "PP",
+            -1,
+            "S-ATK",
+            20,
+            "R-ATK",
+            40,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Double Reverie",
+        "Effect": [
+            "HP",
+            50,
+            "PP",
+            5,
+            "ATK",
+            -20
+        ]
+    },
+    {
+        "Name": "Persona Reverie",
+        "Effect": [
+            "ATK",
+            40,
+            "DEF",
+            -20
+        ]
+    },
+    {
+        "Name": "Mana Reverie",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            4,
+            "ATK",
+            50
+        ]
+    },
+    {
+        "Name": "Omega Memoria",
+        "Effect": [
+            "HP",
+            15,
+            "PP",
+            2,
+            "All Stats",
+            15
+        ]
+    },
+    {
+        "Name": "Ange Glare",
+        "Effect": [
+            "S-ATK",
+            30,
+            "S-DEF",
+            40,
+            "R-DEF",
+            20,
+            "T-DEF",
+            20
+        ]
+    },
+    {
+        "Name": "Veluge Glare",
+        "Effect": [
+            "R-ATK",
+            30,
+            "S-DEF",
+            20,
+            "R-DEF",
+            40,
+            "T-DEF",
+            20
+        ]
+    },
+    {
+        "Name": "Dominus Glare",
+        "Effect": [
+            "T-ATK",
+            30,
+            "S-DEF",
+            20,
+            "R-DEF",
+            20,
+            "T-DEF",
+            40
+        ]
+    },
+    {
+        "Name": "Fordruss Glare",
+        "Effect": [
+            "HP",
+            40,
+            "PP",
+            4,
+            "S-DEF",
+            35,
+            "R-DEF",
+            35,
+            "T-DEF",
+            35
+        ]
+    },
+    {
+        "Name": "Execour Glare",
+        "Effect": [
+            "ATK",
+            20,
+            "DEF",
+            50
+        ]
+    },
+    {
+        "Name": "Varuna Glare",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            2,
+            "S-ATK",
+            30,
+            "T-ATK",
+            30,
+            "DEF",
+            20
+        ]
+    },
+    {
+        "Name": "Mitra Glare",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            2,
+            "S-ATK",
+            30,
+            "R-ATK",
+            30,
+            "DEF",
+            20
+        ]
+    },
+    {
+        "Name": "Shiva Glare",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            2,
+            "R-ATK",
+            30,
+            "T-ATK",
+            30,
+            "DEF",
+            20
+        ]
+    },
+    {
+        "Name": "Origin Glare",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            2,
+            "ATK",
+            30,
+            "DEF",
+            10
+        ]
+    },
+    {
+        "Name": "Doom Break I",
+        "Effect": [
+            "PP",
+            2,
+            "ATK",
+            15
+        ]
+    },
+    {
+        "Name": "Doom Break II",
+        "Effect": [
+            "PP",
+            3,
+            "ATK",
+            25
+        ]
+    },
+    {
+        "Name": "Doom Break III",
+        "Effect": [
+            "PP",
+            4,
+            "ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Necky Smile",
+        "Effect": [
+            "PP",
+            2,
+            "ATK",
+            5
+        ]
+    },
+    {
+        "Name": "Sentence Power",
+        "Effect": [
+            "PP",
+            4,
+            "S-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Sentence Shoot",
+        "Effect": [
+            "PP",
+            4,
+            "R-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Sentence Tech",
+        "Effect": [
+            "PP",
+            4,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Soul Catalyst",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            1,
+            "Can be combined with certain Abilities."
+        ]
+    },
+    {
+        "Name": "Factor Catalyst",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            1,
+            "Can be combined with certain Abilities."
+        ]
+    },
+    {
+        "Name": "Glare Catalyst",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            1,
+            "Can be combined with certain Abilities."
+        ]
+    },
+    {
+        "Name": "Vol Soul",
+        "Effect": [
+            "HP",
+            20,
+            "S-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Gwana Soul",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            2,
+            "S-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Quartz Soul",
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Ra'nsa Soul",
+        "Effect": [
+            "HP",
+            20,
+            "R-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Fang Soul",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            2,
+            "R-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Mizer Soul",
+        "Effect": [
+            "PP",
+            3,
+            "R-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Ragne Soul",
+        "Effect": [
+            "HP",
+            20,
+            "T-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Wolga Soul",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            2,
+            "T-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Elder Soul",
+        "Effect": [
+            "PP",
+            3,
+            "T-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Signo Soul",
+        "Effect": [
+            "HP",
+            20,
+            "DEX",
+            30
+        ]
+    },
+    {
+        "Name": "Chrome Soul",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            2,
+            "DEX",
+            30
+        ]
+    },
+    {
+        "Name": "Rappy Soul",
+        "Effect": [
+            "PP",
+            4,
+            "DEX",
+            30
+        ]
+    },
+    {
+        "Name": "Snow Soul",
+        "Effect": [
+            "HP",
+            20,
+            "S-DEF",
+            30
+        ]
+    },
+    {
+        "Name": "Rockbear Soul",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            2,
+            "S-DEF",
+            30
+        ]
+    },
+    {
+        "Name": "Ex Soul",
+        "Effect": [
+            "PP",
+            4,
+            "S-DEF",
+            30
+        ]
+    },
+    {
+        "Name": "Malmo Soul",
+        "Effect": [
+            "HP",
+            20,
+            "R-DEF",
+            30
+        ]
+    },
+    {
+        "Name": "Persona Soul",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            2,
+            "S-DEF",
+            30
+        ]
+    },
+    {
+        "Name": "Vardha Soul",
+        "Effect": [
+            "PP",
+            4,
+            "R-DEF",
+            30
+        ]
+    },
+    {
+        "Name": "Cater Soul",
+        "Effect": [
+            "HP",
+            20,
+            "T-DEF",
+            30
+        ]
+    },
+    {
+        "Name": "Shrayda Soul",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            2,
+            "T-DEF",
+            30
+        ]
+    },
+    {
+        "Name": "Goron Soul",
+        "Effect": [
+            "PP",
+            3,
+            "T-DEF",
+            30
+        ]
+    },
+    {
+        "Name": "Org Soul",
+        "Effect": [
+            "HP",
+            10,
+            "S-ATK",
+            20,
+            "R-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Meduna Soul",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "S-ATK",
+            20,
+            "R-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Soma Soul",
+        "Effect": [
+            "PP",
+            2,
+            "S-ATK",
+            20,
+            "R-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Ringa Soul",
+        "Effect": [
+            "HP",
+            10,
+            "S-ATK",
+            20,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Loser Soul",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "S-ATK",
+            20,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Malluda Soul",
+        "Effect": [
+            "PP",
+            2,
+            "S-ATK",
+            20,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Bal Soul",
+        "Effect": [
+            "HP",
+            10,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Vibras Soul",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Tagami Kazuchi Soul",
+        "Effect": [
+            "PP",
+            2,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Lilli Soul",
+        "Effect": [
+            "PP",
+            2,
+            "S-ATK",
+            20,
+            "S-DEF",
+            20
+        ]
+    },
+    {
+        "Name": "Full Vegas Soul",
+        "Effect": [
+            "ATK",
+            15
+        ]
+    },
+    {
+        "Name": "Escarde Soul",
+        "Effect": [
+            "ATK",
+            10,
+            "DEX",
+            20
+        ]
+    },
+    {
+        "Name": "Fabula Soul",
+        "Effect": [
+            "HP",
+            20,
+            "ATK",
+            10
+        ]
+    },
+    {
+        "Name": "Historia Soul",
+        "Effect": [
+            "HP",
+            30,
+            "PP",
+            2,
+            "DEF",
+            25
+        ]
+    },
+    {
+        "Name": "Cougar Soul",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            2,
+            "ATK",
+            15,
+            "DEX",
+            15
+        ]
+    },
+    {
+        "Name": "Knight Gear Soul",
+        "Effect": [
+            "PP",
+            4,
+            "S-ATK",
+            15,
+            "R-ATK",
+            15,
+            "T-ATK",
+            15,
+            "DEX",
+            15
+        ]
+    },
+    {
+        "Name": "Izane Kazuchi Soul",
+        "Effect": [
+            "PP",
+            2,
+            "ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Jhadu Soul",
+        "Effect": [
+            "HP",
+            45,
+            "T-ATK",
+            15
+        ]
+    },
+    {
+        "Name": "Gunne Soul",
+        "Effect": [
+            "HP",
+            45,
+            "S-ATK",
+            15
+        ]
+    },
+    {
+        "Name": "Zigmor Soul",
+        "Effect": [
+            "PP",
+            4,
+            "S-ATK",
+            15
+        ]
+    },
+    {
+        "Name": "Madu Soul",
+        "Effect": [
+            "PP",
+            4,
+            "R-ATK",
+            15
+        ]
+    },
+    {
+        "Name": "Nepto Soul",
+        "Effect": [
+            "PP",
+            4,
+            "T-ATK",
+            15
+        ]
+    },
+    {
+        "Name": "Nyau Soul",
+        "Effect": [
+            "PP",
+            4,
+            "DEX",
+            15
+        ]
+    },
+    {
+        "Name": "Anga Soul",
+        "Effect": [
+            "PP",
+            4,
+            "ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Magatsu Soul",
+        "Effect": [
+            "HP",
+            30,
+            "PP",
+            3,
+            "DEF",
+            15
+        ]
+    },
+    {
+        "Name": "Bayari Soul",
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            35,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Siorg Soul",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            1,
+            "R-ATK",
+            35,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Diabo Soul",
+        "Effect": [
+            "HP",
+            30,
+            "T-ATK",
+            35,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Leone Soul",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            1,
+            "S-ATK",
+            35,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Leopard Soul",
+        "Effect": [
+            "HP",
+            30,
+            "R-ATK",
+            35,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Guranz Soul",
+        "Effect": [
+            "PP",
+            3,
+            "T-ATK",
+            35,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Duvals Soul",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            1,
+            "T-ATK",
+            35,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Gryuzolas Soul",
+        "Effect": [
+            "HP",
+            30,
+            "T-ATK",
+            35,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Deadleon Soul",
+        "Effect": [
+            "PP",
+            3,
+            "R-ATK",
+            35,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Sinow Soul",
+        "Effect": [
+            "HP",
+            25,
+            "PP",
+            2,
+            "S-ATK",
+            5,
+            "DEX",
+            30
+        ]
+    },
+    {
+        "Name": "Gryphon Soul",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            3,
+            "ATK",
+            15,
+            "DEX",
+            15
+        ]
+    },
+    {
+        "Name": "Apprentice Soul",
+        "Effect": [
+            "ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Darkness Soul",
+        "Effect": [
+            "HP",
+            15,
+            "PP",
+            2,
+            "All Stats",
+            15
+        ]
+    },
+    {
+        "Name": "Astral Soul",
+        "Effect": [
+            "HP",
+            35,
+            "PP",
+            5,
+            "All Stats",
+            35
+        ]
+    },
+    {
+        "Name": "Toh'oh Soul",
+        "Effect": [
+            "All Stats",
+            10
+        ]
+    },
+    {
+        "Name": "Act the Soul",
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "Til the Soul",
+        "Effect": [
+            "PP",
+            3,
+            "R-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "Magi the Soul",
+        "Effect": [
+            "PP",
+            3,
+            "T-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "Ares the Soul",
+        "Effect": [
+            "HP",
+            35,
+            "PP",
+            3,
+            "ATK",
+            25
+        ]
+    },
+    {
+        "Name": "Ex-Act Soul",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            2,
+            "S-ATK",
+            30,
+            "DEF",
+            20,
+            "Can be combined with certain abilities."
+        ]
+    },
+    {
+        "Name": "Ex-Till Soul",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            2,
+            "R-ATK",
+            30,
+            "DEF",
+            20,
+            "Can be combined with certain abilities."
+        ]
+    },
+    {
+        "Name": "Ex-Magi Soul",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            2,
+            "T-ATK",
+            30,
+            "DEF",
+            20,
+            "Can be combined with certain abilities."
+        ]
+    },
+    {
+        "Name": "Ex-Ares Soul",
+        "Effect": [
+            "HP",
+            50,
+            "PP",
+            2,
+            "ATK",
+            20,
+            "DEF",
+            20,
+            "Can be combined with certain abilities."
+        ]
+    },
+    {
+        "Name": "Love Fever",
+        "Effect": [
+            "PP",
+            2,
+            "S-ATK",
+            10,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Lovey Fever",
+        "Effect": [
+            "HP",
+            10,
+            "S-ATK",
+            10,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Egg Fever",
+        "Effect": [
+            "HP",
+            10,
+            "R-ATK",
+            10,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "St. Fever",
+        "Effect": [
+            "PP",
+            2,
+            "R-ATK",
+            10,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Frog Fever",
+        "Effect": [
+            "HP",
+            10,
+            "T-ATK",
+            10,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Summer Fever",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "T-ATK",
+            10,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Latan Fever",
+        "Effect": [
+            "PP",
+            2,
+            "T-ATK",
+            10,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "ARKS Fever",
+        "Effect": [
+            "PP",
+            5,
+            "ATK",
+            5,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Ceremo Fever",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "S-ATK",
+            10,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Noiya Fever",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "R-ATK",
+            10,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Toro Kuro Fever",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "DEX",
+            15
+        ]
+    },
+    {
+        "Name": "Sakura Fever",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "S-DEF",
+            10,
+            "DEX",
+            5
+        ]
+    },
+    {
+        "Name": "Sonic Fever",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "S-ATK",
+            10,
+            "R-DEF",
+            10
+        ]
+    },
+    {
+        "Name": "Sansan Fever",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "ATK",
+            5
+        ]
+    },
+    {
+        "Name": "Luna Fever",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            1,
+            "T-ATK",
+            10
+        ]
+    },
+    {
+        "Name": "Turkey Fever",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "DEX",
+            5,
+            "T-DEF",
+            10
+        ]
+    },
+    {
+        "Name": "Drago Fever",
+        "Effect": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "DEX",
+            5,
+            "R-DEF",
+            10
+        ]
+    },
+    {
+        "Name": "Eleph Fever",
+        "Effect": [
+            "HP",
+            10,
+            "DEX",
+            5,
+            "S-DEF",
+            10
+        ]
+    },
+    {
+        "Name": "Emper Embrace",
+        "Effect": [
+            "+90 Grind EXP when used in New-Type weapon grinding"
+        ]
+    },
+    {
+        "Name": "Burn I",
+        "Effect": [
+            "Grants Burn Lv.1"
+        ]
+    },
+    {
+        "Name": "Burn II",
+        "Effect": [
+            "Grants Burn Lv.2"
+        ]
+    },
+    {
+        "Name": "Burn III",
+        "Effect": [
+            "Grants Burn Lv.3"
+        ]
+    },
+    {
+        "Name": "Burn IV",
+        "Effect": [
+            "Grants Burn Lv.4"
+        ]
+    },
+    {
+        "Name": "Burn V",
+        "Effect": [
+            "Grants Burn Lv.5"
+        ]
+    },
+    {
+        "Name": "Freeze I",
+        "Effect": [
+            "Grants Freeze Lv.1"
+        ]
+    },
+    {
+        "Name": "Freeze II",
+        "Effect": [
+            "Grants Freeze Lv.2"
+        ]
+    },
+    {
+        "Name": "Freeze III",
+        "Effect": [
+            "Grants Freeze Lv.3"
+        ]
+    },
+    {
+        "Name": "Freeze IV",
+        "Effect": [
+            "Grants Freeze Lv.4"
+        ]
+    },
+    {
+        "Name": "Freeze V",
+        "Effect": [
+            "Grants Freeze Lv.5"
+        ]
+    },
+    {
+        "Name": "Shock I",
+        "Effect": [
+            "Grants Shock Lv.1"
+        ]
+    },
+    {
+        "Name": "Shock II",
+        "Effect": [
+            "Grants Shock Lv.2"
+        ]
+    },
+    {
+        "Name": "Shock III",
+        "Effect": [
+            "Grants Shock Lv.3"
+        ]
+    },
+    {
+        "Name": "Shock IV",
+        "Effect": [
+            "Grants Shock Lv.4"
+        ]
+    },
+    {
+        "Name": "Shock V",
+        "Effect": [
+            "Grants Shock Lv.5"
+        ]
+    },
+    {
+        "Name": "Mirage I",
+        "Effect": [
+            "Grants Mirage Lv.1"
+        ]
+    },
+    {
+        "Name": "Mirage II",
+        "Effect": [
+            "Grants Mirage Lv.2"
+        ]
+    },
+    {
+        "Name": "Mirage III",
+        "Effect": [
+            "Grants Mirage Lv.3"
+        ]
+    },
+    {
+        "Name": "Mirage IV",
+        "Effect": [
+            "Grants Mirage Lv.4"
+        ]
+    },
+    {
+        "Name": "Mirage V",
+        "Effect": [
+            "Grants Mirage Lv.5"
+        ]
+    },
+    {
+        "Name": "Panic I",
+        "Effect": [
+            "Grants Panic Lv.1"
+        ]
+    },
+    {
+        "Name": "Panic II",
+        "Effect": [
+            "Grants Panic Lv.2"
+        ]
+    },
+    {
+        "Name": "Panic III",
+        "Effect": [
+            "Grants Panic Lv.3"
+        ]
+    },
+    {
+        "Name": "Panic IV",
+        "Effect": [
+            "Grants Panic Lv.4"
+        ]
+    },
+    {
+        "Name": "Panic V",
+        "Effect": [
+            "Grants Panic Lv.5"
+        ]
+    },
+    {
+        "Name": "Poison I",
+        "Effect": [
+            "Grants Poison Lv.1"
+        ]
+    },
+    {
+        "Name": "Poison II",
+        "Effect": [
+            "Grants Poison Lv.2"
+        ]
+    },
+    {
+        "Name": "Poison III",
+        "Effect": [
+            "Grants Poison Lv.3"
+        ]
+    },
+    {
+        "Name": "Poison IV",
+        "Effect": [
+            "Grants Poison Lv.4"
+        ]
+    },
+    {
+        "Name": "Poison V",
+        "Effect": [
+            "Grants Poison Lv.5"
+        ]
+    },
+    {
+        "Name": "Blow Resist I",
+        "Effect": [
+            "Strike Resistance",
+            3
+        ]
+    },
+    {
+        "Name": "Blow Resist II",
+        "Effect": [
+            "Strike Resistance",
+            4
+        ]
+    },
+    {
+        "Name": "Blow Resist III",
+        "Effect": [
+            "Strike Resistance",
+            5
+        ]
+    },
+    {
+        "Name": "Blow Resist IV",
+        "Effect": [
+            "Strike Resistance",
+            6
+        ]
+    },
+    {
+        "Name": "Blow Resist V",
+        "Effect": [
+            "Strike Resistance",
+            7
+        ]
+    },
+    {
+        "Name": "Shot Resist I",
+        "Effect": [
+            "Range Resistance",
+            3
+        ]
+    },
+    {
+        "Name": "Shot Resist II",
+        "Effect": [
+            "Range Resistance",
+            4
+        ]
+    },
+    {
+        "Name": "Shot Resist III",
+        "Effect": [
+            "Range Resistance",
+            5
+        ]
+    },
+    {
+        "Name": "Shot Resist IV",
+        "Effect": [
+            "Range Resistance",
+            6
+        ]
+    },
+    {
+        "Name": "Shot Resist V",
+        "Effect": [
+            "Range Resistance",
+            7
+        ]
+    },
+    {
+        "Name": "Mind Resist I",
+        "Effect": [
+            "Tech Resistance",
+            3
+        ]
+    },
+    {
+        "Name": "Mind Resist II",
+        "Effect": [
+            "Tech Resistance",
+            4
+        ]
+    },
+    {
+        "Name": "Mind Resist III",
+        "Effect": [
+            "Tech Resistance",
+            5
+        ]
+    },
+    {
+        "Name": "Mind Resist IV",
+        "Effect": [
+            "Tech Resistance",
+            6
+        ]
+    },
+    {
+        "Name": "Mind Resist V",
+        "Effect": [
+            "Tech Resistance",
+            7
+        ]
+    },
+    {
+        "Name": "Flame Resist I",
+        "Effect": [
+            "Fire Resistance",
+            3
+        ]
+    },
+    {
+        "Name": "Flame Resist II",
+        "Effect": [
+            "Fire Resistance",
+            4
+        ]
+    },
+    {
+        "Name": "Flame Resist III",
+        "Effect": [
+            "Fire Resistance",
+            5
+        ]
+    },
+    {
+        "Name": "Flame Resist IV",
+        "Effect": [
+            "Fire Resistance",
+            6
+        ]
+    },
+    {
+        "Name": "Flame Resist V",
+        "Effect": [
+            "Fire Resistance",
+            7
+        ]
+    },
+    {
+        "Name": "Ice Resist I",
+        "Effect": [
+            "Ice Resistance",
+            3
+        ]
+    },
+    {
+        "Name": "Ice Resist II",
+        "Effect": [
+            "Ice Resistance",
+            4
+        ]
+    },
+    {
+        "Name": "Ice Resist III",
+        "Effect": [
+            "Ice Resistance",
+            5
+        ]
+    },
+    {
+        "Name": "Ice Resist IV",
+        "Effect": [
+            "Ice Resistance",
+            6
+        ]
+    },
+    {
+        "Name": "Ice Resist V",
+        "Effect": [
+            "Ice Resistance",
+            7
+        ]
+    },
+    {
+        "Name": "Shock Resist I",
+        "Effect": [
+            "Lightning Resistance",
+            3
+        ]
+    },
+    {
+        "Name": "Shock Resist II",
+        "Effect": [
+            "Lightning Resistance",
+            4
+        ]
+    },
+    {
+        "Name": "Shock Resist III",
+        "Effect": [
+            "Lightning Resistance",
+            5
+        ]
+    },
+    {
+        "Name": "Shock Resist IV",
+        "Effect": [
+            "Lightning Resistance",
+            6
+        ]
+    },
+    {
+        "Name": "Shock Resist V",
+        "Effect": [
+            "Lightning Resistance",
+            7
+        ]
+    },
+    {
+        "Name": "Wind Resist I",
+        "Effect": [
+            "Wind Resistance",
+            3
+        ]
+    },
+    {
+        "Name": "Wind Resist II",
+        "Effect": [
+            "Wind Resistance",
+            4
+        ]
+    },
+    {
+        "Name": "Wind Resist III",
+        "Effect": [
+            "Wind Resistance",
+            5
+        ]
+    },
+    {
+        "Name": "Wind Resist IV",
+        "Effect": [
+            "Wind Resistance",
+            6
+        ]
+    },
+    {
+        "Name": "Wind Resist V",
+        "Effect": [
+            "Wind Resistance",
+            7
+        ]
+    },
+    {
+        "Name": "Light Resist I",
+        "Effect": [
+            "Light Resistance",
+            3
+        ]
+    },
+    {
+        "Name": "Light Resist II",
+        "Effect": [
+            "Light Resistance",
+            4
+        ]
+    },
+    {
+        "Name": "Light Resist III",
+        "Effect": [
+            "Light Resistance",
+            5
+        ]
+    },
+    {
+        "Name": "Light Resist IV",
+        "Effect": [
+            "Light Resistance",
+            6
+        ]
+    },
+    {
+        "Name": "Light Resist V",
+        "Effect": [
+            "Light Resistance",
+            7
+        ]
+    },
+    {
+        "Name": "Gloom Resist I",
+        "Effect": [
+            "Dark Resistance",
+            3
+        ]
+    },
+    {
+        "Name": "Gloom Resist II",
+        "Effect": [
+            "Dark Resistance",
+            4
+        ]
+    },
+    {
+        "Name": "Gloom Resist III",
+        "Effect": [
+            "Dark Resistance",
+            5
+        ]
+    },
+    {
+        "Name": "Gloom Resist IV",
+        "Effect": [
+            "Dark Resistance",
+            6
+        ]
+    },
+    {
+        "Name": "Gloom Resist V",
+        "Effect": [
+            "Dark Resistance",
+            7
+        ]
+    },
+    {
+        "Name": "All Resist I",
+        "Effect": [
+            "All Resistance",
+            1
+        ]
+    },
+    {
+        "Name": "All Resist II",
+        "Effect": [
+            "All Resistance",
+            2
+        ]
+    },
+    {
+        "Name": "All Resist III",
+        "Effect": [
+            "All Resistance",
+            3
+        ]
+    },
+    {
+        "Name": "All Resist IV",
+        "Effect": [
+            "All Resistance",
+            4
+        ]
+    },
+    {
+        "Name": "All Resist V",
+        "Effect": [
+            "All Resistance",
+            5
+        ]
+    },
+    {
+        "Name": "Meseta Fever I",
+        "Effect": [
+            "Meseta Droprate",
+            5
+        ]
+    },
+    {
+        "Name": "Meseta Fever II",
+        "Effect": [
+            "Meseta Droprate",
+            10
+        ]
+    },
+    {
+        "Name": "Meseta Fever III",
+        "Effect": [
+            "Meseta Droprate",
+            15
+        ]
+    },
+    {
+        "Name": "EXP Boost I",
+        "Effect": [
+            "Experience Gained",
+            5
+        ]
+    },
+    {
+        "Name": "EXP Boost II",
+        "Effect": [
+            "Experience Gained",
+            7
+        ]
+    },
+    {
+        "Name": "EXP Boost III",
+        "Effect": [
+            "Experience Gained",
+            10
+        ]
+    },
+    {
+        "Name": "Lucky Rise I",
+        "Effect": [
+            "Item Drop Rate",
+            5
+        ]
+    },
+    {
+        "Name": "Lucky Rise II",
+        "Effect": [
+            "Item Drop Rate",
+            7
+        ]
+    },
+    {
+        "Name": "Lucky Rise III",
+        "Effect": [
+            "Item Drop Rate",
+            10
+        ]
+    },
+    {
+        "Name": "Another History",
+        "Effect": [
+            "Experience Gained",
+            10
+        ]
+    },
+    {
+        "Name": "Temptation",
+        "Effect": [
+            "Item Drop Rate",
+            10
+        ]
+    },
+    {
+        "Name": "Fresh Sign",
+        "Effect": [
+            "Boosts EXP gained by 30% until Lv.30"
+        ]
+    },
+    {
+        "Name": "Ultimate Buster",
+        "Effect": [
+            "Boost damage against aberrations by 10%."
+        ]
+    },
+    {
+        "Name": "Photon Collect",
+        "Effect": [
+            "Boost transfer rate of status effect and resistance abilities."
+        ]
+    },
+    {
+        "Name": "Soul Receptor",
+        "Effect": [
+            "All Stats",
+            10,
+            "Massively boosts transfer rate of Soul-type special abilities."
+        ]
+    },
+    {
+        "Name": "Gift Receptor",
+        "Effect": [
+            "All Stats",
+            10,
+            "Enables transfer of EXP Boost, Meseta Fever, and Lucky Rise."
+        ]
+    },
+    {
+        "Name": "Extreceptor",
+        "Effect": [
+            "All Stats",
+            10,
+            "Massively boosts transfer rate of Flict and Arma special abilities.",
+            "Boosts transfer rate of Stat abilities."
+        ]
+    },
+    {
+        "Name": "Reverie Receptor",
+        "Effect": [
+            "All Stats",
+            10,
+            "Massively boosts transfer rate of Reverie special abilities."
+        ]
+    },
+    {
+        "Name": "Gift Receptor",
+        "Effect": [
+            "All Stats",
+            10,
+            "Allows transfer of gift-type special abilities."
+        ]
+    },
+    {
+        "Name": "Sentence Receptor",
+        "Effect": [
+            "All Stats",
+            10,
+            "Boosts transfer rate of sentence-type special abilities."
+        ]
+    },
+    {
+        "Name": "Mark Joyo",
+        "Effect": [
+            "HP",
+            50,
+            "S-ATK",
+            40,
+            "R-ATK",
+            40,
+            "T-ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Mark Couragena",
+        "Effect": [
+            "PP",
+            5,
+            "S-ATK",
+            40,
+            "R-ATK",
+            40,
+            "T-ATK",
+            40
+        ]
+    },
+    {
+        "Name": "Mark Angar",
+        "Effect": [
+            "ATK",
+            50,
+            "DEX",
+            50
+        ]
+    },
+    {
+        "Name": "Mark Grif",
+        "Effect": [
+            "HP",
+            80,
+            "ATK",
+            50
+        ]
+    },
+    {
+        "Name": "Exceed Energy",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            5,
+            "ATK",
+            50,
+            "DEF",
+            20,
+            "DEX",
+            20
+        ]
+    },
+    {
+        "Name": "Divine Will",
+        "Effect": [
+            "PP",
+            5,
+            "ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Divine Order",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            10,
+            "ATK",
+            50
+        ]
+    },
+    {
+        "Name": "NT Weapon Boost",
+        "Effect": [
+            null,
+            "Adds 800 EXP to NT weapon grinds."
+        ]
+    },
+    {
+        "Name": "NT Weapon Boost 2",
+        "Effect": [
+            null,
+            "Adds 4800 EXP to NT weapon grinds."
+        ]
+    },
+    {
+        "Name": "Guidance Trainer",
+        "Effect": [
+            null,
+            "Increase Special Ability Addition success rate by 5%."
+        ]
+    },
+    {
+        "Name": "S1:Red Petal Flash",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase damage by 3% for 30 seconds after inflicting 450,000 damage."
+        ]
+    },
+    {
+        "Name": "S1:Blue Ocean Flash",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Recover 4% HP every second for 30 seconds after taking 600 damage."
+        ]
+    },
+    {
+        "Name": "S1:White Snow Flash",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Active PP Recovery by 20% for 30 seconds after using 150 PP."
+        ]
+    },
+    {
+        "Name": "S1:Yellow Moon Flash",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Decrease PP consumption by 8% for 20 seconds after performing a Just Guard."
+        ]
+    },
+    {
+        "Name": "S1:Green Leaf Flash",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "A barrier that decreases damage taken by 8% and negates knockback appears and disappears every 20 seconds."
+        ]
+    },
+    {
+        "Name": "S1:Black Shadow Flash",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Natural PP Recovery for 20 seconds after standing still for 5 seconds."
+        ]
+    },
+    {
+        "Name": "S1:Rupturing Excess",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Active PP Recovery by 40% when attacking breakable parts."
+        ]
+    },
+    {
+        "Name": "S1:Photon Balance",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase PP consumption by 8% but increase PA/Technique damage by 4%."
+        ]
+    },
+    {
+        "Name": "S1:Double-Edged Sword",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Power by 4% but take 8% more damage when weapon is drawn."
+        ]
+    },
+    {
+        "Name": "S1:Collaborator Liberator",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "If there are two or more party members, decrease PP consumption by 8% (2 Members), +10% Critical Hit Rate (3 Members), and increase Power by 3% (4 Members). Bonuses only work on self."
+        ]
+    },
+    {
+        "Name": "S1:Radiant Strike",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Active PP Recovery by 17%."
+        ]
+    },
+    {
+        "Name": "S1:Radiating Grace",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Natural PP Recovery by 17%."
+        ]
+    },
+    {
+        "Name": "S1:Phantasmal Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Power based on the Photon Blast Gauge. Maxes at 3%."
+        ]
+    },
+    {
+        "Name": "S1:Wise Skill 2",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Critical Hit Rate by 18%."
+        ]
+    },
+    {
+        "Name": "S1:Wise Skill",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Critical Hit Rate by 15%."
+        ]
+    },
+    {
+        "Name": "S1:Powering Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase damage dealt to bosses by 4%."
+        ]
+    },
+    {
+        "Name": "S1:Immediate Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase damage when performing successive Just Attacks (3% MAX)."
+        ]
+    },
+    {
+        "Name": "S1:Rupturing Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase damage against breakable parts by 4%."
+        ]
+    },
+    {
+        "Name": "S1:Vigor Enhancement",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase HP recovered from self-healing effects by 40%."
+        ]
+    },
+    {
+        "Name": "S1:Brilliant Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Boosts damage by 3% while PP is at 40% or above."
+        ]
+    },
+    {
+        "Name": "S1:Augment Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Power by 0.5% for each Special Ability attached to this weapon. Maxes at 4%."
+        ]
+    },
+    {
+        "Name": "S1:Lethal Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Reduce HP by 5% every 20 seconds and increase Power by 4%."
+        ]
+    },
+    {
+        "Name": "S1:Strike Boost",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Power by 1% for every 60 S-ATK affixed to this weapon. Increase Power by an additional 2% if at least 200 S-ATK is affixed to this weapon."
+        ]
+    },
+    {
+        "Name": "S1:Shoot Boost",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Power by 1% for every 60 R-ATK affixed to this weapon. Increase Power by an additional 2% if at least 200 R-ATK is affixed to this weapon."
+        ]
+    },
+    {
+        "Name": "S1:Tech Boost",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Power by 1% for every 60 T-ATK affixed to this weapon. Increase Power by an additional 2% if at least 200 T-ATK is affixed to this weapon."
+        ]
+    },
+    {
+        "Name": "S1:Spirited Response",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases PP regeneration rate by 80% while sheathed. Reduce PP regeneration rate by 100% while unsheathed."
+        ]
+    },
+    {
+        "Name": "S2:Storm Guard",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Wind Attribute and Mirage Resistance (30). Increase damage by 3% against enemies weak to Wind."
+        ]
+    },
+    {
+        "Name": "S2:Shining Guard",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Light Attribute and Panic Resistance (30). Increase damage by 3% against enemies weak to Light."
+        ]
+    },
+    {
+        "Name": "S2:Nature's Intent",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase damage by 3% when S1:Red Petal Flash, S1:Blue Ocean Flash, or S1:White Snow Flash are active."
+        ]
+    },
+    {
+        "Name": "S2:Flaming Guard",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Fire Attribute and Burn Resistance (30). Increase damage by 3% against enemies weak to Fire."
+        ]
+    },
+    {
+        "Name": "S2:Double-Edged Sword",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Power by 3% but take 6% more damage when weapon is drawn."
+        ]
+    },
+    {
+        "Name": "S2:Photon Reduction",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "PP consumption is reduced by 10%."
+        ]
+    },
+    {
+        "Name": "S2:Nature's Reduction",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Decrease PP consumption by 12% when S1:Red Petal Flash, S1:Blue Ocean Flash, or S1:White Snow Flash are active."
+        ]
+    },
+    {
+        "Name": "S2:Umbrageous Gleam",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Natural PP Recovery by 25% when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ]
+    },
+    {
+        "Name": "S2:Flowing Grace",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Regenerate 10 PP every 4 seconds."
+        ]
+    },
+    {
+        "Name": "S2:Cursed Radiance",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Recovers PP by 15% when taking damage."
+        ]
+    },
+    {
+        "Name": "S2:Rupturing Excess",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Active PP Recovery by 35% when attacking breakable parts."
+        ]
+    },
+    {
+        "Name": "S2:Spirited Response",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increases PP regeneration rate by 100% while sheathed. Reduce PP regeneration rate by 100% while unsheathed."
+        ]
+    },
+    {
+        "Name": "S2:Sturdy Recovery",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "When attacking, has a 10% chance to restore HP equal to 1% of damage dealt. (Max: 300)"
+        ]
+    },
+    {
+        "Name": "S2:Offensive Intent",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase damage by 2%."
+        ]
+    },
+    {
+        "Name": "S2:Rainbow's Intent",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Power by 5% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ]
+    },
+    {
+        "Name": "S2:Rainbow's Exhilaration",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Recover 3% HP at regular intervals while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ]
+    },
+    {
+        "Name": "S2:Skilled Intent 2",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Critical Hit Damage by 4%."
+        ]
+    },
+    {
+        "Name": "S2:Heavenly Keeper",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Reduce PP Consumption by 8% while airborne. Increase Natural PP Recovery and Active PP Recovery by 20% while on the ground."
+        ]
+    },
+    {
+        "Name": "S2:Instant Reduction",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Reduces PP consumption by 12% when Just Attacking different PAs or Techniques."
+        ]
+    },
+    {
+        "Name": "S2:Powering Intent",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase damage dealt to bosses by 3%."
+        ]
+    },
+    {
+        "Name": "S2:Aegis Gift",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Successfully performing a Just Guard while below 25% HP recovers 50% HP and 30% PP."
+        ]
+    },
+    {
+        "Name": "S3:Flowing Courage",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Cast a tick of Shifta on yourself every 14s."
+        ]
+    },
+    {
+        "Name": "S3:Wise Skill",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Increase Critical Hit Rate by 12%."
+        ]
+    },
+    {
+        "Name": "S3:Photon Reduction",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "PP consumption is reduced by 7%."
+        ]
+    },
+    {
+        "Name": "S3:Nature's Gleam",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Increase Natural PP Recovery by 23% when S1:Red Petal Flash, S1:Blue Ocean Flash, or S1:White Snow Flash are active."
+        ]
+    },
+    {
+        "Name": "S3:Umbrageous Intent",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Increase damage by 3% when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ]
+    },
+    {
+        "Name": "S3:Umbrageous Reduction",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Decrease PP consumption by 14% when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ]
+    },
+    {
+        "Name": "S3:Umbrageous Exhilaration",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Recover 2% HP every second when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ]
+    },
+    {
+        "Name": "S3:Cursed Radiance",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Recovers PP by 15% when taking damage."
+        ]
+    },
+    {
+        "Name": "S3:Brilliant Ruin",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Recover 3 PP when an enemy near you is defeated."
+        ]
+    },
+    {
+        "Name": "S3:Vital Intent",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Boosts damage by 3% while HP is 80% or more."
+        ]
+    },
+    {
+        "Name": "S3:Rainbow's Radiance",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Increase Active PP Recovery by 45% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ]
+    },
+    {
+        "Name": "S3:Rainbow's Gleam",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Increase Natural PP Recovery by 40% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ]
+    },
+    {
+        "Name": "S3:Rainbow's Reduction",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Reduce PP consumption by 20% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ]
+    },
+    {
+        "Name": "S3:Skilled Intent 2",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Increase Critical Hit Damage by 5%."
+        ]
+    },
+    {
+        "Name": "S3:Calming Exhilaration",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Recover 70 HP when you hit with a normal attack. Has a 1.2~1.3s cooldown between uses."
+        ]
+    },
+    {
+        "Name": "S3:Furious Inspiration",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Increase Power (+4%) and Critical Hit Rate (+5%). Enhance PP efficiency (10% Natural PP recovery, 15% Active PP recovery, -5% PP Consumption). Effect resets when damage is taken. (180s Cooldown)"
+        ]
+    },
+    {
+        "Name": "S3:Powering Intent",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Increase damage dealt to bosses by 4%."
+        ]
+    },
+    {
+        "Name": "S4:Marvelous Aegis",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "Recover 10 PP when successfully performing a Just Guard."
+        ]
+    },
+    {
+        "Name": "S4:Steel Resolve",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "Survive one fatal hit with 1 HP remaining. Does not activate if HP is at 1. Activates once per Quest."
+        ]
+    },
+    {
+        "Name": "S4:Radiant Response",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "Improve Natural PP Recovery, Active PP Recovery, and reduce PP consumption based on maximum PP. Maxes at 30%. ((Player's Total PP - 120)x0.1(%) of Natural and Active PP Regen, and PP consumption reduction)"
+        ]
+    },
+    {
+        "Name": "S4:Opposing Skill",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "During Brave Stance, frontal Critical Rate is raised by 30%."
+        ]
+    },
+    {
+        "Name": "S4:Scything Wind",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "Increase Kamaitachi duration by 4 seconds."
+        ]
+    },
+    {
+        "Name": "S4:Cunning Strike",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "While in Wise Stance, increase frontal attack damage by 15%."
+        ]
+    },
+    {
+        "Name": "S4:Vampiric Strike",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "Restore HP equal to 1% of Damage dealt (30 HP MAX)."
+        ]
+    },
+    {
+        "Name": "S4:Gear Reduction",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "Decrease rate of Gear Gauge depletion while Katana Gear is active."
+        ]
+    },
+    {
+        "Name": "S4:Genesis Ring",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "The active Element of the Weapon changes to that of the currently equipped \"Guard\" Skill Ring."
+        ]
+    },
+    {
+        "Name": "S4:Steadfast Courage",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "Become immune to knockback by standing still for 1s."
+        ]
+    },
+    {
+        "Name": "S4:Lustrous Trap",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "Increase PP regenerated by Tactics Trap by 20%."
+        ]
+    },
+    {
+        "Name": "S4:Dynamic Chain",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "When Chain Trigger is activated, gain invincibility for 5 seconds."
+        ]
+    },
+    {
+        "Name": "S4:Rapid-fire Arrow",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "When in Rapid Shoot, increase damage by 3% when equipped with a Bullet Bow."
+        ]
+    },
+    {
+        "Name": "S4:Refined Providence",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "Increase the potency of Element Conversion. (+5% on Different weapon's attribute)"
+        ]
+    },
+    {
+        "Name": "S4:Circuit Rotation",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "Decrease the Recast Time of Photon Flare by 20%."
+        ]
+    },
+    {
+        "Name": "S4:Wand Clobber",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "Increase the performance of Wand Normal Attacks. (Attack Speed 1.1x, all hitstop negated)"
+        ]
+    },
+    {
+        "Name": "S4:Support Extension",
+        "SSA Slot": 4,
+        "Effect": [
+            null,
+            "The maximum duration of Shifta and Deband becomes 120 seconds."
+        ]
+    },
+    {
+        "Name": "S5:Release Parry",
+        "Effect": [
+            null,
+            "Performance changes when Just Guarding with a Weapon Action. Sword only."
+        ]
+    },
+    {
+        "Name": "S5:Unrivaled Parry",
+        "Effect": [
+            null,
+            "Consume no Gear for 15s after performing a Just Guard. Increase Power by 2%. Wired Lance only."
+        ]
+    },
+    {
+        "Name": "S5:Rushing Bolt",
+        "Effect": [
+            null,
+            "Inflict damage while running. Unleash a shockwave attack when you stop running. Increase Power by 2%. Partizan only."
+        ]
+    },
+    {
+        "Name": "S5:Shining Cyclone",
+        "Effect": [
+            null,
+            "PP recovery and consumption changes when your maximum PP falls below 50%. Twin Daggers only."
+        ]
+    },
+    {
+        "Name": "S5:Evasive Mirage",
+        "Effect": [
+            null,
+            "Boost Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying. Increase Power by 2%. Double Saber only."
+        ]
+    },
+    {
+        "Name": "S5:Evasive Meteor",
+        "Effect": [
+            null,
+            "Successfully evade an attack with Sway to summon a giant fist. Increase Power by 2%. Knuckles only."
+        ]
+    },
+    {
+        "Name": "S5:Hangeki Edge",
+        "Effect": [
+            null,
+            "Increase the damage of Counter by 15%. Generate Braver Gear Gauge when you successfully perform Katana Counter. Increase Power by 2%. Katana only."
+        ]
+    },
+    {
+        "Name": "S5:Thundering Pursuit",
+        "Effect": [
+            null,
+            "When using a PA, lightning-charged Photon Blades are generated. (Power: 200%). Dual Blades only."
+        ]
+    },
+    {
+        "Name": "S5:Mysterious Intent",
+        "Effect": [
+            null,
+            "Increase Critical Hit Rate by 20%. On a Critical Hit, deal an additional 2% damage and recover 1% of damage dealt as HP (30 MAX)."
+        ]
+    },
+    {
+        "Name": "S5:Mysterious Purpose",
+        "Effect": [
+            null,
+            "Increase Critical Hit Rate by 20%. On a Critical Hit, deal an additional 2% damage and recover 1% of damage dealt as HP (30 MAX)."
+        ]
+    },
+    {
+        "Name": "S5:Firey End",
+        "Effect": [
+            null,
+            "Enhance the performance of End Attract with a one minute Recast. Recast resets upon successfully evading an attack with Dive Roll. Increase Power by 2%. Assault Rifle only."
+        ]
+    },
+    {
+        "Name": "S5:Firey Zero",
+        "Effect": [
+            null,
+            "Enhance the performance of Zero Distance with a one minute Recast. Recast resets upon successfully evading an attack with Dive Roll. Increase Power by 2%. Launcher only."
+        ]
+    },
+    {
+        "Name": "S5:Bright Escape",
+        "Effect": [
+            null,
+            "Successfully evade an attack with Hero Step or Stylish Roll to restore PP. Effect is negated if damage is taken. Twin Machineguns only."
+        ]
+    },
+    {
+        "Name": "S5:Auxiliary Arrow",
+        "Effect": [
+            null,
+            "Produces a Chase Arrow when a PA (except Banish Arrow) hits an enemy. Boosts the power of this ability's Chase Arrow for 15 seconds after successfully dodging an attack with Step. Bullet Bow only."
+        ]
+    },
+    {
+        "Name": "S5:Calming Bullet",
+        "Effect": [
+            null,
+            "Enhance the performance of Normal Attacks and increase the damage of Rod Shoot by 100%. Rod only."
+        ]
+    },
+    {
+        "Name": "S5:Speedy Support",
+        "Effect": [
+            null,
+            "Shorten the charge time of Support Techniques. The power of Zondeel is reduced. Talis only."
+        ]
+    },
+    {
+        "Name": "S5:Calming Shockwave",
+        "Effect": [
+            null,
+            "Generates a wave attack on the third Normal Attack. Increase Power by 2%. Wand only."
+        ]
+    },
+    {
+        "Name": "S5:Rhythmic Pursuer",
+        "Effect": [
+            null,
+            "Boost the potency of Elemental Burst by 30% and automatically activate Elemental Burst when using a Photon Art. Jet Boots only."
+        ]
+    },
+    {
+        "Name": "S6:Ironclad Illness",
+        "SSA Slot": 6,
+        "Effect": [
+            null,
+            "Become massive for 60 seconds after becoming affected by a status effect."
+        ]
+    },
+    {
+        "Name": "S6:Heroic Howl",
+        "SSA Slot": 6,
+        "Effect": [
+            null,
+            "Enhances the effect of Hero Boost's damage bonus accumulation rate. Does not work with the \"Heroic Victory\" potential."
+        ]
+    },
+    {
+        "Name": "S6:Guardian's Essence",
+        "SSA Slot": 6,
+        "Effect": [
+            null,
+            "Hunter Weapon Gear and Katana Gear fills while Guarding. No effect if using weapon with \"Zephyr's Edge\"."
+        ]
+    },
+    {
+        "Name": "S6:Evasion Whistle",
+        "SSA Slot": 6,
+        "Effect": [
+            null,
+            "Dodging will cause your Pet to return back to you."
+        ]
+    },
+    {
+        "Name": "S6:Long Night Star",
+        "SSA Slot": 6,
+        "Effect": [
+            null,
+            "Reduce Etoile Boost's decay per second by 50%."
+        ]
+    },
+    {
+        "Name": "S6:Overlimit",
+        "SSA Slot": 6,
+        "Effect": [
+            null,
+            "Increases maximum HP by 50% while Limit Break is active."
+        ]
+    },
+    {
+        "Name": "S6:HP Up",
+        "SSA Slot": 6,
+        "Effect": [
+            "HP",
+            40
+        ]
+    },
+    {
+        "Name": "S6:PP Up",
+        "SSA Slot": 6,
+        "Effect": [
+            "PP",
+            4
+        ]
+    },
+    {
+        "Name": "S7:Attack Up",
+        "SSA Slot": 7,
+        "Effect": [
+            "ATK",
+            25
+        ]
+    },
+    {
+        "Name": "S7:Glowing Grace",
+        "SSA Slot": 7,
+        "Effect": [
+            null,
+            "Recovers 4 PP per second when standing still for longer than 1 second."
+        ]
+    },
+    {
+        "Name": "S7:Zenith Impact",
+        "SSA Slot": 7,
+        "Effect": [
+            null,
+            "Gain a 10% chance to stun the enemy with a Just Attack."
+        ]
+    },
+    {
+        "Name": "S7:Increased Efficiency",
+        "SSA Slot": 7,
+        "Effect": [
+            null,
+            "Boost the effect of recovery items by 30%."
+        ]
+    },
+    {
+        "Name": "S7:Mind Merge",
+        "SSA Slot": 7,
+        "Effect": [
+            null,
+            "Automatically answers Sympathy requests during Alter Ego. No effect if using weapon with \"Glance of Darkness\"."
+        ]
+    },
+    {
+        "Name": "S7:Sentinel's Gift",
+        "SSA Slot": 7,
+        "Effect": [
+            null,
+            "Upon a successful Tech Charge Parry, recover 5% HP and 10 PP."
+        ]
+    },
+    {
+        "Name": "S8:HP Up",
+        "SSA Slot": 8,
+        "Effect": [
+            "HP",
+            40
+        ]
+    },
+    {
+        "Name": "S8:HP Up 2",
+        "SSA Slot": 8,
+        "Effect": [
+            "HP",
+            60
+        ]
+    },
+    {
+        "Name": "S8:PP Up",
+        "SSA Slot": 8,
+        "Effect": [
+            "PP",
+            4
+        ]
+    },
+    {
+        "Name": "S8:Sky Dance's Boon",
+        "SSA Slot": 8,
+        "Effect": [
+            null,
+            "Activates Shifta and Deband every 10 seconds when you stay in the air for longer than 2 seconds."
+        ]
+    },
+    {
+        "Name": "S8:Strong Potency",
+        "SSA Slot": 8,
+        "Effect": [
+            null,
+            "Makes you temporarily invincible while drinking a -mate item."
+        ]
+    },
+    {
+        "Name": "S8:High Minded",
+        "SSA Slot": 8,
+        "Effect": [
+            null,
+            "Reduce falling speed while charging a Technique in mid-air."
+        ]
+    }
+]

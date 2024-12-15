@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
         <div>
-            <Link href="/weapons"><Button>Weapons page</Button></Link>
-            <Link href="/units"><Button>Units page</Button></Link>
+            <Link href="/geardata/weapons"><Button>Weapons page</Button></Link>
+            <Link href="/geardata/units"><Button>Units page</Button></Link>
         </div>
     </>
   );

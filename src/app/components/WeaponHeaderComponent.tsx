@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { Button, Group } from '@mantine/core';
-import swords from '../weapon-data/swords.json'
-import wiredlances from '../weapon-data/wiredlances.json'
+import swords from '../geardata/weapons/weapon-data/swords.json'
+import wiredlances from '../geardata/weapons/weapon-data/wiredlances.json'
 
 export default function WeaponHeaderComponent({ setWeaponData, setWeaponType }) {
     return (

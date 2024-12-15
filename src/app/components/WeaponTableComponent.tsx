@@ -1,13 +1,12 @@
-import { Flex, Image } from "@mantine/core";
 import React from 'react';
-import { useLanguageContext } from "../../language-provider";
-import { SimpleGrid, Table, Tooltip } from '@mantine/core';
-import setEffects from "../../sets/sets.json"
-import variantSet from "../../sets/letter-variant-sets.json"
-import potentials from "../../weapons/weapon-data/potentials.json"
+import { useLanguageContext } from "../language-provider";
+import { Flex, Image, SimpleGrid, Table, Tooltip } from '@mantine/core';
+import { v4 as uuidv4 } from 'uuid';
+import potentialData from "../geardata/weapons/weapon-data/potentials.json"
+import displayAbilities from './displayAbilities';
+import displaySet from './displaySet';
 import './WeaponTableComponent.css';
 import '@mantine/core/styles/Table.layer.css';
-import { v4 as uuidv4 } from 'uuid';
 
 export default function WeaponTableComponent({ data, type }) {
     const { language/*, setLanguage*/ } = useLanguageContext()
@@ -58,7 +57,7 @@ export default function WeaponTableComponent({ data, type }) {
     function displayPotentials(potList: any[]): any[] {
         let buffer: any[] = []
         for (let i = 0; i < potList.length; i++) {
-            let pot = potentials.find(pot => pot.Name === potList[i])
+            let pot = potentialData.find(pot => pot.Name === potList[i])
             if (pot) {
                 let potEffect = [pot.Effect[0], <br key={uuidv4()} />, pot.Effect[1], <br key={uuidv4()} />, pot.Effect[2]]
                 buffer.push(
@@ -66,21 +65,11 @@ export default function WeaponTableComponent({ data, type }) {
                         <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> {potList[i]}</Flex>
                     </Tooltip>
                 )
-            }else{
+            } else {
                 buffer.push(<Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> {potList[i]}</Flex>)
             }
         }
         return buffer;
-    }
-
-    function displayAbilities(abilities: any[]): any {
-        let buffer: any[] = []
-        if (abilities) {
-            for (let i = 0; i < abilities.length; i++) {
-                buffer.push(<Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Ability.png" alt="Ability" title="Ability" w={16} h={16} /> {abilities[i]}</Flex>)
-            }
-        }
-        return <SimpleGrid key={uuidv4()} cols={2} spacing={0} verticalSpacing={0}>{buffer}</SimpleGrid>;
     }
 
     function displayElement(array: [string, number]): any[] {
@@ -108,78 +97,18 @@ export default function WeaponTableComponent({ data, type }) {
         set.Effect.forEach((value: any, index: number) => {
             if (doubleEffect) {
                 if (index % 2 === 0) {
-                    if (set.Effect[index] === 'HP' || set.Effect[index] === 'PP') effect.push(<Flex key={uuidv4()} gap={5}><strong key={uuidv4()}>{set.Effect[index]}</strong> {Math.trunc(set.Effect[index + 1] * 2)}</Flex>);
+                    if (set.Effect[index] === 'HP' || set.Effect[index] === 'PP') effect.push(<Flex key={uuidv4()} gap={5}>{set.Effect[index]} {Math.trunc(set.Effect[index + 1] * 2)}</Flex>);
                     else effect.push(<Flex key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} title={`${set.Effect[index]}`} w={16} h={16} /> {Math.trunc(set.Effect[index + 1] * 2)}</Flex>);
                 }
             } else {
                 if (index % 2 === 0) {
-                    if (set.Effect[index] === 'HP' || set.Effect[index] === 'PP') effect.push(<Flex key={uuidv4()} gap={5}><strong key={uuidv4()}>{set.Effect[index]}</strong> {Math.trunc(set.Effect[index + 1])}</Flex>);
+                    if (set.Effect[index] === 'HP' || set.Effect[index] === 'PP') effect.push(<Flex key={uuidv4()} gap={5}>{set.Effect[index]} {Math.trunc(set.Effect[index + 1])}</Flex>);
                     else effect.push(<Flex key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} title={`${set.Effect[index]}`} w={16} h={16} /> {Math.trunc(set.Effect[index + 1])}</Flex>);
                 }
             }
         }
         )
         return effect
-    }
-
-    function displaySetMembers(set: any, name_en: string, doubleEffect: boolean): any {
-        let members: any[] = []
-        for (let i = 0; i < set.Pieces.length; i += 2) {
-            let bufferMembers: any[] = []
-            bufferMembers.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${set.Pieces[i].replace(' ', '')}.png`} alt={set.Pieces[i]} title={set.Pieces[i]} w={16} h={16} />, ' ')
-            let name: string = name_en.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('Rear / ', '').replace('Arm / ', '').replace('Leg / ', '')
-            if (set.Pieces[i + 1] === name) {
-                if (set.Pieces[i] == 'Rear' || set.Pieces[i] == 'Arm' || set.Pieces[i] == 'Leg') {
-                    bufferMembers.push(<strong key={uuidv4()}>{set.Pieces[i]} / {set.Pieces[i + 1]}</strong>)
-                } else {
-                    bufferMembers.push(<strong key={uuidv4()}>{set.Pieces[i + 1]}</strong>)
-                }
-            } else {
-                if (set.Pieces[i] == 'Rear' || set.Pieces[i] == 'Arm' || set.Pieces[i] == 'Leg') {
-                    bufferMembers.push(set.Pieces[i], ' / ', set.Pieces[i + 1])
-                } else {
-                    bufferMembers.push(set.Pieces[i + 1])
-                }
-            }
-            members.push(<Flex align="center" key={uuidv4()} gap={5}>{bufferMembers}</Flex>)
-        }
-
-        let bufferMembers: any[] = []
-        if (doubleEffect) bufferMembers.push(`Requires ${set.Required + 1} pieces`, <br key={uuidv4()} />, <br key={uuidv4()} />)
-        else bufferMembers.push(`Requires ${set.Required} pieces`, <br key={uuidv4()} />, <br key={uuidv4()} />)
-
-        bufferMembers.push(<SimpleGrid key={uuidv4()} cols={3} spacing="xs" verticalSpacing={0}>{members}</SimpleGrid>)
-
-        let variant = variantSet.find(variant => variant.Set === set.Name)
-        if (variant) {
-            bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
-        }
-
-        return bufferMembers
-    }
-
-    function displaySet(setName: string, name_en: string): any {
-        let set = setEffects.find(set => set.Name === setName)
-        if (set) {
-            let bufferReturn: any = []
-            let bufferSetInfo: any = [<strong key={uuidv4()}>Effect:</strong>, <br key={uuidv4()} />, displaySetEffect(set, false), <strong key={uuidv4()}>Set Pieces:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name_en, false)]
-            bufferReturn.push(
-                <Tooltip className='centerCell' key={uuidv4()} label={bufferSetInfo} color="dark">
-                    <Flex align="center" justify="center" key={uuidv4()} gap="xs"><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Set1.png`} alt="Set Effect 1: Hover to show details" w={63} h={18} /></Flex>
-                </Tooltip>
-            )
-            if (set.Doubles) {
-                let bufferSetInfo: any = [<strong key={uuidv4()}>Effect:</strong>, <br key={uuidv4()} />, displaySetEffect(set, true), <strong key={uuidv4()}>Set Pieces:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name_en, false)]
-                bufferReturn.push(
-                    <Tooltip className='centerCell' key={uuidv4()} label={bufferSetInfo} color="dark">
-                        <Flex align="center" justify="center" key={uuidv4()} gap="xs"><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Set2.png`} alt="Set Effect 2: Hover to show details" w={63} h={18} /></Flex>
-                    </Tooltip>
-                )
-            }
-            return <Flex align="center" justify="center" key={uuidv4()} gap="xs">{bufferReturn}</Flex>
-        } else {
-            return
-        }
     }
 
     function displayClasses(array: any[]): any {
@@ -248,7 +177,7 @@ export default function WeaponTableComponent({ data, type }) {
                                         case 'R-ATK': return;
                                         case 'T-ATK': return;
                                         case 'SAF': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="Special Ability Factor" title="Special Ability Factor" w={16} h={16} /> SAF</Flex></Table.Th>
-                                        case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Default Properties</Table.Th>
+                                        case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Properties</Table.Th>
                                         case 'Element': return;
                                         case 'id': return;
                                         case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> Potential</Flex></Table.Th>
@@ -328,9 +257,9 @@ export default function WeaponTableComponent({ data, type }) {
                                     case 'Abilities':
                                     case 'Element':
                                     case 'PA_enabled':
-                                    case 'set':
+                                    case 'Set':
                                         if (row['Abilities']) {
-                                            bufferProperties.push(<span key={uuidv4()}>{displayAbilities(row['Abilities'])}</span>)
+                                            bufferProperties.push(<span key={uuidv4()}>{displayAbilities(row['Abilities'],false)}</span>)
                                         }
                                         if (row['Element']) {
                                             bufferProperties.push(<span key={uuidv4()}>{displayElement(row['Element'])}</span>);
@@ -351,7 +280,7 @@ export default function WeaponTableComponent({ data, type }) {
                                         if (row['old_type']) {
                                             return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                         } else {
-                                            return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="Special Ability Factor" title="Special Ability Factor" w={16} h={16} /> {row[key]}</Flex></Table.Td>
+                                            return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayAbilities(row['SAF'],true)}</Flex></Table.Td>
                                         }
                                     case 'SSA Slots':
                                         if (row[key]) {

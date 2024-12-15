@@ -1,7 +1,7 @@
 'use client'
 
-import TableComponent from "./components/UnitTableComponent";
-import HeaderComponent from "./components/UnitHeaderComponent";
+import TableComponent from "../../components/UnitTableComponent";
+import HeaderComponent from "../../components/UnitHeaderComponent";
 import rear from "./unit-data/rear.json";
 import React from "react";
 import { useState } from "react";

@@ -591,6 +591,28 @@
         ]
     },
     {
+        "Name": "Ringa",
+        "Required": 3,
+        "Effect": [
+            "PP",
+            3,
+            "S-ATK",
+            60,
+            "R-ATK",
+            60,
+            "T-ATK",
+            60
+        ],
+        "Pieces": [
+            "Rear",
+            "Ringa Arc",
+            "Arm",
+            "Ringa Veal",
+            "Leg",
+            "Ringa Zanab"
+        ]
+    },
+    {
         "Name": "Amei Roses",
         "Required": 2,
         "Effect": [
@@ -1037,43 +1059,14 @@
             "Heretic Saw",
             "Rear",
             "Zan Grease",
-            "Arm",
-            "Zan Fellow",
-            "Leg",
-            "Zan Thrust"
-        ]
-    },
-    {
-        "Name": "Heretic Jua",
-        "Required": 3,
-        "Doubles": true,
-        "Effect": [
-            "PP",
-            5,
-            "S-ATK",
-            20,
-            "R-ATK",
-            20,
-            "T-ATK",
-            20,
-            "Light Resistance",
-            5,
-            "Dark Resistance",
-            5
-        ],
-        "Pieces": [
-            "Wired Lance",
-            "Heretic End",
-            "Dual Blade",
-            "Heretic Pair",
-            "Twin Machinegun",
-            "Heretically",
-            "Talis",
-            "Heretic Saw",
             "Rear",
             "Jua Grease",
             "Arm",
+            "Zan Fellow",
+            "Arm",
             "Jua Fellow",
+            "Leg",
+            "Zan Thrust",
             "Leg",
             "Jua Thrust"
         ]

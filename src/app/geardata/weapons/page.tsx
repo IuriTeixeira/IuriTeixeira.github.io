@@ -1,7 +1,7 @@
 'use client'
 
-import TableComponent from "./components/WeaponTableComponent";
-import HeaderComponent from "./components/WeaponHeaderComponent";
+import TableComponent from "../../components/WeaponTableComponent";
+import HeaderComponent from "../../components/WeaponHeaderComponent";
 import swords from "./weapon-data/swords.json";
 import React from "react";
 import { useState } from "react";

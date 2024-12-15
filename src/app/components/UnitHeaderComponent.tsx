@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { Button, Group } from '@mantine/core';
-import rear from '../unit-data/rear.json'
-import arm from '../unit-data/arm.json'
-import leg from '../unit-data/leg.json'
-import sub from '../unit-data/sub.json'
+import rear from '../geardata/units/unit-data/rear.json'
+import arm from '../geardata/units/unit-data/arm.json'
+import leg from '../geardata/units/unit-data/leg.json'
+import sub from '../geardata/units/unit-data/sub.json'
 
 export default function UnitHeaderComponent({ setUnitData, setUnitType }) {
     return (

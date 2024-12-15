@@ -244,7 +244,7 @@
         "Effect": [
             "Increase the Power of Rapid Shoot by ?%.",
             "Increase the Power of Rapid Shoot by ?%.",
-            "Increase the Power of Rapid Shoot by ?%."
+            "Increase the Power of Rapid Shoot by 30%."
         ]
     },
     {
@@ -1146,8 +1146,8 @@
     {
         "Name": "Negative Destroyer",
         "Effect": [
-            "Damage against Darkers boosted by 9%, Damage against DA-Aberrations boosted by ?%.",
-            "Damage against Darkers boosted by 11%, Damage against DA-Aberrations boosted by ?%.",
+            "Damage against Darkers boosted by 9%, Damage against DA-Aberrations boosted by 11%.",
+            "Damage against Darkers boosted by 11%, Damage against DA-Aberrations boosted by 13%.",
             "Damage against Darkers boosted by 13%, Damage against DA-Aberrations boosted by 15%."
         ]
     },
@@ -1914,9 +1914,9 @@
     {
         "Name": "Destruction Rook",
         "Effect": [
-            "Boosts the damage of Distraction Wing by 10%",
-            "Boosts the damage of Distraction Wing by 15%",
-            "Boosts the damage of Distraction Wing by 20%"
+            "Boosts the damage of Distraction Wing by 9%",
+            "Boosts the damage of Distraction Wing by 13%",
+            "Boosts the damage of Distraction Wing by 17%"
         ]
     },
     {
@@ -1946,9 +1946,9 @@
     {
         "Name": "Star Divide",
         "Effect": [
-            "Boosts the damage of Starling Fall by ?%",
-            "Boosts the damage of Starling Fall by ?%",
-            "Boosts the damage of Starling Fall by ?%"
+            "Boosts the damage of Starling Fall by 10%",
+            "Boosts the damage of Starling Fall by 15%",
+            "Boosts the damage of Starling Fall by 20%"
         ]
     },
     {
@@ -2771,7 +2771,7 @@
         "Name": "Melody of Evil",
         "Effect": [
             "Increase Natural PP Recovery by 5% and Active PP Recovery by 5%.",
-            "Increase Natural PP Recovery by ?% and Active PP Recovery by 10%.",
+            "Increase Natural PP Recovery by 7% and Active PP Recovery by 10%.",
             "Increase Natural PP Recovery by 10% and Active PP Recovery by 15%."
         ],
         "Special": "Qliphad"
