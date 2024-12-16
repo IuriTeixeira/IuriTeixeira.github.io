@@ -1,4 +1,4 @@
-import { Image, Flex, SimpleGrid, Table, Tooltip } from '@mantine/core';
+import { Image, Flex, SimpleGrid, Tooltip } from '@mantine/core';
 import setEffects from "../geardata/sets/sets.json"
 import variantSet from "../geardata/sets/letter-variant-sets.json"
 import { v4 as uuidv4 } from 'uuid';

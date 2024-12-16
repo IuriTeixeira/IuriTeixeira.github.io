@@ -1,10 +1,11 @@
 import React from 'react';
 import { useLanguageContext } from "../language-provider";
-import { Flex, Image, SimpleGrid, Table, Tooltip } from '@mantine/core';
+import { Text, Flex, Image, SimpleGrid, Table, Tooltip } from '@mantine/core';
 import { v4 as uuidv4 } from 'uuid';
 import potentialData from "../geardata/weapons/weapon-data/potentials.json"
 import displayAbilities from './displayAbilities';
 import displaySet from './displaySet';
+import displaySSA from './displaySSA';
 import './WeaponTableComponent.css';
 import '@mantine/core/styles/Table.layer.css';
 
@@ -22,20 +23,20 @@ export default function WeaponTableComponent({ data, type }) {
             switch (rarity) {
                 case 1:
                 case 2:
-                case 3: maxATK = (baseATK * 150)/100; break;
+                case 3: maxATK = (baseATK * 150) / 100; break;
                 case 4:
                 case 5:
-                case 6: maxATK = (baseATK * 160)/100; break;
+                case 6: maxATK = (baseATK * 160) / 100; break;
                 case 7:
                 case 8:
-                case 9: maxATK = (baseATK * 175)/100; break;
-                case 10: maxATK = (baseATK * 190)/100; break;
-                case 11: maxATK = (baseATK * 195)/100; break;
-                case 12: maxATK = (baseATK * 200)/100; break;
-                case 13: maxATK = (baseATK * 140)/100; break;
+                case 9: maxATK = (baseATK * 175) / 100; break;
+                case 10: maxATK = (baseATK * 190) / 100; break;
+                case 11: maxATK = (baseATK * 195) / 100; break;
+                case 12: maxATK = (baseATK * 200) / 100; break;
+                case 13: maxATK = (baseATK * 140) / 100; break;
             }
         } else {
-            maxATK = (baseATK * 135)/100
+            maxATK = (baseATK * 135) / 100
         }
         return Math.trunc(maxATK)
     }
@@ -46,27 +47,42 @@ export default function WeaponTableComponent({ data, type }) {
         return buffer
     }
 
-    function displaySSA(array: any[]): any {
-        let buffer: any[] = []
-        for (let i = 0; i < array.length; i++) {
-            buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${array[i]}.png`} alt={`SSA Slot ${array[i]} enabled`} title={`SSA Slot ${array[i]} enabled`} w={16} h={16} />)
-        }
-        return <Flex align="center" key={uuidv4()} gap={0}>{buffer}</Flex>
-    }
-
     function displayPotentials(potList: any[]): any[] {
         let buffer: any[] = []
         for (let i = 0; i < potList.length; i++) {
             let pot = potentialData.find(pot => pot.Name === potList[i])
             if (pot) {
-                let potEffect = [pot.Effect[0], <br key={uuidv4()} />, pot.Effect[1], <br key={uuidv4()} />, pot.Effect[2]]
-                buffer.push(
-                    <Tooltip key={uuidv4()} label={potEffect} color="dark">
-                        <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> {potList[i]}</Flex>
-                    </Tooltip>
-                )
+                //let specialPotType:string;
+                //let unlockItem: string;
+                let potTypeColor: string;
+                let potEffect = ['* Lv1: ', pot.Effect[0], <br key={uuidv4()} />, '* Lv2: ', pot.Effect[1], <br key={uuidv4()} />, '* Lv3: ', pot.Effect[2]]
+                switch (pot.Special) {
+                    case 'Hidden': potTypeColor = 'red'; break; //specialPotType = 'Hidden '; unlockItem = 'Photon Booster'; break;
+                    case 'Weaponoid': potTypeColor = 'green'; break; //specialPotType = 'Weaponoid '; unlockItem = 'Weaponoid Booster'; break;
+                    case 'Ether': potTypeColor = 'blue'; break; //specialPotType = 'Ether '; unlockItem = 'Ether Fuse'; break;
+                    case 'Qliphad': potTypeColor = 'orange'; break; //specialPotType = 'Qliphad '; unlockItem = 'Qliphad Fuse'; break;
+                    case 'Ultimate': potTypeColor = 'indigo'; break; //specialPotType = 'Ultimate '; unlockItem = 'Ultimate Booster'; break;
+                    case 'Arena': potTypeColor = 'yellow'; break; //specialPotType = 'Arena '; unlockItem = 'Arena Booster'; break;
+                    case 'Lightweaver': potTypeColor = 'purple'; break; //specialPotType = 'Lightweaver '; unlockItem = 'Luminmech Grainne Crystal'; break;
+                    default: null; //unlockItem = 'Photon Sphere';
+                }
+                //let potUnlockString:any = <Flex align="center" key={uuidv4()} gap={5}><br key={uuidv4()} />* Requires <Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Tool.png" alt="Tool" w={16} h={16} /> <strong key={uuidv4()}>{unlockItem}s</strong> to unlock {specialPotType}Potential</Flex>
+                //potEffect.push(potUnlockString)
+                if (pot.Effect[0].length > 500 || pot.Effect[2].length > 100 || pot.Effect[2].length > 500) {
+                    buffer.push(
+                        <Tooltip key={uuidv4()} label={potEffect} color="dark" multiline w={600}>
+                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potList[i]}</Text></Flex>
+                        </Tooltip>
+                    )
+                }else{
+                    buffer.push(
+                        <Tooltip key={uuidv4()} label={potEffect} color="dark">
+                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potList[i]}</Text></Flex>
+                        </Tooltip>
+                    )
+                }
             } else {
-                buffer.push(<Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> {potList[i]}</Flex>)
+                buffer.push(<Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/RestrictedYellow.png" alt="Potential" title="Potential" w={16} h={16} /> !Potential not found: {potList[i]}</Flex>)
             }
         }
         return buffer;
@@ -92,48 +108,42 @@ export default function WeaponTableComponent({ data, type }) {
         return buffer;
     }
 
-    function displaySetEffect(set: any, doubleEffect: boolean): any {
-        let effect: any[] = []
-        set.Effect.forEach((value: any, index: number) => {
-            if (doubleEffect) {
-                if (index % 2 === 0) {
-                    if (set.Effect[index] === 'HP' || set.Effect[index] === 'PP') effect.push(<Flex key={uuidv4()} gap={5}>{set.Effect[index]} {Math.trunc(set.Effect[index + 1] * 2)}</Flex>);
-                    else effect.push(<Flex key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} title={`${set.Effect[index]}`} w={16} h={16} /> {Math.trunc(set.Effect[index + 1] * 2)}</Flex>);
-                }
-            } else {
-                if (index % 2 === 0) {
-                    if (set.Effect[index] === 'HP' || set.Effect[index] === 'PP') effect.push(<Flex key={uuidv4()} gap={5}>{set.Effect[index]} {Math.trunc(set.Effect[index + 1])}</Flex>);
-                    else effect.push(<Flex key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} title={`${set.Effect[index]}`} w={16} h={16} /> {Math.trunc(set.Effect[index + 1])}</Flex>);
-                }
-            }
-        }
-        )
-        return effect
-    }
-
-    function displayClasses(array: any[]): any {
-        let buffer: any[] = []
-        if (array) {
-            if (array[0] === 'All') {
-                buffer.push(
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hu.png`} alt={`Hunter`} title={`Hunter`} w={16} h={16} />,
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fi.png`} alt={`Fighter`} title={`Fighter`} w={16} h={16} />,
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt={`Ranger`} title={`Ranger`} w={16} h={16} />,
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Gu.png`} alt={`Gunner`} title={`Gunner`} w={16} h={16} />,
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fo.png`} alt={`Force`} title={`Force`} w={16} h={16} />,
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Te.png`} alt={`Techer`} title={`Techer`} w={16} h={16} />,
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Br.png`} alt={`Braver`} title={`Braver`} w={16} h={16} />,
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Bo.png`} alt={`Bouncer`} title={`Bouncer`} w={16} h={16} />,
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Su.png`} alt={`Summoner`} title={`Summoner`} w={16} h={16} />,
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hr.png`} alt={`Hero`} title={`Hero`} w={16} h={16} />,
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ph.png`} alt={`Phantom`} title={`Phantom`} w={16} h={16} />,
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Et.png`} alt={`Etoile`} title={`Etoile`} w={16} h={16} />,
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Lu.png`} alt={`Luster`} title={`Luster`} w={16} h={16} />
+    function displayClasses(classes: any[]): any {
+        let classList: any[] = []
+        if (classes) {
+            if (classes[0] === 'All') {
+                classList.push(
+                    <React.Fragment key={uuidv4()}>
+                        <Flex key={uuidv4()} gap={0}>
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hu.png`} alt={`Hunter`} title={`Hunter`} w={16} h={16} />
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt={`Ranger`} title={`Ranger`} w={16} h={16} />
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fo.png`} alt={`Force`} title={`Force`} w={16} h={16} />
+                        </Flex>
+                        <Flex key={uuidv4()} gap={0}>
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fi.png`} alt={`Fighter`} title={`Fighter`} w={16} h={16} />
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Gu.png`} alt={`Gunner`} title={`Gunner`} w={16} h={16} />
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Te.png`} alt={`Techer`} title={`Techer`} w={16} h={16} />
+                        </Flex>
+                        <Flex key={uuidv4()} gap={0}>
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Br.png`} alt={`Braver`} title={`Braver`} w={16} h={16} />
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Bo.png`} alt={`Bouncer`} title={`Bouncer`} w={16} h={16} />
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Su.png`} alt={`Summoner`} title={`Summoner`} w={16} h={16} />
+                        </Flex>
+                        <Flex key={uuidv4()} gap={0}>
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hr.png`} alt={`Hero`} title={`Hero`} w={16} h={16} />
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ph.png`} alt={`Phantom`} title={`Phantom`} w={16} h={16} />
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Et.png`} alt={`Etoile`} title={`Etoile`} w={16} h={16} />
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Lu.png`} alt={`Luster`} title={`Luster`} w={16} h={16} />
+                        </Flex>
+                    </React.Fragment>
                 )
             } else {
-                for (let i = 0; i < array.length; i++) {
-                    let className = ''
-                    switch (array[i]) {
+                let classListAux: any[] = []
+                let listBreak: number = 1;
+                for (let i = 0; i < classes.length; i++) {
+                    let currentClass: any = null
+                    let className: string = ''
+                    switch (classes[i]) {
                         case 'Hu': className = "Hunter"; break;
                         case 'Fi': className = "Fighter"; break;
                         case 'Ra': className = "Ranger"; break;
@@ -147,12 +157,23 @@ export default function WeaponTableComponent({ data, type }) {
                         case 'Ph': className = "Phantom"; break;
                         case 'Et': className = "Etoile"; break;
                         case 'Lu': className = "Luster"; break;
-
                     }
-                    buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${array[i]}.png`} alt={className} title={className} w={16} h={16} />)
+                    currentClass = <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${classes[i]}.png`} alt={className} title={className} w={16} h={16} />
+                    classListAux.push(currentClass)
+                    switch (classes.length) {
+                        case 4:
+                            listBreak = 2;
+                            break;
+                        default:
+                            listBreak = 3;
+                    }
+                    if (classListAux.length % listBreak === 0 || !classes[i + 1]) {
+                        classList.push(<Flex key={uuidv4()} gap={0}>{classListAux}</Flex>)
+                        classListAux = []
+                    }
                 }
             }
-            return <Flex key={uuidv4()} gap={0}>{buffer}</Flex>
+            return classList
         } else { return null }
     }
 
@@ -204,7 +225,7 @@ export default function WeaponTableComponent({ data, type }) {
             {<Table.Tbody>
                 {tbodyData.map((row: any, index: any) => {
                     return <Table.Tr key={uuidv4()}>
-                        {row['Name (JP)'] && <Table.Td key={uuidv4()} className="centerCell"><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['name_en'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${row['name_en']}`} w={64} h={64} /></Flex></Table.Td>}
+                        {row['Name (JP)'] && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['name_en'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${row['name_en']}`} w={64} h={64} /></Flex></Table.Td>}
                         {theadData.map((key: string, index: any) => {
                             if (row['Name (JP)'] && key !== 'name_global' && key !== 'old_type' && key !== 'id') {
                                 let bufferProperties: any[] = [];
@@ -216,9 +237,9 @@ export default function WeaponTableComponent({ data, type }) {
                                     case 'name_en':
                                         return
                                     case 'Rarity':
-                                        return <Table.Td key={uuidv4()} className="centerCell"><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} title={`${row[key]} Star`} w={16} h={16} /></Flex></Table.Td>
+                                        return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} title={`${row[key]} Star`} w={16} h={16} /></Flex></Table.Td>
                                     case 'Requirement':
-                                        return <Table.Td key={uuidv4()} className="centerCell"><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key][0]}.png`} alt={row[key][0]} title={row[key][0]} w={16} h={16} /> {row[key][1]}</Flex></Table.Td>
+                                        return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key][0]}.png`} alt={row[key][0]} title={row[key][0]} w={16} h={16} /> {row[key][1]}</Flex></Table.Td>
                                     case 'S-ATK':
                                     case 'R-ATK':
                                     case 'T-ATK':
@@ -259,7 +280,7 @@ export default function WeaponTableComponent({ data, type }) {
                                     case 'PA_enabled':
                                     case 'Set':
                                         if (row['Abilities']) {
-                                            bufferProperties.push(<span key={uuidv4()}>{displayAbilities(row['Abilities'],false)}</span>)
+                                            bufferProperties.push(<span key={uuidv4()}>{displayAbilities(row['Abilities'])}</span>)
                                         }
                                         if (row['Element']) {
                                             bufferProperties.push(<span key={uuidv4()}>{displayElement(row['Element'])}</span>);
@@ -268,7 +289,7 @@ export default function WeaponTableComponent({ data, type }) {
                                             bufferProperties.push(<span key={uuidv4()}>{displayPA(row['PA_enabled'])}</span>);
                                         }
                                         if (row['Set']) {
-                                            bufferProperties.push(<span className="centerCell" key={uuidv4()}>{displaySet(row['Set'], row['name_en'])}</span>);
+                                            bufferProperties.push(displaySet(row['Set'], row['name_en']));
                                         }
                                         if (index === 10) {
                                             if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
@@ -280,7 +301,7 @@ export default function WeaponTableComponent({ data, type }) {
                                         if (row['old_type']) {
                                             return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                         } else {
-                                            return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayAbilities(row['SAF'],true)}</Flex></Table.Td>
+                                            return <Table.Td key={uuidv4()}><Flex align="center" key={uuidv4()} gap={5}>{displayAbilities(row['SAF'])}</Flex></Table.Td>
                                         }
                                     case 'SSA Slots':
                                         if (row[key]) {

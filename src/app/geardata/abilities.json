@@ -35,6 +35,13 @@
         ]
     },
     {
+        "Name": "Power VI",
+        "Effect": [
+            "S-ATK",
+            45
+        ]
+    },
+    {
         "Name": "Shoot I",
         "Effect": [
             "R-ATK",
@@ -70,6 +77,13 @@
         ]
     },
     {
+        "Name": "Shoot VI",
+        "Effect": [
+            "R-ATK",
+            45
+        ]
+    },
+    {
         "Name": "Technique I",
         "Effect": [
             "T-ATK",
@@ -102,6 +116,13 @@
         "Effect": [
             "T-ATK",
             40
+        ]
+    },
+    {
+        "Name": "Technique VI",
+        "Effect": [
+            "T-ATK",
+            45
         ]
     },
     {

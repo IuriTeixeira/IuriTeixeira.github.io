@@ -2504,7 +2504,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Lightning/Light",
+        "Name": "Element Tracking - Lightning/Light",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Lightning or Light.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Lightning or Light.",
@@ -2512,7 +2512,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Ice/Light",
+        "Name": "Element Tracking - Ice/Light",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Light or Ice.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Light or Ice.",
@@ -2520,7 +2520,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Light/Dark",
+        "Name": "Element Tracking - Light/Dark",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Light or Dark.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Light or Dark.",
@@ -2528,7 +2528,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Fire/Light",
+        "Name": "Element Tracking - Fire/Light",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Light.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Light.",
@@ -2536,7 +2536,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Fire/Wind",
+        "Name": "Element Tracking - Fire/Wind",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Wind.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Wind.",
@@ -2544,7 +2544,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Wind/Dark",
+        "Name": "Element Tracking - Wind/Dark",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Wind or Dark.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Wind or Dark.",
@@ -2552,7 +2552,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Fire/Lightning",
+        "Name": "Element Tracking - Fire/Lightning",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Lightning.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Lightning.",
@@ -2560,7 +2560,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Ice/Lightning",
+        "Name": "Element Tracking - Ice/Lightning",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Ice or Lightning.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Ice or Lightning.",
@@ -2568,7 +2568,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Wind/Light",
+        "Name": "Element Tracking - Wind/Light",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Wind or Light.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Wind or Light.",
@@ -2576,7 +2576,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Ice/Wind",
+        "Name": "Element Tracking - Ice/Wind",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Ice or Wind.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Ice or Wind.",
@@ -2584,7 +2584,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Lightning/Dark",
+        "Name": "Element Tracking - Lightning/Dark",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Lightning or Dark.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Lightning or Dark.",
@@ -2592,7 +2592,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Fire/Dark",
+        "Name": "Element Tracking - Fire/Dark",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Dark.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Dark.",
@@ -2600,7 +2600,7 @@
         ]
     },
     {
-        "Name": "Elem. Tracking - Fire/Ice",
+        "Name": "Element Tracking - Fire/Ice",
         "Effect": [
             "Increase Power by 7% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Ice.",
             "Increase Power by 10% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Ice.",
@@ -2765,7 +2765,8 @@
             "Increase Power by 10%. Doubles the effects of Special Abilities attached to the Weapon.",
             "Increase Power by 12%. Doubles the effects of Special Abilities attached to the Weapon.",
             "Increase Power by 14%. Doubles the effects of Special Abilities attached to the Weapon."
-        ]
+        ],
+        "Special": "Qliphad"
     },
     {
         "Name": "Melody of Evil",
@@ -4070,7 +4071,8 @@
             "Boosts damage by 10%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds.",
             "Boosts damage by 11%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds.",
             "Boosts damage by 12%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds."
-        ]
+        ],
+        "Special":"Lightweaver"
     },
     {
         "Name": "Cycle of Fate",
@@ -4078,15 +4080,17 @@
             "Boosts damage by 9%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds.",
             "Boosts damage by 10%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds.",
             "Boosts damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds."
-        ]
+        ],
+        "Special":"Lightweaver"
     },
     {
         "Name": "Lightweaving Guardian",
         "Effect": [
-            "Boosts damage by 10%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Boosts damage by 16.60%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends).",
-            "Boosts damage by 11%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Boosts damage by 17.66%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends).",
-            "Boosts damage by 12%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Boosts damage by 18.72%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends)."
-        ]
+            "Boosts damage by 10%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Boosts damage by 16.60%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential).",
+            "Boosts damage by 11%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Boosts damage by 17.66%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential).",
+            "Boosts damage by 12%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Boosts damage by 18.72%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential)."
+        ],
+        "Special":"Lightweaver"
     },
     {
         "Name": "Lightsong Guardian",
@@ -4094,7 +4098,8 @@
             "Boosts damage by 9%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Boosts damage by 13.36%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends).",
             "Boosts damage by 10%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Boosts damage by 14.40%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends).",
             "Boosts damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Boosts damage by 15.44%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends)."
-        ]
+        ],
+        "Special":"Lightweaver"
     },
     {
         "Name": "Sixfold Miasmata",
@@ -4107,9 +4112,9 @@
     {
         "Name": "Crimson Waltz",
         "Effect": [
-            "Increase Power by 10%. Reduce Gear consumption during Hero Time. Increase the activation limit of HT Counter Bonus to 16.",
-            "Increase Power by 12%. Reduce Gear consumption during Hero Time. Increase the activation limit of HT Counter Bonus to 16.",
-            "Increase Power by 14%. Reduce Gear consumption during Hero Time. Increase the activation limit of HT Counter Bonus to 16."
+            "Increase Power by 10%. Reduce Gear consumption during Hero Time. Increase the activation limit of Hero Time Counter Bonus to 16.",
+            "Increase Power by 12%. Reduce Gear consumption during Hero Time. Increase the activation limit of Hero Time Counter Bonus to 16.",
+            "Increase Power by 14%. Reduce Gear consumption during Hero Time. Increase the activation limit of Hero Time Counter Bonus to 16."
         ]
     },
     {
@@ -4803,7 +4808,7 @@
             "Increase Power by 12%. Doubles the effects of Special Abilities attached to the Weapon.",
             "Increase Power by 14%. Doubles the effects of Special Abilities attached to the Weapon."
         ],
-        "Special": "Unique"
+        "Special": "Qliphad"
     },
     {
         "Name": "Tempering Trainer",
@@ -4812,7 +4817,7 @@
             "Increase Power and reduces PP Consumption based on the number of Special Abilities attached. (?% Power and ?% PP cost reduction per Ability)",
             "Increase Power and reduces PP Consumption based on the number of Special Abilities attached. (1.625% Power and 2.5% PP cost reduction per Ability)"
         ],
-        "Special": "Unique"
+        "Special": "Ether"
     },
     {
         "Name": "Advancing Merit",
@@ -4833,7 +4838,7 @@
         "Special": "Unique"
     },
     {
-        "Name": "Deathblow Fury - Adv. Attack",
+        "Name": "Deathblow Fury - Advance Attack",
         "Effect": [
             "Power increases by 12% during the Buster Quest Attack and Buster Phase in addition to Deathblow Fury's effects.",
             "Power increases by 12% during the Buster Quest Attack and Buster Phase in addition to Deathblow Fury's effects.",
@@ -4896,7 +4901,7 @@
         "Special": "Unique"
     },
     {
-        "Name": "Lightstream Resurrection+",
+        "Name": "Lightstream Resurrection Plus",
         "Effect": [
             "Increase Power by 15%. Fully restore PP when casting a PA/Tech while below 10% PP and bestow an additional Power bonus (3%) for 30 seconds (120s Recast).",
             "Increase Power by 16%. Fully restore PP when casting a PA/Tech while below 10% PP and bestow an additional Power bonus (3%) for 30 seconds (120s Recast).",
@@ -4905,7 +4910,7 @@
         "Special": "Unique"
     },
     {
-        "Name": "Lightstream Melody+",
+        "Name": "Lightstream Melody Plus",
         "Effect": [
             "Increase Power by 6%. Fully restore PP when casting a PA/Tech while below 10% PP and bestow an additional Power bonus (3%) for 30 seconds (120s Recast).",
             "Increase Power by 7%. Fully restore PP when casting a PA/Tech while below 10% PP and bestow an additional Power bonus (3%) for 30 seconds (120s Recast).",
@@ -4914,7 +4919,7 @@
         "Special": "Unique"
     },
     {
-        "Name": "Resenting Prayer+",
+        "Name": "Resenting Prayer Plus",
         "Effect": [
             "Reduce PP to 0 when using a PA/Technique while PP is maxed. Reduce PP consumption and recover PP at regular intervals until PP is maxed.",
             "Reduce PP to 0 when using a PA/Technique while PP is maxed. Reduce PP consumption and recover PP at regular intervals until PP is maxed.",

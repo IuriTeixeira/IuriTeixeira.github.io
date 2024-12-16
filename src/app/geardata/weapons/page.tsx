@@ -13,6 +13,7 @@ export default function Weapons() {
         <>
             <HeaderComponent setWeaponData={setWeaponData} setWeaponType={setWeaponType}/>
             <TableComponent data={weaponData} type={weaponType}/>
+            <HeaderComponent setWeaponData={setWeaponData} setWeaponType={setWeaponType}/>
         </>
     )
 }

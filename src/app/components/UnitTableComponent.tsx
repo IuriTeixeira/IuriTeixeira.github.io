@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguageContext } from "../language-provider";
-import { Image, Flex, SimpleGrid, Table, Tooltip } from '@mantine/core';
+import { Image, Flex, SimpleGrid, Table } from '@mantine/core';
 import './UnitTableComponent.css';
 import '@mantine/core/styles/Table.layer.css';
 import { v4 as uuidv4 } from 'uuid';
@@ -191,7 +191,7 @@ export default function UnitTableComponent({ data, type }) {
                                         }
                                         else return
                                     case 'Abilities':
-                                        return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayAbilities(row['Abilities'],false)}</Flex></Table.Td>
+                                        return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayAbilities(row['Abilities'])}</Flex></Table.Td>
                                     case 'Set':
                                         return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['name_en'])}</Table.Td>
                                     case 'Default Sub Icon':
