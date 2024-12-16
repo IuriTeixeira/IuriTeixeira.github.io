@@ -1837,7 +1837,7 @@
         ],
         "Pieces": [
             "Rear",
-            "Jaeger Bid",
+            "Jaeger Bied",
             "Arm",
             "Jaeger Nel",
             "Leg",
@@ -1911,7 +1911,7 @@
         ]
     },
     {
-        "Name": "Sensuous",
+        "Name": "Sensias",
         "Required": 3,
         "Effect": [
             "S-ATK",
@@ -1925,11 +1925,11 @@
         ],
         "Pieces": [
             "Rear",
-            "Sensuous Em",
+            "Sensias Em",
             "Arm",
-            "Sensuous Ar",
+            "Sensias Ar",
             "Leg",
-            "Sensuous Oz"
+            "Sensias Oz"
         ]
     },
     {
@@ -1999,7 +1999,7 @@
         ]
     },
     {
-        "Name": "Weiss",
+        "Name": "Weisse",
         "Required": 3,
         "Effect": [
             "S-ATK",
@@ -2013,11 +2013,11 @@
         ],
         "Pieces": [
             "Rear",
-            "Resti Weiss",
+            "Resti Weisse",
             "Arm",
-            "Ruine Weiss",
+            "Ruine Weisse",
             "Leg",
-            "Ruina Weiss"
+            "Ruina Weisse"
         ]
     },
     {
@@ -2380,7 +2380,7 @@
             "Rear",
             "Fahren Myrna",
             "Rear",
-            "Fahren Tray",
+            "Fahren Trey",
             "Arm",
             "Fahren Paua",
             "Arm",
@@ -2695,6 +2695,20 @@
             "Thunder Claw Tagamikouga",
             "Rear",
             "Thunder Tagaishi"
+        ]
+    },
+    {
+        "Name": "Greuz",
+        "Required": 2,
+        "Effect": [
+            "T-DEF",
+            60
+        ],
+        "Pieces": [
+            "Jet Boots",
+            "Greuzoras Shosul",
+            "Rear",
+            "Greuzoblura"
         ]
     },
     {

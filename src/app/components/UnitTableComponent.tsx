@@ -20,7 +20,7 @@ export default function UnitTableComponent({ data, type }) {
     let tbodyData: any = data;
 
     function calculateMaxDef(baseDEF: number): number {
-        return Math.trunc(baseDEF * 1.4)
+        return Math.trunc((baseDEF * 140)/100)
     }
 
     function displayStat(key: string, value: number): any[] {
@@ -53,9 +53,10 @@ export default function UnitTableComponent({ data, type }) {
                                     case 'S-DEF': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">DEF</Table.Th><Table.Th key={uuidv4()} className="centerCell">DEF<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
                                     case 'R-DEF': return
                                     case 'T-DEF': return
-                                    case 'S-ATK': return <Table.Th key={uuidv4()} className="centerCell">ATK</Table.Th>
+                                    case 'S-ATK': return <Table.Th key={uuidv4()} className="centerCell">Stats</Table.Th>
                                     case 'R-ATK': return
                                     case 'T-ATK': return
+                                    case 'DEX': return
                                     case 'Strike Resistance': return <Table.Th key={uuidv4()} className="centerCell">Resistances</Table.Th>
                                     case 'Ranged Resistance': return
                                     case 'Tech Resistance': return
@@ -131,16 +132,18 @@ export default function UnitTableComponent({ data, type }) {
                                     case 'S-ATK':
                                     case 'R-ATK':
                                     case 'T-ATK':
+                                    case 'DEX':
                                         if (row['S-ATK']) {
                                             bufferATK.push(displayStat('S-ATK', row['S-ATK']));
                                         }
                                         if (row['R-ATK']) {
-                                            if (bufferATK[0]) bufferATK.push(<br key={uuidv4()} />, displayStat('R-ATK', row['R-ATK']));
-                                            else bufferATK.push(displayStat('R-ATK', row['R-ATK']));
+                                            bufferATK.push(displayStat('R-ATK', row['R-ATK']));
                                         }
                                         if (row['T-ATK']) {
-                                            if (bufferATK[0]) bufferATK.push(<br key={uuidv4()} />, displayStat('T-ATK', row['T-ATK']));
-                                            else bufferATK.push(displayStat('T-ATK', row['T-ATK']));
+                                            bufferATK.push(displayStat('T-ATK', row['T-ATK']));
+                                        }
+                                        if (row['DEX']) {
+                                            bufferATK.push(displayStat('DEX', row['DEX']));
                                         }
                                         if (index === 12) {
                                             if (bufferATK[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
@@ -183,7 +186,7 @@ export default function UnitTableComponent({ data, type }) {
                                             bufferResistance.push(displayResistance('Dark Resistance', row['Dark Resistance']));
                                         }
                                         if (index === 13) {
-                                            if (bufferResistance[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><SimpleGrid key={uuidv4()} cols={2} spacing="lg" verticalSpacing={0}>{bufferResistance}</SimpleGrid></Flex></Table.Td>
+                                            if (bufferResistance[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><SimpleGrid key={uuidv4()} cols={3} spacing="xs" verticalSpacing={0}>{bufferResistance}</SimpleGrid></Flex></Table.Td>
                                             else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                         }
                                         else return

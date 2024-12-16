@@ -22,20 +22,20 @@ export default function WeaponTableComponent({ data, type }) {
             switch (rarity) {
                 case 1:
                 case 2:
-                case 3: maxATK = baseATK * 1.5; break;
+                case 3: maxATK = (baseATK * 150)/100; break;
                 case 4:
                 case 5:
-                case 6: maxATK = baseATK * 1.6; break;
+                case 6: maxATK = (baseATK * 160)/100; break;
                 case 7:
                 case 8:
-                case 9: maxATK = baseATK * 1.75; break;
-                case 10: maxATK = baseATK * 1.9; break;
-                case 11: maxATK = baseATK * 1.95; break;
-                case 12: maxATK = baseATK * 2; break;
-                case 13: maxATK = baseATK * 1.4; break;
+                case 9: maxATK = (baseATK * 175)/100; break;
+                case 10: maxATK = (baseATK * 190)/100; break;
+                case 11: maxATK = (baseATK * 195)/100; break;
+                case 12: maxATK = (baseATK * 200)/100; break;
+                case 13: maxATK = (baseATK * 140)/100; break;
             }
         } else {
-            maxATK = baseATK * 1.35
+            maxATK = (baseATK * 135)/100
         }
         return Math.trunc(maxATK)
     }

@@ -7,9 +7,9 @@ function displaySetEffect(set: any, doubleEffect: boolean): any {
     let effect: any[] = []
     set.Effect.forEach((value: any, index: number) => {
         let multiplier:number = 1;
+        if (doubleEffect) multiplier = 2;
         let effectValue:number = Math.trunc(set.Effect[index + 1] * multiplier)
         let image:any = <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${set.Effect[index].toString().replace(' ', '')}.png`} alt={`${set.Effect[index]}`} title={`${set.Effect[index]}`} w={16} h={16} />
-        if (doubleEffect) multiplier = 2;
         if (index % 2 === 0) {
             switch (set.Effect[index]) {
                 case 'HP':
