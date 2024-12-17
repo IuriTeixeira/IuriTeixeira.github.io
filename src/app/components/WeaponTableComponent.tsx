@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguageContext } from "../language-provider";
-import { Text, Flex, Image, SimpleGrid, Table, Tooltip } from '@mantine/core';
+import { Text, Flex, Image, SimpleGrid, Table, Tooltip, List } from '@mantine/core';
 import { v4 as uuidv4 } from 'uuid';
 import potentialData from "../geardata/weapons/weapon-data/potentials.json"
 import displayAbilities from './displayAbilities';
@@ -52,31 +52,41 @@ export default function WeaponTableComponent({ data, type }) {
         for (let i = 0; i < potList.length; i++) {
             let pot = potentialData.find(pot => pot.Name === potList[i])
             if (pot) {
-                //let specialPotType:string;
-                //let unlockItem: string;
+                let specialPotType: string;
+                let unlockItem: string;
                 let potTypeColor: string;
-                let potEffect = ['* Lv1: ', pot.Effect[0], <br key={uuidv4()} />, '* Lv2: ', pot.Effect[1], <br key={uuidv4()} />, '* Lv3: ', pot.Effect[2]]
+                let potEffect: any =
+                    <List>
+                        <List.Item>Lv1: {pot.Effect[0]}</List.Item>
+                        <List.Item>Lv2: {pot.Effect[1]}</List.Item>
+                        <List.Item>Lv3: {pot.Effect[2]}</List.Item>
+                    </List>
                 switch (pot.Special) {
-                    case 'Hidden': potTypeColor = 'red'; break; //specialPotType = 'Hidden '; unlockItem = 'Photon Booster'; break;
-                    case 'Weaponoid': potTypeColor = 'green'; break; //specialPotType = 'Weaponoid '; unlockItem = 'Weaponoid Booster'; break;
-                    case 'Ether': potTypeColor = 'blue'; break; //specialPotType = 'Ether '; unlockItem = 'Ether Fuse'; break;
-                    case 'Qliphad': potTypeColor = 'orange'; break; //specialPotType = 'Qliphad '; unlockItem = 'Qliphad Fuse'; break;
-                    case 'Ultimate': potTypeColor = 'indigo'; break; //specialPotType = 'Ultimate '; unlockItem = 'Ultimate Booster'; break;
-                    case 'Arena': potTypeColor = 'yellow'; break; //specialPotType = 'Arena '; unlockItem = 'Arena Booster'; break;
-                    case 'Lightweaver': potTypeColor = 'purple'; break; //specialPotType = 'Lightweaver '; unlockItem = 'Luminmech Grainne Crystal'; break;
-                    default: null; //unlockItem = 'Photon Sphere';
+                    case 'Hidden': potTypeColor = 'red'; specialPotType = 'Hidden '; unlockItem = 'Photon Booster'; break;
+                    case 'Weaponoid': potTypeColor = 'green'; specialPotType = 'Weaponoid '; unlockItem = 'Weaponoid Booster'; break;
+                    case 'Ether': potTypeColor = 'blue'; specialPotType = 'Ether '; unlockItem = 'Ether Fuse'; break;
+                    case 'Qliphad': potTypeColor = 'orange'; specialPotType = 'Qliphad '; unlockItem = 'Qliphad Fuse'; break;
+                    case 'Ultimate': potTypeColor = 'indigo'; specialPotType = 'Ultimate '; unlockItem = 'Ultimate Booster'; break;
+                    case 'Arena': potTypeColor = 'yellow'; specialPotType = 'Arena '; unlockItem = 'Arena Booster'; break;
+                    case 'Luminmech': potTypeColor = 'purple'; specialPotType = 'Luminmech '; unlockItem = 'Luminmech Grainne Crystal'; break;
+                    default: unlockItem = 'Photon Sphere';
                 }
-                //let potUnlockString:any = <Flex align="center" key={uuidv4()} gap={5}><br key={uuidv4()} />* Requires <Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Tool.png" alt="Tool" w={16} h={16} /> <strong key={uuidv4()}>{unlockItem}s</strong> to unlock {specialPotType}Potential</Flex>
-                //potEffect.push(potUnlockString)
-                if (pot.Effect[0].length > 500 || pot.Effect[2].length > 100 || pot.Effect[2].length > 500) {
+                let potUnlockString: any =
+                    <Flex align="center" key={uuidv4()} gap={5}>
+                            ※ Requires
+                            <Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Tool.png" alt="Tool" w={16} h={16} />
+                            <strong key={uuidv4()}>{unlockItem}s</strong> to unlock {specialPotType}Potential
+                    </Flex>
+                let tooltipText: any = <SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{potEffect}{potUnlockString}</SimpleGrid>
+                if (pot.Effect[0].length > 100 || pot.Effect[2].length > 100 || pot.Effect[2].length > 100) {
                     buffer.push(
-                        <Tooltip key={uuidv4()} label={potEffect} color="dark" multiline w={600}>
+                        <Tooltip key={uuidv4()} label={tooltipText} color="dark" multiline w={700}>
                             <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potList[i]}</Text></Flex>
                         </Tooltip>
                     )
-                }else{
+                } else {
                     buffer.push(
-                        <Tooltip key={uuidv4()} label={potEffect} color="dark">
+                        <Tooltip key={uuidv4()} label={tooltipText} color="dark">
                             <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potList[i]}</Text></Flex>
                         </Tooltip>
                     )

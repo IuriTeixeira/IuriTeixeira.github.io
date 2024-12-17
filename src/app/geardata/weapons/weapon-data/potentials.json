@@ -4826,7 +4826,7 @@
             "Increase Power up to 16% over time. (13% base, 120s to max)",
             "Increase Power up to 17% over time. (13% base, 120s to max)"
         ],
-        "Special": "Unique"
+        "Special": "Ether"
     },
     {
         "Name": "Deathblow Fury - Defense",
@@ -4834,8 +4834,7 @@
             "Power increases by 12% during the Buster Quest Defense Phase in addition to Deathblow Fury's effects.",
             "Power increases by 12% during the Buster Quest Defense Phase in addition to Deathblow Fury's effects.",
             "Power increases by 12% during the Buster Quest Defense Phase in addition to Deathblow Fury's effects."
-        ],
-        "Special": "Unique"
+        ]
     },
     {
         "Name": "Deathblow Fury - Advance Attack",
@@ -4843,8 +4842,7 @@
             "Power increases by 12% during the Buster Quest Attack and Buster Phase in addition to Deathblow Fury's effects.",
             "Power increases by 12% during the Buster Quest Attack and Buster Phase in addition to Deathblow Fury's effects.",
             "Power increases by 12% during the Buster Quest Attack and Buster Phase in addition to Deathblow Fury's effects."
-        ],
-        "Special": "Unique"
+        ]
     },
     {
         "Name": "Deathblow Honor - Defense",
@@ -4852,17 +4850,15 @@
             "Power increases by 3% during the Buster Quest Defense Phase in addition to Deathblow Honor's effects.",
             "Power increases by 3% during the Buster Quest Defense Phase in addition to Deathblow Honor's effects.",
             "Power increases by 3% during the Buster Quest Defense Phase in addition to Deathblow Honor's effects."
-        ],
-        "Special": "Unique"
+        ]
     },
     {
-        "Name": "Deathblow Honor - Adv. Attack",
+        "Name": "Deathblow Honor - Advance Attack",
         "Effect": [
             "Power increases by 3% during the Buster Quest Attack and Buster Phase in addition to Deathblow Honor's effects.",
             "Power increases by 3% during the Buster Quest Attack and Buster Phase in addition to Deathblow Honor's effects.",
             "Power increases by 3% during the Buster Quest Attack and Buster Phase in addition to Deathblow Honor's effects."
-        ],
-        "Special": "Unique"
+        ]
     },
     {
         "Name": "Millenium Blaze",
@@ -4870,8 +4866,7 @@
             "Increase Power by 5%.",
             "Increase Power by 7%.",
             "Increase Power by 10%."
-        ],
-        "Special": "Unique"
+        ]
     },
     {
         "Name": "Phantasmal Darkness Plus",
@@ -4880,7 +4875,7 @@
             "Increase Power based on the Photon Blast Gauge (?%/?%/?%). Bestow an additional effect based on the Photon Blast type when the Photon Blast is used.",
             "Increase Power based on the Photon Blast Gauge (18%/19%/20%). Bestow an additional effect based on the Photon Blast type when the Photon Blast is used."
         ],
-        "Special": "Unique"
+        "Special": "Luminmech"
     },
     {
         "Name": "Immortal Soul Plus",
@@ -4889,7 +4884,7 @@
             "Increase Power by 17%. Survive one fatal attack with 1 HP, and restore HP at regular intervals afterwards.",
             "Increase Power by 18%. Survive one fatal attack with 1 HP, and restore HP at regular intervals afterwards."
         ],
-        "Special": "Unique"
+        "Special": "Luminmech"
     },
     {
         "Name": "Eternal War Scherzo Plus",
@@ -4898,7 +4893,7 @@
             "Increase Power by 7%. Your Pet can survive one fatal attack with 1 HP. Your Pet restores HP at regular intervals afterwards.",
             "Increase Power by 8%. Your Pet can survive one fatal attack with 1 HP. Your Pet restores HP at regular intervals afterwards."
         ],
-        "Special": "Unique"
+        "Special": "Luminmech"
     },
     {
         "Name": "Lightstream Resurrection Plus",
@@ -4907,7 +4902,7 @@
             "Increase Power by 16%. Fully restore PP when casting a PA/Tech while below 10% PP and bestow an additional Power bonus (3%) for 30 seconds (120s Recast).",
             "Increase Power by 17%. Fully restore PP when casting a PA/Tech while below 10% PP and bestow an additional Power bonus (3%) for 30 seconds (120s Recast)."
         ],
-        "Special": "Unique"
+        "Special": "Luminmech"
     },
     {
         "Name": "Lightstream Melody Plus",
@@ -4916,7 +4911,7 @@
             "Increase Power by 7%. Fully restore PP when casting a PA/Tech while below 10% PP and bestow an additional Power bonus (3%) for 30 seconds (120s Recast).",
             "Increase Power by 8%. Fully restore PP when casting a PA/Tech while below 10% PP and bestow an additional Power bonus (3%) for 30 seconds (120s Recast)."
         ],
-        "Special": "Unique"
+        "Special": "Luminmech"
     },
     {
         "Name": "Resenting Prayer Plus",
@@ -4925,7 +4920,7 @@
             "Reduce PP to 0 when using a PA/Technique while PP is maxed. Reduce PP consumption and recover PP at regular intervals until PP is maxed.",
             "Reduce PP to 0 when using a PA/Technique while PP is maxed. Reduce PP consumption and recover PP at regular intervals until PP is maxed."
         ],
-        "Special": "Unique"
+        "Special": "Ultimate"
     },
     {
         "Name": "Liberated Fang Plus",
@@ -4934,7 +4929,7 @@
             "Increase Critical Hit Rate by 15% and increase Power by 21%. Decrease PP consumption by 12%.",
             "Increase Critical Hit Rate by 20% and increase Power by 23%. Decrease PP consumption by 15%."
         ],
-        "Special": "Unique"
+        "Special": "Luminmech"
     },
     {
         "Name": "Liberated Ensemble Plus",
@@ -4943,7 +4938,7 @@
             "Increase Critical Hit Rate by 15% and increase Power by 10%. Decrease PP consumption by 17%.",
             "Increase Critical Hit Rate by 20% and increase Power by 11%. Decrease PP consumption by 20%."
         ],
-        "Special": "Unique"
+        "Special": "Luminmech"
     },
     {
         "Name": "Thundering Blades Plus",

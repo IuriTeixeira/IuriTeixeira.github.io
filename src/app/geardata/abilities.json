@@ -42,6 +42,41 @@
         ]
     },
     {
+        "Name": "Lesser Power I",
+        "Effect": [
+            "S-ATK",
+            5
+        ]
+    },
+    {
+        "Name": "Lesser Power II",
+        "Effect": [
+            "S-ATK",
+            15
+        ]
+    },
+    {
+        "Name": "Lesser Power III",
+        "Effect": [
+            "S-ATK",
+            25
+        ]
+    },
+    {
+        "Name": "Lesser Power IV",
+        "Effect": [
+            "S-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Lesser Power V",
+        "Effect": [
+            "S-ATK",
+            35
+        ]
+    },
+    {
         "Name": "Shoot I",
         "Effect": [
             "R-ATK",
@@ -84,6 +119,41 @@
         ]
     },
     {
+        "Name": "Lesser Shoot I",
+        "Effect": [
+            "R-ATK",
+            5
+        ]
+    },
+    {
+        "Name": "Lesser Shoot II",
+        "Effect": [
+            "R-ATK",
+            15
+        ]
+    },
+    {
+        "Name": "Lesser Shoot III",
+        "Effect": [
+            "R-ATK",
+            25
+        ]
+    },
+    {
+        "Name": "Lesser Shoot IV",
+        "Effect": [
+            "R-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Lesser Shoot V",
+        "Effect": [
+            "R-ATK",
+            35
+        ]
+    },
+    {
         "Name": "Technique I",
         "Effect": [
             "T-ATK",
@@ -123,6 +193,41 @@
         "Effect": [
             "T-ATK",
             45
+        ]
+    },
+    {
+        "Name": "Lesser Technique I",
+        "Effect": [
+            "T-ATK",
+            5
+        ]
+    },
+    {
+        "Name": "Lesser Technique II",
+        "Effect": [
+            "T-ATK",
+            15
+        ]
+    },
+    {
+        "Name": "Lesser Technique III",
+        "Effect": [
+            "T-ATK",
+            25
+        ]
+    },
+    {
+        "Name": "Lesser Technique IV",
+        "Effect": [
+            "T-ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Lesser Technique V",
+        "Effect": [
+            "T-ATK",
+            35
         ]
     },
     {
@@ -446,6 +551,48 @@
         ]
     },
     {
+        "Name": "Stamina VI",
+        "Effect": [
+            "HP",
+            80
+        ]
+    },
+    {
+        "Name": "Lesser Stamina I",
+        "Effect": [
+            "HP",
+            15
+        ]
+    },
+    {
+        "Name": "Lesser Stamina II",
+        "Effect": [
+            "HP",
+            35
+        ]
+    },
+    {
+        "Name": "Lesser Stamina III",
+        "Effect": [
+            "HP",
+            45
+        ]
+    },
+    {
+        "Name": "Lesser Stamina IV",
+        "Effect": [
+            "HP",
+            55
+        ]
+    },
+    {
+        "Name": "Lesser Stamina V",
+        "Effect": [
+            "HP",
+            65
+        ]
+    },
+    {
         "Name": "Spirita I",
         "Effect": [
             "PP",
@@ -478,6 +625,48 @@
         "Effect": [
             "PP",
             6
+        ]
+    },
+    {
+        "Name": "Spirita VI",
+        "Effect": [
+            "PP",
+            7
+        ]
+    },
+    {
+        "Name": "Lesser Spirita I",
+        "Effect": [
+            "PP",
+            1
+        ]
+    },
+    {
+        "Name": "Lesser Spirita II",
+        "Effect": [
+            "PP",
+            2
+        ]
+    },
+    {
+        "Name": "Lesser Spirita III",
+        "Effect": [
+            "PP",
+            3
+        ]
+    },
+    {
+        "Name": "Lesser Spirita IV",
+        "Effect": [
+            "PP",
+            4
+        ]
+    },
+    {
+        "Name": "Lesser Spirita V",
+        "Effect": [
+            "PP",
+            5
         ]
     },
     {
@@ -1110,6 +1299,28 @@
         ]
     },
     {
+        "Name": "Photoner Glare",
+        "Effect": [
+            "HP",
+            15,
+            "PP",
+            2,
+            "All Stats",
+            15
+        ]
+    },
+    {
+        "Name": "Absolute Glare",
+        "Effect": [
+            "HP",
+            30,
+            "PP",
+            3,
+            "All Stats",
+            40
+        ]
+    },
+    {
         "Name": "Doom Break I",
         "Effect": [
             "PP",
@@ -1173,6 +1384,146 @@
         ]
     },
     {
+        "Name": "Sentence Triple",
+        "Effect": [
+            "ATK",
+            30
+        ]
+    },
+    {
+        "Name": "Sentence Arma",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            3,
+            "S-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Sentence Tiro",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            3,
+            "R-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "Sentence Magia",
+        "Effect": [
+            "HP",
+            20,
+            "PP",
+            3,
+            "T-ATK",
+            20
+        ]
+    },
+    {
+        "Name": "EV Power/HP",
+        "Effect": [
+            "HP",
+            60,
+            "S-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "EV Power/PP",
+        "Effect": [
+            "PP",
+            4,
+            "S-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "EV Shoot/HP",
+        "Effect": [
+            "HP",
+            60,
+            "R-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "EV Shoot/PP",
+        "Effect": [
+            "PP",
+            4,
+            "R-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "EV Technique/HP",
+        "Effect": [
+            "HP",
+            60,
+            "T-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "EV Technique/PP",
+        "Effect": [
+            "PP",
+            4,
+            "T-ATK",
+            35
+        ]
+    },
+    {
+        "Name": "ARKS MAX",
+        "Effect": [
+            "ATK",
+            25
+        ]
+    },
+    {
+        "Name": "Phrase Recovery",
+        "Effect": [
+            null,
+            "PP Recovery Rate boosted by 5%"
+        ]
+    },
+    {
+        "Name": "Phrase Weak",
+        "Effect": [
+            null,
+            "Increases damage by 2% when hitting enemy Elemental Weakness."
+        ]
+    },
+    {
+        "Name": "Phrase Response",
+        "Effect": [
+            null,
+            "PP recovered from attacks increased by 5%"
+        ]
+    },
+    {
+        "Name": "Phrase Chase",
+        "Effect": [
+            null,
+            "Increases damage by 5% against enemies with Status Effects."
+        ]
+    },
+    {
+        "Name": "Phrase Reduce",
+        "Effect": [
+            null,
+            "Decreases PP consumption by 4%."
+        ]
+    },
+    {
+        "Name": "Phrase Decay",
+        "Effect": "Increases damage by 5% against enemies afflicted with Jellen."
+    },
+    {
         "Name": "Soul Catalyst",
         "Effect": [
             "HP",
@@ -1193,6 +1544,16 @@
         ]
     },
     {
+        "Name": "Reverie Catalyst",
+        "Effect": [
+            "HP",
+            10,
+            "PP",
+            1,
+            "Can be combined with certain Abilities."
+        ]
+    },
+    {
         "Name": "Glare Catalyst",
         "Effect": [
             "HP",
@@ -1200,6 +1561,50 @@
             "PP",
             1,
             "Can be combined with certain Abilities."
+        ]
+    },
+    {
+        "Name": "Offense Boost",
+        "Effect": [
+            "PP",
+            1,
+            "ATK",
+            15,
+            "DEX",
+            25
+        ]
+    },
+    {
+        "Name": "Attack Boost",
+        "Effect": [
+            "PP",
+            3,
+            "ATK",
+            25,
+            "DEX",
+            40
+        ]
+    },
+    {
+        "Name": "Defense Boost",
+        "Effect": [
+            "HP",
+            55,
+            "PP",
+            1,
+            "DEF",
+            25
+        ]
+    },
+    {
+        "Name": "Guard Boost",
+        "Effect": [
+            "HP",
+            75,
+            "PP",
+            3,
+            "DEF",
+            35
         ]
     },
     {
@@ -1927,6 +2332,126 @@
             "DEF",
             20,
             "Can be combined with certain abilities."
+        ]
+    },
+    {
+        "Name": "Ether Soul",
+        "Effect": [
+            "HP",
+            15,
+            "PP",
+            2,
+            "All Stats",
+            15
+        ]
+    },
+    {
+        "Name": "Guardian Soul",
+        "Effect": [
+            "HP",
+            70,
+            "PP",
+            7,
+            "All Stats",
+            70
+        ]
+    },
+    {
+        "Name": "Ripper/Fire Weak",
+        "Effect": [
+            null,
+            "Increases Power against enemies weak to Fire. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Ripper/Ice Weak",
+        "Effect": [
+            null,
+            "Increases Power against enemies weak to Ice. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Ripper/Lightning. Weak",
+        "Effect": [
+            null,
+            "Increases Power against enemies weak to Lightning. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Ripper/Wind Weak",
+        "Effect": [
+            null,
+            "Increases Power against enemies weak to Wind. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Ripper/Light Weak",
+        "Effect": [
+            null,
+            "Increases Power against enemies weak to Light. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Ripper/Dark Weak",
+        "Effect": [
+            null,
+            "Increases Power against enemies weak to Dark. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Slayer/Native-Type",
+        "Effect": [
+            null,
+            "Increases Power against Naberius Native. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Slayer/Armor-Type",
+        "Effect": [
+            null,
+            "Increases Power against Lillipa Mechs. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Slayer/Oceanids-Type",
+        "Effect": [
+            null,
+            "Increases Power against Oceanids. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Slayer/Kuronite-Type",
+        "Effect": [
+            null,
+            "Increases Power against Kuronite. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Slayer/Phantom-Type",
+        "Effect": [
+            null,
+            "Increases Power against Phantom. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Slayer/Darker-Type",
+        "Effect": [
+            null,
+            "Increases Power against Darkers. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Slayer/Dragonkin-Type",
+        "Effect": [
+            null,
+            "Increases Power against Dragonkin. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
+        ]
+    },
+    {
+        "Name": "Slayer/Luminmech-Type",
+        "Effect": [
+            null,
+            "Increases Power against Luminmech. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
         ]
     },
     {
@@ -2763,13 +3288,19 @@
     {
         "Name": "Ultimate Buster",
         "Effect": [
-            "Boost damage against aberrations by 10%."
+            "Boosts damage against Aberrations by 10%."
+        ]
+    },
+    {
+        "Name": "Omega Buster",
+        "Effect": [
+            "Boosts damage against Demons by 10%."
         ]
     },
     {
         "Name": "Photon Collect",
         "Effect": [
-            "Boost transfer rate of status effect and resistance abilities."
+            "Boosts transfer rate of status effect and resistance abilities."
         ]
     },
     {
@@ -2794,7 +3325,7 @@
             "All Stats",
             10,
             "Massively boosts transfer rate of Flict and Arma special abilities.",
-            "Boosts transfer rate of Stat abilities."
+            "Boosts transfer rate of Stat-type special abilities."
         ]
     },
     {
@@ -2802,7 +3333,7 @@
         "Effect": [
             "All Stats",
             10,
-            "Massively boosts transfer rate of Reverie special abilities."
+            "Massively boosts transfer rate of Reverie-type special abilities."
         ]
     },
     {
@@ -2810,7 +3341,7 @@
         "Effect": [
             "All Stats",
             10,
-            "Allows transfer of gift-type special abilities."
+            "Allows transfer of Gift-type special abilities."
         ]
     },
     {
@@ -2818,7 +3349,55 @@
         "Effect": [
             "All Stats",
             10,
-            "Boosts transfer rate of sentence-type special abilities."
+            "Boosts transfer rate of Sentence-type special abilities."
+        ]
+    },
+    {
+        "Name": "Factor Receptor",
+        "Effect": [
+            "All Stats",
+            10,
+            "Boosts transfer rate of Factor-type special abilities."
+        ]
+    },
+    {
+        "Name": "Attack Receptor",
+        "Effect": [
+            "All Stats",
+            5,
+            "Boosts transfer rate of ATK-type special abilities."
+        ]
+    },
+    {
+        "Name": "Defense Receptor",
+        "Effect": [
+            "All Stats",
+            5,
+            "Boosts transfer rate of DEF-type special abilities."
+        ]
+    },
+    {
+        "Name": "Photon Receptor",
+        "Effect": [
+            "All Stats",
+            5,
+            "Greatly boosts transfer rate of Stamina and Spirita special abilities."
+        ]
+    },
+    {
+        "Name": "Phrase Receptor",
+        "Effect": [
+            "All Stats",
+            10,
+            "Boosts transfer rate of Phrase-type special abilities."
+        ]
+    },
+    {
+        "Name": "Mark Receptor",
+        "Effect": [
+            "All Stats",
+            10,
+            "Boosts transfer rate of Mark-type special abilities."
         ]
     },
     {
@@ -2915,10 +3494,24 @@
         ]
     },
     {
+        "Name": "Polytan Smile",
+        "Effect": [
+            null,
+            "Adds 25 EXP to NT weapon grinds."
+        ]
+    },
+    {
+        "Name": "Arkuma Smile",
+        "Effect": [
+            null,
+            "Adds 25 EXP to NT weapon grinds."
+        ]
+    },
+    {
         "Name": "Guidance Trainer",
         "Effect": [
             null,
-            "Increase Special Ability Addition success rate by 5%."
+            "Increases Special Ability Addition success rate by 5%."
         ]
     },
     {
@@ -2926,7 +3519,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase damage by 3% for 30 seconds after inflicting 450,000 damage."
+            "Increases damage by 3% for 30 seconds after inflicting 450,000 damage."
         ]
     },
     {
@@ -2942,7 +3535,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase Active PP Recovery by 20% for 30 seconds after using 150 PP."
+            "Increases Active PP Recovery by 20% for 30 seconds after using 150 PP."
         ]
     },
     {
@@ -2950,7 +3543,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Decrease PP consumption by 8% for 20 seconds after performing a Just Guard."
+            "Decreases PP consumption by 8% for 20 seconds after performing a Just Guard."
         ]
     },
     {
@@ -2966,7 +3559,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase Natural PP Recovery for 20 seconds after standing still for 5 seconds."
+            "Increases Natural PP Recovery for 20 seconds after standing still for 5 seconds."
         ]
     },
     {
@@ -2974,7 +3567,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase Active PP Recovery by 40% when attacking breakable parts."
+            "Increases Active PP Recovery by 40% when attacking breakable parts."
         ]
     },
     {
@@ -2982,7 +3575,15 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase PP consumption by 8% but increase PA/Technique damage by 4%."
+            "Increases PP consumption by 8% but increases PA/Technique damage by 4%."
+        ]
+    },
+    {
+        "Name": "S1:Photon Balance 2",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases PP consumption by 8% but increases PA/Technique damage by 6%."
         ]
     },
     {
@@ -2990,7 +3591,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase Power by 4% but take 8% more damage when weapon is drawn."
+            "Increases Power by 4% but take 8% more damage when weapon is drawn."
         ]
     },
     {
@@ -2998,7 +3599,15 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "If there are two or more party members, decrease PP consumption by 8% (2 Members), +10% Critical Hit Rate (3 Members), and increase Power by 3% (4 Members). Bonuses only work on self."
+            "If there are two or more party members, decreases PP consumption by 8% (2 Members), +10% Critical Hit Rate (3 Members), and increases Power by 3% (4 Members). Bonuses only work on self."
+        ]
+    },
+    {
+        "Name": "S1:Collaborator Liberator 2",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "If there are two or more party members, decreases PP consumption by 10% (2 Members), +??% Critical Hit Rate (3 Members), and increases Power by 4% (4 Members). Bonuses only work on self."
         ]
     },
     {
@@ -3006,7 +3615,47 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase Active PP Recovery by 17%."
+            "Increases Active PP Recovery by 17%."
+        ]
+    },
+    {
+        "Name": "S1:Immediate Strike",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases Critical Hit Rate by 2% for each successive Just Attack, up to 20%. Bonus is lost when a non-Just Attack is performed."
+        ]
+    },
+    {
+        "Name": "S1:Flowing Exhilaration",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Recover 40% of your maximum HP every 40s."
+        ]
+    },
+    {
+        "Name": "S1:Flowing Grace",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Regenerate 10 PP every 4 seconds."
+        ]
+    },
+    {
+        "Name": "S1:Guardian Armor",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Reduces damage taken by 7%."
+        ]
+    },
+    {
+        "Name": "S1:Skilled Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases Critical Hit Damage by 3%."
         ]
     },
     {
@@ -3014,7 +3663,15 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase Natural PP Recovery by 17%."
+            "Increases Natural PP Recovery by 20%."
+        ]
+    },
+    {
+        "Name": "S1:Radiating Grace 2",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases Natural PP Recovery by 23%."
         ]
     },
     {
@@ -3022,15 +3679,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase Power based on the Photon Blast Gauge. Maxes at 3%."
-        ]
-    },
-    {
-        "Name": "S1:Wise Skill 2",
-        "SSA Slot": 1,
-        "Effect": [
-            null,
-            "Increase Critical Hit Rate by 18%."
+            "Increases Power based on the Photon Blast Gauge. Maxes at 3%."
         ]
     },
     {
@@ -3038,7 +3687,15 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase Critical Hit Rate by 15%."
+            "Increases Critical Hit Rate by 15%."
+        ]
+    },
+    {
+        "Name": "S1:Wise Skill 2",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases Critical Hit Rate by 18%."
         ]
     },
     {
@@ -3046,7 +3703,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase damage dealt to bosses by 4%."
+            "Increases damage dealt to bosses by 4%."
         ]
     },
     {
@@ -3054,7 +3711,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase damage when performing successive Just Attacks (3% MAX)."
+            "Increases damage when performing successive Just Attacks (3% MAX)."
         ]
     },
     {
@@ -3062,7 +3719,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase damage against breakable parts by 4%."
+            "Increases damage against breakable parts by 4%."
         ]
     },
     {
@@ -3070,7 +3727,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase HP recovered from self-healing effects by 40%."
+            "Increases HP recovered from self-healing effects by 40%."
         ]
     },
     {
@@ -3082,11 +3739,83 @@
         ]
     },
     {
+        "Name": "S1:Brilliant Intent 2",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Boosts damage by 5% while PP is at 40% or above."
+        ]
+    },
+    {
         "Name": "S1:Augment Intent",
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase Power by 0.5% for each Special Ability attached to this weapon. Maxes at 4%."
+            "Increases Power by 0.5% for each Special Ability attached to this weapon. Maxes at 4%."
+        ]
+    },
+    {
+        "Name": "S1:Augment Intent 2",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases Power by 0.75% for each Special Ability attached to this weapon. Maxes at 6%."
+        ]
+    },
+    {
+        "Name": "S1:Offensive Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases damage by 2%."
+        ]
+    },
+    {
+        "Name": "S1:Offensive Intent 2",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases damage by 4%."
+        ]
+    },
+    {
+        "Name": "S1:Photon Reduction",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Reduces PP consumption by 7%."
+        ]
+    },
+    {
+        "Name": "S1:Photon Reduction 2",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Reduces PP consumption by 10%."
+        ]
+    },
+    {
+        "Name": "S1:Brilliant Ruin",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Recover 3 PP when an enemy near you is defeated."
+        ]
+    },
+    {
+        "Name": "S1:Brilliant Ruin 2",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Recover 4 PP when an enemy near you is defeated."
+        ]
+    },
+    {
+        "Name": "S1:Sturdy Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases damage by 4% if your weapon's element or equipped Guard Ring matches the enemy's elemental weakness. "
         ]
     },
     {
@@ -3094,7 +3823,23 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Reduce HP by 5% every 20 seconds and increase Power by 4%."
+            "Reduces HP by 5% every 20 seconds and increases Power by 4%."
+        ]
+    },
+    {
+        "Name": "S1:Lethal Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases Power every 3 times you are attacked (1% on 3-5 hits, 3% on 6-8 hits, 10% on 9 hits). Upon being attacked a 10th time, releases an explosion that reduces your HP to 1 and massively damages all nearby targets."
+        ]
+    },
+    {
+        "Name": "S1:Eclipsing Decay",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Grant a 25% chance to inflict the Jellen status when attacking an enemy."
         ]
     },
     {
@@ -3102,7 +3847,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase Power by 1% for every 60 S-ATK affixed to this weapon. Increase Power by an additional 2% if at least 200 S-ATK is affixed to this weapon."
+            "Increases Power by 1% for every 60 S-ATK affixed to this weapon. Increases Power by an additional 2% if at least 200 S-ATK is affixed to this weapon."
         ]
     },
     {
@@ -3110,7 +3855,7 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase Power by 1% for every 60 R-ATK affixed to this weapon. Increase Power by an additional 2% if at least 200 R-ATK is affixed to this weapon."
+            "Increases Power by 1% for every 60 R-ATK affixed to this weapon. Increases Power by an additional 2% if at least 200 R-ATK is affixed to this weapon."
         ]
     },
     {
@@ -3118,7 +3863,15 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increase Power by 1% for every 60 T-ATK affixed to this weapon. Increase Power by an additional 2% if at least 200 T-ATK is affixed to this weapon."
+            "Increases Power by 1% for every 60 T-ATK affixed to this weapon. Increases Power by an additional 2% if at least 200 T-ATK is affixed to this weapon."
+        ]
+    },
+    {
+        "Name": "S1:Flowing Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases power every second. Maxes at 4% after 30 seconds."
         ]
     },
     {
@@ -3126,7 +3879,127 @@
         "SSA Slot": 1,
         "Effect": [
             null,
-            "Increases PP regeneration rate by 80% while sheathed. Reduce PP regeneration rate by 100% while unsheathed."
+            "Increases PP regeneration rate by 80% while sheathed. Reduces PP regeneration rate by 100% while unsheathed."
+        ]
+    },
+    {
+        "Name": "S1:Phanatical Advantage",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases power by 5% and reduces damage taken by 12% in the \"Quest Solo Training: Phanatical Phantoms\"."
+        ]
+    },
+    {
+        "Name": "S2:Storm Guard",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increases Wind Attribute and Mirage Resistance (30). Increases damage by 3% against enemies weak to Wind."
+        ]
+    },
+    {
+        "Name": "S2:Shining Guard",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increases Light Attribute and Panic Resistance (30). Increases damage by 3% against enemies weak to Light."
+        ]
+    },
+    {
+        "Name": "S2:Darkness Guard",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Dark Attribute and Poison Resistance (30). Increase damage by 3% against enemies weak to Poison."
+        ]
+    },
+    {
+        "Name": "S2:Wise Skill",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Critical Hit Rate by 12%."
+        ]
+    },
+    {
+        "Name": "S2:Wise Skill",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Critical Hit Rate by 12%."
+        ]
+    },
+    {
+        "Name": "S2:Wise Skill 2",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Critical Hit Rate by 15%."
+        ]
+    },
+    {
+        "Name": "S2:Radiant Strike",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Active PP Recovery by 17%."
+        ]
+    },
+    {
+        "Name": "S2:Radiant Strike 2",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Active PP Recovery by 20%."
+        ]
+    },
+    {
+        "Name": "S2:Guardian Armor",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Reduces damage taken by 7%."
+        ]
+    },
+    {
+        "Name": "S2:Guardian Armor 2",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Reduces damage taken by 10%."
+        ]
+    },
+    {
+        "Name": "S2:Nature's Intent",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increases damage by 3% when S1:Red Petal Flash, S1:Blue Ocean Flash, or S1:White Snow Flash are active."
+        ]
+    },
+    {
+        "Name": "S2:Flaming Guard",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increases Fire Attribute and Burn Resistance (30). Increases damage by 3% against enemies weak to Fire."
+        ]
+    },
+    {
+        "Name": "S2:Freezing Guard",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Ice Attribute and Freeze Resistance (30). Increase damage by 3% against enemies weak to Ice."
+        ]
+    },
+    {
+        "Name": "S2:Lightning Guard",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Lightning Attribute and Shock Resistance (30). Increase damage by 3% against enemies weak to Lightning."
         ]
     },
     {
@@ -3138,35 +4011,11 @@
         ]
     },
     {
-        "Name": "S2:Shining Guard",
-        "SSA Slot": 2,
-        "Effect": [
-            null,
-            "Increase Light Attribute and Panic Resistance (30). Increase damage by 3% against enemies weak to Light."
-        ]
-    },
-    {
-        "Name": "S2:Nature's Intent",
-        "SSA Slot": 2,
-        "Effect": [
-            null,
-            "Increase damage by 3% when S1:Red Petal Flash, S1:Blue Ocean Flash, or S1:White Snow Flash are active."
-        ]
-    },
-    {
-        "Name": "S2:Flaming Guard",
-        "SSA Slot": 2,
-        "Effect": [
-            null,
-            "Increase Fire Attribute and Burn Resistance (30). Increase damage by 3% against enemies weak to Fire."
-        ]
-    },
-    {
         "Name": "S2:Double-Edged Sword",
         "SSA Slot": 2,
         "Effect": [
             null,
-            "Increase Power by 3% but take 6% more damage when weapon is drawn."
+            "Increases Power by 3% but take 6% more damage when weapon is drawn."
         ]
     },
     {
@@ -3178,11 +4027,67 @@
         ]
     },
     {
+        "Name": "S2:Photon Reduction",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "PP consumption is reduced by 13%."
+        ]
+    },
+    {
+        "Name": "S2:Photon Reduction",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "PP consumption is reduced by 15%."
+        ]
+    },
+    {
+        "Name": "S2:Flowing Exhilaration",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Recover 60% of your maximum HP every 40s."
+        ]
+    },
+    {
+        "Name": "S2:Flowing Exhilaration",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Recover 75% of your maximum HP every 40s."
+        ]
+    },
+    {
         "Name": "S2:Nature's Reduction",
         "SSA Slot": 2,
         "Effect": [
             null,
-            "Decrease PP consumption by 12% when S1:Red Petal Flash, S1:Blue Ocean Flash, or S1:White Snow Flash are active."
+            "Decreases PP consumption by 12% when S1:Red Petal Flash, S1:Blue Ocean Flash, or S1:White Snow Flash are active."
+        ]
+    },
+    {
+        "Name": "S2:Nature's Reduction 2",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Decreases PP consumption by 14% when S1:Red Petal Flash, S1:Blue Ocean Flash, or S1:White Snow Flash are active."
+        ]
+    },
+    {
+        "Name": "S2:Nature's Exhilaration",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Recover 2% HP every second when S1:Red Petal Flash, S1:Blue Ocean Flash, or S1:White Snow Flash are active."
+        ]
+    },
+    {
+        "Name": "S2:Umbrageous Guardian",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increases Natural PP Recovery by 25% when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
         ]
     },
     {
@@ -3190,7 +4095,7 @@
         "SSA Slot": 2,
         "Effect": [
             null,
-            "Increase Natural PP Recovery by 25% when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+            "Increases Natural PP Recovery by 25% when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
         ]
     },
     {
@@ -3210,11 +4115,27 @@
         ]
     },
     {
+        "Name": "S2:Immediate Profusion",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Raises damage by 3% when Just Attacking different PAs or Techniques."
+        ]
+    },
+    {
         "Name": "S2:Rupturing Excess",
         "SSA Slot": 2,
         "Effect": [
             null,
-            "Increase Active PP Recovery by 35% when attacking breakable parts."
+            "Increases Active PP Recovery by 35% when attacking breakable parts."
+        ]
+    },
+    {
+        "Name": "S2:Rupturing Intent",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases damage against breakable parts by 4%."
         ]
     },
     {
@@ -3222,7 +4143,23 @@
         "SSA Slot": 2,
         "Effect": [
             null,
-            "Increases PP regeneration rate by 100% while sheathed. Reduce PP regeneration rate by 100% while unsheathed."
+            "Increases PP regeneration rate by 100% while sheathed. Reduces PP regeneration rate by 100% while unsheathed."
+        ]
+    },
+    {
+        "Name": "S2:Brilliant Ruin",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Recovers 3 PP when an enemy near you is defeated."
+        ]
+    },
+    {
+        "Name": "S2:Radiating Grace",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increases Natural PP Recovery by 17%."
         ]
     },
     {
@@ -3238,7 +4175,7 @@
         "SSA Slot": 2,
         "Effect": [
             null,
-            "Increase damage by 2%."
+            "Increases damage by 2%."
         ]
     },
     {
@@ -3246,7 +4183,7 @@
         "SSA Slot": 2,
         "Effect": [
             null,
-            "Increase Power by 5% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+            "Increases Power by 5% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
         ]
     },
     {
@@ -3258,11 +4195,59 @@
         ]
     },
     {
+        "Name": "S2:Umbrageous Melody",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase power over time when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active. Maxes at 5% after 37.5 seconds."
+        ]
+    },
+    {
+        "Name": "S2:Umbrageous Melody 2",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase power over time when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active. Maxes at 7%."
+        ]
+    },
+    {
+        "Name": "S2:Umbrageous Radiance",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Active PP Recovery by 25% when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ]
+    },
+    {
+        "Name": "S2:Umbrageous Radiance 2",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Active PP Recovery by 28% when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ]
+    },
+    {
+        "Name": "S2:Instant Purpose",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Boosts critical hit damage by 2% and increases crit rate by 15% when Just Attacking different PAs and Techniques."
+        ]
+    },
+    {
+        "Name": "S2:Skilled Intent",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increases Critical Hit Damage by 3%."
+        ]
+    },
+    {
         "Name": "S2:Skilled Intent 2",
         "SSA Slot": 2,
         "Effect": [
             null,
-            "Increase Critical Hit Damage by 4%."
+            "Increases Critical Hit Damage by 4%."
         ]
     },
     {
@@ -3270,7 +4255,31 @@
         "SSA Slot": 2,
         "Effect": [
             null,
-            "Reduce PP Consumption by 8% while airborne. Increase Natural PP Recovery and Active PP Recovery by 20% while on the ground."
+            "Reduces PP Consumption by 8% while airborne. Increases Natural PP Recovery and Active PP Recovery by 20% while on the ground."
+        ]
+    },
+    {
+        "Name": "S2:Heavenly Keeper 2",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Reduces PP Consumption by 15% while airborne. Increases Natural PP Recovery and Active PP Recovery by 35% while on the ground."
+        ]
+    },
+    {
+        "Name": "S2:Flowing Armor",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Cast Deband on yourself at regular intervals (every 14 seconds)."
+        ]
+    },
+    {
+        "Name": "S2:Brilliant Intent",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Boosts damage by 3% while PP is at 40% or above."
         ]
     },
     {
@@ -3282,11 +4291,59 @@
         ]
     },
     {
+        "Name": "S2:Instant Reduction 2",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Reduces PP consumption by 20% when Just Attacking different PAs or Techniques."
+        ]
+    },
+    {
+        "Name": "S2:Medicinal Wisdom",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Restore PP upon consuming a Mate-type item (including the effect of Automate). Effect varies based on the item consumed (10/30/60 PP for Mono/Di/Trimate)."
+        ]
+    },
+    {
+        "Name": "S2:Medicinal Wisdom 2",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Restore PP upon consuming a Mate-type item (including the effect of Automate). Effect varies based on the item consumed (30/50/80 PP for Mono/Di/Trimate)."
+        ]
+    },
+    {
         "Name": "S2:Powering Intent",
         "SSA Slot": 2,
         "Effect": [
             null,
-            "Increase damage dealt to bosses by 3%."
+            "Increases damage dealt to bosses by 3%."
+        ]
+    },
+    {
+        "Name": "S2:Phantasmal Radiance",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Active PP Recovery based on the Photon Blast Gauge. Maxes at 25%."
+        ]
+    },
+    {
+        "Name": "S2:Phantasmal Gleam",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Natural PP Recovery based on the Photon Blast Gauge. Maxes at 23%."
+        ]
+    },
+    {
+        "Name": "S2:Phantasmal Guardian",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Reduce damage taken based on the Photon Blast Gauge. Maxes at 9%."
         ]
     },
     {
@@ -3298,6 +4355,38 @@
         ]
     },
     {
+        "Name": "S2:Skill Reduction",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Reduce PP consumption by 5% for 30 seconds upon hitting with a PA/Technique. Has a 33% chance to reduce PP consumption by 30% instead. Triggers 35s Recast upon activation."
+        ]
+    },
+    {
+        "Name": "S2:Runner's High",
+        "SSA Slot": 2,
+        "Effect": [
+            null,
+            "Increase Natural PP Recovery by 100% and restore 15% HP every 5 seconds when running."
+        ]
+    },
+    {
+        "Name": "S1:Phanatical Advantage",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increases power by 5% and reduces damage taken by 12% in the \"Quest Solo Training: Phanatical Phantoms\"."
+        ]
+    },
+    {
+        "Name": "S2:Furious Inspiration",
+        "SSA Slot": 1,
+        "Effect": [
+            null,
+            "Increase Power (+4%) and Critical Hit Rate (+5%). Enhance PP efficiency (10% Natural PP Recovery, 15% Active PP recovery, -5% PP consumption). Effect resets when damage is taken. (180s Cooldown)"
+        ]
+    },
+    {
         "Name": "S3:Flowing Courage",
         "SSA Slot": 3,
         "Effect": [
@@ -3306,11 +4395,19 @@
         ]
     },
     {
+        "Name": "S3:Flowing Exhilaration",
+        "SSA Slot": 3,
+        "Effect": [
+            null,
+            "Recover 40% of your maximum HP every 40s."
+        ]
+    },
+    {
         "Name": "S3:Wise Skill",
         "SSA Slot": 3,
         "Effect": [
             null,
-            "Increase Critical Hit Rate by 12%."
+            "Increases Critical Hit Rate by 12%."
         ]
     },
     {
@@ -3326,7 +4423,7 @@
         "SSA Slot": 3,
         "Effect": [
             null,
-            "Increase Natural PP Recovery by 23% when S1:Red Petal Flash, S1:Blue Ocean Flash, or S1:White Snow Flash are active."
+            "Increases Natural PP Recovery by 23% when S1:Red Petal Flash, S1:Blue Ocean Flash, or S1:White Snow Flash are active."
         ]
     },
     {
@@ -3334,7 +4431,7 @@
         "SSA Slot": 3,
         "Effect": [
             null,
-            "Increase damage by 3% when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+            "Increases damage by 3% when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
         ]
     },
     {
@@ -3342,7 +4439,7 @@
         "SSA Slot": 3,
         "Effect": [
             null,
-            "Decrease PP consumption by 14% when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+            "Decreases PP consumption by 14% when S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
         ]
     },
     {
@@ -3382,7 +4479,7 @@
         "SSA Slot": 3,
         "Effect": [
             null,
-            "Increase Active PP Recovery by 45% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+            "Increases Active PP Recovery by 45% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
         ]
     },
     {
@@ -3390,7 +4487,7 @@
         "SSA Slot": 3,
         "Effect": [
             null,
-            "Increase Natural PP Recovery by 40% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+            "Increases Natural PP Recovery by 40% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
         ]
     },
     {
@@ -3398,7 +4495,7 @@
         "SSA Slot": 3,
         "Effect": [
             null,
-            "Reduce PP consumption by 20% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+            "Reduces PP consumption by 20% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
         ]
     },
     {
@@ -3406,7 +4503,7 @@
         "SSA Slot": 3,
         "Effect": [
             null,
-            "Increase Critical Hit Damage by 5%."
+            "Increases Critical Hit Damage by 5%."
         ]
     },
     {
@@ -3422,7 +4519,7 @@
         "SSA Slot": 3,
         "Effect": [
             null,
-            "Increase Power (+4%) and Critical Hit Rate (+5%). Enhance PP efficiency (10% Natural PP recovery, 15% Active PP recovery, -5% PP Consumption). Effect resets when damage is taken. (180s Cooldown)"
+            "Increases Power (+4%) and Critical Hit Rate (+5%). Enhance PP efficiency (10% Natural PP recovery, 15% Active PP recovery, -5% PP Consumption). Effect resets when damage is taken. (180s Cooldown)"
         ]
     },
     {
@@ -3430,7 +4527,7 @@
         "SSA Slot": 3,
         "Effect": [
             null,
-            "Increase damage dealt to bosses by 4%."
+            "Increases damage dealt to bosses by 4%."
         ]
     },
     {
@@ -3454,7 +4551,7 @@
         "SSA Slot": 4,
         "Effect": [
             null,
-            "Improve Natural PP Recovery, Active PP Recovery, and reduce PP consumption based on maximum PP. Maxes at 30%. ((Player's Total PP - 120)x0.1(%) of Natural and Active PP Regen, and PP consumption reduction)"
+            "Improve Natural PP Recovery, Active PP Recovery, and reduces PP consumption based on maximum PP. Maxes at 30%. ((Player's Total PP - 120)x0.1(%) of Natural and Active PP Regen, and PP consumption reduction)"
         ]
     },
     {
@@ -3470,7 +4567,7 @@
         "SSA Slot": 4,
         "Effect": [
             null,
-            "Increase Kamaitachi duration by 4 seconds."
+            "Increases Kamaitachi duration by 4 seconds."
         ]
     },
     {
@@ -3478,7 +4575,7 @@
         "SSA Slot": 4,
         "Effect": [
             null,
-            "While in Wise Stance, increase frontal attack damage by 15%."
+            "While in Wise Stance, increases frontal attack damage by 15%."
         ]
     },
     {
@@ -3494,7 +4591,7 @@
         "SSA Slot": 4,
         "Effect": [
             null,
-            "Decrease rate of Gear Gauge depletion while Katana Gear is active."
+            "Decreases rate of Gear Gauge depletion while Katana Gear is active."
         ]
     },
     {
@@ -3518,7 +4615,7 @@
         "SSA Slot": 4,
         "Effect": [
             null,
-            "Increase PP regenerated by Tactics Trap by 20%."
+            "Increases PP regenerated by Tactics Trap by 20%."
         ]
     },
     {
@@ -3534,7 +4631,7 @@
         "SSA Slot": 4,
         "Effect": [
             null,
-            "When in Rapid Shoot, increase damage by 3% when equipped with a Bullet Bow."
+            "When in Rapid Shoot, increases damage by 3% when equipped with a Bullet Bow."
         ]
     },
     {
@@ -3542,7 +4639,7 @@
         "SSA Slot": 4,
         "Effect": [
             null,
-            "Increase the potency of Element Conversion. (+5% on Different weapon's attribute)"
+            "Increases the potency of Element Conversion. (+5% on Different weapon's attribute)"
         ]
     },
     {
@@ -3550,7 +4647,7 @@
         "SSA Slot": 4,
         "Effect": [
             null,
-            "Decrease the Recast Time of Photon Flare by 20%."
+            "Decreases the Recast Time of Photon Flare by 20%."
         ]
     },
     {
@@ -3558,7 +4655,7 @@
         "SSA Slot": 4,
         "Effect": [
             null,
-            "Increase the performance of Wand Normal Attacks. (Attack Speed 1.1x, all hitstop negated)"
+            "Increases the performance of Wand Normal Attacks. (Attack Speed 1.1x, all hitstop negated)"
         ]
     },
     {
@@ -3580,14 +4677,14 @@
         "Name": "S5:Unrivaled Parry",
         "Effect": [
             null,
-            "Consume no Gear for 15s after performing a Just Guard. Increase Power by 2%. Wired Lance only."
+            "Consume no Gear for 15s after performing a Just Guard. Increases Power by 2%. Wired Lance only."
         ]
     },
     {
         "Name": "S5:Rushing Bolt",
         "Effect": [
             null,
-            "Inflict damage while running. Unleash a shockwave attack when you stop running. Increase Power by 2%. Partizan only."
+            "Inflict damage while running. Unleash a shockwave attack when you stop running. Increases Power by 2%. Partizan only."
         ]
     },
     {
@@ -3601,21 +4698,21 @@
         "Name": "S5:Evasive Mirage",
         "Effect": [
             null,
-            "Boost Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying. Increase Power by 2%. Double Saber only."
+            "Boost Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying. Increases Power by 2%. Double Saber only."
         ]
     },
     {
         "Name": "S5:Evasive Meteor",
         "Effect": [
             null,
-            "Successfully evade an attack with Sway to summon a giant fist. Increase Power by 2%. Knuckles only."
+            "Successfully evade an attack with Sway to summon a giant fist. Increases Power by 2%. Knuckles only."
         ]
     },
     {
         "Name": "S5:Hangeki Edge",
         "Effect": [
             null,
-            "Increase the damage of Counter by 15%. Generate Braver Gear Gauge when you successfully perform Katana Counter. Increase Power by 2%. Katana only."
+            "Increases the damage of Counter by 15%. Generate Braver Gear Gauge when you successfully perform Katana Counter. Increases Power by 2%. Katana only."
         ]
     },
     {
@@ -3629,28 +4726,28 @@
         "Name": "S5:Mysterious Intent",
         "Effect": [
             null,
-            "Increase Critical Hit Rate by 20%. On a Critical Hit, deal an additional 2% damage and recover 1% of damage dealt as HP (30 MAX)."
+            "Increases Critical Hit Rate by 20%. On a Critical Hit, deal an additional 2% damage and recover 1% of damage dealt as HP (30 MAX)."
         ]
     },
     {
         "Name": "S5:Mysterious Purpose",
         "Effect": [
             null,
-            "Increase Critical Hit Rate by 20%. On a Critical Hit, deal an additional 2% damage and recover 1% of damage dealt as HP (30 MAX)."
+            "Increases Critical Hit Rate by 20%. On a Critical Hit, deal an additional 2% damage and recover 1% of damage dealt as HP (30 MAX)."
         ]
     },
     {
         "Name": "S5:Firey End",
         "Effect": [
             null,
-            "Enhance the performance of End Attract with a one minute Recast. Recast resets upon successfully evading an attack with Dive Roll. Increase Power by 2%. Assault Rifle only."
+            "Enhance the performance of End Attract with a one minute Recast. Recast resets upon successfully evading an attack with Dive Roll. Increases Power by 2%. Assault Rifle only."
         ]
     },
     {
         "Name": "S5:Firey Zero",
         "Effect": [
             null,
-            "Enhance the performance of Zero Distance with a one minute Recast. Recast resets upon successfully evading an attack with Dive Roll. Increase Power by 2%. Launcher only."
+            "Enhance the performance of Zero Distance with a one minute Recast. Recast resets upon successfully evading an attack with Dive Roll. Increases Power by 2%. Launcher only."
         ]
     },
     {
@@ -3671,7 +4768,7 @@
         "Name": "S5:Calming Bullet",
         "Effect": [
             null,
-            "Enhance the performance of Normal Attacks and increase the damage of Rod Shoot by 100%. Rod only."
+            "Enhance the performance of Normal Attacks and increases the damage of Rod Shoot by 100%. Rod only."
         ]
     },
     {
@@ -3685,7 +4782,7 @@
         "Name": "S5:Calming Shockwave",
         "Effect": [
             null,
-            "Generates a wave attack on the third Normal Attack. Increase Power by 2%. Wand only."
+            "Generates a wave attack on the third Normal Attack. Increases Power by 2%. Wand only."
         ]
     },
     {
@@ -3732,7 +4829,7 @@
         "SSA Slot": 6,
         "Effect": [
             null,
-            "Reduce Etoile Boost's decay per second by 50%."
+            "Reduces Etoile Boost's decay per second by 50%."
         ]
     },
     {
@@ -3852,7 +4949,7 @@
         "SSA Slot": 8,
         "Effect": [
             null,
-            "Reduce falling speed while charging a Technique in mid-air."
+            "Reduces falling speed while charging a Technique in mid-air."
         ]
     }
 ]
