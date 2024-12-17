@@ -1,0 +1,308 @@
+[
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:妙技の巧",
+        "Name (English)": "S3:Wise Skill",
+        "Name (Global)": "S3: Skillful Adept",
+        "Effect (JP)": [
+            null,
+            "クリティカル率が12%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Critical Hit Rate by 12%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Critical Hit Rate by 12%."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:輝勢の恵",
+        "Name (English)": "S3:Radiating Grace",
+        "Name (Global)": "S3: Luminous Grace",
+        "Effect (JP)": [
+            null,
+            "PPの自然回復速度が17%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Natural PP Recovery by 17%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Natural PP recovery by 17%."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:輝勢の恵2",
+        "Name (English)": "S3:Radiating Grace 2",
+        "Name (Global)": "S3: Luminous Grace 2",
+        "Effect (JP)": [
+            null,
+            "PPの自然回復速度が20%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Natural PP Recovery by 20%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Natural PP recovery by 20%."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:輝剰の撃",
+        "Name (English)": "S3:Radiant Strike",
+        "Name (Global)": "S3: Lustrous Strike",
+        "Effect (JP)": [
+            null,
+            "攻撃時のPP回復量が20%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Active PP Recovery by 20%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases active PP recovery by 20%."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:輝剰の撃2",
+        "Name (English)": "S3:Radiant Strike 2",
+        "Name (Global)": "S3: Lustrous Strike 2",
+        "Effect (JP)": [
+            null,
+            "攻撃時のPP回復量が23%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Active PP Recovery by 23%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases active PP recovery by 23%."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:輝剰の撃3",
+        "Name (English)": "S3:Radiant Strike 3",
+        "Name (Global)": "S3: Lustrous Strike 3",
+        "Effect (JP)": [
+            null,
+            "攻撃時のPP回復量が35%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Active PP Recovery by 35%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases active PP recovery by 35%."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:時流活与",
+        "Name (English)": "S3:Flowing Exhilaration",
+        "Name (Global)": "S3: Timeflow Vitality",
+        "Effect (JP)": [
+            null,
+            "一定時間ごとにHPを40%回復する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Recovers 40% of your maximum HP every 40 seconds."
+        ],
+        "Effect (Global)": [
+            null,
+            "Restores 40% of your maximum HP every 40 seconds."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:時流活与2",
+        "Name (English)": "S3:Flowing Exhilaration 2",
+        "Name (Global)": "S3: Timeflow Vitality 2",
+        "Effect (JP)": [
+            null,
+            "一定時間ごとにHPを60%回復する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Recovers 60% of your maximum HP every 40 seconds."
+        ],
+        "Effect (Global)": [
+            null,
+            "Restores 60% of your maximum HP every 40 seconds."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:時流の恵",
+        "Name (English)": "S3:Flowing Grace",
+        "Name (Global)": "S3: Timeflow Grace",
+        "Effect (JP)": [
+            null,
+            "4秒ごとにPPを7回復する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Restores 7 PP every 4 seconds."
+        ],
+        "Effect (Global)": [
+            null,
+            "Restores 7 PP every 4 seconds."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:守護の備",
+        "Name (English)": "S3:Guardian Armor",
+        "Name (Global)": "S3: Guardian Shield",
+        "Effect (JP)": [
+            null,
+            "被ダメージを7%軽減。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces damage taken by 7%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces damage taken by 7%."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:妙撃の志",
+        "Name (English)": "S3:Skilled Intent",
+        "Name (Global)": "S3: Precision Will",
+        "Effect (JP)": [
+            null,
+            "クリティカル時の与ダメージが4%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Critical Hit damage by 4%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Critical Hit damage by 4%."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:妙撃の志2",
+        "Name (English)": "S3:Skilled Intent 2",
+        "Name (Global)": "S3: Precision Will 2",
+        "Effect (JP)": [
+            null,
+            "クリティカル時の与ダメージが5%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Critical Hit damage by 5%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Critical Hit damage by 5%."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:強闘の志",
+        "Name (English)": "S3:Powering Intent",
+        "Name (Global)": "S3: Goliathslayer's Will",
+        "Effect (JP)": [
+            null,
+            "強敵への与ダメージが4%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage dealt to bosses by 4%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage dealt to bosses by 4%."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:裂砕の志",
+        "Name (English)": "S3:Rupturing Intent",
+        "Name (Global)": "S3: Partbreaker's Will",
+        "Effect (JP)": [
+            null,
+            "破壊可能な部位を攻撃した際、威力が4%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against breakable parts by 4%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against breakable parts by 4%."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:剛撃の志",
+        "Name (English)": "S3:Offensive Intent",
+        "Name (Global)": "S3: Aggressive Will",
+        "Effect (JP)": [
+            null,
+            "与ダメージが2%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 2%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 2%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:光子縮減",
+        "Name (English)": "S1:Photon Reduction",
+        "Name (Global)": "S1: Photon Descent",
+        "Effect (JP)": [
+            null,
+            "PP消費量を7%軽減。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces PP consumption by 7%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces PP consumption by 7%."
+        ]
+    },
+    {
+        "SSA Slot": 3,
+        "Name (JP)": "S3:滅域輝与",
+        "Name (English)": "S3:Brilliant Ruin",
+        "Name (Global)": "S3: Lucent Domain",
+        "Effect (JP)": [
+            null,
+            "一定の範囲内でエネミーが死亡した時、PPが回復する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Recovers 3 PP when an enemy near you is defeated."
+        ],
+        "Effect (Global)": [
+            null,
+            "Recovers 3 PP when a nearby enemy is defeated."
+        ]
+    }
+]

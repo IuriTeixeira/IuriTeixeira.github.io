@@ -1,0 +1,776 @@
+[
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:妙技の巧",
+        "Name (English)": "S1:Wise Skill",
+        "Name (Global)": "S1: Skillful Adept",
+        "Effect (JP)": [
+            null,
+            "クリティカル率が15%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Critical Hit Rate by 15%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Critical Hit Rate by 15%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:妙技の巧2",
+        "Name (English)": "S1:Wise Skill 2",
+        "Name (Global)": "S1: Skillful Adept 2",
+        "Effect (JP)": [
+            null,
+            "クリティカル率が18%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Critical Hit Rate by 18%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Critical Hit Rate by 18%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:輝勢の恵",
+        "Name (English)": "S1:Radiating Grace",
+        "Name (Global)": "S1: Luminous Grace",
+        "Effect (JP)": [
+            null,
+            "PPの自然回復速度が20%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Natural PP Recovery by 20%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Natural PP recovery by 20%. "
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:輝勢の恵2",
+        "Name (English)": "S1:Radiating Grace 2",
+        "Name (Global)": "S1: Luminous Grace 2",
+        "Effect (JP)": [
+            null,
+            "PPの自然回復速度が23%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Natural PP Recovery by 23%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Natural PP recovery by 23%. "
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:輝充の志",
+        "Name (English)": "S1:Brilliant Intent",
+        "Name (Global)": "S1: Photonic Will",
+        "Effect (JP)": [
+            null,
+            "PPが40%以上の時、与ダメージが3%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 3% while PP is at 40% or above."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 3% while PP is at or above 40%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:輝充の志2",
+        "Name (English)": "S1:Brilliant Intent 2",
+        "Name (Global)": "S1: Photonic Will 2",
+        "Effect (JP)": [
+            null,
+            "PPが40%以上の時、与ダメージが5%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 5% while PP is at 40% or above."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 5% while PP is at or above 40%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:諸刃の撃",
+        "Name (English)": "S1:Double-Edged Sword",
+        "Name (Global)": "S1: Two-edged Strike",
+        "Effect (JP)": [
+            null,
+            "与ダメージが4%上昇し、抜刀時のみ被ダメージが8%増える。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 4% but take 8% more damage when weapon is drawn."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 4% but take 8% more damage while your weapon is drawn."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:瞬連の志",
+        "Name (English)": "S1:Immediate Intent",
+        "Name (Global)": "S1: Perfectchain Will",
+        "Effect (JP)": [
+            null,
+            "連続でジャストアタックに成功すると、最大で3%まで与ダメージが上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 2% when performing successive Just Attacks (up to 3%)."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 2% when performing successive Perfect Attacks. Maxes at 3%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:輝剰の撃",
+        "Name (English)": "S1:Radiant Strike",
+        "Name (Global)": "S1: Lustrous Strike",
+        "Effect (JP)": [
+            null,
+            "攻撃時のPP回復量が17%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Active PP Recovery by 17%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases active PP recovery by 17%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:時流活与",
+        "Name (English)": "S1:Flowing Exhilaration",
+        "Name (Global)": "S1: Timeflow Vitality",
+        "Effect (JP)": [
+            null,
+            "一定時間ごとにHPを40%回復する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Recovers 40% of your maximum HP every 40 seconds."
+        ],
+        "Effect (Global)": [
+            null,
+            "Restores 40% of your maximum HP every 40 seconds."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:時流の恵",
+        "Name (English)": "S1:Flowing Grace",
+        "Name (Global)": "S1: Timeflow Grace",
+        "Effect (JP)": [
+            null,
+            "4秒ごとにPPを10回復する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Restores 10 PP every 4 seconds."
+        ],
+        "Effect (Global)": [
+            null,
+            "Restores 10 PP every 4 seconds."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:守護の備",
+        "Name (English)": "S1:Guardian Armor",
+        "Name (Global)": "S1: Guardian Shield",
+        "Effect (JP)": [
+            null,
+            "被ダメージを7%軽減。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces damage taken by 7%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces damage taken by 7%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:妙撃の志",
+        "Name (English)": "S1:Skilled Intent",
+        "Name (Global)": "S1: Precision Will",
+        "Effect (JP)": [
+            null,
+            "クリティカル時の与ダメージが3%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Critical Hit damage by 3%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Critical Hit damage by 3%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:花ノ赤閃",
+        "Name (English)": "S1:Red Petal Flash",
+        "Name (Global)": "S1: Petalgleam",
+        "Effect (JP)": [
+            null,
+            "与ダメージ450,000毎に30秒間、3%威力上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 3% for 30 seconds after inflicting 450,000 damage."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 3% for 30 seconds after inflicting 450,000 damage."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:海ノ青閃",
+        "Name (English)": "S1:Blue Ocean Flash",
+        "Name (Global)": "S1: Seagleam",
+        "Effect (JP)": [
+            null,
+            "被ダメージ600毎に30秒間、毎秒HPが4%回復。"
+        ],
+        "Effect (English)": [
+            null,
+            "Recovers 4% max HP every second for 30 seconds after taking 600 damage."
+        ],
+        "Effect (Global)": [
+            null,
+            "Recovers 4% max HP every second for 30 seconds after taking 600 damage."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:雪ノ白閃",
+        "Name (English)": "S1:White Snow Flash",
+        "Name (Global)": "S1: Snowgleam",
+        "Effect (JP)": [
+            null,
+            "発動時PP消費量150毎に30秒間、攻撃時のPP回復量が20%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Active PP Recovery by 20% for 30 seconds after using 150 PP."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Active PP Recovery by 20% for 30 seconds after using 150 PP."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:月ノ黄閃",
+        "Name (English)": "S1:Yellow Moon Flash",
+        "Name (Global)": "S1: Moongleam",
+        "Effect (JP)": [
+            null,
+            "ジャストガード成功時に20秒間、PP消費量を8%軽減。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces PP consumption by 8% for 20 seconds after performing a Just Guard."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces PP consumption by 8% for 20 seconds after performing a Perfect Guard."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:葉ノ緑閃",
+        "Name (English)": "S1:Green Leaf Flash",
+        "Name (Global)": "S1: Leafgleam",
+        "Effect (JP)": [
+            null,
+            "被ダメージを8%軽減し怯まなくなるバリアが20秒間隔で発生・消滅。"
+        ],
+        "Effect (English)": [
+            null,
+            "Creates a barrier that reduces damage taken by 8% and nullifies knockback. The barrier will appear and disappear in 20 second intervals."
+        ],
+        "Effect (Global)": [
+            null,
+            "Creates a barrier that reduces damage taken by 8% and nullifies knockback. The barrier will appear and disappear in 20 second intervals."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:葉ノ緑閃",
+        "Name (English)": "S1:Black Shadow Flash",
+        "Name (Global)": "S1: Shadowgleam",
+        "Effect (JP)": [
+            null,
+            "5秒間静止する毎に20秒間、PPの自然回復量が20%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases natural PP recovery by 20% for 20 seconds after standing still for 5 seconds."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases natural PP recovery by 20% for 20 seconds after standing still for 5 seconds."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:強闘の志",
+        "Name (English)": "S1:Powering Intent",
+        "Name (Global)": "S1: Goliathslayer's Will",
+        "Effect (JP)": [
+            null,
+            "強敵への与ダメージが4%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage dealt to bosses by 4%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage dealt to bosses by 4%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:強闘の志",
+        "Name (English)": "S1:Rupturing Excess",
+        "Name (Global)": "S1: Lustrous Partbreaker",
+        "Effect (JP)": [
+            null,
+            "破壊可能な部位を攻撃した際、攻撃時PP回復量が40%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Active PP recovery by 40% when attacking breakable parts."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Active PP recovery by 40% when attacking breakable parts."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:気輝応変",
+        "Name (English)": "S1:Spirited Response",
+        "Name (Global)": "S1: Luminous Adaptation",
+        "Effect (JP)": [
+            null,
+            "納刀・抜刀を行う事でPP回復速度が変化。"
+        ],
+        "Effect (English)": [
+            null,
+            "Natural PP regeneration rate increased by 80% while weapon is sheathed. Natural PP regeneration rate reduced by 100% while weapon is unsheathed."
+        ],
+        "Effect (Global)": [
+            null,
+            "Natural PP regeneration rate increased by 80% while weapon is sheathed. Natural PP regeneration rate reduced by 100% while weapon is unsheathed."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:裂砕の志",
+        "Name (English)": "S1:Rupturing Intent",
+        "Name (Global)": "S1: Partbreaker's Will",
+        "Effect (JP)": [
+            null,
+            "破壊可能な部位を攻撃した際、威力が4%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against breakable parts by 4%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against breakable parts by 4%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:活剰増進",
+        "Name (English)": "S1:Vigor Enhancement",
+        "Name (Global)": "S1: Augmented Lifeboon",
+        "Effect (JP)": [
+            null,
+            "自身のHP回復量が40%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases HP recovered from self-healing effects by 40%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases HP recovered from self-healing by 40%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:錬成の志",
+        "Name (English)": "S1:Augment Intent",
+        "Name (Global)": "S1: Augment Will",
+        "Effect (JP)": [
+            null,
+            "特殊能力の付与数に応じて威力上昇。最大で4%。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 0.5% for every Special Ability affixed to this weapon. Maxes at 4% for 8 Abilities."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 0.5% for every augment affixed to this weapon. Maxes at 4% for 8 augments."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:錬成の志2",
+        "Name (English)": "S1:Augment Intent 2",
+        "Name (Global)": "S1: Augment Will 2",
+        "Effect (JP)": [
+            null,
+            "特殊能力の付与数に応じて威力上昇。最大で6%。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 0.75% for every Special Ability affixed to this weapon. Maxes at 6% for 8 Abilities."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 0.75% for every augment affixed to this weapon. Maxes at 6% for 8 augments."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:剛撃の志",
+        "Name (English)": "S1:Offensive Intent",
+        "Name (Global)": "S1: Aggressive Will",
+        "Effect (JP)": [
+            null,
+            "与ダメージが2%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 2%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 2%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:剛撃の志2",
+        "Name (English)": "S1:Offensive Intent 2",
+        "Name (Global)": "S1: Aggressive Will 2",
+        "Effect (JP)": [
+            null,
+            "与ダメージが4%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 4%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 4%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:光子縮減",
+        "Name (English)": "S1:Photon Reduction",
+        "Name (Global)": "S1: Photon Descent",
+        "Effect (JP)": [
+            null,
+            "PP消費量を7%軽減。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces PP consumption by 7%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces PP consumption by 7%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:光子縮減2",
+        "Name (English)": "S1:Photon Reduction 2",
+        "Name (Global)": "S1: Photon Descent 2",
+        "Effect (JP)": [
+            null,
+            "PP消費量を10%軽減。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces PP consumption by 10%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces PP consumption by 10%."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:滅域輝与",
+        "Name (English)": "S1:Brilliant Ruin",
+        "Name (Global)": "S1: Lucent Domain",
+        "Effect (JP)": [
+            null,
+            "一定の範囲内でエネミーが死亡した時、PPが回復する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Recovers 3 PP when an enemy near you is defeated."
+        ],
+        "Effect (Global)": [
+            null,
+            "Recovers 3 PP when a nearby enemy is defeated."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:滅域輝与2",
+        "Name (English)": "S1:Brilliant Ruin 2",
+        "Name (Global)": "S1: Lucent Domain 2",
+        "Effect (JP)": [
+            null,
+            "一定の範囲内でエネミーが死亡した時、PPが回復する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Recovers 4 PP when an enemy near you is defeated."
+        ],
+        "Effect (Global)": [
+            null,
+            "Recovers 4 PP when a nearby enemy is defeated."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:依属の志",
+        "Name (English)": "S1:Sturdy Intent",
+        "Name (Global)": "S1: Elementalist's Will",
+        "Effect (JP)": [
+            null,
+            "ガード系リングまたは武器属性が弱点属性と一致時、4%威力上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 4% when your weapon's element or equipped Guard Ring matches the enemy's elemental weakness."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 4% when your equipped Guard-type Ring or Weapon Element matches the enemy's Elemental Weakness."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:幻精の志",
+        "Name (English)": "S1:Phantasmal Intent",
+        "Name (Global)": "S1: Spectre's Will",
+        "Effect (JP)": [
+            null,
+            "フォトンブラストゲージに応じて威力が上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage based on the Photon Blast Gauge. (1% at 0~3 bars, 2% at 4~7 bars, 3% at full charge)"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage based on the Photon Gauge. (1% at 0~3 bars, 2% at 4~7 bars, 3% at full charge)"
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:幻精の志",
+        "Name (English)": "S1:Strike Boost",
+        "Name (Global)": "S1: Melee Amp",
+        "Effect (JP)": [
+            null,
+            "特殊能力の追加打撃能力60毎に、威力1%上昇し200以上でさらに2%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 1% for every 60 S-ATK affixed to this weapon. Increases damage by an additional 2% if at least 200 S-ATK is affixed to this weapon."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 1% for every 60 MEL Pwr affixed to this weapon. Increases damage by an additional 2% if at least 200 MEL Pwr is affixed to this weapon."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:射撃増幅",
+        "Name (English)": "S1:Shoot Boost",
+        "Name (Global)": "S1: Ranged Amp",
+        "Effect (JP)": [
+            null,
+            "特殊能力の追加射撃能力60毎に、威力1%上昇し200以上でさらに2%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 1% for every 60 R-ATK affixed to this weapon. Increases damage by an additional 2% if at least 200 R-ATK is affixed to this weapon."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 1% for every 60 RNG Pwr affixed to this weapon. Increases damage by an additional 2% if at least 200 RNG Pwr is affixed to this weapon."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:法撃増幅",
+        "Name (English)": "S1:Tech Boost",
+        "Name (Global)": "S1: Technique Amp",
+        "Effect (JP)": [
+            null,
+            "特殊能力の追加法撃能力60毎に、威力1%上昇し200以上でさらに2%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 1% for every 60 T-ATK affixed to this weapon. Increases damage by an additional 2% if at least 200 T-ATK is affixed to this weapon."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 1% for every 60 TEC Pwr affixed to this weapon. Increases damage by an additional 2% if at least 200 TEC Pwr is affixed to this weapon."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:法撃増幅",
+        "Name (English)": "S1:Flowing Intent",
+        "Name (Global)": "S1: Timeflow Will",
+        "Effect (JP)": [
+            null,
+            "1秒毎に与ダメージが上昇。最大で4%。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage every second to a maximum of 4% after 30 seconds."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage every second to a maximum of 4% after 30 seconds."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:法撃増幅",
+        "Name (English)": "S1:Lethal Intent",
+        "Name (Global)": "S1: Will of the Dying",
+        "Effect (JP)": [
+            null,
+            "20秒毎に最大HPの5%ダメージを負う代わりに威力が4%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 4% but reduces HP by 5% of max HP every 20 seconds."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 4% but reduces HP by 5% of max HP every 20 seconds."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:法撃増幅",
+        "Name (English)": "S1:Reckless Strike",
+        "Name (Global)": "S1: Dance with Death",
+        "Effect (JP)": [
+            null,
+            "被ダメージ回数に応じて3段階の威力上昇。\n最大段階の被ダメージ時 周囲ダメージが発生し自身のHPが1になる。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage every time you take damage as follows:\n1% increase on 3rd hit\n3% increase on 6th hit\n10% increase on 9th hit\nUpon receiving a 10th hit, an explosion will be released that reduces your HP to 1, massively damages all nearby targets and resets the effect of this skill."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage every time you take damage as follows:\n1% increase on 3rd hit\n3% increase on 6th hit\n10% increase on 9th hit\nUpon receiving a 10th hit, an explosion will be released that reduces your HP to 1, massively damages all nearby targets and resets the effect of this skill."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:法撃増幅",
+        "Name (English)": "S1:Eclipsing Decay",
+        "Name (Global)": "S1: Crippling Erode",
+        "Effect (JP)": [
+            null,
+            "命中時に25%の確率でジェルンを付与。"
+        ],
+        "Effect (English)": [
+            null,
+            "Grant a 25% chance to inflict the Jellen status when attacking an enemy."
+        ],
+        "Effect (Global)": [
+            null,
+            "Attacking an enemy grants a 25% chance to inflict the target with the Jellen status effect."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:光子の秤",
+        "Name (English)": "S1:Photon Balance",
+        "Name (Global)": "S1: Photon Balance",
+        "Effect (JP)": [
+            null,
+            "PP消費量が8%増加する代わりにPAとテクニックの威力が4%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases PP consumption by 8% in exchange for 4% more damage when using PAs and Techniques."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases PP consumption by 8% in exchange for 4% more damage when using PAs and Techniques."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:光子の秤2",
+        "Name (English)": "S1:Photon Balance 2",
+        "Name (Global)": "S1: Photon Balance 2",
+        "Effect (JP)": [
+            null,
+            "PP消費量が4%増加する代わりにPAとテクニックの威力が6%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases PP consumption by 4% in exchange for 6% more damage when using PAs and Techniques."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases PP consumption by 4% in exchange for 6% more damage when using PAs and Techniques."
+        ]
+    }
+]
