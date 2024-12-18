@@ -50,7 +50,7 @@
         ],
         "Effect (Global)": [
             null,
-            "Increases Natural PP recovery by 20%. "
+            "Increases Natural PP recovery by 20%."
         ]
     },
     {
@@ -68,7 +68,7 @@
         ],
         "Effect (Global)": [
             null,
-            "Increases Natural PP recovery by 23%. "
+            "Increases Natural PP recovery by 23%."
         ]
     },
     {
@@ -772,5 +772,86 @@
             null,
             "Increases PP consumption by 4% in exchange for 6% more damage when using PAs and Techniques."
         ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:戦友の加護",
+        "Name (English)": "S1:Collaborator Liberator",
+        "Name (Global)": "S1: Comrade's Blessing",
+        "Effect (JP)": [
+            null,
+            "パーティ人数が2人以上の場合、人数に応じて、PP消費軽減、クリティカル率上昇、威力上昇効果が発動。"
+        ],
+        "Effect (English)": [
+            null,
+            "Provides bonuses based on the number of party members.\n\n2 Members: PP Consumption -8%\n3 Members: +10% Critical Hit Rate\n4 Members: Damage +3%\n\nBonuses only apply to yourself."
+        ],
+        "Effect (Global)": [
+            null,
+            "Provides bonuses based on the number of party members.\n\n2 Members: PP Consumption -8%\n3 Members: +10% Critical Hit Rate\n4 Members: Damage +3%\n\nBonuses only apply to yourself."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:戦友の加護2",
+        "Name (English)": "S1:Collaborator Liberator 2",
+        "Name (Global)": "S1: Comrade's Blessing 2",
+        "Effect (JP)": [
+            null,
+            "パーティ人数が2人以上の場合、人数に応じて、PP消費軽減、クリティカル率上昇、威力上昇効果が発動。"
+        ],
+        "Effect (English)": [
+            null,
+            "Provides bonuses based on the number of party members.\n\n2 Members: PP Consumption -10%\n3 Members: +??% Critical Hit Rate\n4 Members: Damage +4%\n\nBonuses only apply to yourself."
+        ],
+        "Effect (Global)": [
+            null,
+            "Provides bonuses based on the number of party members.\n\n2 Members: PP Consumption -10%\n3 Members: +??% Critical Hit Rate\n4 Members: Damage +4%\n\nBonuses only apply to yourself."
+        ]
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:瞬連の巧",
+        "Name (English)": "S1:Immediate Strike",
+        "Name (Global)": null,
+        "Effect (JP)": null,
+        "Effect (English)": [
+            null,
+            "Increases Critical Hit Rate by 2% for each successive Just Attack, up to 20%. Bonus is lost when a non-Just Attack is performed."
+        ],
+        "Effect (Global)": null,
+        "Not Implemented": true
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:狂幻の利",
+        "Name (English)": "S1:Phanatical Advantage",
+        "Name (Global)": null,
+        "Effect (JP)": null,
+        "Effect (English)": [
+            null,
+            "Increases power by 5% and reduce damage taken by 12% in the Quest \"Solo Training: Phanatical Phantoms.\""
+        ],
+        "Effect (Global)": null,
+        "Not Implemented": true
+    },
+    {
+        "SSA Slot": 1,
+        "Name (JP)": "S1:猛威の奮激",
+        "Name (English)": "S1:Furious Inspiration",
+        "Name (Global)": "S2: Persistent Fury",
+        "Effect (JP)": [
+            null,
+            "威力とクリティカル率が上昇。PP効率が向上。被ダメージで消失。一定時間で効果が復活。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects will be lost when damage is taken (180s cooldown)."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects will be lost when damage is taken (180s cooldown)."
+        ],
+        "Not Implemented": true
     }
 ]
