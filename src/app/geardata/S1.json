@@ -839,7 +839,7 @@
         "SSA Slot": 1,
         "Name (JP)": "S1:猛威の奮激",
         "Name (English)": "S1:Furious Inspiration",
-        "Name (Global)": "S2: Persistent Fury",
+        "Name (Global)": "S1: Persistent Fury",
         "Effect (JP)": [
             null,
             "威力とクリティカル率が上昇。PP効率が向上。被ダメージで消失。一定時間で効果が復活。"

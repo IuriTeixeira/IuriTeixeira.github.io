@@ -1,0 +1,543 @@
+[
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:瞬護輝与",
+        "Name (English)": "S4:Marvelous Aegis",
+        "Name (Global)": "S4: Flashguard Lucent",
+        "Effect (JP)": [
+            null,
+            "ジャストガード成功時、PPを回復する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Recovers 10 PP when successfully performing a Just Guard. "
+        ],
+        "Effect (Global)": [
+            null,
+            "Recovers 10 PP when successfully performing a Perfect Guard."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:鋼の決意",
+        "Name (English)": "S4:Steel Resolve",
+        "Name (Global)": "S4: Steely Determination",
+        "Effect (JP)": [
+            null,
+            "致命傷を受けても一度限りだが必ずHPが1残る。"
+        ],
+        "Effect (English)": [
+            null,
+            "Survive one fatal hit with 1 HP remaining. Does not activate if HP is at 1. Activates once per Quest."
+        ],
+        "Effect (Global)": [
+            null,
+            "Survive one fatal hit with 1 HP remaining. Does not activate if HP is at 1. Activates once per Quest."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:輝器応変",
+        "Name (English)": "S4:Radiant Response",
+        "Name (Global)": "S4: Photon Vessel Adaptation",
+        "Effect (JP)": [
+            null,
+            "最大PPに応じて攻撃時PP回復量、PP自然回復量、PP消費軽減効果が最大で30%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Improves Natural and Active PP recovery and reduces PP consumption based on your maximum PP, up to 30% at 420 max PP.\nAmount:\n(MaxPP - 120)/10"
+        ],
+        "Effect (Global)": [
+            null,
+            "Improves Natural and Active PP recovery and reduces PP consumption based on your maximum PP, up to 30% at 420 max PP.\nAmount:\n(MaxPP - 120)/10"
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:正対の巧",
+        "Name (English)": "S4:Opposing Skill",
+        "Name (Global)": "S4: Frontal Adept",
+        "Effect (JP)": [
+            null,
+            "ブレイブスタンス中、正面へのクリティカル率が30%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Critical Hit Rate of frontal attacks is increased by 30% while Brave Stance is active."
+        ],
+        "Effect (Global)": [
+            null,
+            "Critical Hit Rate of frontal attacks is increased by 30% while Valiant Stance is active."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:鎌風重吹",
+        "Name (English)": "S4:Scything Wind",
+        "Name (Global)": "S4: Second Whirlwind",
+        "Effect (JP)": [
+            null,
+            "カマイタチの持続時間が4秒延長される。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases the duration of Double Saber's Whirlwind by 4 seconds."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases the duration of Double Saber's Whirlwind by 4 seconds."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:賢勇両撃",
+        "Name (English)": "S4:Cunning Strike",
+        "Name (Global)": "S4: Hammer of the Wise",
+        "Effect (JP)": [
+            null,
+            "ワイズスタンス中、正面からの与ダメージが15%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Frontal attack damage is increased by 15% while Wise Stance is active."
+        ],
+        "Effect (Global)": [
+            null,
+            "Frontal attack damage is increased by 15% while Wise Stance is active."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:奪命の撃",
+        "Name (English)": "S4:Vampiric Strike",
+        "Name (Global)": "S4: Lifesteal Strike",
+        "Effect (JP)": [
+            null,
+            "攻撃時に与ダメージの1%をHPとして吸収。(上限30)"
+        ],
+        "Effect (English)": [
+            null,
+            "Restores HP equal to 1% of damage dealt, up to 30 HP per hit."
+        ],
+        "Effect (Global)": [
+            null,
+            "Restores HP equal to 1% of damage dealt, up to 30 HP per hit."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:刃機放縮",
+        "Name (English)": "S4:Gear Reduction",
+        "Name (Global)": "S4: Prolonged Blade",
+        "Effect (JP)": [
+            null,
+            "カタナギア解放中、ギアゲージの減少速度が低下する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces the depletion of the Gear Gauge while Katana Gear is active. (Roughly 20% slower gauge loss)"
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces the depletion of the Focus Gauge while Katana Focus is active. (Roughly 20% slower gauge loss)"
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:変素応輪",
+        "Name (English)": "S4:Genesis Ring",
+        "Name (Global)": "S4: Transmutation Circle",
+        "Effect (JP)": [
+            null,
+            "装備しているガード系リングに応じて武器属性が変化する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Changes the weapon element to match the currently equipped elemental Guard Skill Ring. Has no effect if an elemental Guard ring is not equipped."
+        ],
+        "Effect (Global)": [
+            null,
+            "Changes the weapon element to match the currently equipped elemental defense ring. Has no effect if an elemental ring is not equipped."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:静の胆力",
+        "Name (English)": "S4:Steadfast Courage",
+        "Name (Global)": "S4: Mettle of the Rested",
+        "Effect (JP)": [
+            null,
+            "一定時間、静止状態が続いた時、打ち上げや吹き飛ばしを防ぐ。"
+        ],
+        "Effect (English)": [
+            null,
+            "Gain flinch and knockback immunity after standing still for 1 second.\nEffect ends if you move or are moved by something else (e.g. moving platform)."
+        ],
+        "Effect (Global)": [
+            null,
+            "Gain flinch and knockback immunity after standing still for 1 second.\nEffect ends if you move or are moved by something else (e.g. moving platform)."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:輝剰の罠",
+        "Name (English)": "S4:Lustrous Trap",
+        "Name (Global)": "S4: Lustrous Trap",
+        "Effect (JP)": [
+            null,
+            "タクティクストラップのPP回復量が20%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Inreases PP restored by Tactics Trap by 20%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Inreases PP restored by Tactical Trap by 20%."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:鎖動強身",
+        "Name (English)": "S4:Dynamic Chain",
+        "Name (Global)": "S4: Mighty Chain",
+        "Effect (JP)": [
+            null,
+            "チェイントリガー発動時、5秒間無敵になる。"
+        ],
+        "Effect (English)": [
+            null,
+            "Gain invincibility for 5 seconds when Chain Trigger is activated."
+        ],
+        "Effect (Global)": [
+            null,
+            "Gain invincibility for 5 seconds when Chain Trigger is activated."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:迅弓の撃",
+        "Name (English)": "S4:Rapid-fire Arrow",
+        "Name (Global)": "S4: Swift Arrows Strike",
+        "Effect (JP)": [
+            null,
+            "ラピッドシュート中、バレットボウ装備時に与ダメージが3%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases the damage of all attacks done with a Bullet Bow by 3% while Rapid Shoot is active."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases the damage of all attacks done with a Bow by 3% while Rapid Fire is active."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:摂理洗練",
+        "Name (English)": "S4:Refined Providence",
+        "Name (Global)": "S4: Refined Providence",
+        "Effect (JP)": [
+            null,
+            "エレメントコンバージョンが強化される。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases the potency of Element Conversion by 5% for non-matching weapon elements."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases the potency of Element Conversion by 5% for non-matching weapon elements."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:回路輪転",
+        "Name (English)": "S4:Circuit Rotation",
+        "Name (Global)": "S4: Sustained Cycle",
+        "Effect (JP)": [
+            null,
+            "フォトンフレアのリキャスト時間を20%軽減する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces the cooldown of Photon Flare by 20%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces the cooldown of Photon Flare by 20%."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:短杖強打",
+        "Name (English)": "S4:Wand Clobber",
+        "Name (Global)": "S4: Wand Impact",
+        "Effect (JP)": [
+            null,
+            "ウォンドの通常攻撃性能が強化される。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Wand Normal Attack speed by 1.1x and negates hitstop."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Wand Normal Attack speed by 1.1x and negates hitstop."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:支援限長",
+        "Name (English)": "S4:Support Extension",
+        "Name (Global)": "S4: Support Amplification",
+        "Effect (JP)": [
+            null,
+            "シフタ・デバンドの効果時間上限を120秒に延長する。"
+        ],
+        "Effect (English)": [
+            null,
+            "The maximum duration of Shifta and Deband cast by the user becomes 120 seconds.\nNo effect when user has the [Extend Assist] skill."
+        ],
+        "Effect (Global)": [
+            null,
+            "The maximum duration of Shifta and Deband cast by the user becomes 120 seconds.\nNo effect when user has the [Extend Assist] skill."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:妙撃の秤",
+        "Name (English)": "S4:Skilled Balance",
+        "Name (Global)": "S4: Precise Balance",
+        "Effect (JP)": [
+            null,
+            "ガード中PPが自然回復しPP回復速度が上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces Critical Hit Rate by 50% and increases Critical Hit damage by 6%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces Critical Hit Rate by 50% and increases Critical Hit damage by 6%."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:天輝の守護",
+        "Name (English)": "S4:Heavenly Protection",
+        "Name (Global)": "S4: Luminous Protection",
+        "Effect (JP)": [
+            null,
+            "ガード中PPが自然回復しPP回復速度が上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Enables Natural PP Recovery while Guarding, and increases PP recovery rate by 300%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Enables Natural PP Recovery while Guarding, and increases PP recovery rate by 300%."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:天輝の守護",
+        "Name (English)": "S4:Calming Intent",
+        "Name (Global)": "S4: Steadfast Will",
+        "Effect (JP)": [
+            null,
+            "通常攻撃の威力が13%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Normal Attack damage by 13%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Normal Attack damage by 13%."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:聖者の盾",
+        "Name (English)": "S4:Saint Shield",
+        "Name (Global)": "S4: Saintly Shield",
+        "Effect (JP)": [
+            null,
+            "一定間隔で被ダメージを60%軽減するバリアを展開。"
+        ],
+        "Effect (English)": [
+            null,
+            "Deploys a barrier that reduces damage taken by 60%, and grants immunity to flinch and knockback, every 45 seconds.\nEffect ends after being damaged once."
+        ],
+        "Effect (Global)": [
+            null,
+            "Deploys a barrier that reduces damage taken by 60%, and grants immunity to flinch and knockback, every 45 seconds.\nEffect ends after being damaged once."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:六色の輝秤",
+        "Name (English)": "S4:Harmonized Rainbow",
+        "Name (Global)": "S4: Rainbow Balance",
+        "Effect (JP)": [
+            null,
+            "花・海・葉・月・雪・影のいずれかが発動中、PP自然回復は減少するがPP消費量は低下する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Decreases PP consumption by 30%, but decreases Natural PP Recovery by 30% while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active. "
+        ],
+        "Effect (Global)": [
+            null,
+            "While Petalgleam, Seagleam, Snowgleam, Moongleam, Leafgleam, or Shadowgleam are active, decreases PP consumption by 30%, but decreases Natural PP Recovery by 30%"
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:六色の輝秤",
+        "Name (English)": "S4:Raising Pursuit",
+        "Name (Global)": "S4: Escalating Pursuit",
+        "Effect (JP)": [
+            null,
+            "PA・テクニックの命中後4秒間の与ダメージ量に応じて、\n次に命中したPA・テクニックに追加ダメージが発生。(上限25万、リキャスト10秒)"
+        ],
+        "Effect (English)": [
+            null,
+            "Upon hitting with a PA/Technique, tracks 30% of damage dealt within the next 4 seconds, and then deals additional damage to the next PA/Technique based on the damage dealt, up to 250,000 damage.\nAdditional damage only affects 1 target, but damage is tracked from all targets.\n10 seconds cooldown."
+        ],
+        "Effect (Global)": [
+            null,
+            "Upon hitting with a PA/Technique, tracks 30% of damage dealt within the next 4 seconds, and then deals additional damage to the next PA/Technique based on the damage dealt, up to 250,000 damage.\nAdditional damage only affects 1 target, but damage is tracked from all targets.\n10 seconds cooldown."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:追蝕の巧",
+        "Name (English)": "S4:Pursuing Skill",
+        "Name (Global)": "S4: Amplified Adept",
+        "Effect (JP)": [
+            null,
+            "状態異常、ジェルン、ウィークバレットが発動中のエネミーへのクリティカル率が50%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Critical Hit Rate by 50% when attacking an enemy affected by Weak Bullet, Jellen, or a Status Effect. "
+        ],
+        "Effect (Global)": [
+            null,
+            "Critical Hit Rate increased by 50% when attacking an enemy affected by any Status Ailment, including Jellen and Blight Rounds."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:六色の災転",
+        "Name (English)": "S4:Cursed Rainbow",
+        "Name (Global)": "S4: Rainbow Adversity",
+        "Effect (JP)": [
+            null,
+            "花・海・葉・月・雪・影のいずれかが発動中一度に500以上のダメージを受けるとHPが500回復する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Recovers 500 HP upon taking 500 HP or more in damage while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ],
+        "Effect (Global)": [
+            null,
+            "While Petalgleam, Seagleam, Snowgleam, Moongleam, Leafgleam, or Shadowgleam are active, recovers 500 HP when you take 500 or more damage."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:強闘輝与",
+        "Name (English)": "S4:Colossal Radiance",
+        "Name (Global)": "S4: Goliathslayer Lucent",
+        "Effect (JP)": [
+            null,
+            "一定の範囲内に強敵が居る場合10秒ごとにPPが40回復。"
+        ],
+        "Effect (English)": [
+            null,
+            "Recovers 40 PP every 10 seconds when there is a boss enemy nearby."
+        ],
+        "Effect (Global)": [
+            null,
+            "Recover 40 PP every 10 seconds when there is a boss enemy nearby."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:回避訓練",
+        "Name (English)": "S4:Evasion Training",
+        "Name (Global)": "S4: Dodge Training",
+        "Effect (JP)": [
+            null,
+            "二つの円が重なる際に回避すると「回避成功」状態となる。回避しなかった場合はHPを5%回復する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Every 10 seconds, generates 2 circles around your character that close in on each other.\nEvade when the 2 circles overlap to trigger any successful evasion effects (e.g. Hero Counter) as if you evaded an enemy attack.\nIf you do not evade, recovers 5% HP instead."
+        ],
+        "Effect (Global)": [
+            null,
+            "Every 10 seconds, generates 2 circles around your character that close in on each other.\nEvade when the 2 circles overlap to trigger any successful evasion effects (e.g. Hero Counter) as if you evaded an enemy attack.\nIf you do not evade, recovers 5% HP instead."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:追蝕輝剰",
+        "Name (English)": "S4:Pursuing Radiance",
+        "Name (Global)": "S4: Lustrous Amplify",
+        "Effect (JP)": [
+            null,
+            "状態異常、ジェルン、ウィークバレット効果が発生中のエネミー攻撃時、PP回復量が60%上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Active PP Recovery by 60% when attacking an enemy affected by a Status Effect, Jellen, or Weak Bullet."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Active PP Recovery by 60% when attacking enemies afflicted by a status ailment, Jellen, or Blight Rounds."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:滅域分与",
+        "Name (English)": "S4:Shared Ruin",
+        "Name (Global)": "S4: Nullzone Bestowal",
+        "Effect (JP)": [
+            null,
+            "一定の範囲内でエネミーが死亡した時PTメンバーと自身のHPとPPを回復。"
+        ],
+        "Effect (English)": [
+            null,
+            "You and all party members recover HP and PP when a nearby enemy or boss dies.\nSelf: 40% HP, 40 PP on boss kill, 5% HP, 5 PP on enemy kill.\nParty: 20% HP, 20 PP on boss kill, 3% HP, 3 PP on enemy kill."
+        ],
+        "Effect (Global)": [
+            null,
+            "You and all party members recover HP and PP when a nearby enemy or boss dies.\nSelf: 40% HP, 40 PP on boss kill, 5% HP, 5 PP on enemy kill.\nParty: 20% HP, 20 PP on boss kill, 3% HP, 3 PP on enemy kill."
+        ]
+    },
+    {
+        "SSA Slot": 4,
+        "Name (JP)": "S4:追蝕の志",
+        "Name (English)": "S4:Pursuing Intent",
+        "Name (Global)": "S4: Nullzone Bestowal",
+        "Effect (JP)": [
+            null,
+            "?"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 4% when attacking an enemy affected by a Status Effect, Jellen, or Weak Bullet."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 4% when attacking enemies afflicted by a status ailment, Jellen, or Blight Rounds."
+        ],
+        "Not Implemented": true
+    }
+]

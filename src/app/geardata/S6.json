@@ -1,0 +1,236 @@
+[
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:瞬護解放",
+        "Name (English)": "S6:Guardian Armor",
+        "Name (Global)": "S6: Guardian Shield",
+        "Effect (JP)": [
+            null,
+            "被ダメージを7%軽減。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces damage taken by 7%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces damage taken by 7%."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:英雄咆哮",
+        "Name (English)": "S6:Heroic Howl",
+        "Name (Global)": "S6: Heroic Howl",
+        "Effect (JP)": [
+            null,
+            "ヒーローブースト強化。威力増加速度が上昇。\n「英雄の凱歌」が優先され併用不可。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases the bonus damage accumulation rate of Hero's Heroic Boost by roughly 40%.\nNo effect if using a weapon with the [Heroic Victory] potential."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases the bonus damage accumulation rate of Hero's Heroic Boost by roughly 40%.\nNo effect if using a weapon with the [Heroic Victory] potential."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:翔機天舞",
+        "Name (English)": "S6:Soaring Ballet",
+        "Name (Global)": "S6: Soaring Heavendance",
+        "Effect (JP)": [
+            null,
+            "バウンサー武器のギアが滞空状態時に上昇。\n「聖鳥の導き」が優先され併用不可。"
+        ],
+        "Effect (English)": [
+            null,
+            "Bouncer Weapon Gear fills over time while airborne. No effect if using a weapon with the [Angelic Guidance] potential."
+        ],
+        "Effect (Global)": [
+            null,
+            "Bouncer Weapon Focus fills over time while airborne. No effect if using a weapon with the [Sacred Bird Guidance] potential."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:翔機天舞",
+        "Name (English)": "S6:Guardian's Essence",
+        "Name (Global)": "S6: Soul Protection",
+        "Effect (JP)": [
+            null,
+            "ハンター武器・カタナのギアがガード中に上昇。\n「風視の太刀」が優先され併用不可。"
+        ],
+        "Effect (English)": [
+            null,
+            "Hunter Weapon Gear and Katana Gear fills over time while Guarding. No effect if using a weapon with the [Zephyr's Edge] potential."
+        ],
+        "Effect (Global)": [
+            null,
+            "Hunter Weapon Focus and Katana Focus fills over time while Guarding. No effect if using a weapon with the [Galeblade] potential."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:癒蝕頑強",
+        "Name (English)": "S6:Ironclad Illness",
+        "Name (Global)": "S6: Tenacious Healscourge",
+        "Effect (JP)": [
+            null,
+            "状態異常になってから60秒間、頑強になる。"
+        ],
+        "Effect (English)": [
+            null,
+            "Become immune to flinch and knockback for 60 seconds after being affected by a Status Effect."
+        ],
+        "Effect (Global)": [
+            null,
+            "Become immune to flinch and knockback for 60 seconds after being affected by a Status Effect."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:妙技の巧",
+        "Name (English)": "S6:Wise Skill",
+        "Name (Global)": "S6: Skillful Adept",
+        "Effect (JP)": [
+            null,
+            "クリティカル率が15%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Critical Hit Rate by 15%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Critical Hit Rate by 15%."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:滅域輝与",
+        "Name (English)": "S6:Brilliant Ruin",
+        "Name (Global)": "S6: Lucent Domain",
+        "Effect (JP)": [
+            null,
+            "一定の範囲内でエネミーが死亡した時、PPが回復する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Recovers 5 PP when an enemy near you is defeated."
+        ],
+        "Effect (Global)": [
+            null,
+            "Recovers 5 PP when a nearby enemy is defeated."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:活器上昇",
+        "Name (English)": "S6:HP Up",
+        "Name (Global)": "S6: Fortified Life Vessel",
+        "Effect (JP)": [
+            null,
+            "最大HPが40上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "HP +40"
+        ],
+        "Effect (Global)": [
+            null,
+            "HP +40"
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:輝器上昇",
+        "Name (English)": "S6:PP Up",
+        "Name (Global)": "S6: Fortified Photon Vessel",
+        "Effect (JP)": [
+            null,
+            "最大PPが4上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "PP +4"
+        ],
+        "Effect (Global)": [
+            null,
+            "PP +4"
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:打撃上昇",
+        "Name (English)": "S6:S-ATK Up",
+        "Name (Global)": "S6: Fortified Melee",
+        "Effect (JP)": [
+            null,
+            "打撃力が30上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "S-ATK +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
+        ],
+        "Effect (Global)": [
+            null,
+            "MEL Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:射撃上昇",
+        "Name (English)": "S6:R-ATK Up",
+        "Name (Global)": "S6: Fortified Ranged",
+        "Effect (JP)": [
+            null,
+            "射撃力が30上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "R-ATK +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
+        ],
+        "Effect (Global)": [
+            null,
+            "RNG Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:法撃上昇",
+        "Name (English)": "S6:T-ATK Up",
+        "Name (Global)": "S6: Fortified Technique",
+        "Effect (JP)": [
+            null,
+            "法撃力が30上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "T-ATK +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
+        ],
+        "Effect (Global)": [
+            null,
+            "TEC Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:法撃上昇",
+        "Name (English)": "S6:Evasion Whistle",
+        "Name (Global)": "S6: Fortified Technique",
+        "Effect (JP)": [
+            null,
+            "法撃力が30上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "Evading will cause your Pet to return back to you."
+        ],
+        "Effect (Global)": [
+            null,
+            "Evading will cause your pet to return back to you."
+        ]
+    }
+]
