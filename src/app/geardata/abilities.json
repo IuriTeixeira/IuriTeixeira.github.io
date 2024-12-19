@@ -1,3517 +1,2221 @@
 [
     {
-        "Name": "Power I",
-        "Effect": [
-            "S-ATK",
-            10
-        ]
-    },
-    {
-        "Name": "Power II",
-        "Effect": [
-            "S-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Power III",
-        "Effect": [
-            "S-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Power IV",
-        "Effect": [
-            "S-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "Power V",
-        "Effect": [
-            "S-ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Power VI",
-        "Effect": [
-            "S-ATK",
-            45
-        ]
-    },
-    {
-        "Name": "Lesser Power I",
-        "Effect": [
-            "S-ATK",
-            5
-        ]
-    },
-    {
-        "Name": "Lesser Power II",
-        "Effect": [
-            "S-ATK",
-            15
-        ]
-    },
-    {
-        "Name": "Lesser Power III",
-        "Effect": [
-            "S-ATK",
-            25
-        ]
-    },
-    {
-        "Name": "Lesser Power IV",
-        "Effect": [
-            "S-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Lesser Power V",
-        "Effect": [
-            "S-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "Shoot I",
-        "Effect": [
-            "R-ATK",
-            10
-        ]
-    },
-    {
-        "Name": "Shoot II",
-        "Effect": [
-            "R-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Shoot III",
-        "Effect": [
-            "R-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Shoot IV",
-        "Effect": [
-            "R-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "Shoot V",
-        "Effect": [
-            "R-ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Shoot VI",
-        "Effect": [
-            "R-ATK",
-            45
-        ]
-    },
-    {
-        "Name": "Lesser Shoot I",
-        "Effect": [
-            "R-ATK",
-            5
-        ]
-    },
-    {
-        "Name": "Lesser Shoot II",
-        "Effect": [
-            "R-ATK",
-            15
-        ]
-    },
-    {
-        "Name": "Lesser Shoot III",
-        "Effect": [
-            "R-ATK",
-            25
-        ]
-    },
-    {
-        "Name": "Lesser Shoot IV",
-        "Effect": [
-            "R-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Lesser Shoot V",
-        "Effect": [
-            "R-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "Technique I",
-        "Effect": [
-            "T-ATK",
-            10
-        ]
-    },
-    {
-        "Name": "Technique II",
-        "Effect": [
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Technique III",
-        "Effect": [
-            "T-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Technique IV",
-        "Effect": [
-            "T-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "Technique V",
-        "Effect": [
-            "T-ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Technique VI",
-        "Effect": [
-            "T-ATK",
-            45
-        ]
-    },
-    {
-        "Name": "Lesser Technique I",
-        "Effect": [
-            "T-ATK",
-            5
-        ]
-    },
-    {
-        "Name": "Lesser Technique II",
-        "Effect": [
-            "T-ATK",
-            15
-        ]
-    },
-    {
-        "Name": "Lesser Technique III",
-        "Effect": [
-            "T-ATK",
-            25
-        ]
-    },
-    {
-        "Name": "Lesser Technique IV",
-        "Effect": [
-            "T-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Lesser Technique V",
-        "Effect": [
-            "T-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "Arm I",
-        "Effect": [
-            "DEX",
-            10
-        ]
-    },
-    {
-        "Name": "Arm II",
-        "Effect": [
-            "DEX",
-            20
-        ]
-    },
-    {
-        "Name": "Arm III",
-        "Effect": [
-            "DEX",
-            30
-        ]
-    },
-    {
-        "Name": "Arm IV",
-        "Effect": [
-            "DEX",
-            35
-        ]
-    },
-    {
-        "Name": "Arm V",
-        "Effect": [
-            "DEX",
-            40
-        ]
-    },
-    {
-        "Name": "Body I",
-        "Effect": [
-            "S-DEF",
-            10
-        ]
-    },
-    {
-        "Name": "Body II",
-        "Effect": [
-            "S-DEF",
-            20
-        ]
-    },
-    {
-        "Name": "Body III",
-        "Effect": [
-            "S-DEF",
-            30
-        ]
-    },
-    {
-        "Name": "Body IV",
-        "Effect": [
-            "S-DEF",
-            35
-        ]
-    },
-    {
-        "Name": "Body V",
-        "Effect": [
-            "S-DEF",
-            40
-        ]
-    },
-    {
-        "Name": "React I",
-        "Effect": [
-            "R-DEF",
-            10
-        ]
-    },
-    {
-        "Name": "React II",
-        "Effect": [
-            "R-DEF",
-            20
-        ]
-    },
-    {
-        "Name": "React III",
-        "Effect": [
-            "R-DEF",
-            30
-        ]
-    },
-    {
-        "Name": "React IV",
-        "Effect": [
-            "R-DEF",
-            35
-        ]
-    },
-    {
-        "Name": "React V",
-        "Effect": [
-            "R-DEF",
-            40
-        ]
-    },
-    {
-        "Name": "Mind I",
-        "Effect": [
-            "T-DEF",
-            10
-        ]
-    },
-    {
-        "Name": "Mind II",
-        "Effect": [
-            "T-DEF",
-            20
-        ]
-    },
-    {
-        "Name": "Mind III",
-        "Effect": [
-            "T-DEF",
-            30
-        ]
-    },
-    {
-        "Name": "Mind IV",
-        "Effect": [
-            "T-DEF",
-            35
-        ]
-    },
-    {
-        "Name": "Mind V",
-        "Effect": [
-            "T-DEF",
-            40
-        ]
-    },
-    {
-        "Name": "Ability I",
-        "Effect": [
-            "All Stats",
-            5
-        ]
-    },
-    {
-        "Name": "Ability II",
-        "Effect": [
-            "All Stats",
-            10
-        ]
-    },
-    {
-        "Name": "Ability III",
-        "Effect": [
-            "All Stats",
-            15
-        ]
-    },
-    {
-        "Name": "Ability IV",
-        "Effect": [
-            "All Stats",
-            20
-        ]
-    },
-    {
-        "Name": "Ability V",
-        "Effect": [
-            "All Stats",
-            30
-        ]
-    },
-    {
-        "Name": "Returner I",
-        "Effect": [
-            "PP",
-            1,
-            "All Stats",
-            3
-        ]
-    },
-    {
-        "Name": "Returner II",
-        "Effect": [
-            "PP",
-            2,
-            "All Stats",
-            5
-        ]
-    },
-    {
-        "Name": "Returner III",
-        "Effect": [
-            "PP",
-            3,
-            "All Stats",
-            10
-        ]
-    },
-    {
-        "Name": "Returner IV",
-        "Effect": [
-            "PP",
-            4,
-            "All Stats",
-            15
-        ]
-    },
-    {
-        "Name": "Returner V",
-        "Effect": [
-            "PP",
-            5,
-            "All Stats",
-            30
-        ]
-    },
-    {
-        "Name": "Crack I",
-        "Effect": [
+        "Name (JP)": "スタミナⅠ",
+        "Name (English)": "Stamina I",
+        "Name (Global)": "Stamina I",
+        "Effect (JP)": [
             "HP",
-            5,
-            "PP",
-            1,
-            "ATK",
-            3,
-            "DEF",
-            5
+            20
+        ],
+        "Effect (English)": [
+            "HP",
+            20
+        ],
+        "Effect (Global)": [
+            "HP",
+            20
         ]
     },
     {
-        "Name": "Crack II",
-        "Effect": [
+        "Name (JP)": "スタミナⅡ",
+        "Name (English)": "Stamina II",
+        "Name (Global)": "Stamina II",
+        "Effect (JP)": [
             "HP",
-            10,
-            "PP",
-            1,
-            "ATK",
-            5,
-            "DEF",
-            10
+            40
+        ],
+        "Effect (English)": [
+            "HP",
+            40
+        ],
+        "Effect (Global)": [
+            "HP",
+            40
         ]
     },
     {
-        "Name": "Crack III",
-        "Effect": [
+        "Name (JP)": "スタミナⅢ",
+        "Name (English)": "Stamina III",
+        "Name (Global)": "Stamina III",
+        "Effect (JP)": [
             "HP",
-            15,
-            "PP",
-            1,
-            "ATK",
-            10,
-            "DEF",
-            15
-        ]
-    },
-    {
-        "Name": "Crack IV",
-        "Effect": [
-            "HP",
-            30,
-            "PP",
-            2,
-            "ATK",
-            15,
-            "DEF",
-            30
-        ]
-    },
-    {
-        "Name": "Crack V",
-        "Effect": [
-            "HP",
-            50,
-            "PP",
-            2,
-            "ATK",
-            30,
-            "DEF",
             50
-        ]
-    },
-    {
-        "Name": "Stamina I",
-        "Effect": [
+        ],
+        "Effect (English)": [
             "HP",
-            20
-        ]
-    },
-    {
-        "Name": "Stamina II",
-        "Effect": [
-            "HP",
-            40
-        ]
-    },
-    {
-        "Name": "Stamina III",
-        "Effect": [
+            50
+        ],
+        "Effect (Global)": [
             "HP",
             50
         ]
     },
     {
-        "Name": "Stamina IV",
-        "Effect": [
+        "Name (JP)": "スタミナⅣ",
+        "Name (English)": "Stamina IV",
+        "Name (Global)": "Stamina IV",
+        "Effect (JP)": [
+            "HP",
+            60
+        ],
+        "Effect (English)": [
+            "HP",
+            60
+        ],
+        "Effect (Global)": [
             "HP",
             60
         ]
     },
     {
-        "Name": "Stamina V",
-        "Effect": [
+        "Name (JP)": "スタミナⅤ",
+        "Name (English)": "Stamina V",
+        "Name (Global)": "Stamina V",
+        "Effect (JP)": [
+            "HP",
+            70
+        ],
+        "Effect (English)": [
+            "HP",
+            70
+        ],
+        "Effect (Global)": [
             "HP",
             70
         ]
     },
     {
-        "Name": "Stamina VI",
-        "Effect": [
+        "Name (JP)": "スタミナⅥ",
+        "Name (English)": "Stamina VI",
+        "Name (Global)": "Stamina VI",
+        "Effect (JP)": [
+            "HP",
+            80
+        ],
+        "Effect (English)": [
+            "HP",
+            80
+        ],
+        "Effect (Global)": [
             "HP",
             80
         ]
     },
     {
-        "Name": "Lesser Stamina I",
-        "Effect": [
+        "Name (JP)": "レッサー・スタミナⅠ",
+        "Name (English)": "Lesser Stamina I",
+        "Name (Global)": "Lesser Stamina I",
+        "Effect (JP)": [
+            "HP",
+            15
+        ],
+        "Effect (English)": [
+            "HP",
+            15
+        ],
+        "Effect (Global)": [
             "HP",
             15
         ]
     },
     {
-        "Name": "Lesser Stamina II",
-        "Effect": [
+        "Name (JP)": "レッサー・スタミナⅡ",
+        "Name (English)": "Lesser Stamina II",
+        "Name (Global)": "Lesser Stamina II",
+        "Effect (JP)": [
+            "HP",
+            35
+        ],
+        "Effect (English)": [
+            "HP",
+            35
+        ],
+        "Effect (Global)": [
             "HP",
             35
         ]
     },
     {
-        "Name": "Lesser Stamina III",
-        "Effect": [
+        "Name (JP)": "レッサー・スタミナⅢ",
+        "Name (English)": "Lesser Stamina III",
+        "Name (Global)": "Lesser Stamina III",
+        "Effect (JP)": [
+            "HP",
+            45
+        ],
+        "Effect (English)": [
+            "HP",
+            45
+        ],
+        "Effect (Global)": [
             "HP",
             45
         ]
     },
     {
-        "Name": "Lesser Stamina IV",
-        "Effect": [
+        "Name (JP)": "レッサー・スタミナⅣ",
+        "Name (English)": "Lesser Stamina IV",
+        "Name (Global)": "Lesser Stamina IV",
+        "Effect (JP)": [
+            "HP",
+            55
+        ],
+        "Effect (English)": [
+            "HP",
+            55
+        ],
+        "Effect (Global)": [
             "HP",
             55
         ]
     },
     {
-        "Name": "Lesser Stamina V",
-        "Effect": [
+        "Name (JP)": "レッサー・スタミナⅤ",
+        "Name (English)": "Lesser Stamina V",
+        "Name (Global)": "Lesser Stamina V",
+        "Effect (JP)": [
+            "HP",
+            65
+        ],
+        "Effect (English)": [
+            "HP",
+            65
+        ],
+        "Effect (Global)": [
             "HP",
             65
         ]
-    },
-    {
-        "Name": "Spirita I",
-        "Effect": [
+    },{
+        "Name (JP)": "スピリタⅠ",
+        "Name (English)": "Spirita I",
+        "Name (Global)": "Spirit I",
+        "Effect (JP)": [
+            "PP",
+            2
+        ],
+        "Effect (English)": [
+            "PP",
+            2
+        ],
+        "Effect (Global)": [
             "PP",
             2
         ]
     },
     {
-        "Name": "Spirita II",
-        "Effect": [
+        "Name (JP)": "スピリタⅡ",
+        "Name (English)": "Spirita II",
+        "Name (Global)": "Spirit II",
+        "Effect (JP)": [
+            "PP",
+            3
+        ],
+        "Effect (English)": [
+            "PP",
+            3
+        ],
+        "Effect (Global)": [
             "PP",
             3
         ]
     },
     {
-        "Name": "Spirita III",
-        "Effect": [
+        "Name (JP)": "スピリタⅢ",
+        "Name (English)": "Spirita III",
+        "Name (Global)": "Spirit III",
+        "Effect (JP)": [
+            "PP",
+            4
+        ],
+        "Effect (English)": [
+            "PP",
+            4
+        ],
+        "Effect (Global)": [
             "PP",
             4
         ]
     },
     {
-        "Name": "Spirita IV",
-        "Effect": [
+        "Name (JP)": "スピリタⅣ",
+        "Name (English)": "Spirita IV",
+        "Name (Global)": "Spirit IV",
+        "Effect (JP)": [
+            "PP",
+            5
+        ],
+        "Effect (English)": [
+            "PP",
+            5
+        ],
+        "Effect (Global)": [
             "PP",
             5
         ]
     },
     {
-        "Name": "Spirita V",
-        "Effect": [
+        "Name (JP)": "スピリタⅤ",
+        "Name (English)": "Spirita V",
+        "Name (Global)": "Spirit V",
+        "Effect (JP)": [
+            "PP",
+            6
+        ],
+        "Effect (English)": [
+            "PP",
+            6
+        ],
+        "Effect (Global)": [
             "PP",
             6
         ]
     },
     {
-        "Name": "Spirita VI",
-        "Effect": [
+        "Name (JP)": "スピリタⅥ",
+        "Name (English)": "Spirita VI",
+        "Name (Global)": "Spirit VI",
+        "Effect (JP)": [
+            "PP",
+            7
+        ],
+        "Effect (English)": [
+            "PP",
+            7
+        ],
+        "Effect (Global)": [
             "PP",
             7
         ]
     },
     {
-        "Name": "Lesser Spirita I",
-        "Effect": [
+        "Name (JP)": "レッサー・スピリタⅠ",
+        "Name (English)": "Lesser Spirita I",
+        "Name (Global)": "Lesser Spirit I",
+        "Effect (JP)": [
+            "PP",
+            1
+        ],
+        "Effect (English)": [
+            "PP",
+            1
+        ],
+        "Effect (Global)": [
             "PP",
             1
         ]
     },
     {
-        "Name": "Lesser Spirita II",
-        "Effect": [
+        "Name (JP)": "レッサー・スピリタⅡ",
+        "Name (English)": "Lesser Spirita II",
+        "Name (Global)": "Lesser Spirit II",
+        "Effect (JP)": [
+            "PP",
+            2
+        ],
+        "Effect (English)": [
+            "PP",
+            2
+        ],
+        "Effect (Global)": [
             "PP",
             2
         ]
     },
     {
-        "Name": "Lesser Spirita III",
-        "Effect": [
+        "Name (JP)": "レッサー・スピリタⅢ",
+        "Name (English)": "Lesser Spirita III",
+        "Name (Global)": "Lesser Spirit III",
+        "Effect (JP)": [
+            "PP",
+            3
+        ],
+        "Effect (English)": [
+            "PP",
+            3
+        ],
+        "Effect (Global)": [
             "PP",
             3
         ]
     },
     {
-        "Name": "Lesser Spirita IV",
-        "Effect": [
+        "Name (JP)": "レッサー・スピリタⅣ",
+        "Name (English)": "Lesser Spirita IV",
+        "Name (Global)": "Lesser Spirit IV",
+        "Effect (JP)": [
+            "PP",
+            4
+        ],
+        "Effect (English)": [
+            "PP",
+            4
+        ],
+        "Effect (Global)": [
             "PP",
             4
         ]
     },
     {
-        "Name": "Lesser Spirita V",
-        "Effect": [
+        "Name (JP)": "レッサー・スピリタⅤ",
+        "Name (English)": "Lesser Spirita V",
+        "Name (Global)": "Lesser Spirit V",
+        "Effect (JP)": [
+            "PP",
+            5
+        ],
+        "Effect (English)": [
+            "PP",
+            5
+        ],
+        "Effect (Global)": [
             "PP",
             5
         ]
     },
     {
-        "Name": "Power Boost",
-        "Effect": [
+        "Name (JP)": "パワーⅠ",
+        "Name (English)": "Power I",
+        "Name (Global)": "Might I",
+        "Effect (JP)": [
+            "打撃力",
+            10
+        ],
+        "Effect (English)": [
             "S-ATK",
-            25
+            10
+        ],
+        "Effect (Global)": [
+            "MEL Pwr",
+            10
         ]
     },
     {
-        "Name": "Shoot Boost",
-        "Effect": [
-            "R-ATK",
-            25
+        "Name (JP)": "パワーⅡ",
+        "Name (English)": "Power II",
+        "Name (Global)": "Might II",
+        "Effect (JP)": [
+            "打撃力",
+            20
+        ],
+        "Effect (English)": [
+            "S-ATK",
+            20
+        ],
+        "Effect (Global)": [
+            "MEL Pwr",
+            20
         ]
     },
     {
-        "Name": "Technique Boost",
-        "Effect": [
-            "T-ATK",
-            25
+        "Name (JP)": "パワーⅢ",
+        "Name (English)": "Power III",
+        "Name (Global)": "Might III",
+        "Effect (JP)": [
+            "打撃力",
+            30
+        ],
+        "Effect (English)": [
+            "S-ATK",
+            30
+        ],
+        "Effect (Global)": [
+            "MEL Pwr",
+            30
         ]
     },
     {
-        "Name": "Stamina Boost",
-        "Effect": [
-            "HP",
+        "Name (JP)": "パワーⅣ",
+        "Name (English)": "Power IV",
+        "Name (Global)": "Might IV",
+        "Effect (JP)": [
+            "打撃力",
+            35
+        ],
+        "Effect (English)": [
+            "S-ATK",
+            35
+        ],
+        "Effect (Global)": [
+            "MEL Pwr",
+            35
+        ]
+    },
+    {
+        "Name (JP)": "パワーⅤ",
+        "Name (English)": "Power V",
+        "Name (Global)": "Might V",
+        "Effect (JP)": [
+            "打撃力",
+            40
+        ],
+        "Effect (English)": [
+            "S-ATK",
+            40
+        ],
+        "Effect (Global)": [
+            "MEL Pwr",
+            40
+        ]
+    },
+    {
+        "Name (JP)": "パワーⅥ",
+        "Name (English)": "Power VI",
+        "Name (Global)": "Might VI",
+        "Effect (JP)": [
+            "打撃力",
+            45
+        ],
+        "Effect (English)": [
+            "S-ATK",
+            45
+        ],
+        "Effect (Global)": [
+            "MEL Pwr",
             45
         ]
     },
     {
-        "Name": "Spirita Boost",
-        "Effect": [
-            "PP",
+        "Name (JP)": "レッサー・パワーⅠ",
+        "Name (English)": "Lesser Power I",
+        "Name (Global)": "Lesser Might I",
+        "Effect (JP)": [
+            "打撃力",
+            5
+        ],
+        "Effect (English)": [
+            "S-ATK",
+            5
+        ],
+        "Effect (Global)": [
+            "MEL Pwr",
             5
         ]
     },
     {
-        "Name": "Noble Power",
-        "Effect": [
-            "PP",
-            3,
+        "Name (JP)": "レッサー・パワーⅡ",
+        "Name (English)": "Lesser Power II",
+        "Name (Global)": "Lesser Might II",
+        "Effect (JP)": [
+            "打撃力",
+            15
+        ],
+        "Effect (English)": [
+            "S-ATK",
+            15
+        ],
+        "Effect (Global)": [
+            "MEL Pwr",
+            15
+        ]
+    },
+    {
+        "Name (JP)": "レッサー・パワーⅢ",
+        "Name (English)": "Lesser Power III",
+        "Name (Global)": "Lesser Might III",
+        "Effect (JP)": [
+            "打撃力",
+            25
+        ],
+        "Effect (English)": [
+            "S-ATK",
+            25
+        ],
+        "Effect (Global)": [
+            "MEL Pwr",
+            25
+        ]
+    },
+    {
+        "Name (JP)": "レッサー・パワーⅣ",
+        "Name (English)": "Lesser Power IV",
+        "Name (Global)": "Lesser Might IV",
+        "Effect (JP)": [
+            "打撃力",
+            30
+        ],
+        "Effect (English)": [
             "S-ATK",
             30
+        ],
+        "Effect (Global)": [
+            "MEL Pwr",
+            30
         ]
     },
     {
-        "Name": "Noble Shoot",
-        "Effect": [
-            "PP",
-            3,
+        "Name (JP)": "レッサー・パワーⅤ",
+        "Name (English)": "Lesser Power V",
+        "Name (Global)": "Lesser Might V",
+        "Effect (JP)": [
+            "打撃力",
+            35
+        ],
+        "Effect (English)": [
+            "S-ATK",
+            35
+        ],
+        "Effect (Global)": [
+            "MEL Pwr",
+            35
+        ]
+    },
+    {
+        "Name (JP)": "シュートⅠ",
+        "Name (English)": "Shoot I",
+        "Name (Global)": "Precision I",
+        "Effect (JP)": [
+            "射撃力",
+            10
+        ],
+        "Effect (English)": [
+            "R-ATK",
+            10
+        ],
+        "Effect (Global)": [
+            "RNG Pwr",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "シュートⅡ",
+        "Name (English)": "Shoot II",
+        "Name (Global)": "Precision II",
+        "Effect (JP)": [
+            "射撃力",
+            20
+        ],
+        "Effect (English)": [
+            "R-ATK",
+            20
+        ],
+        "Effect (Global)": [
+            "RNG Pwr",
+            20
+        ]
+    },
+    {
+        "Name (JP)": "シュートⅢ",
+        "Name (English)": "Shoot III",
+        "Name (Global)": "Precision III",
+        "Effect (JP)": [
+            "射撃力",
+            30
+        ],
+        "Effect (English)": [
             "R-ATK",
             30
-        ]
-    },
-    {
-        "Name": "Noble Technique",
-        "Effect": [
-            "PP",
-            3,
-            "T-ATK",
+        ],
+        "Effect (Global)": [
+            "RNG Pwr",
             30
         ]
     },
     {
-        "Name": "Noble Stamina",
-        "Effect": [
-            "HP",
-            50,
-            "PP",
+        "Name (JP)": "シュートⅣ",
+        "Name (English)": "Shoot IV",
+        "Name (Global)": "Precision IV",
+        "Effect (JP)": [
+            "射撃力",
+            35
+        ],
+        "Effect (English)": [
+            "R-ATK",
+            35
+        ],
+        "Effect (Global)": [
+            "RNG Pwr",
+            35
+        ]
+    },
+    {
+        "Name (JP)": "シュートⅤ",
+        "Name (English)": "Shoot V",
+        "Name (Global)": "Precision V",
+        "Effect (JP)": [
+            "射撃力",
+            40
+        ],
+        "Effect (English)": [
+            "R-ATK",
+            40
+        ],
+        "Effect (Global)": [
+            "RNG Pwr",
+            40
+        ]
+    },
+    {
+        "Name (JP)": "シュートⅥ",
+        "Name (English)": "Shoot VI",
+        "Name (Global)": "Precision VI",
+        "Effect (JP)": [
+            "射撃力",
+            45
+        ],
+        "Effect (English)": [
+            "R-ATK",
+            45
+        ],
+        "Effect (Global)": [
+            "RNG Pwr",
+            45
+        ]
+    },
+    {
+        "Name (JP)": "レッサー・シュートⅠ",
+        "Name (English)": "Lesser Shoot I",
+        "Name (Global)": "Lesser Precision I",
+        "Effect (JP)": [
+            "射撃力",
+            5
+        ],
+        "Effect (English)": [
+            "R-ATK",
+            5
+        ],
+        "Effect (Global)": [
+            "RNG Pwr",
+            5
+        ]
+    },
+    {
+        "Name (JP)": "レッサー・シュートⅡ",
+        "Name (English)": "Lesser Shoot II",
+        "Name (Global)": "Lesser Precision II",
+        "Effect (JP)": [
+            "射撃力",
+            15
+        ],
+        "Effect (English)": [
+            "R-ATK",
+            15
+        ],
+        "Effect (Global)": [
+            "RNG Pwr",
+            15
+        ]
+    },
+    {
+        "Name (JP)": "レッサー・シュートⅢ",
+        "Name (English)": "Lesser Shoot III",
+        "Name (Global)": "Lesser Precision III",
+        "Effect (JP)": [
+            "射撃力",
+            25
+        ],
+        "Effect (English)": [
+            "R-ATK",
+            25
+        ],
+        "Effect (Global)": [
+            "RNG Pwr",
+            25
+        ]
+    },
+    {
+        "Name (JP)": "レッサー・シュートⅣ",
+        "Name (English)": "Lesser Shoot IV",
+        "Name (Global)": "Lesser Precision IV",
+        "Effect (JP)": [
+            "射撃力",
+            30
+        ],
+        "Effect (English)": [
+            "R-ATK",
+            30
+        ],
+        "Effect (Global)": [
+            "RNG Pwr",
+            30
+        ]
+    },
+    {
+        "Name (JP)": "レッサー・シュートⅤ",
+        "Name (English)": "Lesser Shoot V",
+        "Name (Global)": "Lesser Precision V",
+        "Effect (JP)": [
+            "射撃力",
+            35
+        ],
+        "Effect (English)": [
+            "R-ATK",
+            35
+        ],
+        "Effect (Global)": [
+            "RNG Pwr",
+            35
+        ]
+    },
+    {
+        "Name (JP)": "テクニックⅠ",
+        "Name (English)": "Tech I",
+        "Name (Global)": "Casting I",
+        "Effect (JP)": [
+            "法撃力",
+            10
+        ],
+        "Effect (English)": [
+            "T-ATK",
+            10
+        ],
+        "Effect (Global)": [
+            "TEC Pwr",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "テクニックⅡ",
+        "Name (English)": "Tech II",
+        "Name (Global)": "Casting II",
+        "Effect (JP)": [
+            "法撃力",
+            20
+        ],
+        "Effect (English)": [
+            "T-ATK",
+            20
+        ],
+        "Effect (Global)": [
+            "TEC Pwr",
+            20
+        ]
+    },
+    {
+        "Name (JP)": "テクニックⅢ",
+        "Name (English)": "Tech III",
+        "Name (Global)": "Casting III",
+        "Effect (JP)": [
+            "法撃力",
+            30
+        ],
+        "Effect (English)": [
+            "T-ATK",
+            30
+        ],
+        "Effect (Global)": [
+            "TEC Pwr",
+            30
+        ]
+    },
+    {
+        "Name (JP)": "テクニックⅣ",
+        "Name (English)": "Tech IV",
+        "Name (Global)": "Casting IV",
+        "Effect (JP)": [
+            "法撃力",
+            35
+        ],
+        "Effect (English)": [
+            "T-ATK",
+            35
+        ],
+        "Effect (Global)": [
+            "TEC Pwr",
+            35
+        ]
+    },
+    {
+        "Name (JP)": "テクニックⅤ",
+        "Name (English)": "Tech V",
+        "Name (Global)": "Casting V",
+        "Effect (JP)": [
+            "法撃力",
+            40
+        ],
+        "Effect (English)": [
+            "T-ATK",
+            40
+        ],
+        "Effect (Global)": [
+            "TEC Pwr",
+            40
+        ]
+    },
+    {
+        "Name (JP)": "テクニックⅥ",
+        "Name (English)": "Tech VI",
+        "Name (Global)": "Casting VI",
+        "Effect (JP)": [
+            "法撃力",
+            45
+        ],
+        "Effect (English)": [
+            "T-ATK",
+            45
+        ],
+        "Effect (Global)": [
+            "TEC Pwr",
+            45
+        ]
+    },
+    {
+        "Name (JP)": "レッサー・テクニックⅠ",
+        "Name (English)": "Lesser Tech I",
+        "Name (Global)": "Lesser Casting I",
+        "Effect (JP)": [
+            "法撃力",
+            5
+        ],
+        "Effect (English)": [
+            "T-ATK",
+            5
+        ],
+        "Effect (Global)": [
+            "TEC Pwr",
+            5
+        ]
+    },
+    {
+        "Name (JP)": "レッサー・テクニックⅡ",
+        "Name (English)": "Lesser Tech II",
+        "Name (Global)": "Lesser Casting II",
+        "Effect (JP)": [
+            "法撃力",
+            15
+        ],
+        "Effect (English)": [
+            "T-ATK",
+            15
+        ],
+        "Effect (Global)": [
+            "TEC Pwr",
+            15
+        ]
+    },
+    {
+        "Name (JP)": "レッサー・テクニックⅢ",
+        "Name (English)": "Lesser Tech III",
+        "Name (Global)": "Lesser Casting III",
+        "Effect (JP)": [
+            "法撃力",
+            25
+        ],
+        "Effect (English)": [
+            "T-ATK",
+            25
+        ],
+        "Effect (Global)": [
+            "TEC Pwr",
+            25
+        ]
+    },
+    {
+        "Name (JP)": "レッサー・テクニックⅣ",
+        "Name (English)": "Lesser Tech IV",
+        "Name (Global)": "Lesser Casting IV",
+        "Effect (JP)": [
+            "法撃力",
+            30
+        ],
+        "Effect (English)": [
+            "T-ATK",
+            30
+        ],
+        "Effect (Global)": [
+            "TEC Pwr",
+            30
+        ]
+    },
+    {
+        "Name (JP)": "レッサー・テクニックⅤ",
+        "Name (English)": "Lesser Tech V",
+        "Name (Global)": "Lesser Casting V",
+        "Effect (JP)": [
+            "法撃力",
+            35
+        ],
+        "Effect (English)": [
+            "T-ATK",
+            35
+        ],
+        "Effect (Global)": [
+            "TEC Pwr",
+            35
+        ]
+    },
+    {
+        "Name (JP)": "アームⅠ",
+        "Name (English)": "Arm I",
+        "Name (Global)": "Deftness I",
+        "Effect (JP)": [
+            "技量",
+            10
+        ],
+        "Effect (English)": [
+            "DEX",
+            10
+        ],
+        "Effect (Global)": [
+            "DEX",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "アームⅡ",
+        "Name (English)": "Arm II",
+        "Name (Global)": "Deftness II",
+        "Effect (JP)": [
+            "技量",
+            20
+        ],
+        "Effect (English)": [
+            "DEX",
+            20
+        ],
+        "Effect (Global)": [
+            "DEX",
+            20
+        ]
+    },
+    {
+        "Name (JP)": "アームⅢ",
+        "Name (English)": "Arm III",
+        "Name (Global)": "Deftness III",
+        "Effect (JP)": [
+            "技量",
+            30
+        ],
+        "Effect (English)": [
+            "DEX",
+            30
+        ],
+        "Effect (Global)": [
+            "DEX",
+            30
+        ]
+    },
+    {
+        "Name (JP)": "アームⅣ",
+        "Name (English)": "Arm IV",
+        "Name (Global)": "Deftness IV",
+        "Effect (JP)": [
+            "技量",
+            35
+        ],
+        "Effect (English)": [
+            "DEX",
+            35
+        ],
+        "Effect (Global)": [
+            "DEX",
+            35
+        ]
+    },
+    {
+        "Name (JP)": "アームⅤ",
+        "Name (English)": "Arm V",
+        "Name (Global)": "Deftness V",
+        "Effect (JP)": [
+            "技量",
+            40
+        ],
+        "Effect (English)": [
+            "DEX",
+            40
+        ],
+        "Effect (Global)": [
+            "DEX",
+            40
+        ]
+    },
+    {
+        "Name (JP)": "ボディⅠ",
+        "Name (English)": "Body I",
+        "Name (Global)": "Toughness I",
+        "Effect (JP)": [
+            "打撃防御",
+            10
+        ],
+        "Effect (English)": [
+            "S-DEF",
+            10
+        ],
+        "Effect (Global)": [
+            "MEL Def",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "ボディⅡ",
+        "Name (English)": "Body II",
+        "Name (Global)": "Toughness II",
+        "Effect (JP)": [
+            "打撃防御",
+            20
+        ],
+        "Effect (English)": [
+            "S-DEF",
+            20
+        ],
+        "Effect (Global)": [
+            "MEL Def",
+            20
+        ]
+    },
+    {
+        "Name (JP)": "ボディⅢ",
+        "Name (English)": "Body III",
+        "Name (Global)": "Toughness III",
+        "Effect (JP)": [
+            "打撃防御",
+            30
+        ],
+        "Effect (English)": [
+            "S-DEF",
+            30
+        ],
+        "Effect (Global)": [
+            "MEL Def",
+            30
+        ]
+    },
+    {
+        "Name (JP)": "ボディⅣ",
+        "Name (English)": "Body IV",
+        "Name (Global)": "Toughness IV",
+        "Effect (JP)": [
+            "打撃防御",
+            35
+        ],
+        "Effect (English)": [
+            "S-DEF",
+            35
+        ],
+        "Effect (Global)": [
+            "MEL Def",
+            35
+        ]
+    },
+    {
+        "Name (JP)": "ボディⅤ",
+        "Name (English)": "Body V",
+        "Name (Global)": "Toughness V",
+        "Effect (JP)": [
+            "打撃防御",
+            40
+        ],
+        "Effect (English)": [
+            "S-DEF",
+            40
+        ],
+        "Effect (Global)": [
+            "MEL Def",
+            40
+        ]
+    },
+    {
+        "Name (JP)": "リアクトⅠ",
+        "Name (English)": "React I",
+        "Name (Global)": "Reflex I",
+        "Effect (JP)": [
+            "射撃防御",
+            10
+        ],
+        "Effect (English)": [
+            "R-DEF",
+            10
+        ],
+        "Effect (Global)": [
+            "RNG Def",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "リアクトⅡ",
+        "Name (English)": "React II",
+        "Name (Global)": "Reflex II",
+        "Effect (JP)": [
+            "射撃防御",
+            20
+        ],
+        "Effect (English)": [
+            "R-DEF",
+            20
+        ],
+        "Effect (Global)": [
+            "RNG Def",
+            20
+        ]
+    },
+    {
+        "Name (JP)": "リアクトⅢ",
+        "Name (English)": "React III",
+        "Name (Global)": "Reflex III",
+        "Effect (JP)": [
+            "射撃防御",
+            30
+        ],
+        "Effect (English)": [
+            "R-DEF",
+            30
+        ],
+        "Effect (Global)": [
+            "RNG Def",
+            30
+        ]
+    },
+    {
+        "Name (JP)": "リアクトⅣ",
+        "Name (English)": "React IV",
+        "Name (Global)": "Reflex IV",
+        "Effect (JP)": [
+            "射撃防御",
+            35
+        ],
+        "Effect (English)": [
+            "R-DEF",
+            35
+        ],
+        "Effect (Global)": [
+            "RNG Def",
+            35
+        ]
+    },
+    {
+        "Name (JP)": "リアクトⅤ",
+        "Name (English)": "React V",
+        "Name (Global)": "Reflex V",
+        "Effect (JP)": [
+            "射撃防御",
+            40
+        ],
+        "Effect (English)": [
+            "R-DEF",
+            40
+        ],
+        "Effect (Global)": [
+            "RNG Def",
+            40
+        ]
+    },
+    {
+        "Name (JP)": "マインドⅠ",
+        "Name (English)": "Mind I",
+        "Name (Global)": "Genius I",
+        "Effect (JP)": [
+            "法撃防御",
+            10
+        ],
+        "Effect (English)": [
+            "T-DEF",
+            10
+        ],
+        "Effect (Global)": [
+            "TEC Def",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "マインドⅡ",
+        "Name (English)": "Mind II",
+        "Name (Global)": "Genius II",
+        "Effect (JP)": [
+            "法撃防御",
+            20
+        ],
+        "Effect (English)": [
+            "T-DEF",
+            20
+        ],
+        "Effect (Global)": [
+            "TEC Def",
+            20
+        ]
+    },
+    {
+        "Name (JP)": "マインドⅢ",
+        "Name (English)": "Mind III",
+        "Name (Global)": "Genius III",
+        "Effect (JP)": [
+            "法撃防御",
+            30
+        ],
+        "Effect (English)": [
+            "T-DEF",
+            30
+        ],
+        "Effect (Global)": [
+            "TEC Def",
+            30
+        ]
+    },
+    {
+        "Name (JP)": "マインドⅣ",
+        "Name (English)": "Mind IV",
+        "Name (Global)": "Genius IV",
+        "Effect (JP)": [
+            "法撃防御",
+            35
+        ],
+        "Effect (English)": [
+            "T-DEF",
+            35
+        ],
+        "Effect (Global)": [
+            "TEC Def",
+            35
+        ]
+    },
+    {
+        "Name (JP)": "マインドⅤ",
+        "Name (English)": "Mind V",
+        "Name (Global)": "Genius V",
+        "Effect (JP)": [
+            "法撃防御",
+            40
+        ],
+        "Effect (English)": [
+            "T-DEF",
+            40
+        ],
+        "Effect (Global)": [
+            "TEC Def",
+            40
+        ]
+    },
+    {
+        "Name (JP)": "アビリティⅠ",
+        "Name (English)": "Ability I",
+        "Name (Global)": "Mastery I",
+        "Effect (JP)": [
+            "ALL",
+            5
+        ],
+        "Effect (English)": [
+            "All Stats",
+            5
+        ],
+        "Effect (Global)": [
+            "All Stats",
+            5
+        ]
+    },
+    {
+        "Name (JP)": "アビリティⅡ",
+        "Name (English)": "Ability II",
+        "Name (Global)": "Mastery II",
+        "Effect (JP)": [
+            "ALL",
+            10
+        ],
+        "Effect (English)": [
+            "All Stats",
+            10
+        ],
+        "Effect (Global)": [
+            "All Stats",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "アビリティⅢ",
+        "Name (English)": "Ability III",
+        "Name (Global)": "Mastery III",
+        "Effect (JP)": [
+            "ALL",
+            15
+        ],
+        "Effect (English)": [
+            "All Stats",
+            15
+        ],
+        "Effect (Global)": [
+            "All Stats",
+            15
+        ]
+    },
+    {
+        "Name (JP)": "アビリティⅣ",
+        "Name (English)": "Ability IV",
+        "Name (Global)": "Mastery IV",
+        "Effect (JP)": [
+            "ALL",
+            20
+        ],
+        "Effect (English)": [
+            "All Stats",
+            20
+        ],
+        "Effect (Global)": [
+            "All Stats",
+            20
+        ]
+    },
+    {
+        "Name (JP)": "アビリティⅤ",
+        "Name (English)": "Ability V",
+        "Name (Global)": "Mastery V",
+        "Effect (JP)": [
+            "ALL",
+            30
+        ],
+        "Effect (English)": [
+            "All Stats",
+            30
+        ],
+        "Effect (Global)": [
+            "All Stats",
+            30
+        ]
+    },
+    {
+        "Name (JP)": "ブロウレジストⅠ",
+        "Name (English)": "Blow Resist I",
+        "Name (Global)": "Impact Ward I",
+        "Effect (JP)": [
+            "打撃軽減",
+            3
+        ],
+        "Effect (English)": [
+            "Strike Resistance",
+            3
+        ],
+        "Effect (Global)": [
+            "MEL Resist",
             3
         ]
     },
     {
-        "Name": "Tenora Boost",
-        "Effect": [
-            "S-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "GRM Boost",
-        "Effect": [
-            "R-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "Yohmei Boost",
-        "Effect": [
-            "T-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "Elegant Power",
-        "Effect": [
-            "PP",
-            4,
-            "S-ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Elegant Shoot",
-        "Effect": [
-            "PP",
-            4,
-            "R-ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Elegant Technique",
-        "Effect": [
-            "PP",
-            4,
-            "T-ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Elegant Stamina",
-        "Effect": [
-            "HP",
-            70,
-            "PP",
+        "Name (JP)": "ブロウレジストⅡ",
+        "Name (English)": "Blow Resist II",
+        "Name (Global)": "Impact Ward II",
+        "Effect (JP)": [
+            "打撃軽減",
+            4
+        ],
+        "Effect (English)": [
+            "Strike Resistance",
+            4
+        ],
+        "Effect (Global)": [
+            "MEL Resist",
             4
         ]
     },
     {
-        "Name": "Grace Power",
-        "Effect": [
-            "PP",
-            5,
-            "S-ATK",
-            50
-        ]
-    },
-    {
-        "Name": "Grace Shoot",
-        "Effect": [
-            "PP",
-            5,
-            "R-ATK",
-            50
-        ]
-    },
-    {
-        "Name": "Grace Technique",
-        "Effect": [
-            "PP",
-            5,
-            "T-ATK",
-            50
-        ]
-    },
-    {
-        "Name": "Grace Stamina",
-        "Effect": [
-            "HP",
-            80,
-            "PP",
+        "Name (JP)": "ブロウレジストⅢ",
+        "Name (English)": "Blow Resist III",
+        "Name (Global)": "Impact Ward III",
+        "Effect (JP)": [
+            "打撃軽減",
+            5
+        ],
+        "Effect (English)": [
+            "Strike Resistance",
+            5
+        ],
+        "Effect (Global)": [
+            "MEL Resist",
             5
         ]
     },
     {
-        "Name": "Spirita Alpha",
-        "Effect": [
-            "PP",
-            3,
-            "DEX",
-            30
-        ]
-    },
-    {
-        "Name": "Grand Power",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            5,
-            "S-ATK",
-            60
-        ]
-    },
-    {
-        "Name": "Grand Shoot",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            5,
-            "R-ATK",
-            60
-        ]
-    },
-    {
-        "Name": "Grand Technique",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            5,
-            "T-ATK",
-            60
-        ]
-    },
-    {
-        "Name": "Grand Stamina",
-        "Effect": [
-            "HP",
-            100,
-            "PP",
+        "Name (JP)": "ブロウレジストⅣ",
+        "Name (English)": "Blow Resist IV",
+        "Name (Global)": "Impact Ward IV",
+        "Effect (JP)": [
+            "打撃軽減",
+            6
+        ],
+        "Effect (English)": [
+            "Strike Resistance",
+            6
+        ],
+        "Effect (Global)": [
+            "MEL Resist",
             6
         ]
     },
     {
-        "Name": "Grand Spirita",
-        "Effect": [
-            "PP",
-            15
+        "Name (JP)": "ブロウレジストⅤ",
+        "Name (English)": "Blow Resist V",
+        "Name (Global)": "Impact Ward V",
+        "Effect (JP)": [
+            "打撃軽減",
+            7
+        ],
+        "Effect (English)": [
+            "Strike Resistance",
+            7
+        ],
+        "Effect (Global)": [
+            "MEL Resist",
+            7
         ]
     },
     {
-        "Name": "Mutation I",
-        "Effect": [
-            "HP",
-            10,
-            "S-ATK",
-            10,
-            "R-ATK",
-            10,
-            "T-ATK",
-            10
+        "Name (JP)": "ショットレジストⅠ",
+        "Name (English)": "Shot Resist I",
+        "Name (Global)": "Projectile Ward I",
+        "Effect (JP)": [
+            "射撃軽減",
+            3
+        ],
+        "Effect (English)": [
+            "Ranged Resistance",
+            3
+        ],
+        "Effect (Global)": [
+            "RNG Resist",
+            3
         ]
     },
     {
-        "Name": "Mutation II",
-        "Effect": [
-            "HP",
-            15,
-            "S-ATK",
-            15,
-            "R-ATK",
-            15,
-            "T-ATK",
-            15
+        "Name (JP)": "ショットレジストⅡ",
+        "Name (English)": "Shot Resist II",
+        "Name (Global)": "Projectile Ward II",
+        "Effect (JP)": [
+            "射撃軽減",
+            4
+        ],
+        "Effect (English)": [
+            "Ranged Resistance",
+            4
+        ],
+        "Effect (Global)": [
+            "RNG Resist",
+            4
         ]
     },
     {
-        "Name": "Stigma",
-        "Effect": [
-            "PP",
+        "Name (JP)": "ショットレジストⅢ",
+        "Name (English)": "Shot Resist III",
+        "Name (Global)": "Projectile Ward III",
+        "Effect (JP)": [
+            "射撃軽減",
+            5
+        ],
+        "Effect (English)": [
+            "Ranged Resistance",
+            5
+        ],
+        "Effect (Global)": [
+            "RNG Resist",
+            5
+        ]
+    },
+    {
+        "Name (JP)": "ショットレジストⅣ",
+        "Name (English)": "Shot Resist IV",
+        "Name (Global)": "Projectile Ward IV",
+        "Effect (JP)": [
+            "射撃軽減",
+            6
+        ],
+        "Effect (English)": [
+            "Ranged Resistance",
+            6
+        ],
+        "Effect (Global)": [
+            "RNG Resist",
+            6
+        ]
+    },
+    {
+        "Name (JP)": "ショットレジストⅤ",
+        "Name (English)": "Shot Resist V",
+        "Name (Global)": "Projectile Ward V",
+        "Effect (JP)": [
+            "射撃軽減",
+            7
+        ],
+        "Effect (English)": [
+            "Ranged Resistance",
+            7
+        ],
+        "Effect (Global)": [
+            "RNG Resist",
+            7
+        ]
+    },
+    {
+        "Name (JP)": "マインドレジストⅠ",
+        "Name (English)": "Mind Resist I",
+        "Name (Global)": "Projectile Ward I",
+        "Effect (JP)": [
+            "法撃軽減",
+            3
+        ],
+        "Effect (English)": [
+            "Tech Resistance",
+            3
+        ],
+        "Effect (Global)": [
+            "TEC Resist",
+            3
+        ]
+    },
+    {
+        "Name (JP)": "マインドレジストⅡ",
+        "Name (English)": "Mind Resist II",
+        "Name (Global)": "Projectile Ward II",
+        "Effect (JP)": [
+            "法撃軽減",
+            4
+        ],
+        "Effect (English)": [
+            "Tech Resistance",
+            4
+        ],
+        "Effect (Global)": [
+            "TEC Resist",
+            4
+        ]
+    },
+    {
+        "Name (JP)": "マインドレジストⅢ",
+        "Name (English)": "Mind Resist III",
+        "Name (Global)": "Projectile Ward III",
+        "Effect (JP)": [
+            "法撃軽減",
+            5
+        ],
+        "Effect (English)": [
+            "Tech Resistance",
+            5
+        ],
+        "Effect (Global)": [
+            "TEC Resist",
+            5
+        ]
+    },
+    {
+        "Name (JP)": "マインドレジストⅣ",
+        "Name (English)": "Mind Resist IV",
+        "Name (Global)": "Projectile Ward IV",
+        "Effect (JP)": [
+            "法撃軽減",
+            6
+        ],
+        "Effect (English)": [
+            "Tech Resistance",
+            6
+        ],
+        "Effect (Global)": [
+            "TEC Resist",
+            6
+        ]
+    },
+    {
+        "Name (JP)": "マインドレジストⅤ",
+        "Name (English)": "Mind Resist V",
+        "Name (Global)": "Projectile Ward V",
+        "Effect (JP)": [
+            "法撃軽減",
+            7
+        ],
+        "Effect (English)": [
+            "Tech Resistance",
+            7
+        ],
+        "Effect (Global)": [
+            "TEC Resist",
+            7
+        ]
+    },
+    {
+        "Name (JP)": "フレイムレジストⅠ",
+        "Name (English)": "Flame Resist I",
+        "Name (Global)": "Wildfire Ward I",
+        "Effect (JP)": [
+            "炎耐性",
+            3
+        ],
+        "Effect (English)": [
+            "Fire Resistance",
+            3
+        ],
+        "Effect (Global)": [
+            "Fire Resist",
+            3
+        ]
+    },
+    {
+        "Name (JP)": "フレイムレジストⅡ",
+        "Name (English)": "Flame Resist II",
+        "Name (Global)": "Wildfire Ward II",
+        "Effect (JP)": [
+            "炎耐性",
+            4
+        ],
+        "Effect (English)": [
+            "Fire Resistance",
+            4
+        ],
+        "Effect (Global)": [
+            "Fire Resist",
+            4
+        ]
+    },
+    {
+        "Name (JP)": "フレイムレジストⅢ",
+        "Name (English)": "Flame Resist III",
+        "Name (Global)": "Wildfire Ward III",
+        "Effect (JP)": [
+            "炎耐性",
+            5
+        ],
+        "Effect (English)": [
+            "Fire Resistance",
+            5
+        ],
+        "Effect (Global)": [
+            "Fire Resist",
+            5
+        ]
+    },
+    {
+        "Name (JP)": "フレイムレジストⅣ",
+        "Name (English)": "Flame Resist IV",
+        "Name (Global)": "Wildfire Ward IV",
+        "Effect (JP)": [
+            "炎耐性",
+            6
+        ],
+        "Effect (English)": [
+            "Fire Resistance",
+            6
+        ],
+        "Effect (Global)": [
+            "Fire Resist",
+            6
+        ]
+    },
+    {
+        "Name (JP)": "フレイムレジストⅤ",
+        "Name (English)": "Flame Resist V",
+        "Name (Global)": "Wildfire Ward V",
+        "Effect (JP)": [
+            "炎耐性",
+            7
+        ],
+        "Effect (English)": [
+            "Fire Resistance",
+            7
+        ],
+        "Effect (Global)": [
+            "Fire Resist",
+            7
+        ]
+    },
+    {
+        "Name (JP)": "アイスレジストⅠ",
+        "Name (English)": "Ice Resist I",
+        "Name (Global)": "Frost Ward I",
+        "Effect (JP)": [
+            "氷耐性",
+            3
+        ],
+        "Effect (English)": [
+            "Ice Resistance",
+            3
+        ],
+        "Effect (Global)": [
+            "Ice Resist",
+            3
+        ]
+    },
+    {
+        "Name (JP)": "アイスレジストⅡ",
+        "Name (English)": "Ice Resist II",
+        "Name (Global)": "Frost Ward II",
+        "Effect (JP)": [
+            "氷耐性",
+            4
+        ],
+        "Effect (English)": [
+            "Ice Resistance",
+            4
+        ],
+        "Effect (Global)": [
+            "Ice Resist",
+            4
+        ]
+    },
+    {
+        "Name (JP)": "アイスレジストⅢ",
+        "Name (English)": "Ice Resist III",
+        "Name (Global)": "Frost Ward III",
+        "Effect (JP)": [
+            "氷耐性",
+            5
+        ],
+        "Effect (English)": [
+            "Ice Resistance",
+            5
+        ],
+        "Effect (Global)": [
+            "Ice Resist",
+            5
+        ]
+    },
+    {
+        "Name (JP)": "アイスレジストⅣ",
+        "Name (English)": "Ice Resist IV",
+        "Name (Global)": "Frost Ward IV",
+        "Effect (JP)": [
+            "氷耐性",
+            6
+        ],
+        "Effect (English)": [
+            "Ice Resistance",
+            6
+        ],
+        "Effect (Global)": [
+            "Ice Resist",
+            6
+        ]
+    },
+    {
+        "Name (JP)": "アイスレジストⅤ",
+        "Name (English)": "Ice Resist V",
+        "Name (Global)": "Frost Ward V",
+        "Effect (JP)": [
+            "氷耐性",
+            7
+        ],
+        "Effect (English)": [
+            "Ice Resistance",
+            7
+        ],
+        "Effect (Global)": [
+            "Ice Resist",
+            7
+        ]
+    },
+    {
+        "Name (JP)": "ショックレジストⅠ",
+        "Name (English)": "Shock Resist I",
+        "Name (Global)": "Lightning Ward I",
+        "Effect (JP)": [
+            "雷耐性",
+            3
+        ],
+        "Effect (English)": [
+            "Lightning Resistance",
+            3
+        ],
+        "Effect (Global)": [
+            "Lightning Resist",
+            3
+        ]
+    },
+    {
+        "Name (JP)": "ショックレジストⅡ",
+        "Name (English)": "Shock Resist II",
+        "Name (Global)": "Lightning Ward II",
+        "Effect (JP)": [
+            "雷耐性",
+            4
+        ],
+        "Effect (English)": [
+            "Lightning Resistance",
+            4
+        ],
+        "Effect (Global)": [
+            "Lightning Resist",
+            4
+        ]
+    },
+    {
+        "Name (JP)": "ショックレジストⅢ",
+        "Name (English)": "Shock Resist III",
+        "Name (Global)": "Lightning Ward III",
+        "Effect (JP)": [
+            "雷耐性",
+            5
+        ],
+        "Effect (English)": [
+            "Lightning Resistance",
+            5
+        ],
+        "Effect (Global)": [
+            "Lightning Resist",
+            5
+        ]
+    },
+    {
+        "Name (JP)": "ショックレジストⅣ",
+        "Name (English)": "Shock Resist IV",
+        "Name (Global)": "Lightning Ward IV",
+        "Effect (JP)": [
+            "雷耐性",
+            6
+        ],
+        "Effect (English)": [
+            "Lightning Resistance",
+            6
+        ],
+        "Effect (Global)": [
+            "Lightning Resist",
+            6
+        ]
+    },
+    {
+        "Name (JP)": "ショックレジストⅤ",
+        "Name (English)": "Shock Resist V",
+        "Name (Global)": "Lightning Ward V",
+        "Effect (JP)": [
+            "雷耐性",
+            7
+        ],
+        "Effect (English)": [
+            "Lightning Resistance",
+            7
+        ],
+        "Effect (Global)": [
+            "Lightning Resist",
+            7
+        ]
+    },
+    {
+        "Name (JP)": "ウィンドレジストⅠ",
+        "Name (English)": "Wind Resist I",
+        "Name (Global)": "Gale Ward I",
+        "Effect (JP)": [
+            "風耐性",
+            3
+        ],
+        "Effect (English)": [
+            "Wind Resistance",
+            3
+        ],
+        "Effect (Global)": [
+            "Wind Resist",
+            3
+        ]
+    },
+    {
+        "Name (JP)": "ウィンドレジストⅡ",
+        "Name (English)": "Wind Resist II",
+        "Name (Global)": "Gale Ward II",
+        "Effect (JP)": [
+            "風耐性",
+            4
+        ],
+        "Effect (English)": [
+            "Wind Resistance",
+            4
+        ],
+        "Effect (Global)": [
+            "Wind Resist",
+            4
+        ]
+    },
+    {
+        "Name (JP)": "ウィンドレジストⅢ",
+        "Name (English)": "Wind Resist III",
+        "Name (Global)": "Gale Ward III",
+        "Effect (JP)": [
+            "風耐性",
+            5
+        ],
+        "Effect (English)": [
+            "Wind Resistance",
+            5
+        ],
+        "Effect (Global)": [
+            "Wind Resist",
+            5
+        ]
+    },
+    {
+        "Name (JP)": "ウィンドレジストⅣ",
+        "Name (English)": "Wind Resist IV",
+        "Name (Global)": "Gale Ward IV",
+        "Effect (JP)": [
+            "風耐性",
+            6
+        ],
+        "Effect (English)": [
+            "Wind Resistance",
+            6
+        ],
+        "Effect (Global)": [
+            "Wind Resist",
+            6
+        ]
+    },
+    {
+        "Name (JP)": "ウィンドレジストⅤ",
+        "Name (English)": "Wind Resist V",
+        "Name (Global)": "Gale Ward V",
+        "Effect (JP)": [
+            "風耐性",
+            7
+        ],
+        "Effect (English)": [
+            "Wind Resistance",
+            7
+        ],
+        "Effect (Global)": [
+            "Wind Resist",
+            7
+        ]
+    },
+    {
+        "Name (JP)": "ライトレジストⅠ",
+        "Name (English)": "Light Resist I",
+        "Name (Global)": "Radiant Ward I",
+        "Effect (JP)": [
+            "光耐性",
+            3
+        ],
+        "Effect (English)": [
+            "Light Resistance",
+            3
+        ],
+        "Effect (Global)": [
+            "Light Resist",
+            3
+        ]
+    },
+    {
+        "Name (JP)": "ライトレジストⅡ",
+        "Name (English)": "Light Resist II",
+        "Name (Global)": "Radiant Ward II",
+        "Effect (JP)": [
+            "光耐性",
+            4
+        ],
+        "Effect (English)": [
+            "Light Resistance",
+            4
+        ],
+        "Effect (Global)": [
+            "Light Resist",
+            4
+        ]
+    },
+    {
+        "Name (JP)": "ライトレジストⅢ",
+        "Name (English)": "Light Resist III",
+        "Name (Global)": "Radiant Ward III",
+        "Effect (JP)": [
+            "光耐性",
+            5
+        ],
+        "Effect (English)": [
+            "Light Resistance",
+            5
+        ],
+        "Effect (Global)": [
+            "Light Resist",
+            5
+        ]
+    },
+    {
+        "Name (JP)": "ライトレジストⅣ",
+        "Name (English)": "Light Resist IV",
+        "Name (Global)": "Radiant Ward IV",
+        "Effect (JP)": [
+            "光耐性",
+            6
+        ],
+        "Effect (English)": [
+            "Light Resistance",
+            6
+        ],
+        "Effect (Global)": [
+            "Light Resist",
+            6
+        ]
+    },
+    {
+        "Name (JP)": "ライトレジストⅤ",
+        "Name (English)": "Light Resist V",
+        "Name (Global)": "Radiant Ward V",
+        "Effect (JP)": [
+            "光耐性",
+            7
+        ],
+        "Effect (English)": [
+            "Light Resistance",
+            7
+        ],
+        "Effect (Global)": [
+            "Light Resist",
+            7
+        ]
+    },
+    {
+        "Name (JP)": "グルームレジストⅠ",
+        "Name (English)": "Gloom Resist I",
+        "Name (Global)": "Umbral Ward I",
+        "Effect (JP)": [
+            "闇耐性",
+            3
+        ],
+        "Effect (English)": [
+            "Dark Resistance",
+            3
+        ],
+        "Effect (Global)": [
+            "Dark Resist",
+            3
+        ]
+    },
+    {
+        "Name (JP)": "グルームレジストⅡ",
+        "Name (English)": "Gloom Resist II",
+        "Name (Global)": "Umbral Ward II",
+        "Effect (JP)": [
+            "闇耐性",
+            4
+        ],
+        "Effect (English)": [
+            "Dark Resistance",
+            4
+        ],
+        "Effect (Global)": [
+            "Dark Resist",
+            4
+        ]
+    },
+    {
+        "Name (JP)": "グルームレジストⅢ",
+        "Name (English)": "Gloom Resist III",
+        "Name (Global)": "Umbral Ward III",
+        "Effect (JP)": [
+            "闇耐性",
+            5
+        ],
+        "Effect (English)": [
+            "Dark Resistance",
+            5
+        ],
+        "Effect (Global)": [
+            "Dark Resist",
+            5
+        ]
+    },
+    {
+        "Name (JP)": "グルームレジストⅣ",
+        "Name (English)": "Gloom Resist IV",
+        "Name (Global)": "Umbral Ward IV",
+        "Effect (JP)": [
+            "闇耐性",
+            6
+        ],
+        "Effect (English)": [
+            "Dark Resistance",
+            6
+        ],
+        "Effect (Global)": [
+            "Dark Resist",
+            6
+        ]
+    },
+    {
+        "Name (JP)": "グルームレジストⅤ",
+        "Name (English)": "Gloom Resist V",
+        "Name (Global)": "Umbral Ward V",
+        "Effect (JP)": [
+            "闇耐性",
+            7
+        ],
+        "Effect (English)": [
+            "Dark Resistance",
+            7
+        ],
+        "Effect (Global)": [
+            "Dark Resist",
+            7
+        ]
+    },
+    {
+        "Name (JP)": "オールレジストⅠ",
+        "Name (English)": "All Resist I",
+        "Name (Global)": "Sovereign Ward I",
+        "Effect (JP)": [
+            "全耐性",
+            3,
+            "全軽減",
+            3
+        ],
+        "Effect (English)": [
+            "All Resistance",
+            3
+        ],
+        "Effect (Global)": [
+            "All Resist",
+            3
+        ]
+    },
+    {
+        "Name (JP)": "オールレジストⅡ",
+        "Name (English)": "All Resist II",
+        "Name (Global)": "Sovereign Ward II",
+        "Effect (JP)": [
+            "全耐性",
+            4,
+            "全軽減",
+            4
+        ],
+        "Effect (English)": [
+            "All Resistance",
+            4
+        ],
+        "Effect (Global)": [
+            "All Resist",
+            4
+        ]
+    },
+    {
+        "Name (JP)": "オールレジストⅢ",
+        "Name (English)": "All Resist III",
+        "Name (Global)": "Sovereign Ward III",
+        "Effect (JP)": [
+            "全耐性",
             5,
-            "DEX",
-            20
+            "全軽減",
+            5
+        ],
+        "Effect (English)": [
+            "All Resistance",
+            5
+        ],
+        "Effect (Global)": [
+            "All Resist",
+            5
         ]
     },
     {
-        "Name": "Vinculum",
-        "Effect": [
-            "ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Modulator",
-        "Effect": [
-            "ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Flict Arma",
-        "Effect": [
-            "PP",
-            3,
-            "S-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Flict Tiro",
-        "Effect": [
-            "PP",
-            3,
-            "R-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Flict Magia",
-        "Effect": [
-            "PP",
-            3,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Alter Arma",
-        "Effect": [
-            "HP",
-            30,
-            "S-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Alter Tiro",
-        "Effect": [
-            "HP",
-            30,
-            "R-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Alter Magia",
-        "Effect": [
-            "HP",
-            30,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Ligand Arma",
-        "Effect": [
-            "HP",
-            30,
-            "PP",
-            3,
-            "S-ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Ligand Tiro",
-        "Effect": [
-            "HP",
-            30,
-            "PP",
-            3,
-            "R-ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Ligand Magia",
-        "Effect": [
-            "HP",
-            30,
-            "PP",
-            3,
-            "T-ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Yamato Factor",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            1,
-            "S-ATK",
-            10,
-            "R-ATK",
-            20,
-            "T-ATK",
-            10
-        ]
-    },
-    {
-        "Name": "Mother Factor",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            1,
-            "S-ATK",
-            10,
-            "R-ATK",
-            10,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Deus Factor",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            1,
-            "S-ATK",
-            20,
-            "R-ATK",
-            10,
-            "T-ATK",
-            10
-        ]
-    },
-    {
-        "Name": "Ether Factor",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
+        "Name (JP)": "オールレジストⅣ",
+        "Name (English)": "All Resist IV",
+        "Name (Global)": "Sovereign Ward IV",
+        "Effect (JP)": [
+            "全耐性",
             6,
-            "All Stats",
-            30
-        ]
-    },
-    {
-        "Name": "Omega Reverie",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            1,
-            "ATK",
-            15
-        ]
-    },
-    {
-        "Name": "Elder Reverie",
-        "Effect": [
-            "PP",
-            -2,
-            "S-ATK",
-            40,
-            "R-ATK",
-            20,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Loser Reverie",
-        "Effect": [
-            "HP",
-            -20,
-            "S-ATK",
-            20,
-            "R-ATK",
-            20,
-            "T-ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Appregina Reverie",
-        "Effect": [
-            "HP",
-            -10,
-            "PP",
-            -1,
-            "S-ATK",
-            20,
-            "R-ATK",
-            40,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Double Reverie",
-        "Effect": [
-            "HP",
-            50,
-            "PP",
-            5,
-            "ATK",
-            -20
-        ]
-    },
-    {
-        "Name": "Persona Reverie",
-        "Effect": [
-            "ATK",
-            40,
-            "DEF",
-            -20
-        ]
-    },
-    {
-        "Name": "Mana Reverie",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            4,
-            "ATK",
-            50
-        ]
-    },
-    {
-        "Name": "Omega Memoria",
-        "Effect": [
-            "HP",
-            15,
-            "PP",
-            2,
-            "All Stats",
-            15
-        ]
-    },
-    {
-        "Name": "Ange Glare",
-        "Effect": [
-            "S-ATK",
-            30,
-            "S-DEF",
-            40,
-            "R-DEF",
-            20,
-            "T-DEF",
-            20
-        ]
-    },
-    {
-        "Name": "Veluge Glare",
-        "Effect": [
-            "R-ATK",
-            30,
-            "S-DEF",
-            20,
-            "R-DEF",
-            40,
-            "T-DEF",
-            20
-        ]
-    },
-    {
-        "Name": "Dominus Glare",
-        "Effect": [
-            "T-ATK",
-            30,
-            "S-DEF",
-            20,
-            "R-DEF",
-            20,
-            "T-DEF",
-            40
-        ]
-    },
-    {
-        "Name": "Fordruss Glare",
-        "Effect": [
-            "HP",
-            40,
-            "PP",
-            4,
-            "S-DEF",
-            35,
-            "R-DEF",
-            35,
-            "T-DEF",
-            35
-        ]
-    },
-    {
-        "Name": "Execour Glare",
-        "Effect": [
-            "ATK",
-            20,
-            "DEF",
-            50
-        ]
-    },
-    {
-        "Name": "Varuna Glare",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            2,
-            "S-ATK",
-            30,
-            "T-ATK",
-            30,
-            "DEF",
-            20
-        ]
-    },
-    {
-        "Name": "Mitra Glare",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            2,
-            "S-ATK",
-            30,
-            "R-ATK",
-            30,
-            "DEF",
-            20
-        ]
-    },
-    {
-        "Name": "Shiva Glare",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            2,
-            "R-ATK",
-            30,
-            "T-ATK",
-            30,
-            "DEF",
-            20
-        ]
-    },
-    {
-        "Name": "Origin Glare",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            2,
-            "ATK",
-            30,
-            "DEF",
-            10
-        ]
-    },
-    {
-        "Name": "Photoner Glare",
-        "Effect": [
-            "HP",
-            15,
-            "PP",
-            2,
-            "All Stats",
-            15
-        ]
-    },
-    {
-        "Name": "Absolute Glare",
-        "Effect": [
-            "HP",
-            30,
-            "PP",
-            3,
-            "All Stats",
-            40
-        ]
-    },
-    {
-        "Name": "Doom Break I",
-        "Effect": [
-            "PP",
-            2,
-            "ATK",
-            15
-        ]
-    },
-    {
-        "Name": "Doom Break II",
-        "Effect": [
-            "PP",
-            3,
-            "ATK",
-            25
-        ]
-    },
-    {
-        "Name": "Doom Break III",
-        "Effect": [
-            "PP",
-            4,
-            "ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Necky Smile",
-        "Effect": [
-            "PP",
-            2,
-            "ATK",
-            5
-        ]
-    },
-    {
-        "Name": "Sentence Power",
-        "Effect": [
-            "PP",
-            4,
-            "S-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Sentence Shoot",
-        "Effect": [
-            "PP",
-            4,
-            "R-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Sentence Tech",
-        "Effect": [
-            "PP",
-            4,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Sentence Triple",
-        "Effect": [
-            "ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Sentence Arma",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            3,
-            "S-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Sentence Tiro",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            3,
-            "R-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Sentence Magia",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            3,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "EV Power/HP",
-        "Effect": [
-            "HP",
-            60,
-            "S-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "EV Power/PP",
-        "Effect": [
-            "PP",
-            4,
-            "S-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "EV Shoot/HP",
-        "Effect": [
-            "HP",
-            60,
-            "R-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "EV Shoot/PP",
-        "Effect": [
-            "PP",
-            4,
-            "R-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "EV Technique/HP",
-        "Effect": [
-            "HP",
-            60,
-            "T-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "EV Technique/PP",
-        "Effect": [
-            "PP",
-            4,
-            "T-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "ARKS MAX",
-        "Effect": [
-            "ATK",
-            25
-        ]
-    },
-    {
-        "Name": "Phrase Recovery",
-        "Effect": [
-            null,
-            "PP Recovery Rate boosted by 5%"
-        ]
-    },
-    {
-        "Name": "Phrase Weak",
-        "Effect": [
-            null,
-            "Increases damage by 2% when hitting enemy Elemental Weakness."
-        ]
-    },
-    {
-        "Name": "Phrase Response",
-        "Effect": [
-            null,
-            "PP recovered from attacks increased by 5%"
-        ]
-    },
-    {
-        "Name": "Phrase Chase",
-        "Effect": [
-            null,
-            "Increases damage by 5% against enemies with Status Effects."
-        ]
-    },
-    {
-        "Name": "Phrase Reduce",
-        "Effect": [
-            null,
-            "Decreases PP consumption by 4%."
-        ]
-    },
-    {
-        "Name": "Phrase Decay",
-        "Effect": "Increases damage by 5% against enemies afflicted with Jellen."
-    },
-    {
-        "Name": "Soul Catalyst",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            1,
-            "Can be combined with certain Abilities."
-        ]
-    },
-    {
-        "Name": "Factor Catalyst",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            1,
-            "Can be combined with certain Abilities."
-        ]
-    },
-    {
-        "Name": "Reverie Catalyst",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            1,
-            "Can be combined with certain Abilities."
-        ]
-    },
-    {
-        "Name": "Glare Catalyst",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            1,
-            "Can be combined with certain Abilities."
-        ]
-    },
-    {
-        "Name": "Offense Boost",
-        "Effect": [
-            "PP",
-            1,
-            "ATK",
-            15,
-            "DEX",
-            25
-        ]
-    },
-    {
-        "Name": "Attack Boost",
-        "Effect": [
-            "PP",
-            3,
-            "ATK",
-            25,
-            "DEX",
-            40
-        ]
-    },
-    {
-        "Name": "Defense Boost",
-        "Effect": [
-            "HP",
-            55,
-            "PP",
-            1,
-            "DEF",
-            25
-        ]
-    },
-    {
-        "Name": "Guard Boost",
-        "Effect": [
-            "HP",
-            75,
-            "PP",
-            3,
-            "DEF",
-            35
-        ]
-    },
-    {
-        "Name": "Vol Soul",
-        "Effect": [
-            "HP",
-            20,
-            "S-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Gwana Soul",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            2,
-            "S-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Quartz Soul",
-        "Effect": [
-            "PP",
-            3,
-            "S-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Ra'nsa Soul",
-        "Effect": [
-            "HP",
-            20,
-            "R-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Fang Soul",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            2,
-            "R-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Mizer Soul",
-        "Effect": [
-            "PP",
-            3,
-            "R-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Ragne Soul",
-        "Effect": [
-            "HP",
-            20,
-            "T-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Wolga Soul",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            2,
-            "T-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Elder Soul",
-        "Effect": [
-            "PP",
-            3,
-            "T-ATK",
-            30
-        ]
-    },
-    {
-        "Name": "Signo Soul",
-        "Effect": [
-            "HP",
-            20,
-            "DEX",
-            30
-        ]
-    },
-    {
-        "Name": "Chrome Soul",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            2,
-            "DEX",
-            30
-        ]
-    },
-    {
-        "Name": "Rappy Soul",
-        "Effect": [
-            "PP",
-            4,
-            "DEX",
-            30
-        ]
-    },
-    {
-        "Name": "Snow Soul",
-        "Effect": [
-            "HP",
-            20,
-            "S-DEF",
-            30
-        ]
-    },
-    {
-        "Name": "Rockbear Soul",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            2,
-            "S-DEF",
-            30
-        ]
-    },
-    {
-        "Name": "Ex Soul",
-        "Effect": [
-            "PP",
-            4,
-            "S-DEF",
-            30
-        ]
-    },
-    {
-        "Name": "Malmo Soul",
-        "Effect": [
-            "HP",
-            20,
-            "R-DEF",
-            30
-        ]
-    },
-    {
-        "Name": "Persona Soul",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            2,
-            "S-DEF",
-            30
-        ]
-    },
-    {
-        "Name": "Vardha Soul",
-        "Effect": [
-            "PP",
-            4,
-            "R-DEF",
-            30
-        ]
-    },
-    {
-        "Name": "Cater Soul",
-        "Effect": [
-            "HP",
-            20,
-            "T-DEF",
-            30
-        ]
-    },
-    {
-        "Name": "Shrayda Soul",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            2,
-            "T-DEF",
-            30
-        ]
-    },
-    {
-        "Name": "Goron Soul",
-        "Effect": [
-            "PP",
-            3,
-            "T-DEF",
-            30
-        ]
-    },
-    {
-        "Name": "Org Soul",
-        "Effect": [
-            "HP",
-            10,
-            "S-ATK",
-            20,
-            "R-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Meduna Soul",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            1,
-            "S-ATK",
-            20,
-            "R-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Soma Soul",
-        "Effect": [
-            "PP",
-            2,
-            "S-ATK",
-            20,
-            "R-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Ringa Soul",
-        "Effect": [
-            "HP",
-            10,
-            "S-ATK",
-            20,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Loser Soul",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            1,
-            "S-ATK",
-            20,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Malluda Soul",
-        "Effect": [
-            "PP",
-            2,
-            "S-ATK",
-            20,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Bal Soul",
-        "Effect": [
-            "HP",
-            10,
-            "R-ATK",
-            20,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Vibras Soul",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            1,
-            "R-ATK",
-            20,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Tagami Kazuchi Soul",
-        "Effect": [
-            "PP",
-            2,
-            "R-ATK",
-            20,
-            "T-ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Lilli Soul",
-        "Effect": [
-            "PP",
-            2,
-            "S-ATK",
-            20,
-            "S-DEF",
-            20
-        ]
-    },
-    {
-        "Name": "Full Vegas Soul",
-        "Effect": [
-            "ATK",
-            15
-        ]
-    },
-    {
-        "Name": "Escarde Soul",
-        "Effect": [
-            "ATK",
-            10,
-            "DEX",
-            20
-        ]
-    },
-    {
-        "Name": "Fabula Soul",
-        "Effect": [
-            "HP",
-            20,
-            "ATK",
-            10
-        ]
-    },
-    {
-        "Name": "Historia Soul",
-        "Effect": [
-            "HP",
-            30,
-            "PP",
-            2,
-            "DEF",
-            25
-        ]
-    },
-    {
-        "Name": "Cougar Soul",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            2,
-            "ATK",
-            15,
-            "DEX",
-            15
-        ]
-    },
-    {
-        "Name": "Knight Gear Soul",
-        "Effect": [
-            "PP",
-            4,
-            "S-ATK",
-            15,
-            "R-ATK",
-            15,
-            "T-ATK",
-            15,
-            "DEX",
-            15
-        ]
-    },
-    {
-        "Name": "Izane Kazuchi Soul",
-        "Effect": [
-            "PP",
-            2,
-            "ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Jhadu Soul",
-        "Effect": [
-            "HP",
-            45,
-            "T-ATK",
-            15
-        ]
-    },
-    {
-        "Name": "Gunne Soul",
-        "Effect": [
-            "HP",
-            45,
-            "S-ATK",
-            15
-        ]
-    },
-    {
-        "Name": "Zigmor Soul",
-        "Effect": [
-            "PP",
-            4,
-            "S-ATK",
-            15
-        ]
-    },
-    {
-        "Name": "Madu Soul",
-        "Effect": [
-            "PP",
-            4,
-            "R-ATK",
-            15
-        ]
-    },
-    {
-        "Name": "Nepto Soul",
-        "Effect": [
-            "PP",
-            4,
-            "T-ATK",
-            15
-        ]
-    },
-    {
-        "Name": "Nyau Soul",
-        "Effect": [
-            "PP",
-            4,
-            "DEX",
-            15
-        ]
-    },
-    {
-        "Name": "Anga Soul",
-        "Effect": [
-            "PP",
-            4,
-            "ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Magatsu Soul",
-        "Effect": [
-            "HP",
-            30,
-            "PP",
-            3,
-            "DEF",
-            15
-        ]
-    },
-    {
-        "Name": "Bayari Soul",
-        "Effect": [
-            "PP",
-            3,
-            "S-ATK",
-            35,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Siorg Soul",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            1,
-            "R-ATK",
-            35,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Diabo Soul",
-        "Effect": [
-            "HP",
-            30,
-            "T-ATK",
-            35,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Leone Soul",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            1,
-            "S-ATK",
-            35,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Leopard Soul",
-        "Effect": [
-            "HP",
-            30,
-            "R-ATK",
-            35,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Guranz Soul",
-        "Effect": [
-            "PP",
-            3,
-            "T-ATK",
-            35,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Duvals Soul",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            1,
-            "T-ATK",
-            35,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Gryuzolas Soul",
-        "Effect": [
-            "HP",
-            30,
-            "T-ATK",
-            35,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Deadleon Soul",
-        "Effect": [
-            "PP",
-            3,
-            "R-ATK",
-            35,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Sinow Soul",
-        "Effect": [
-            "HP",
-            25,
-            "PP",
-            2,
-            "S-ATK",
-            5,
-            "DEX",
-            30
-        ]
-    },
-    {
-        "Name": "Gryphon Soul",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            3,
-            "ATK",
-            15,
-            "DEX",
-            15
-        ]
-    },
-    {
-        "Name": "Apprentice Soul",
-        "Effect": [
-            "ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Darkness Soul",
-        "Effect": [
-            "HP",
-            15,
-            "PP",
-            2,
-            "All Stats",
-            15
-        ]
-    },
-    {
-        "Name": "Astral Soul",
-        "Effect": [
-            "HP",
-            35,
-            "PP",
-            5,
-            "All Stats",
-            35
-        ]
-    },
-    {
-        "Name": "Toh'oh Soul",
-        "Effect": [
-            "All Stats",
-            10
-        ]
-    },
-    {
-        "Name": "Act the Soul",
-        "Effect": [
-            "PP",
-            3,
-            "S-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "Til the Soul",
-        "Effect": [
-            "PP",
-            3,
-            "R-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "Magi the Soul",
-        "Effect": [
-            "PP",
-            3,
-            "T-ATK",
-            35
-        ]
-    },
-    {
-        "Name": "Ares the Soul",
-        "Effect": [
-            "HP",
-            35,
-            "PP",
-            3,
-            "ATK",
-            25
-        ]
-    },
-    {
-        "Name": "Ex-Act Soul",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            2,
-            "S-ATK",
-            30,
-            "DEF",
-            20,
-            "Can be combined with certain abilities."
-        ]
-    },
-    {
-        "Name": "Ex-Till Soul",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            2,
-            "R-ATK",
-            30,
-            "DEF",
-            20,
-            "Can be combined with certain abilities."
-        ]
-    },
-    {
-        "Name": "Ex-Magi Soul",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            2,
-            "T-ATK",
-            30,
-            "DEF",
-            20,
-            "Can be combined with certain abilities."
-        ]
-    },
-    {
-        "Name": "Ex-Ares Soul",
-        "Effect": [
-            "HP",
-            50,
-            "PP",
-            2,
-            "ATK",
-            20,
-            "DEF",
-            20,
-            "Can be combined with certain abilities."
-        ]
-    },
-    {
-        "Name": "Ether Soul",
-        "Effect": [
-            "HP",
-            15,
-            "PP",
-            2,
-            "All Stats",
-            15
-        ]
-    },
-    {
-        "Name": "Guardian Soul",
-        "Effect": [
-            "HP",
-            70,
-            "PP",
+            "全軽減",
+            6
+        ],
+        "Effect (English)": [
+            "All Resistance",
+            6
+        ],
+        "Effect (Global)": [
+            "All Resist",
+            6
+        ]
+    },
+    {
+        "Name (JP)": "オールレジストⅤ",
+        "Name (English)": "All Resist V",
+        "Name (Global)": "Sovereign Ward V",
+        "Effect (JP)": [
+            "全耐性",
             7,
-            "All Stats",
-            70
-        ]
-    },
-    {
-        "Name": "Ripper/Fire Weak",
-        "Effect": [
-            null,
-            "Increases Power against enemies weak to Fire. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Ripper/Ice Weak",
-        "Effect": [
-            null,
-            "Increases Power against enemies weak to Ice. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Ripper/Lightning. Weak",
-        "Effect": [
-            null,
-            "Increases Power against enemies weak to Lightning. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Ripper/Wind Weak",
-        "Effect": [
-            null,
-            "Increases Power against enemies weak to Wind. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Ripper/Light Weak",
-        "Effect": [
-            null,
-            "Increases Power against enemies weak to Light. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Ripper/Dark Weak",
-        "Effect": [
-            null,
-            "Increases Power against enemies weak to Dark. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Slayer/Native-Type",
-        "Effect": [
-            null,
-            "Increases Power against Naberius Native. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Slayer/Armor-Type",
-        "Effect": [
-            null,
-            "Increases Power against Lillipa Mechs. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Slayer/Oceanids-Type",
-        "Effect": [
-            null,
-            "Increases Power against Oceanids. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Slayer/Kuronite-Type",
-        "Effect": [
-            null,
-            "Increases Power against Kuronite. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Slayer/Phantom-Type",
-        "Effect": [
-            null,
-            "Increases Power against Phantom. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Slayer/Darker-Type",
-        "Effect": [
-            null,
-            "Increases Power against Darkers. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Slayer/Dragonkin-Type",
-        "Effect": [
-            null,
-            "Increases Power against Dragonkin. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Slayer/Luminmech-Type",
-        "Effect": [
-            null,
-            "Increases Power against Luminmech. Effect is reduced as Weapon Rarity increases. (12% for 1-10*, 7% for 11-13*, 3% for 14%, 1% for 15*)"
-        ]
-    },
-    {
-        "Name": "Love Fever",
-        "Effect": [
-            "PP",
-            2,
-            "S-ATK",
-            10,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Lovey Fever",
-        "Effect": [
-            "HP",
-            10,
-            "S-ATK",
-            10,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Egg Fever",
-        "Effect": [
-            "HP",
-            10,
-            "R-ATK",
-            10,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "St. Fever",
-        "Effect": [
-            "PP",
-            2,
-            "R-ATK",
-            10,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Frog Fever",
-        "Effect": [
-            "HP",
-            10,
-            "T-ATK",
-            10,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Summer Fever",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            1,
-            "T-ATK",
-            10,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Latan Fever",
-        "Effect": [
-            "PP",
-            2,
-            "T-ATK",
-            10,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "ARKS Fever",
-        "Effect": [
-            "PP",
-            5,
-            "ATK",
-            5,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Ceremo Fever",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            1,
-            "S-ATK",
-            10,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Noiya Fever",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            1,
-            "R-ATK",
-            10,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Toro Kuro Fever",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            1,
-            "DEX",
-            15
-        ]
-    },
-    {
-        "Name": "Sakura Fever",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            1,
-            "S-DEF",
-            10,
-            "DEX",
-            5
-        ]
-    },
-    {
-        "Name": "Sonic Fever",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            1,
-            "S-ATK",
-            10,
-            "R-DEF",
-            10
-        ]
-    },
-    {
-        "Name": "Sansan Fever",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            1,
-            "ATK",
-            5
-        ]
-    },
-    {
-        "Name": "Luna Fever",
-        "Effect": [
-            "HP",
-            10,
-            "PP",
-            1,
-            "T-ATK",
-            10
-        ]
-    },
-    {
-        "Name": "Turkey Fever",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            1,
-            "DEX",
-            5,
-            "T-DEF",
-            10
-        ]
-    },
-    {
-        "Name": "Drago Fever",
-        "Effect": [
-            "HP",
-            5,
-            "PP",
-            1,
-            "DEX",
-            5,
-            "R-DEF",
-            10
-        ]
-    },
-    {
-        "Name": "Eleph Fever",
-        "Effect": [
-            "HP",
-            10,
-            "DEX",
-            5,
-            "S-DEF",
-            10
-        ]
-    },
-    {
-        "Name": "Emper Embrace",
-        "Effect": [
-            "+90 Grind EXP when used in New-Type weapon grinding"
-        ]
-    },
-    {
-        "Name": "Burn I",
-        "Effect": [
-            "Grants Burn Lv.1"
-        ]
-    },
-    {
-        "Name": "Burn II",
-        "Effect": [
-            "Grants Burn Lv.2"
-        ]
-    },
-    {
-        "Name": "Burn III",
-        "Effect": [
-            "Grants Burn Lv.3"
-        ]
-    },
-    {
-        "Name": "Burn IV",
-        "Effect": [
-            "Grants Burn Lv.4"
-        ]
-    },
-    {
-        "Name": "Burn V",
-        "Effect": [
-            "Grants Burn Lv.5"
-        ]
-    },
-    {
-        "Name": "Freeze I",
-        "Effect": [
-            "Grants Freeze Lv.1"
-        ]
-    },
-    {
-        "Name": "Freeze II",
-        "Effect": [
-            "Grants Freeze Lv.2"
-        ]
-    },
-    {
-        "Name": "Freeze III",
-        "Effect": [
-            "Grants Freeze Lv.3"
-        ]
-    },
-    {
-        "Name": "Freeze IV",
-        "Effect": [
-            "Grants Freeze Lv.4"
-        ]
-    },
-    {
-        "Name": "Freeze V",
-        "Effect": [
-            "Grants Freeze Lv.5"
-        ]
-    },
-    {
-        "Name": "Shock I",
-        "Effect": [
-            "Grants Shock Lv.1"
-        ]
-    },
-    {
-        "Name": "Shock II",
-        "Effect": [
-            "Grants Shock Lv.2"
-        ]
-    },
-    {
-        "Name": "Shock III",
-        "Effect": [
-            "Grants Shock Lv.3"
-        ]
-    },
-    {
-        "Name": "Shock IV",
-        "Effect": [
-            "Grants Shock Lv.4"
-        ]
-    },
-    {
-        "Name": "Shock V",
-        "Effect": [
-            "Grants Shock Lv.5"
-        ]
-    },
-    {
-        "Name": "Mirage I",
-        "Effect": [
-            "Grants Mirage Lv.1"
-        ]
-    },
-    {
-        "Name": "Mirage II",
-        "Effect": [
-            "Grants Mirage Lv.2"
-        ]
-    },
-    {
-        "Name": "Mirage III",
-        "Effect": [
-            "Grants Mirage Lv.3"
-        ]
-    },
-    {
-        "Name": "Mirage IV",
-        "Effect": [
-            "Grants Mirage Lv.4"
-        ]
-    },
-    {
-        "Name": "Mirage V",
-        "Effect": [
-            "Grants Mirage Lv.5"
-        ]
-    },
-    {
-        "Name": "Panic I",
-        "Effect": [
-            "Grants Panic Lv.1"
-        ]
-    },
-    {
-        "Name": "Panic II",
-        "Effect": [
-            "Grants Panic Lv.2"
-        ]
-    },
-    {
-        "Name": "Panic III",
-        "Effect": [
-            "Grants Panic Lv.3"
-        ]
-    },
-    {
-        "Name": "Panic IV",
-        "Effect": [
-            "Grants Panic Lv.4"
-        ]
-    },
-    {
-        "Name": "Panic V",
-        "Effect": [
-            "Grants Panic Lv.5"
-        ]
-    },
-    {
-        "Name": "Poison I",
-        "Effect": [
-            "Grants Poison Lv.1"
-        ]
-    },
-    {
-        "Name": "Poison II",
-        "Effect": [
-            "Grants Poison Lv.2"
-        ]
-    },
-    {
-        "Name": "Poison III",
-        "Effect": [
-            "Grants Poison Lv.3"
-        ]
-    },
-    {
-        "Name": "Poison IV",
-        "Effect": [
-            "Grants Poison Lv.4"
-        ]
-    },
-    {
-        "Name": "Poison V",
-        "Effect": [
-            "Grants Poison Lv.5"
-        ]
-    },
-    {
-        "Name": "Blow Resist I",
-        "Effect": [
-            "Strike Resistance",
-            3
-        ]
-    },
-    {
-        "Name": "Blow Resist II",
-        "Effect": [
-            "Strike Resistance",
-            4
-        ]
-    },
-    {
-        "Name": "Blow Resist III",
-        "Effect": [
-            "Strike Resistance",
-            5
-        ]
-    },
-    {
-        "Name": "Blow Resist IV",
-        "Effect": [
-            "Strike Resistance",
-            6
-        ]
-    },
-    {
-        "Name": "Blow Resist V",
-        "Effect": [
-            "Strike Resistance",
+            "全軽減",
             7
-        ]
-    },
-    {
-        "Name": "Shot Resist I",
-        "Effect": [
-            "Range Resistance",
-            3
-        ]
-    },
-    {
-        "Name": "Shot Resist II",
-        "Effect": [
-            "Range Resistance",
-            4
-        ]
-    },
-    {
-        "Name": "Shot Resist III",
-        "Effect": [
-            "Range Resistance",
-            5
-        ]
-    },
-    {
-        "Name": "Shot Resist IV",
-        "Effect": [
-            "Range Resistance",
-            6
-        ]
-    },
-    {
-        "Name": "Shot Resist V",
-        "Effect": [
-            "Range Resistance",
-            7
-        ]
-    },
-    {
-        "Name": "Mind Resist I",
-        "Effect": [
-            "Tech Resistance",
-            3
-        ]
-    },
-    {
-        "Name": "Mind Resist II",
-        "Effect": [
-            "Tech Resistance",
-            4
-        ]
-    },
-    {
-        "Name": "Mind Resist III",
-        "Effect": [
-            "Tech Resistance",
-            5
-        ]
-    },
-    {
-        "Name": "Mind Resist IV",
-        "Effect": [
-            "Tech Resistance",
-            6
-        ]
-    },
-    {
-        "Name": "Mind Resist V",
-        "Effect": [
-            "Tech Resistance",
-            7
-        ]
-    },
-    {
-        "Name": "Flame Resist I",
-        "Effect": [
-            "Fire Resistance",
-            3
-        ]
-    },
-    {
-        "Name": "Flame Resist II",
-        "Effect": [
-            "Fire Resistance",
-            4
-        ]
-    },
-    {
-        "Name": "Flame Resist III",
-        "Effect": [
-            "Fire Resistance",
-            5
-        ]
-    },
-    {
-        "Name": "Flame Resist IV",
-        "Effect": [
-            "Fire Resistance",
-            6
-        ]
-    },
-    {
-        "Name": "Flame Resist V",
-        "Effect": [
-            "Fire Resistance",
-            7
-        ]
-    },
-    {
-        "Name": "Ice Resist I",
-        "Effect": [
-            "Ice Resistance",
-            3
-        ]
-    },
-    {
-        "Name": "Ice Resist II",
-        "Effect": [
-            "Ice Resistance",
-            4
-        ]
-    },
-    {
-        "Name": "Ice Resist III",
-        "Effect": [
-            "Ice Resistance",
-            5
-        ]
-    },
-    {
-        "Name": "Ice Resist IV",
-        "Effect": [
-            "Ice Resistance",
-            6
-        ]
-    },
-    {
-        "Name": "Ice Resist V",
-        "Effect": [
-            "Ice Resistance",
-            7
-        ]
-    },
-    {
-        "Name": "Shock Resist I",
-        "Effect": [
-            "Lightning Resistance",
-            3
-        ]
-    },
-    {
-        "Name": "Shock Resist II",
-        "Effect": [
-            "Lightning Resistance",
-            4
-        ]
-    },
-    {
-        "Name": "Shock Resist III",
-        "Effect": [
-            "Lightning Resistance",
-            5
-        ]
-    },
-    {
-        "Name": "Shock Resist IV",
-        "Effect": [
-            "Lightning Resistance",
-            6
-        ]
-    },
-    {
-        "Name": "Shock Resist V",
-        "Effect": [
-            "Lightning Resistance",
-            7
-        ]
-    },
-    {
-        "Name": "Wind Resist I",
-        "Effect": [
-            "Wind Resistance",
-            3
-        ]
-    },
-    {
-        "Name": "Wind Resist II",
-        "Effect": [
-            "Wind Resistance",
-            4
-        ]
-    },
-    {
-        "Name": "Wind Resist III",
-        "Effect": [
-            "Wind Resistance",
-            5
-        ]
-    },
-    {
-        "Name": "Wind Resist IV",
-        "Effect": [
-            "Wind Resistance",
-            6
-        ]
-    },
-    {
-        "Name": "Wind Resist V",
-        "Effect": [
-            "Wind Resistance",
-            7
-        ]
-    },
-    {
-        "Name": "Light Resist I",
-        "Effect": [
-            "Light Resistance",
-            3
-        ]
-    },
-    {
-        "Name": "Light Resist II",
-        "Effect": [
-            "Light Resistance",
-            4
-        ]
-    },
-    {
-        "Name": "Light Resist III",
-        "Effect": [
-            "Light Resistance",
-            5
-        ]
-    },
-    {
-        "Name": "Light Resist IV",
-        "Effect": [
-            "Light Resistance",
-            6
-        ]
-    },
-    {
-        "Name": "Light Resist V",
-        "Effect": [
-            "Light Resistance",
-            7
-        ]
-    },
-    {
-        "Name": "Gloom Resist I",
-        "Effect": [
-            "Dark Resistance",
-            3
-        ]
-    },
-    {
-        "Name": "Gloom Resist II",
-        "Effect": [
-            "Dark Resistance",
-            4
-        ]
-    },
-    {
-        "Name": "Gloom Resist III",
-        "Effect": [
-            "Dark Resistance",
-            5
-        ]
-    },
-    {
-        "Name": "Gloom Resist IV",
-        "Effect": [
-            "Dark Resistance",
-            6
-        ]
-    },
-    {
-        "Name": "Gloom Resist V",
-        "Effect": [
-            "Dark Resistance",
-            7
-        ]
-    },
-    {
-        "Name": "All Resist I",
-        "Effect": [
+        ],
+        "Effect (English)": [
             "All Resistance",
-            1
-        ]
-    },
-    {
-        "Name": "All Resist II",
-        "Effect": [
-            "All Resistance",
-            2
-        ]
-    },
-    {
-        "Name": "All Resist III",
-        "Effect": [
-            "All Resistance",
-            3
-        ]
-    },
-    {
-        "Name": "All Resist IV",
-        "Effect": [
-            "All Resistance",
-            4
-        ]
-    },
-    {
-        "Name": "All Resist V",
-        "Effect": [
-            "All Resistance",
-            5
-        ]
-    },
-    {
-        "Name": "Meseta Fever I",
-        "Effect": [
-            "Meseta Droprate",
-            5
-        ]
-    },
-    {
-        "Name": "Meseta Fever II",
-        "Effect": [
-            "Meseta Droprate",
-            10
-        ]
-    },
-    {
-        "Name": "Meseta Fever III",
-        "Effect": [
-            "Meseta Droprate",
-            15
-        ]
-    },
-    {
-        "Name": "EXP Boost I",
-        "Effect": [
-            "Experience Gained",
-            5
-        ]
-    },
-    {
-        "Name": "EXP Boost II",
-        "Effect": [
-            "Experience Gained",
             7
-        ]
-    },
-    {
-        "Name": "EXP Boost III",
-        "Effect": [
-            "Experience Gained",
-            10
-        ]
-    },
-    {
-        "Name": "Lucky Rise I",
-        "Effect": [
-            "Item Drop Rate",
-            5
-        ]
-    },
-    {
-        "Name": "Lucky Rise II",
-        "Effect": [
-            "Item Drop Rate",
+        ],
+        "Effect (Global)": [
+            "All Resist",
             7
-        ]
-    },
-    {
-        "Name": "Lucky Rise III",
-        "Effect": [
-            "Item Drop Rate",
-            10
-        ]
-    },
-    {
-        "Name": "Another History",
-        "Effect": [
-            "Experience Gained",
-            10
-        ]
-    },
-    {
-        "Name": "Temptation",
-        "Effect": [
-            "Item Drop Rate",
-            10
-        ]
-    },
-    {
-        "Name": "Fresh Sign",
-        "Effect": [
-            "Boosts EXP gained by 30% until Lv.30"
-        ]
-    },
-    {
-        "Name": "Ultimate Buster",
-        "Effect": [
-            "Boosts damage against Aberrations by 10%."
-        ]
-    },
-    {
-        "Name": "Omega Buster",
-        "Effect": [
-            "Boosts damage against Demons by 10%."
-        ]
-    },
-    {
-        "Name": "Photon Collect",
-        "Effect": [
-            "Boosts transfer rate of status effect and resistance abilities."
-        ]
-    },
-    {
-        "Name": "Soul Receptor",
-        "Effect": [
-            "All Stats",
-            10,
-            "Massively boosts transfer rate of Soul-type special abilities."
-        ]
-    },
-    {
-        "Name": "Gift Receptor",
-        "Effect": [
-            "All Stats",
-            10,
-            "Enables transfer of EXP Boost, Meseta Fever, and Lucky Rise."
-        ]
-    },
-    {
-        "Name": "Extreceptor",
-        "Effect": [
-            "All Stats",
-            10,
-            "Massively boosts transfer rate of Flict and Arma special abilities.",
-            "Boosts transfer rate of Stat-type special abilities."
-        ]
-    },
-    {
-        "Name": "Reverie Receptor",
-        "Effect": [
-            "All Stats",
-            10,
-            "Massively boosts transfer rate of Reverie-type special abilities."
-        ]
-    },
-    {
-        "Name": "Gift Receptor",
-        "Effect": [
-            "All Stats",
-            10,
-            "Allows transfer of Gift-type special abilities."
-        ]
-    },
-    {
-        "Name": "Sentence Receptor",
-        "Effect": [
-            "All Stats",
-            10,
-            "Boosts transfer rate of Sentence-type special abilities."
-        ]
-    },
-    {
-        "Name": "Factor Receptor",
-        "Effect": [
-            "All Stats",
-            10,
-            "Boosts transfer rate of Factor-type special abilities."
-        ]
-    },
-    {
-        "Name": "Attack Receptor",
-        "Effect": [
-            "All Stats",
-            5,
-            "Boosts transfer rate of ATK-type special abilities."
-        ]
-    },
-    {
-        "Name": "Defense Receptor",
-        "Effect": [
-            "All Stats",
-            5,
-            "Boosts transfer rate of DEF-type special abilities."
-        ]
-    },
-    {
-        "Name": "Photon Receptor",
-        "Effect": [
-            "All Stats",
-            5,
-            "Greatly boosts transfer rate of Stamina and Spirita special abilities."
-        ]
-    },
-    {
-        "Name": "Phrase Receptor",
-        "Effect": [
-            "All Stats",
-            10,
-            "Boosts transfer rate of Phrase-type special abilities."
-        ]
-    },
-    {
-        "Name": "Mark Receptor",
-        "Effect": [
-            "All Stats",
-            10,
-            "Boosts transfer rate of Mark-type special abilities."
-        ]
-    },
-    {
-        "Name": "Mark Joyo",
-        "Effect": [
-            "HP",
-            50,
-            "S-ATK",
-            40,
-            "R-ATK",
-            40,
-            "T-ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Mark Couragena",
-        "Effect": [
-            "PP",
-            5,
-            "S-ATK",
-            40,
-            "R-ATK",
-            40,
-            "T-ATK",
-            40
-        ]
-    },
-    {
-        "Name": "Mark Angar",
-        "Effect": [
-            "ATK",
-            50,
-            "DEX",
-            50
-        ]
-    },
-    {
-        "Name": "Mark Grif",
-        "Effect": [
-            "HP",
-            80,
-            "ATK",
-            50
-        ]
-    },
-    {
-        "Name": "Exceed Energy",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            5,
-            "ATK",
-            50,
-            "DEF",
-            20,
-            "DEX",
-            20
-        ]
-    },
-    {
-        "Name": "Divine Will",
-        "Effect": [
-            "PP",
-            5,
-            "ATK",
-            20
-        ]
-    },
-    {
-        "Name": "Divine Order",
-        "Effect": [
-            "HP",
-            20,
-            "PP",
-            10,
-            "ATK",
-            50
-        ]
-    },
-    {
-        "Name": "NT Weapon Boost",
-        "Effect": [
-            null,
-            "Adds 800 EXP to NT weapon grinds."
-        ]
-    },
-    {
-        "Name": "NT Weapon Boost 2",
-        "Effect": [
-            null,
-            "Adds 4800 EXP to NT weapon grinds."
-        ]
-    },
-    {
-        "Name": "Polytan Smile",
-        "Effect": [
-            null,
-            "Adds 25 EXP to NT weapon grinds."
-        ]
-    },
-    {
-        "Name": "Arkuma Smile",
-        "Effect": [
-            null,
-            "Adds 25 EXP to NT weapon grinds."
-        ]
-    },
-    {
-        "Name": "Guidance Trainer",
-        "Effect": [
-            null,
-            "Increases Special Ability Addition success rate by 5%."
         ]
     }
 ]

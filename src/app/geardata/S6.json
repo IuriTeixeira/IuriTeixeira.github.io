@@ -217,20 +217,164 @@
     },
     {
         "SSA Slot": 6,
-        "Name (JP)": "S6:法撃上昇",
+        "Name (JP)": "S6:回避の口笛",
         "Name (English)": "S6:Evasion Whistle",
         "Name (Global)": "S6: Fortified Technique",
         "Effect (JP)": [
             null,
-            "法撃力が30上昇。"
+            "回避行動に合わせてペットが戻ってくる。"
         ],
         "Effect (English)": [
             null,
-            "Evading will cause your Pet to return back to you."
+            "Evading will cause your Pet to return to you."
         ],
         "Effect (Global)": [
             null,
-            "Evading will cause your pet to return back to you."
+            "Evading will cause your pet to return to you."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:守護乱備",
+        "Name (English)": "S6:Readying Guard",
+        "Name (Global)": "S6: Dodging Whistle",
+        "Effect (JP)": [
+            null,
+            "10%の確率で被ダメージを70%軽減。"
+        ],
+        "Effect (English)": [
+            null,
+            "Gain a 10% chance to reduce damage taken by 70%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Gain a 10% chance to reduce damage taken by 70%."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:守護乱備",
+        "Name (English)": "S6:Battle Readiness",
+        "Name (Global)": "S6: Dodging Whistle",
+        "Effect (JP)": [
+            null,
+            "HPが50%以下の時3秒間、被ダメージを40%軽減する。\n発動後リキャスト発生。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces damage taken by 40% for 3 seconds when your HP is at 50% or lower.\n30 second cooldown."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces damage taken by 40% for 3 seconds when your HP is at 50% or lower.\n30 second cooldown."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:翔天の翼",
+        "Name (English)": "S6:Angelic Wings",
+        "Name (Global)": "S6: Soaring Wings",
+        "Effect (JP)": [
+            null,
+            "ジャンプ力が上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases jump height.\nJump height becomes about 2/3 the height of the [Jumping Dodge] skill.\nAlso affects double jump.\nStacks with Sukunahime's Blessing in the Emergency Quest [Annihilator's Apparition].\nDoes not work in lobby."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases jump height.\nJump height becomes about 2/3 the height of the [Leaping Dodge] skill.\nAlso affects double jump.\nStacks with Sukunahime's Blessing in the Urgent Quest [The Manifested Planetbreaker].\nDoes not work in lobby."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:長夜の明星",
+        "Name (English)": "S6:Long Night Star",
+        "Name (Global)": "S6: Soaring Wings",
+        "Effect (JP)": [
+            null,
+            "エトワールブーストの秒間軽減減少率を50%緩和する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces [Etoile Boost]'s decay per second by 50%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces [Etoile Boost]'s decay per second by 50%."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:超限活器",
+        "Name (English)": "S6:Overlimit",
+        "Name (Global)": "S6: Overflowing Life Vessel",
+        "Effect (JP)": [
+            null,
+            "リミットブレイク発動中最大HPが50%上昇する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases maximum HP by 50% while [Limit Break] is active.\nThis effectively makes you have 37.5% of your regular max HP during [Limit Break], but still counts as 25% for all effects and purposes."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases maximum HP by 50% while [Overload] is active.\nThis effectively makes you have 37.5% of your regular max HP during [Overload], but still counts as 25% for all effects and purposes."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:奇跡再演",
+        "Name (English)": "S6:Wondrous Encore",
+        "Name (Global)": "S6: Miraculous Encore",
+        "Effect (JP)": [
+            null,
+            "ショウタイム発動時のヘイト上昇率が軽減し、\n一度だけ被ダメージを軽減してワンモアタイムの発動条件を維持する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces Hate generation while [Showtime] is active. If the user is attacked while [Showtime] is active, reduces the damage taken and retain [One More Time] once per [Showtime]."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces Threat Level generation while [Showtime] is active. If the user is attacked while [Showtime] is active, reduces the damage taken and retain [One More Time] once per [Showtime]."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:奇跡再演",
+        "Name (English)": "S6:Raising Expanse",
+        "Name (Global)": "S6: Escalating Expanse",
+        "Effect (JP)": [
+            null,
+            "累加追撃による追加ダメージが範囲攻撃に変化する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Alters the range of S4:Raising Pursuit's bonus attack damage.\nIt becomes a 15m AoE, not nullified on part break, and is not treated as an attack from behind."
+        ],
+        "Effect (Global)": [
+            null,
+            "Alters the range of S4:Escalating Pursuit's bonus attack damage.\nIt becomes a 15m AoE, not nullified on part break, and is not treated as an attack from behind."
+        ]
+    },
+    {
+        "SSA Slot": 6,
+        "Name (JP)": "S6:奇跡再演",
+        "Name (English)": "S6:Rainbow's Shield",
+        "Name (Global)": "S6: Rainbow Shield",
+        "Effect (JP)": [
+            null,
+            "花・海・葉・月・雪・影のいずれかが発動中、一定確率で被ダメージを大幅に軽減する。"
+        ],
+        "Effect (English)": [
+            null,
+            "Grants 20% chance to reduce damage taken to 1 while S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash are active."
+        ],
+        "Effect (Global)": [
+            null,
+            "Grants 20% chance to reduce damage taken to 1 while S1:Petalgleam, S1:Seagleam, S1:Snowgleam, S1:Moongleam, S1:Leafgleam, or S1:Shadowgleam are active."
         ]
     }
 ]

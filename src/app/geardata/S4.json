@@ -10,7 +10,7 @@
         ],
         "Effect (English)": [
             null,
-            "Recovers 10 PP when successfully performing a Just Guard. "
+            "Recovers 10 PP when successfully performing a Just Guard."
         ],
         "Effect (Global)": [
             null,
@@ -64,11 +64,11 @@
         ],
         "Effect (English)": [
             null,
-            "Critical Hit Rate of frontal attacks is increased by 30% while Brave Stance is active."
+            "Critical Hit Rate of frontal attacks is increased by 30% while [Brave Stance] is active."
         ],
         "Effect (Global)": [
             null,
-            "Critical Hit Rate of frontal attacks is increased by 30% while Valiant Stance is active."
+            "Critical Hit Rate of frontal attacks is increased by 30% while [Valiant Stance] is active."
         ]
     },
     {
@@ -82,11 +82,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases the duration of Double Saber's Whirlwind by 4 seconds."
+            "Increases the duration of [Double Saber Gear]'s whirlwind by 4 seconds."
         ],
         "Effect (Global)": [
             null,
-            "Increases the duration of Double Saber's Whirlwind by 4 seconds."
+            "Increases the duration of [Double Saber Focus]'s whirlwind by 4 seconds."
         ]
     },
     {
@@ -100,11 +100,11 @@
         ],
         "Effect (English)": [
             null,
-            "Frontal attack damage is increased by 15% while Wise Stance is active."
+            "Frontal attack damage is increased by 15% while [Wise Stance] is active."
         ],
         "Effect (Global)": [
             null,
-            "Frontal attack damage is increased by 15% while Wise Stance is active."
+            "Frontal attack damage is increased by 15% while [Wise Stance] is active."
         ]
     },
     {
@@ -136,11 +136,11 @@
         ],
         "Effect (English)": [
             null,
-            "Reduces the depletion of the Gear Gauge while Katana Gear is active. (Roughly 20% slower gauge loss)"
+            "Reduces the depletion of the Gear Gauge while [Katana Gear] is active. (Roughly 20% slower gauge loss)"
         ],
         "Effect (Global)": [
             null,
-            "Reduces the depletion of the Focus Gauge while Katana Focus is active. (Roughly 20% slower gauge loss)"
+            "Reduces the depletion of the Focus Gauge while [Katana Focus] is active. (Roughly 20% slower gauge loss)"
         ]
     },
     {
@@ -154,11 +154,11 @@
         ],
         "Effect (English)": [
             null,
-            "Changes the weapon element to match the currently equipped elemental Guard Skill Ring. Has no effect if an elemental Guard ring is not equipped."
+            "Changes the weapon element to match the currently equipped status effect Guard Skill Ring. Has no effect if a Guard Skill Ring is not equipped."
         ],
         "Effect (Global)": [
             null,
-            "Changes the weapon element to match the currently equipped elemental defense ring. Has no effect if an elemental ring is not equipped."
+            "Changes the weapon element to match the currently equipped status effect Guard Skill Ring. Has no effect if a Guard Skill Ring is not equipped."
         ]
     },
     {
@@ -190,11 +190,11 @@
         ],
         "Effect (English)": [
             null,
-            "Inreases PP restored by Tactics Trap by 20%."
+            "Inreases PP restored by [Tactics Trap] by 20%."
         ],
         "Effect (Global)": [
             null,
-            "Inreases PP restored by Tactical Trap by 20%."
+            "Inreases PP restored by [Tactical Trap] by 20%."
         ]
     },
     {
@@ -208,11 +208,11 @@
         ],
         "Effect (English)": [
             null,
-            "Gain invincibility for 5 seconds when Chain Trigger is activated."
+            "Gain invincibility for 5 seconds when [Chain Trigger] is activated."
         ],
         "Effect (Global)": [
             null,
-            "Gain invincibility for 5 seconds when Chain Trigger is activated."
+            "Gain invincibility for 5 seconds when [Chain Trigger] is activated."
         ]
     },
     {
@@ -226,11 +226,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases the damage of all attacks done with a Bullet Bow by 3% while Rapid Shoot is active."
+            "Increases the damage of all attacks done with a Bullet Bow by 3% while [Rapid Shoot] is active."
         ],
         "Effect (Global)": [
             null,
-            "Increases the damage of all attacks done with a Bow by 3% while Rapid Fire is active."
+            "Increases the damage of all attacks done with a Bow by 3% while [Rapid Fire] is active."
         ]
     },
     {
@@ -244,11 +244,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases the potency of Element Conversion by 5% for non-matching weapon elements."
+            "Increases the potency of [Element Conversion] by 5% for non-matching weapon elements."
         ],
         "Effect (Global)": [
             null,
-            "Increases the potency of Element Conversion by 5% for non-matching weapon elements."
+            "Increases the potency of [Element Conversion] by 5% for non-matching weapon elements."
         ]
     },
     {
@@ -262,11 +262,11 @@
         ],
         "Effect (English)": [
             null,
-            "Reduces the cooldown of Photon Flare by 20%."
+            "Reduces the cooldown of [Photon Flare] by 20%."
         ],
         "Effect (Global)": [
             null,
-            "Reduces the cooldown of Photon Flare by 20%."
+            "Reduces the cooldown of [Photon Flare] by 20%."
         ]
     },
     {
@@ -406,11 +406,11 @@
         ],
         "Effect (English)": [
             null,
-            "Upon hitting with a PA/Technique, tracks 30% of damage dealt within the next 4 seconds, and then deals additional damage to the next PA/Technique based on the damage dealt, up to 250,000 damage.\nAdditional damage only affects 1 target, but damage is tracked from all targets.\n10 seconds cooldown."
+            "Upon hitting with a PA/Technique, tracks 30% of damage dealt within the next 4 seconds, and then deals additional damage to the next PA/Technique based on the damage dealt, up to 250,000 damage.\nAdditional damage only affects 1 target, but damage is tracked from all targets.\nIs always considered an attack from behind.\n10 seconds cooldown."
         ],
         "Effect (Global)": [
             null,
-            "Upon hitting with a PA/Technique, tracks 30% of damage dealt within the next 4 seconds, and then deals additional damage to the next PA/Technique based on the damage dealt, up to 250,000 damage.\nAdditional damage only affects 1 target, but damage is tracked from all targets.\n10 seconds cooldown."
+            "Upon hitting with a PA/Technique, tracks 30% of damage dealt within the next 4 seconds, and then deals additional damage to the next PA/Technique based on the damage dealt, up to 250,000 damage.\nAdditional damage only affects 1 target, but damage is tracked from all targets.\nIs always considered an attack from behind.\n10 seconds cooldown."
         ]
     },
     {

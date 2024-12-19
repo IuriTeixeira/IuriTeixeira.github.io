@@ -29,7 +29,7 @@
         ],
         "Effect (English)": [
             null,
-            "Increases damage by 2%.\nConsume no Gear for 15 seconds after performing a Just Guard. Wired Lance only."
+            "Increases damage by 2%.\nConsume no Gear for 15 seconds after performing a Just Guard.\nWired Lance only."
         ],
         "Effect (Global)": [
             null,
@@ -105,11 +105,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases damage by 2%.\nUpon successfully executing a Double Saber Wind Parry, Gear Gauge is set to maximum and unleash a counterattack with Scissor Slash.\nCounterattack uses 4x potency of your currently learned level of Scissor Edge. Treated as Lv1 if Scissor Edge is not learned.\nDouble Saber only."
+            "Increases damage by 2%.\nUpon successfully executing a [Double Saber Wind Parry], Gear Gauge is set to maximum and unleash a counterattack with Scissor Edge.\nCounterattack uses 4x potency of your currently learned level of Scissor Edge. Treated as Lv1 if Scissor Edge is not learned.\nDouble Saber only."
         ],
         "Effect (Global)": [
             null,
-            "Increases damage by 2%.\nUpon successfully executing a Double Saber Wind Parry, Gear Gauge is set to maximum and unleash a counterattack with Scissor Slash.\nCounterattack uses 4x potency of your currently learned level of Scissor Slash. Treated as Lv1 if Scissor Slash is not learned.\nDouble Saber only."
+            "Increases damage by 2%.\nUpon successfully executing a [Double Saber Wind Parry], Gear Gauge is set to maximum and unleash a counterattack with Scissor Slash.\nCounterattack uses 4x potency of your currently learned level of Scissor Slash. Treated as Lv1 if Scissor Slash is not learned.\nDouble Saber only."
         ],
         "Type":"Double Saber"
     },
@@ -162,11 +162,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases damage by 2%.\nIncreases the damage of Braver's Counter Edge by 15% and Phantom's Dodge Counter Bullet by 10%.\nGenerates Braver Gear Gauge when successfully performing Katana Counter.\nKatana only."
+            "Increases damage by 2%.\nIncreases the damage of Braver's [Counter Edge] by 15% and Phantom's [Dodge Counter Bullet] by 10%.\nGenerates Braver Gear Gauge when successfully performing Katana Counter.\nKatana only."
         ],
         "Effect (Global)": [
             null,
-            "Increases damage by 2%.\nIncreases the damage dealt with Braver's Counter Edge by 15% and Phantom's Dodge Counter Bullet by 10%.\nGenerates Braver Focus Gauge when successfully performing Katana Counter.\nKatana only."
+            "Increases damage by 2%.\nIncreases the damage dealt with Braver's [Counter Edge] by 15% and Phantom's [Dodge Counter Bullet] by 10%.\nGenerates Braver Focus Gauge when successfully performing Katana Counter.\nKatana only."
         ],
         "Type":"Katana"
     },
@@ -295,11 +295,11 @@
         ],
         "Effect (English)": [
             null,
-            "Successfully evading an attack with Hero Step or Stylish Roll restores an initial 30 PP and an additional 10 PP every 3 seconds afterwards. Effect ends upon taking damage.\nTwin Machineguns only."
+            "Successfully evading an attack with [Hero Step] or [Stylish Roll] restores an initial 30 PP and an additional 10 PP every 3 seconds afterwards. Effect ends upon taking damage.\nTwin Machineguns only."
         ],
         "Effect (Global)": [
             null,
-            "Successfully evading an attack with Hero Sidestep or Stylish Roll restores an initial 30 PP and an additional 10 PP every 3 seconds afterwards. Effect ends upon taking damage.\nTwin Machineguns only."
+            "Successfully evading an attack with [Hero Sidestep] or [Stylish Roll] restores an initial 30 PP and an additional 10 PP every 3 seconds afterwards. Effect ends upon taking damage.\nTwin Machineguns only."
         ],
         "Type":"Twin Machineguns"
     },
@@ -314,11 +314,11 @@
         ],
         "Effect (English)": [
             null,
-            "On Chain Trigger activation, fully recovers PP, and increases damage by 3% for 60 seconds.\nTwin Machineguns only."
+            "On [Chain Trigger] activation, fully recovers PP, and increases damage by 3% for 60 seconds.\nTwin Machineguns only."
         ],
         "Effect (Global)": [
             null,
-            "On Chain Trigger activation, fully recovers PP, and increases damage by 3% for 60 seconds.\nTwin Machineguns only."
+            "On [Chain Trigger] activation, fully recovers PP, and increases damage by 3% for 60 seconds.\nTwin Machineguns only."
         ],
         "Type":"Twin Machineguns"
     },
@@ -333,11 +333,11 @@
         ],
         "Effect (English)": [
             null,
-            "All Bow PAs except for Banish Arrow will produce a Chase Arrow upon hitting an enemy. Successfully evading an attack with Step will increase the damage of this ability by 100% for 15 seconds.\nBullet Bow only."
+            "All Bow PAs except for Banish Arrow will produce a Chase Arrow upon hitting an enemy. Successfully evading an attack with [Step] will increase the damage of this ability by 100% for 15 seconds.\nBullet Bow only."
         ],
         "Effect (Global)": [
             null,
-            "All Bow PAs except for Banishing Arrow will produce a Chaser Arrow upon hitting an enemy.\nSuccessfully evading an attack with Sidestep will increase the damage of this ability by 100% for 15 seconds.\nBow only."
+            "All Bow PAs except for Banishing Arrow will produce a Chaser Arrow upon hitting an enemy.\nSuccessfully evading an attack with [Sidestep] will increase the damage of this ability by 100% for 15 seconds.\nBow only."
         ],
         "Type":"Bullet Bow"
     },
@@ -371,11 +371,11 @@
         ],
         "Effect (English)": [
             null,
-            "All Support Techniques have instant charge time.\nThe damage of Zondeel is reduced by 34%.\nThe following techniques are considered Support Techniques:\nShifta, Deband, Resta, Anti, Zondeel, Zanverse, Megiverse\nTalis only."
+            "All Support Techniques have instant charge time.\nThe damage of Zondeel is reduced by 34%.\nThe following techniques are considered Support Techniques: Shifta, Deband, Resta, Anti, Zondeel, Zanverse, Megiverse\nTalis only."
         ],
         "Effect (Global)": [
             null,
-            "All Support Techniques have instant charge time.\nThe damage of Zondeel is reduced by 34%.\nThe following techniques are considered Support Techniques:\nShifta, Deband, Resta, Anti, Zondeel, Zanverse, Megiverse\nTalis only."
+            "All Support Techniques have instant charge time.\nThe damage of Zondeel is reduced by 34%.\nThe following techniques are considered Support Techniques: Shifta, Deband, Resta, Anti, Zondeel, Zanverse, Megiverse\nTalis only."
         ],
         "Type":"Talis"
     },
@@ -409,11 +409,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases Elemental Burst potency by 30%.\nAutomatically activates Elemental Burst upon using Jet Boots Variant Attacks.\nJet Boots only."
+            "Increases [Elemental Burst] potency by 30%.\nAutomatically activates [Elemental Burst] upon using Jet Boots Variant Attacks.\nJet Boots only."
         ],
         "Effect (Global)": [
             null,
-            "Increases Elemental Burst potency by 30%.\nAutomatically activates Elemental Burst upon using Jet Boots Variant Attacks.\nJet Boots only."
+            "Increases [Elemental Burst] potency by 30%.\nAutomatically activates [Elemental Burst] upon using Jet Boots Variant Attacks.\nJet Boots only."
         ],
         "Type":"Jet Boots"
     },
@@ -446,11 +446,11 @@
         ],
         "Effect (English)": [
             null,
-            "Reduces Technique damage by 40%.\nDifferent Techniques with the same element that are chained together with a Just Attack will have instant charge times.\nOnly the second technique needs to be a Just Attack.\nDoes not affect Nabarta, Nabarta Type-0, Gigrants Type-0, or Namegid's charge time.\nSupport techniques do not trigger this ability.\nDoes not get cancelled by Normal Attacks."
+            "Reduces Technique damage by 40%.\nDifferent Techniques with the same element that are chained together with a Just Attack will have instant charge times.\nOnly the second technique needs to be a Just Attack.\nDoes not affect Nabarta, Nabarta Type-0, Gigrants Type-0, or Namegid's charge time.\nThe following techniques do not trigger this ability: Shifta, Deband, Resta, Anti, Zondeel, Zanverse, Megiverse\nDoes not get cancelled by Normal Attacks."
         ],
         "Effect (Global)": [
             null,
-            "Reduces Technique damage by 40%.\nDifferent Techniques with the same element that are chained together with a Perfect Attack will have instant charge times.\nOnly the second technique needs to be a Just Attack.\nDoes not affect Nabarta, Nabarta Zero, Gigrants Zero, or Namegid's charge time.\nSupport techniques do not trigger this ability.\nDoes not get cancelled by Normal Attacks."
+            "Reduces Technique damage by 40%.\nDifferent Techniques with the same element that are chained together with a Perfect Attack will have instant charge times.\nOnly the second technique needs to be a Perfect Attack.\nDoes not affect Nabarta, Nabarta Zero, Gigrants Zero, or Namegid's charge time.\nThe following techniques do not trigger this ability: Shifta, Deband, Resta, Anti, Zondeel, Zanverse, Megiverse\nDoes not get cancelled by Normal Attacks."
         ]
     },
     {
@@ -500,11 +500,11 @@
         ],
         "Effect (English)": [
             null,
-            "Grants bonus effects to Critical Field and Elemental PP Restorate (EPPR) Field when either are active.\nCritical Field: Critical Damage + 3%.\nEPPR Field: Normal Attacks recover an additional 2 PP and Jet Boots Variant Attacks recover 5 PP per hit."
+            "Grants bonus effects to [Critical Field] and [Elemental PP Restorate Field] (EPPR Field) when either are active.\n[Critical Field]: Critical Damage + 3%.\n[EPPR Field]: Normal Attacks recover an additional 2 PP and Jet Boots Variant Attacks recover 5 PP per hit."
         ],
         "Effect (Global)": [
             null,
-            "Grants bonus effects to Critical Field and Elemental PP Restorate (EPPR) Field when either are active.\nCritical Field: Critical Damage + 3%.\nEPPR Field: Normal Attacks recover an additional 2 PP and Jet Boots Variant Attacks recover 5 PP per hit."
+            "Grants bonus effects to [Critical Field] and [Elemental PP Restorate Field] (EPPR Field) when either are active.\n[Critical Field]: Critical Damage + 3%.\n[EPPR Field]: Normal Attacks recover an additional 2 PP and Jet Boots Variant Attacks recover 5 PP per hit."
         ]
     },
     {

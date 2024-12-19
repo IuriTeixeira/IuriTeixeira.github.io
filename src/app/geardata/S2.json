@@ -1036,11 +1036,11 @@
         ],
         "Effect (English)": [
             null,
-            "Casts Deband on yourself every 14 seconds. Uses your currently learned level of Deband."
+            "Automatically casts Deband on self every 14 seconds. Uses your currently learned level of Deband."
         ],
         "Effect (Global)": [
             null,
-            "Deband is automatically cast every 14 seconds. Uses your currently learned level of Deband."
+            "Automatically casts Deband on self every 14 seconds. Uses your currently learned level of Deband."
         ]
     },
     {
@@ -1069,7 +1069,7 @@
         "Effect (JP)": null,
         "Effect (English)": [
             null,
-            "Increases power by 5% and reduce damage taken by 12% in the Quest \"Solo Training: Phanatical Phantoms.\""
+            "Increases power by 5% and reduce damage taken by 12% in the Extreme Quest [Solo Training: Phanatical Phantoms]."
         ],
         "Effect (Global)": null,
         "Not Implemented": true
