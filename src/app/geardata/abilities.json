@@ -2613,13 +2613,2207 @@
         "Category": "Capsule"
     },
     {
-        "Name (JP)": "イクシードレセプター",
-        "Name (English)": "Exceed Receptor",
-        "Name (Global)": "Exceed Receptor",
+        "Name (JP)": "グンネ・ソール",
+        "Name (English)": "Gunne Soul",
+        "Name (Global)": "Gunne Soul",
+        "Effect (English)": [
+            "S-ATK",
+            15,
+            "HP",
+            45
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ジグモル・ソール",
+        "Name (English)": "Zigmor Soul",
+        "Name (Global)": "Jigmol Soul",
+        "Effect (English)": [
+            "S-ATK",
+            15,
+            "PP",
+            4
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ヴォル・ソール",
+        "Name (English)": "Vol Soul",
+        "Name (Global)": "Vol Soul",
+        "Effect (English)": [
+            "S-ATK",
+            30,
+            "HP",
+            20
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "グワナ・ソール",
+        "Name (English)": "Gwana Soul",
+        "Name (Global)": "Gwana Soul",
+        "Effect (English)": [
+            "S-ATK",
+            30,
+            "HP",
+            10,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "クォーツ・ソール",
+        "Name (English)": "Quartz Soul",
+        "Name (Global)": "Quartz Soul",
+        "Effect (English)": [
+            "S-ATK",
+            30,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "デッドリオン・ソール",
+        "Name (English)": "Deadleon Soul",
+        "Name (Global)": "Deadlion Soul",
+        "Effect (English)": [
+            "S-ATK",
+            35,
+            "DEX",
+            5,
+            "HP",
+            30
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "レオーネ・ソール",
+        "Name (English)": "Leone Soul",
+        "Name (Global)": "Leone",
+        "Effect (English)": [
+            "S-ATK",
+            35,
+            "DEX",
+            5,
+            "HP",
+            20,
+            "PP",
+            1
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ベーアリ・ソール",
+        "Name (English)": "Bayari Soul",
+        "Name (Global)": "Beari Soul",
+        "Effect (English)": [
+            "S-ATK",
+            35,
+            "DEX",
+            5,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "イーデッタ・ソール",
+        "Name (English)": "Idetta Soul",
+        "Name (Global)": "Idihta Soul",
+        "Effect (English)": [
+            "R-ATK",
+            15,
+            "HP",
+            45
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "マドゥ・ソール",
+        "Name (English)": "Madu Soul",
+        "Name (Global)": "Madu Soul",
+        "Effect (English)": [
+            "R-ATK",
+            15,
+            "PP",
+            4
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ランサ・ソール",
+        "Name (English)": "Ra'nsa Soul",
+        "Name (Global)": "Ransa Soul",
+        "Effect (English)": [
+            "R-ATK",
+            30,
+            "HP",
+            20
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ファング・ソール",
+        "Name (English)": "Fang Soul",
+        "Name (Global)": "Fang Soul",
+        "Effect (English)": [
+            "R-ATK",
+            30,
+            "HP",
+            10,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "マイザー・ソール",
+        "Name (English)": "Mizer Soul",
+        "Name (Global)": "Mizer Soul",
+        "Effect (English)": [
+            "R-ATK",
+            30,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "グリュゾラス・ソール",
+        "Name (English)": "Greuzoras Soul",
+        "Name (Global)": "Gryzorus Soul",
+        "Effect (English)": [
+            "R-ATK",
+            35,
+            "DEX",
+            5,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "レオパード・ソール",
+        "Name (English)": "Leopard Soul",
+        "Name (Global)": "Leopod Soul",
+        "Effect (English)": [
+            "R-ATK",
+            35,
+            "DEX",
+            5,
+            "HP",
+            30
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ジオーグ・ソール",
+        "Name (English)": "Siorg Soul",
+        "Name (Global)": "Siogr Soul",
+        "Effect (English)": [
+            "R-ATK",
+            35,
+            "DEX",
+            5,
+            "HP",
+            20,
+            "PP",
+            1
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ラグネ・ソール",
+        "Name (English)": "Ragne Soul",
+        "Name (Global)": "Ragne Soul",
+        "Effect (English)": [
+            "T-ATK",
+            30,
+            "HP",
+            20
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ウォルガ・ソール",
+        "Name (English)": "Wolga Soul",
+        "Name (Global)": "Wolga Soul",
+        "Effect (English)": [
+            "T-ATK",
+            30,
+            "HP",
+            10,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "エルダー・ソール",
+        "Name (English)": "Elder Soul",
+        "Name (Global)": "Elder Soul",
+        "Effect (English)": [
+            "T-ATK",
+            30,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ディアボ・ソール",
+        "Name (English)": "Diabo Soul",
+        "Name (Global)": "Diabo Soul",
+        "Effect (English)": [
+            "T-ATK",
+            35,
+            "DEX",
+            5,
+            "HP",
+            30
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ドゥバルス・ソール ",
+        "Name (English)": "Duvals Soul",
+        "Name (Global)": "Deubarz Soul",
+        "Effect (English)": [
+            "T-ATK",
+            35,
+            "DEX",
+            5,
+            "HP",
+            20,
+            "PP",
+            1
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "グランゾ・ソール",
+        "Name (English)": "Guranz Soul",
+        "Name (Global)": "Granz Soul",
+        "Effect (English)": [
+            "T-ATK",
+            35,
+            "DEX",
+            5,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "シグノ・ソール",
+        "Name (English)": "Signo Soul",
+        "Name (Global)": "Signo Soul",
+        "Effect (English)": [
+            "DEX",
+            30,
+            "HP",
+            20,
+            "PP",
+            1
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "マルモ・ソール",
+        "Name (English)": "Malmo Soul",
+        "Name (Global)": "Marmoth Soul",
+        "Effect (English)": [
+            "R-DEF",
+            30,
+            "HP",
+            20,
+            "PP",
+            1
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ヴァーダー・ソール",
+        "Name (English)": "Vardha Soul",
+        "Name (Global)": "Varder Soul",
+        "Effect (English)": [
+            "R-DEF",
+            30,
+            "PP",
+            4
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "キャタ・ソール",
+        "Name (English)": "Cater Soul",
+        "Name (Global)": "Catre Soul",
+        "Effect (English)": [
+            "T-DEF",
+            30,
+            "HP",
+            20,
+            "PP",
+            1
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ロックベア・ソール",
+        "Name (English)": "Rockbear Soul",
+        "Name (Global)": "",
+        "Effect (English)": [
+            "S-DEF",
+            30,
+            "HP",
+            10,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "スノウ・ソール",
+        "Name (English)": "Snow Soul",
+        "Name (Global)": "Snow Soul",
+        "Effect (English)": [
+            "S-DEF",
+            30,
+            "HP",
+            20,
+            "PP",
+            1
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ラッピー・ソール",
+        "Name (English)": "Rappy Soul",
+        "Name (Global)": "Rappy Soul",
+        "Effect (English)": [
+            "DEX",
+            30,
+            "PP",
+            4
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "シュレイダ・ソール",
+        "Name (English)": "Shrayda Soul",
+        "Name (Global)": "Schraider Soul",
+        "Effect (English)": [
+            "T-DEF",
+            30,
+            "HP",
+            10,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "クローム・ソール",
+        "Name (English)": "Chrome Soul",
+        "Name (Global)": "Chrome Soul",
+        "Effect (English)": [
+            "DEX",
+            30,
+            "HP",
+            10,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ゴロン・ソール",
+        "Name (English)": "Goron Soul",
+        "Name (Global)": "Goron Soul",
+        "Effect (English)": [
+            "T-DEF",
+            30,
+            "PP",
+            4
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "エクス・ソール",
+        "Name (English)": "Ex Soul",
+        "Name (Global)": "X Soul",
+        "Effect (English)": [
+            "S-DEF",
+            30,
+            "PP",
+            4
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ペルソナ・ソール",
+        "Name (English)": "Persona Soul",
+        "Name (Global)": "Persona Soul",
+        "Effect (English)": [
+            "R-DEF",
+            30,
+            "HP",
+            10,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "クーガー・ソール",
+        "Name (English)": "Cougar Soul",
+        "Name (Global)": null,
+        "Effect (English)": [
+            "S-ATK",
+            15,
+            "R-ATK",
+            15,
+            "T-ATK",
+            15,
+            "DEX",
+            15,
+            "HP",
+            10,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "オルグ・ソール",
+        "Name (English)": "Org Soul",
+        "Name (Global)": "Org Soul",
+        "Effect (English)": [
+            "S-ATK",
+            20,
+            "R-ATK",
+            20,
+            "HP",
+            10
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "バル・ソール",
+        "Name (English)": "Bal Soul",
+        "Name (Global)": "Bar Soul",
+        "Effect (English)": [
+            "R-ATK",
+            20,
+            "T-ATK",
+            20,
+            "HP",
+            10
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "リンガ・ソール",
+        "Name (English)": "Ringa Soul",
+        "Name (Global)": "Ringa Soul",
+        "Effect (English)": [
+            "S-ATK",
+            20,
+            "T-ATK",
+            20,
+            "HP",
+            10
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ソーマ・ソール",
+        "Name (English)": "Soma Soul",
+        "Name (Global)": "Soma Soul",
+        "Effect (English)": [
+            "S-ATK",
+            20,
+            "R-ATK",
+            20,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "タガミカヅチ・ソール",
+        "Name (English)": "Tagami Kazuchi Soul",
+        "Name (Global)": "Tagamikazuchi Soul",
+        "Effect (English)": [
+            "R-ATK",
+            20,
+            "T-ATK",
+            20,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "イザネカヅチ・ソール",
+        "Name (English)": "Izane Kazuchi Soul",
+        "Name (Global)": "Izanekazuchi Soul",
+        "Effect (English)": [
+            "S-ATK",
+            20,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "マリューダ・ソール",
+        "Name (English)": "Malluda Soul",
+        "Name (Global)": "Malluda Soul",
+        "Effect (English)": [
+            "S-ATK",
+            20,
+            "T-ATK",
+            20,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "メデューナ・ソール",
+        "Name (English)": "Meduna Soul",
+        "Name (Global)": "Meduna Soul",
+        "Effect (English)": [
+            "S-ATK",
+            20,
+            "R-ATK",
+            20,
+            "HP",
+            5,
+            "PP",
+            1
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ビブラス・ソール",
+        "Name (English)": "Vibrace Soul",
+        "Name (Global)": "Vibras Soul",
+        "Effect (English)": [
+            "R-ATK",
+            20,
+            "T-ATK",
+            20,
+            "HP",
+            5,
+            "PP",
+            1
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ルーサー・ソール",
+        "Name (English)": "Loser Soul",
+        "Name (Global)": "Luther Soul",
+        "Effect (English)": [
+            "S-ATK",
+            20,
+            "T-ATK",
+            20,
+            "HP",
+            5,
+            "PP",
+            1
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "リーリー・ソール",
+        "Name (English)": "Lilli Soul",
+        "Name (Global)": "Lilli Soul",
+        "Effect (English)": [
+            "S-ATK",
+            20,
+            "S-DEF",
+            20,
+            "HP",
+            20
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ナイトギア・ソール",
+        "Name (English)": "Knight Gear Soul",
+        "Name (Global)": "Knight Gear Soul",
+        "Effect (English)": [
+            "S-ATK",
+            15,
+            "R-ATK",
+            15,
+            "T-ATK",
+            15,
+            "PP",
+            4
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ジャドゥ・ソール",
+        "Name (English)": "Jhadu Soul",
+        "Name (Global)": "Jadeu Soul",
+        "Effect (English)": [
+            "T-DEF",
+            15,
+            "HP",
+            45
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ネプト・ソール",
+        "Name (English)": "Nepto Soul",
+        "Name (Global)": "Nept Soul",
+        "Effect (English)": [
+            "T-ATK",
+            15,
+            "PP",
+            4
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ニャウ・ソール",
+        "Name (English)": "Nyau Soul",
+        "Name (Global)": "Nyau Soul",
+        "Effect (English)": [
+            "DEX",
+            15,
+            "PP",
+            4
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "アンガ・ソール",
+        "Name (English)": "Anga Soul",
+        "Name (Global)": "Anga Soul",
+        "Effect (English)": [
+            "S-ATK",
+            20,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20,
+            "PP",
+            4
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "マガツ・ソール",
+        "Name (English)": "Magatsu Soul",
+        "Name (Global)": "Magatsu Soul",
+        "Effect (English)": [
+            "S-DEF",
+            15,
+            "R-DEF",
+            15,
+            "T-DEF",
+            15,
+            "HP",
+            30,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "アプレンティス・ソール",
+        "Name (English)": "Apprentice Soul",
+        "Name (Global)": "Apprentice Soul",
+        "Effect (English)": [
+            "ATK",
+            40
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "グリフォン・ソール",
+        "Name (English)": "Gryphon Soul",
+        "Name (Global)": "Gryphon Soul",
+        "Effect (English)": [
+            "S-ATK",
+            15,
+            "R-ATK",
+            15,
+            "T-ATK",
+            15,
+            "DEX",
+            15,
+            "HP",
+            5,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "シノワ・ソール",
+        "Name (English)": "Sinow Soul",
+        "Name (Global)": "Sinow Soul",
+        "Effect (English)": [
+            "S-ATK",
+            5,
+            "DEX",
+            30,
+            "HP",
+            25,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ダブル・ソール",
+        "Name (English)": "Double Soul",
+        "Name (Global)": "Gemini Soul",
+        "Effect (English)": [
+            "HP",
+            40,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ダークネス・ソール",
+        "Name (English)": "Darkness Soul",
+        "Name (Global)": "Soul of Darkness",
+        "Effect (English)": [
+            "All Stats",
+            15,
+            "HP",
+            15,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "アストラル・ソール",
+        "Name (English)": "Astral Soul",
+        "Name (Global)": "Astral Soul",
+        "Effect (English)": [
+            "All Stats",
+            35,
+            "HP",
+            35,
+            "PP",
+            5
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "トウオウ・ソール",
+        "Name (English)": "Toh'oh Soul",
+        "Name (Global)": "Eastern Soul",
         "Effect (English)": [
             "All Stats",
             10
         ],
-        "Category": "Capsule"
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "フルベガス・ソール",
+        "Name (English)": "Full Vegas Soul",
+        "Name (Global)": "Fullvegas Soul",
+        "Effect (English)": [
+            "S-ATK",
+            15,
+            "R-ATK",
+            15,
+            "T-ATK",
+            15
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "エスカード・ソール",
+        "Name (English)": "Escarde Soul",
+        "Name (Global)": "Escarde Soul",
+        "Effect (English)": [
+            "S-ATK",
+            10,
+            "R-ATK",
+            10,
+            "T-ATK",
+            10,
+            "DEX",
+            20
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ファーブラ・ソール",
+        "Name (English)": "Fabula Soul",
+        "Name (Global)": "Fabula Soul",
+        "Effect (English)": [
+            "S-ATK",
+            10,
+            "R-ATK",
+            10,
+            "T-ATK",
+            10,
+            "HP",
+            20
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "イストリア・ソール",
+        "Name (English)": "Historia Soul",
+        "Name (Global)": "Historia Soul",
+        "Effect (English)": [
+            "S-DEF",
+            25,
+            "R-DEF",
+            25,
+            "T-DEF",
+            25,
+            "HP",
+            30,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "イクスアクト・ソール",
+        "Name (English)": "Ex-Act Soul",
+        "Name (Global)": "EX Acto Soul",
+        "Effect (English)": [
+            "S-ATK",
+            30,
+            "DEF",
+            20,
+            "HP",
+            20,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "イクスティル・ソール",
+        "Name (English)": "Ex-Till Soul",
+        "Name (Global)": "EX Tir Soul",
+        "Effect (English)": [
+            "R-ATK",
+            30,
+            "DEF",
+            20,
+            "HP",
+            20,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "イクスマギー・ソール",
+        "Name (English)": "Ex-Magi Soul",
+        "Name (Global)": "EX Magi Soul",
+        "Effect (English)": [
+            "T-ATK",
+            30,
+            "DEF",
+            20,
+            "HP",
+            20,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "イクスアレス・ソール",
+        "Name (English)": "Ex-Ares Soul",
+        "Name (Global)": "EX Alles Soul",
+        "Effect (English)": [
+            "ATK",
+            20,
+            "DEF",
+            20,
+            "HP",
+            50,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "アクト・ジ・ソール",
+        "Name (English)": "Act The Soul",
+        "Name (Global)": "Acto Di Soul",
+        "Effect (English)": [
+            "S-ATK",
+            35,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ティル・ジ・ソール",
+        "Name (English)": "Till The Soul",
+        "Name (Global)": "Tir Di Soul",
+        "Effect (English)": [
+            "R-ATK",
+            35,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "マギー・ジ・ソール",
+        "Name (English)": "Magi The Soul",
+        "Name (Global)": "Magi Di Soul",
+        "Effect (English)": [
+            "T-ATK",
+            35,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "アレス・ジ・ソール",
+        "Name (English)": "Ares The Soul",
+        "Name (Global)": "Alles Di Soul",
+        "Effect (English)": [
+            "S-ATK",
+            25,
+            "R-ATK",
+            25,
+            "T-ATK",
+            25,
+            "HP",
+            35,
+            "PP",
+            3
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "エーテル・ソール",
+        "Name (English)": "Ether Soul",
+        "Name (Global)": "Aether Soul",
+        "Effect (English)": [
+            "All Stats",
+            15,
+            "HP",
+            15,
+            "PP",
+            2
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ガーディアン・ソール",
+        "Name (English)": "Guardian Soul",
+        "Name (Global)": "Guardian Soul",
+        "Effect (English)": [
+            "All Stats",
+            70,
+            "HP",
+            70,
+            "PP",
+            7
+        ],
+        "Category": "Soul"
+    },
+    {
+        "Name (JP)": "ラブ・フィーバー",
+        "Name (English)": "Love Fever",
+        "Name (Global)": "Love Fever",
+        "Effect (English)": [
+            "PP",
+            2,
+            "S-ATK",
+            10,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "ラブ・フィーバー",
+        "Name (English)": "Lovey Fever",
+        "Name (Global)": "Love Fever",
+        "Effect (English)": [
+            "PP",
+            2,
+            "S-ATK",
+            10,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "セレモ・フィーバー",
+        "Name (English)": "Ceremo Fever",
+        "Name (Global)": "Ceremo Fever",
+        "Effect (English)": [
+            "HP",
+            5,
+            "PP",
+            2,
+            "S-ATK",
+            10,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "ソニック・フィーバー",
+        "Name (English)": "Sonic Fever",
+        "Name (Global)": "Sonic Fever",
+        "Effect (English)": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "S-ATK",
+            10,
+            "R-DEF",
+            10
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "セント・フィーバー",
+        "Name (English)": "St. Fever",
+        "Name (Global)": "Santa Fever",
+        "Effect (English)": [
+            "PP",
+            2,
+            "R-ATK",
+            10,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "セント・フィーバー",
+        "Name (English)": "Egg Fever",
+        "Name (Global)": "Fever",
+        "Effect (English)": [
+            "HP",
+            10,
+            "R-ATK",
+            10,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "ノイヤ・フィーバー",
+        "Name (English)": "Noiya Fever",
+        "Name (Global)": "Noiya Fever",
+        "Effect (English)": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "R-ATK",
+            10,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "ラタン・フィーバー",
+        "Name (English)": "Latan Fever",
+        "Name (Global)": "Lantern Fever",
+        "Effect (English)": [
+            "PP",
+            2,
+            "T-ATK",
+            10,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "フログ・フィーバー",
+        "Name (English)": "Frog Fever",
+        "Name (Global)": "Frog Fever",
+        "Effect (English)": [
+            "HP",
+            10,
+            "T-ATK",
+            10,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "サマー・フィーバー",
+        "Name (English)": "Summer Fever",
+        "Name (Global)": "Summer Fever",
+        "Effect (English)": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "T-ATK",
+            10,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "ルーナ・フィーバー",
+        "Name (English)": "Luna Fever",
+        "Name (Global)": "Luna Fever",
+        "Effect (English)": [
+            "HP",
+            10,
+            "PP",
+            1,
+            "T-ATK",
+            10
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "サクラ・フィーバー",
+        "Name (English)": "Sakura Fever",
+        "Name (Global)": "Sakura Fever",
+        "Effect (English)": [
+            "HP",
+            10,
+            "PP",
+            1,
+            "S-DEF",
+            10,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "ドラグ・フィーバー",
+        "Name (English)": "Dragon Fever",
+        "Name (Global)": "Dragon Fever",
+        "Effect (English)": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "R-DEF",
+            10,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "タッキ・フィーバー",
+        "Name (English)": "Turkey Fever",
+        "Name (Global)": "Turkey Fever",
+        "Effect (English)": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "T-DEF",
+            10,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "トロクロ・フィーバー",
+        "Name (English)": "Toro Kuro Fever",
+        "Name (Global)": null,
+        "Effect (English)": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "DEX",
+            15
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "サンサン・フィーバー",
+        "Name (English)": "Sansan Fever",
+        "Name (Global)": "Sun Sun Fever",
+        "Effect (English)": [
+            "HP",
+            5,
+            "PP",
+            1,
+            "ATK",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "アクス・フィーバー",
+        "Name (English)": "ARKS Fever",
+        "Name (Global)": "ARKS Fever",
+        "Effect (English)": [
+            "PP",
+            5,
+            "ATK",
+            5,
+            "DEX",
+            5
+        ],
+        "Category": "Fever"
+    },
+    {
+        "Name (JP)": "ヤマト・ファクター",
+        "Name (English)": "Yamato Factor",
+        "Name (Global)": "Yamato Factor",
+        "Effect (English)": [
+            "HP",
+            20,
+            "PP",
+            1,
+            "S-ATK",
+            10,
+            "R-ATK",
+            20,
+            "T-ATK",
+            10
+        ],
+        "Category": "Factor"
+    },
+    {
+        "Name (JP)": "マザー・ファクター",
+        "Name (English)": "Mother Factor",
+        "Name (Global)": "Mother Factor",
+        "Effect (English)": [
+            "HP",
+            20,
+            "PP",
+            1,
+            "S-ATK",
+            10,
+            "R-ATK",
+            10,
+            "T-ATK",
+            20
+        ],
+        "Category": "Factor"
+    },
+    {
+        "Name (JP)": "デウス・ファクター",
+        "Name (English)": "Deus Factor",
+        "Name (Global)": "Deus Factor",
+        "Effect (English)": [
+            "HP",
+            20,
+            "PP",
+            1,
+            "S-ATK",
+            20,
+            "R-ATK",
+            10,
+            "T-ATK",
+            10
+        ],
+        "Category": "Factor"
+    },
+    {
+        "Name (JP)": "エーテル・ファクター",
+        "Name (English)": "Ether Factor",
+        "Name (Global)": "Aether Factor",
+        "Effect (English)": [
+            "HP",
+            10,
+            "PP",
+            6,
+            "All Stats",
+            30
+        ],
+        "Category": "Factor"
+    },
+    {
+        "Name (JP)": "エルダー・レヴリー",
+        "Name (English)": "Elder Reverie",
+        "Name (Global)": "Elder Reverie",
+        "Effect (English)": [
+            "PP",
+            -2,
+            "S-ATK",
+            40,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20
+        ],
+        "Category": "Reverie"
+    },
+    {
+        "Name (JP)": "アプレジナ・レヴリー",
+        "Name (English)": "Appregina Reverie",
+        "Name (Global)": "Appregina Reverie",
+        "Effect (English)": [
+            "HP",
+            -10,
+            "PP",
+            -1,
+            "S-ATK",
+            20,
+            "R-ATK",
+            40,
+            "T-ATK",
+            20
+        ],
+        "Category": "Reverie"
+    },
+    {
+        "Name (JP)": "ルーサー・レヴリー",
+        "Name (English)": "Loser Reverie",
+        "Name (Global)": "Luther Reverie",
+        "Effect (English)": [
+            "HP",
+            -20,
+            "S-ATK",
+            20,
+            "R-ATK",
+            20,
+            "T-ATK",
+            40
+        ],
+        "Category": "Reverie"
+    },
+    {
+        "Name (JP)": "ダブル・レヴリー",
+        "Name (English)": "Double Reverie",
+        "Name (Global)": "Gemini Reverie",
+        "Effect (English)": [
+            "HP",
+            50,
+            "PP",
+            5,
+            "ATK",
+            -20
+        ],
+        "Category": "Reverie"
+    },
+    {
+        "Name (JP)": "ペルソナ・レヴリー",
+        "Name (English)": "Persona Reverie",
+        "Name (Global)": "Persona Reverie",
+        "Effect (English)": [
+            "ATK",
+            40,
+            "DEF",
+            -20
+        ],
+        "Category": "Reverie"
+    },
+    {
+        "Name (JP)": "オメガ・レヴリー",
+        "Name (English)": "Omega Reverie",
+        "Name (Global)": "Omega Reverie",
+        "Effect (English)": [
+            "HP",
+            20,
+            "PP",
+            1,
+            "ATK",
+            15
+        ],
+        "Category": "Reverie"
+    },
+    {
+        "Name (JP)": "マナ・レヴリー",
+        "Name (English)": "Mana Reverie",
+        "Name (Global)": "Mana Reverie",
+        "Effect (English)": [
+            "HP",
+            20,
+            "PP",
+            4,
+            "ATK",
+            50
+        ],
+        "Category": "Reverie"
+    },
+    {
+        "Name (JP)": "オメガ・メモリア",
+        "Name (English)": "Omega Memoria",
+        "Name (Global)": "Omega Memoria",
+        "Effect (English)": [
+            "HP",
+            15,
+            "PP",
+            2,
+            "All Stats",
+            15
+        ]
+    },
+    {
+        "Name (JP)": "ソール・カタリスト",
+        "Name (English)": "Soul Catalyst",
+        "Name (Global)": "Soul Catalyst",
+        "Effect (English)": [
+            "HP",
+            10,
+            "PP",
+            1
+        ],
+        "Category": "Catalyst"
+    },
+    {
+        "Name (JP)": "ファクター・カタリスト",
+        "Name (English)": "Factor Catalyst",
+        "Name (Global)": "Factor Catalyst",
+        "Effect (English)": [
+            "HP",
+            10,
+            "PP",
+            1
+        ],
+        "Category": "Catalyst"
+    },
+    {
+        "Name (JP)": "レヴリー・カタリスト",
+        "Name (English)": "Reverie Catalyst",
+        "Name (Global)": "Reverie Catalyst",
+        "Effect (English)": [
+            "HP",
+            10,
+            "PP",
+            1
+        ],
+        "Category": "Catalyst"
+    },
+    {
+        "Name (JP)": "グレア・カタリスト",
+        "Name (English)": "Glare Catalyst",
+        "Name (Global)": "Glare Catalyst",
+        "Effect (English)": [
+            "HP",
+            10,
+            "PP",
+            1
+        ],
+        "Category": "Catalyst"
+    },
+    {
+        "Name (JP)": "センテンス・パワー",
+        "Name (English)": "Sentence Power",
+        "Name (Global)": "Sentence Might",
+        "Effect (English)": [
+            "PP",
+            4,
+            "S-ATK",
+            20
+        ],
+        "Category": "Sentence"
+    },
+    {
+        "Name (JP)": "センテンス・シュート",
+        "Name (English)": "Sentence Shoot",
+        "Name (Global)": "Sentence Precision",
+        "Effect (English)": [
+            "PP",
+            4,
+            "R-ATK",
+            20
+        ],
+        "Category": "Sentence"
+    },
+    {
+        "Name (JP)": "センテンス・テクニック",
+        "Name (English)": "Sentence Tech",
+        "Name (Global)": "Sentence Casting",
+        "Effect (English)": [
+            "PP",
+            4,
+            "T-ATK",
+            20
+        ],
+        "Category": "Sentence"
+    },
+    {
+        "Name (JP)": "センテンス・アルマ",
+        "Name (English)": "Sentence Arma",
+        "Name (Global)": "Sentence Arma",
+        "Effect (English)": [
+            "HP",
+            20,
+            "PP",
+            3,
+            "S-ATK",
+            30
+        ],
+        "Category": "Sentence"
+    },
+    {
+        "Name (JP)": "センテンス・ティロ",
+        "Name (English)": "Sentence Tiro",
+        "Name (Global)": "Sentence Tyro",
+        "Effect (English)": [
+            "HP",
+            20,
+            "PP",
+            3,
+            "R-ATK",
+            30
+        ],
+        "Category": "Sentence"
+    },
+    {
+        "Name (JP)": "センテンス・マギア",
+        "Name (English)": "Sentence Magia",
+        "Name (Global)": "Sentence Magia",
+        "Effect (English)": [
+            "HP",
+            20,
+            "PP",
+            3,
+            "T-ATK",
+            30
+        ],
+        "Category": "Sentence"
+    },
+    {
+        "Name (JP)": "センテンス・トリプル",
+        "Name (English)": "Sentence Triple",
+        "Name (Global)": "Sentence Triple",
+        "Effect (English)": [
+            "ATK",
+            30
+        ],
+        "Category": "Sentence"
+    },
+    {
+        "Name (JP)": "フレイズ・チェイス",
+        "Name (English)": "Phrase Chase",
+        "Name (Global)": "Phrase Chase",
+        "Effect (JP)": [
+            null,
+            "状態異常のエネミーへの与ダメージが5%上昇"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 5% against enemies inflicted with Status Effects."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 5% against enemies inflicted with Status Effects."
+        ],
+        "Category": "Phrase"
+    },
+    {
+        "Name (JP)": "フレイズ・レスポンス",
+        "Name (English)": "Phrase Response",
+        "Name (Global)": "Phrase Response",
+        "Effect (JP)": [
+            null,
+            "通常攻撃のPP回復量が5%上昇"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Active PP Recovery by 5%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Active PP Recovery by 5%."
+        ],
+        "Category": "Phrase"
+    },
+    {
+        "Name (JP)": "フレイズ・ウィーク",
+        "Name (English)": "Phrase Weak",
+        "Name (Global)": "Phrase Weak",
+        "Effect (JP)": [
+            null,
+            "弱点属性で攻撃した時、与ダメージが2%上昇"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 2% when hitting Elemental Weakness."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 2% when hitting Elemental Weakness."
+        ],
+        "Category": "Phrase"
+    },
+    {
+        "Name (JP)": "フレイズ・リカバリー",
+        "Name (English)": "Phrase Recovery",
+        "Name (Global)": "Phrase Recovery",
+        "Effect (JP)": [
+            null,
+            "PPの自然回復速度が5%上昇"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases Natural PP Recovery by 5%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases Natural PP Recovery by 5%."
+        ],
+        "Category": "Phrase"
+    },
+    {
+        "Name (JP)": "フレイズ・リデュース",
+        "Name (English)": "Phrase Reduce",
+        "Name (Global)": "Phrase Reduce",
+        "Effect (JP)": [
+            null,
+            "PPの消費量が4%減少する"
+        ],
+        "Effect (English)": [
+            null,
+            "Reduces PP Consumption by 4%."
+        ],
+        "Effect (Global)": [
+            null,
+            "Reduces PP Consumption by 4%."
+        ],
+        "Category": "Phrase"
+    },
+    {
+        "Name (JP)": "フレイズ・ディケイ",
+        "Name (English)": "Phrase Decay",
+        "Name (Global)": "Phrase Decay",
+        "Effect (JP)": [
+            null,
+            "ジェルン状態のエネミーへの与ダメージが5%上昇"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage  by 5% against enemies inflicted with Jellen."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage  by 5% against enemies inflicted with Jellen."
+        ],
+        "Category": "Phrase"
+    },
+    {
+        "Name (JP)": "アルティメットバスター",
+        "Name (English)": "Ultimate Buster",
+        "Name (Global)": "Ultimate Buster",
+        "Effect (JP)": [
+            null,
+            "世壊種に与えるダメージが10%上昇"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 10% against Aberrations."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 10% against Tainted Enemies."
+        ],
+        "Category": "Buster"
+    },
+    {
+        "Name (JP)": "オメガバスター",
+        "Name (English)": "Omega Buster",
+        "Name (Global)": "Omega Buster",
+        "Effect (JP)": [
+            null,
+            "魔物種に与えるダメージが3%上昇"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage by 10% against Demons."
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage by 10% against Supernatural Enemies."
+        ],
+        "Category": "Buster"
+    },
+    {
+        "Name (JP)": "リーパー／炎弱点",
+        "Name (English)": "Ripper/Fire Weak",
+        "Name (Global)": "Reaper: Weak to Fire",
+        "Effect (JP)": [
+            null,
+            "炎弱点のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against enemies weak to Fire based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against enemies weak to Fire based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "リーパー／氷弱点",
+        "Name (English)": "Ripper/Ice Weak",
+        "Name (Global)": "Reaper: Weak to Ice",
+        "Effect (JP)": [
+            null,
+            "氷弱点のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against enemies weak to Ice based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against enemies weak to Ice based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "リーパー／雷弱点",
+        "Name (English)": "Ripper/Lightning Weak",
+        "Name (Global)": "Reaper: Weak to Lightning",
+        "Effect (JP)": [
+            null,
+            "雷弱点のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against enemies weak to Lightning based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against enemies weak to Lightning based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "リーパー／風弱点",
+        "Name (English)": "Ripper/Wind Weak",
+        "Name (Global)": "Reaper: Weak to Wind",
+        "Effect (JP)": [
+            null,
+            "風弱点のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against enemies weak to Wind based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against enemies weak to Wind based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "リーパー／光弱点",
+        "Name (English)": "Ripper/Light Weak",
+        "Name (Global)": "Reaper: Weak to Light",
+        "Effect (JP)": [
+            null,
+            "光弱点のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against enemies weak to Light based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against enemies weak to Light based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "リーパー／闇弱点",
+        "Name (English)": "Ripper/Dark Weak",
+        "Name (Global)": "Reaper: Weak to Dark",
+        "Effect (JP)": [
+            null,
+            "闇弱点のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against enemies weak to Dark based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against enemies weak to Dark based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "スレイヤー／原生種",
+        "Name (English)": "Slayer/Native-Type",
+        "Name (Global)": "Slayer: Sylvant",
+        "Effect (JP)": [
+            null,
+            "原生種のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against Natives based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against Sylvants based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "スレイヤー／龍族",
+        "Name (English)": "Slayer/Dragonkin-Type",
+        "Name (Global)": "Slayer: Draconian",
+        "Effect (JP)": [
+            null,
+            "龍族のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against Dragonkin based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against Draconians based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "スレイヤー／機甲種",
+        "Name (English)": "Slayer/Armor-Type",
+        "Name (Global)": "Slayer: Automata",
+        "Effect (JP)": [
+            null,
+            "機甲種のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against Mechs based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against Automatas based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "スレイヤー／機甲種",
+        "Name (English)": "Slayer/Oceanid-Type",
+        "Name (Global)": "Slayer: Oceanid",
+        "Effect (JP)": [
+            null,
+            "海王種のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against Oceanids based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against Oceanids based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "スレイヤー／黒の民",
+        "Name (English)": "Slayer/Phantom-Type",
+        "Name (Global)": "Slayer: Phantasm",
+        "Effect (JP)": [
+            null,
+            "幻創種のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against Phantoms based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against Phantasms based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "スレイヤー／ダーカー",
+        "Name (English)": "Slayer/Darker-Type",
+        "Name (Global)": "Slayer: Falspawn",
+        "Effect (JP)": [
+            null,
+            "ダーカー種のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against Darkers based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against Falspawn based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "スレイヤー/閃機種",
+        "Name (English)": "Slayer/Luminmech-Type",
+        "Name (Global)": "Slayer: Luminmech",
+        "Effect (JP)": [
+            null,
+            "閃機種のエネミーを攻撃時威力が上昇。ただし武器のレアリティが高くなるほど威力の上昇量は減少。"
+        ],
+        "Effect (English)": [
+            null,
+            "Increases damage against Luminmechs based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Effect (Global)": [
+            null,
+            "Increases damage against Luminmechs based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
+        ],
+        "Restriction":"Weapon"
+    },
+    {
+        "Name (JP)": "ラッキーライズⅠ",
+        "Name (English)": "Lucky Rise I",
+        "Name (Global)": "Lucky Rise I",
+        "Effect (JP)": [
+            "レアドロップ倍率が増加",
+            5
+        ],
+        "Effect (English)": [
+            "Rare Drop Rate",
+            5
+        ],
+        "Effect (Global)": [
+            "Rare Drop Rate",
+            5
+        ],
+        "Category":"Gift"
+    },
+    {
+        "Name (JP)": "ラッキーライズⅡ",
+        "Name (English)": "Lucky Rise II",
+        "Name (Global)": "Lucky Rise II",
+        "Effect (JP)": [
+            "レアドロップ倍率が増加",
+            7
+        ],
+        "Effect (English)": [
+            "Rare Drop Rate",
+            7
+        ],
+        "Effect (Global)": [
+            "Rare Drop Rate",
+            7
+        ],
+        "Category":"Gift"
+    },
+    {
+        "Name (JP)": "ラッキーライズⅢ",
+        "Name (English)": "Lucky Rise III",
+        "Name (Global)": "Lucky Rise III",
+        "Effect (JP)": [
+            "レアドロップ倍率が増加",
+            10
+        ],
+        "Effect (English)": [
+            "Rare Drop Rate",
+            10
+        ],
+        "Effect (Global)": [
+            "Rare Drop Rate",
+            10
+        ],
+        "Category":"Gift"
+    },
+    {
+        "Name (JP)": "メセタフィーバーⅠ",
+        "Name (English)": "Meseta Fever I",
+        "Name (Global)": "Meseta Fever I",
+        "Effect (JP)": [
+            "出現するメセタが増加",
+            5
+        ],
+        "Effect (English)": [
+            "Meseta Earned",
+            5
+        ],
+        "Effect (Global)": [
+            "Meseta Earned",
+            5
+        ],
+        "Category":"Gift"
+    },
+    {
+        "Name (JP)": "メセタフィーバーⅡ",
+        "Name (English)": "Meseta Fever II",
+        "Name (Global)": "Meseta Fever II",
+        "Effect (JP)": [
+            "出現するメセタが増加",
+            7
+        ],
+        "Effect (English)": [
+            "Meseta Earned",
+            7
+        ],
+        "Effect (Global)": [
+            "Meseta Earned",
+            7
+        ],
+        "Category":"Gift"
+    },
+    {
+        "Name (JP)": "メセタフィーバーⅢ",
+        "Name (English)": "Meseta Fever III",
+        "Name (Global)": "Meseta Fever III",
+        "Effect (JP)": [
+            "出現するメセタが増加",
+            10
+        ],
+        "Effect (English)": [
+            "Meseta Earned",
+            10
+        ],
+        "Effect (Global)": [
+            "Meseta Earned",
+            10
+        ],
+        "Category":"Gift"
+    },
+    {
+        "Name (JP)": "EXPブーストⅠ",
+        "Name (English)": "EXP Boost I",
+        "Name (Global)": "Increased EXP I",
+        "Effect (JP)": [
+            "取得する経験値が増加",
+            5
+        ],
+        "Effect (English)": [
+            "Experience Earned",
+            5
+        ],
+        "Effect (Global)": [
+            "Experience Earned",
+            5
+        ],
+        "Category":"Gift"
+    },
+    {
+        "Name (JP)": "EXPブーストⅡ",
+        "Name (English)": "EXP Boost II",
+        "Name (Global)": "Increased EXP II",
+        "Effect (JP)": [
+            "取得する経験値が増加",
+            7
+        ],
+        "Effect (English)": [
+            "Experience Earned",
+            7
+        ],
+        "Effect (Global)": [
+            "Experience Earned",
+            7
+        ],
+        "Category":"Gift"
+    },
+    {
+        "Name (JP)": "EXPブーストⅢ",
+        "Name (English)": "EXP Boost III",
+        "Name (Global)": "Increased EXP III",
+        "Effect (JP)": [
+            "取得する経験値が増加",
+            10
+        ],
+        "Effect (English)": [
+            "Experience Earned",
+            10
+        ],
+        "Effect (Global)": [
+            "Experience Earned",
+            10
+        ],
+        "Category":"Gift"
+    },
+    {
+        "Name (JP)": "イクシードレセプター",
+        "Name (English)": "Gift Receptor",
+        "Name (Global)": "Gift Receptor",
+        "Effect (English)": [
+            "All Stats",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "エクストレセプター",
+        "Name (English)": "Extreceptor",
+        "Name (Global)": "Elegant Receptor",
+        "Effect (English)": [
+            "All Stats",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "ソールレセプター",
+        "Name (English)": "Soul Receptor",
+        "Name (Global)": "Soul Receptor",
+        "Effect (English)": [
+            "All Stats",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "ファクターレセプター",
+        "Name (English)": "Factor Receptor",
+        "Name (Global)": "Factor Receptor",
+        "Effect (English)": [
+            "All Stats",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "レヴリーレセプター",
+        "Name (English)": "Reverie Receptor",
+        "Name (Global)": "Reverie Receptor",
+        "Effect (English)": [
+            "All Stats",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "センテンスレセプター",
+        "Name (English)": "Sentence Receptor",
+        "Name (Global)": "Sentence Receptor",
+        "Effect (English)": [
+            "All Stats",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "フレイズレセプター",
+        "Name (English)": "Phrase Receptor",
+        "Name (Global)": "Phrase Receptor",
+        "Effect (English)": [
+            "All Stats",
+            10
+        ]
     }
 ]
