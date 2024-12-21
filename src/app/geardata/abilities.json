@@ -5200,7 +5200,7 @@
     {
         "Name (JP)": "NTウェポンブースト2",
         "Name (English)": "NT Weapon Boost 2",
-        "Name (Global)": null,
+        "Name (Global)": "Weapon Boost 2",
         "Effect (JP)": [
             "新世武器強化時の経験値が増加する",
             4800
