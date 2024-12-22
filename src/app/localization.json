@@ -1,0 +1,330 @@
+[
+    {
+        "Name (JP)": "HP",
+        "Name (English)": "HP",
+        "Name (Global)": "HP"
+    },
+    {
+        "Name (JP)": "PP",
+        "Name (English)": "PP",
+        "Name (Global)": "PP"
+    },
+    {
+        "Name (JP)": "打撃",
+        "Name (English)": "Strike",
+        "Name (Global)": "Melee"
+    },
+    {
+        "Name (JP)": "射撃",
+        "Name (English)": "Ranged",
+        "Name (Global)": "Ranged"
+    },
+    {
+        "Name (JP)": "法撃",
+        "Name (English)": "Technique",
+        "Name (Global)": "Technique"
+    },
+    {
+        "Name (JP)": "炎",
+        "Name (English)": "Fire",
+        "Name (Global)": "Fire"
+    },
+    {
+        "Name (JP)": "氷",
+        "Name (English)": "Ice",
+        "Name (Global)": "Ice"
+    },
+    {
+        "Name (JP)": "雷",
+        "Name (English)": "Lightning",
+        "Name (Global)": "Lightning"
+    },
+    {
+        "Name (JP)": "風",
+        "Name (English)": "Wind",
+        "Name (Global)": "Wind"
+    },
+    {
+        "Name (JP)": "光",
+        "Name (English)": "Light",
+        "Name (Global)": "Light"
+    },
+    {
+        "Name (JP)": "闇",
+        "Name (English)": "Dark",
+        "Name (Global)": "Dark"
+    },
+    {
+        "Name (JP)": "打撃力",
+        "Name (English)": "S-ATK",
+        "Name (Global)": "MEL Pwr"
+    },
+    {
+        "Name (JP)": "射撃力",
+        "Name (English)": "R-ATK",
+        "Name (Global)": "RNG Pwr"
+    },
+    {
+        "Name (JP)": "法撃力",
+        "Name (English)": "T-ATK",
+        "Name (Global)": "TEC Pwr"
+    },
+    {
+        "Name (JP)": "打撃防御",
+        "Name (English)": "S-DEF",
+        "Name (Global)": "MEL Def"
+    },
+    {
+        "Name (JP)": "射撃防御",
+        "Name (English)": "R-DEF",
+        "Name (Global)": "RNG Def"
+    },
+    {
+        "Name (JP)": "法撃防御",
+        "Name (English)": "T-DEF",
+        "Name (Global)": "TEC Def"
+    },
+    {
+        "Name (JP)": "技量",
+        "Name (English)": "DEX",
+        "Name (Global)": "DEX"
+    },
+    {
+        "Name (JP)": "打撃耐性",
+        "Name (English)": "Strike Resistance",
+        "Name (Global)": "Melee Resistance"
+    },
+    {
+        "Name (JP)": "射撃耐性",
+        "Name (English)": "Ranged Resistance",
+        "Name (Global)": "Ranged Resistance"
+    },
+    {
+        "Name (JP)": "法撃耐性",
+        "Name (English)": "Technique Resistance",
+        "Name (Global)": "Technique Resistance"
+    },
+    {
+        "Name (JP)": "炎耐性",
+        "Name (English)": "Fire Resistance",
+        "Name (Global)": "Fire Resistance"
+    },
+    {
+        "Name (JP)": "氷耐性",
+        "Name (English)": "Ice Resistance",
+        "Name (Global)": "Ice Resistance"
+    },
+    {
+        "Name (JP)": "雷耐性",
+        "Name (English)": "Lightning Resistance",
+        "Name (Global)": "Lightning Resistance"
+    },
+    {
+        "Name (JP)": "風耐性",
+        "Name (English)": "Wind Resistance",
+        "Name (Global)": "Wind Resistance"
+    },
+    {
+        "Name (JP)": "光耐性",
+        "Name (English)": "Light Resistance",
+        "Name (Global)": "Light Resistance"
+    },
+    {
+        "Name (JP)": "闇耐性",
+        "Name (English)": "Dark Resistance",
+        "Name (Global)": "Dark Resistance"
+    },
+    {
+        "Name (JP)": "バーン",
+        "Name (English)": "Burn",
+        "Name (Global)": "Burn"
+    },
+    {
+        "Name (JP)": "フリーズ",
+        "Name (English)": "Freeze",
+        "Name (Global)": "Freeze"
+    },
+    {
+        "Name (JP)": "ショック",
+        "Name (English)": "Shock",
+        "Name (Global)": "Shock"
+    },
+    {
+        "Name (JP)": "ミラージュ",
+        "Name (English)": "Mirage",
+        "Name (Global)": "Blind"
+    },
+    {
+        "Name (JP)": "ポイズン",
+        "Name (English)": "Poison",
+        "Name (Global)": "Poison"
+    },
+    {
+        "Abbreviation": "Hu",
+        "Name (JP)": "ハンター",
+        "Name (English)": "Hunter",
+        "Name (Global)": "Hunter"
+    },
+    {
+        "Abbreviation": "Fi",
+        "Name (JP)": "ファイター",
+        "Name (English)": "Fighter",
+        "Name (Global)": "Fighter"
+    },
+    {
+        "Abbreviation": "Ra",
+        "Name (JP)": "レンジャー",
+        "Name (English)": "Ranger",
+        "Name (Global)": "Ranger"
+    },
+    {
+        "Abbreviation": "Gu",
+        "Name (JP)": "ガンナー",
+        "Name (English)": "Gunner",
+        "Name (Global)": "Gunner"
+    },
+    {
+        "Abbreviation": "Fo",
+        "Name (JP)": "フォース",
+        "Name (English)": "Force",
+        "Name (Global)": "Force"
+    },
+    {
+        "Abbreviation": "Te",
+        "Name (JP)": "テクター",
+        "Name (English)": "Techer",
+        "Name (Global)": "Techter"
+    },
+    {
+        "Abbreviation": "Br",
+        "Name (JP)": "ブレイバー",
+        "Name (English)": "Braver",
+        "Name (Global)": "Braver"
+    },
+    {
+        "Abbreviation": "Bo",
+        "Name (JP)": "バウンサー",
+        "Name (English)": "Bouncer",
+        "Name (Global)": "Bouncer"
+    },
+    {
+        "Abbreviation": "Su",
+        "Name (JP)": "サモナー",
+        "Name (English)": "Summoner",
+        "Name (Global)": "Summoner"
+    },
+    {
+        "Abbreviation": "Hr",
+        "Name (JP)": "ヒーロー",
+        "Name (English)": "Hero",
+        "Name (Global)": "Hero"
+    },
+    {
+        "Abbreviation": "Ph",
+        "Name (JP)": "ファントム",
+        "Name (English)": "Phantom",
+        "Name (Global)": "Phantom"
+    },
+    {
+        "Abbreviation": "Et",
+        "Name (JP)": "エトワール",
+        "Name (English)": "Etoile",
+        "Name (Global)": "Étoile"
+    },
+    {
+        "Abbreviation": "Lu",
+        "Name (JP)": "ラスター",
+        "Name (English)": "Luster",
+        "Name (Global)": "Luster"
+    },
+    {
+        "Name (JP)": "ソード",
+        "Name (English)": "Sword",
+        "Name (Global)": "Sword"
+    },
+    {
+        "Name (JP)": "ワイヤードランス",
+        "Name (English)": "Wired Lance",
+        "Name (Global)": "Wired Lance"
+    },
+    {
+        "Name (JP)": "パルチザン",
+        "Name (English)": "Partizan",
+        "Name (Global)": "Partisan"
+    },
+    {
+        "Name (JP)": "ツインダガー",
+        "Name (English)": "Twin Daggers",
+        "Name (Global)": "Twin Daggers"
+    },
+    {
+        "Name (JP)": "ダブルセイバー",
+        "Name (English)": "Double Saber",
+        "Name (Global)": "Double Saber"
+    },
+    {
+        "Name (JP)": "ナックル",
+        "Name (English)": "Knuckles",
+        "Name (Global)": "Knuckles"
+    },
+    {
+        "Name (JP)": "ガンスラッシュ",
+        "Name (English)": "Gunslash",
+        "Name (Global)": "Gunblade"
+    },
+    {
+        "Name (JP)": "カタナ",
+        "Name (English)": "Katana",
+        "Name (Global)": "Katana"
+    },
+    {
+        "Name (JP)": "デュアルブレード",
+        "Name (English)": "Dual Blades",
+        "Name (Global)": "Soaring Blades"
+    },
+    {
+        "Name (JP)": "アサルトライフル",
+        "Name (English)": "Assault Rifle",
+        "Name (Global)": "Assault Rifle"
+    },
+    {
+        "Name (JP)": "ランチャー",
+        "Name (English)": "Launcher",
+        "Name (Global)": "Launcher"
+    },
+    {
+        "Name (JP)": "ツインマシンガン",
+        "Name (English)": "Twin Machineguns",
+        "Name (Global)": "Twin Machineguns"
+    },
+    {
+        "Name (JP)": "バレットボウ",
+        "Name (English)": "Bullet Bow",
+        "Name (Global)": "Bow"
+    },
+    {
+        "Name (JP)": "ロッド",
+        "Name (English)": "Rod",
+        "Name (Global)": "Rod"
+    },
+    {
+        "Name (JP)": "タリス",
+        "Name (English)": "Talis",
+        "Name (Global)": "Talis"
+    },
+    {
+        "Name (JP)": "ウォンド",
+        "Name (English)": "Wand",
+        "Name (Global)": "Wand"
+    },
+    {
+        "Name (JP)": "ジェットブーツ",
+        "Name (English)": "Jet Boots",
+        "Name (Global)": "Jet Boots"
+    },
+    {
+        "Name (JP)": "タクト",
+        "Name (English)": "Takt",
+        "Name (Global)": "Harmonizer"
+    }
+]

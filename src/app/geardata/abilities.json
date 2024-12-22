@@ -442,7 +442,7 @@
     },
     {
         "Name (JP)": "テクニックⅠ",
-        "Name (English)": "Tech I",
+        "Name (English)": "Technique I",
         "Name (Global)": "Casting I",
         "Effect (English)": [
             "T-ATK",
@@ -451,7 +451,7 @@
     },
     {
         "Name (JP)": "テクニックⅡ",
-        "Name (English)": "Tech II",
+        "Name (English)": "Technique II",
         "Name (Global)": "Casting II",
         "Effect (English)": [
             "T-ATK",
@@ -460,7 +460,7 @@
     },
     {
         "Name (JP)": "テクニックⅢ",
-        "Name (English)": "Tech III",
+        "Name (English)": "Technique III",
         "Name (Global)": "Casting III",
         "Effect (English)": [
             "T-ATK",
@@ -469,7 +469,7 @@
     },
     {
         "Name (JP)": "テクニックⅣ",
-        "Name (English)": "Tech IV",
+        "Name (English)": "Technique IV",
         "Name (Global)": "Casting IV",
         "Effect (English)": [
             "T-ATK",
@@ -478,7 +478,7 @@
     },
     {
         "Name (JP)": "テクニックⅤ",
-        "Name (English)": "Tech V",
+        "Name (English)": "Technique V",
         "Name (Global)": "Casting V",
         "Effect (English)": [
             "T-ATK",
@@ -487,7 +487,7 @@
     },
     {
         "Name (JP)": "テクニックⅥ",
-        "Name (English)": "Tech VI",
+        "Name (English)": "Technique VI",
         "Name (Global)": "Casting VI",
         "Effect (English)": [
             "T-ATK",
@@ -496,7 +496,7 @@
     },
     {
         "Name (JP)": "レッサー・テクニックⅠ",
-        "Name (English)": "Lesser Tech I",
+        "Name (English)": "Lesser Technique I",
         "Name (Global)": "Lesser Casting I",
         "Effect (English)": [
             "T-ATK",
@@ -505,7 +505,7 @@
     },
     {
         "Name (JP)": "レッサー・テクニックⅡ",
-        "Name (English)": "Lesser Tech II",
+        "Name (English)": "Lesser Technique II",
         "Name (Global)": "Lesser Casting II",
         "Effect (English)": [
             "T-ATK",
@@ -514,7 +514,7 @@
     },
     {
         "Name (JP)": "レッサー・テクニックⅢ",
-        "Name (English)": "Lesser Tech III",
+        "Name (English)": "Lesser Technique III",
         "Name (Global)": "Lesser Casting III",
         "Effect (English)": [
             "T-ATK",
@@ -523,7 +523,7 @@
     },
     {
         "Name (JP)": "レッサー・テクニックⅣ",
-        "Name (English)": "Lesser Tech IV",
+        "Name (English)": "Lesser Technique IV",
         "Name (Global)": "Lesser Casting IV",
         "Effect (English)": [
             "T-ATK",
@@ -532,7 +532,7 @@
     },
     {
         "Name (JP)": "レッサー・テクニックⅤ",
-        "Name (English)": "Lesser Tech V",
+        "Name (English)": "Lesser Technique V",
         "Name (Global)": "Lesser Casting V",
         "Effect (English)": [
             "T-ATK",
@@ -541,7 +541,7 @@
     },
     {
         "Name (JP)": "EV・パワーHP",
-        "Name (English)": "EV Tech HP",
+        "Name (English)": "EV Technique HP",
         "Name (Global)": "EV Casting HP",
         "Effect (English)": [
             "HP",
@@ -552,7 +552,7 @@
     },
     {
         "Name (JP)": "EV・パワーPP",
-        "Name (English)": "EV Tech PP",
+        "Name (English)": "EV Technique PP",
         "Name (Global)": "EV Casting PP",
         "Effect (English)": [
             "PP",
@@ -881,7 +881,7 @@
         "Name (English)": "Mind Resist I",
         "Name (Global)": "Projectile Ward I",
         "Effect (English)": [
-            "Tech Resistance",
+            "Technique Resistance",
             3
         ]
     },
@@ -890,7 +890,7 @@
         "Name (English)": "Mind Resist II",
         "Name (Global)": "Projectile Ward II",
         "Effect (English)": [
-            "Tech Resistance",
+            "Technique Resistance",
             4
         ]
     },
@@ -899,7 +899,7 @@
         "Name (English)": "Mind Resist III",
         "Name (Global)": "Projectile Ward III",
         "Effect (English)": [
-            "Tech Resistance",
+            "Technique Resistance",
             5
         ]
     },
@@ -908,7 +908,7 @@
         "Name (English)": "Mind Resist IV",
         "Name (Global)": "Projectile Ward IV",
         "Effect (English)": [
-            "Tech Resistance",
+            "Technique Resistance",
             6
         ]
     },
@@ -917,7 +917,7 @@
         "Name (English)": "Mind Resist V",
         "Name (Global)": "Projectile Ward V",
         "Effect (English)": [
-            "Tech Resistance",
+            "Technique Resistance",
             7
         ]
     },
@@ -1692,13 +1692,11 @@
         ],
         "Effect (English)": [
             null,
-            "Grants Burn Lv1 (10 ticks of 1% max HP)",
-            3
+            "Grants Burn Lv1 (10 ticks of 1% max HP)"
         ],
         "Effect (Global)": [
             null,
-            "Grants Burn Lv1 (10 ticks of 1% max HP)",
-            3
+            "Grants Burn Lv1 (10 ticks of 1% max HP)"
         ],
         "Category": "Status Effect"
     },
@@ -5837,11 +5835,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases damage by 1% for every 60 S-ATK affixed to this weapon. Increases damage by an additional 2% if at least 200 S-ATK is affixed to this weapon."
+            "Increases damage by 1% for every 60 S-ATK affixed to this weapon.\nIncreases damage by an additional 2% if at least 200 S-ATK is affixed to this weapon."
         ],
         "Effect (Global)": [
             null,
-            "Increases damage by 1% for every 60 MEL Pwr affixed to this weapon. Increases damage by an additional 2% if at least 200 MEL Pwr is affixed to this weapon."
+            "Increases damage by 1% for every 60 MEL Pwr affixed to this weapon.\nIncreases damage by an additional 2% if at least 200 MEL Pwr is affixed to this weapon."
         ]
     },
     {
@@ -5855,17 +5853,17 @@
         ],
         "Effect (English)": [
             null,
-            "Increases damage by 1% for every 60 R-ATK affixed to this weapon. Increases damage by an additional 2% if at least 200 R-ATK is affixed to this weapon."
+            "Increases damage by 1% for every 60 R-ATK affixed to this weapon.\nIncreases damage by an additional 2% if at least 200 R-ATK is affixed to this weapon."
         ],
         "Effect (Global)": [
             null,
-            "Increases damage by 1% for every 60 RNG Pwr affixed to this weapon. Increases damage by an additional 2% if at least 200 RNG Pwr is affixed to this weapon."
+            "Increases damage by 1% for every 60 RNG Pwr affixed to this weapon.\nIncreases damage by an additional 2% if at least 200 RNG Pwr is affixed to this weapon."
         ]
     },
     {
         "SSA Slot": 1,
         "Name (JP)": "S1:法撃増幅",
-        "Name (English)": "S1:Tech Boost",
+        "Name (English)": "S1:Technique Boost",
         "Name (Global)": "S1: Technique Amp",
         "Effect (JP)": [
             null,
@@ -5873,11 +5871,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases damage by 1% for every 60 T-ATK affixed to this weapon. Increases damage by an additional 2% if at least 200 T-ATK is affixed to this weapon."
+            "Increases damage by 1% for every 60 T-ATK affixed to this weapon.\nIncreases damage by an additional 2% if at least 200 T-ATK is affixed to this weapon."
         ],
         "Effect (Global)": [
             null,
-            "Increases damage by 1% for every 60 TEC Pwr affixed to this weapon. Increases damage by an additional 2% if at least 200 TEC Pwr is affixed to this weapon."
+            "Increases damage by 1% for every 60 TEC Pwr affixed to this weapon.\nIncreases damage by an additional 2% if at least 200 TEC Pwr is affixed to this weapon."
         ]
     },
     {
@@ -5999,11 +5997,11 @@
         ],
         "Effect (English)": [
             null,
-            "Provides bonuses based on the number of party members.\n\n2 Members: PP Consumption -8%\n3 Members: +10% Critical Hit Rate\n4 Members: Damage +3%\n\nBonuses only apply to yourself."
+            "Provides bonuses based on the number of party members.\n\n2 Members: PP Consumption -8%\n3 Members: Critical Hit Rate +10%\n4 Members: Damage +3%\n\nBonuses only apply to yourself."
         ],
         "Effect (Global)": [
             null,
-            "Provides bonuses based on the number of party members.\n\n2 Members: PP Consumption -8%\n3 Members: +10% Critical Hit Rate\n4 Members: Damage +3%\n\nBonuses only apply to yourself."
+            "Provides bonuses based on the number of party members.\n\n2 Members: PP Consumption -8%\n3 Members: Critical Hit Rate +10%\n4 Members: Damage +3%\n\nBonuses only apply to yourself."
         ]
     },
     {
@@ -6061,11 +6059,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects will be lost when damage is taken (180s cooldown)."
+            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects are lost when damage is taken (180s cooldown)."
         ],
         "Effect (Global)": [
             null,
-            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects will be lost when damage is taken (180s cooldown)."
+            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects are lost when damage is taken (180s cooldown)."
         ],
         "Not Implemented": true
     },
@@ -7155,11 +7153,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects will be lost when damage is taken (180s cooldown)."
+            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects are lost when damage is taken (180s cooldown)."
         ],
         "Effect (Global)": [
             null,
-            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects will be lost when damage is taken (180s cooldown)."
+            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects are lost when damage is taken (180s cooldown)."
         ],
         "Not Implemented": true
     },
@@ -7822,11 +7820,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects will be lost when damage is taken (180s cooldown)."
+            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects are lost when damage is taken (180s cooldown)."
         ],
         "Effect (Global)": [
             null,
-            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects will be lost when damage is taken (180s cooldown)."
+            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects are lost when damage is taken (180s cooldown)."
         ]
     },
     {
@@ -9726,7 +9724,7 @@
         ],
         "Effect (English)": [
             null,
-            "Recovers 5% of HP and 10 PP upon successful [Tech Charge Parry]."
+            "Recovers 5% of HP and 10 PP upon successful [Technique Charge Parry]."
         ],
         "Effect (Global)": [
             null,
