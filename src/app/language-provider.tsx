@@ -1,7 +1,7 @@
 'use client'
 
 import React, { createContext, useState, useContext } from 'react'
-import { Input, InputBase, Combobox, useCombobox } from '@mantine/core';
+import { InputBase, Combobox, useCombobox } from '@mantine/core';
 import { v4 as uuidv4 } from 'uuid';
 
 export type LanguageType = {

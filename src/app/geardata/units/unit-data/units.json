@@ -1,5 +1,6 @@
 [
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ソードバーゴストゥa",
         "name_en": "Rear / Berwyn a",
         "name_global": "Back / Verwyn A",
@@ -26,6 +27,7 @@
         "Set":"Ber"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／バーティウィアa",
         "name_en": "Rear / Bertiwea a",
         "name_global": "Back / Vertiwyr A",
@@ -51,6 +53,7 @@
         "Set":"Ber"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／バーゴストゥa",
         "name_en": "Rear / Bergost a",
         "name_global": "Back / Vergostu A",
@@ -76,6 +79,7 @@
         "Set":"Ber"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ライザックa",
         "name_en": "Rear / Lyzac a",
         "name_global": "Back / Ryzak A",
@@ -101,6 +105,7 @@
         "Set":"Zac"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ラジルザックa",
         "name_en": "Rear / Lazilzac a",
         "name_global": "Back / Razilzak A",
@@ -126,6 +131,7 @@
         "Set":"Zac"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ラズリアザックa",
         "name_en": "Rear / Lazuliazac a",
         "name_global": "Back / Razliazak A",
@@ -151,6 +157,7 @@
         "Set":"Zac"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ティルトウィンa",
         "name_en": "Rear / Tiltwin a",
         "name_global": "Back / Tiltwyn A",
@@ -176,6 +183,7 @@
         "Set":"Ti"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ティラフラブa",
         "name_en": "Rear / Tiraflove a",
         "name_global": "Back / Tiraflav A",
@@ -201,6 +209,7 @@
         "Set":"Ti"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ティレイギアa",
         "name_en": "Rear / Tireigear a",
         "name_global": "Back / Tiraygear A",
@@ -226,6 +235,7 @@
         "Set":"Ti"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サーキュエンデa",
         "name_en": "Rear / Circuende a",
         "name_global": "Back / Circuende A",
@@ -251,6 +261,7 @@
         "Set":"Circu"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サーキュエッジa",
         "name_en": "Rear / Circuedge a",
         "name_global": "Back / Circuedge A",
@@ -276,6 +287,7 @@
         "Set":"Circu"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サーキュホーンa",
         "name_en": "Rear / Circuhorn a",
         "name_global": "Back / Circuhorn A",
@@ -301,6 +313,7 @@
         "Set":"Circu"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ソードバーゴストゥb",
         "name_en": "Rear / Berwyn b",
         "name_global": "Back / Verwyn B",
@@ -326,6 +339,7 @@
         "Set":"Ber"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／バーティウィアb",
         "name_en": "Rear / Bertiwea b",
         "name_global": "Back / Vertiwyr b",
@@ -351,6 +365,7 @@
         "Set":"Ber"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／バーゴストゥb",
         "name_en": "Rear / Bergost b",
         "name_global": "Back / Vergostu b",
@@ -376,6 +391,7 @@
         "Set":"Ber"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ライザックb",
         "name_en": "Rear / Lyzac b",
         "name_global": "Back / Ryzak b",
@@ -401,6 +417,7 @@
         "Set":"Zac"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ラジルザックb",
         "name_en": "Rear / Lazilzac b",
         "name_global": "Back / Razilzak b",
@@ -426,6 +443,7 @@
         "Set":"Zac"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ラズリアザックb",
         "name_en": "Rear / Lazuliazac b",
         "name_global": "Back / Razliazak b",
@@ -451,6 +469,7 @@
         "Set":"Zac"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ティルトウィンb",
         "name_en": "Rear / Tiltwin b",
         "name_global": "Back / Tiltwyn b",
@@ -476,6 +495,7 @@
         "Set":"Ti"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ティラフラブb",
         "name_en": "Rear / Tiraflove b",
         "name_global": "Back / Tiraflav b",
@@ -501,6 +521,7 @@
         "Set":"Ti"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ティレイギアb",
         "name_en": "Rear / Tireigear b",
         "name_global": "Back / Tiraygear b",
@@ -526,6 +547,7 @@
         "Set":"Ti"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サーキュエンデb",
         "name_en": "Rear / Circuende b",
         "name_global": "Back / Circuende b",
@@ -551,6 +573,7 @@
         "Set":"Circu"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サーキュエッジb",
         "name_en": "Rear / Circuedge b",
         "name_global": "Back / Circuedge b",
@@ -576,6 +599,7 @@
         "Set":"Circu"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サーキュホーンb",
         "name_en": "Rear / Circuhorn b",
         "name_global": "Back / Circuhorn b",
@@ -601,6 +625,7 @@
         "Set":"Circu"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブロストルa",
         "name_en": "Rear / Brostol a",
         "name_global": "Back / Brostoll A",
@@ -626,6 +651,7 @@
         "Set":"Br"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブロダングa",
         "name_en": "Rear / Brodang a",
         "name_global": "Back / Brodang A",
@@ -651,6 +677,7 @@
         "Set":"Br"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブロワイルa",
         "name_en": "Rear / Browile a",
         "name_global": "Back / Browyle A",
@@ -676,6 +703,7 @@
         "Set":"Br"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ショルドットa",
         "name_en": "Rear / Shouldot a",
         "name_global": "Back / Shouldot A",
@@ -701,6 +729,7 @@
         "Set":"Dot"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ショルディクターa",
         "name_en": "Rear / Shouldicter a",
         "name_global": "Back / Shouldictor A",
@@ -726,6 +755,7 @@
         "Set":"Dot"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ショルバキュドアa",
         "name_en": "Rear / Shoulbacudol a",
         "name_global": "Back / Shoulvacudor A",
@@ -751,6 +781,7 @@
         "Set":"Dot"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サイマリスa",
         "name_en": "Rear / Psymalice a",
         "name_global": "Back / Cymaris A",
@@ -776,6 +807,7 @@
         "Set":"Psy"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サイボルドa",
         "name_en": "Rear / Psyboard a",
         "name_global": "Back / Cybold A",
@@ -801,6 +833,7 @@
         "Set":"Psy"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サイテグラルa",
         "name_en": "Rear / Psytegral a",
         "name_global": "Back / Cytegral A",
@@ -826,6 +859,7 @@
         "Set":"Psy"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クロスゲイナーa",
         "name_en": "Rear / Crossgainer a",
         "name_global": "Back / Crossgainer A",
@@ -851,6 +885,7 @@
         "Set":"Cross"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クロスドメインa",
         "name_en": "Rear / Crossdomain a",
         "name_global": "Back / Crossdomain A",
@@ -876,6 +911,7 @@
         "Set":"Cross"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クロサリアンa",
         "name_en": "Rear / Crossarian a",
         "name_global": "Back / Crossarian A",
@@ -901,6 +937,7 @@
         "Set":"Cross"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブロストルb",
         "name_en": "Rear / Brostol b",
         "name_global": "Back / Brostoll B",
@@ -926,6 +963,7 @@
         "Set":"Br"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブロダングb",
         "name_en": "Rear / Brodang b",
         "name_global": "Back / Brodang B",
@@ -951,6 +989,7 @@
         "Set":"Br"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブロワイルb",
         "name_en": "Rear / Browile b",
         "name_global": "Back / Browyle B",
@@ -976,6 +1015,7 @@
         "Set":"Br"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ショルドットb",
         "name_en": "Rear / Shouldot b",
         "name_global": "Back / Shouldot B",
@@ -1001,6 +1041,7 @@
         "Set":"Dot"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ショルディクターb",
         "name_en": "Rear / Shouldicter b",
         "name_global": "Back / Shouldictor B",
@@ -1026,6 +1067,7 @@
         "Set":"Dot"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ショルバキュドアb",
         "name_en": "Rear / Shoulbacudol b",
         "name_global": "Back / Shoulvacudor B",
@@ -1051,6 +1093,7 @@
         "Set":"Dot"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サイマリスb",
         "name_en": "Rear / Psymalice b",
         "name_global": "Back / Cymaris B",
@@ -1076,6 +1119,7 @@
         "Set":"Psy"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サイボルドb",
         "name_en": "Rear / Psyboard b",
         "name_global": "Back / Cybold B",
@@ -1101,6 +1145,7 @@
         "Set":"Psy"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サイテグラルb",
         "name_en": "Rear / Psytegral b",
         "name_global": "Back / Cytegral B",
@@ -1126,6 +1171,7 @@
         "Set":"Psy"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クロスゲイナーb",
         "name_en": "Rear / Crossgainer b",
         "name_global": "Back / Crossgainer B",
@@ -1151,6 +1197,7 @@
         "Set":"Cross"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クロスドメインb",
         "name_en": "Rear / Crossdomain b",
         "name_global": "Back / Crossdomain B",
@@ -1176,6 +1223,7 @@
         "Set":"Cross"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クロサリアンb",
         "name_en": "Rear / Crossarian b",
         "name_global": "Back / Crossarian B",
@@ -1201,6 +1249,7 @@
         "Set":"Cross"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ソードバーゴストゥc",
         "name_en": "Rear / Berwyn c",
         "name_global": "Back / Verwyn C",
@@ -1226,6 +1275,7 @@
         "Set":"Ber"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ライザックc",
         "name_en": "Rear / Lyzac c",
         "name_global": "Back / Ryzak C",
@@ -1251,6 +1301,7 @@
         "Set":"Zac"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ティルトウィンc",
         "name_en": "Rear / Tiltwin c",
         "name_global": "Back / Tiltwyn C",
@@ -1276,6 +1327,7 @@
         "Set":"Ti"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サーキュエンデc",
         "name_en": "Rear / Circuende c",
         "name_global": "Back / Circuende C",
@@ -1301,6 +1353,7 @@
         "Set":"Circu"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブロストルc",
         "name_en": "Rear / Brostol c",
         "name_global": "Back / Brostoll C",
@@ -1326,6 +1379,7 @@
         "Set":"Br"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ショルドットc",
         "name_en": "Rear / Shouldot c",
         "name_global": "Back / Shouldot C",
@@ -1351,6 +1405,7 @@
         "Set":"Dot"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サイマリスc",
         "name_en": "Rear / Psymalice c",
         "name_global": "Back / Cymaris C",
@@ -1376,6 +1431,7 @@
         "Set":"Psy"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クロスゲイナーc",
         "name_en": "Rear / Crossgainer c",
         "name_global": "Back / Crossgainer C",
@@ -1401,6 +1457,7 @@
         "Set":"Cross"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／リュクスノービス",
         "name_en": "Rear / Luxe Novice",
         "name_global": null,
@@ -1426,6 +1483,7 @@
         "Abilities": ["Stamina II"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フレッシュオーラ",
         "name_en": "Rear / Fresh Aura",
         "name_global": "Back / Fresh Aura",
@@ -1451,6 +1509,7 @@
         "Abilities": ["Fresh Sign", "Stamina III", "Spirita III", "All Resist II"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ヒエイホウヨク",
         "name_en": "Rear / Hiei Houyoku",
         "name_global": "Back / Hiei Houyoku",
@@ -1476,6 +1535,7 @@
         "Set": "Hiei"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フレキュオフ",
         "name_en": "Rear / Flacuov",
         "name_global": "Back / Flagrof",
@@ -1501,6 +1561,7 @@
         "Set": "Flacu"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フレキュイクサ",
         "name_en": "Rear / Flacuixa",
         "name_global": "Back / Flagrixa",
@@ -1526,6 +1587,7 @@
         "Set": "Flacu"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アイジェファイ",
         "name_en": "Rear / Aijefie",
         "name_global": "Back / Aegeify",
@@ -1551,6 +1613,7 @@
         "Set": "Aije"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アイジェイクサ",
         "name_en": "Rear / Aijeixa",
         "name_global": "Back / Aegeixa",
@@ -1576,6 +1639,7 @@
         "Set": "Aije"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／エレガイル",
         "name_en": "Rear / Eleguile",
         "name_global": "Back / Elegaile",
@@ -1601,6 +1665,7 @@
         "Set": "Eleg"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／エレガイクサ",
         "name_en": "Rear / Elegaixa",
         "name_global": "Back / Elegaixa",
@@ -1626,6 +1691,7 @@
         "Set": "Eleg"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ヤークトフェル",
         "name_en": "Rear / Jagd Fell",
         "name_global": "Back / Jagdfell",
@@ -1651,6 +1717,7 @@
         "Set": "Jagd"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ヴォルウィング",
         "name_en": "Rear / Vol Wing",
         "name_global": "Back / Vol Wings",
@@ -1676,6 +1743,7 @@
         "Set": "Vol"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クォーツウィング",
         "name_en": "Rear / Quartz Wing",
         "name_global": "Back / Quartz Wings",
@@ -1701,6 +1769,7 @@
         "Set": "Quartz"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブルブリュート",
         "name_en": "Rear / Bulb Lute",
         "name_global": "Back / Bulb Lute",
@@ -1725,6 +1794,7 @@
         "Dark Resistance":null
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブルブヘッグス",
         "name_en": "Rear / Bulb Heggs",
         "name_global": "Back / Bulb Hegs",
@@ -1749,6 +1819,7 @@
         "Dark Resistance":null
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ファンブレア",
         "name_en": "Rear / Fan Blair",
         "name_global": "Back / Fanblare",
@@ -1774,6 +1845,7 @@
         "Set":"Fan"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フェニバイル",
         "name_en": "Rear / Fen Ibiel",
         "name_global": "Back / Fenibyle",
@@ -1799,6 +1871,7 @@
         "Set":"Fen"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ミンストフォン",
         "name_en": "Rear / Minst Phon",
         "name_global": "Back / Minstophone",
@@ -1824,6 +1897,7 @@
         "Set":"Black Minst"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ミンストブラン",
         "name_en": "Rear / Minst Blan",
         "name_global": "Back / Minstblanc",
@@ -1849,6 +1923,7 @@
         "Set":"Blue Minst"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／リュクスエール",
         "name_en": "Rear / Luxe Aile",
         "name_global": "Back / Luxe Aile",
@@ -1874,6 +1949,7 @@
         "Set":"Gold Luxe"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／リュクスソワール",
         "name_en": "Rear / Luxe Soir",
         "name_global": "Back / Luxe Soir",
@@ -1899,6 +1975,7 @@
         "Set":"Black Luxe"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アメイシャル",
         "name_en": "Rear / Amei Xal",
         "name_global": "Back / Ame Ishal",
@@ -1924,6 +2001,7 @@
         "Set":"Amei Roses"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アメイフーラ",
         "name_en": "Rear / Amei Hula",
         "name_global": "Back / Ame Ifra",
@@ -1949,6 +2027,7 @@
         "Set":"Amei Roses"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ネグロウィーダ",
         "name_en": "Rear / Negro Ouida",
         "name_global": "Back / Noir Wieder",
@@ -1974,6 +2053,7 @@
         "Set":"Negro"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ヘラストゥラ",
         "name_en": "Rear / Hera Sutra",
         "name_global": "Back / Hera Stura",
@@ -1999,6 +2079,7 @@
         "Set":"Hera"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／カルバリアウィング",
         "name_en": "Rear / Calvaria Wing",
         "name_global": "Back / Calvaria Wings",
@@ -2024,6 +2105,7 @@
         "Set":"Calvaria"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブルームフェザー",
         "name_en": "Rear / Bloom Feather",
         "name_global": "Back / Bloom Feather",
@@ -2049,6 +2131,7 @@
         "Set":"Bloom"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブリッツシンボル",
         "name_en": "Rear / Blitz Symbol",
         "name_global": "Back / Blitz Symbol",
@@ -2074,6 +2157,7 @@
         "Set":"Blitz"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フェガリカット",
         "name_en": "Rear / Fegali Cut",
         "name_global": "Back / Figeri Cut",
@@ -2099,6 +2183,7 @@
         "Set":"Fegali"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／シフォンプラパ",
         "name_en": "Rear / Chiffon Prapa",
         "name_global": "Back / Chiffon Prapa",
@@ -2124,6 +2209,7 @@
         "Set":"Fegali"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ファーミニオン",
         "name_en": "Rear / Far Minion",
         "name_global": "Back / Farminion",
@@ -2150,6 +2236,7 @@
         "Set":"Traitor"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ザングリス",
         "name_en": "Rear / Zan Grease",
         "name_global": "Back / Zangris",
@@ -2175,6 +2262,7 @@
         "Set":"Heretic"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ティアンリン",
         "name_en": "Rear / Tian Rin",
         "name_global": "Back / Tianlin",
@@ -2200,6 +2288,7 @@
         "Set":"Tian"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ラッピーフェザー",
         "name_en": "Rear / Rappy Feather",
         "name_global": "Back / Rappy Feather",
@@ -2225,6 +2314,7 @@
         "Abilities":["Lucky Rise I", "Ability II", "All Resist II"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／リフブッシュ",
         "name_en": "Rear / Leaf Bush",
         "name_global": "Back / Leaf Bush",
@@ -2250,6 +2340,7 @@
         "Abilities":["Lucky Rise I", "Ability II", "All Resist II"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／リブルフレ",
         "name_en": "Rear / Ribble Fray",
         "name_global": "Back / Libre Fray",
@@ -2275,6 +2366,7 @@
         "Abilities":["Lucky Rise I", "Ability II", "All Resist II"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／コロンエレミア",
         "name_en": "Rear / Clon Eremia",
         "name_global": "Back / Cologne Jeremiah",
@@ -2300,6 +2392,7 @@
         "Abilities":["Lucky Rise I", "Ability II", "All Resist II"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／シーギルダスト",
         "name_en": "Rear / Sigil Dust",
         "name_global": "Back / Seagill Dust",
@@ -2325,6 +2418,7 @@
         "Abilities":["Lucky Rise I", "Ability II", "All Resist II"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ヴォルテック",
         "name_en": "Rear / Voltec",
         "name_global": "Back / Voltec",
@@ -2350,6 +2444,7 @@
         "Abilities":["Lucky Rise I", "Ability II", "All Resist II"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ティトーリア",
         "name_en": "Rear / Titoria",
         "name_global": "Back / Titoria",
@@ -2375,6 +2470,7 @@
         "Abilities":["Lucky Rise I", "Ability II", "All Resist II"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ネガフォトン",
         "name_en": "Rear / Nega Photon",
         "name_global": "Back / Negative Photon",
@@ -2399,6 +2495,7 @@
         "Dark Resistance":null
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ラグネスイル",
         "name_en": "Rear / Ragne Suile",
         "name_global": "Back / Ragne Cuil",
@@ -2424,6 +2521,7 @@
         "Set":"Ragne"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アグラネスイル",
         "name_en": "Rear / Agrani Suile",
         "name_global": "Back / Agrane Cuil",
@@ -2449,6 +2547,7 @@
         "Set":"Agrani"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ヴァーダーパック",
         "name_en": "Rear / Vardha Pack",
         "name_global": "Back / Varder Puck",
@@ -2474,6 +2573,7 @@
         "Set":"Vardha"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ヴァーダーパック",
         "name_en": "Rear / King's Pack",
         "name_global": "Back / King's Puck",
@@ -2499,6 +2599,7 @@
         "Set":"King's"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クロームヴェル",
         "name_en": "Rear / Chrome Vel",
         "name_global": "Back / Chrome Vell",
@@ -2524,6 +2625,7 @@
         "Set":"Chrome"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ヘイズヴェル",
         "name_en": "Rear / Haze Vel",
         "name_global": "Back / Haze Vell",
@@ -2549,6 +2651,7 @@
         "Set":"Haze"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／スロートフェル",
         "name_en": "Rear / Schlacht Fell",
         "name_global": "Back / Schlachtfell",
@@ -2574,6 +2677,7 @@
         "Set":"Schlacht"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／エルダーアロア",
         "name_en": "Rear / Elder Aroa",
         "name_global": "Back / Elder Aloa",
@@ -2599,6 +2703,7 @@
         "Set":"Elder"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／エルディヘーテ",
         "name_en": "Rear / Eldihete",
         "name_global": "Back / Eldihete",
@@ -2624,6 +2729,7 @@
         "Set":"Elder"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブーストオーラ",
         "name_en": "Rear / Boost Aura",
         "name_global": "Back / Boost Aura",
@@ -2648,6 +2754,7 @@
         "Dark Resistance":4
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／エクシズエクス",
         "name_en": "Rear / Exys Ex",
         "name_global": "Back / Hexyz X",
@@ -2673,6 +2780,7 @@
         "Set":"Ex"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／エクシズノワル",
         "name_en": "Rear / Exys Noire",
         "name_global": "Back / Hexyz Noire",
@@ -2698,6 +2806,7 @@
         "Set":"Noire"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブルブイレイン",
         "name_en": "Rear / Bulb Ireen",
         "name_global": null,
@@ -2722,6 +2831,7 @@
         "Dark Resistance":null
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フォビリス",
         "name_en": "Rear / Fobi Riss",
         "name_global": "Back / Phobilis",
@@ -2747,6 +2857,7 @@
         "Set":"Fobi"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／レサンストゥラ",
         "name_en": "Rear / Resan Sutra",
         "name_global": "Back / Resan Stura",
@@ -2772,6 +2883,7 @@
         "Set":"Resan"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／グロームシンボル",
         "name_en": "Rear / Gloam Symbol",
         "name_global": "Back / Gloam Symbol",
@@ -2797,6 +2909,7 @@
         "Set":"Gloam"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／カルブンウィング",
         "name_en": "Rear / Calbun Wing",
         "name_global": "Back / Calvin Wings",
@@ -2822,6 +2935,7 @@
         "Set":"Calbun"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／グワンマンリン",
         "name_en": "Rear / Gwanman Rin",
         "name_global": "Back / Gwan Manrin",
@@ -2847,6 +2961,7 @@
         "Set":"Gwanman"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フォリアプラパ",
         "name_en": "Rear / Folia Prapa",
         "name_global": "Back / Folia Prapa",
@@ -2872,6 +2987,7 @@
         "Set":"Folia"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／プリムラフェザー",
         "name_en": "Rear / Primula Feather",
         "name_global": "Back / Primula Feather",
@@ -2897,6 +3013,7 @@
         "Set":"Primula"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フォリーカット",
         "name_en": "Rear / Folly Cut",
         "name_global": "Back / Folly Cut",
@@ -2922,6 +3039,7 @@
         "Set":"Folly"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アメイハクア",
         "name_en": "Rear / Amei Haqua",
         "name_global": "Back / Ame Ihaqua",
@@ -2947,6 +3065,7 @@
         "Set":"Amei Roses"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ミディアウィーダ",
         "name_en": "Rear / Midia Ouida",
         "name_global": "Back / Midia Wieder",
@@ -2972,6 +3091,7 @@
         "Set":"Midia"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ルーサーペンナ",
         "name_en": "Rear / Loser Penna",
         "name_global": "Back / Luther Penna",
@@ -2997,6 +3117,7 @@
         "Set":"Loser"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フレキュヘイト",
         "name_en": "Rear / Flacuhate",
         "name_global": "Back / Flagrahate",
@@ -3022,6 +3143,7 @@
         "Set": "Flacu"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アイジェヘイト",
         "name_en": "Rear / Aijehate",
         "name_global": "Back / Aegehate",
@@ -3047,6 +3169,7 @@
         "Set": "Aije"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アイジェヘイト",
         "name_en": "Rear / Elegahate",
         "name_global": "Back / Elegahate",
@@ -3072,6 +3195,7 @@
         "Set": "Eleg"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／バーンウィング",
         "name_en": "Rear / Burn Wing",
         "name_global": "Back / Burning Wings",
@@ -3097,6 +3221,7 @@
         "Set": "Burn"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クリスウィング",
         "name_en": "Rear / Crys Wing",
         "name_global": "Back / Crys Wings",
@@ -3122,6 +3247,7 @@
         "Set": "Crys"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ビブラスコールノ",
         "name_en": "Rear / Vibrace Corno",
         "name_global": "Back / Vibras Corno",
@@ -3147,6 +3273,7 @@
         "Set": "Vibrace"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ジュアグリス",
         "name_en": "Rear / Jua Grease",
         "name_global": "Back / Jua Gris",
@@ -3172,6 +3299,7 @@
         "Set": "Heretic"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ミンストローズ",
         "name_en": "Rear / Minst Rose",
         "name_global": "Back / Minstrose",
@@ -3197,6 +3325,7 @@
         "Set": "Pink Minst"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／リュクスカルム",
         "name_en": "Rear / Luxe Calm",
         "name_global": "Back / Luxe Karm",
@@ -3222,6 +3351,7 @@
         "Set": "Blue Luxe"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／リンガアーク",
         "name_en": "Rear / Ringa Arc",
         "name_global": "Back / Ringa Arc",
@@ -3247,6 +3377,7 @@
         "Set": "Ringa"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アビスミニオン",
         "name_en": "Rear / Abyss Minion",
         "name_global": "Back / Abyss Minion",
@@ -3272,6 +3403,7 @@
         "Set": "Traitor"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ロニアポインタ",
         "name_en": "Rear / Ronia Pointa",
         "name_global": "Back / Ronia Pointer",
@@ -3297,6 +3429,7 @@
         "Set": "Ronia"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ローズピーク",
         "name_en": "Rear / Rose Pick",
         "name_global": "Back / Rose Peak",
@@ -3322,6 +3455,7 @@
         "Set": "Rose"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／エクエスフリン",
         "name_en": "Rear / Eques Flin",
         "name_global": "Back / Eques Flynn",
@@ -3347,6 +3481,7 @@
         "Set": "Eques"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クローズパッカー",
         "name_en": "Rear / Close Packer",
         "name_global": "Back / Close Packer",
@@ -3372,6 +3507,7 @@
         "Set": "Close"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ネイバーヴォルフ",
         "name_en": "Rear / Neighbor Wolf",
         "name_global": "Back / Naver Wolf",
@@ -3397,6 +3533,7 @@
         "Set": "Neighbor"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／レーベンマスカ",
         "name_en": "Rear / Raven Maska",
         "name_global": "Back / Raven Masque",
@@ -3422,6 +3559,7 @@
         "Set": "Raven"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ディスタライ",
         "name_en": "Rear / Dista Lie",
         "name_global": "Back / Dista Lye",
@@ -3447,6 +3585,7 @@
         "Set": "Dista"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ディールメイル",
         "name_en": "Rear / Deal Mail",
         "name_global": "Back / Diehl Mail",
@@ -3472,6 +3611,7 @@
         "Set": "Deal"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ウィングセレス",
         "name_en": "Rear / Wing Ceres",
         "name_global": "Back / Wing Ceres",
@@ -3497,6 +3637,7 @@
         "Set": "Wing"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／シャープリュッケ",
         "name_en": "Rear / Sharp Rucke",
         "name_global": "Back / Sharp Lucke",
@@ -3522,6 +3663,7 @@
         "Set": "Sharp"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／イェーガービッド",
         "name_en": "Rear / Jaeger Bied",
         "name_global": "Back / Jaeger Bid",
@@ -3547,6 +3689,7 @@
         "Set": "Jaeger"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サウザンディム",
         "name_en": "Rear / Thousand Dim",
         "name_global": "Back / Sauzan Dim",
@@ -3572,6 +3715,7 @@
         "Set": "Thousand"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ファウマパール",
         "name_en": "Rear / Fauma Pearl",
         "name_global": "Back / Fauma Pearl",
@@ -3597,6 +3741,7 @@
         "Set": "Fauma"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ファーネンシルト",
         "name_en": "Rear / Fanen Schild",
         "name_global": "Back / Farnen Schild",
@@ -3622,6 +3767,7 @@
         "Set": "Fanen"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／センシアスエム",
         "name_en": "Rear / Sensias Em",
         "name_global": "Back / Sentious Em",
@@ -3647,6 +3793,7 @@
         "Set": "Sensias"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フィールフェアル",
         "name_en": "Rear / Feel Feal",
         "name_global": "Back / Feuille Fair",
@@ -3672,6 +3819,7 @@
         "Set": "Feel"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／マギカクラフト",
         "name_en": "Rear / Magica Craft",
         "name_global": "Back / Magika Kraft",
@@ -3697,6 +3845,7 @@
         "Set": "Magica"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／レスティヴァイゼ",
         "name_en": "Rear / Resti Weisse",
         "name_global": "Back / Resti Weise",
@@ -3722,6 +3871,7 @@
         "Set": "Weisse"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ホワイティルウィング",
         "name_en": "Rear / Whitill Wing",
         "name_global": "Back / Whiteal Wings",
@@ -3747,6 +3897,7 @@
         "Abilities":["Ability III", "All Resist III", "Vinculum", "Stamina III"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ファーレンパルス",
         "name_en": "Rear / Fahren Pulse",
         "name_global": null,
@@ -3773,6 +3924,7 @@
         "Set":"Fahren"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ファーレンダーツ",
         "name_en": "Rear / Fahren Darts",
         "name_global": null,
@@ -3799,6 +3951,7 @@
         "Set":"Fahren"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ファーレンマーナ",
         "name_en": "Rear / Fahren Myrna",
         "name_global": null,
@@ -3825,6 +3978,7 @@
         "Set":"Fahren"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ファーレントレイ",
         "name_en": "Rear / Fahren Trey",
         "name_global": null,
@@ -3851,6 +4005,7 @@
         "Set":"Fahren"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ベンダエーリ",
         "name_en": "Rear / Benda Aeri",
         "name_global": null,
@@ -3877,6 +4032,7 @@
         "Set":"Benda"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ブリサエーリ",
         "name_en": "Rear / Brisa Aeri",
         "name_global": "Back / Brissa Aery",
@@ -3902,6 +4058,7 @@
         "Set":"Brisa"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サイキホウヨク",
         "name_en": "Rear / Saiki Houyoku",
         "name_global": "Back / Saiki Houyoku",
@@ -3927,6 +4084,7 @@
         "Set":"Saiki"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ディアボリクス",
         "name_en": "Rear / Diabo Lix",
         "name_global": "Back / Diavo Rix",
@@ -3952,6 +4110,7 @@
         "Set":"Diabo"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／マガツヒ",
         "name_en": "Rear / Magatsuhi",
         "name_global": "Back / Magatsuhi",
@@ -3977,6 +4136,7 @@
         "Set":"Magatsu"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／グランシルト",
         "name_en": "Rear / Guran Schild",
         "name_global": "Back / Glan Schild",
@@ -4002,6 +4162,7 @@
         "Set":"Guran"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／Pドライヴ",
         "name_en": "Rear / P Drive",
         "name_global": "Back / P Drive",
@@ -4026,6 +4187,7 @@
         "Dark Resistance":2
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フラワーアート",
         "name_en": "Rear / Flower Art",
         "name_global": null,
@@ -4051,6 +4213,7 @@
         "Abilities":["Ability II","Mutation I","Spirita II","Stamina II"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／レッドオーラ",
         "name_en": "Rear / Red Aura",
         "name_global": null,
@@ -4076,6 +4239,7 @@
         "Abilities":["Ability II","Mutation I","Spirita II","Stamina II"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／イデアルディール",
         "name_en": "Rear / Ideal Deal",
         "name_global": null,
@@ -4101,6 +4265,7 @@
         "Set":"Ideal"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／インヴェルム",
         "name_en": "Rear / Invalum",
         "name_global": "Back / Invelm",
@@ -4126,6 +4291,7 @@
         "Set":"Austere"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／オフゼルム",
         "name_en": "Rear / Austelum",
         "name_global": "Back / Ofzeterious",
@@ -4151,6 +4317,7 @@
         "Set":"Austere"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／雷剛タガイシ",
         "name_en": "Rear / Thunder Tagaishi",
         "name_global": "Back / Lightning Bolt Tagaishi",
@@ -4176,6 +4343,7 @@
         "Set":"Tagami Weapon"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サイハジュウジ",
         "name_en": "Rear / Saiha Juuji",
         "name_global": "Back / Cyhacross",
@@ -4201,6 +4369,7 @@
         "Set":"Saiha"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／カイゼルエルテ",
         "name_en": "Rear / Kaiser Elte",
         "name_global": "Back / Kaiser Elte",
@@ -4226,6 +4395,7 @@
         "Set":"Kaiser"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／エイグノワルガ",
         "name_en": "Rear / Eig Noirega",
         "name_global": "Back / Eig Noirga",
@@ -4251,6 +4421,7 @@
         "Set": "Noirega"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サーキュレイ",
         "name_en": "Rear / Circu Ray",
         "name_global": "Back / Circuray",
@@ -4276,6 +4447,7 @@
         "Set":"Ray"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サーキュユニオン",
         "name_en": "Rear / Circu Union",
         "name_global": "Back / Circunion",
@@ -4301,6 +4473,7 @@
         "Set":"Union"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／グリュゾベルーラ",
         "name_en": "Rear / Greuzoblura",
         "name_global": "Back / Gryzo Berula",
@@ -4326,6 +4499,7 @@
         "Set":"Greuz"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ヘブンリーリング",
         "name_en": "Rear / Heavenly Ring",
         "name_global": null,
@@ -4351,6 +4525,7 @@
         "Abilities":["Necky Smile","Vinculum","Stamina III","Spirita III"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／セグアリチア",
         "name_en": "Rear / Segua Lithia",
         "name_global": null,
@@ -4376,6 +4551,7 @@
         "Abilities":["Ability III","Vinculum","Stamina III","Spirita III"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ホワイティルプルム",
         "name_en": "Rear / Whitill Plume",
         "name_global": "Back / Whiteal Ploum",
@@ -4400,6 +4576,7 @@
         "Dark Resistance":null
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／雷閃イザネイシ",
         "name_en": "Rear / Thunder Izaneshi",
         "name_global": "Back / Lightning Glow Izaneishi",
@@ -4424,6 +4601,7 @@
         "Dark Resistance":null
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アストラグレス",
         "name_en": "Rear / Astra Gres",
         "name_global": "Back / Astra Gres",
@@ -4448,6 +4626,7 @@
         "Dark Resistance":3
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ゼイネシスガナフ",
         "name_en": "Rear / Zeinesis Ganaf",
         "name_global": "Back / Zeinesis Gunof",
@@ -4472,6 +4651,7 @@
         "Dark Resistance":2
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クリファドガナフ",
         "name_en": "Rear / Qliphad Ganaf",
         "name_global": "Back / Clifard Gunof",
@@ -4496,6 +4676,7 @@
         "Dark Resistance":null
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／シャインレッド",
         "name_en": "Rear / Shine Red",
         "name_global": null,
@@ -4522,6 +4703,7 @@
         "Abilities":["Ability III","Vinculum","Stamina III","Spirita III"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／シャインブルー",
         "name_en": "Rear / Shine Blue",
         "name_global": null,
@@ -4547,6 +4729,7 @@
         "Abilities":["Ability III","Vinculum","Stamina III","Spirita III"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／カブキモノライデン",
         "name_en": "Rear / Kabukimono Raiden",
         "name_global": null,
@@ -4573,6 +4756,7 @@
         "Abilities":["Ability III","Vinculum","Stamina III","Spirita III"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ヒメカブキチェリー",
         "name_en": "Rear / Himekabuki Cherry",
         "name_global": null,
@@ -4598,6 +4782,7 @@
         "Abilities":["Ability III","Vinculum","Stamina III","Spirita III"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ゲッコウホロー",
         "name_en": "Rear / Gekkou Hollow",
         "name_global": null,
@@ -4624,6 +4809,7 @@
         "Abilities":["Ability III","Vinculum","Stamina III","Spirita III"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ヤテンホロー",
         "name_en": "Rear / Yaten Hollow",
         "name_global": null,
@@ -4649,6 +4835,7 @@
         "Abilities":["Ability III","Vinculum","Stamina III","Spirita III"]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ウェラボード",
         "name_en": "Rear / Weila Bode",
         "name_global": "Back / Wella Board",
@@ -4673,6 +4860,7 @@
         "Dark Resistance":null
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／イヴリダキブス",
         "name_en": "Rear / Evleda Kibbs",
         "name_global": "Back / Ivlida Kibbs",
@@ -4697,6 +4885,7 @@
         "Dark Resistance":2
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クリシスキブス",
         "name_en": "Rear / Cleasis Kibbs",
         "name_global": "Back / Cleasis Kibbs",
@@ -4721,6 +4910,7 @@
         "Dark Resistance":3
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フォボスクーペ",
         "name_en": "Rear / Phobos Coupe",
         "name_global": "Back / Phobos Coupe",
@@ -4745,6 +4935,7 @@
         "Dark Resistance":null
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ラッピーシャイン",
         "name_en": "Rear / Rappy Shine",
         "name_global": "Back / Rappy Shine",
@@ -4769,6 +4960,7 @@
         "Dark Resistance":null
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クラーデムイリック",
         "name_en": "Rear / Clawdem Illic",
         "name_global": "Back / Claudium Irick",
@@ -4793,6 +4985,7 @@
         "Dark Resistance":5
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／セレケラトリプス",
         "name_en": "Rear / Ceres Ceratrips",
         "name_global": "Back / Ceres Ceratops",
@@ -4818,6 +5011,7 @@
         "Dark Resistance":null
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ザラケラトリプス",
         "name_en": "Rear / Zara Ceratrips",
         "name_global": "Back / Zara Ceratops",
@@ -4843,6 +5037,7 @@
         "Dark Resistance":null
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／マスクオブヴェイン",
         "name_en": "Rear / Mask of Vain",
         "name_global": "Back / Mask of Vane",
@@ -4867,6 +5062,7 @@
         "Dark Resistance":5
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／オフゼテリオス",
         "name_en": "Rear / Austerios",
         "name_global": "Back / Ofzeterious",
@@ -4892,6 +5088,7 @@
         "Set":"Austere-NT"
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／星震纏ミシオン",
         "name_en": "Rear / Celestial Mixion",
         "name_global": "Back / Starquake Drape Mixion",
@@ -4916,6 +5113,7 @@
         "Dark Resistance":4
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／光跡纏ミシオン",
         "name_en": "Rear / Lightstream Mixion",
         "name_global": "Back / Trailblazer Drape Mixion",
@@ -4940,6 +5138,7 @@
         "Dark Resistance":5
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アウェイクディール",
         "name_en": "Rear / Awake Deal",
         "name_global": "Back / Awake Deal",
@@ -4964,6 +5163,7 @@
         "Dark Resistance":5
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ロニアポンド",
         "name_en": "Rear / Ronia Pound",
         "name_global": "Back / Ronia Pound",
@@ -4991,6 +5191,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ネイバーヴォス",
         "name_en": "Rear / Neighbor Voss",
         "name_global": "Back / Naver Voss",
@@ -5018,6 +5219,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ロニアポンド",
         "name_en": "Rear / Rose Peer",
         "name_global": "Back / Rhodes Pia",
@@ -5045,6 +5247,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／エクエスフル",
         "name_en": "Rear / Eques Full",
         "name_global": "Back / Eques Ful",
@@ -5072,6 +5275,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クローズパルケ",
         "name_en": "Rear / Close Parka",
         "name_global": "Back / Close Parque",
@@ -5099,6 +5303,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／レーベンマスカ",
         "name_en": "Rear / Raven Maska",
         "name_global": "Back / Raven Mye",
@@ -5126,6 +5331,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ディスタラン",
         "name_en": "Rear / Dista Ran",
         "name_global": "Back / Dista Ran",
@@ -5153,6 +5359,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／サウザンデリ",
         "name_en": "Rear / Thousand Deri",
         "name_global": "Back / Sauzan Delli",
@@ -5180,6 +5387,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ディールメア",
         "name_en": "Rear / Deal Mehr",
         "name_global": "Back / Diehl Mare",
@@ -5207,6 +5415,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ウィングセネ",
         "name_en": "Rear / Wing Sene",
         "name_global": "Back / Wing Sene",
@@ -5234,6 +5443,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ウィングセネ",
         "name_en": "Rear / Sharp Riube",
         "name_global": "Back / Sharp Riuve",
@@ -5261,6 +5471,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／イェーガービル",
         "name_en": "Rear / Jaeger Bill",
         "name_global": "Back / Jaeger Vil",
@@ -5288,6 +5499,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ファウマパレ",
         "name_en": "Rear / Fauma Pare",
         "name_global": "Back / Fauma Palet",
@@ -5315,6 +5527,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／マギカクルト",
         "name_en": "Rear / Magica Kurt",
         "name_global": "Back / Magika Culte",
@@ -5342,6 +5555,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ファーネンシア",
         "name_en": "Rear / Fanen Sheer",
         "name_global": "Back / Farnen Schier",
@@ -5369,6 +5583,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／センシアスエア",
         "name_en": "Rear / Sensias Air",
         "name_global": "Back / Sentious Aer",
@@ -5396,6 +5611,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／フィールファラ",
         "name_en": "Rear / Feel Phara",
         "name_global": "Back / Feuille Farah",
@@ -5423,6 +5639,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／レストヴァイゼ",
         "name_en": "Rear / Rest Weisse",
         "name_global": "Back / Rest Weise",
@@ -5450,6 +5667,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／エクディクグラッジ",
         "name_en": "Rear / Equdic Grudge",
         "name_global": "Back / Ekdyke Grudge",
@@ -5477,6 +5695,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／シュベルキブス",
         "name_en": "Rear / Schvelle Kibbs",
         "name_global": "Back / Schvelle Kibbs",
@@ -5503,6 +5722,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／ノヴェルフル",
         "name_en": "Rear / Novel Full",
         "name_global": "Back / Novel Ful",
@@ -5529,6 +5749,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／リバレイトフル",
         "name_en": "Rear / Liberate Full",
         "name_global": "Back / Rivalate Ful",
@@ -5555,6 +5776,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アビオンオーブ",
         "name_en": "Rear / Avion Orb",
         "name_global": "Back / Avion Orb",
@@ -5581,6 +5803,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アビオンダスク",
         "name_en": "Rear / Avion Dusk",
         "name_global": "Back / Avion Dusk",
@@ -5607,6 +5830,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／オフゼハザラ",
         "name_en": "Rear / Austehazara",
         "name_global": "Back / Ofzehazala",
@@ -5634,6 +5858,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／アトラシュメル",
         "name_en": "Rear / Atlas Sumer",
         "name_global": "Back / Atlas Shemel",
@@ -5660,6 +5885,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／光跡装パシオン",
         "name_en": "Rear / Lightstream Paxion",
         "name_global": "Back / Trailblazer Drape Paxion",
@@ -5686,6 +5912,7 @@
         "SSA Slots": [6]
     },
     {
+        "Type": "Rear",
         "Name (JP)": "リア／クラースダイヌ",
         "name_en": "Rear / Cras Dyne",
         "name_global": "Back / Klauzdyne",

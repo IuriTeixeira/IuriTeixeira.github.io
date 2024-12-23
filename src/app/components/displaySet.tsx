@@ -4,15 +4,14 @@ import variantSet from "../geardata/sets/letter-variant-sets.json"
 import sword from "../geardata/weapons/weapon-data/swords.json"
 import wiredlance from "../geardata/weapons/weapon-data/wiredlances.json"
 //import partizan from "../geardata/weapons/weapon-data/partizans.json"
-import rear from "../geardata/units/unit-data/rear.json"
-import arm from "../geardata/units/unit-data/arm.json"
-import leg from "../geardata/units/unit-data/leg.json"
+import units from "../geardata/units/unit-data/units.json"
 import { v4 as uuidv4 } from 'uuid';
 import { useLanguageContext } from "../language-provider";
 
 export default function displaySet(setName: string, name: string): any {
     const language = useLanguageContext()
     let set = setEffects.find(set => set.Name === setName)
+    let variant = variantSet.find(variant => variant.Set === setName)
 
     function displaySetEffect(set: any, doubleEffect: boolean): any {
         let effect: any[] = []
@@ -61,33 +60,26 @@ export default function displaySet(setName: string, name: string): any {
         let members: any[] = []
         for (let i = 0; i < set.Pieces.length; i += 2) {
             let bufferMembers: any[] = []
-            let unitType: string = null
             let itemName: string = null
             bufferMembers.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${set.Pieces[i].replace(' ', '')}.png`} alt={set.Pieces[i]} title={set.Pieces[i]} w={16} h={16} />, ' ')
 
             switch (language.language) {
                 case 'English Patch':
-                    if (set.Pieces[i] == 'Rear' || set.Pieces[i] == 'Arm' || set.Pieces[i] == 'Leg') {
-                        unitType = set.Pieces[i]
+                    if (set.Pieces[i] === 'Rear' || set.Pieces[i] === 'Arm' || set.Pieces[i] === 'Leg') {
+                        itemName = set.Pieces[i] + ' / ' + set.Pieces[i + 1]
+                    } else {
+                        itemName = set.Pieces[i + 1]
                     }
-                    name = name.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('Rear / ', '').replace('Arm / ', '').replace('Leg / ', '')
                     break;
                 case 'Global':
                     switch (set.Pieces[i]) {
                         case 'Rear':
-                            unitType = 'Back'
-                            let rearName: any = rear.find(item => item['name_en'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1])
-                            if (rearName) itemName = rearName['name_global']
                         case 'Arm':
-                            unitType = 'Arm'
-                            let armName: any = arm.find(item => item['name_en'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1])
-                            if (armName) itemName = armName['name_global']
-                            break;
                         case 'Leg':
-                            unitType = 'Leg'
-                            let legName: any = leg.find(item => item['name_en'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1])
-                            if (legName) itemName = legName['name_global']
-                            break;
+                            let unitName: any
+                            if (variant) unitName = units.find(item => item['name_en'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1] + ' a')
+                            else unitName = units.find(item => item['name_en'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1])
+                            if (unitName) itemName = unitName['name_global'].replace(' A', '')
                         case 'Sword':
                             let swordName: any = sword.find(item => item['name_en'] === set.Pieces[i + 1])
                             if (swordName) itemName = swordName['name_global']
@@ -97,24 +89,16 @@ export default function displaySet(setName: string, name: string): any {
                             if (wlName) itemName = wlName['name_global']
                             break;
                     }
-                    name = name.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('Back / ', '').replace('Arm / ', '').replace('Leg / ', '')
                     break;
                 case '日本語':
                     switch (set.Pieces[i]) {
                         case 'Rear':
-                            unitType = 'リア'
-                            let rearName: any = rear.find(item => item['name_en'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1])
-                            if (rearName) itemName = rearName['Name (JP)']
-                            break;
                         case 'Arm':
-                            unitType = 'アーム'
-                            let armName: any = arm.find(item => item['name_en'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1])
-                            if (armName) itemName = armName['Name (JP)']
-                            break;
                         case 'Leg':
-                            unitType = 'レッグ'
-                            let legName: any = leg.find(item => item['name_en'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1])
-                            if (legName) itemName = legName['Name (JP)']
+                            let unitName: any
+                            if (variant) unitName = units.find(item => item['name_en'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1] + ' a')
+                            else unitName = units.find(item => item['name_en'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1])
+                            if (unitName) itemName = unitName['Name (JP)'].replace('a', '')
                             break;
                         case 'Sword':
                             let swordName: any = sword.find(item => item['name_en'] === set.Pieces[i + 1])
@@ -129,36 +113,41 @@ export default function displaySet(setName: string, name: string): any {
                             if (partizanName) itemName = partizan['Name (JP)']
                             break; */
                     }
-                    name = name.replace('a', '').replace('b', '').replace('c', '').replace('d', '').replace('e', '').replace('リア/', '').replace('アーム/', '').replace('レッグ/', '')
                     break;
             }
             if (itemName) {
+                if (set.Pieces[i] === 'Rear' || set.Pieces[i] === 'Arm' || set.Pieces[i] === 'Leg') {
+                    switch (language.language) {
+                        case 'English Patch':
+                            if (name[name.length - 2] === ' ') {
+                                name = name.slice(0, -2)
+                            }
+                            break
+                        case 'Global':
+                            let globalName: any
+                            globalName = units.find(item => item['name_en'] === name)
+                            if (globalName) name = globalName['name_global']
+                            if (name[name.length - 2] === ' ') {
+                                name = name.slice(0, -2)
+                            }
+                            break
+                        case '日本語':
+                            let jpName: any
+                            jpName = units.find(item => item['name_en'] === name)
+                            if (jpName) name = jpName['Name (JP)']
+                            name = name.replace('a', '').replace('b', '').replace('c', '').replace('d', '').replace('e', '')
+                    }
+                }
                 if (itemName === name) {
-                    if (set.Pieces[i] == 'Rear' || set.Pieces[i] == 'Arm' || set.Pieces[i] == 'Leg') {
-                        bufferMembers.push(<strong key={uuidv4()}>{unitType} / {itemName}</strong>)
-                    } else {
-                        bufferMembers.push(<strong key={uuidv4()}>{itemName}</strong>)
-                    }
+                    bufferMembers.push(<strong key={uuidv4()}>{name}</strong>)
                 } else {
-                    if (set.Pieces[i] == 'Rear' || set.Pieces[i] == 'Arm' || set.Pieces[i] == 'Leg') {
-                        bufferMembers.push(unitType, ' / ', itemName)
-                    } else {
-                        bufferMembers.push(itemName)
-                    }
+                    bufferMembers.push(itemName)
                 }
             } else {
                 if (set.Pieces[i + 1] === name) {
-                    if (set.Pieces[i] == 'Rear' || set.Pieces[i] == 'Arm' || set.Pieces[i] == 'Leg') {
-                        bufferMembers.push(<strong key={uuidv4()}>{unitType} / {set.Pieces[i + 1]}</strong>)
-                    } else {
-                        bufferMembers.push(<strong key={uuidv4()}>{set.Pieces[i + 1]}</strong>)
-                    }
+                    bufferMembers.push(<strong key={uuidv4()}>{set.Pieces[i + 1]}</strong>)
                 } else {
-                    if (set.Pieces[i] == 'Rear' || set.Pieces[i] == 'Arm' || set.Pieces[i] == 'Leg') {
-                        bufferMembers.push(unitType, ' / ', set.Pieces[i + 1])
-                    } else {
-                        bufferMembers.push(set.Pieces[i + 1])
-                    }
+                    bufferMembers.push(set.Pieces[i + 1])
                 }
             }
             members.push(<Flex align="center" key={uuidv4()} gap={5}>{bufferMembers}</Flex>)
@@ -183,9 +172,18 @@ export default function displaySet(setName: string, name: string): any {
             bufferMembers.push(<SimpleGrid key={uuidv4()} cols={2} spacing="xs" verticalSpacing={3}>{members}</SimpleGrid>)
         }
 
-        let variant = variantSet.find(variant => variant.Set === set.Name)
         if (variant) {
-            bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
+            switch (language.language) {
+                case 'English Patch':
+                    bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
+                    break;
+                case 'Global':
+                    bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (A,B,C) combination works for this set');
+                    break;
+                case '日本語':
+                    bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
+                    break;
+            }
         }
 
         return bufferMembers
@@ -195,7 +193,7 @@ export default function displaySet(setName: string, name: string): any {
         let bufferReturn: any = []
         let bufferSetInfo: any = []
         switch (language.language) {
-            case 'English patch':
+            case 'English Patch':
             case 'Global':
                 bufferSetInfo.push(<strong key={uuidv4()}>Set Effect:</strong>, <br key={uuidv4()} />, displaySetEffect(set, false), <br key={uuidv4()} />, <strong key={uuidv4()}>Set Pieces:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name, false))
                 bufferReturn.push(

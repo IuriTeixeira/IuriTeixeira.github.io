@@ -5,6 +5,7 @@ import '@mantine/core/styles.css';
 import { createTheme, ColorSchemeScript, MantineProvider, MantineColorsTuple } from '@mantine/core';
 import React from "react";
 import { theme } from './theme';
+import GlobalHeaderComponent from "./components/GlobalHeaderComponent";
 
 export const metadata: Metadata = {
     title: "PSO2 Character Simulator",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: any }) {
             <body>
                 <MantineProvider theme={theme} defaultColorScheme="dark">
                     <LanguageProvider>
+                        <GlobalHeaderComponent/>
                         {children}
                     </LanguageProvider>
                 </MantineProvider>

@@ -7,6 +7,7 @@ import localization from "../localization.json"
 import displayAbilities from './displayAbilities';
 import displaySet from './displaySet';
 import displaySSA from './displaySSA';
+import displayStat from './displayStat';
 import displayClasses from './displayClasses';
 import './WeaponTableComponent.css';
 import '@mantine/core/styles/Table.layer.css';
@@ -41,29 +42,6 @@ export default function WeaponTableComponent({ data, type }) {
             maxATK = (baseATK * 135) / 100
         }
         return Math.trunc(maxATK)
-    }
-
-    function displayStat(key: string, value: number): any[] {
-        let buffer: any[] = []
-        let statName: any = localization.find(name => name['Name (English)'] === key)
-        let name: string
-
-        if (statName) {
-            switch (language.language) {
-                case 'English Patch':
-                    name = statName['Name (English)']
-                    break;
-                case 'Global':
-                    name = statName['Name (Global)']
-                    break;
-                case '日本語':
-                    name = statName['Name (JP)']
-                    break;
-            }
-        }
-
-        buffer.push(<Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${key}.png`} alt={name} title={name} w={16} h={16} /> {value}</Flex>);
-        return buffer
     }
 
     function displayPotentials(potList: any[]): any[] {
@@ -169,60 +147,59 @@ export default function WeaponTableComponent({ data, type }) {
                         if (heading !== 'old_type') {
                             switch (language.language) {
                                 case 'English Patch':
-                                    if (heading !== 'name_global') {
-                                        switch (heading) {
-                                            case 'Name (JP)': return;
-                                            case 'name_en': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
-                                            case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">ATK</Table.Th><Table.Th key={uuidv4()} className="centerCell">ATK<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
-                                            case 'R-ATK': return;
-                                            case 'T-ATK': return;
-                                            case 'SAF': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="Special Ability Factor" title="Special Ability Factor" w={16} h={16} /> SAF</Flex></Table.Th>
-                                            case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Properties</Table.Th>
-                                            case 'Element': return;
-                                            case 'id': return;
-                                            case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> Potential</Flex></Table.Th>
-                                            case 'Classes': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt="Main Classes that can wield this weapon" w={16} h={16} /> {heading}</Flex></Table.Th>
-                                            case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S-Class Special Ability Slots Enabled" title="S-Class Special Ability Slots Enabled" w={16} h={16} /> SSA Slots</Flex></Table.Th>
-                                            default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
-                                        }
+                                    switch (heading) {
+                                        case 'Name (JP)': return;
+                                        case 'name_en': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
+                                        case 'name_global': return;
+                                        case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">ATK</Table.Th><Table.Th key={uuidv4()} className="centerCell">ATK<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
+                                        case 'R-ATK': return;
+                                        case 'T-ATK': return;
+                                        case 'SAF': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="Special Ability Factor" title="Special Ability Factor" w={16} h={16} /> SAF</Flex></Table.Th>
+                                        case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Properties</Table.Th>
+                                        case 'Element': return;
+                                        case 'id': return;
+                                        case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> Potential</Flex></Table.Th>
+                                        case 'Classes': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt="Main Classes that can wield this weapon" w={16} h={16} /> {heading}</Flex></Table.Th>
+                                        case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S-Class Special Ability Slots Enabled" title="S-Class Special Ability Slots Enabled" w={16} h={16} /> SSA Slots</Flex></Table.Th>
+                                        default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
                                     }
                                     break;
                                 case 'Global':
-                                    if (heading !== 'name_en' && heading !== 'Name (JP)') {
-                                        switch (heading) {
-                                            case 'name_global': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
-                                            case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">ATK</Table.Th><Table.Th key={uuidv4()} className="centerCell">ATK<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
-                                            case 'R-ATK': return;
-                                            case 'T-ATK': return;
-                                            case 'SAF': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="Ability Factor" title="Ability Factor" w={16} h={16} /> Ability Factor</Flex></Table.Th>
-                                            case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Properties</Table.Th>
-                                            case 'Element': return;
-                                            case 'id': return;
-                                            case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> Potential</Flex></Table.Th>
-                                            case 'Classes': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt="Main Classes that can wield this weapon" w={16} h={16} /> {heading}</Flex></Table.Th>
-                                            case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S-Grade Augment Slots Enabled" title="S-Grade Augment Slots Enabled" w={16} h={16} /> SGA Slots</Flex></Table.Th>
-                                            default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
-                                        }
+                                    switch (heading) {
+                                        case 'Name (JP)': return;
+                                        case 'name_en': return;
+                                        case 'name_global': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
+                                        case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">ATK</Table.Th><Table.Th key={uuidv4()} className="centerCell">ATK<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
+                                        case 'R-ATK': return;
+                                        case 'T-ATK': return;
+                                        case 'SAF': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="Ability Factor" title="Ability Factor" w={16} h={16} /> Ability Factor</Flex></Table.Th>
+                                        case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Properties</Table.Th>
+                                        case 'Element': return;
+                                        case 'id': return;
+                                        case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> Potential</Flex></Table.Th>
+                                        case 'Classes': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt="Main Classes that can wield this weapon" w={16} h={16} /> {heading}</Flex></Table.Th>
+                                        case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S-Grade Augment Slots Enabled" title="S-Grade Augment Slots Enabled" w={16} h={16} /> SGA Slots</Flex></Table.Th>
+                                        default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
                                     }
                                     break;
                                 case '日本語':
-                                    if (heading !== 'name_en' && heading !== 'name_global') {
-                                        switch (heading) {
-                                            case 'Name (JP)': return <Table.Th key={uuidv4()} className="centerCell">名称</Table.Th>;
-                                            case 'Rarity': return <Table.Th key={uuidv4()} className="centerCell">レア</Table.Th>;
-                                            case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">力</Table.Th><Table.Th key={uuidv4()} className="centerCell">最大出力</Table.Th></React.Fragment>
-                                            case 'R-ATK': return;
-                                            case 'T-ATK': return;
-                                            case 'Requirement': return <Table.Th key={uuidv4()} className="centerCell">装備条件</Table.Th>;
-                                            case 'SAF': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="特殊能力因子" title="特殊能力因子" w={16} h={16} /> 特殊能力因子</Flex></Table.Th>
-                                            case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">特性</Table.Th>
-                                            case 'Element': return;
-                                            case 'id': return;
-                                            case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="潜在能力" title="潜在能力" w={16} h={16} /> 潜在能力</Flex></Table.Th>
-                                            case 'Classes': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt="この武器を扱える主なクラス" w={16} h={16} /> クラス</Flex></Table.Th>
-                                            case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S級特殊能力スロット有効" title="S級特殊能力スロット有効" w={16} h={16} /> S級特殊能力スロット</Flex></Table.Th>
-                                            default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
-                                        }
+                                    switch (heading) {
+                                        case 'Name (JP)': return <Table.Th key={uuidv4()} className="centerCell">名称</Table.Th>;
+                                        case 'name_en': return;
+                                        case 'name_global': return;
+                                        case 'Rarity': return <Table.Th key={uuidv4()} className="centerCell">レア</Table.Th>;
+                                        case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">力</Table.Th><Table.Th key={uuidv4()} className="centerCell">最大出力</Table.Th></React.Fragment>
+                                        case 'R-ATK': return;
+                                        case 'T-ATK': return;
+                                        case 'Requirement': return <Table.Th key={uuidv4()} className="centerCell">装備条件</Table.Th>;
+                                        case 'SAF': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="特殊能力因子" title="特殊能力因子" w={16} h={16} /> 特殊能力因子</Flex></Table.Th>
+                                        case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">特性</Table.Th>
+                                        case 'Element': return;
+                                        case 'id': return;
+                                        case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="潜在能力" title="潜在能力" w={16} h={16} /> 潜在能力</Flex></Table.Th>
+                                        case 'Classes': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt="この武器を扱える主なクラス" w={16} h={16} /> クラス</Flex></Table.Th>
+                                        case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S級特殊能力スロット有効" title="S級特殊能力スロット有効" w={16} h={16} /> S級特殊能力スロット</Flex></Table.Th>
+                                        default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
                                     }
                                     break;
                             }
@@ -237,7 +214,7 @@ export default function WeaponTableComponent({ data, type }) {
                             return <Table.Tr key={uuidv4()}>
                                 {row['Name (JP)'] && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['name_en'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${row['name_en']}`} w={64} h={64} /></Flex></Table.Td>}
                                 {theadData.map((key: string, index: any) => {
-                                    if (row['Name (JP)'] && key !== 'name_global' && key !== 'old_type' && key !== 'id') {
+                                    if (row['Name (JP)']) {
                                         let bufferProperties: any[] = [];
                                         let bufferATK: any[] = [];
                                         let bufferATKMax: any[] = [];
@@ -245,7 +222,10 @@ export default function WeaponTableComponent({ data, type }) {
                                             case 'Name (JP)':
                                                 return <Table.Td key={uuidv4()}><Flex justify="center" direction="column" key={uuidv4()} gap={5}>{row['name_en']}<br key={uuidv4()} />{row['Name (JP)']}</Flex></Table.Td>
                                             case 'name_en':
-                                                return
+                                            case 'name_global':
+                                            case 'old_type':
+                                            case 'id':
+                                                return;
                                             case 'Rarity':
                                                 return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} title={`${row[key]} Star`} w={16} h={16} /></Flex></Table.Td>
                                             case 'Requirement':
@@ -258,16 +238,12 @@ export default function WeaponTableComponent({ data, type }) {
                                                     bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['old_type'])));
                                                 }
                                                 if (row['R-ATK']) {
-                                                    if (bufferATK[0]) bufferATK.push(<br key={uuidv4()} />, displayStat('R-ATK', row['R-ATK']));
-                                                    else bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                    if (bufferATKMax[0]) bufferATKMax.push(<br key={uuidv4()} />, displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['old_type'])));
-                                                    else bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['old_type'])));
+                                                    bufferATK.push(displayStat('R-ATK', row['R-ATK']));
+                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['old_type'])));
                                                 }
                                                 if (row['T-ATK']) {
-                                                    if (bufferATK[0]) bufferATK.push(<br key={uuidv4()} />, displayStat('T-ATK', row['T-ATK']));
-                                                    else bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                    if (bufferATKMax[0]) bufferATKMax.push(<br key={uuidv4()} />, displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['old_type'])));
-                                                    else bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['old_type'])));
+                                                    bufferATK.push(displayStat('T-ATK', row['T-ATK']));
+                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['old_type'])));
                                                 }
                                                 if (index === 6) {
                                                     if (bufferATK[0]) return (
@@ -331,11 +307,18 @@ export default function WeaponTableComponent({ data, type }) {
                             return <Table.Tr key={uuidv4()}>
                                 {row['name_global'] && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['name_en'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${row['name_global']}`} w={64} h={64} /></Flex></Table.Td>}
                                 {theadData.map((key: string, index: any) => {
-                                    if (row['name_global'] && key !== 'name_en' && key !== 'Name (JP)' && key !== 'old_type' && key !== 'id') {
+                                    if (row['name_global']) {
                                         let bufferProperties: any[] = [];
                                         let bufferATK: any[] = [];
                                         let bufferATKMax: any[] = [];
                                         switch (key) {
+                                            case 'name_global':
+                                                return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
+                                            case 'Name (JP)':
+                                            case 'name_en':
+                                            case 'old_type':
+                                            case 'id':
+                                                return;
                                             case 'Rarity':
                                                 return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} title={`${row[key]} Star`} w={16} h={16} /></Flex></Table.Td>
                                             case 'Requirement':
@@ -348,16 +331,12 @@ export default function WeaponTableComponent({ data, type }) {
                                                     bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['old_type'])));
                                                 }
                                                 if (row['R-ATK']) {
-                                                    if (bufferATK[0]) bufferATK.push(<br key={uuidv4()} />, displayStat('R-ATK', row['R-ATK']));
-                                                    else bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                    if (bufferATKMax[0]) bufferATKMax.push(<br key={uuidv4()} />, displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['old_type'])));
-                                                    else bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['old_type'])));
+                                                    bufferATK.push(displayStat('R-ATK', row['R-ATK']));
+                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['old_type'])));
                                                 }
                                                 if (row['T-ATK']) {
-                                                    if (bufferATK[0]) bufferATK.push(<br key={uuidv4()} />, displayStat('T-ATK', row['T-ATK']));
-                                                    else bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                    if (bufferATKMax[0]) bufferATKMax.push(<br key={uuidv4()} />, displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['old_type'])));
-                                                    else bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['old_type'])));
+                                                    bufferATK.push(displayStat('T-ATK', row['T-ATK']));
+                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['old_type'])));
                                                 }
                                                 if (index === 6) {
                                                     if (bufferATK[0]) return (
@@ -421,11 +400,18 @@ export default function WeaponTableComponent({ data, type }) {
                             return <Table.Tr key={uuidv4()}>
                                 {row['Name (JP)'] && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['name_en'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={row['Name (JP)']} w={64} h={64} /></Flex></Table.Td>}
                                 {theadData.map((key: string, index: any) => {
-                                    if (row['Name (JP)'] && key !== 'name_en' && key !== 'name_global' && key !== 'old_type' && key !== 'id') {
+                                    if (row['Name (JP)']) {
                                         let bufferProperties: any[] = [];
                                         let bufferATK: any[] = [];
                                         let bufferATKMax: any[] = [];
                                         switch (key) {
+                                            case 'Name (JP)':
+                                                return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
+                                            case 'name_en':
+                                            case 'name_global':
+                                            case 'old_type':
+                                            case 'id':
+                                                return;
                                             case 'Rarity':
                                                 return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={row[key]} title={row[key]} w={16} h={16} /></Flex></Table.Td>
                                             case 'Requirement':
@@ -438,16 +424,12 @@ export default function WeaponTableComponent({ data, type }) {
                                                     bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['old_type'])));
                                                 }
                                                 if (row['R-ATK']) {
-                                                    if (bufferATK[0]) bufferATK.push(<br key={uuidv4()} />, displayStat('R-ATK', row['R-ATK']));
-                                                    else bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                    if (bufferATKMax[0]) bufferATKMax.push(<br key={uuidv4()} />, displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['old_type'])));
-                                                    else bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['old_type'])));
+                                                    bufferATK.push(displayStat('R-ATK', row['R-ATK']));
+                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['old_type'])));
                                                 }
                                                 if (row['T-ATK']) {
-                                                    if (bufferATK[0]) bufferATK.push(<br key={uuidv4()} />, displayStat('T-ATK', row['T-ATK']));
-                                                    else bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                    if (bufferATKMax[0]) bufferATKMax.push(<br key={uuidv4()} />, displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['old_type'])));
-                                                    else bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['old_type'])));
+                                                    bufferATK.push(displayStat('T-ATK', row['T-ATK']));
+                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['old_type'])));
                                                 }
                                                 if (index === 6) {
                                                     if (bufferATK[0]) return (

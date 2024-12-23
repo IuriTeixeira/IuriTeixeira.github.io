@@ -16,9 +16,11 @@ export default function displayAbilities(abilities: any[]): any {
                 case 'Meseta Earned':
                 case 'Rare Drop Rate':
                 case 'Experience Earned':
+                case 'Experience Earned until Lv30':
                 case '出現するメセタが増加':
                 case '取得する経験値が増加':
                 case 'レアドロップ倍率が増加':
+                case 'Lv30に到達するまで取得する経験値が増加する':
                     abIcon = null;
                     break;
                 default:
@@ -237,9 +239,7 @@ export default function displayAbilities(abilities: any[]): any {
                     }
                 } else {
                     buffer.push(
-                        <Flex align="center" key={uuidv4()} gap={5}>
-                            {image} {name}
-                        </Flex>
+                        <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/RestrictedYellow.png" alt="Error" w={16} h={16} /> !Ability not found: {abilities[i]}</Flex>
                     )
                 }
             }

@@ -13,6 +13,7 @@ export default function Units() {
         <>
             <HeaderComponent setUnitData={setUnitData} setUnitType={setUnitType}/>
             <TableComponent data={unitData} type={unitType}/>
+            <HeaderComponent setUnitData={setUnitData} setUnitType={setUnitType}/>
         </>
     )
 }

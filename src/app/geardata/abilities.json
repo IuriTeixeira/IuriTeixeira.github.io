@@ -5072,16 +5072,33 @@
         ]
     },
     {
-        "Name (JP)": "フォトンコレクト",
-        "Name (English)": "Photon Collection",
-        "Name (Global)": null,
+        "Name (JP)": "フレッシュ・サイン",
+        "Name (English)": "Fresh Sign",
+        "Name (Global)": "Fresh Sign",
         "Effect (JP)": [
             "Lv30に到達するまで取得する経験値が増加する",
             10
         ],
         "Effect (English)": [
+            "Experience Earned until Lv30",
+            10
+        ],
+        "Effect (Global)": [
+            "Experience Earned until Lv30",
+            10
+        ]
+    },
+    {
+        "Name (JP)": "フォトンコレクト",
+        "Name (English)": "Photon Collection",
+        "Name (Global)": null,
+        "Effect (JP)": [
+            "状態異常と属性耐性の合成確率を上昇させる",
+            10
+        ],
+        "Effect (English)": [
             null,
-            "Increases transfer rate of Status Effect and Elemental Resistance abilities"
+            "Increases synthesis rate of Status Effect and Elemental Resistance abilities"
         ],
         "Effect (Global)": null
     },
@@ -5198,7 +5215,7 @@
     {
         "Name (JP)": "NTウェポンブースト2",
         "Name (English)": "NT Weapon Boost 2",
-        "Name (Global)": "Weapon Boost 2",
+        "Name (Global)": "NT Weapon Boost 2",
         "Effect (JP)": [
             "新世武器強化時の経験値が増加する",
             4800
