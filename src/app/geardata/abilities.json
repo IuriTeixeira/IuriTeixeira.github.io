@@ -2640,10 +2640,10 @@
         "Name (English)": "Gunne Soul",
         "Name (Global)": "Gunne Soul",
         "Effect (English)": [
-            "S-ATK",
-            15,
             "HP",
-            45
+            45,
+            "S-ATK",
+            15
         ],
         "Category": "Soul"
     },
@@ -2652,10 +2652,10 @@
         "Name (English)": "Zigmor Soul",
         "Name (Global)": "Jigmol Soul",
         "Effect (English)": [
-            "S-ATK",
-            15,
             "PP",
-            4
+            4,
+            "S-ATK",
+            15
         ],
         "Category": "Soul"
     },
@@ -2664,10 +2664,10 @@
         "Name (English)": "Vol Soul",
         "Name (Global)": "Vol Soul",
         "Effect (English)": [
-            "S-ATK",
-            30,
             "HP",
-            20
+            20,
+            "S-ATK",
+            30
         ],
         "Category": "Soul"
     },
@@ -2676,12 +2676,12 @@
         "Name (English)": "Gwana Soul",
         "Name (Global)": "Gwana Soul",
         "Effect (English)": [
-            "S-ATK",
-            30,
             "HP",
             10,
             "PP",
-            2
+            2,
+            "S-ATK",
+            30
         ],
         "Category": "Soul"
     },
@@ -2690,10 +2690,10 @@
         "Name (English)": "Quartz Soul",
         "Name (Global)": "Quartz Soul",
         "Effect (English)": [
-            "S-ATK",
-            30,
             "PP",
-            3
+            3,
+            "S-ATK",
+            30
         ],
         "Category": "Soul"
     },
@@ -2702,12 +2702,12 @@
         "Name (English)": "Deadleon Soul",
         "Name (Global)": "Deadlion Soul",
         "Effect (English)": [
+            "HP",
+            30,
             "S-ATK",
             35,
             "DEX",
-            5,
-            "HP",
-            30
+            5
         ],
         "Category": "Soul"
     },
@@ -2716,14 +2716,14 @@
         "Name (English)": "Leone Soul",
         "Name (Global)": "Leone",
         "Effect (English)": [
-            "S-ATK",
-            35,
-            "DEX",
-            5,
             "HP",
             20,
             "PP",
-            1
+            1,
+            "S-ATK",
+            35,
+            "DEX",
+            5
         ],
         "Category": "Soul"
     },
@@ -2732,12 +2732,12 @@
         "Name (English)": "Bayari Soul",
         "Name (Global)": "Beari Soul",
         "Effect (English)": [
+            "PP",
+            3,
             "S-ATK",
             35,
             "DEX",
-            5,
-            "PP",
-            3
+            5
         ],
         "Category": "Soul"
     },
@@ -2746,10 +2746,10 @@
         "Name (English)": "Idetta Soul",
         "Name (Global)": "Idihta Soul",
         "Effect (English)": [
-            "R-ATK",
-            15,
             "HP",
-            45
+            45,
+            "R-ATK",
+            15
         ],
         "Category": "Soul"
     },
@@ -2758,10 +2758,10 @@
         "Name (English)": "Madu Soul",
         "Name (Global)": "Madu Soul",
         "Effect (English)": [
-            "R-ATK",
-            15,
             "PP",
-            4
+            4,
+            "R-ATK",
+            15
         ],
         "Category": "Soul"
     },
@@ -2770,10 +2770,10 @@
         "Name (English)": "Ra'nsa Soul",
         "Name (Global)": "Ransa Soul",
         "Effect (English)": [
-            "R-ATK",
-            30,
             "HP",
-            20
+            20,
+            "R-ATK",
+            30
         ],
         "Category": "Soul"
     },
@@ -2782,12 +2782,12 @@
         "Name (English)": "Fang Soul",
         "Name (Global)": "Fang Soul",
         "Effect (English)": [
-            "R-ATK",
-            30,
             "HP",
             10,
             "PP",
-            2
+            2,
+            "R-ATK",
+            30
         ],
         "Category": "Soul"
     },
@@ -2796,10 +2796,10 @@
         "Name (English)": "Mizer Soul",
         "Name (Global)": "Mizer Soul",
         "Effect (English)": [
-            "R-ATK",
-            30,
             "PP",
-            3
+            3,
+            "R-ATK",
+            30
         ],
         "Category": "Soul"
     },
@@ -2808,12 +2808,12 @@
         "Name (English)": "Greuzoras Soul",
         "Name (Global)": "Gryzorus Soul",
         "Effect (English)": [
+            "PP",
+            3,
             "R-ATK",
             35,
             "DEX",
-            5,
-            "PP",
-            3
+            5
         ],
         "Category": "Soul"
     },
@@ -2822,12 +2822,12 @@
         "Name (English)": "Leopard Soul",
         "Name (Global)": "Leopod Soul",
         "Effect (English)": [
+            "HP",
+            30,
             "R-ATK",
             35,
             "DEX",
-            5,
-            "HP",
-            30
+            5
         ],
         "Category": "Soul"
     },
@@ -2836,14 +2836,14 @@
         "Name (English)": "Siorg Soul",
         "Name (Global)": "Siogr Soul",
         "Effect (English)": [
-            "R-ATK",
-            35,
-            "DEX",
-            5,
             "HP",
             20,
             "PP",
-            1
+            1,
+            "R-ATK",
+            35,
+            "DEX",
+            5
         ],
         "Category": "Soul"
     },
@@ -2852,10 +2852,10 @@
         "Name (English)": "Ragne Soul",
         "Name (Global)": "Ragne Soul",
         "Effect (English)": [
-            "T-ATK",
-            30,
             "HP",
-            20
+            20,
+            "T-ATK",
+            30
         ],
         "Category": "Soul"
     },
@@ -2864,12 +2864,12 @@
         "Name (English)": "Wolga Soul",
         "Name (Global)": "Wolga Soul",
         "Effect (English)": [
-            "T-ATK",
-            30,
             "HP",
             10,
             "PP",
-            2
+            2,
+            "T-ATK",
+            30
         ],
         "Category": "Soul"
     },
@@ -2878,10 +2878,10 @@
         "Name (English)": "Elder Soul",
         "Name (Global)": "Elder Soul",
         "Effect (English)": [
-            "T-ATK",
-            30,
             "PP",
-            3
+            3,
+            "T-ATK",
+            30
         ],
         "Category": "Soul"
     },
@@ -2890,12 +2890,12 @@
         "Name (English)": "Diabo Soul",
         "Name (Global)": "Diabo Soul",
         "Effect (English)": [
+            "HP",
+            30,
             "T-ATK",
             35,
             "DEX",
-            5,
-            "HP",
-            30
+            5
         ],
         "Category": "Soul"
     },
@@ -2904,14 +2904,14 @@
         "Name (English)": "Duvals Soul",
         "Name (Global)": "Deubarz Soul",
         "Effect (English)": [
-            "T-ATK",
-            35,
-            "DEX",
-            5,
             "HP",
             20,
             "PP",
-            1
+            1,
+            "T-ATK",
+            35,
+            "DEX",
+            5
         ],
         "Category": "Soul"
     },
@@ -2920,12 +2920,12 @@
         "Name (English)": "Guranz Soul",
         "Name (Global)": "Granz Soul",
         "Effect (English)": [
+            "PP",
+            3,
             "T-ATK",
             35,
             "DEX",
-            5,
-            "PP",
-            3
+            5
         ],
         "Category": "Soul"
     },
@@ -2934,12 +2934,12 @@
         "Name (English)": "Signo Soul",
         "Name (Global)": "Signo Soul",
         "Effect (English)": [
-            "DEX",
-            30,
             "HP",
             20,
             "PP",
-            1
+            1,
+            "DEX",
+            30
         ],
         "Category": "Soul"
     },
@@ -2948,12 +2948,12 @@
         "Name (English)": "Malmo Soul",
         "Name (Global)": "Marmoth Soul",
         "Effect (English)": [
-            "R-DEF",
-            30,
             "HP",
             20,
             "PP",
-            1
+            1,
+            "R-DEF",
+            30
         ],
         "Category": "Soul"
     },
@@ -2962,10 +2962,10 @@
         "Name (English)": "Vardha Soul",
         "Name (Global)": "Varder Soul",
         "Effect (English)": [
-            "R-DEF",
-            30,
             "PP",
-            4
+            4,
+            "R-DEF",
+            30
         ],
         "Category": "Soul"
     },
@@ -2974,12 +2974,12 @@
         "Name (English)": "Cater Soul",
         "Name (Global)": "Catre Soul",
         "Effect (English)": [
-            "T-DEF",
-            30,
             "HP",
             20,
             "PP",
-            1
+            1,
+            "T-DEF",
+            30
         ],
         "Category": "Soul"
     },
@@ -2988,12 +2988,12 @@
         "Name (English)": "Rockbear Soul",
         "Name (Global)": "",
         "Effect (English)": [
-            "S-DEF",
-            30,
             "HP",
             10,
             "PP",
-            3
+            3,
+            "S-DEF",
+            30
         ],
         "Category": "Soul"
     },
@@ -3002,12 +3002,12 @@
         "Name (English)": "Snow Soul",
         "Name (Global)": "Snow Soul",
         "Effect (English)": [
-            "S-DEF",
-            30,
             "HP",
             20,
             "PP",
-            1
+            1,
+            "S-DEF",
+            30
         ],
         "Category": "Soul"
     },
@@ -3016,10 +3016,10 @@
         "Name (English)": "Rappy Soul",
         "Name (Global)": "Rappy Soul",
         "Effect (English)": [
-            "DEX",
-            30,
             "PP",
-            4
+            4,
+            "DEX",
+            30
         ],
         "Category": "Soul"
     },
@@ -3028,12 +3028,12 @@
         "Name (English)": "Shrayda Soul",
         "Name (Global)": "Schraider Soul",
         "Effect (English)": [
-            "T-DEF",
-            30,
             "HP",
             10,
             "PP",
-            3
+            3,
+            "T-DEF",
+            30
         ],
         "Category": "Soul"
     },
@@ -3042,12 +3042,12 @@
         "Name (English)": "Chrome Soul",
         "Name (Global)": "Chrome Soul",
         "Effect (English)": [
-            "DEX",
-            30,
             "HP",
             10,
             "PP",
-            3
+            3,
+            "DEX",
+            30
         ],
         "Category": "Soul"
     },
@@ -3056,10 +3056,10 @@
         "Name (English)": "Goron Soul",
         "Name (Global)": "Goron Soul",
         "Effect (English)": [
-            "T-DEF",
-            30,
             "PP",
-            4
+            4,
+            "T-DEF",
+            30
         ],
         "Category": "Soul"
     },
@@ -3068,10 +3068,10 @@
         "Name (English)": "Ex Soul",
         "Name (Global)": "X Soul",
         "Effect (English)": [
-            "S-DEF",
-            30,
             "PP",
-            4
+            4,
+            "S-DEF",
+            30
         ],
         "Category": "Soul"
     },
@@ -3080,12 +3080,12 @@
         "Name (English)": "Persona Soul",
         "Name (Global)": "Persona Soul",
         "Effect (English)": [
-            "R-DEF",
-            30,
             "HP",
             10,
             "PP",
-            3
+            3,
+            "R-DEF",
+            30
         ],
         "Category": "Soul"
     },
@@ -3094,6 +3094,10 @@
         "Name (English)": "Cougar Soul",
         "Name (Global)": null,
         "Effect (English)": [
+            "HP",
+            10,
+            "PP",
+            2,
             "S-ATK",
             15,
             "R-ATK",
@@ -3101,11 +3105,7 @@
             "T-ATK",
             15,
             "DEX",
-            15,
-            "HP",
-            10,
-            "PP",
-            2
+            15
         ],
         "Category": "Soul"
     },
@@ -3114,12 +3114,12 @@
         "Name (English)": "Org Soul",
         "Name (Global)": "Org Soul",
         "Effect (English)": [
+            "HP",
+            10,
             "S-ATK",
             20,
             "R-ATK",
-            20,
-            "HP",
-            10
+            20
         ],
         "Category": "Soul"
     },
@@ -3128,12 +3128,12 @@
         "Name (English)": "Bal Soul",
         "Name (Global)": "Bar Soul",
         "Effect (English)": [
+            "HP",
+            10,
             "R-ATK",
             20,
             "T-ATK",
-            20,
-            "HP",
-            10
+            20
         ],
         "Category": "Soul"
     },
@@ -3142,12 +3142,12 @@
         "Name (English)": "Ringa Soul",
         "Name (Global)": "Ringa Soul",
         "Effect (English)": [
+            "HP",
+            10,
             "S-ATK",
             20,
             "T-ATK",
-            20,
-            "HP",
-            10
+            20
         ],
         "Category": "Soul"
     },
@@ -3156,12 +3156,12 @@
         "Name (English)": "Soma Soul",
         "Name (Global)": "Soma Soul",
         "Effect (English)": [
+            "PP",
+            2,
             "S-ATK",
             20,
             "R-ATK",
-            20,
-            "PP",
-            2
+            20
         ],
         "Category": "Soul"
     },
@@ -3170,12 +3170,12 @@
         "Name (English)": "Tagami Kazuchi Soul",
         "Name (Global)": "Tagamikazuchi Soul",
         "Effect (English)": [
+            "PP",
+            2,
             "R-ATK",
             20,
             "T-ATK",
-            20,
-            "PP",
-            2
+            20
         ],
         "Category": "Soul"
     },
@@ -3184,14 +3184,14 @@
         "Name (English)": "Izane Kazuchi Soul",
         "Name (Global)": "Izanekazuchi Soul",
         "Effect (English)": [
+            "PP",
+            2,
             "S-ATK",
             20,
             "R-ATK",
             20,
             "T-ATK",
-            20,
-            "PP",
-            2
+            20
         ],
         "Category": "Soul"
     },
@@ -3200,12 +3200,12 @@
         "Name (English)": "Malluda Soul",
         "Name (Global)": "Malluda Soul",
         "Effect (English)": [
+            "PP",
+            2,
             "S-ATK",
             20,
             "T-ATK",
-            20,
-            "PP",
-            2
+            20
         ],
         "Category": "Soul"
     },
@@ -3214,14 +3214,14 @@
         "Name (English)": "Meduna Soul",
         "Name (Global)": "Meduna Soul",
         "Effect (English)": [
-            "S-ATK",
-            20,
-            "R-ATK",
-            20,
             "HP",
             5,
             "PP",
-            1
+            1,
+            "S-ATK",
+            20,
+            "R-ATK",
+            20
         ],
         "Category": "Soul"
     },
@@ -3230,14 +3230,14 @@
         "Name (English)": "Vibrace Soul",
         "Name (Global)": "Vibras Soul",
         "Effect (English)": [
-            "R-ATK",
-            20,
-            "T-ATK",
-            20,
             "HP",
             5,
             "PP",
-            1
+            1,
+            "R-ATK",
+            20,
+            "T-ATK",
+            20
         ],
         "Category": "Soul"
     },
@@ -3246,14 +3246,14 @@
         "Name (English)": "Loser Soul",
         "Name (Global)": "Luther Soul",
         "Effect (English)": [
-            "S-ATK",
-            20,
-            "T-ATK",
-            20,
             "HP",
             5,
             "PP",
-            1
+            1,
+            "S-ATK",
+            20,
+            "T-ATK",
+            20
         ],
         "Category": "Soul"
     },
@@ -3262,11 +3262,11 @@
         "Name (English)": "Lilli Soul",
         "Name (Global)": "Lilli Soul",
         "Effect (English)": [
+            "HP",
+            20,
             "S-ATK",
             20,
             "S-DEF",
-            20,
-            "HP",
             20
         ],
         "Category": "Soul"
@@ -3276,14 +3276,14 @@
         "Name (English)": "Knight Gear Soul",
         "Name (Global)": "Knight Gear Soul",
         "Effect (English)": [
+            "PP",
+            4,
             "S-ATK",
             15,
             "R-ATK",
             15,
             "T-ATK",
-            15,
-            "PP",
-            4
+            15
         ],
         "Category": "Soul"
     },
@@ -3292,10 +3292,10 @@
         "Name (English)": "Jhadu Soul",
         "Name (Global)": "Jadeu Soul",
         "Effect (English)": [
-            "T-DEF",
-            15,
             "HP",
-            45
+            45,
+            "T-DEF",
+            15
         ],
         "Category": "Soul"
     },
@@ -3304,10 +3304,10 @@
         "Name (English)": "Nepto Soul",
         "Name (Global)": "Nept Soul",
         "Effect (English)": [
-            "T-ATK",
-            15,
             "PP",
-            4
+            4,
+            "T-ATK",
+            15
         ],
         "Category": "Soul"
     },
@@ -3316,10 +3316,10 @@
         "Name (English)": "Nyau Soul",
         "Name (Global)": "Nyau Soul",
         "Effect (English)": [
-            "DEX",
-            15,
             "PP",
-            4
+            4,
+            "DEX",
+            15
         ],
         "Category": "Soul"
     },
@@ -3328,14 +3328,14 @@
         "Name (English)": "Anga Soul",
         "Name (Global)": "Anga Soul",
         "Effect (English)": [
+            "PP",
+            4,
             "S-ATK",
             20,
             "R-ATK",
             20,
             "T-ATK",
-            20,
-            "PP",
-            4
+            20
         ],
         "Category": "Soul"
     },
@@ -3344,16 +3344,16 @@
         "Name (English)": "Magatsu Soul",
         "Name (Global)": "Magatsu Soul",
         "Effect (English)": [
+            "HP",
+            30,
+            "PP",
+            3,
             "S-DEF",
             15,
             "R-DEF",
             15,
             "T-DEF",
-            15,
-            "HP",
-            30,
-            "PP",
-            3
+            15
         ],
         "Category": "Soul"
     },
@@ -3372,6 +3372,10 @@
         "Name (English)": "Gryphon Soul",
         "Name (Global)": "Gryphon Soul",
         "Effect (English)": [
+            "HP",
+            5,
+            "PP",
+            3,
             "S-ATK",
             15,
             "R-ATK",
@@ -3379,11 +3383,7 @@
             "T-ATK",
             15,
             "DEX",
-            15,
-            "HP",
-            5,
-            "PP",
-            3
+            15
         ],
         "Category": "Soul"
     },
@@ -3392,14 +3392,14 @@
         "Name (English)": "Sinow Soul",
         "Name (Global)": "Sinow Soul",
         "Effect (English)": [
-            "S-ATK",
-            5,
-            "DEX",
-            30,
             "HP",
             25,
             "PP",
-            2
+            2,
+            "S-ATK",
+            5,
+            "DEX",
+            30
         ],
         "Category": "Soul"
     },
@@ -3420,12 +3420,12 @@
         "Name (English)": "Darkness Soul",
         "Name (Global)": "Soul of Darkness",
         "Effect (English)": [
-            "All Stats",
-            15,
             "HP",
             15,
             "PP",
-            2
+            2,
+            "All Stats",
+            15
         ],
         "Category": "Soul"
     },
@@ -3434,12 +3434,12 @@
         "Name (English)": "Astral Soul",
         "Name (Global)": "Astral Soul",
         "Effect (English)": [
-            "All Stats",
-            35,
             "HP",
             35,
             "PP",
-            5
+            5,
+            "All Stats",
+            35
         ],
         "Category": "Soul"
     },
@@ -3488,14 +3488,14 @@
         "Name (English)": "Fabula Soul",
         "Name (Global)": "Fabula Soul",
         "Effect (English)": [
+            "HP",
+            20,
             "S-ATK",
             10,
             "R-ATK",
             10,
             "T-ATK",
-            10,
-            "HP",
-            20
+            10
         ],
         "Category": "Soul"
     },
@@ -3504,16 +3504,12 @@
         "Name (English)": "Historia Soul",
         "Name (Global)": "Historia Soul",
         "Effect (English)": [
-            "S-DEF",
-            25,
-            "R-DEF",
-            25,
-            "T-DEF",
-            25,
             "HP",
             30,
             "PP",
-            2
+            2,
+            "DEF",
+            25
         ],
         "Category": "Soul"
     },
@@ -3522,14 +3518,14 @@
         "Name (English)": "Ex-Act Soul",
         "Name (Global)": "EX Acto Soul",
         "Effect (English)": [
-            "S-ATK",
-            30,
-            "DEF",
-            20,
             "HP",
             20,
             "PP",
-            2
+            2,
+            "S-ATK",
+            30,
+            "DEF",
+            20
         ],
         "Category": "Soul"
     },
@@ -3538,14 +3534,14 @@
         "Name (English)": "Ex-Till Soul",
         "Name (Global)": "EX Tir Soul",
         "Effect (English)": [
-            "R-ATK",
-            30,
-            "DEF",
-            20,
             "HP",
             20,
             "PP",
-            2
+            2,
+            "R-ATK",
+            30,
+            "DEF",
+            20
         ],
         "Category": "Soul"
     },
@@ -3554,14 +3550,14 @@
         "Name (English)": "Ex-Magi Soul",
         "Name (Global)": "EX Magi Soul",
         "Effect (English)": [
-            "T-ATK",
-            30,
-            "DEF",
-            20,
             "HP",
             20,
             "PP",
-            2
+            2,
+            "T-ATK",
+            30,
+            "DEF",
+            20
         ],
         "Category": "Soul"
     },
@@ -3570,14 +3566,14 @@
         "Name (English)": "Ex-Ares Soul",
         "Name (Global)": "EX Alles Soul",
         "Effect (English)": [
-            "ATK",
-            20,
-            "DEF",
-            20,
             "HP",
             50,
             "PP",
-            2
+            2,
+            "ATK",
+            20,
+            "DEF",
+            20
         ],
         "Category": "Soul"
     },
@@ -3586,10 +3582,10 @@
         "Name (English)": "Act The Soul",
         "Name (Global)": "Acto Di Soul",
         "Effect (English)": [
-            "S-ATK",
-            35,
             "PP",
-            3
+            3,
+            "S-ATK",
+            35
         ],
         "Category": "Soul"
     },
@@ -3598,10 +3594,10 @@
         "Name (English)": "Till The Soul",
         "Name (Global)": "Tir Di Soul",
         "Effect (English)": [
-            "R-ATK",
-            35,
             "PP",
-            3
+            3,
+            "R-ATK",
+            35
         ],
         "Category": "Soul"
     },
@@ -3610,10 +3606,10 @@
         "Name (English)": "Magi The Soul",
         "Name (Global)": "Magi Di Soul",
         "Effect (English)": [
-            "T-ATK",
-            35,
             "PP",
-            3
+            3,
+            "T-ATK",
+            35
         ],
         "Category": "Soul"
     },
@@ -3622,16 +3618,16 @@
         "Name (English)": "Ares The Soul",
         "Name (Global)": "Alles Di Soul",
         "Effect (English)": [
+            "HP",
+            35,
+            "PP",
+            3,
             "S-ATK",
             25,
             "R-ATK",
             25,
             "T-ATK",
-            25,
-            "HP",
-            35,
-            "PP",
-            3
+            25
         ],
         "Category": "Soul"
     },
@@ -3640,12 +3636,12 @@
         "Name (English)": "Ether Soul",
         "Name (Global)": "Aether Soul",
         "Effect (English)": [
-            "All Stats",
-            15,
             "HP",
             15,
             "PP",
-            2
+            2,
+            "All Stats",
+            15
         ],
         "Category": "Soul"
     },
@@ -3654,12 +3650,12 @@
         "Name (English)": "Guardian Soul",
         "Name (Global)": "Guardian Soul",
         "Effect (English)": [
-            "All Stats",
-            70,
             "HP",
             70,
             "PP",
-            7
+            7,
+            "All Stats",
+            70
         ],
         "Category": "Soul"
     },

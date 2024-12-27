@@ -815,7 +815,7 @@
         ]
     },
     {
-        "Name": "Vento",
+        "Name": "Vent",
         "Required": 2,
         "Effect": [
             "PP",
@@ -831,9 +831,9 @@
         ],
         "Pieces": [
             "Arm",
-            "Vento Hexa",
+            "Vent Hexa",
             "Leg",
-            "Vento Tetra"
+            "Vent Tetra"
         ]
     },
     {
@@ -1927,7 +1927,7 @@
             "Rear",
             "Sensias Em",
             "Arm",
-            "Sensias Ar",
+            "Sensias Ai",
             "Leg",
             "Sensias Oz"
         ]
@@ -2948,7 +2948,7 @@
             "Rear",
             "Austerios",
             "Arm",
-            "Austerico"
+            "Austende"
         ]
     },
     {
@@ -3132,7 +3132,7 @@
             "Rear",
             "Neighbor Voss",
             "Rear",
-            "Rose Peer",
+            "Rose Pull",
             "Rear",
             "Eques Full",
             "Rear",

@@ -39,6 +39,7 @@ export default function UnitTableComponent({ data, type }) {
                         switch (language.language) {
                             case 'English Patch':
                                 switch (heading) {
+                                    case 'Type': return
                                     case 'Name (JP)': return
                                     case 'name_en': return
                                     case 'name_global': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
@@ -67,6 +68,7 @@ export default function UnitTableComponent({ data, type }) {
                                 }
                             case 'Global':
                                 switch (heading) {
+                                    case 'Type': return
                                     case 'Name (JP)': return
                                     case 'name_en': return
                                     case 'name_global': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
@@ -95,6 +97,7 @@ export default function UnitTableComponent({ data, type }) {
                                 }
                             case '日本語':
                                 switch (heading) {
+                                    case 'Type': return
                                     case 'Name (JP)': return <Table.Th key={uuidv4()} className="centerCell">名称</Table.Th>;
                                     case 'name_en': return
                                     case 'name_global': return
@@ -146,6 +149,7 @@ export default function UnitTableComponent({ data, type }) {
                                         switch (key) {
                                             case 'Name (JP)':
                                                 return <Table.Td key={uuidv4()}>{row['name_en']}<br key={uuidv4()} />{row['Name (JP)']}</Table.Td>
+                                            case 'Type':
                                             case 'name_en':
                                             case 'name_global':
                                             case 'Default Sub Icon':
@@ -170,7 +174,7 @@ export default function UnitTableComponent({ data, type }) {
                                                     bufferDEF.push(displayStat('T-DEF', row['T-DEF']));
                                                     bufferDEFMax.push(displayStat('T-DEF', calculateMaxDef(row['T-DEF'])));
                                                 }
-                                                if (index === 5) {
+                                                if (index === 6) {
                                                     return (
                                                         <React.Fragment key={uuidv4()}>
                                                             <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferDEF}</Flex></Table.Td>
@@ -194,7 +198,7 @@ export default function UnitTableComponent({ data, type }) {
                                                 if (row['DEX']) {
                                                     bufferATK.push(displayStat('DEX', row['DEX']));
                                                 }
-                                                if (index === 12) {
+                                                if (index === 11) {
                                                     if (bufferATK[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
                                                     else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                                 }
@@ -234,7 +238,7 @@ export default function UnitTableComponent({ data, type }) {
                                                 if (row['Dark Resistance']) {
                                                     bufferResistance.push(displayResistance('Dark Resistance', row['Dark Resistance']));
                                                 }
-                                                if (index === 13) {
+                                                if (index === 14) {
                                                     if (bufferResistance[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><SimpleGrid key={uuidv4()} cols={3} spacing="xs" verticalSpacing={0}>{bufferResistance}</SimpleGrid></Flex></Table.Td>
                                                     else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                                 }
@@ -247,7 +251,7 @@ export default function UnitTableComponent({ data, type }) {
                                                 if (row['Abilities']) {
                                                     bufferProperties.push(displayAbilities(row['Abilities']))
                                                 }
-                                                if (index === 22) {
+                                                if (index === 23) {
                                                     if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
                                                     else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                                 } else {
@@ -281,6 +285,7 @@ export default function UnitTableComponent({ data, type }) {
                                         switch (key) {
                                             case 'name_global':
                                                 return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
+                                            case 'Type':
                                             case 'Name (JP)':
                                             case 'name_en':
                                             case 'Default Sub Icon':
@@ -305,7 +310,7 @@ export default function UnitTableComponent({ data, type }) {
                                                     bufferDEF.push(displayStat('T-DEF', row['T-DEF']));
                                                     bufferDEFMax.push(displayStat('T-DEF', calculateMaxDef(row['T-DEF'])));
                                                 }
-                                                if (index === 5) {
+                                                if (index === 6) {
                                                     return (
                                                         <React.Fragment key={uuidv4()}>
                                                             <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferDEF}</Flex></Table.Td>
@@ -329,7 +334,7 @@ export default function UnitTableComponent({ data, type }) {
                                                 if (row['DEX']) {
                                                     bufferATK.push(displayStat('DEX', row['DEX']));
                                                 }
-                                                if (index === 12) {
+                                                if (index === 11) {
                                                     if (bufferATK[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
                                                     else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                                 }
@@ -369,7 +374,7 @@ export default function UnitTableComponent({ data, type }) {
                                                 if (row['Dark Resistance']) {
                                                     bufferResistance.push(displayResistance('Dark Resistance', row['Dark Resistance']));
                                                 }
-                                                if (index === 13) {
+                                                if (index === 14) {
                                                     if (bufferResistance[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><SimpleGrid key={uuidv4()} cols={3} spacing="xs" verticalSpacing={0}>{bufferResistance}</SimpleGrid></Flex></Table.Td>
                                                     else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                                 }
@@ -382,7 +387,7 @@ export default function UnitTableComponent({ data, type }) {
                                                 if (row['Abilities']) {
                                                     bufferProperties.push(displayAbilities(row['Abilities']))
                                                 }
-                                                if (index === 22) {
+                                                if (index === 23) {
                                                     if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
                                                     else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                                 } else {
@@ -411,6 +416,7 @@ export default function UnitTableComponent({ data, type }) {
                                         switch (key) {
                                             case 'Name (JP)':
                                                 return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
+                                            case 'Type':
                                             case 'name_en':
                                             case 'name_global':
                                             case 'Default Sub Icon':
@@ -435,7 +441,7 @@ export default function UnitTableComponent({ data, type }) {
                                                     bufferDEF.push(displayStat('T-DEF', row['T-DEF']));
                                                     bufferDEFMax.push(displayStat('T-DEF', calculateMaxDef(row['T-DEF'])));
                                                 }
-                                                if (index === 5) {
+                                                if (index === 6) {
                                                     return (
                                                         <React.Fragment key={uuidv4()}>
                                                             <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferDEF}</Flex></Table.Td>
@@ -459,7 +465,7 @@ export default function UnitTableComponent({ data, type }) {
                                                 if (row['DEX']) {
                                                     bufferATK.push(displayStat('DEX', row['DEX']));
                                                 }
-                                                if (index === 12) {
+                                                if (index === 11) {
                                                     if (bufferATK[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
                                                     else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                                 }
@@ -499,25 +505,25 @@ export default function UnitTableComponent({ data, type }) {
                                                 if (row['Dark Resistance']) {
                                                     bufferResistance.push(displayResistance('Dark Resistance', row['Dark Resistance']));
                                                 }
-                                                if (index === 13) {
+                                                if (index === 14) {
                                                     if (bufferResistance[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><SimpleGrid key={uuidv4()} cols={3} spacing="xs" verticalSpacing={0}>{bufferResistance}</SimpleGrid></Flex></Table.Td>
                                                     else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                                 }
                                                 else return
-                                                case 'Abilities':
-                                                    case 'SAF':
-                                                        if (row['SAF']) {
-                                                            bufferProperties.push(displayAbilities(row['SAF']))
-                                                        }
-                                                        if (row['Abilities']) {
-                                                            bufferProperties.push(displayAbilities(row['Abilities']))
-                                                        }
-                                                        if (index === 22) {
-                                                            if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
-                                                            else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                        } else {
-                                                            return;
-                                                        }
+                                            case 'Abilities':
+                                            case 'SAF':
+                                                if (row['SAF']) {
+                                                    bufferProperties.push(displayAbilities(row['SAF']))
+                                                }
+                                                if (row['Abilities']) {
+                                                    bufferProperties.push(displayAbilities(row['Abilities']))
+                                                }
+                                                if (index === 23) {
+                                                    if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
+                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                                                } else {
+                                                    return;
+                                                }
                                             case 'Set':
                                                 return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['name_en'])}</Table.Td>
                                             default:

@@ -29,35 +29,64 @@ export default function displayAbilities(abilities: any[]): any {
             if (abIcon) {
                 switch (abIcon) {
                     case 'HP':
-                        abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}>HP+{effect[index + 1]}</Flex>)
+                        if (Number(effect[index + 1]) >= 0) abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}>HP+{effect[index + 1]}</Flex>)
+                        else abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}>HP{effect[index + 1]}</Flex>)
                         break;
                     case 'PP':
                         abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}>PP+{effect[index + 1]}</Flex>)
                         break;
                     case 'ATK':
-                        abEffect.push(
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/S-ATK.png`} alt="S-ATK" w={16} h={16} /> +{effect[index + 1]}</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/R-ATK.png`} alt="R-ATK" w={16} h={16} /> +{effect[index + 1]}</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/T-ATK.png`} alt="T-ATK" w={16} h={16} /> +{effect[index + 1]}</Flex>
-                        )
+                        if (Number(effect[index + 1]) >= 0) {
+                            abEffect.push(
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/S-ATK.png`} alt="S-ATK" w={16} h={16} /> +{effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/R-ATK.png`} alt="R-ATK" w={16} h={16} /> +{effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/T-ATK.png`} alt="T-ATK" w={16} h={16} /> +{effect[index + 1]}</Flex>
+                            )
+                        } else {
+                            abEffect.push(
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/S-ATK.png`} alt="S-ATK" w={16} h={16} /> {effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/R-ATK.png`} alt="R-ATK" w={16} h={16} /> {effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/T-ATK.png`} alt="T-ATK" w={16} h={16} /> {effect[index + 1]}</Flex>
+                            )
+                        }
                         break;
                     case 'DEF':
-                        abEffect.push(
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/S-DEF.png`} alt="S-DEF" w={16} h={16} /> +{effect[index + 1]}</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/R-DEF.png`} alt="R-DEF" w={16} h={16} /> +{effect[index + 1]}</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/T-DEF.png`} alt="T-DEF" w={16} h={16} /> +{effect[index + 1]}</Flex>
-                        )
+                        if (Number(effect[index + 1]) >= 0) {
+                            abEffect.push(
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/S-DEF.png`} alt="S-DEF" w={16} h={16} /> +{effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/R-DEF.png`} alt="R-DEF" w={16} h={16} /> +{effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/T-DEF.png`} alt="T-DEF" w={16} h={16} /> +{effect[index + 1]}</Flex>
+                            )
+                        } else {
+                            abEffect.push(
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/S-DEF.png`} alt="S-DEF" w={16} h={16} /> {effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/R-DEF.png`} alt="R-DEF" w={16} h={16} /> {effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/T-DEF.png`} alt="T-DEF" w={16} h={16} /> {effect[index + 1]}</Flex>
+                            )
+                        }
                         break;
                     case 'All Stats':
-                        abEffect.push(
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/S-ATK.png`} alt="S-ATK" w={16} h={16} /> +{effect[index + 1]}</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/R-ATK.png`} alt="R-ATK" w={16} h={16} /> +{effect[index + 1]}</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/T-ATK.png`} alt="T-ATK" w={16} h={16} /> +{effect[index + 1]}</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/S-DEF.png`} alt="S-DEF" w={16} h={16} /> +{effect[index + 1]}</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/R-DEF.png`} alt="R-DEF" w={16} h={16} /> +{effect[index + 1]}</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/T-DEF.png`} alt="T-DEF" w={16} h={16} /> +{effect[index + 1]}</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/DEX.png`} alt="DEX" w={16} h={16} /> +{effect[index + 1]}</Flex>,
-                        )
+                        if (Number(effect[index + 1]) >= 0) {
+                            abEffect.push(
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/S-ATK.png`} alt="S-ATK" w={16} h={16} /> +{effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/R-ATK.png`} alt="R-ATK" w={16} h={16} /> +{effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/T-ATK.png`} alt="T-ATK" w={16} h={16} /> +{effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/S-DEF.png`} alt="S-DEF" w={16} h={16} /> +{effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/R-DEF.png`} alt="R-DEF" w={16} h={16} /> +{effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/T-DEF.png`} alt="T-DEF" w={16} h={16} /> +{effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/DEX.png`} alt="DEX" w={16} h={16} /> +{effect[index + 1]}</Flex>,
+                            )
+                        } else {
+                            abEffect.push(
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/S-ATK.png`} alt="S-ATK" w={16} h={16} /> {effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/R-ATK.png`} alt="R-ATK" w={16} h={16} /> {effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/T-ATK.png`} alt="T-ATK" w={16} h={16} /> {effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/S-DEF.png`} alt="S-DEF" w={16} h={16} /> {effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/R-DEF.png`} alt="R-DEF" w={16} h={16} /> {effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/T-DEF.png`} alt="T-DEF" w={16} h={16} /> {effect[index + 1]}</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/DEX.png`} alt="DEX" w={16} h={16} /> {effect[index + 1]}</Flex>,
+                            )
+                        }
                         break;
                     case 'Strike Resistance':
                     case 'Ranged Resistance':
@@ -68,23 +97,45 @@ export default function displayAbilities(abilities: any[]): any {
                     case 'Wind Resistance':
                     case 'Light Resistance':
                     case 'Dark Resistance':
-                        abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${effect[index].toString().replace(' ', '')}.png`} alt={effect[index].toString()} w={16} h={16} /> +{effect[index + 1]}%</Flex>)
+                        if (Number(effect[index + 1]) >= 0) {
+                            abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${effect[index].toString().replace(' ', '')}.png`} alt={effect[index].toString()} w={16} h={16} /> +{effect[index + 1]}%</Flex>)
+                        } else {
+                            abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${effect[index].toString().replace(' ', '')}.png`} alt={effect[index].toString()} w={16} h={16} /> {effect[index + 1]}%</Flex>)
+                        }
                         break;
                     case 'All Resistance':
-                        abEffect.push(
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/StrikeResistance.png`} alt="Strike Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/RangedResistance.png`} alt="Ranged Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/TechResistance.png`} alt="Tech Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/FireResistance.png`} alt="Fire Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/IceResistance.png`} alt="Ice Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/LightningResistance.png`} alt="Lightning Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/WindResistance.png`} alt="Wind Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/LightResistance.png`} alt="Light Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
-                            <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/DarkResistance.png`} alt="Dark Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>
-                        )
+                        if (Number(effect[index + 1]) >= 0) {
+                            abEffect.push(
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/StrikeResistance.png`} alt="Strike Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/RangedResistance.png`} alt="Ranged Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/TechResistance.png`} alt="Tech Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/FireResistance.png`} alt="Fire Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/IceResistance.png`} alt="Ice Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/LightningResistance.png`} alt="Lightning Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/WindResistance.png`} alt="Wind Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/LightResistance.png`} alt="Light Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/DarkResistance.png`} alt="Dark Resistance" w={16} h={16} /> +{effect[index + 1]}%</Flex>
+                            )
+                        } else {
+                            abEffect.push(
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/StrikeResistance.png`} alt="Strike Resistance" w={16} h={16} /> {effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/RangedResistance.png`} alt="Ranged Resistance" w={16} h={16} /> {effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/TechResistance.png`} alt="Tech Resistance" w={16} h={16} /> {effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/FireResistance.png`} alt="Fire Resistance" w={16} h={16} /> {effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/IceResistance.png`} alt="Ice Resistance" w={16} h={16} /> {effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/LightningResistance.png`} alt="Lightning Resistance" w={16} h={16} /> {effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/WindResistance.png`} alt="Wind Resistance" w={16} h={16} /> {effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/LightResistance.png`} alt="Light Resistance" w={16} h={16} /> {effect[index + 1]}%</Flex>,
+                                <Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/DarkResistance.png`} alt="Dark Resistance" w={16} h={16} /> {effect[index + 1]}%</Flex>
+                            )
+                        }
                         break;
                     default:
-                        abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${effect[index].toString().replace(' ', '')}.png`} alt={effect[index].toString()} w={16} h={16} /> +{effect[index + 1]}</Flex>)
+                        if (Number(effect[index + 1]) >= 0) {
+                            abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${effect[index].toString().replace(' ', '')}.png`} alt={effect[index].toString()} w={16} h={16} /> +{effect[index + 1]}</Flex>)
+                        } else {
+                            abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${effect[index].toString().replace(' ', '')}.png`} alt={effect[index].toString()} w={16} h={16} /> {effect[index + 1]}</Flex>)
+                        }
                 }
             } else {
                 abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}>{effect[index]}+{effect[index + 1]}%</Flex>)
