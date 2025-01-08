@@ -1610,7 +1610,7 @@
         "Wind Resistance":null,
         "Light Resistance":null,
         "Dark Resistance":null,
-        "Set": "Aije"
+        "Set": "Aij"
     },
     {
         "Type":"Rear",
@@ -1636,7 +1636,7 @@
         "Wind Resistance":null,
         "Light Resistance":null,
         "Dark Resistance":null,
-        "Set": "Aije"
+        "Set": "Aij"
     },
     {
         "Type":"Rear",
@@ -2206,7 +2206,7 @@
         "Wind Resistance":null,
         "Light Resistance":null,
         "Dark Resistance":null,
-        "Set":"Fegali"
+        "Set":"Chiffon"
     },
     {
         "Type":"Rear",
@@ -3166,7 +3166,7 @@
         "Wind Resistance":null,
         "Light Resistance":null,
         "Dark Resistance":null,
-        "Set": "Aije"
+        "Set": "Aij"
     },
     {
         "Type":"Rear",
@@ -7676,7 +7676,7 @@
         "Wind Resistance": null,
         "Light Resistance": null,
         "Dark Resistance": null,
-        "Set": "Aije"
+        "Set": "Aij"
     },
     {
         "Type":"Arm",
@@ -7705,7 +7705,7 @@
         "Wind Resistance": null,
         "Light Resistance": null,
         "Dark Resistance": null,
-        "Set": "Aije"
+        "Set": "Aij"
     },
     {
         "Type":"Arm",
@@ -8225,7 +8225,7 @@
         "Wind Resistance": 4,
         "Light Resistance": null,
         "Dark Resistance": 4,
-        "Set": "Blitz"
+        "Set": "Vent"
     },
     {
         "Type":"Arm",
@@ -8339,7 +8339,7 @@
         "Wind Resistance": null,
         "Light Resistance": null,
         "Dark Resistance": null,
-        "Set": "Fegali"
+        "Set": "Chiffon"
     },
     {
         "Type":"Arm",
@@ -9044,7 +9044,7 @@
         "Wind Resistance":null,
         "Light Resistance":null,
         "Dark Resistance":null,
-        "Set": "Aije"
+        "Set": "Aij"
     },
     {
         "Type": "Arm",

@@ -284,11 +284,11 @@
             "Leg",
             "Flagrance",
             "Leg",
-            "Flaciante"
+            "Flachante"
         ]
     },
     {
-        "Name": "Aije",
+        "Name": "Aij",
         "Required": 3,
         "Effect": [
             "S-ATK",
@@ -316,11 +316,11 @@
             "Arm",
             "Aijiwight",
             "Leg",
-            "Aijurea",
+            "Aijulea",
             "Leg",
             "Aijukeen",
             "Leg",
-            "Aijulaura"
+            "Aijurola"
         ]
     },
     {
@@ -961,7 +961,7 @@
             "Arm",
             "Chiffon Dore",
             "Leg",
-            "Chiffon Korse"
+            "Chiffon Coruche"
         ]
     },
     {
@@ -987,7 +987,7 @@
             "Arm",
             "Folia Dore",
             "Leg",
-            "Folia Korse"
+            "Folia Coruche"
         ]
     },
     {
@@ -1333,7 +1333,7 @@
             "Arm",
             "Ragne Ancaire",
             "Leg",
-            "Ragne Coise"
+            "Ragne Sheath"
         ]
     },
     {
@@ -1358,7 +1358,7 @@
             "Arm",
             "Agrani Ancaire",
             "Leg",
-            "Agrani Coise"
+            "Agrani Sheath"
         ]
     },
     {
