@@ -593,6 +593,7 @@
     {
         "Name": "Ringa",
         "Required": 3,
+        "Doubles": true,
         "Effect": [
             "PP",
             3,
@@ -604,6 +605,12 @@
             60
         ],
         "Pieces": [
+            "Wired Lance",
+            "Darl Weigle",
+            "Katana",
+            "Darl Zentou",
+            "Bullet Bow",
+            "Darl Bowden",
             "Rear",
             "Ringa Arc",
             "Arm",
@@ -1274,6 +1281,8 @@
         "Pieces": [
             "Wired Lance",
             "Razrail",
+            "Wired Lance",
+            "Razrail Ver2",
             "Double Saber",
             "Quartz Calibur",
             "Rear",

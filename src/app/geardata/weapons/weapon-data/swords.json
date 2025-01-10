@@ -1420,6 +1420,24 @@
         "SSA Slots":null
     },
     {
+        "Name (JP)": "武装エクステンド(旧式) 上限",
+        "name_en": "Extended Old-Type Weapon",
+        "name_global": null,
+        "Rarity": 11,
+        "old_type":true,
+        "Requirement": ["S-ATK",600],
+        "S-ATK": 588,
+        "R-ATK": null,
+        "T-ATK": null,
+        "SAF": null,
+        "Abilities": null,
+        "Potential": null,
+        "Element": null,
+        "PA_enabled":null,
+        "Classes": ["Hu"],
+        "SSA Slots": null
+    },
+    {
         "Name (JP)": "レインボーボード",
         "name_en":"Rainbow Board",
         "name_global": null,
@@ -2155,7 +2173,7 @@
         "R-ATK":null,
         "T-ATK":null,
         "Abilities":["Vinculum","Stamina III","Spirita III"],
-        "Potential":["Colossal Spirit"],
+        "Potential":["Colossal Spirit", "Extravagant Fighter"],
         "Element":["Light",20],
         "Classes":["Hu","Hr"],
         "SSA Slots":null,
@@ -2357,7 +2375,7 @@
         "Element": null,
         "Classes":["All"],
         "SSA Slots":[1]
-        },
+    },
     {
         "Name (JP)": "ローズセイバー-NT",
         "name_en":"Rose Saber-NT",
@@ -2373,7 +2391,7 @@
         "Element": null,
         "Classes":["All"],
         "SSA Slots":[2]
-        },
+    },
     {
         "Name (JP)": "エリュシオーヌ-NT",
         "name_en":"Ely-Sion-NT",
@@ -2389,7 +2407,7 @@
         "Element": null,
         "Classes":["All"],
         "SSA Slots":[2]
-        },
+    },
     {
         "Name (JP)": "インヴェイドカリバー",
         "name_en":"Invade Calibur",
@@ -2534,7 +2552,7 @@
         "T-ATK":null,
         "SAF":"Power VI",
         "Abilities":null,
-        "Potential":["Hope Symbol"],
+        "Potential":["Symbol of Hope"],
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":null
@@ -2616,7 +2634,7 @@
         "T-ATK":null,
         "SAF":"Sentence Triple",
         "Abilities":null,
-        "Potential":["Anthesis Trainer (Qliphad)"],
+        "Potential":["Anthesis Trainer"],
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":null,
@@ -2653,7 +2671,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[3]
-        },
+    },
     {
         "Name (JP)": "バルファーダ",
         "name_en":"Val Farder",
@@ -2668,7 +2686,7 @@
         "Potential":["Millenium Blaze"],
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "アハトアンジ",
         "name_en":"Acht Anzhi",
@@ -2683,7 +2701,7 @@
         "Potential":["Hawkeyed Phoenix"],
         "Classes":["Hu","Hr"],
         "SSA Slots":[2,3]
-        },
+    },
     {
         "Name (JP)": "イヴリダハンダー",
         "name_en":"Evleda Hander",
@@ -2796,7 +2814,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2]
-        },
+    },
     {
         "Name (JP)": "セレファウルス",
         "name_en":"Ceres Fouls",
@@ -2812,7 +2830,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1]
-        },
+    },
     {
         "Name (JP)": "紅葉姫-NT",
         "name_en":"Momijihime-NT",
@@ -2828,7 +2846,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "インヴェイドカリバー-NT",
         "name_en":"Invade Calibur-NT",
@@ -2844,7 +2862,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "ネメシスキャリバー-NT",
         "name_en":"Nemesis Calibur-NT",
@@ -2892,7 +2910,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[2,3]
-        },
+    },
     {
         "Name (JP)": "グラテスザングルム",
         "name_en":"Grates Zangulum",
@@ -2924,7 +2942,24 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
+    {
+        "Name (JP)": "武装エクステンド(新世) 上限",
+        "name_en": "Extended New-Type Weapon",
+        "name_global": "Crafted Weapon",
+        "Rarity": 13,
+        "Requirement": ["S-ATK",900],
+        "S-ATK": 1641,
+        "R-ATK": null,
+        "T-ATK": null,
+        "SAF": null,
+        "Abilities": null,
+        "Potential": null,
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["Hu"],
+        "SSA Slots": null
+    },
     {
         "Name (JP)": "シエンノオオダチ",
         "name_en":"Shien no Odachi",
@@ -2940,7 +2975,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "セレファウルス・ザラ",
         "name_en":"Ceres Fouls Zara",
@@ -2956,7 +2991,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "シエンノオオダチ",
         "name_en":"Guren no Odachi",
@@ -2988,7 +3023,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "アレティアラーミナ",
         "name_en":"Aletheia Lamina",
@@ -3004,7 +3039,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "アーレスソード-NT",
         "name_en":"Ares Sword-NT",
@@ -3020,7 +3055,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "アトラファーダ",
         "name_en":"Atlas Farder",
@@ -3036,7 +3071,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3,4]
-        },
+    },
     {
         "Name (JP)": "アウェイクエッジ",
         "name_en":"Awake Edge",
@@ -3052,7 +3087,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2]
-        },
+    },
     {
         "Name (JP)": "エルダーペイン-NT",
         "name_en":"Elder Pain-NT",
@@ -3068,7 +3103,7 @@
         "Element": null,
         "Classes":["All"],
         "SSA Slots":[1]
-        },
+    },
     {
         "Name (JP)": "ディンスルフミラージュ",
         "name_en":"Dainsleif Mirage",
@@ -3084,7 +3119,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[3]
-        },
+    },
     {
         "Name (JP)": "ディムソード",
         "name_en":"Dim Sword",
@@ -3100,7 +3135,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "デモニアセイバー",
         "name_en":"Demonia Saber",
@@ -3132,7 +3167,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "ブラッドグリオン",
         "name_en":"Blood Glion",
@@ -3149,7 +3184,7 @@
         "Element": null,
         "Classes":["All"],
         "SSA Slots":[1]
-        },
+    },
     {
         "Name (JP)": "フォボスエスパディオ",
         "name_en":"Phobos Espadio",
@@ -3165,7 +3200,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[2]
-        },
+    },
     {
         "Name (JP)": "ストラジェス",
         "name_en":"Strages",
@@ -3181,7 +3216,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,3]
-        },
+    },
     {
         "Name (JP)": "アカツキ",
         "name_en":"Akatsuki",
@@ -3213,7 +3248,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "アクルドジエン",
         "name_en":"Aculd Diene",
@@ -3229,7 +3264,7 @@
         "Element": null,
         "Classes":["All"],
         "SSA Slots":[2,3]
-        },
+    },
     {
         "Name (JP)": "サイレントツリー",
         "name_en":"Silent Tree",
@@ -3245,7 +3280,7 @@
         "Element": null,
         "Classes":["All"],
         "SSA Slots":[1,3]
-        },
+    },
     {
         "Name (JP)": "エルダーペイン・オメガ",
         "name_en":"Elder Pain Omega",
@@ -3277,7 +3312,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "ダインヘスペラー",
         "name_en":"Dyne Hespera",
@@ -3293,7 +3328,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "オブリサナヴフト",
         "name_en":"Oblisana Wuft",
@@ -3309,7 +3344,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1]
-        },
+    },
     {
         "Name (JP)": "オフスティアカリバー-NT",
         "name_en":"Austere Calibur-NT",
@@ -3326,7 +3361,7 @@
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3],
         "Set":"Austere-NT Weapon"
-        },
+    },
     {
         "Name (JP)": "ソードインクルシオ",
         "name_en":"Sword Inclusio",
@@ -3342,7 +3377,7 @@
         "Element": null,
         "Classes":["All"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "アトラファーダ・イクス",
         "name_en":"Atlas Farder Ex",
@@ -3358,7 +3393,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3,4]
-        },
+    },
     {
         "Name (JP)": "ノヴェルソード",
         "name_en":"Novel Sword",
@@ -3374,7 +3409,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[4]
-        },
+    },
     {
         "Name (JP)": "ジェンピュラス",
         "name_en":"Gen Puras",
@@ -3390,7 +3425,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3,5]
-        },
+    },
     {
         "Name (JP)": "ネブロスバニフィク",
         "name_en":"Nebulos Panific",
@@ -3406,7 +3441,7 @@
         "Element": null,
         "Classes":["All"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "光跡剣ディメシオン",
         "name_en":"Lightstream Dimenxion",
@@ -3422,7 +3457,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "ミリオンブランド",
         "name_en":"Million Brand",
@@ -3438,7 +3473,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "クリーサブランド",
         "name_en":"Krisa Brand",
@@ -3454,7 +3489,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "ディンスルフノヴァ",
         "name_en":"Dainsleif Nova",
@@ -3470,7 +3505,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[3,4]
-        },
+    },
     {
         "Name (JP)": "フォルゴレウェベン",
         "name_en":"Folgore Weben",
@@ -3486,7 +3521,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[2,3]
-        },
+    },
     {
         "Name (JP)": "シャヴァルユーベル",
         "name_en":"Chaval Eubelle",
@@ -3502,7 +3537,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1]
-        },
+    },
     {
         "Name (JP)": "ボンズアシェット",
         "name_en":"Bonds Hachette",
@@ -3518,7 +3553,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,3]
-        },
+    },
     {
         "Name (JP)": "リバレイトソード",
         "name_en":"Liberate Sword",
@@ -3534,7 +3569,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[4,5]
-        },
+    },
     {
         "Name (JP)": "ジェンスティル",
         "name_en":"Gen Stil",
@@ -3550,7 +3585,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3,5]
-        },
+    },
     {
         "Name (JP)": "封印ノダチ",
         "name_en":"Sealed J-Sword",
@@ -3566,7 +3601,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "闇征剣アジェルエッジ",
         "name_en":"Darkbanisher Ayer Edge",
@@ -3582,7 +3617,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3,4]
-        },
+    },
     {
         "Name (JP)": "アデルリーネア",
         "name_en":"Adel Linea",
@@ -3598,7 +3633,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-        },
+    },
     {
         "Name (JP)": "フルクシオヴェルラ",
         "name_en":"Fluxio Verla",
@@ -3614,7 +3649,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,4,5]
-        },
+    },
     {
         "Name (JP)": "フルクシオヴェルラ",
         "name_en":"Rinza Verla",
@@ -3630,7 +3665,7 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,4,5]
-        },
+    },
     {
         "Name (JP)": "光纏剣クラースエッジ",
         "name_en":"Lightweaver Cras Edge",

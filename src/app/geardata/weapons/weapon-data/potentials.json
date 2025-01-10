@@ -2696,7 +2696,8 @@
         ]
     },
     {
-        "Name": "闘士の闘法",
+        "Name (JP)": "闘士の闘法",
+        "Name": "Fighter Tactics",
         "Effect": [
             "Increases Critical Hit Rate by 10% and Critical damage by 10% when Fighter is set as your Subclass.",
             "Increases Critical Hit Rate by 20% and Critical damage by 12%  when Fighter is set as your Subclass.",
@@ -2704,7 +2705,8 @@
         ]
     },
     {
-        "Name": "勇士の闘法",
+        "Name (JP)": "勇士の闘法",
+        "Name": "Braver Tactics",
         "Effect": [
             "Increases damage by 8% and reduce PP consumption by 10% when Braver is set as your Subclass.",
             "Increases damage by 10% and reduce PP consumption by 20% when Braver is set as your Subclass.",
@@ -2760,15 +2762,6 @@
         ]
     },
     {
-        "Name": "Anthesis Trainer (Qliphad)",
-        "Effect": [
-            "Increases damage by 10%. Doubles the effects of Special Abilities attached to the Weapon.",
-            "Increases damage by 12%. Doubles the effects of Special Abilities attached to the Weapon.",
-            "Increases damage by 14%. Doubles the effects of Special Abilities attached to the Weapon."
-        ],
-        "Special": "Qliphad"
-    },
-    {
         "Name": "Melody of Evil",
         "Effect": [
             "Increases Natural PP Recovery by 5% and Active PP Recovery by 5%.",
@@ -2802,7 +2795,7 @@
         ]
     },
     {
-        "Name": "Hope Symbol",
+        "Name": "Symbol of Hope",
         "Effect": [
             "Restores 30% of Max HP every 40s. Increases damage by 7% and reduce damage taken by 1%.",
             "Restores 60% of Max HP every 40s. Increases damage by 9% and reduce damage taken by 3%.",
