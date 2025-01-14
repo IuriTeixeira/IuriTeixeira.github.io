@@ -161,8 +161,8 @@ export default function displaySet(setName: string, name: string): any {
                 else bufferMembers.push(`Requires ${set.Required} pieces`, <br key={uuidv4()} />, <br key={uuidv4()} />)
                 break;
             case '日本語':
-                if (doubleEffect) bufferMembers.push(`${set.Required + 1}会員が必要`, <br key={uuidv4()} />, <br key={uuidv4()} />)
-                else bufferMembers.push(`${set.Required}会員が必要`, <br key={uuidv4()} />, <br key={uuidv4()} />)
+                if (doubleEffect) bufferMembers.push(`${set.Required + 1}種装備が必要`, <br key={uuidv4()} />, <br key={uuidv4()} />)
+                else bufferMembers.push(`${set.Required}種装備が必要`, <br key={uuidv4()} />, <br key={uuidv4()} />)
                 break;
         }
 
@@ -175,13 +175,13 @@ export default function displaySet(setName: string, name: string): any {
         if (variant) {
             switch (language.language) {
                 case 'English Patch':
-                    bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
+                    bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a/b/c) combination works for this set');
                     break;
                 case 'Global':
-                    bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (A,B,C) combination works for this set');
+                    bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (A/B/C) combination works for this set');
                     break;
                 case '日本語':
-                    bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a,b,c) combination works for this set');
+                    bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>備考: </strong>, 'a/b/cヴァリアントのどの組み合わせでもセット効果が発生する。');
                     break;
             }
         }
@@ -198,30 +198,30 @@ export default function displaySet(setName: string, name: string): any {
                 bufferSetInfo.push(<strong key={uuidv4()}>Set Effect:</strong>, <br key={uuidv4()} />, displaySetEffect(set, false), <br key={uuidv4()} />, <strong key={uuidv4()}>Set Pieces:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name, false))
                 bufferReturn.push(
                     <Tooltip className='centerCell' key={uuidv4()} label={bufferSetInfo} color="dark">
-                        <Flex align="center" justify="center" key={uuidv4()} gap="xs"><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Set1.png`} alt="Set Effect 1: Hover to show details" w={63} h={18} /></Flex>
+                        <Flex align="center" justify="center" key={uuidv4()} gap="xs"><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Set1.png`} alt="Set Effect 1" w={63} h={18} /></Flex>
                     </Tooltip>
                 )
                 if (set.Doubles) {
                     let bufferSetInfo: any = [<strong key={uuidv4()}>Set Effect:</strong>, <br key={uuidv4()} />, displaySetEffect(set, true), <br key={uuidv4()} />, <strong key={uuidv4()}>Set Pieces:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name, true)]
                     bufferReturn.push(
                         <Tooltip className='centerCell' key={uuidv4()} label={bufferSetInfo} color="dark">
-                            <Flex align="center" justify="center" key={uuidv4()} gap="xs"><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Set2.png`} alt="Set Effect 2: Hover to show details" w={63} h={18} /></Flex>
+                            <Flex align="center" justify="center" key={uuidv4()} gap="xs"><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Set2.png`} alt="Set Effect 2" w={63} h={18} /></Flex>
                         </Tooltip>
                     )
                 }
                 break;
             case '日本語':
-                bufferSetInfo.push(<strong key={uuidv4()}>セット効果:</strong>, <br key={uuidv4()} />, displaySetEffect(set, false), <br key={uuidv4()} />, <strong key={uuidv4()}>会員:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name, false))
+                bufferSetInfo.push(<strong key={uuidv4()}>セット効果:</strong>, <br key={uuidv4()} />, displaySetEffect(set, false), <br key={uuidv4()} />, <strong key={uuidv4()}>種装備:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name, false))
                 bufferReturn.push(
                     <Tooltip className='centerCell' key={uuidv4()} label={bufferSetInfo} color="dark">
-                        <Flex align="center" justify="center" key={uuidv4()} gap="xs"><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Set1.png`} alt="Set Effect 1: Hover to show details" w={63} h={18} /></Flex>
+                        <Flex align="center" justify="center" key={uuidv4()} gap="xs"><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Set1.png`} alt="セット効果1" w={63} h={18} /></Flex>
                     </Tooltip>
                 )
                 if (set.Doubles) {
-                    let bufferSetInfo: any = [<strong key={uuidv4()}>セット効果:</strong>, <br key={uuidv4()} />, displaySetEffect(set, true), <br key={uuidv4()} />, <strong key={uuidv4()}>会員:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name, true)]
+                    let bufferSetInfo: any = [<strong key={uuidv4()}>セット効果:</strong>, <br key={uuidv4()} />, displaySetEffect(set, true), <br key={uuidv4()} />, <strong key={uuidv4()}>種装備:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name, true)]
                     bufferReturn.push(
                         <Tooltip className='centerCell' key={uuidv4()} label={bufferSetInfo} color="dark">
-                            <Flex align="center" justify="center" key={uuidv4()} gap="xs"><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Set2.png`} alt="Set Effect 2: Hover to show details" w={63} h={18} /></Flex>
+                            <Flex align="center" justify="center" key={uuidv4()} gap="xs"><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Set2.png`} alt="セット効果2" w={63} h={18} /></Flex>
                         </Tooltip>
                     )
                 }

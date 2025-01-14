@@ -2946,7 +2946,7 @@
     {
         "Name (JP)": "武装エクステンド(新世) 上限",
         "name_en": "Extended New-Type Weapon",
-        "name_global": "Crafted Weapon",
+        "name_global": "Extended Weapon",
         "Rarity": 13,
         "Requirement": ["S-ATK",900],
         "S-ATK": 1641,

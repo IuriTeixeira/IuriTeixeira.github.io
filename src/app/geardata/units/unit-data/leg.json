@@ -4832,8 +4832,8 @@
     },
     {
         "Type":"Leg",
-        "Name (JP)": "レッグ／ルイナイヴァイゼ",
-        "name_en": "Leg / Ruina Weisse",
+        "Name (JP)": "レッグ／ルイリヴァイゼ",
+        "name_en": "Leg / Ruili Weisse",
         "name_global": "Legs / Luli Weise",
         "Rarity": 13,
         "Requirement":["T-DEF",570],

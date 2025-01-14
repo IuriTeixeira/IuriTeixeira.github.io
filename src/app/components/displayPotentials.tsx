@@ -11,26 +11,34 @@ export default function displayPotentials(potList: any[]): any[] {
     switch (language.language) {
         case "Global": localization = "Global"; break;
         case "日本語": localization = "JP"; break;
-        default: localization = "English"; break;
+        default: localization = "English";
     }
     for (let i = 0; i < potList.length; i++) {
         let pot = potentialData.find(pot => pot[`Name (English)`] === potList[i])
-        let potName: string = null
-        if (pot[`Name (${localization})`]) potName = pot[`Name (${localization})`]
-        else { potName = pot["Name (English)"]; localization = "English" }
         if (pot) {
             let unlockItem: string;
             let potTypeColor: string;
-            let potEffect: any =
+            let potName: string
+            let potEffect: any
+            
+            if (pot[`Name (${localization})`]) {
+                potName = pot[`Name (${localization})`];
+            } else {
+                potName = pot["Name (English)"];
+                localization = "English"
+            }
+            
+            potEffect =
                 <List>
                     <List.Item>Lv1: {pot[`Effect (${localization})`][0]}</List.Item>
                     <List.Item>Lv2: {pot[`Effect (${localization})`][1]}</List.Item>
                     <List.Item>Lv3: {pot[`Effect (${localization})`][2]}</List.Item>
                 </List>
+            
             switch (pot.Special) {
                 case 'New-Type':
                     potTypeColor = 'paleturquoise'
-                    if(localization === 'JP') unlockItem = 'フォトンドロップ'
+                    if (localization === 'JP') unlockItem = 'フォトンドロップ'
                     else unlockItem = 'Photon Drop'
                     break;
                 case 'Hidden':
@@ -114,15 +122,16 @@ export default function displayPotentials(potList: any[]): any[] {
                 case "JP":
                     potUnlockString =
                         <Flex align="center" key={uuidv4()} gap={5}>
-                            ※ 潜在能力のロックを解除するには
+                            ※ 潜在能力を解放するには
                             <Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Tool.png" alt="Tool" w={16} h={16} />
-                            <strong key={uuidv4()}>{unlockItem}</strong>が必要です
+                            <strong key={uuidv4()}>{unlockItem}</strong>が必要です。
                         </Flex>
                     break;
 
             }
             let tooltipText: any = <SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{potEffect}{potUnlockString}</SimpleGrid>
-            if (pot[`Effect (${localization})`][0].length > 100 || pot[`Effect (${localization})`][2].length > 100 || pot[`Effect (${localization})`][2].length > 100) {
+            if (pot[`Effect (English)`][0].length > 100 || pot[`Effect (English)`][2].length > 100 || pot[`Effect (English)`][2].length > 100) {
+            //if (pot[`Effect (${localization})`][0].length > 100 || pot[`Effect (${localization})`][2].length > 100 || pot[`Effect (${localization})`][2].length > 100) {
                 if (localization === "JP") {
                     buffer.push(
                         <Tooltip key={uuidv4()} label={tooltipText} color="dark" multiline w={700}>
@@ -152,7 +161,7 @@ export default function displayPotentials(potList: any[]): any[] {
                 }
             }
         } else {
-            buffer.push(<Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/RestrictedYellow.png" alt="Potential" title="Potential" w={16} h={16} /> !Potential not found: {potName}</Flex>)
+            buffer.push(<Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/RestrictedYellow.png" alt="Potential" title="Potential" w={16} h={16} /> !Potential not found: {potList[i]}</Flex>)
         }
     }
     return buffer;

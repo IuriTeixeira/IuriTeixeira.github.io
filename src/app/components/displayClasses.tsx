@@ -26,9 +26,9 @@ export default function displayClasses(classes: any[]): any {
                         {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fi.png`} alt='Fighter' title='Fighter' w={16} h={16} />}
                         {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fi.png`} alt='Fighter' title='Fighter' w={16} h={16} />}
                         {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fi.png`} alt='ファイター' title='ファイター' w={16} h={16} />}
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt='Gunner' title='Gunner' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt='Gunner' title='Gunner' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt='ガンナー' title='ガンナー' w={16} h={16} />}
+                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Gu.png`} alt='Gunner' title='Gunner' w={16} h={16} />}
+                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Gu.png`} alt='Gunner' title='Gunner' w={16} h={16} />}
+                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Gu.png`} alt='ガンナー' title='ガンナー' w={16} h={16} />}
                         {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Te.png`} alt='Techer' title='Techer' w={16} h={16} />}
                         {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Te.png`} alt='Techter' title='Techter' w={16} h={16} />}
                         {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Te.png`} alt='テクター' title='テクター' w={16} h={16} />}
@@ -37,9 +37,9 @@ export default function displayClasses(classes: any[]): any {
                         {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Br.png`} alt='Braver' title='Braver' w={16} h={16} />}
                         {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Br.png`} alt='Braver' title='Braver' w={16} h={16} />}
                         {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Br.png`} alt='ブレイバー' title='ブレイバー' w={16} h={16} />}
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt='Bouncer' title='Bouncer' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt='Bouncer' title='Bouncer' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt='バウンサー' title='バウンサー' w={16} h={16} />}
+                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Bo.png`} alt='Bouncer' title='Bouncer' w={16} h={16} />}
+                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Bo.png`} alt='Bouncer' title='Bouncer' w={16} h={16} />}
+                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Bo.png`} alt='バウンサー' title='バウンサー' w={16} h={16} />}
                         {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Su.png`} alt='Summoner' title='Summoner' w={16} h={16} />}
                         {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Su.png`} alt='Summoner' title='Summoner' w={16} h={16} />}
                         {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Su.png`} alt='サモナー' title='サモナー' w={16} h={16} />}
@@ -48,9 +48,9 @@ export default function displayClasses(classes: any[]): any {
                     {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hr.png`} alt='Hero' title='Hero' w={16} h={16} />}
                         {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hr.png`} alt='Hero' title='Hero' w={16} h={16} />}
                         {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hr.png`} alt='ヒーロー' title='ヒーロー' w={16} h={16} />}
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt='Phantom' title='Phantom' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt='Phantom' title='Phantom' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt='ファントム' title='ファントム' w={16} h={16} />}
+                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ph.png`} alt='Phantom' title='Phantom' w={16} h={16} />}
+                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ph.png`} alt='Phantom' title='Phantom' w={16} h={16} />}
+                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ph.png`} alt='ファントム' title='ファントム' w={16} h={16} />}
                         {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Et.png`} alt='Etoile' title='Etoile' w={16} h={16} />}
                         {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Et.png`} alt='Étoile' title='Étoile' w={16} h={16} />}
                         {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Et.png`} alt='エトワール' title='エトワール' w={16} h={16} />}

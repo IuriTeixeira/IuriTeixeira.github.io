@@ -1,7 +1,7 @@
 [
     {
         "Type":"Rear",
-        "Name (JP)": "リア／ソードバーゴストゥa",
+        "Name (JP)": "リア／バーウィンa",
         "name_en": "Rear / Berwyn a",
         "name_global": "Back / Verwyn A",
         "Rarity": 2,
@@ -314,7 +314,7 @@
     },
     {
         "Type":"Rear",
-        "Name (JP)": "リア／ソードバーゴストゥb",
+        "Name (JP)": "リア／バーウィンb",
         "name_en": "Rear / Berwyn b",
         "name_global": "Back / Verwyn B",
         "Rarity": 3,
@@ -1250,7 +1250,7 @@
     },
     {
         "Type":"Rear",
-        "Name (JP)": "リア／ソードバーゴストゥc",
+        "Name (JP)": "リア／バーウィンc",
         "name_en": "Rear / Berwyn c",
         "name_global": "Back / Verwyn C",
         "Rarity": 6,
@@ -9646,7 +9646,7 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／センシアスアル",
-        "name_en": "Arm / Sensias Ai",
+        "name_en": "Arm / Sensias Ar",
         "name_global": "Arms / Sentious Al",
         "Rarity": 11,
         "Requirement":["T-DEF",400],
@@ -16277,8 +16277,8 @@
     },
     {
         "Type":"Leg",
-        "Name (JP)": "レッグ／ルイナイヴァイゼ",
-        "name_en": "Leg / Ruina Weisse",
+        "Name (JP)": "レッグ／ルイリヴァイゼ",
+        "name_en": "Leg / Ruili Weisse",
         "name_global": "Legs / Luli Weise",
         "Rarity": 13,
         "Requirement":["T-DEF",570],

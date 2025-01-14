@@ -60,7 +60,7 @@
         ]
     },
     {
-        "Name (JP)": "Obstinate Spirit",
+        "Name (JP)": "不屈の心",
         "Name (English)": "Obstinate Spirit",
         "Name (Global)": "Resolute Heart",
         "Effect (JP)": [
@@ -149,139 +149,251 @@
             "ジャストアタックの効果が(5%)上昇する。(※テクニック以外に有効)"
         ],
         "Effect (English)": [
-            "Increases the effect of Just Attack by 3%.",
-            "Increases the effect of Just Attack by 4%.",
-            "Increases the effect of Just Attack by 5%."
+            "Increases the damage of Just Attack by 3%.",
+            "Increases the damage of Just Attack by 4%.",
+            "Increases the damage of Just Attack by 5%."
         ],
         "Effect (Global)": [
-            "Increases the effect of Perfect Attack by 3%.",
-            "Increases the effect of Perfect Attack by 4%.",
-            "Increases the effect of Perfect Attack by 5%."
+            "Increases the damage of Perfect Attack by 3%.",
+            "Increases the damage of Perfect Attack by 4%.",
+            "Increases the damage of Perfect Attack by 5%."
         ]
     },
     {
+        "Name (JP)": "炎獄",
         "Name (English)": "Raging Inferno",
+        "Name (Global)": "Hellfire",
+        "Effect (JP)": [
+            "ブレイブスタンス中、正面への攻撃力が(10%)上昇する。",
+            "ブレイブスタンス中、正面への攻撃力が(12%)上昇する。",
+            "ブレイブスタンス中、正面への攻撃力が(14%)上昇する。"
+        ],
         "Effect (English)": [
-            "Frontal attack damage during Brave Stance increased by 10%.",
-            "Frontal attack damage during Brave Stance increased by 12%.",
-            "Frontal attack damage during Brave Stance increased by 14%."
+            "Increases frontal attack damage during Brave Stance by 10%.",
+            "Increases frontal attack damage during Brave Stance by 12%.",
+            "Increases frontal attack damage during Brave Stance by 14%."
+        ],
+        "Effect (Global)": [
+            "Increases frontal attack damage during Valiant Stance by 10%.",
+            "Increases frontal attack damage during Valiant Stance by 12%.",
+            "Increases frontal attack damage during Valiant Stance by 14%."
         ]
     },
     {
+        "Name (JP)": "正対の型",
         "Name (English)": "Direct Style",
+        "Name (Global)": "Head-On Stance",
+        "Effect (JP)": [
+            "ブレイブスタンス中、正面への攻撃力が(4%)上昇する。",
+            "ブレイブスタンス中、正面への攻撃力が(5%)上昇する。",
+            "ブレイブスタンス中、正面への攻撃力が(6%)上昇する。"
+        ],
         "Effect (English)": [
-            "Frontal attack damage during Brave Stance increased by 4%.",
-            "Frontal attack damage during Brave Stance increased by 5%.",
-            "Frontal attack damage during Brave Stance increased by 6%."
+            "Increases frontal attack damage during Brave Stance by 4%.",
+            "Increases frontal attack damage during Brave Stance by 5%.",
+            "Increases frontal attack damage during Brave Stance by 6%."
+        ],
+        "Effect (Global)": [
+            "Increases frontal attack damage during Valiant Stance by 4%.",
+            "Increases frontal attack damage during Valiant Stance by 5%.",
+            "Increases frontal attack damage during Valiant Stance by 6%."
         ]
     },
     {
+        "Name (JP)": "正対の必撃",
         "Name (English)": "Direct Assault",
+        "Name (Global)": "Head-On Stance",
+        "Effect (JP)": [
+            "ブレイブスタンス中、正面へのクリティカル率が(18%)上昇する。",
+            "ブレイブスタンス中、正面へのクリティカル率が(19%)上昇する。",
+            "ブレイブスタンス中、正面へのクリティカル率が(20%)上昇する。"
+        ],
         "Effect (English)": [
-            "Frontal critical hit rate during Brave Stance increased by 18%.",
-            "Frontal critical hit rate during Brave Stance increased by 19%.",
-            "Frontal critical hit rate during Brave Stance increased by 20%."
+            "Increases frontal attack Critical Hit Rate during Brave Stance by 18%.",
+            "Increases frontal attack Critical Hit Rate during Brave Stance by 19%.",
+            "Increases frontal attack Critical Hit Rate during Brave Stance by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases frontal attack Critical Hit Rate during Valiant Stance by 18%.",
+            "Increases frontal attack Critical Hit Rate during Valiant Stance by 19%.",
+            "Increases frontal attack Critical Hit Rate during Valiant Stance by 20%."
         ]
     },
     {
-        "Name (English)": "Flash Cutter",
-        "Effect (English)": [
-            "Frontal critical hit rate during Brave Stance increased by 10%.",
-            "Frontal critical hit rate during Brave Stance increased by 12%.",
-            "Frontal critical hit rate during Brave Stance increased by 14%."
-        ]
-    },
-    {
+        "Name (JP)": "背撃の証",
         "Name (English)": "From Behind",
+        "Name (Global)": "Backstabbing Emblem",
+        "Effect (JP)": [
+            "ワイズスタンス中、背後への攻撃力が(8%)上昇する。",
+            "ワイズスタンス中、背後への攻撃力が(10%)上昇する。",
+            "ワイズスタンス中、背後への攻撃力が(12%)上昇する。"
+        ],
         "Effect (English)": [
-            "Rear attack damage during Wise Stance increased by 8%.",
-            "Rear attack damage during Wise Stance increased by 10%.",
-            "Rear attack damage during Wise Stance increased by 12%."
+            "Increases rear attack damage during Wise Stance by 8%.",
+            "Increases rear attack damage during Wise Stance by 10%.",
+            "Increases rear attack damage during Wise Stance by 12%."
+        ],
+        "Effect (Global)": [
+            "Increases rear attack damage during Wise Stance by 8%.",
+            "Increases rear attack damage during Wise Stance by 10%.",
+            "Increases rear attack damage during Wise Stance by 12%."
         ]
     },
     {
+        "Name (JP)": "不動の死神",
         "Name (English)": "Steadfast Reaper",
+        "Name (Global)": "Steadfast Reaper",
+        "Effect (JP)": [
+            "静止状態で射撃した時、ダメージが(7%)上昇する。",
+            "静止状態で射撃した時、ダメージが(9%/)上昇する。",
+            "静止状態で射撃した時、ダメージが(11%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases damage while holding still by 7%.",
-            "Increases damage while holding still by 9%.",
-            "Increases damage while holding still by 11%."
+            "Increases damage while standing still by 7%.",
+            "Increases damage while standing still by 9%.",
+            "Increases damage while standing still by 11%."
+        ],
+        "Effect (Global)": [
+            "Increases damage while standing still by 7%.",
+            "Increases damage while standing still by 9%.",
+            "Increases damage while standing still by 11%."
         ]
     },
     {
-        "Name (English)": "Eternal Trap",
-        "Effect (English)": [
-            "Increases the effects of tools by 20%.",
-            "Increases the effects of tools by 23%.",
-            "Increases the effects of tools by 26%."
-        ]
-    },
-    {
-        "Name (English)": "Trap Release",
-        "Effect (English)": [
-            "Increases the effect of Poison Traps by 20%.",
-            "Increases the effect of Poison Traps by 23%.",
-            "Increases the effect of Poison Traps by 26%."
-        ]
-    },
-    {
+        "Name (JP)": "罠発動",
         "Name (English)": "Trap Activate",
+        "Name (Global)": "Trap Activate",
+        "Effect (JP)": [
+            "アッパートラップの効果が(20%)上昇する。",
+            "アッパートラップの効果が(23%)上昇する。",
+            "アッパートラップの効果が(26%)上昇する。"
+        ],
         "Effect (English)": [
             "Increases the effect of Upper Traps by 20%.",
             "Increases the effect of Upper Traps by 23%.",
             "Increases the effect of Upper Traps by 26%."
+        ],
+        "Effect (Global)": [
+            "Increases the effect of Spring Traps by 20%.",
+            "Increases the effect of Spring Traps by 23%.",
+            "Increases the effect of Spring Traps by 26%."
         ]
     },
     {
-        "Name (English)": "Trap Expert",
-        "Effect (English)": [
-            "Reduces the cool-down of setting traps. (10%)",
-            "Reduces the cool-down of setting traps. (20%)",
-            "Reduces the cool-down of setting traps. (30%)"
-        ]
-    },
-    {
+        "Name (JP)": "魔弾襲撃",
         "Name (English)": "Phantom Bullet",
+        "Name (Global)": "Phantom Bullet",
+        "Effect (JP)": [
+            "特殊弾を装填している間PP消費量を減少させる。(14%)",
+            "特殊弾を装填している間PP消費量を減少させる。(15%)",
+            "特殊弾を装填している間PP消費量を減少させる。(20%)"
+        ],
         "Effect (English)": [
+            "Reduces PP consumption by 10% while special bullets are loaded.",
+            "Reduces PP consumption by 15% while special bullets are loaded.",
+            "Reduces PP consumption by 20% while special bullets are loaded."
+        ],
+        "Effect (Global)": [
             "Reduces PP consumption by 10% while special bullets are loaded.",
             "Reduces PP consumption by 15% while special bullets are loaded.",
             "Reduces PP consumption by 20% while special bullets are loaded."
         ]
     },
     {
+        "Name (JP)": "連鎖終幕",
         "Name (English)": "Chain Finale",
+        "Name (Global)": "Chain Finale",
+        "Effect (JP)": [
+            "チェインフィニッシュ倍率を(12%)強化する。",
+            "チェインフィニッシュ倍率を(16%)強化する。",
+            "チェインフィニッシュ倍率を(20%)強化する。"
+        ],
         "Effect (English)": [
-            "Effect of Chain Finish boosted by 12%",
-            "Effect of Chain Finish boosted by 16%",
-            "Effect of Chain Finish boosted by 20%"
+            "Increases the effect of Chain Finish by 12%",
+            "Increases the effect of Chain Finish by 16%",
+            "Increases the effect of Chain Finish by 20%"
+        ],
+        "Effect (Global)": [
+            "Increases the effect of Chain Finish by 12%",
+            "Increases the effect of Chain Finish by 16%",
+            "Increases the effect of Chain Finish by 20%"
         ]
     },
     {
+        "Name (JP)": "完全なる災い",
         "Name (English)": "Perfect Calamity",
+        "Name (Global)": "Perfect Catastrophe",
+        "Effect (JP)": [
+            "パーフェクトキーパーの効果が上昇する。(5%)",
+            "パーフェクトキーパーの効果が上昇する。(7%)",
+            "パーフェクトキーパーの効果が上昇する。(9%)"
+        ],
         "Effect (English)": [
             "Increases the effect of Perfect Keeper by 5%",
             "Increases the effect of Perfect Keeper by 7%",
             "Increases the effect of Perfect Keeper by 9%"
+        ],
+        "Effect (Global)": [
+            "Increases the effect of Perfectionist by 5%",
+            "Increases the effect of Perfectionist by 7%",
+            "Increases the effect of Perfectionist by 9%"
         ]
     },
     {
+        "Name (JP)": "瞬の排撃",
         "Name (English)": "Immediate Dismissal",
+        "Name (Global)": "Immediate Dismissal",
+        "Effect (JP)": [
+            "スタイリッシュロールジャストアタックの効果が上昇する。(3%)",
+            "スタイリッシュロールジャストアタックの効果が上昇する。(4%)",
+            "スタイリッシュロールジャストアタックの効果が上昇する。(5%)"
+        ],
         "Effect (English)": [
-            "Increases the effect of Stylish Roll JA by 3%.",
-            "Increases the effect of Stylish Roll JA by 4%.",
-            "Increases the effect of Stylish Roll JA by 5%."
+            "Increases the effect of S Roll JA Bonus by 3%.",
+            "Increases the effect of S Roll JA Bonus by 4%.",
+            "Increases the effect of S Roll JA Bonus by 5%."
+        ],
+        "Effect (Global)": [
+            "Increases the effect of Stylish Roll Perf. Atk Bonus by 3%.",
+            "Increases the effect of Stylish Roll Perf. Atk Bonus by 4%.",
+            "Increases the effect of Stylish Roll Perf. Atk Bonus by 5%."
         ]
     },
     {
-        "Name (English)": "damageful Prophecy",
+        "Name (JP)": "力の預言",
+        "Name (English)": "Powerful Prophecy",
+        "Name (Global)": "Powerful Prophecy",
+        "Effect (JP)": [
+            "フォトンフレアの効果が上昇する。(280)",
+            "フォトンフレアの効果が上昇する。(300)",
+            "フォトンフレアの効果が上昇する。(350)"
+        ],
         "Effect (English)": [
+            "Increases the effect of Photon Flare by 280.",
+            "Increases the effect of Photon Flare by 300.",
+            "Increases the effect of Photon Flare by 350."
+        ],
+        "Effect (Global)": [
             "Increases the effect of Photon Flare by 280.",
             "Increases the effect of Photon Flare by 300.",
             "Increases the effect of Photon Flare by 350."
         ]
     },
     {
+        "Name (JP)": "回路解放",
         "Name (English)": "Circuit Breakout",
+        "Name (Global)": "Circuit Release",
+        "Effect (JP)": [
+            "フォトンフレアの効果が(200)上昇する。",
+            "フォトンフレアの効果が(220)上昇する。",
+            "フォトンフレアの効果が(250)上昇する。"
+        ],
         "Effect (English)": [
+            "Increases the effect of Photon Flare by 200.",
+            "Increases the effect of Photon Flare by 220.",
+            "Increases the effect of Photon Flare by 250."
+        ],
+        "Effect (Global)": [
             "Increases the effect of Photon Flare by 200.",
             "Increases the effect of Photon Flare by 220.",
             "Increases the effect of Photon Flare by 250."
@@ -1336,11 +1448,23 @@
         ]
     },
     {
+        "Name (JP)": "螺旋断刃",
         "Name (English)": "Spiral Edge",
+        "Name (Global)": "Spiral Edge",
+        "Effect (JP)": [
+            "ツイスターフォールの威力を上昇させる。(9%)",
+            "ツイスターフォールの威力を上昇させる。(13%)",
+            "ツイスターフォールの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Twister Fall by 9%",
             "Increases the damage of Twister Fall by 13%",
             "Increases the damage of Twister Fall by 17%"
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Twister Drop by 9%",
+            "Increases the damage of Twister Drop by 13%",
+            "Increases the damage of Twister Drop by 17%"
         ]
     },
     {
@@ -1352,11 +1476,23 @@
         ]
     },
     {
+        "Name (JP)": "乗斬刃",
         "Name (English)": "Blade Surfing",
+        "Name (Global)": "Blade Surfing",
+        "Effect (JP)": [
+            "ライドスラッシャーの威力を上昇させる。(10%)",
+            "ライドスラッシャーの威力を上昇させる。(15%)",
+            "ライドスラッシャーの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Ride Slasher by 10%",
-            " Increases the damage of Ride Slasher by 15%",
-            " Increases the damage of Ride Slasher by 20%"
+            "Increases the damage of Ride Slasher by 15%",
+            "Increases the damage of Ride Slasher by 20%"
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Ride Slash by 10%",
+            "Increases the damage of Ride Slash by 15%",
+            "Increases the damage of Ride Slash by 20%"
         ]
     },
     {
@@ -1384,11 +1520,23 @@
         ]
     },
     {
+        "Name (JP)": "罪禍壊刃",
         "Name (English)": "Guilty Edge",
+        "Name (Global)": "Guilty Edge",
+        "Effect (JP)": [
+            "ギルティブレイクの威力を上昇させる。(9%)",
+            "ギルティブレイクの威力を上昇させる。(13%)",
+            "ギルティブレイクの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Guilty Break by 8%",
-            "Increases the damage of Guilty Break by 11%",
-            "Increases the damage of Guilty Break by 14%"
+            "Increases the damage of Guilty Break by 9%",
+            "Increases the damage of Guilty Break by 13%",
+            "Increases the damage of Guilty Break by 17%"
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Guilty Break by 9%",
+            "Increases the damage of Guilty Break by 13%",
+            "Increases the damage of Guilty Break by 17%"
         ]
     },
     {
@@ -2807,7 +2955,18 @@
     {
         "Name (JP)": "闘士の闘法",
         "Name (English)": "Fighter Tactics",
+        "Name (Global)": "Fighter Tactics",
+        "Effect (JP)": [
+            "サブクラスがファイター時、クリティカル率(10%)・クリティカル威力(10%)上昇。",
+            "サブクラスがファイター時、クリティカル率(20%)・クリティカル威力(12%)上昇。",
+            "サブクラスがファイター時、クリティカル率(30%)・クリティカル威力(14%)上昇。"
+        ],
         "Effect (English)": [
+            "Increases Critical Hit Rate by 10% and Critical damage by 10% when Fighter is set as your Subclass.",
+            "Increases Critical Hit Rate by 20% and Critical damage by 12%  when Fighter is set as your Subclass.",
+            "Increases Critical Hit Rate by 30% and Critical damage by 14%  when Fighter is set as your Subclass."
+        ],
+        "Effect (Global)": [
             "Increases Critical Hit Rate by 10% and Critical damage by 10% when Fighter is set as your Subclass.",
             "Increases Critical Hit Rate by 20% and Critical damage by 12%  when Fighter is set as your Subclass.",
             "Increases Critical Hit Rate by 30% and Critical damage by 14%  when Fighter is set as your Subclass."
@@ -2816,7 +2975,18 @@
     {
         "Name (JP)": "勇士の闘法",
         "Name (English)": "Braver Tactics",
+        "Name (Global)": "Braver Tactics",
+        "Effect (JP)": [
+            "サブクラスがブレイバー時、与ダメージ(8%)上昇・PP消費量(10%)減少。",
+            "サブクラスがブレイバー時、与ダメージ(10%)上昇・PP消費量(20%)減少。",
+            "サブクラスがブレイバー時、与ダメージ(12%)上昇・PP消費量(30%)減少。"
+        ],
         "Effect (English)": [
+            "Increases damage by 8% and reduce PP consumption by 10% when Braver is set as your Subclass.",
+            "Increases damage by 10% and reduce PP consumption by 20% when Braver is set as your Subclass.",
+            "Increases damage by 12% and reduce PP consumption by 30% when Braver is set as your Subclass."
+        ],
+        "Effect (Global)": [
             "Increases damage by 8% and reduce PP consumption by 10% when Braver is set as your Subclass.",
             "Increases damage by 10% and reduce PP consumption by 20% when Braver is set as your Subclass.",
             "Increases damage by 12% and reduce PP consumption by 30% when Braver is set as your Subclass."
@@ -4168,13 +4338,25 @@
         ]
     },
     {
+        "Name (JP)": "運命の輪廻",
         "Name (English)": "Reincarnation of Fate",
+        "Name (Global)": "Fated Reincarnation",
+        "Effect (JP)": [
+            "威力が10%上昇。PP消費量軽減(20%)。10秒ごとにPPが20回復。",
+            "威力が11%上昇。PP消費量軽減(20%)。10秒ごとにPPが20回復。",
+            "威力が12%上昇。PP消費量軽減(20%)。10秒ごとにPPが20回復。"
+        ],
         "Effect (English)": [
-            "Increases damage by 10%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds.",
-            "Increases damage by 11%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds.",
+            "Increases damage by 10%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds.",
+            "Increases damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds.",
             "Increases damage by 12%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds."
         ],
-        "Special":"Lightweaver"
+        "Effect (Global)": [
+            "Increases damage by 10%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds.",
+            "Increases damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds.",
+            "Increases damage by 12%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds."
+        ],
+        "Special": "Lightweaver"
     },
     {
         "Name (English)": "Cycle of Fate",
@@ -4183,16 +4365,28 @@
             "Increases damage by 10%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds.",
             "Increases damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds."
         ],
-        "Special":"Lightweaver"
+        "Special": "Lightweaver"
     },
     {
+        "Name (JP)": "光紡の守護輝士",
         "Name (English)": "Lightweaving Guardian",
+        "Name (Global)": "Lightring Guardian",
+        "Effect (JP)": [
+            "通常攻撃3回使用で「運命の輪廻」から30秒間、性能が変化。威力16.60%上昇。頑強、被ダメ30%軽減",
+            "通常攻撃3回使用で「運命の輪廻」から30秒間、性能が変化。威力17.66%上昇。頑強、被ダメ30%軽減",
+            "通常攻撃3回使用で「運命の輪廻」から30秒間、性能が変化。威力18.72%上昇。頑強、被ダメ30%軽減"
+        ],
         "Effect (English)": [
-            "Increases damage by 10%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 16.60%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential).",
-            "Increases damage by 11%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 17.66%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential).",
+            "Increases damage by 10%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 16.60%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential).",
+            "Increases damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 17.66%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential).",
             "Increases damage by 12%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 18.72%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential)."
         ],
-        "Special":"Lightweaver"
+        "Effect (Global)": [
+            "Increases damage by 10%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 16.60%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential).",
+            "Increases damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 17.66%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential).",
+            "Increases damage by 12%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 18.72%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential)."
+        ],
+        "Special": "Lightweaver"
     },
     {
         "Name (English)": "Lightsong Guardian",
@@ -4201,7 +4395,7 @@
             "Increases damage by 10%. Reduces PP consumption by ?%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 14.40%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends).",
             "Increases damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 15.44%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends)."
         ],
-        "Special":"Lightweaver"
+        "Special": "Lightweaver"
     },
     {
         "Name (English)": "Sixfold Miasmata",
@@ -4301,7 +4495,19 @@
         "Special": "Hidden"
     },
     {
+        "Name (JP)": "再輝の赤",
         "Name (English)": "Red Recalescence",
+        "Name (Global)": "Red Recalescence",
+        "Effect (JP)": [
+            "エクステンドした武器の使用時に威力が上昇する。(14%)",
+            "エクステンドした武器の使用時に威力が上昇する。(15%)",
+            "エクステンドした武器の使用時に威力が上昇する。(16%)"
+        ],
+        "Effect (Global)": [
+            "Increases damage when using extended weapons by 14%.",
+            "Increases damage when using extended weapons by 15%.",
+            "Increases damage when using extended weapons by 16%."
+        ],
         "Effect (English)": [
             "Increases damage when using extended weapons by 14%.",
             "Increases damage when using extended weapons by 15%.",
@@ -4373,11 +4579,23 @@
         "Special": "Hidden"
     },
     {
+        "Name (JP)": "勇猛正対の型",
         "Name (English)": "Valorous Stance",
+        "Name (Global)": "Valorous Stance",
+        "Effect (JP)": [
+            "ブレイブスタンス中、正面への攻撃力が(18%)上昇する。",
+            "ブレイブスタンス中、正面への攻撃力が(20%)上昇する。",
+            "ブレイブスタンス中、正面への攻撃力が(23%)上昇する。"
+        ],
         "Effect (English)": [
-            "Frontal damage during Brave Stance increased by 18%.",
-            "Frontal damage during Brave Stance increased by 20%.",
-            "Frontal damage during Brave Stance increased by 23%."
+            "Increases frontal attack damage during Brave Stance by 18%.",
+            "Increases frontal attack damage during Brave Stance by 20%.",
+            "Increases frontal attack damage during Brave Stance by 23%."
+        ],
+        "Effect (Global)": [
+            "Increases frontal attack damage during Valiant Stance by 18%.",
+            "Increases frontal attack damage during Valiant Stance by 20%.",
+            "Increases frontal attack damage during Valiant Stance by 23%."
         ],
         "Special": "Hidden"
     },
@@ -4517,8 +4735,20 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "剣精の息吹",
         "Name (English)": "Breath of Bladed Essence",
+        "Name (Global)": "Breath of the Warrior",
+        "Effect (JP)": [
+            "5秒毎に最大HPの(5%)分、自動でHPが回復する。",
+            "5秒毎に最大HPの(7%)分、自動でHPが回復する。",
+            "5秒毎に最大HPの(10%)分、自動でHPが回復する。"
+        ],
         "Effect (English)": [
+            "Restores 5% of your maximum HP every 5 seconds.",
+            "Restores 7% of your maximum HP every 5 seconds.",
+            "Restores 10% of your maximum HP every 5 seconds."
+        ],
+        "Effect (Global)": [
             "Restores 5% of your maximum HP every 5 seconds.",
             "Restores 7% of your maximum HP every 5 seconds.",
             "Restores 10% of your maximum HP every 5 seconds."
@@ -4670,11 +4900,23 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "跳空の撃",
         "Name (English)": "Soaring Burst",
+        "Name (Global)": "Leaping Strike",
+        "Effect (JP)": [
+            "空中での攻撃時に与ダメージが(17%)上昇。",
+            "空中での攻撃時に与ダメージが(19%)上昇。",
+            "空中での攻撃時に与ダメージが(21%)上昇。"
+        ],
         "Effect (English)": [
-            "Increases damage by 17% when attacking in midair.",
-            "Increases damage by 19% when attacking in midair.",
-            "Increases damage by 21% when attacking in midair."
+            "Increases damage by 17% while airborne.",
+            "Increases damage by 19% while airborne.",
+            "Increases damage by 21% while airborne."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 17% while airborne.",
+            "Increases damage by 19% while airborne.",
+            "Increases damage by 21% while airborne."
         ],
         "Special": "Weaponoid"
     },

@@ -73,11 +73,28 @@ export default function WeaponTableComponent({ data, type }) {
     function displayPA(namePA: string[]): any[] {
         let buffer: any[] = []
         if (namePA) {
-            buffer.push(
-                <Tooltip className='centerCell' key={uuidv4()} label={`Enables the ${namePA} Photon Art`} color="dark">
-                    <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Photon_Art.png`} alt={`Enables the ${namePA} Photon Art`} w={16} h={16} /> {namePA}</Flex>
-                </Tooltip>
-            )
+            switch (language.language) {
+                case "Global":
+                    buffer.push(
+                        <Tooltip className='centerCell' key={uuidv4()} label={`Enables usage of specific Photon Arts/Techniques regardless of class or equipment requirements`} color="dark">
+                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Photon_Art.png`} alt={`PA`} w={16} h={16} /> {namePA}</Flex>
+                        </Tooltip>
+                    )
+                    break;
+                case "日本語":
+                    buffer.push(
+                        <Tooltip className='centerCell' key={uuidv4()} label={`クラスや装備の条件に関係なくPAを使用できる`} color="dark">
+                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Photon_Art.png`} alt={`PA`} w={16} h={16} /> {namePA}</Flex>
+                        </Tooltip>
+                    )
+                    break;
+                default:
+                    buffer.push(
+                        <Tooltip className='centerCell' key={uuidv4()} label={`Enables usage of specific Photon Arts/Techniques regardless of class or equipment requirements`} color="dark">
+                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Photon_Art.png`} alt={`PA`} w={16} h={16} /> {namePA}</Flex>
+                        </Tooltip>
+                    )
+            }
         }
         return buffer;
     }
@@ -103,13 +120,13 @@ export default function WeaponTableComponent({ data, type }) {
                                         case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">ATK</Table.Th><Table.Th key={uuidv4()} className="centerCell">ATK<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
                                         case 'R-ATK': return;
                                         case 'T-ATK': return;
-                                        case 'SAF': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="Special Ability Factor" title="Special Ability Factor" w={16} h={16} /> SAF</Flex></Table.Th>
+                                        case 'SAF': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="Special Ability Factor" title="Special Ability Factor" w={16} h={16} /> Special Ability Factor</Flex></Table.Th>
                                         case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Properties</Table.Th>
                                         case 'Element': return;
                                         case 'id': return;
                                         case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> Potential</Flex></Table.Th>
                                         case 'Classes': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt="Main Classes that can wield this weapon" w={16} h={16} /> {heading}</Flex></Table.Th>
-                                        case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S-Class Special Ability Slots Enabled" title="S-Class Special Ability Slots Enabled" w={16} h={16} /> SSA Slots</Flex></Table.Th>
+                                        case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S-Class Special Ability Slots Enabled" title="S-Class Special Ability Slots Enabled" w={16} h={16} /> SSA</Flex></Table.Th>
                                         default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
                                     }
                                     break;
@@ -127,7 +144,7 @@ export default function WeaponTableComponent({ data, type }) {
                                         case 'id': return;
                                         case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> Potential</Flex></Table.Th>
                                         case 'Classes': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt="Main Classes that can wield this weapon" w={16} h={16} /> {heading}</Flex></Table.Th>
-                                        case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S-Grade Augment Slots Enabled" title="S-Grade Augment Slots Enabled" w={16} h={16} /> SGA Slots</Flex></Table.Th>
+                                        case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S-Grade Augment Slots Enabled" title="S-Grade Augment Slots Enabled" w={16} h={16} /> SGA</Flex></Table.Th>
                                         default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
                                     }
                                     break;
@@ -137,7 +154,7 @@ export default function WeaponTableComponent({ data, type }) {
                                         case 'name_en': return;
                                         case 'name_global': return;
                                         case 'Rarity': return <Table.Th key={uuidv4()} className="centerCell">レア</Table.Th>;
-                                        case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">力</Table.Th><Table.Th key={uuidv4()} className="centerCell">最大出力</Table.Th></React.Fragment>
+                                        case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">力</Table.Th><Table.Th key={uuidv4()} className="centerCell">強化力</Table.Th></React.Fragment>
                                         case 'R-ATK': return;
                                         case 'T-ATK': return;
                                         case 'Requirement': return <Table.Th key={uuidv4()} className="centerCell">装備条件</Table.Th>;
@@ -147,7 +164,7 @@ export default function WeaponTableComponent({ data, type }) {
                                         case 'id': return;
                                         case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="潜在能力" title="潜在能力" w={16} h={16} /> 潜在能力</Flex></Table.Th>
                                         case 'Classes': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt="この武器を扱える主なクラス" w={16} h={16} /> クラス</Flex></Table.Th>
-                                        case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S級特殊能力スロット有効" title="S級特殊能力スロット有効" w={16} h={16} /> S級特殊能力スロット</Flex></Table.Th>
+                                        case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S級特殊能力" title="S級特殊能力" w={16} h={16} /> S級特殊能力</Flex></Table.Th>
                                         default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
                                     }
                                     break;
