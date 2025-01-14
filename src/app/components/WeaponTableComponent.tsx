@@ -2,9 +2,9 @@ import React from 'react';
 import { useLanguageContext } from "../language-provider";
 import { Text, Flex, Image, SimpleGrid, Table, Tooltip, List } from '@mantine/core';
 import { v4 as uuidv4 } from 'uuid';
-import potentialData from "../geardata/weapons/weapon-data/potentials.json"
 import localization from "../localization.json"
 import displayAbilities from './displayAbilities';
+import displayPotentials from './displayPotentials';
 import displaySet from './displaySet';
 import displaySSA from './displaySSA';
 import displayStat from './displayStat';
@@ -42,57 +42,6 @@ export default function WeaponTableComponent({ data, type }) {
             maxATK = (baseATK * 135) / 100
         }
         return Math.trunc(maxATK)
-    }
-
-    function displayPotentials(potList: any[]): any[] {
-        let buffer: any[] = []
-        for (let i = 0; i < potList.length; i++) {
-            let pot = potentialData.find(pot => pot.Name === potList[i])
-            if (pot) {
-                let specialPotType: string;
-                let unlockItem: string;
-                let potTypeColor: string;
-                let potEffect: any =
-                    <List>
-                        <List.Item>Lv1: {pot.Effect[0]}</List.Item>
-                        <List.Item>Lv2: {pot.Effect[1]}</List.Item>
-                        <List.Item>Lv3: {pot.Effect[2]}</List.Item>
-                    </List>
-                switch (pot.Special) {
-                    case 'Hidden': potTypeColor = 'red'; specialPotType = 'Hidden '; unlockItem = 'Photon Booster'; break;
-                    case 'Weaponoid': potTypeColor = 'green'; specialPotType = 'Weaponoid '; unlockItem = 'Weaponoid Booster'; break;
-                    case 'Ether': potTypeColor = 'blue'; specialPotType = 'Ether '; unlockItem = 'Ether Fuse'; break;
-                    case 'Qliphad': potTypeColor = 'orange'; specialPotType = 'Qliphad '; unlockItem = 'Qliphad Fuse'; break;
-                    case 'Ultimate': potTypeColor = 'indigo'; specialPotType = 'Ultimate '; unlockItem = 'Ultimate Booster'; break;
-                    case 'Arena': potTypeColor = 'yellow'; specialPotType = 'Arena '; unlockItem = 'Arena Booster'; break;
-                    case 'Luminmech': potTypeColor = 'grape'; specialPotType = 'Luminmech '; unlockItem = 'Luminmech Grainne Crystal'; break;
-                    default: unlockItem = 'Photon Sphere';
-                }
-                let potUnlockString: any =
-                    <Flex align="center" key={uuidv4()} gap={5}>
-                        ※ Requires
-                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Tool.png" alt="Tool" w={16} h={16} />
-                        <strong key={uuidv4()}>{unlockItem}s</strong> to unlock {specialPotType}Potential
-                    </Flex>
-                let tooltipText: any = <SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{potEffect}{potUnlockString}</SimpleGrid>
-                if (pot.Effect[0].length > 100 || pot.Effect[2].length > 100 || pot.Effect[2].length > 100) {
-                    buffer.push(
-                        <Tooltip key={uuidv4()} label={tooltipText} color="dark" multiline w={700}>
-                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potList[i]}</Text></Flex>
-                        </Tooltip>
-                    )
-                } else {
-                    buffer.push(
-                        <Tooltip key={uuidv4()} label={tooltipText} color="dark">
-                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potList[i]}</Text></Flex>
-                        </Tooltip>
-                    )
-                }
-            } else {
-                buffer.push(<Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/RestrictedYellow.png" alt="Potential" title="Potential" w={16} h={16} /> !Potential not found: {potList[i]}</Flex>)
-            }
-        }
-        return buffer;
     }
 
     function displayElement(array: [string, number]): any[] {
