@@ -2,7 +2,7 @@
     {
         "Name (JP)": "守勢練陣",
         "Name (English)": "Defensive Stance",
-        "Name (Global)": "Practiced Guard",
+        "Name (Global)": "PractIced Guard",
         "Effect (JP)": [
             "ガードスタンス発動中、打撃射撃威力(10%)と打撃防御(25)が上昇する。",
             "ガードスタンス発動中、打撃射撃威力(12%)と打撃防御(35)が上昇する。",
@@ -149,20 +149,20 @@
             "ジャストアタックの効果が(5%)上昇する。(※テクニック以外に有効)"
         ],
         "Effect (English)": [
-            "Increases the damage of Just Attack by 3%.",
-            "Increases the damage of Just Attack by 4%.",
-            "Increases the damage of Just Attack by 5%."
+            "Increases the damage of non-Technique Just Attacks by 3%.",
+            "Increases the damage of non-Technique Just Attacks by 4%.",
+            "Increases the damage of non-Technique Just Attacks by 5%."
         ],
         "Effect (Global)": [
-            "Increases the damage of Perfect Attack by 3%.",
-            "Increases the damage of Perfect Attack by 4%.",
-            "Increases the damage of Perfect Attack by 5%."
+            "Increases the damage of non-Technique Perfect Attacks by 3%.",
+            "Increases the damage of non-Technique Perfect Attacks by 4%.",
+            "Increases the damage of non-Technique Perfect Attacks by 5%."
         ]
     },
     {
         "Name (JP)": "炎獄",
         "Name (English)": "Raging Inferno",
-        "Name (Global)": "Hellfire",
+        "Name (Global)": "HellFire",
         "Effect (JP)": [
             "ブレイブスタンス中、正面への攻撃力が(10%)上昇する。",
             "ブレイブスタンス中、正面への攻撃力が(12%)上昇する。",
@@ -400,451 +400,1003 @@
         ]
     },
     {
+        "Name (JP)": "理力の結晶",
         "Name (English)": "Strength Crystal",
+        "Name (Global)": "Strength Crystal",
+        "Effect (JP)": [
+            "ウォンドリアクターの効果が上昇する。(8%)",
+            "ウォンドリアクターの効果が上昇する。(9%)",
+            "ウォンドリアクターの効果が上昇する。(10%)"
+        ],
         "Effect (English)": [
+            "Increases the effect of Wand Reactor by 8%.",
+            "Increases the effect of Wand Reactor by 9%.",
+            "Increases the effect of Wand Reactor by 10%."
+        ],
+        "Effect (Global)": [
             "Increases the effect of Wand Reactor by 8%.",
             "Increases the effect of Wand Reactor by 9%.",
             "Increases the effect of Wand Reactor by 10%."
         ]
     },
     {
+        "Name (JP)": "天断",
         "Name (English)": "Heavens Divide",
+        "Name (Global)": "Divine Judgement",
+        "Effect (JP)": [
+            "カタナコンバット中ジャストアタックのダメージが上昇する。(10%)",
+            "カタナコンバット中ジャストアタックのダメージが上昇する。(12%)",
+            "カタナコンバット中ジャストアタックのダメージが上昇する。(15%)"
+        ],
         "Effect (English)": [
             "Increases Just Attack damage by 10% during Katana Combat.",
             "Increases Just Attack damage by 12% during Katana Combat.",
             "Increases Just Attack damage by 15% during Katana Combat."
+        ],
+        "Effect (Global)": [
+            "Increases Perfect Attack damage by 10% during Katana Combat.",
+            "Increases Perfect Attack damage by 12% during Katana Combat.",
+            "Increases Perfect Attack damage by 15% during Katana Combat."
         ]
     },
     {
+        "Name (JP)": "審判の時",
         "Name (English)": "Judgment Time",
+        "Name (Global)": "Hour of Judgment",
+        "Effect (JP)": [
+            "アベレージスタンスの効果が上昇する。(5%)",
+            "アベレージスタンスの効果が上昇する。(6%)",
+            "アベレージスタンスの効果が上昇する。(7%)"
+        ],
         "Effect (English)": [
             "Increases the effects of Average Stance by 5%",
             "Increases the effects of Average Stance by 6%",
             "Increases the effects of Average Stance by 7%"
+        ],
+        "Effect (Global)": [
+            "Increases the effects of Basic Stance by 5%",
+            "Increases the effects of Basic Stance by 6%",
+            "Increases the effects of Basic Stance by 7%"
         ]
     },
     {
+        "Name (JP)": "審判の必撃",
         "Name (English)": "Inevitable Judgment",
+        "Name (Global)": "Inevitable Judgment",
+        "Effect (JP)": [
+            "アベレージスタンス時のクリティカル発生率を上昇させる。(18%)",
+            "アベレージスタンス時のクリティカル発生率を上昇させる。(19%)",
+            "アベレージスタンス時のクリティカル発生率を上昇させる。(20%)"
+        ],
         "Effect (English)": [
             "Increases critical hit rate during Average Stance by 18%",
             "Increases critical hit rate during Average Stance by 19%",
             "Increases critical hit rate during Average Stance by 20%"
+        ],
+        "Effect (Global)": [
+            "Increases critical hit rate during Basic Stance by 18%",
+            "Increases critical hit rate during Basic Stance by 19%",
+            "Increases critical hit rate during Basic Stance by 20%"
         ]
     },
     {
+        "Name (JP)": "点撃の構",
         "Name (English)": "Fragile Assault",
+        "Name (Global)": "Pinpoint Stance",
+        "Effect (JP)": [
+            "ウィークスタンスの効果が上昇する。(6%)",
+            "ウィークスタンスの効果が上昇する。(9%)",
+            "ウィークスタンスの効果が上昇する。(11%)"
+        ],
         "Effect (English)": [
             "Increases the effect of Weak Stance by 6%",
             "Increases the effect of Weak Stance by 9%",
             "Increases the effect of Weak Stance by 11%"
+        ],
+        "Effect (Global)": [
+            "Increases the effect of Precision Stance by 6%",
+            "Increases the effect of Precision Stance by 9%",
+            "Increases the effect of Precision Stance by 11%"
         ]
     },
     {
+        "Name (JP)": "死風連弾",
         "Name (English)": "Deadly Breeze",
+        "Name (Global)": "GunFire Gust",
+        "Effect (JP)": [
+            "ラピッドシュート時のダメージ量が増加する。(10%)",
+            "ラピッドシュート時のダメージ量が増加する。(12%)",
+            "ラピッドシュート時のダメージ量が増加する。(15%)"
+        ],
         "Effect (English)": [
             "Increases attack damage during Rapid Shoot by 10%",
             "Increases attack damage during Rapid Shoot by 12%",
             "Increases attack damage during Rapid Shoot by 15%"
+        ],
+        "Effect (Global)": [
+            "Increases attack damage during Rapid Fire by 10%",
+            "Increases attack damage during Rapid Fire by 12%",
+            "Increases attack damage during Rapid Fire by 15%"
         ]
     },
     {
+        "Name (JP)": "葬嵐連弾",
         "Name (English)": "Four-armed Gale",
+        "Name (Global)": "Four-armed Gale",
+        "Effect (JP)": [
+            "ラピッドシュート時のダメージ量が増加する。(??%)",
+            "ラピッドシュート時のダメージ量が増加する。(??%)",
+            "ラピッドシュート時のダメージ量が増加する。(30%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Rapid Shoot by ?%.",
             "Increases the damage of Rapid Shoot by ?%.",
             "Increases the damage of Rapid Shoot by 30%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Rapid Fire by ?%.",
+            "Increases the damage of Rapid Fire by ?%.",
+            "Increases the damage of Rapid Fire by 30%."
         ]
     },
     {
+        "Name (JP)": "業風跳法",
         "Name (English)": "Sudden Pouncing",
+        "Name (Global)": "Hurricane Kick",
+        "Effect (JP)": [
+            "スナッチステップが(100%)、スナッチJAコンボの威力が(5%)上昇する。",
+            "スナッチステップが(200%)、スナッチJAコンボの威力が(9%)上昇する。",
+            "スナッチステップが(300%)、スナッチJAコンボの威力が(14%)上昇する。"
+        ],
         "Effect (English)": [
             "Increases the damage of Snatch Step by 100% and Snatch JA Combo by 5%",
             "Increases the damage of Snatch Step by 200% and Snatch JA Combo by 9%",
             "Increases the damage of Snatch Step by 300% and Snatch JA Combo by 14%"
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Sidestep Tackle by 100% and Sidestep & Perf. ATK Combo by 5%",
+            "Increases the damage of Sidestep Tackle by 200% and Sidestep & Perf. ATK Combo by 9%",
+            "Increases the damage of Sidestep Tackle by 300% and Sidestep & Perf. ATK Combo by 14%"
         ]
     },
     {
+        "Name (JP)": "賢闘の型",
         "Name (English)": "Strategic Stance",
+        "Name (Global)": "Strategic Stance",
+        "Effect (JP)": [
+            "エレメンタルスタンス中、弱点属性での攻撃時に威力が(7%)上昇。",
+            "エレメンタルスタンス中、弱点属性での攻撃時に威力が(8%)上昇。",
+            "エレメンタルスタンス中、弱点属性での攻撃時に威力が(9%)上昇。"
+        ],
         "Effect (English)": [
+            "Increases the effect of Elemental Stance by 7%",
+            "Increases the effect of Elemental Stance by 8%",
+            "Increases the effect of Elemental Stance by 9%"
+        ],
+        "Effect (Global)": [
             "Increases the effect of Elemental Stance by 7%",
             "Increases the effect of Elemental Stance by 8%",
             "Increases the effect of Elemental Stance by 9%"
         ]
     },
     {
+        "Name (JP)": "鋭気賢闘の型",
         "Name (English)": "Brave Sage Stance",
+        "Name (Global)": "Clever Strategic Stance",
+        "Effect (JP)": [
+            "エレメンタルスタンス中、弱点属性での攻撃時に威力が(9%)上昇。",
+            "エレメンタルスタンス中、弱点属性での攻撃時に威力が(12%)上昇。",
+            "エレメンタルスタンス中、弱点属性での攻撃時に威力が(15%)上昇。"
+        ],
         "Effect (English)": [
+            "Increases the effect of Elemental Stance by 9%",
+            "Increases the effect of Elemental Stance by 12%",
+            "Increases the effect of Elemental Stance by 15%"
+        ],
+        "Effect (Global)": [
             "Increases the effect of Elemental Stance by 9%",
             "Increases the effect of Elemental Stance by 12%",
             "Increases the effect of Elemental Stance by 15%"
         ]
     },
     {
+        "Name (JP)": "裂破の型",
         "Name (English)": "Rending Stance",
+        "Name (Global)": "Devastation Stance",
+        "Effect (JP)": [
+            "ブレイクスタンスの効果が上昇する。(10%)",
+            "ブレイクスタンスの効果が上昇する。(12%)",
+            "ブレイクスタンスの効果が上昇する。(14%)"
+        ],
         "Effect (English)": [
+            "Increases the effect of Break Stance by 10%",
+            "Increases the effect of Break Stance by 12%",
+            "Increases the effect of Break Stance by 14%"
+        ],
+        "Effect (Global)": [
             "Increases the effect of Break Stance by 10%",
             "Increases the effect of Break Stance by 12%",
             "Increases the effect of Break Stance by 14%"
         ]
     },
     {
+        "Name (JP)": "裂破の型",
         "Name (English)": "Soul Rending Stance",
+        "Name (Global)": "Warring Devastation Stance",
+        "Effect (JP)": [
+            "ブレイクスタンスの効果が大きく上昇する。(30%)",
+            "ブレイクスタンスの効果が大きく上昇する。(45%)",
+            "ブレイクスタンスの効果が大きく上昇する。(60%)"
+        ],
         "Effect (English)": [
+            "Increases the effect of Break Stance by 30%",
+            "Increases the effect of Break Stance by 45%",
+            "Increases the effect of Break Stance by 60%"
+        ],
+        "Effect (Global)": [
             "Increases the effect of Break Stance by 30%",
             "Increases the effect of Break Stance by 45%",
             "Increases the effect of Break Stance by 60%"
         ]
     },
     {
-        "Name (English)": "Immediate Breathing",
-        "Effect (English)": [
-            "Increases Just Attack damage during Rapid Boost by 10%",
-            "Increases Just Attack damage during Rapid Boost by 13%",
-            "Increases Just Attack damage during Rapid Boost by 16%"
-        ]
-    },
-    {
+        "Name (JP)": "刹那の崩撃",
         "Name (English)": "Immediate Destruction",
+        "Name (Global)": "Immediate Destruction",
+        "Effect (JP)": [
+            "ジャストアタックの効果が上昇する。(6%) (※テクニック以外に有効)",
+            "ジャストアタックの効果が上昇する。(7%) (※テクニック以外に有効)",
+            "ジャストアタックの効果が上昇する。(8%) (※テクニック以外に有効)"
+        ],
         "Effect (English)": [
-            "Increases the effect of Just Attack by 6%.",
-            "Increases the effect of Just Attack by 7%.",
-            "Increases the effect of Just Attack by 8%."
+            "Increases the effect of non-Technique Just Attacks by 6%.",
+            "Increases the effect of non-Technique Just Attacks by 7%.",
+            "Increases the effect of non-Technique Just Attacks by 8%."
+        ],
+        "Effect (Global)": [
+            "Increases the effect of non-Technique Perfect Attacks by 6%.",
+            "Increases the effect of non-Technique Perfect Attacks by 7%.",
+            "Increases the effect of non-Technique Perfect Attacks by 8%."
         ]
     },
     {
-        "Name (English)": "Immediate Justice",
+        "Name (JP)": "瞬刻の理",
+        "Name (English)": "Immediate JustIce",
+        "Name (Global)": "Flawless Technique",
+        "Effect (JP)": [
+            "テクニックジャストアタックの効果が(3%)上昇する。",
+            "テクニックジャストアタックの効果が(4%)上昇する。",
+            "テクニックジャストアタックの効果が(5%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases the effect of Techniques' Just Attack by 3%.",
-            "Increases the effect of Techniques' Just Attack by 4%.",
-            "Increases the effect of Techniques' Just Attack by 5%."
+            "Increases the effect of Techniques' Just Attacks by 3%.",
+            "Increases the effect of Techniques' Just Attacks by 4%.",
+            "Increases the effect of Techniques' Just Attacks by 5%."
+        ],
+        "Effect (Global)": [
+            "Increases the effect of Techniques' Perfect Attacks by 3%.",
+            "Increases the effect of Techniques' Perfect Attacks by 4%.",
+            "Increases the effect of Techniques' Perfect Attacks by 5%."
         ]
     },
     {
+        "Name (JP)": "瞬刻の天理",
         "Name (English)": "Immediate Decree",
+        "Name (Global)": "Immediate Decree",
+        "Effect (JP)": [
+            "テクニックジャストアタックの効果が上昇する。(6%)",
+            "テクニックジャストアタックの効果が上昇する。(7%)",
+            "テクニックジャストアタックの効果が上昇する。(8%)"
+        ],
         "Effect (English)": [
+            "Increases the effect of Techniques' Just Attack by 6%.",
+            "Increases the effect of Techniques' Just Attack by 7%.",
+            "Increases the effect of Techniques' Just Attack by 8%."
+        ],
+        "Effect (Global)": [
             "Increases the effect of Techniques' Just Attack by 6%.",
             "Increases the effect of Techniques' Just Attack by 7%.",
             "Increases the effect of Techniques' Just Attack by 8%."
         ]
     },
     {
+        "Name (JP)": "追の衝撃",
         "Name (English)": "Pursuing Strike",
+        "Name (Global)": "Stalking Strike",
+        "Effect (JP)": [
+            "状態異常のエネミーに与える打撃ダメージが(17%)上昇する。",
+            "状態異常のエネミーに与える打撃ダメージが(19%)上昇する。",
+            "状態異常のエネミーに与える打撃ダメージが(21%)上昇する。"
+        ],
         "Effect (English)": [
+            "Increases damage against enemies suffering from a status effect by 17%.",
+            "Increases damage against enemies suffering from a status effect by 19%.",
+            "Increases damage against enemies suffering from a status effect by 21%."
+        ],
+        "Effect (Global)": [
             "Increases damage against enemies suffering from a status effect by 17%.",
             "Increases damage against enemies suffering from a status effect by 19%.",
             "Increases damage against enemies suffering from a status effect by 21%."
         ]
     },
     {
-        "Name (English)": "Pursuing Bonds",
-        "Effect (English)": [
-            "22% chance of Binding an enemy suffering from a status effect.",
-            "24% chance of Binding an enemy suffering from a status effect.",
-            "26% chance of Binding an enemy suffering from a status effect."
-        ]
-    },
-    {
+        "Name (JP)": "修羅紋",
         "Name (English)": "Crest of Carnage",
+        "Name (Global)": "Crest of Carnage",
+        "Effect (JP)": [
+            "HPが半分以下でダメージが上昇する。(5%)",
+            "HPが半分以下でダメージが上昇する。(7%)",
+            "HPが半分以下でダメージが上昇する。(9%)"
+        ],
         "Effect (English)": [
-            "Boost damage by 5% when HP is 50% or lower.",
-            "Boost damage by 7% when HP is 50% or lower.",
-            "Boost damage by 9% when HP is 50% or lower."
+            "Increases damage by 5% when HP is below 50%.",
+            "Increases damage by 7% when HP is below 50%.",
+            "Increases damage by 9% when HP is below 50%."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 5% when HP is below 50%.",
+            "Increases damage by 7% when HP is below 50%.",
+            "Increases damage by 9% when HP is below 50%."
         ]
     },
     {
+        "Name (JP)": "背水陣",
         "Name (English)": "Last Stand",
+        "Name (Global)": "Last Stand",
+        "Effect (JP)": [
+            "HPが1/4以下でダメージが上昇する。(8%)",
+            "HPが1/4以下でダメージが上昇する。(11%)",
+            "HPが1/4以下でダメージが上昇する。(14%)"
+        ],
         "Effect (English)": [
-            "Boost damage by 8% when HP is 25% or lower.",
-            "Boost damage by 11% when HP is 25% or lower.",
-            "Boost damage by 14% when HP is 25% or lower."
+            "Increases damage by 8% when HP is below 25%.",
+            "Increases damage by 11% when HP is below 25%.",
+            "Increases damage by 14% when HP is below 25%."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 8% when HP is below 25%.",
+            "Increases damage by 11% when HP is below 25%.",
+            "Increases damage by 14% when HP is below 25%."
         ]
     },
     {
+        "Name (JP)": "痛打必倒",
         "Name (English)": "Crushing Blow",
+        "Name (Global)": "Crushing Blow",
+        "Effect (JP)": [
+            "射撃による弱点へのダメージが(6%)上昇する。",
+            "射撃による弱点へのダメージが(7%)上昇する。",
+            "射撃による弱点へのダメージが(9%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases ranged damage when attacking weak points by 6%",
-            "Increases ranged damage when attacking weak points by 7%.",
-            "Increases ranged damage when attacking weak points by 9%."
+            "Increases damage dealt to weak points by Ranged attacks by 6%",
+            "Increases damage dealt to weak points by Ranged attacks by 7%.",
+            "Increases damage dealt to weak points by Ranged attacks by 9%."
+        ],
+        "Effect (Global)": [
+            "Increases damage dealt to weak points by Ranged attacks by 6%",
+            "Increases damage dealt to weak points by Ranged attacks by 7%.",
+            "Increases damage dealt to weak points by Ranged attacks by 9%."
         ]
     },
     {
+        "Name (JP)": "虚眼必穿",
         "Name (English)": "Deadeye Shooter",
+        "Name (Global)": "Deadeye Shooter",
+        "Effect (JP)": [
+            "射撃による弱点へのダメージが(7%)上昇する。",
+            "射撃による弱点へのダメージが(9%)上昇する。",
+            "射撃による弱点へのダメージが(11%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases ranged damage when attacking weak points by 7%",
-            "Increases ranged damage when attacking weak points by 9%.",
-            "Increases ranged damage when attacking weak points by 11%."
+            "Increases damage dealt to weak points by Ranged attacks by 7%",
+            "Increases damage dealt to weak points by Ranged attacks by 9%.",
+            "Increases damage dealt to weak points by Ranged attacks by 11%."
+        ],
+        "Effect (Global)": [
+            "Increases damage dealt to weak points by Ranged attacks by 7%",
+            "Increases damage dealt to weak points by Ranged attacks by 9%.",
+            "Increases damage dealt to weak points by Ranged attacks by 11%."
         ]
     },
     {
+        "Name (JP)": "零の手",
         "Name (English)": "Zero Effort",
+        "Name (Global)": "Close-Up Hands",
+        "Effect (JP)": [
+            "近距離時に射撃ダメージを(12%)上昇する。",
+            "近距離時に射撃ダメージを(14%)上昇する。",
+            "近距離時に射撃ダメージを(16%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases ranged damage at point-blank by 12%.",
-            "Increases ranged damage at point-blank by 14%.",
-            "Increases ranged damage at point-blank by 16%."
+            "Increases Ranged damage at point-blank by 12%.",
+            "Increases Ranged damage at point-blank by 14%.",
+            "Increases Ranged damage at point-blank by 16%."
+        ],
+        "Effect (Global)": [
+            "Increases Ranged damage at point-blank by 12%.",
+            "Increases Ranged damage at point-blank by 14%.",
+            "Increases Ranged damage at point-blank by 16%."
         ]
     },
     {
+        "Name (JP)": "集気光",
         "Name (English)": "Spirit Collector",
+        "Name (Global)": "Photon Harvest",
+        "Effect (JP)": [
+            "攻撃時のPP回復量が(10%)上昇する。",
+            "攻撃時のPP回復量が(20%)上昇する。",
+            "攻撃時のPP回復量が(30%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases Attack PP Recovery by 10%.",
-            "Increases Attack PP Recovery by 20%.",
-            "Increases Attack PP Recovery by 30%."
+            "Increases Active PP Recovery by 10%.",
+            "Increases Active PP Recovery by 20%.",
+            "Increases Active PP Recovery by 30%."
+        ],
+        "Effect (Global)": [
+            "Increases Active PP Recovery by 10%.",
+            "Increases Active PP Recovery by 20%.",
+            "Increases Active PP Recovery by 30%."
         ]
     },
     {
+        "Name (JP)": "煌気光",
         "Name (English)": "Spirit Radiance",
+        "Name (Global)": "Spirit Radiance",
+        "Effect (JP)": [
+            "攻撃時のPP回復量が(40%)上昇する。",
+            "攻撃時のPP回復量が(60%)上昇する。",
+            "攻撃時のPP回復量が(80%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases Attack PP Recovery by 40%.",
-            "Increases Attack PP Recovery by 60%.",
-            "Increases Attack PP Recovery by 80%."
+            "Increases Active PP Recovery by 40%.",
+            "Increases Active PP Recovery by 60%.",
+            "Increases Active PP Recovery by 80%."
+        ],
+        "Effect (Global)": [
+            "Increases Active PP Recovery by 40%.",
+            "Increases Active PP Recovery by 60%.",
+            "Increases Active PP Recovery by 80%."
         ]
     },
     {
-        "Name (English)": "Absolute Edge",
-        "Effect (English)": [
-            "Attack damage against aerial enemies boosted by 16%.",
-            "Attack damage against aerial enemies boosted by 18%.",
-            "Attack damage against aerial enemies boosted by 20%."
-        ]
-    },
-    {
+        "Name (JP)": "飛天の撃",
         "Name (English)": "Aerial Attack",
+        "Name (Global)": "Aerial Ace",
+        "Effect (JP)": [
+            "空中での攻撃時にダメージが上昇する。(6%)",
+            "空中での攻撃時にダメージが上昇する。(8%)",
+            "空中での攻撃時にダメージが上昇する。(10%)"
+        ],
         "Effect (English)": [
-            "Attack damage against aerial enemies boosted by 6%.",
-            "Attack damage against aerial enemies boosted by 8%.",
-            "Attack damage against aerial enemies boosted by 10%."
+            "Increases damage against airborne enemies by 6%.",
+            "Increases damage against airborne enemies by 8%.",
+            "Increases damage against airborne enemies by 10%."
+        ],
+        "Effect (Global)": [
+            "Increases damage against airborne enemies by 6%.",
+            "Increases damage against airborne enemies by 8%.",
+            "Increases damage against airborne enemies by 10%."
         ]
     },
     {
+        "Name (JP)": "祈念の形",
         "Name (English)": "Prayer's Form",
+        "Name (Global)": "Prayer's Form",
+        "Effect (JP)": [
+            "チャージテクニックのダメージを(5%)上昇させる。",
+            "チャージテクニックのダメージを(7%)上昇させる。",
+            "チャージテクニックのダメージを(10%)上昇させる。"
+        ],
         "Effect (English)": [
-            "Increases charged technique damage by 5%.",
-            "Increases charged technique damage by 7%.",
-            "Increases charged technique damage by 10%."
+            "Increases the damage of charged Techniques by 5%.",
+            "Increases the damage of charged Techniques by 7%.",
+            "Increases the damage of charged Techniques by 10%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of charged Techniques by 5%.",
+            "Increases the damage of charged Techniques by 7%.",
+            "Increases the damage of charged Techniques by 10%."
         ]
     },
     {
-        "Name (English)": "Oath's Form",
-        "Effect (English)": [
-            "Increases charged technique damage by 6%.",
-            "Increases charged technique damage by 7%.",
-            "Increases charged technique damage by 8%."
-        ]
-    },
-    {
+        "Name (JP)": "無心の形",
         "Name (English)": "Innocent Appearance",
+        "Name (Global)": "Innocent Appearance",
+        "Effect (JP)": [
+            "チャージしていないテクニックの威力が(50%)上昇する。",
+            "チャージしていないテクニックの威力が(60%)上昇する。",
+            "チャージしていないテクニックの威力が(70%)上昇する。"
+        ],
         "Effect (English)": [
-            "damage of uncharged techniques boosted by 50%.",
-            "damage of uncharged techniques boosted by 60%.",
-            "damage of uncharged techniques boosted by 70%."
+            "Increases the damage of uncharged Techniques by 50%.",
+            "Increases the damage of uncharged Techniques by 60%.",
+            "Increases the damage of uncharged Techniques by 70%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of uncharged Techniques by 50%.",
+            "Increases the damage of uncharged Techniques by 60%.",
+            "Increases the damage of uncharged Techniques by 70%."
         ]
     },
     {
+        "Name (JP)": "炎の刻印",
         "Name (English)": "Burning Seal",
+        "Name (Global)": "Burning Seal",
+        "Effect (JP)": [
+            "炎属性テクニックのチャージ時間を短縮する。(10%)",
+            "炎属性テクニックのチャージ時間を短縮する。(16%)",
+            "炎属性テクニックのチャージ時間を短縮する。(19%)"
+        ],
         "Effect (English)": [
-            "Reduces the charge time for fire techniques by 10%.",
-            "Reduces the charge time for fire techniques by 16%.",
-            "Reduces the charge time for fire techniques by 19%."
+            "Reduces the charge time of Fire Techniques by 10%.",
+            "Reduces the charge time of Fire Techniques by 16%.",
+            "Reduces the charge time of Fire Techniques by 19%."
+        ],
+        "Effect (Global)": [
+            "Reduces the charge time of Fire Techniques by 10%.",
+            "Reduces the charge time of Fire Techniques by 16%.",
+            "Reduces the charge time of Fire Techniques by 19%."
         ]
     },
     {
+        "Name (JP)": "氷縛刻印",
         "Name (English)": "Frozen Seal",
+        "Name (Global)": "Frozen Seal",
+        "Effect (JP)": [
+            "氷属性テクニックのチャージ時間を短縮する。(10%)",
+            "氷属性テクニックのチャージ時間を短縮する。(15%)",
+            "氷属性テクニックのチャージ時間を短縮する。(20%)"
+        ],
         "Effect (English)": [
-            "Reduces the charge time for ice techniques by 10%.",
-            "Reduces the charge time for ice techniques by 15%.",
-            "Reduces the charge time for ice techniques by 20%."
+            "Reduces the charge time of Ice Techniques by 10%.",
+            "Reduces the charge time of Ice Techniques by 15%.",
+            "Reduces the charge time of Ice Techniques by 20%."
+        ],
+        "Effect (Global)": [
+            "Reduces the charge time of Ice Techniques by 10%.",
+            "Reduces the charge time of Ice Techniques by 15%.",
+            "Reduces the charge time of Ice Techniques by 20%."
         ]
     },
     {
+        "Name (JP)": "雷鳴刻印",
         "Name (English)": "Thunder Seal",
+        "Name (Global)": "Thunder Seal",
+        "Effect (JP)": [
+            "雷属性テクニックのチャージ時間を短縮する。(10%)",
+            "雷属性テクニックのチャージ時間を短縮する。(15%)",
+            "雷属性テクニックのチャージ時間を短縮する。(20%)"
+        ],
         "Effect (English)": [
-            "Reduces the charge time for lightning techniques by 10%.",
-            "Reduces the charge time for lightning techniques by 15%.",
-            "Reduces the charge time for lightning techniques by 20%."
+            "Reduces the charge time of Lightning Techniques by 10%.",
+            "Reduces the charge time of Lightning Techniques by 15%.",
+            "Reduces the charge time of Lightning Techniques by 20%."
+        ],
+        "Effect (Global)": [
+            "Reduces the charge time of Lightning Techniques by 10%.",
+            "Reduces the charge time of Lightning Techniques by 15%.",
+            "Reduces the charge time of Lightning Techniques by 20%."
         ]
     },
     {
+        "Name (JP)": "風の囁き",
         "Name (English)": "Wind's Whisper",
+        "Name (Global)": "Whispering Wind",
+        "Effect (JP)": [
+            "風属性テクニックのチャージ時間を短縮する。(10%)",
+            "風属性テクニックのチャージ時間を短縮する。(16%)",
+            "風属性テクニックのチャージ時間を短縮する。(19%)"
+        ],
         "Effect (English)": [
-            "Reduces the charge time for wind techniques by 10%.",
-            "Reduces the charge time for wind techniques by 16%.",
-            "Reduces the charge time for wind techniques by 19%."
+            "Reduces the charge time of Wind Techniques by 10%.",
+            "Reduces the charge time of Wind Techniques by 16%.",
+            "Reduces the charge time of Wind Techniques by 19%."
+        ],
+        "Effect (Global)": [
+            "Reduces the charge time of Wind Techniques by 10%.",
+            "Reduces the charge time of Wind Techniques by 16%.",
+            "Reduces the charge time of Wind Techniques by 19%."
         ]
     },
     {
+        "Name (JP)": "月夜の祝詞",
         "Name (English)": "Moonlit Ritual",
+        "Name (Global)": "Moonlit Ritual",
+        "Effect (JP)": [
+            "光属性テクニックのチャージ時間を短縮する。(10%)",
+            "光属性テクニックのチャージ時間を短縮する。(16%)",
+            "光属性テクニックのチャージ時間を短縮する。(19%)"
+        ],
         "Effect (English)": [
-            "Reduces the charge time for light techniques by 10%.",
-            "Reduces the charge time for light techniques by 15%.",
-            "Reduces the charge time for light techniques by 20%."
+            "Reduces the charge time of Light Techniques by 10%.",
+            "Reduces the charge time of Light Techniques by 15%.",
+            "Reduces the charge time of Light Techniques by 20%."
+        ],
+        "Effect (Global)": [
+            "Reduces the charge time of Light Techniques by 10%.",
+            "Reduces the charge time of Light Techniques by 15%.",
+            "Reduces the charge time of Light Techniques by 20%."
         ]
     },
     {
+        "Name (JP)": "悪魔の遊戯",
         "Name (English)": "Devil's Game",
+        "Name (Global)": "Devil's Game",
+        "Effect (JP)": [
+            "ナ・メギドを除く闇属性テクニックのチャージ時間を短縮する。(10%)",
+            "ナ・メギドを除く闇属性テクニックのチャージ時間を短縮する。(16%)",
+            "ナ・メギドを除く闇属性テクニックのチャージ時間を短縮する。(19%)"
+        ],
         "Effect (English)": [
-            "Reduces the charge time for dark techniques by 10%.",
-            "Reduces the charge time for dark techniques by 15%.",
-            "Reduces the charge time for dark techniques by 20%."
+            "Reduces the charge time of Dark Techniques (except Namegid) by 10%.",
+            "Reduces the charge time of Dark Techniques (except Namegid) by 16%.",
+            "Reduces the charge time of Dark Techniques (except Namegid) by 19%."
+        ],
+        "Effect (Global)": [
+            "Reduces the charge time of Dark Techniques (except Namegid) by 10%.",
+            "Reduces the charge time of Dark Techniques (except Namegid) by 16%.",
+            "Reduces the charge time of Dark Techniques (except Namegid) by 19%."
         ]
     },
     {
+        "Name (JP)": "紅蓮結晶",
         "Name (English)": "Crimson Crystal",
+        "Name (Global)": "Crimson Crystal",
+        "Effect (JP)": [
+            "炎属性テクニックのダメージが(12%)上昇する。",
+            "炎属性テクニックのダメージが(14%)上昇する。",
+            "炎属性テクニックのダメージが(16%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases fire technique damage by 12%.",
-            "Increases fire technique damage by 14%.",
-            "Increases fire technique damage by 16%."
+            "Increases Fire Technique damage by 12%.",
+            "Increases Fire Technique damage by 14%.",
+            "Increases Fire Technique damage by 16%."
+        ],
+        "Effect (Global)": [
+            "Increases Fire Technique damage by 12%.",
+            "Increases Fire Technique damage by 14%.",
+            "Increases Fire Technique damage by 16%."
         ]
     },
     {
+        "Name (JP)": "氷縛結晶",
         "Name (English)": "Frozen Crystal",
+        "Name (Global)": "Frozen Crystal",
+        "Effect (JP)": [
+            "氷属性テクニックのダメージが(12%)上昇する。",
+            "氷属性テクニックのダメージが(14%)上昇する。",
+            "氷属性テクニックのダメージが(16%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases ice technique damage by 12%.",
-            "Increases ice technique damage by 14%.",
-            "Increases ice technique damage by 16%."
+            "Increases Ice Technique damage by 12%.",
+            "Increases Ice Technique damage by 14%.",
+            "Increases Ice Technique damage by 16%."
+        ],
+        "Effect (Global)": [
+            "Increases Ice Technique damage by 12%.",
+            "Increases Ice Technique damage by 14%.",
+            "Increases Ice Technique damage by 16%."
         ]
     },
     {
-        "Name (English)": "Freezing Strike",
-        "Effect (English)": [
-            "Increases technique freeze rate by 6%.",
-            "Increases technique freeze rate by 7%.",
-            "Increases technique freeze rate by 8%."
-        ]
-    },
-    {
+        "Name (JP)": "雷鳴結晶",
         "Name (English)": "Thunder Crystal",
+        "Name (Global)": "Thunder Crystal",
+        "Effect (JP)": [
+            "雷属性テクニックのダメージが(12%)上昇する。",
+            "雷属性テクニックのダメージが(14%)上昇する。",
+            "雷属性テクニックのダメージが(16%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases lightning technique damage by 12%.",
-            "Increases lightning technique damage by 14%.",
-            "Increases lightning technique damage by 16%."
+            "Increases Lightning Technique damage by 12%.",
+            "Increases Lightning Technique damage by 14%.",
+            "Increases Lightning Technique damage by 16%."
+        ],
+        "Effect (Global)": [
+            "Increases Lightning Technique damage by 12%.",
+            "Increases Lightning Technique damage by 14%.",
+            "Increases Lightning Technique damage by 16%."
         ]
     },
     {
-        "Name (English)": "Paralyzing Strike",
-        "Effect (English)": [
-            "Increases technique shock rate by 6%.",
-            "Increases technique shock rate by 7%.",
-            "Increases technique shock rate by 8%."
-        ]
-    },
-    {
+        "Name (JP)": "古の誓い",
         "Name (English)": "Ancient Oath",
+        "Name (Global)": "Ancient Oath",
+        "Effect (JP)": [
+            "弱点属性で攻撃した時、ダメージが(10%)上昇する。",
+            "弱点属性で攻撃した時、ダメージが(12%)上昇する。",
+            "弱点属性で攻撃した時、ダメージが(14%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases elemental weakness damage by 10%.",
-            "Increases elemental weakness damage by 12%.",
-            "Increases elemental weakness damage by 14%."
+            "Increases damage by 10% when hitting an elemental weakness.",
+            "Increases damage by 12% when hitting an elemental weakness.",
+            "Increases damage by 14% when hitting an elemental weakness."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 10% when hitting an elemental weakness.",
+            "Increases damage by 12% when hitting an elemental weakness.",
+            "Increases damage by 14% when hitting an elemental weakness."
         ]
     },
     {
+        "Name (JP)": "観理眼",
         "Name (English)": "Discerning Eye",
+        "Name (Global)": "All-Seeing Eye",
+        "Effect (JP)": [
+            "弱点属性で攻撃した時、ダメージが(6%)上昇する。",
+            "弱点属性で攻撃した時、ダメージが(7%)上昇する。",
+            "弱点属性で攻撃した時、ダメージが(8%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases elemental weakness damage by 6%.",
-            "Increases elemental weakness damage by 7%.",
-            "Increases elemental weakness damage by 8%."
+            "Increases damage by 6% when hitting an elemental weakness.",
+            "Increases damage by 7% when hitting an elemental weakness.",
+            "Increases damage by 8% when hitting an elemental weakness."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 6% when hitting an elemental weakness.",
+            "Increases damage by 7% when hitting an elemental weakness.",
+            "Increases damage by 8% when hitting an elemental weakness."
         ]
     },
     {
+        "Name (JP)": "光輝の癒し",
         "Name (English)": "Splendid Recovery",
+        "Name (Global)": "Photon Mending",
+        "Effect (JP)": [
+            "PPの回復速度が(10%)上昇する。",
+            "PPの回復速度が(13%)上昇する。",
+            "PPの回復速度が(16%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases PP recovery speed by 10%.",
-            "Increases PP recovery speed by 13%.",
-            "Increases PP recovery speed by 16%."
+            "Increases Natural PP Recovery by 10%.",
+            "Increases Natural PP Recovery by 13%.",
+            "Increases Natural PP Recovery by 16%."
+        ],
+        "Effect (Global)": [
+            "Increases Natural PP Recovery by 10%.",
+            "Increases Natural PP Recovery by 13%.",
+            "Increases Natural PP Recovery by 16%."
         ]
     },
     {
+        "Name (JP)": "月夜の尊",
         "Name (English)": "Moonlit Nobility",
+        "Name (Global)": "Precious Moonlight",
+        "Effect (JP)": [
+            "光属性テクニックのダメージが(12%)上昇する。",
+            "光属性テクニックのダメージが(14%)上昇する。",
+            "光属性テクニックのダメージが(16%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases light technique damage by 12%.",
-            "Increases light technique damage by 14%.",
-            "Increases light technique damage by 16%."
+            "Increases Light Technique damage by 12%.",
+            "Increases Light Technique damage by 14%.",
+            "Increases Light Technique damage by 16%."
+        ],
+        "Effect (Global)": [
+            "Increases Light Technique damage by 12%.",
+            "Increases Light Technique damage by 14%.",
+            "Increases Light Technique damage by 16%."
         ]
     },
     {
+        "Name (JP)": "癒しの風",
         "Name (English)": "Healing Wind",
+        "Name (Global)": "Healing Wind",
+        "Effect (JP)": [
+            "レスタの効果が上昇する。(22%)",
+            "レスタの効果が上昇する。(24%)",
+            "レスタの効果が上昇する。(26%)"
+        ],
         "Effect (English)": [
+            "Increases the effect of Resta by 22%.",
+            "Increases the effect of Resta by 24%.",
+            "Increases the effect of Resta by 26%."
+        ],
+        "Effect (Global)": [
             "Increases the effect of Resta by 22%.",
             "Increases the effect of Resta by 24%.",
             "Increases the effect of Resta by 26%."
         ]
     },
     {
+        "Name (JP)": "悪魔の微笑",
         "Name (English)": "Demonic Smile",
+        "Name (Global)": "Demon's Smirk",
+        "Effect (JP)": [
+            "闇属性テクニックのダメージが(12%)上昇する。",
+            "闇属性テクニックのダメージが(14%)上昇する。",
+            "闇属性テクニックのダメージが(16%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases dark technique damage by 12%.",
-            "Increases dark technique damage by 14%.",
-            "Increases dark technique damage by 16%."
+            "Increases Dark Technique damage by 12%.",
+            "Increases Dark Technique damage by 14%.",
+            "Increases Dark Technique damage by 16%."
+        ],
+        "Effect (Global)": [
+            "Increases Dark Technique damage by 12%.",
+            "Increases Dark Technique damage by 14%.",
+            "Increases Dark Technique damage by 16%."
         ]
     },
     {
+        "Name (JP)": "西風の加護",
         "Name (English)": "Wind Protection",
+        "Name (Global)": "Aegis of the West Wind",
+        "Effect (JP)": [
+            "風属性テクニックのダメージが(12%)上昇する。",
+            "風属性テクニックのダメージが(14%)上昇する。",
+            "風属性テクニックのダメージが(16%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases wind technique damage by 12%.",
-            "Increases wind technique damage by 14%.",
-            "Increases wind technique damage by 16%."
+            "Increases Wind Technique damage by 12%.",
+            "Increases Wind Technique damage by 14%.",
+            "Increases Wind Technique damage by 16%."
+        ],
+        "Effect (Global)": [
+            "Increases Wind Technique damage by 12%.",
+            "Increases Wind Technique damage by 14%.",
+            "Increases Wind Technique damage by 16%."
         ]
     },
     {
+        "Name (JP)": "北風の暴威",
         "Name (English)": "Boreas' Tyranny",
+        "Name (Global)": "Northern Gale",
+        "Effect (JP)": [
+            "風属性テクニックのダメージが(12%)上昇する。",
+            "風属性テクニックのダメージが(16%)上昇する。",
+            "風属性テクニックのダメージが(20%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases wind technique damage by 12%.",
-            "Increases wind technique damage by 16%.",
-            "Increases wind technique damage by 20%."
+            "Increases Wind Technique damage by 12%.",
+            "Increases Wind Technique damage by 16%.",
+            "Increases Wind Technique damage by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases Wind Technique damage by 12%.",
+            "Increases Wind Technique damage by 16%.",
+            "Increases Wind Technique damage by 20%."
         ]
     },
     {
+        "Name (JP)": "須臾の極",
         "Name (English)": "Immediate End",
+        "Name (Global)": "Ultimate Perfection",
+        "Effect (JP)": [
+            "ジャストアタック時に一定確率でスタンを発生させる。",
+            "ジャストアタック時に一定確率でスタンを発生させる。",
+            "ジャストアタック時に一定確率でスタンを発生させる。"
+        ],
         "Effect (English)": [
-            "May cause stun when using Just Attacks.",
-            "May cause stun when using Just Attacks.",
-            "May cause stun when using Just Attacks."
+            "Chance of causing Stun when using Just Attacks.",
+            "Chance of causing Stun when using Just Attacks.",
+            "Chance of causing Stun when using Just Attacks."
+        ],
+        "Effect (Global)": [
+            "Chance of causing Stun when using Perfect Attacks.",
+            "Chance of causing Stun when using Perfect Attacks.",
+            "Chance of causing Stun when using Perfect Attacks."
         ]
     },
     {
+        "Name (JP)": "枯渇望景",
         "Name (English)": "Exhausted Ambition",
+        "Name (Global)": "Exhausted Ambition",
+        "Effect (JP)": [
+            "PPが50%以下の時、打撃力と射撃力が上昇する。(150)",
+            "PPが50%以下の時、打撃力と射撃力が上昇する。(200)",
+            "PPが50%以下の時、打撃力と射撃力が上昇する。(250)"
+        ],
         "Effect (English)": [
             "Increases S-ATK and R-ATK by 150 when PP is at 50% or less.",
             "Increases S-ATK and R-ATK by 200 when PP is at 50% or less.",
             "Increases S-ATK and R-ATK by 250 when PP is at 50% or less."
+        ],
+        "Effect (Global)": [
+            "Increases MEL Pwr and RNG Pwr by 150 when PP is at 50% or less.",
+            "Increases MEL Pwr and RNG Pwr by 200 when PP is at 50% or less.",
+            "Increases MEL Pwr and RNG Pwr by 250 when PP is at 50% or less."
         ]
     },
     {
+        "Name (JP)": "暗心舞踏",
         "Name (English)": "Black Heart",
+        "Name (Global)": "Danse Macabre",
+        "Effect (JP)": [
+            "PPが50%以下の時、打撃力と射撃力が上昇する。(300)",
+            "PPが50%以下の時、打撃力と射撃力が上昇する。(340)",
+            "PPが50%以下の時、打撃力と射撃力が上昇する。(400)"
+        ],
         "Effect (English)": [
+            "Increases S-ATK and R-ATK by 300 when PP is at 50% or less.",
+            "Increases S-ATK and R-ATK by 340 when PP is at 50% or less.",
+            "Increases S-ATK and R-ATK by 400 when PP is at 50% or less."
+        ],
+        "Effect (Global)": [
             "Increases S-ATK and R-ATK by 300 when PP is at 50% or less.",
             "Increases S-ATK and R-ATK by 340 when PP is at 50% or less.",
             "Increases S-ATK and R-ATK by 400 when PP is at 50% or less."
         ]
     },
     {
+        "Name (JP)": "弧月蝕",
         "Name (English)": "Crescent Eclipse",
+        "Name (Global)": "Absorbing Eclipse",
+        "Effect (JP)": [
+            "ダメージを与えた際に一定確率でHPを吸収する。(与ダメの10%吸収)",
+            "ダメージを与えた際に一定確率でHPを吸収する。(与ダメの12%吸収)",
+            "ダメージを与えた際に一定確率でHPを吸収する。(与ダメの15%吸収)"
+        ],
         "Effect (English)": [
-            "Fixed probability of absorbing HP by 10% of damage given.",
-            "Fixed probability of absorbing HP by 12% of damage given.",
-            "Fixed probability of absorbing HP by 15% of damage given."
+            "Chance of restoring HP equal to 10% of damage dealt.",
+            "Chance of restoring HP equal to 12% of damage dealt.",
+            "Chance of restoring HP equal to 15% of damage dealt."
+        ],
+        "Effect (Global)": [
+            "Chance of restoring HP equal to 10% of damage dealt.",
+            "Chance of restoring HP equal to 12% of damage dealt.",
+            "Chance of restoring HP equal to 15% of damage dealt."
         ]
     },
     {
+        "Name (JP)": "逆境栄心",
         "Name (English)": "Adverse Vanity",
+        "Name (Global)": "Adverse Vanity",
+        "Effect (JP)": [
+            "自分が状態異常の間、PPの回復量が上昇する。(10%/15%/20%)",
+            "自分が状態異常の間、PPの回復量が上昇する。(10%/15%/20%)",
+            "自分が状態異常の間、PPの回復量が上昇する。(10%/15%/20%)"
+        ],
         "Effect (English)": [
-            "Boost PP recovery rate by 10% when afflicted with a status effect.",
-            "Boost PP recovery rate by 15% when afflicted with a status effect.",
-            "Boost PP recovery rate by 20% when afflicted with a status effect."
+            "Increases PP recovery rate by 10% when afflicted with a status effect.",
+            "Increases PP recovery rate by 15% when afflicted with a status effect.",
+            "Increases PP recovery rate by 20% when afflicted with a status effect."
+        ],
+        "Effect (Global)": [
+            "Increases PP recovery rate by 10% when afflicted with a status effect.",
+            "Increases PP recovery rate by 15% when afflicted with a status effect.",
+            "Increases PP recovery rate by 20% when afflicted with a status effect."
         ]
     },
     {
+        "Name (JP)": "逆境力場",
         "Name (English)": "Adverse Field",
+        "Name (Global)": "Adverse Field",
+        "Effect (JP)": [
+            "自分が状態異常の間、打撃力が上昇する。(80/90/100)",
+            "自分が状態異常の間、打撃力が上昇する。(80/90/100)",
+            "自分が状態異常の間、打撃力が上昇する。(80/90/100)"
+        ],
         "Effect (English)": [
             "Increases S-ATK by 80 when afflicted with a status effect.",
             "Increases S-ATK by 90 when afflicted with a status effect.",
             "Increases S-ATK by 100 when afflicted with a status effect."
+        ],
+        "Effect (Global)": [
+            "Increases MEL Pwr by 80 when afflicted with a status effect.",
+            "Increases MEL Pwr by 90 when afflicted with a status effect.",
+            "Increases MEL Pwr by 100 when afflicted with a status effect."
         ]
     },
     {
+        "Name (JP)": "生命の息吹",
         "Name (English)": "Breath of Life",
+        "Name (Global)": "Breath of Life",
+        "Effect (JP)": [
+            "自動でHPが回復する。(5秒毎に最大HPの5%/7%/10%回復)",
+            "自動でHPが回復する。(5秒毎に最大HPの5%/7%/10%回復)",
+            "自動でHPが回復する。(5秒毎に最大HPの5%/7%/10%回復)"
+        ],
         "Effect (English)": [
-            "HP regenerates by 5% every 5 seconds.",
-            "HP regenerates by 7% every 5 seconds.",
-            "HP regenerates by 10% every 5 seconds."
+            "Recovers 5% of Max HP every 5 seconds.",
+            "Recovers 7% of Max HP every 5 seconds.",
+            "Recovers 10% of Max HP every 5 seconds."
+        ],
+        "Effect (Global)": [
+            "Recovers 5% of Max HP every 5 seconds.",
+            "Recovers 7% of Max HP every 5 seconds.",
+            "Recovers 10% of Max HP every 5 seconds."
         ]
     },
     {
@@ -874,9 +1426,9 @@
     {
         "Name (English)": "Inevitable Strike",
         "Effect (English)": [
-            "Boost damage of critical hits by 9%.",
-            "Boost damage of critical hits by 11%.",
-            "Boost damage of critical hits by 13%."
+            "Increases damage of critical hits by 9%.",
+            "Increases damage of critical hits by 11%.",
+            "Increases damage of critical hits by 13%."
         ]
     },
     {
@@ -962,9 +1514,9 @@
     {
         "Name (English)": "Mental Alignment",
         "Effect (English)": [
-            "Boost PB gauge accumulation by 20%.",
-            "Boost PB gauge accumulation by 30%.",
-            "Boost PB gauge accumulation by 50%."
+            "Increases PB gauge accumulation by 20%.",
+            "Increases PB gauge accumulation by 30%.",
+            "Increases PB gauge accumulation by 50%."
         ]
     },
     {
@@ -1026,49 +1578,49 @@
     {
         "Name (English)": "Pursuit of Flame",
         "Effect (English)": [
-            "Boost burn rate of melee and ranged attacks.",
-            "Boost burn rate of melee and ranged attacks.",
-            "Boost burn rate of melee and ranged attacks."
+            "Increases Burn rate of Strike and Ranged attacks.",
+            "Increases Burn rate of Strike and Ranged attacks.",
+            "Increases Burn rate of Strike and Ranged attacks."
         ]
     },
     {
         "Name (English)": "Shackles of Ice",
         "Effect (English)": [
-            "Boost freeze rate of melee and ranged attacks.",
-            "Boost freeze rate of melee and ranged attacks.",
-            "Boost freeze rate of melee and ranged attacks. "
+            "Increases Freeze rate of Strike and Ranged attacks.",
+            "Increases Freeze rate of Strike and Ranged attacks.",
+            "Increases Freeze rate of Strike and Ranged attacks. "
         ]
     },
     {
         "Name (English)": "Chains of Lightning",
         "Effect (English)": [
-            "Boost shock rate of melee and ranged attacks.",
-            "Boost shock rate of melee and ranged attacks.",
-            "Boost shock rate of melee and ranged attacks."
+            "Increases Shock rate of Strike and Ranged attacks.",
+            "Increases Shock rate of Strike and Ranged attacks.",
+            "Increases Shock rate of Strike and Ranged attacks."
         ]
     },
     {
         "Name (English)": "Guiding Mirage",
         "Effect (English)": [
-            "Boost mirage rate of melee and ranged attacks.",
-            "Boost mirage rate of melee and ranged attacks.",
-            "Boost mirage rate of melee and ranged attacks."
+            "Increases Mirage rate of Strike and Ranged attacks.",
+            "Increases Mirage rate of Strike and Ranged attacks.",
+            "Increases Mirage rate of Strike and Ranged attacks."
         ]
     },
     {
         "Name (English)": "Inciting Panic",
         "Effect (English)": [
-            "Boost panic rate of melee and ranged attacks.",
-            "Boost panic rate of melee and ranged attacks.",
-            "Boost panic rate of melee and ranged attacks."
+            "Increases Panic rate of Strike and Ranged attacks.",
+            "Increases Panic rate of Strike and Ranged attacks.",
+            "Increases Panic rate of Strike and Ranged attacks."
         ]
     },
     {
         "Name (English)": "Festering Poison",
         "Effect (English)": [
-            "Boost poison rate of melee and ranged attacks.",
-            "Boost poison rate of melee and ranged attacks.",
-            "Boost poison rate of melee and ranged attacks."
+            "Increases Poison rate of Strike and Ranged attacks.",
+            "Increases Poison rate of Strike and Ranged attacks.",
+            "Increases Poison rate of Strike and Ranged attacks."
         ]
     },
     {
@@ -1122,9 +1674,9 @@
     {
         "Name (English)": "Aerial Burst",
         "Effect (English)": [
-            "Increases aerial attack damage by 6%.",
-            "Increases aerial attack damage by 8%.",
-            "Increases aerial attack damage by 10%."
+            "Increases airborne attack damage by 6%.",
+            "Increases airborne attack damage by 8%.",
+            "Increases airborne attack damage by 10%."
         ]
     },
     {
@@ -1138,17 +1690,17 @@
     {
         "Name (English)": "Standard Meditation",
         "Effect (English)": [
-            "Boost normal attack damage by 10%.",
-            "Boost normal attack damage by 15%.",
-            "Boost normal attack damage by 20%."
+            "Increases normal attack damage by 10%.",
+            "Increases normal attack damage by 15%.",
+            "Increases normal attack damage by 20%."
         ]
     },
     {
         "Name (English)": "Swift Hunter",
         "Effect (English)": [
-            "Boost ranged damage while moving by 9%.",
-            "Boost ranged damage while moving by 12%.",
-            "Boost ranged damage while moving by 15%."
+            "Increases Ranged damage while moving by 9%.",
+            "Increases Ranged damage while moving by 12%.",
+            "Increases Ranged damage while moving by 15%."
         ]
     },
     {
@@ -1162,9 +1714,9 @@
     {
         "Name (English)": "Divine Blessings",
         "Effect (English)": [
-            "Boost melee, ranged, and tech damage when HP is below 50%.",
-            "Boost melee, ranged, and tech damage when HP is below 50%.",
-            "Boost melee, ranged, and tech damage when HP is below 50%."
+            "Increases Strike, Ranged, and Technique damage when HP is below 50%.",
+            "Increases Strike, Ranged, and Technique damage when HP is below 50%.",
+            "Increases Strike, Ranged, and Technique damage when HP is below 50%."
         ]
     },
     {
@@ -1210,25 +1762,25 @@
     {
         "Name (English)": "Dancing Night Blossom",
         "Effect (English)": [
-            "Reduces the PP consumption of PAs and Techniques by 6% and boost their damage by 1%.",
-            "Reduces the PP consumption of PAs and Techniques by 8% and boost their damage by 2%.",
-            "Reduces the PP consumption of PAs and Techniques by 10% and boost their damage by 3%."
+            "Reduces the PP consumption of PAs and Techniques by 6% and increases their damage by 1%.",
+            "Reduces the PP consumption of PAs and Techniques by 8% and increases their damage by 2%.",
+            "Reduces the PP consumption of PAs and Techniques by 10% and increases their damage by 3%."
         ]
     },
     {
         "Name (English)": "Pale Night Blossom",
         "Effect (English)": [
-            "Reduces the PP consumption of PAs and Techniques by 4% and boost their damage by 4%.",
-            "Reduces the PP consumption of PAs and Techniques by 5% and boost their damage by 5%.",
-            "Reduces the PP consumption of PAs and Techniques by 6% and boost their damage by 6%."
+            "Reduces the PP consumption of PAs and Techniques by 4% and increases their damage by 4%.",
+            "Reduces the PP consumption of PAs and Techniques by 5% and increases their damage by 5%.",
+            "Reduces the PP consumption of PAs and Techniques by 6% and increases their damage by 6%."
         ]
     },
     {
         "Name (English)": "Limit Drive",
         "Effect (English)": [
-            "Consume 15% more PP when you use a PA or technique and boost its damage by 10%.",
-            "Consume 15% more PP when you use a PA or technique and boost its damage by 12%.",
-            "Consume 15% more PP when you use a PA or technique and boost its damage by 15%."
+            "Consume 15% more PP when you use a PA or Technique and increases its damage by 10%.",
+            "Consume 15% more PP when you use a PA or Technique and increases its damage by 12%.",
+            "Consume 15% more PP when you use a PA or Technique and increases its damage by 15%."
         ]
     },
     {
@@ -1266,9 +1818,9 @@
     {
         "Name (English)": "Zero Logic",
         "Effect (English)": [
-            "Increases technique damage at close-range by 12%.",
-            "Increases technique damage at close-range by 14%.",
-            "Increases technique damage at close-range by 16%."
+            "Increases Technique damage at close-range by 12%.",
+            "Increases Technique damage at close-range by 14%.",
+            "Increases Technique damage at close-range by 16%."
         ]
     },
     {
@@ -1346,73 +1898,73 @@
     {
         "Name (English)": "Negative Hunter",
         "Effect (English)": [
-            "Damage against Darkers boosted by 7%.",
-            "Damage against Darkers boosted by 10%.",
-            "Damage against Darkers boosted by 13%."
+            "Damage against Darkers increased by 7%.",
+            "Damage against Darkers increased by 10%.",
+            "Damage against Darkers increased by 13%."
         ]
     },
     {
         "Name (English)": "Negative Destroyer",
         "Effect (English)": [
-            "Damage against Darkers boosted by 9%, Damage against DA-Aberrations boosted by 11%.",
-            "Damage against Darkers boosted by 11%, Damage against DA-Aberrations boosted by 13%.",
-            "Damage against Darkers boosted by 13%, Damage against DA-Aberrations boosted by 15%."
+            "Damage against Darkers increased by 9%, Damage against DA-Aberrations increased by 11%.",
+            "Damage against Darkers increased by 11%, Damage against DA-Aberrations increased by 13%.",
+            "Damage against Darkers increased by 13%, Damage against DA-Aberrations increased by 15%."
         ]
     },
     {
         "Name (English)": "Native Hunter",
         "Effect (English)": [
-            "Damage against Natives boosted by 10%.",
-            "Damage against Natives boosted by 15%.",
-            "Damage against Natives boosted by 20%."
+            "Damage against Natives increased by 10%.",
+            "Damage against Natives increased by 15%.",
+            "Damage against Natives increased by 20%."
         ]
     },
     {
         "Name (English)": "Machine Hunter",
         "Effect (English)": [
-            "Damage against Mechs boosted by 10%.",
-            "Damage against Mechs boosted by 15%.",
-            "Damage against Mechs boosted by 20%."
+            "Damage against Mechs increased by 10%.",
+            "Damage against Mechs increased by 15%.",
+            "Damage against Mechs increased by 20%."
         ]
     },
     {
         "Name (English)": "Dragon Hunter",
         "Effect (English)": [
-            "Damage against Dragonkin boosted by 10%.",
-            "Damage against Dragonkin boosted by 15%.",
-            "Damage against Dragonkin boosted by 20%."
+            "Damage against Dragonkin increased by 10%.",
+            "Damage against Dragonkin increased by 15%.",
+            "Damage against Dragonkin increased by 20%."
         ]
     },
     {
         "Name (English)": "Oceanid Hunter",
         "Effect (English)": [
-            "Damage against Oceanids boosted by 10%.",
-            "Damage against Oceanids boosted by 15%.",
-            "Damage against Oceanids boosted by 20%."
+            "Damage against Oceanids increased by 10%.",
+            "Damage against Oceanids increased by 15%.",
+            "Damage against Oceanids increased by 20%."
         ]
     },
     {
         "Name (English)": "Demon Hunter",
         "Effect (English)": [
-            "Damage against Kuronites boosted by 10%.",
-            "Damage against Kuronites boosted by 15%.",
-            "Damage against Kuronites boosted by 20%."
+            "Damage against Kuronites increased by 10%.",
+            "Damage against Kuronites increased by 15%.",
+            "Damage against Kuronites increased by 20%."
         ]
     },
     {
         "Name (English)": "Dragon's Authority",
         "Effect (English)": [
-            "Damage against all enemies except Dragonkin boosted by 12%.",
-            "Damage against all enemies except Dragonkin boosted by 14%.",
-            "Damage against all enemies except Dragonkin boosted by 16%."
+            "Damage against all enemies except Dragonkin increased by 12%.",
+            "Damage against all enemies except Dragonkin increased by 14%.",
+            "Damage against all enemies except Dragonkin increased by 16%."
         ]
     },
     {
         "Name (English)": "Colossal Spirit",
         "Effect (English)": [
-            "Damage against bosses boosted by 10%.",
-            "Damage against bosses boosted by 14%.",
-            "Damage against bosses boosted by 18%."
+            "Damage against bosses increased by 10%.",
+            "Damage against bosses increased by 14%.",
+            "Damage against bosses increased by 18%."
         ]
     },
     {
@@ -1542,9 +2094,9 @@
     {
         "Name (English)": "Devouring Edge",
         "Effect (English)": [
-            "Increases technique damage during Sacrifice Bite by 20%",
-            "Increases technique damage during Sacrifice Bite by 22%",
-            "Increases technique damage during Sacrifice Bite by 25%"
+            "Increases Technique damage during SacrifIce Bite by 20%",
+            "Increases Technique damage during SacrifIce Bite by 22%",
+            "Increases Technique damage during SacrifIce Bite by 25%"
         ]
     },
     {
@@ -1686,9 +2238,9 @@
     {
         "Name (English)": "Absolute Blade",
         "Effect (English)": [
-            "Increases damage against aerial enemies by 16%.",
-            "Increases damage against aerial enemies by 18%.",
-            "Increases damage against aerial enemies by 20%."
+            "Increases damage against airborne enemies by 16%.",
+            "Increases damage against airborne enemies by 18%.",
+            "Increases damage against airborne enemies by 20%."
         ]
     },
     {
@@ -2068,7 +2620,7 @@
         ]
     },
     {
-        "Name (English)": "Rotational Flight",
+        "Name (English)": "Rotational FLight",
         "Effect (English)": [
             "Increases the damage of Grim Barrage by 20%",
             "Increases the damage of Grim Barrage by 25%",
@@ -2180,11 +2732,11 @@
         ]
     },
     {
-        "Name (English)": "Divine Justice",
+        "Name (English)": "Divine JustIce",
         "Effect (English)": [
-            "Increases the damage of Justice Crow by 14%",
-            "Increases the damage of Justice Crow by 17%",
-            "Increases the damage of Justice Crow by 20%"
+            "Increases the damage of JustIce Crow by 14%",
+            "Increases the damage of JustIce Crow by 17%",
+            "Increases the damage of JustIce Crow by 20%"
         ]
     },
     {
@@ -2206,33 +2758,33 @@
     {
         "Name (English)": "Great Sun Deity",
         "Effect (English)": [
-            "Boost damage by 4% during a fine weather.",
-            "Boost damage by 8% during a fine weather.",
-            "Boost damage by 12% during a fine weather."
+            "Increases damage by 4% during a fine weather.",
+            "Increases damage by 8% during a fine weather.",
+            "Increases damage by 12% during a fine weather."
         ]
     },
     {
         "Name (English)": "Aurora Blessing",
         "Effect (English)": [
-            "Boost damage depending on the weather in Tundra (Snow: 5%, Blizzard: 15%, Diamond Dust: 25%, Aurora: 35%).",
-            "Boost damage depending on the weather in Tundra (Snow: 7%, Blizzard: 17%, Diamond Dust: 27%, Aurora: 37%).",
-            "Boost damage depending on the weather in Tundra (Snow: 10%, Blizzard: 20%, Diamond Dust: 30%, Aurora: 40%)."
+            "Increases damage depending on the weather in Tundra (Snow: 5%, Blizzard: 15%, Diamond Dust: 25%, Aurora: 35%).",
+            "Increases damage depending on the weather in Tundra (Snow: 7%, Blizzard: 17%, Diamond Dust: 27%, Aurora: 37%).",
+            "Increases damage depending on the weather in Tundra (Snow: 10%, Blizzard: 20%, Diamond Dust: 30%, Aurora: 40%)."
         ]
     },
     {
         "Name (English)": "Meteor Blessing",
         "Effect (English)": [
-            "Boost damage depending on the weather in Desert (Dust: 5%, Sandstorm: 15%, Magnetic Storm: 25%, Meteor Shower: 35%).",
-            "Boost damage depending on the weather in Desert (Dust: 7%, Sandstorm: 17%, Magnetic Storm: 27%, Meteor Shower: 37%).",
-            "Boost damage depending on the weather in Desert (Dust: 10%, Sandstorm: 20%, Magnetic Storm: 30%, Meteor Shower: 40%)."
+            "Increases damage depending on the weather in Desert (Dust: 5%, Sandstorm: 15%, Magnetic Storm: 25%, Meteor Shower: 35%).",
+            "Increases damage depending on the weather in Desert (Dust: 7%, Sandstorm: 17%, Magnetic Storm: 27%, Meteor Shower: 37%).",
+            "Increases damage depending on the weather in Desert (Dust: 10%, Sandstorm: 20%, Magnetic Storm: 30%, Meteor Shower: 40%)."
         ]
     },
     {
         "Name (English)": "Paradise Blessing",
         "Effect (English)": [
-            "Boost damage depending on the weather in Shironia (Butterflies: 5%, Wind: 15%, Petals: 25%, Ideographs: 35%).",
-            "Boost damage depending on the weather in Shironia (Butterflies: 7%, Wind: 17%, Petals: 27%, Ideographs: 37%).",
-            "Boost damage depending on the weather in Shironia (Butterflies: 10%, Wind: 20%, Petals: 30%, Ideographs: 40%)."
+            "Increases damage depending on the weather in Shironia (Butterflies: 5%, Wind: 15%, Petals: 25%, Ideographs: 35%).",
+            "Increases damage depending on the weather in Shironia (Butterflies: 7%, Wind: 17%, Petals: 27%, Ideographs: 37%).",
+            "Increases damage depending on the weather in Shironia (Butterflies: 10%, Wind: 20%, Petals: 30%, Ideographs: 40%)."
         ]
     },
     {
@@ -2278,9 +2830,9 @@
     {
         "Name (English)": "Armor Mastery",
         "Effect (English)": [
-            "Increases S-DEF by 75, striking and ranged damage by 13% during Guard Stance.",
-            "Increases S-DEF by 100, striking and ranged damage by 15% during Guard Stance.",
-            "Increases S-DEF by 150, striking and ranged damage by 18% during Guard Stance."
+            "Increases S-DEF by 75, striking and Ranged damage by 13% during Guard Stance.",
+            "Increases S-DEF by 100, striking and Ranged damage by 15% during Guard Stance.",
+            "Increases S-DEF by 150, striking and Ranged damage by 18% during Guard Stance."
         ]
     },
     {
@@ -2294,9 +2846,9 @@
     {
         "Name (English)": "Testament to Courage",
         "Effect (English)": [
-            "Boost damage by 7%, heal 30% HP at fixed intervals (~40 seconds)",
-            "Boost damage by 9%, heal 60% HP at fixed intervals (~40 seconds)",
-            "Boost damage by 11%, heal 100% HP at fixed intervals (~40 seconds)"
+            "Increases damage by 7%, heal 30% HP at fixed intervals (~40 seconds)",
+            "Increases damage by 9%, heal 60% HP at fixed intervals (~40 seconds)",
+            "Increases damage by 11%, heal 100% HP at fixed intervals (~40 seconds)"
         ]
     },
     {
@@ -2334,17 +2886,17 @@
     {
         "Name (English)": "Heroic Advance",
         "Effect (English)": [
-            "Boost damage by 9% when HP is 30% or greater.",
-            "Boost damage by 10% when HP is 30% or greater.",
-            "Boost damage by 11% when HP is 30% or greater."
+            "Increases damage by 9% when HP is 30% or greater.",
+            "Increases damage by 10% when HP is 30% or greater.",
+            "Increases damage by 11% when HP is 30% or greater."
         ]
     },
     {
         "Name (English)": "Heroic Strength",
         "Effect (English)": [
-            "Boost damage by 10% when HP is 60% or greater.",
-            "Boost damage by 12% when HP is 60% or greater.",
-            "Boost damage by 15% when HP is 60% or greater."
+            "Increases damage by 10% when HP is 60% or greater.",
+            "Increases damage by 12% when HP is 60% or greater.",
+            "Increases damage by 15% when HP is 60% or greater."
         ]
     },
     {
@@ -2366,17 +2918,17 @@
     {
         "Name (English)": "Absolute Void",
         "Effect (English)": [
-            "Boost damage to weak points by 7%.",
-            "Boost damage to weak points by 9%.",
-            "Boost damage to weak points by 11%."
+            "Increases damage to weak points by 7%.",
+            "Increases damage to weak points by 9%.",
+            "Increases damage to weak points by 11%."
         ]
     },
     {
         "Name (English)": "Warrior's Song",
         "Effect (English)": [
-            "Damage is boosted by 11% and damage received is reduced by 10%.",
-            "Damage is boosted by 11% and damage received is reduced by 12%.",
-            "Damage is boosted by 11% and damage received is reduced by 15%."
+            "Damage is increased by 11% and damage received is reduced by 10%.",
+            "Damage is increased by 11% and damage received is reduced by 12%.",
+            "Damage is increased by 11% and damage received is reduced by 15%."
         ]
     },
     {
@@ -2435,9 +2987,9 @@
     {
         "Name (English)": "Machine's Mark",
         "Effect (English)": [
-            "Decrease PP Recovery by 60%, increases damage by 5%, increases Critical Hit Rate by 7%, and boost Critical Hit Damage by 5%.",
-            "Decrease PP Recovery by 60%, increases damage by 7%, increases Critical Hit Rate by 10%, and boost Critical Hit Damage by 6%.",
-            "Decrease PP Recovery by 60%, increases damage by 10%, increases Critical Hit Rate by 13%, and boost Critical Hit Damage by 7%."
+            "Decrease PP Recovery by 60%, increases damage by 5%, increases Critical Hit Rate by 7%, and increases Critical Hit Damage by 5%.",
+            "Decrease PP Recovery by 60%, increases damage by 7%, increases Critical Hit Rate by 10%, and increases Critical Hit Damage by 6%.",
+            "Decrease PP Recovery by 60%, increases damage by 10%, increases Critical Hit Rate by 13%, and increases Critical Hit Damage by 7%."
         ]
     },
     {
@@ -2451,9 +3003,9 @@
     {
         "Name (English)": "Veteran's Merit",
         "Effect (English)": [
-            "Gain a .2% damage boost every time you kill an enemy. Damage caps at 15%",
-            "Gain a .25% damage boost every time you kill an enemy. Damage caps at 15%",
-            "Gain a 1% damage boost every time you kill an enemy. Damage caps at 15%"
+            "Gain a .2% damage increases every time you kill an enemy. Damage caps at 15%",
+            "Gain a .25% damage increases every time you kill an enemy. Damage caps at 15%",
+            "Gain a 1% damage increases every time you kill an enemy. Damage caps at 15%"
         ]
     },
     {
@@ -2465,35 +3017,59 @@
         ]
     },
     {
+        "Name (JP)": "刹那の決撃",
         "Name (English)": "Immediate Attack",
+        "Name (Global)": "Perfect Knockout",
+        "Effect (JP)": [
+            "ジャストアタックの効果が(6%)上昇する。(※テクニック以外に有効)",
+            "ジャストアタックの効果が(7%)上昇する。(※テクニック以外に有効)",
+            "ジャストアタックの効果が(8%)上昇する。(※テクニック以外に有効)"
+        ],
         "Effect (English)": [
-            "Boost the effect of Just Attack by 6%.",
-            "Boost the effect of Just Attack by 7%.",
-            "Boost the effect of Just Attack by 8%."
+            "Increases the effect of non-Technique Just Attacks by 6%.",
+            "Increases the effect of non-Technique Just Attacks by 7%.",
+            "Increases the effect of non-Technique Just Attacks by 8%."
+        ],
+        "Effect (Global)": [
+            "Increases the effect of non-Technique Perfect Attacks by 6%.",
+            "Increases the effect of non-Technique Perfect Attacks by 7%.",
+            "Increases the effect of non-Technique Perfect Attacks by 8%."
         ]
     },
     {
+        "Name (JP)": "誓念の形",
         "Name (English)": "Form's Pledge",
+        "Name (Global)": "Vows Manifested",
+        "Effect (JP)": [
+            "チャージテクニックのダメージを(6%)上昇させる。",
+            "チャージテクニックのダメージを(7%)上昇させる。",
+            "チャージテクニックのダメージを(8%)上昇させる。"
+        ],
         "Effect (English)": [
-            "Boost the damage of charged techniques by 6%.",
-            "Boost the damage of charged techniques by 7%.",
-            "Boost the damage of charged techniques by 8%."
+            "Increases the damage of charged Techniques by 6%.",
+            "Increases the damage of charged Techniques by 7%.",
+            "Increases the damage of charged Techniques by 8%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of charged Techniques by 6%.",
+            "Increases the damage of charged Techniques by 7%.",
+            "Increases the damage of charged Techniques by 8%."
         ]
     },
     {
         "Name (English)": "Ebony's Providence",
         "Effect (English)": [
-            "Boost damage to bosses by 10% and reduce damage taken from bosses by 13%.",
-            "Boost damage to bosses by 11% and reduce damage taken from bosses by 14%.",
-            "Boost damage to bosses by 12% and reduce damage taken from bosses by 15%."
+            "Increases damage to bosses by 10% and reduce damage taken from bosses by 13%.",
+            "Increases damage to bosses by 11% and reduce damage taken from bosses by 14%.",
+            "Increases damage to bosses by 12% and reduce damage taken from bosses by 15%."
         ]
     },
     {
         "Name (English)": "Phantom Devourer",
         "Effect (English)": [
-            "Boost damage to Phantoms by 7% and reduce damage taken from Phantoms by 10%.",
-            "Boost damage to Phantoms by 10% and reduce damage taken from Phantoms by 15%.",
-            "Boost damage to Phantoms by 13% and reduce damage taken from Phantoms by 20%."
+            "Increases damage to Phantoms by 7% and reduce damage taken from Phantoms by 10%.",
+            "Increases damage to Phantoms by 10% and reduce damage taken from Phantoms by 15%.",
+            "Increases damage to Phantoms by 13% and reduce damage taken from Phantoms by 20%."
         ]
     },
     {
@@ -2521,8 +3097,20 @@
         ]
     },
     {
+        "Name (JP)": "正中必壊",
         "Name (English)": "Exact Median",
+        "Name (Global)": "EpIcenter",
+        "Effect (JP)": [
+            "射撃による弱点へのダメージが(6%)上昇する。",
+            "射撃による弱点へのダメージが(7%)上昇する。",
+            "射撃による弱点へのダメージが(9%)上昇する。"
+        ],
         "Effect (English)": [
+            "Increases damage dealt to weak points by Ranged attacks by 6%.",
+            "Increases damage dealt to weak points by Ranged attacks by 7%.",
+            "Increases damage dealt to weak points by Ranged attacks by 9%."
+        ],
+        "Effect (Global)": [
             "Increases damage dealt to weak points by Ranged attacks by 6%.",
             "Increases damage dealt to weak points by Ranged attacks by 7%.",
             "Increases damage dealt to weak points by Ranged attacks by 9%."
@@ -2563,9 +3151,9 @@
     {
         "Name (English)": "Frozen Prison",
         "Effect (English)": [
-            "Increases freeze durability by 100%.",
-            "Increases freeze durability by 200%.",
-            "Increases freeze durability by 300%."
+            "Increases Freeze durability by 100%.",
+            "Increases Freeze durability by 200%.",
+            "Increases Freeze durability by 300%."
         ]
     },
     {
@@ -2579,9 +3167,9 @@
     {
         "Name (English)": "Glacial Crystal",
         "Effect (English)": [
-            "Increases the damage of ice techniques by 12%.",
-            "Increases the damage of ice techniques by 16%.",
-            "Increases the damage of ice techniques by 20%."
+            "Increases the damage of Ice Techniques by 12%.",
+            "Increases the damage of Ice Techniques by 16%.",
+            "Increases the damage of Ice Techniques by 20%."
         ]
     },
     {
@@ -2601,7 +3189,7 @@
         ]
     },
     {
-        "Name (English)": "Sudden Whirlwind",
+        "Name (English)": "Sudden WhirlWind",
         "Effect (English)": [
             "Increases damage of Tornado Dance by ?%.",
             "Increases damage of Tornado Dance by ?%.",
@@ -2715,25 +3303,25 @@
     {
         "Name (English)": "Offensive Inspiration",
         "Effect (English)": [
-            "damage is increased by 6% and gradually increases over time up to 12% total. Resets if a Mate item is used (takes 70 seconds to max).",
-            "damage is increased by 6% and gradually increases over time up to 16% total. Resets if a Mate item is used (takes 70 seconds to max).",
-            "damage is increased by 6% and gradually increases over time up to 20% total. Resets if a Mate item is used (takes 70 seconds to max)."
+            "Damage is increased by 6% and gradually increases over time up to 12% total. Resets if a Mate item is used (takes 70 seconds to max).",
+            "Damage is increased by 6% and gradually increases over time up to 16% total. Resets if a Mate item is used (takes 70 seconds to max).",
+            "Damage is increased by 6% and gradually increases over time up to 20% total. Resets if a Mate item is used (takes 70 seconds to max)."
         ]
     },
     {
         "Name (English)": "Offensive Reverence",
         "Effect (English)": [
-            "damage is increased by 6% and gradually increases over time up to 12% total. Resets if hit (takes 50 seconds to max).",
-            "damage is increased by 6% and gradually increases over time up to 16% total. Resets if hit (takes 50 seconds to max).",
-            "damage is increased by 6% and gradually increases over time up to 20% total. Resets if hit (takes 50 seconds to max)."
+            "Damage is increased by 6% and gradually increases over time up to 12% total. Resets if hit (takes 50 seconds to max).",
+            "Damage is increased by 6% and gradually increases over time up to 16% total. Resets if hit (takes 50 seconds to max).",
+            "Damage is increased by 6% and gradually increases over time up to 20% total. Resets if hit (takes 50 seconds to max)."
         ]
     },
     {
         "Name (English)": "Offensive Approach",
         "Effect (English)": [
-            "damage is increased by 6% and gradually increases over time up to 12% total. Resets if Mirage Escape is used (takes 60 seconds to max).",
-            "damage is increased by 6% and gradually increases over time up to 16% total. Resets if Mirage Escape is used (takes 60 seconds to max).",
-            "damage is increased by 6% and gradually increases over time up to 20% total. Resets if Mirage Escape is used (takes 60 seconds to max)."
+            "Damage is increased by 6% and gradually increases over time up to 12% total. Resets if Mirage Escape is used (takes 60 seconds to max).",
+            "Damage is increased by 6% and gradually increases over time up to 16% total. Resets if Mirage Escape is used (takes 60 seconds to max).",
+            "Damage is increased by 6% and gradually increases over time up to 20% total. Resets if Mirage Escape is used (takes 60 seconds to max)."
         ]
     },
     {
@@ -2883,9 +3471,9 @@
     {
         "Name (English)": "風の囁き",
         "Effect (English)": [
-            "Reduces the charge time for Wind Techniques by 10%.",
-            "Reduces the charge time for Wind Techniques by 16%.",
-            "Reduces the charge time for Wind Techniques by 19%."
+            "Reduces the charge time of Wind Techniques by 10%.",
+            "Reduces the charge time of Wind Techniques by 16%.",
+            "Reduces the charge time of Wind Techniques by 19%."
         ]
     },
     {
@@ -2897,7 +3485,7 @@
         ]
     },
     {
-        "Name (English)": "Starlight Remnants",
+        "Name (English)": "StarLight Remnants",
         "Effect (English)": [
             "Increases damage by 6% and increases Active PP Recovery by 20%.",
             "Increases damage by 9% and increases Active PP Recovery by 30%.",
@@ -2905,7 +3493,7 @@
         ]
     },
     {
-        "Name (English)": "Eternal Operation Device",
+        "Name (English)": "Eternal Operation DevIce",
         "Effect (English)": [
             "Increases the effects of Elemental Conversion (15% matching element, 20% other element) and decreases the PP consumption of Techniques by 1.",
             "Increases the effects of Elemental Conversion (20% matching element, 25% other element) and decreases the PP consumption of Techniques by 2.",
@@ -2929,7 +3517,7 @@
         ]
     },
     {
-        "Name (English)": "Snow-White Sacrifice",
+        "Name (English)": "Snow-White SacrifIce",
         "Effect (English)": [
             "Increases chance to inflict Status effects to enemies and increases damage by 8%. 5% additional damage against Status inflicted enemies.",
             "Increases chance to inflict Status effects to enemies and increases damage by 9%. 7% additional damage against Status inflicted enemies.",
@@ -2937,7 +3525,7 @@
         ]
     },
     {
-        "Name (English)": "Snowlight Blossom",
+        "Name (English)": "SnowLight Blossom",
         "Effect (English)": [
             "Increases chance to inflict Status effects to enemies and increases damage by 8%. 5% additional damage against Status inflicted enemies.",
             "Increases chance to inflict Status effects to enemies and increases damage by 9%. 7% additional damage against Status inflicted enemies.",
@@ -3068,9 +3656,9 @@
     {
         "Name (English)": "Glance of Darkness",
         "Effect (English)": [
-            "When Alter Ego is active, automatically activates Pet Sympathy and fires Megid with Pet PAs (1500% potency).",
-            "When Alter Ego is active, automatically activates Pet Sympathy and fires Megid with Pet PAs (1700% potency).",
-            "When Alter Ego is active, automatically activates Pet Sympathy and fires Megid with Pet PAs (2000% potency)."
+            "When Alter Ego is active, automatically activates Pet Sympathy and Fires Megid with Pet PAs (1500% potency).",
+            "When Alter Ego is active, automatically activates Pet Sympathy and Fires Megid with Pet PAs (1700% potency).",
+            "When Alter Ego is active, automatically activates Pet Sympathy and Fires Megid with Pet PAs (2000% potency)."
         ]
     },
     {
@@ -3082,7 +3670,7 @@
         ]
     },
     {
-        "Name (English)": "Heavenly Dawnlight",
+        "Name (English)": "Heavenly DawnLight",
         "Effect (English)": [
             "Increases Natural PP Recovery by ?% and Active PP Recovery by ?%. Increases damage by 5% when PP is at 30% or greater.",
             "Increases Natural PP Recovery by ?% and Active PP Recovery by ?%. Increases damage by 7% when PP is at 30% or greater.",
@@ -3116,17 +3704,17 @@
     {
         "Name (English)": "Thundering Blades",
         "Effect (English)": [
-            "When using a PA, lightning charged Photon Blades are generated. (damage: 6%, Blades: 150%)",
-            "When using a PA, lightning charged Photon Blades are generated. (damage: 7%, Blades: 200%)",
-            "When using a PA, lightning charged Photon Blades are generated. (damage: 8%, Blades: 250%)"
+            "When using a PA, Lightning charged Photon Blades are generated. (damage: 6%, Blades: 150%)",
+            "When using a PA, Lightning charged Photon Blades are generated. (damage: 7%, Blades: 200%)",
+            "When using a PA, Lightning charged Photon Blades are generated. (damage: 8%, Blades: 250%)"
         ]
     },
     {
         "Name (English)": "Inversive Polarity",
         "Effect (English)": [
-            "Boost the damage of Reverse Tap by 14%.",
-            "Boost the damage of Reverse Tap by 17%.",
-            "Boost the damage of Reverse Tap by 20%."
+            "Increases the damage of Reverse Tap by 14%.",
+            "Increases the damage of Reverse Tap by 17%.",
+            "Increases the damage of Reverse Tap by 20%."
         ]
     },
     {
@@ -3164,9 +3752,9 @@
     {
         "Name (English)": "Heroic Victory",
         "Effect (English)": [
-            "Increases damage by 8%. Increases the rate of Hero Boost accumulation by +50%.",
-            "Increases damage by 10%. Increases the rate of Hero Boost accumulation by +70%.",
-            "Increases damage by 12%. Increases the rate of Hero Boost accumulation by +100%."
+            "Increases damage by 8%. Increases the rate of Hero Increases accumulation by +50%.",
+            "Increases damage by 10%. Increases the rate of Hero Increases accumulation by +70%.",
+            "Increases damage by 12%. Increases the rate of Hero Increases accumulation by +100%."
         ]
     },
     {
@@ -3228,9 +3816,9 @@
     {
         "Name (English)": "Darkness Brilliance",
         "Effect (English)": [
-            "Increases damage based on [Dark Blast] Gauge (up to ?%). Increases rate of Dark Blast Gauge accumulation by 10% and Dark Blast [Apprentice] transformation time by 5 seconds.",
-            "Increases damage based on [Dark Blast] Gauge (up to ?%). Increases rate of Dark Blast Gauge accumulation by 15% and Dark Blast [Apprentice] transformation time by 6 seconds.",
-            "Increases damage based on [Dark Blast] Gauge (up to 15%). Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Apprentice] transformation time by 7 seconds."
+            "Increases damage based on [Dark Blast] Gauge (up to ?%). Increases rate of Dark Blast Gauge accumulation by 10% and Dark Blast [ApprentIce] transformation time by 5 seconds.",
+            "Increases damage based on [Dark Blast] Gauge (up to ?%). Increases rate of Dark Blast Gauge accumulation by 15% and Dark Blast [ApprentIce] transformation time by 6 seconds.",
+            "Increases damage based on [Dark Blast] Gauge (up to 15%). Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [ApprentIce] transformation time by 7 seconds."
         ]
     },
     {
@@ -3244,9 +3832,9 @@
     {
         "Name (English)": "Bewitching Performance",
         "Effect (English)": [
-            "Increases rate of Dark Blast Gauge accumulation by ?% and Dark Blast [Apprentice] transformation time by ? seconds.",
-            "Increases rate of Dark Blast Gauge accumulation by ?% and Dark Blast [Apprentice] transformation time by ? seconds.",
-            "Increases rate of Dark Blast Gauge accumulation by ?% and Dark Blast [Apprentice] transformation time by ? seconds."
+            "Increases rate of Dark Blast Gauge accumulation by ?% and Dark Blast [ApprentIce] transformation time by ? seconds.",
+            "Increases rate of Dark Blast Gauge accumulation by ?% and Dark Blast [ApprentIce] transformation time by ? seconds.",
+            "Increases rate of Dark Blast Gauge accumulation by ?% and Dark Blast [ApprentIce] transformation time by ? seconds."
         ]
     },
     {
@@ -3276,17 +3864,17 @@
     {
         "Name (English)": "Enticing Ward",
         "Effect (English)": [
-            "Increases damage by 12%. Generates a barrier (Negate Knockback, ?% Automatic PP Recovery and ?% Attack PP Recovery) at regular intervals (every 30s).",
-            "Increases damage by 15%. Generates a barrier (Negate Knockback, ?% Automatic PP Recovery and ?% Attack PP Recovery) at regular intervals (every 30s).",
-            "Increases damage by 17%. Generates a barrier (Negate Knockback, 20% Automatic PP Recovery and 30% Attack PP Recovery) at regular intervals (every 30s)."
+            "Increases damage by 12%. Generates a barrier (Negate Knockback, ?% Automatic PP Recovery and ?% Active PP Recovery) at regular intervals (every 30s).",
+            "Increases damage by 15%. Generates a barrier (Negate Knockback, ?% Automatic PP Recovery and ?% Active PP Recovery) at regular intervals (every 30s).",
+            "Increases damage by 17%. Generates a barrier (Negate Knockback, 20% Automatic PP Recovery and 30% Active PP Recovery) at regular intervals (every 30s)."
         ]
     },
     {
         "Name (English)": "Enticing Melody",
         "Effect (English)": [
-            "Generates a barrier (Negate Knockback, 10% Automatic PP Recovery and 20% Attack PP Recovery) at regular intervals (every 20s).",
-            "Generates a barrier (Negate Knockback, 20% Automatic PP Recovery and 30% Attack PP Recovery) at regular intervals (every 20s).",
-            "Generates a barrier (Negate Knockback, 30% Automatic PP Recovery and 40% Attack PP Recovery) at regular intervals (every 20s)."
+            "Generates a barrier (Negate Knockback, 10% Automatic PP Recovery and 20% Active PP Recovery) at regular intervals (every 20s).",
+            "Generates a barrier (Negate Knockback, 20% Automatic PP Recovery and 30% Active PP Recovery) at regular intervals (every 20s).",
+            "Generates a barrier (Negate Knockback, 30% Automatic PP Recovery and 40% Active PP Recovery) at regular intervals (every 20s)."
         ]
     },
     {
@@ -3316,9 +3904,9 @@
     {
         "Name (English)": "Pursuing Rhythm",
         "Effect (English)": [
-            "Boost the potency of Elemental Burst (?% damage) and automatically activate Elemental Burst when using a Photon Art's variant attack (+6% damage)",
-            "Boost the potency of Elemental Burst (?% damage) and automatically activate Elemental Burst when using a Photon Art's variant attack. (+7% damage)",
-            "Boost the potency of Elemental Burst (20% damage) and automatically activate Elemental Burst when using a Photon Art's variant attack. (+8% damage)"
+            "Increases the potency of Elemental Burst (?% damage) and automatically activate Elemental Burst when using a Photon Art's variant attack (+6% damage)",
+            "Increases the potency of Elemental Burst (?% damage) and automatically activate Elemental Burst when using a Photon Art's variant attack. (+7% damage)",
+            "Increases the potency of Elemental Burst (20% damage) and automatically activate Elemental Burst when using a Photon Art's variant attack. (+8% damage)"
         ]
     },
     {
@@ -3404,9 +3992,9 @@
     {
         "Name (English)": "Gleaming Lance",
         "Effect (English)": [
-            "Boost the damage of Grappling PAs when at max Gear (6%). Consume no Gear for a short duration after performing a Just Guard (?s). (damage +4%)",
-            "Boost the damage of Grappling PAs when at max Gear (8%). Consume no Gear for a short duration after performing a Just Guard (?s). (damage +4%)",
-            "Boost the damage of Grappling PAs when at max Gear (10%). Consume no Gear for a short duration after performing a Just Guard (15s). (damage +4%)"
+            "Increases the damage of Grappling PAs when at max Gear (6%). Consume no Gear for a short duration after performing a Just Guard (?s). (damage +4%)",
+            "Increases the damage of Grappling PAs when at max Gear (8%). Consume no Gear for a short duration after performing a Just Guard (?s). (damage +4%)",
+            "Increases the damage of Grappling PAs when at max Gear (10%). Consume no Gear for a short duration after performing a Just Guard (15s). (damage +4%)"
         ]
     },
     {
@@ -3428,9 +4016,9 @@
     {
         "Name (English)": "Demonic Flash",
         "Effect (English)": [
-            "Increases damage by 14% when HP is 25% or lower.",
-            "Increases damage by 15% when HP is 25% or lower.",
-            "Increases damage by 17% when HP is 25% or lower."
+            "Increases damage by 14% when HP is below 25%.",
+            "Increases damage by 15% when HP is below 25%.",
+            "Increases damage by 17% when HP is below 25%."
         ]
     },
     {
@@ -3492,9 +4080,9 @@
     {
         "Name (English)": "Tragic Providence",
         "Effect (English)": [
-            "Increases damage by 8%. Further increases damage (3%) and Attack PP Recovery (+20%) against bosses.",
-            "Increases damage by 10%. Further increases damage (4%) and Attack PP Recovery (+30%) against bosses.",
-            "Increases damage by 12%.  Further increases damage (5%) and Attack PP Recovery (+40%) against bosses."
+            "Increases damage by 8%. Further increases damage (3%) and Active PP Recovery (+20%) against bosses.",
+            "Increases damage by 10%. Further increases damage (4%) and Active PP Recovery (+30%) against bosses.",
+            "Increases damage by 12%.  Further increases damage (5%) and Active PP Recovery (+40%) against bosses."
         ]
     },
     {
@@ -3564,9 +4152,9 @@
     {
         "Name (English)": "Angelic Adept",
         "Effect (English)": [
-            "Increases damage by 7%. Boost Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying.",
-            "Increases damage by 8%. Boost Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying.",
-            "Increases damage by 10%. Boost Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying."
+            "Increases damage by 7%. Increases Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying.",
+            "Increases damage by 8%. Increases Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying.",
+            "Increases damage by 10%. Increases Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying."
         ]
     },
     {
@@ -3580,9 +4168,9 @@
     {
         "Name (English)": "Hexing Spirit",
         "Effect (English)": [
-            "Increases damage by 6%. Enhance normal attacks and boost the damage of Combat Finish based on the number of normal attack hits.",
-            "Increases damage by 7%. Enhance normal attacks and boost the damage of Combat Finish based on the number of normal attack hits.",
-            "Increases damage by 8%. Enhance normal attacks and boost the damage of Combat Finish based on the number of normal attack hits."
+            "Increases damage by 6%. Enhance normal attacks and increases the damage of Combat Finish based on the number of normal attack hits.",
+            "Increases damage by 7%. Enhance normal attacks and increases the damage of Combat Finish based on the number of normal attack hits.",
+            "Increases damage by 8%. Enhance normal attacks and increases the damage of Combat Finish based on the number of normal attack hits."
         ]
     },
     {
@@ -3660,9 +4248,9 @@
     {
         "Name (English)": "Circular Release",
         "Effect (English)": [
-            "Increases the damage of Tech Explosions based on the number of hits inflicted by Tech Explosions. Bonus is lost upon attacking with a Technique and the damage of Techniques is boosted for a limited time.",
-            "Increases the damage of Tech Explosions based on the number of hits inflicted by Tech Explosions. Bonus is lost upon attacking with a Technique and the damage of Techniques is boosted for a limited time.",
-            "Increases the damage of Tech Explosions based on the number of hits inflicted by Tech Explosions. Bonus is lost upon attacking with a Technique and the damage of Techniques is boosted for a limited time."
+            "Increases the damage of Tech Explosions based on the number of hits inflicted by Tech Explosions. Bonus is lost upon attacking with a Technique and the damage of Techniques is increased for a limited time.",
+            "Increases the damage of Tech Explosions based on the number of hits inflicted by Tech Explosions. Bonus is lost upon attacking with a Technique and the damage of Techniques is increased for a limited time.",
+            "Increases the damage of Tech Explosions based on the number of hits inflicted by Tech Explosions. Bonus is lost upon attacking with a Technique and the damage of Techniques is increased for a limited time."
         ]
     },
     {
@@ -3772,9 +4360,9 @@
     {
         "Name (English)": "Darkness Ward",
         "Effect (English)": [
-            "Increases damage by 7%. Generates a barrier (Negate Knockback, ?% Automatic PP Recovery and ?% Attack PP Recovery) at regular intervals (every 30s).",
-            "Increases damage by 8%. Generates a barrier (Negate Knockback, ?% Automatic PP Recovery and ?% Attack PP Recovery) at regular intervals (every 30s).",
-            "Increases damage by 9%. Generates a barrier (Negate Knockback, 30% Automatic PP Recovery and 40% Attack PP Recovery) at regular intervals (every 30s)."
+            "Increases damage by 7%. Generates a barrier (Negate Knockback, ?% Automatic PP Recovery and ?% Active PP Recovery) at regular intervals (every 30s).",
+            "Increases damage by 8%. Generates a barrier (Negate Knockback, ?% Automatic PP Recovery and ?% Active PP Recovery) at regular intervals (every 30s).",
+            "Increases damage by 9%. Generates a barrier (Negate Knockback, 30% Automatic PP Recovery and 40% Active PP Recovery) at regular intervals (every 30s)."
         ]
     },
     {
@@ -3820,9 +4408,9 @@
     {
         "Name (English)": "Torrential Dash",
         "Effect (English)": [
-            "Increases damage by 5%. Inflict damage while running. Unleash a shockwave attack when you stop running.",
-            "Increases damage by 8%. Inflict damage while running. Unleash a shockwave attack when you stop running.",
-            "Increases damage by 11%. Inflict damage while running. Unleash a shockwave attack when you stop running."
+            "Increases damage by 5%. Inflict damage while running. Unleash a Shockwave attack when you stop running.",
+            "Increases damage by 8%. Inflict damage while running. Unleash a Shockwave attack when you stop running.",
+            "Increases damage by 11%. Inflict damage while running. Unleash a Shockwave attack when you stop running."
         ]
     },
     {
@@ -3836,9 +4424,9 @@
     {
         "Name (English)": "Revenant Marker",
         "Effect (English)": [
-            "Increases damage by 9%. Boost Marker Accumulation Rate upon detonating a Phantom Marker.",
-            "Increases damage by 11%. Boost Marker Accumulation Rate upon detonating a Phantom Marker.",
-            "Increases damage by 13%. Boost Marker Accumulation Rate upon detonating a Phantom Marker."
+            "Increases damage by 9%. Increases Marker Accumulation Rate upon detonating a Phantom Marker.",
+            "Increases damage by 11%. Increases Marker Accumulation Rate upon detonating a Phantom Marker.",
+            "Increases damage by 13%. Increases Marker Accumulation Rate upon detonating a Phantom Marker."
         ]
     },
     {
@@ -3930,7 +4518,7 @@
         ]
     },
     {
-        "Name (English)": "Twilight Demon Leg",
+        "Name (English)": "TwiLight Demon Leg",
         "Effect (English)": [
             "Increases damage by 6%. Reduces PP consumption by 15% upon hitting a target with One More Jump. Effect expires when landing.",
             "Increases damage by 8%. Reduces PP consumption by 20% upon hitting a target with One More Jump. Effect expires when landing.",
@@ -4042,7 +4630,7 @@
         ]
     },
     {
-        "Name (English)": "Feathered Flight",
+        "Name (English)": "Feathered FLight",
         "Effect (English)": [
             "Increases damage by 6%. Add additional Ranged hits to normal attacks upon blocking an attack with Twin Daggers Spin.",
             "Increases damage by 8%. Add additional Ranged hits to normal attacks upon blocking an attack with Twin Daggers Spin.",
@@ -4132,17 +4720,17 @@
     {
         "Name (English)": "Suzaku Alliance",
         "Effect (English)": [
-            "Increases attack speed over time. Taking 10% of your HP in damage or more resets the attack speed boost.",
-            "Increases attack speed over time. Taking 10% of your HP in damage or more resets the attack speed boost.",
-            "Increases attack speed over time. Taking 10% of your HP in damage or more resets the attack speed boost."
+            "Increases attack speed over time. Taking 10% of your HP in damage or more resets the attack speed increases.",
+            "Increases attack speed over time. Taking 10% of your HP in damage or more resets the attack speed increases.",
+            "Increases attack speed over time. Taking 10% of your HP in damage or more resets the attack speed increases."
         ]
     },
     {
         "Name (English)": "Byakko Accordant",
         "Effect (English)": [
-            "Reduces Normal Attack damage. Normal Attacks fire Chase Arrows at targets. As PP decreases, the damage of Normal Attacks and Chase Arrows fired by this Potential's effect increases.",
-            "Reduces Normal Attack damage. Normal Attacks fire Chase Arrows at targets. As PP decreases, the damage of Normal Attacks and Chase Arrows fired by this Potential's effect increases.",
-            "Reduces Normal Attack damage. Normal Attacks fire Chase Arrows at targets. As PP decreases, the damage of Normal Attacks and Chase Arrows fired by this Potential's effect increases."
+            "Reduces Normal Attack damage. Normal Attacks Fire Chase Arrows at targets. As PP decreases, the damage of Normal Attacks and Chase Arrows Fired by this Potential's effect increases.",
+            "Reduces Normal Attack damage. Normal Attacks Fire Chase Arrows at targets. As PP decreases, the damage of Normal Attacks and Chase Arrows Fired by this Potential's effect increases.",
+            "Reduces Normal Attack damage. Normal Attacks Fire Chase Arrows at targets. As PP decreases, the damage of Normal Attacks and Chase Arrows Fired by this Potential's effect increases."
         ]
     },
     {
@@ -4228,41 +4816,41 @@
     {
         "Name (English)": "Battle Stimulation",
         "Effect (English)": [
-            "Increases damage by 12%. Increases the ATK boost granted by Shifta by 600 ATK.",
-            "Increases damage by 14%. Increases the ATK boost granted by Shifta by 600 ATK.",
-            "Increases damage by 16%. Increases the ATK boost granted by Shifta by 600 ATK."
+            "Increases damage by 12%. Increases the ATK increases granted by Shifta by 600 ATK.",
+            "Increases damage by 14%. Increases the ATK increases granted by Shifta by 600 ATK.",
+            "Increases damage by 16%. Increases the ATK increases granted by Shifta by 600 ATK."
         ]
     },
     {
         "Name (English)": "Carbine Vortex",
         "Effect (English)": [
-            "Auto-fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-fire hits twice.",
-            "Auto-fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-fire hits twice.",
-            "Auto-fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-fire hits twice."
+            "Auto-Fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-Fire hits twIce.",
+            "Auto-Fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-Fire hits twIce.",
+            "Auto-Fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-Fire hits twIce."
         ]
     },
     {
         "Name (English)": "Machinegun Vortex",
         "Effect (English)": [
-            "Auto-fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-fire hits twice.",
-            "Auto-fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-fire hits twice.",
-            "Auto-fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-fire hits twice."
+            "Auto-Fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-Fire hits twIce.",
+            "Auto-Fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-Fire hits twIce.",
+            "Auto-Fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-Fire hits twIce."
         ]
     },
     {
         "Name (English)": "Katana Vortex",
         "Effect (English)": [
-            "Auto-fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-fire hits twice.",
-            "Auto-fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-fire hits twice.",
-            "Auto-fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-fire hits twice."
+            "Auto-Fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-Fire hits twIce.",
+            "Auto-Fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-Fire hits twIce.",
+            "Auto-Fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-Fire hits twIce."
         ]
     },
     {
         "Name (English)": "Bayonet Vortex",
         "Effect (English)": [
-            "Auto-fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-fire hits twice.",
-            "Auto-fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-fire hits twice.",
-            "Auto-fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-fire hits twice."
+            "Auto-Fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-Fire hits twIce.",
+            "Auto-Fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-Fire hits twIce.",
+            "Auto-Fire on targets every 7 seconds while unsheathed. Upon dealing 10,000,000 damage, unsheathed auto-Fire hits twIce."
         ]
     },
     {
@@ -4276,33 +4864,33 @@
     {
         "Name (English)": "Effortless Mettle",
         "Effect (English)": [
-            "damage bonus decreases when taking damage and recovers over time. When damage bonus is 14%, become Massive and gain 40% Damage Resistance.",
-            "damage bonus decreases when taking damage and recovers over time. When damage bonus is 15%, become Massive and gain 40% Damage Resistance.",
-            "damage bonus decreases when taking damage and recovers over time. When damage bonus is 16%, become Massive and gain 40% Damage Resistance."
+            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 14%, become Massive and gain 40% Damage Resistance.",
+            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 15%, become Massive and gain 40% Damage Resistance.",
+            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 16%, become Massive and gain 40% Damage Resistance."
         ]
     },
     {
         "Name (English)": "Effortless Charity",
         "Effect (English)": [
-            "damage bonus decreases when taking damage and recovers over time. When damage bonus is 14%, become Massive and regenerate 20 PP every 10 seconds.",
-            "damage bonus decreases when taking damage and recovers over time. When damage bonus is 15%, become Massive and regenerate 20 PP every 10 seconds.",
-            "damage bonus decreases when taking damage and recovers over time. When damage bonus is 16%, become Massive and regenerate 20 PP every 10 seconds."
+            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 14%, become Massive and regenerate 20 PP every 10 seconds.",
+            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 15%, become Massive and regenerate 20 PP every 10 seconds.",
+            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 16%, become Massive and regenerate 20 PP every 10 seconds."
         ]
     },
     {
         "Name (English)": "Effortless Wisdom",
         "Effect (English)": [
-            "damage bonus decreases when taking damage and recovers over time. When damage bonus is 14%, increases Natural PP Recovery by 60% and gain 40% Damage Resistance.",
-            "damage bonus decreases when taking damage and recovers over time. When damage bonus is 15%, increases Natural PP Recovery by 60% and gain 40% Damage Resistance.",
-            "damage bonus decreases when taking damage and recovers over time. When damage bonus is 16%, increases Natural PP Recovery by 60% and gain 40% Damage Resistance."
+            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 14%, increases Natural PP Recovery by 60% and gain 40% Damage Resistance.",
+            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 15%, increases Natural PP Recovery by 60% and gain 40% Damage Resistance.",
+            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 16%, increases Natural PP Recovery by 60% and gain 40% Damage Resistance."
         ]
     },
     {
         "Name (English)": "Steadfast Might",
         "Effect (English)": [
-            "damage bonus decreases when taking damage and recovers over time. When damage bonus is 14%, gain 40% Damage Resistance, increases Natural PP Recovery by 60%, regenerate 20 PP every 10 seconds, and become Massive.",
-            "damage bonus decreases when taking damage and recovers over time. When damage bonus is 15%, gain 40% Damage Resistance, increases Natural PP Recovery by 60%, regenerate 20 PP every 10 seconds, and become Massive.",
-            "damage bonus decreases when taking damage and recovers over time. When damage bonus is 16%, gain 40% Damage Resistance, increases Natural PP Recovery by 60%, regenerate 20 PP every 10 seconds, and become Massive."
+            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 14%, gain 40% Damage Resistance, increases Natural PP Recovery by 60%, regenerate 20 PP every 10 seconds, and become Massive.",
+            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 15%, gain 40% Damage Resistance, increases Natural PP Recovery by 60%, regenerate 20 PP every 10 seconds, and become Massive.",
+            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 16%, gain 40% Damage Resistance, increases Natural PP Recovery by 60%, regenerate 20 PP every 10 seconds, and become Massive."
         ]
     },
     {
@@ -4424,17 +5012,17 @@
     {
         "Name (English)": "Dark Requiem",
         "Effect (English)": [
-            "Increases damage by 10%. Boost the effect of Mark PP Drain and Mark Heal by 200%.",
-            "Increases damage by 12%. Boost the effect of Mark PP Drain and Mark Heal by 200%.",
-            "Increases damage by 14%. Boost the effect of Mark PP Drain and Mark Heal by 200%."
+            "Increases damage by 10%. Increases the effect of Mark PP Drain and Mark Heal by 200%.",
+            "Increases damage by 12%. Increases the effect of Mark PP Drain and Mark Heal by 200%.",
+            "Increases damage by 14%. Increases the effect of Mark PP Drain and Mark Heal by 200%."
         ]
     },
     {
         "Name (English)": "Irregular Offensive",
         "Effect (English)": [
-            "Increases Damage by 11%. Step Attacks fire a homing shot when you successfully dodge using Step.",
-            "Increases Damage by 13%. Step Attacks fire a homing shot when you successfully dodge using Step.",
-            "Increases Damage by 15%. Step Attacks fire a homing shot when you successfully dodge using Step."
+            "Increases Damage by 11%. Step Attacks Fire a homing shot when you successfully dodge using Step.",
+            "Increases Damage by 13%. Step Attacks Fire a homing shot when you successfully dodge using Step.",
+            "Increases Damage by 15%. Step Attacks Fire a homing shot when you successfully dodge using Step."
         ]
     },
     {
@@ -4448,41 +5036,41 @@
     {
         "Name (English)": "Divine Judgment",
         "Effect (English)": [
-            "damage +11%. Increases the damage of uncharged Satellite Cannon by 300%.",
-            "damage +13%. Increases the damage of uncharged Satellite Cannon by 300%.",
-            "damage +15%. Increases the damage of uncharged Satellite Cannon by 300%."
+            "Damage +11%. Increases the damage of uncharged Satellite Cannon by 300%.",
+            "Damage +13%. Increases the damage of uncharged Satellite Cannon by 300%.",
+            "Damage +15%. Increases the damage of uncharged Satellite Cannon by 300%."
         ]
     },
     {
         "Name (English)": "Extreme Speed",
         "Effect (English)": [
-            "damage +6%. Boost normal attack speed by 15%. Consume Mate items instantly.",
-            "damage +8%. Boost normal attack speed by 15%. Consume Mate items instantly.",
-            "damage +10%. Boost normal attack speed by 15%. Consume Mate items instantly."
+            "Damage +6%. Increases normal attack speed by 15%. Consume Mate items instantly.",
+            "Damage +8%. Increases normal attack speed by 15%. Consume Mate items instantly.",
+            "Damage +10%. Increases normal attack speed by 15%. Consume Mate items instantly."
         ]
     },
     {
         "Name (English)": "Glittering Fang",
         "Effect (English)": [
-            "damage +9%. Upon striking with an attack, increases damage by an additional 8%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage.",
-            "damage +11%. Upon striking with an attack, increases damage by an additional 8%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage.",
-            "damage +13%. Upon striking with an attack, increases damage by an additional 8%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage."
+            "Damage +9%. Upon striking with an attack, increases damage by an additional 8%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage.",
+            "Damage +11%. Upon striking with an attack, increases damage by an additional 8%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage.",
+            "Damage +13%. Upon striking with an attack, increases damage by an additional 8%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage."
         ]
     },
     {
         "Name (English)": "Glittering Circle",
         "Effect (English)": [
-            "damage +4%. Upon striking with an attack, increases damage by an additional 5%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage.",
-            "damage +6%. Upon striking with an attack, increases damage by an additional 5%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage.",
-            "damage +8%. Upon striking with an attack, increases damage by an additional 5%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage."
+            "Damage +4%. Upon striking with an attack, increases damage by an additional 5%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage.",
+            "Damage +6%. Upon striking with an attack, increases damage by an additional 5%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage.",
+            "Damage +8%. Upon striking with an attack, increases damage by an additional 5%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage."
         ]
     },
     {
         "Name (English)": "Supernova",
         "Effect (English)": [
-            "damage +6%. Produce a follow-up attack when casting a Charged Technique from a Talis card.",
-            "damage +8%. Produce a follow-up attack when casting a Charged Technique from a Talis card.",
-            "damage +10%. Produce a follow-up attack when casting a Charged Technique from a Talis card."
+            "Damage +6%. Produce a follow-up attack when casting a Charged Technique from a Talis card.",
+            "Damage +8%. Produce a follow-up attack when casting a Charged Technique from a Talis card.",
+            "Damage +10%. Produce a follow-up attack when casting a Charged Technique from a Talis card."
         ]
     },
     {
@@ -4518,36 +5106,36 @@
     {
         "Name (English)": "Absolute Strike",
         "Effect (English)": [
-            "Increases critical rate by 25%, boosts damage by 17%.",
-            "Increases critical rate by 25%, boosts damage by 19%",
-            "Increases critical rate by 25%, boosts damage by 22%"
+            "Increases critical rate by 25%, increases damage by 17%.",
+            "Increases critical rate by 25%, increases damage by 19%",
+            "Increases critical rate by 25%, increases damage by 22%"
         ],
         "Special": "Hidden"
     },
     {
         "Name (English)": "Converging Light",
         "Effect (English)": [
-            "PA/Tech PP consumption reduced by 10%, PA/Tech damage boosted by 5%.",
-            "PA/Tech PP consumption reduced by 15%, PA/Tech damage boosted by 7%.",
-            "PA/Tech PP consumption reduced by 20%, PA/Tech damage boosted by 10%."
+            "PA/Tech PP consumption reduced by 10%, PA/Tech damage increased by 5%.",
+            "PA/Tech PP consumption reduced by 15%, PA/Tech damage increased by 7%.",
+            "PA/Tech PP consumption reduced by 20%, PA/Tech damage increased by 10%."
         ],
         "Special": "Hidden"
     },
     {
         "Name (English)": "Myriad Blessings",
         "Effect (English)": [
-            "Boost HP recovery by 20%, boost attack PP recovery by 30%, and boost damage by 10%.",
-            "Boost HP recovery by 25%, boost attack PP recovery by 45%, and boost damage by 12%.",
-            "Boost HP recovery by 30%, boost attack PP recovery by 60%, and boost damage by 15%."
+            "Increases HP recovery by 20%, increases attack PP recovery by 30%, and increases damage by 10%.",
+            "Increases HP recovery by 25%, increases attack PP recovery by 45%, and increases damage by 12%.",
+            "Increases HP recovery by 30%, increases attack PP recovery by 60%, and increases damage by 15%."
         ],
         "Special": "Hidden"
     },
     {
         "Name (English)": "Serpent's Bite",
         "Effect (English)": [
-            "Damage boosted when doing consecutive Just Attacks by 2%, max limit 40%.",
-            "Damage boosted when doing consecutive Just Attacks by 3%, max limit 40%.",
-            "Damage boosted when doing consecutive Just Attacks by 4%, max limit 40%."
+            "Damage increased when doing consecutive Just Attacks by 2%, max limit 40%.",
+            "Damage increased when doing consecutive Just Attacks by 3%, max limit 40%.",
+            "Damage increased when doing consecutive Just Attacks by 4%, max limit 40%."
         ],
         "Special": "Hidden"
     },
@@ -4572,9 +5160,9 @@
     {
         "Name (English)": "Eternal Blessings",
         "Effect (English)": [
-            "Tech PP consumption is reduced by 10%. Boost technique damage by 10%.",
-            "Tech PP consumption is reduced by 12%. Boost technique damage by 12%.",
-            "Tech PP consumption is reduced by 15%. Boost technique damage by 15%."
+            "Tech PP consumption is reduced by 10%. Increases Technique damage by 10%.",
+            "Tech PP consumption is reduced by 12%. Increases Technique damage by 12%.",
+            "Tech PP consumption is reduced by 15%. Increases Technique damage by 15%."
         ],
         "Special": "Hidden"
     },
@@ -4611,9 +5199,9 @@
     {
         "Name (English)": "Skilled Elementary Arts",
         "Effect (English)": [
-            "Increases damage of basic-level techniques by 18%.",
-            "Increases damage of basic-level techniques by 20%.",
-            "Increases damage of basic-level techniques by 23%."
+            "Increases damage of basic-level Techniques by 18%.",
+            "Increases damage of basic-level Techniques by 20%.",
+            "Increases damage of basic-level Techniques by 23%."
         ],
         "Special": "Hidden"
     },
@@ -4758,9 +5346,9 @@
     {
         "Name (English)": "Violet Turmoil",
         "Effect (English)": [
-            "Increased chance to inflict panic, damage is increased by 20% when attacking an enemy that is inflicted with panic.",
-            "Increased chance to inflict panic, damage is increased by 23% when attacking an enemy that is inflicted with panic.",
-            "Increased chance to inflict panic, damage is increased by 27% when attacking an enemy that is inflicted with panic."
+            "Increased chance to inflict Panic, damage is increased by 20% when attacking an enemy that is inflicted with Panic.",
+            "Increased chance to inflict Panic, damage is increased by 23% when attacking an enemy that is inflicted with Panic.",
+            "Increased chance to inflict Panic, damage is increased by 27% when attacking an enemy that is inflicted with Panic."
         ],
         "Special": "Weaponoid"
     },
@@ -4803,9 +5391,9 @@
     {
         "Name (English)": "Guidance to Wisdom",
         "Effect (English)": [
-            "Increases Technique damage by 10% and boost the effect of Photon Flare by 220 T-ATK.",
-            "Increases Technique damage by 12% and boost the effect of Photon Flare by 250 T-ATK.",
-            "Increases Technique damage by 14% and boost the effect of Photon Flare by 280 T-ATK."
+            "Increases Technique damage by 10% and increases the effect of Photon Flare by 220 T-ATK.",
+            "Increases Technique damage by 12% and increases the effect of Photon Flare by 250 T-ATK.",
+            "Increases Technique damage by 14% and increases the effect of Photon Flare by 280 T-ATK."
         ],
         "Special": "Weaponoid"
     },
@@ -4830,9 +5418,9 @@
     {
         "Name (English)": "Battle Meditation",
         "Effect (English)": [
-            "Increases Attack PP Recovery by 10%, Automatic PP Recovery by 20%, and damage by 8%.",
-            "Increases Attack PP Recovery by 15%, Automatic PP Recovery by 30%, and damage by 9%.",
-            "Increases Attack PP Recovery by 20%, Automatic PP Recovery by 40%, and damage by 10%."
+            "Increases Active PP Recovery by 10%, Automatic PP Recovery by 20%, and damage by 8%.",
+            "Increases Active PP Recovery by 15%, Automatic PP Recovery by 30%, and damage by 9%.",
+            "Increases Active PP Recovery by 20%, Automatic PP Recovery by 40%, and damage by 10%."
         ],
         "Special": "Weaponoid"
     },
@@ -4866,9 +5454,9 @@
     {
         "Name (English)": "Flame Crystal",
         "Effect (English)": [
-            "Boost the damage of Fire Techniques by 12%",
-            "Boost the damage of Fire Techniques by 16%",
-            "Boost the damage of Fire Techniques by 20%"
+            "Increases the damage of Fire Techniques by 12%",
+            "Increases the damage of Fire Techniques by 16%",
+            "Increases the damage of Fire Techniques by 20%"
         ],
         "Special": "Weaponoid"
     },
@@ -4923,9 +5511,9 @@
     {
         "Name (English)": "Phantasmal Source",
         "Effect (English)": [
-            "damage increases inversely with the Photon Blast Gauge. (1 ~ 19%)",
-            "damage increases inversely with the Photon Blast Gauge. (2 ~ 21%)",
-            "damage increases inversely with the Photon Blast Gauge. (3 ~ 23%)"
+            "Damage increases inversely with the Photon Blast Gauge. (1 ~ 19%)",
+            "Damage increases inversely with the Photon Blast Gauge. (2 ~ 21%)",
+            "Damage increases inversely with the Photon Blast Gauge. (3 ~ 23%)"
         ],
         "Special": "Weaponoid"
     },
@@ -4950,9 +5538,9 @@
     {
         "Name (English)": "Moonlit Emperor",
         "Effect (English)": [
-            "Boost the damage of Light Techniques by 12%.",
-            "Boost the damage of Light Techniques by 16%.",
-            "Boost the damage of Light Techniques by 20%."
+            "Increases the damage of Light Techniques by 12%.",
+            "Increases the damage of Light Techniques by 16%.",
+            "Increases the damage of Light Techniques by 20%."
         ],
         "Special": "Weaponoid"
     },
@@ -4995,9 +5583,9 @@
     {
         "Name (English)": "Extravagant Fighter",
         "Effect (English)": [
-            "Increases damage against bosses by 18%. Increases Attack PP Recovery by ?%.",
-            "Increases damage against bosses by 19%. Increases Attack PP Recovery by ?%.",
-            "Increases damage against bosses by 21%. Increases Attack PP Recovery by 20%."
+            "Increases damage against bosses by 18%. Increases Active PP Recovery by ?%.",
+            "Increases damage against bosses by 19%. Increases Active PP Recovery by ?%.",
+            "Increases damage against bosses by 21%. Increases Active PP Recovery by 20%."
         ],
         "Special": "Weaponoid"
     },
@@ -5038,8 +5626,20 @@
         "Special": "Weaponoid"
     },
     {
-        "Name (English)": "匠魂宿刃",
+        "Name (JP)": "匠魂宿刃",
+        "Name (English)": "Craftsman's Spirit Blade",
+        "Name (Global)": "Craftsman's Spirit Blade",
+        "Effect (JP)": [
+            "エクステンドした武器の使用時に威力が上昇する。(?%)",
+            "エクステンドした武器の使用時に威力が上昇する。(?%)",
+            "エクステンドした武器の使用時に威力が上昇する。(17%)"
+        ],
         "Effect (English)": [
+            "Increases damage when using extended weapons by ?%.",
+            "Increases damage when using extended weapons by ?%.",
+            "Increases damage when using extended weapons by 17%."
+        ],
+        "Effect (Global)": [
             "Increases damage when using extended weapons by ?%.",
             "Increases damage when using extended weapons by ?%.",
             "Increases damage when using extended weapons by 17%."
@@ -5058,18 +5658,30 @@
     {
         "Name (English)": "Phantasmal Burgeoning",
         "Effect (English)": [
-            "damage fluctuates depending on the Photon Blast Gauge. (?%~?%)",
-            "damage fluctuates depending on the Photon Blast Gauge. (?%~?%)",
-            "damage fluctuates depending on the Photon Blast Gauge. (?%~16%)"
+            "Damage fluctuates depending on the Photon Blast Gauge. (?%~?%)",
+            "Damage fluctuates depending on the Photon Blast Gauge. (?%~?%)",
+            "Damage fluctuates depending on the Photon Blast Gauge. (?%~16%)"
         ],
         "Special": "Weaponoid"
     },
     {
-        "Name (English)": "流星爆砕奏",
+        "Name (JP)": "流星爆砕奏",
+        "Name (English)": "Meteor Explosion",
+        "Name (Global)": "Meteor Explosion",
+        "Effect (JP)": [
+            "HPが75%以上の時、与ダメージが(20%)上昇する。",
+            "HPが75%以上の時、与ダメージが(21%)上昇する。",
+            "HPが75%以上の時、与ダメージが(23%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases damage by 20% when HP is over 75%.",
-            "Increases damage by 21% when HP is over 75%.",
-            "Increases damage by 23% when HP is over 75%."
+            "Increases damage by 20% when HP is above 75%.",
+            "Increases damage by 21% when HP is above 75%.",
+            "Increases damage by 23% when HP is above 75%."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 20% when HP is above 75%.",
+            "Increases damage by 21% when HP is above 75%.",
+            "Increases damage by 23% when HP is above 75%."
         ],
         "Special": "Weaponoid"
     },
@@ -5112,9 +5724,9 @@
     {
         "Name (English)": "Destruction Queen",
         "Effect (English)": [
-            "Increases the damage of \"Il\" Techniques by 20%.",
-            "Increases the damage of \"Il\" Techniques by 25%.",
-            "Increases the damage of \"Il\" Techniques by 30%."
+            "Increases the damage of \"Il-\" Techniques by 20%.",
+            "Increases the damage of \"Il-\" Techniques by 25%.",
+            "Increases the damage of \"Il-\" Techniques by 30%."
         ],
         "Special": "Weaponoid"
     },
@@ -5175,33 +5787,33 @@
     {
         "Name (English)": "Deathblow Fury - Defense",
         "Effect (English)": [
-            "damage increases by 12% during the Buster Quest Defense Phase in addition to Deathblow Fury's effects.",
-            "damage increases by 12% during the Buster Quest Defense Phase in addition to Deathblow Fury's effects.",
-            "damage increases by 12% during the Buster Quest Defense Phase in addition to Deathblow Fury's effects."
+            "Damage increases by 12% during the Buster Quest Defense Phase in addition to Deathblow Fury's effects.",
+            "Damage increases by 12% during the Buster Quest Defense Phase in addition to Deathblow Fury's effects.",
+            "Damage increases by 12% during the Buster Quest Defense Phase in addition to Deathblow Fury's effects."
         ]
     },
     {
         "Name (English)": "Deathblow Fury - Advance Attack",
         "Effect (English)": [
-            "damage increases by 12% during the Buster Quest Attack and Buster Phase in addition to Deathblow Fury's effects.",
-            "damage increases by 12% during the Buster Quest Attack and Buster Phase in addition to Deathblow Fury's effects.",
-            "damage increases by 12% during the Buster Quest Attack and Buster Phase in addition to Deathblow Fury's effects."
+            "Damage increases by 12% during the Buster Quest Attack and Buster Phase in addition to Deathblow Fury's effects.",
+            "Damage increases by 12% during the Buster Quest Attack and Buster Phase in addition to Deathblow Fury's effects.",
+            "Damage increases by 12% during the Buster Quest Attack and Buster Phase in addition to Deathblow Fury's effects."
         ]
     },
     {
         "Name (English)": "Deathblow Honor - Defense",
         "Effect (English)": [
-            "damage increases by 3% during the Buster Quest Defense Phase in addition to Deathblow Honor's effects.",
-            "damage increases by 3% during the Buster Quest Defense Phase in addition to Deathblow Honor's effects.",
-            "damage increases by 3% during the Buster Quest Defense Phase in addition to Deathblow Honor's effects."
+            "Damage increases by 3% during the Buster Quest Defense Phase in addition to Deathblow Honor's effects.",
+            "Damage increases by 3% during the Buster Quest Defense Phase in addition to Deathblow Honor's effects.",
+            "Damage increases by 3% during the Buster Quest Defense Phase in addition to Deathblow Honor's effects."
         ]
     },
     {
         "Name (English)": "Deathblow Honor - Advance Attack",
         "Effect (English)": [
-            "damage increases by 3% during the Buster Quest Attack and Buster Phase in addition to Deathblow Honor's effects.",
-            "damage increases by 3% during the Buster Quest Attack and Buster Phase in addition to Deathblow Honor's effects.",
-            "damage increases by 3% during the Buster Quest Attack and Buster Phase in addition to Deathblow Honor's effects."
+            "Damage increases by 3% during the Buster Quest Attack and Buster Phase in addition to Deathblow Honor's effects.",
+            "Damage increases by 3% during the Buster Quest Attack and Buster Phase in addition to Deathblow Honor's effects.",
+            "Damage increases by 3% during the Buster Quest Attack and Buster Phase in addition to Deathblow Honor's effects."
         ]
     },
     {
@@ -5287,9 +5899,9 @@
     {
         "Name (English)": "Thundering Blades Plus",
         "Effect (English)": [
-            "Increases damage by 16%. When using a PA, lightning charged Photon Blades are generated. (Blades: 250%)",
-            "Increases damage by 18%. When using a PA, lightning charged Photon Blades are generated. (Blades: 300%)",
-            "Increases damage by 20%. When using a PA, lightning charged Photon Blades are generated. (Blades: 350%)"
+            "Increases damage by 16%. When using a PA, Lightning charged Photon Blades are generated. (Blades: 250%)",
+            "Increases damage by 18%. When using a PA, Lightning charged Photon Blades are generated. (Blades: 300%)",
+            "Increases damage by 20%. When using a PA, Lightning charged Photon Blades are generated. (Blades: 350%)"
         ],
         "Special": "Ultimate"
     },
@@ -5314,9 +5926,9 @@
     {
         "Name (English)": "Glance of Darkness Plus",
         "Effect (English)": [
-            "When Alter Ego is active, automatically activates Pet Sympathy and fires Megid with Pet PAs (1500% potency).",
-            "When Alter Ego is active, automatically activates Pet Sympathy and fires Megid with Pet PAs (2000% potency).",
-            "When Alter Ego is active, automatically activates Pet Sympathy and fires Megid with Pet PAs (2500% potency)."
+            "When Alter Ego is active, automatically activates Pet Sympathy and Fires Megid with Pet PAs (1500% potency).",
+            "When Alter Ego is active, automatically activates Pet Sympathy and Fires Megid with Pet PAs (2000% potency).",
+            "When Alter Ego is active, automatically activates Pet Sympathy and Fires Megid with Pet PAs (2500% potency)."
         ],
         "Special": "Ultimate"
     },
@@ -5339,7 +5951,7 @@
         "Special": "Ultimate"
     },
     {
-        "Name (English)": "Eternal Operation Device Plus",
+        "Name (English)": "Eternal Operation DevIce Plus",
         "Effect (English)": [
             "Increases the effects of Elemental Conversion (20% matching element, 25% other element) and decreases the PP consumption of Techniques by 2.",
             "Increases the effects of Elemental Conversion (30% matching element, 35% other element) and decreases the PP consumption of Techniques by 3.",
@@ -5368,9 +5980,9 @@
     {
         "Name (English)": "Heroic Victory Plus",
         "Effect (English)": [
-            "Increases damage by 18%. Increases the rate of Hero Boost accumulation by +50%.",
-            "Increases damage by 20%. Increases the rate of Hero Boost accumulation by +70%.",
-            "Increases damage by 22%. Increases the rate of Hero Boost accumulation by +100%."
+            "Increases damage by 18%. Increases the rate of Hero Increases accumulation by +50%.",
+            "Increases damage by 20%. Increases the rate of Hero Increases accumulation by +70%.",
+            "Increases damage by 22%. Increases the rate of Hero Increases accumulation by +100%."
         ],
         "Special": "Ultimate"
     },
@@ -5404,9 +6016,9 @@
     {
         "Name (English)": "Pursuing Rhythm Plus",
         "Effect (English)": [
-            "Increases damage by 18%. Boost the potency of Elemental Burst (?% damage) and automatically activate Elemental Burst when using a Photon Art.",
-            "Increases damage by 19%. Boost the potency of Elemental Burst (?% damage) and automatically activate Elemental Burst when using a Photon Art.",
-            "Increases damage by 20%. Boost the potency of Elemental Burst (?% damage) and automatically activate Elemental Burst when using a Photon Art."
+            "Increases damage by 18%. Increases the potency of Elemental Burst (?% damage) and automatically activate Elemental Burst when using a Photon Art.",
+            "Increases damage by 19%. Increases the potency of Elemental Burst (?% damage) and automatically activate Elemental Burst when using a Photon Art.",
+            "Increases damage by 20%. Increases the potency of Elemental Burst (?% damage) and automatically activate Elemental Burst when using a Photon Art."
         ],
         "Special": "Ultimate"
     },
@@ -5422,9 +6034,9 @@
     {
         "Name (English)": "Angelic Adept Plus",
         "Effect (English)": [
-            "Increases damage by 18%. Boost Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying.",
-            "Increases damage by 20%. Boost Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying.",
-            "Increases damage by 22%. Boost Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying."
+            "Increases damage by 18%. Increases Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying.",
+            "Increases damage by 20%. Increases Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying.",
+            "Increases damage by 22%. Increases Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying."
         ],
         "Special": "Ultimate"
     },
@@ -5440,9 +6052,9 @@
     {
         "Name (English)": "Hexing Spirit Plus",
         "Effect (English)": [
-            "Increases damage by 16%. Enhance normal attacks and boost the damage of Combat Finish based on the number of normal attack hits.",
-            "Increases damage by 18%. Enhance normal attacks and boost the damage of Combat Finish based on the number of normal attack hits.",
-            "Increases damage by 20%. Enhance normal attacks and boost the damage of Combat Finish based on the number of normal attack hits."
+            "Increases damage by 16%. Enhance normal attacks and increases the damage of Combat Finish based on the number of normal attack hits.",
+            "Increases damage by 18%. Enhance normal attacks and increases the damage of Combat Finish based on the number of normal attack hits.",
+            "Increases damage by 20%. Enhance normal attacks and increases the damage of Combat Finish based on the number of normal attack hits."
         ],
         "Special": "Ultimate"
     },
