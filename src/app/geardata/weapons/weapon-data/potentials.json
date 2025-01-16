@@ -469,14 +469,14 @@
             "アベレージスタンス時のクリティカル発生率を上昇させる。(20%)"
         ],
         "Effect (English)": [
-            "Increases critical hit rate during Average Stance by 18%",
-            "Increases critical hit rate during Average Stance by 19%",
-            "Increases critical hit rate during Average Stance by 20%"
+            "Increases Critical Hit Rate during Average Stance by 18%",
+            "Increases Critical Hit Rate during Average Stance by 19%",
+            "Increases Critical Hit Rate during Average Stance by 20%"
         ],
         "Effect (Global)": [
-            "Increases critical hit rate during Basic Stance by 18%",
-            "Increases critical hit rate during Basic Stance by 19%",
-            "Increases critical hit rate during Basic Stance by 20%"
+            "Increases Critical Hit Rate during Basic Stance by 18%",
+            "Increases Critical Hit Rate during Basic Stance by 19%",
+            "Increases Critical Hit Rate during Basic Stance by 20%"
         ]
     },
     {
@@ -1400,291 +1400,683 @@
         ]
     },
     {
+        "Name (JP)": "調律変換",
         "Name (English)": "Tuning Conversion",
+        "Name (Global)": "Tuning Conversion",
+        "Effect (JP)": [
+            "装備している武器の打撃力を一定割合だけ法撃力に変換する。(40%)",
+            "装備している武器の打撃力を一定割合だけ法撃力に変換する。(45%)",
+            "装備している武器の打撃力を一定割合だけ法撃力に変換する。(50%)"
+        ],
         "Effect (English)": [
             "Converts 40% of your weapon's S-ATK into T-ATK.",
             "Converts 45% of your weapon's S-ATK into T-ATK.",
             "Converts 50% of your weapon's S-ATK into T-ATK."
+        ],
+        "Effect (Global)": [
+            "Converts 40% of your weapon's MEL Pwr into TEC Pwr.",
+            "Converts 45% of your weapon's MEL Pwr into TEC Pwr.",
+            "Converts 50% of your weapon's MEL Pwr into TEC Pwr."
         ]
     },
     {
+        "Name (JP)": "調波変換",
         "Name (English)": "Harmonic Conversion",
+        "Name (Global)": "Harmonic Conversion",
+        "Effect (JP)": [
+            "装備している武器の射撃力を一定割合だけ法撃力に変換する。(40%)",
+            "装備している武器の射撃力を一定割合だけ法撃力に変換する。(45%)",
+            "装備している武器の射撃力を一定割合だけ法撃力に変換する。(50%)"
+        ],
         "Effect (English)": [
             "Converts 40% of your weapon's R-ATK into T-ATK.",
             "Converts 45% of your weapon's R-ATK into T-ATK.",
             "Converts 50% of your weapon's R-ATK into T-ATK."
+        ],
+        "Effect (Global)": [
+            "Converts 40% of your weapon's RNG Pwr into TEC Pwr.",
+            "Converts 45% of your weapon's RNG Pwr into TEC Pwr.",
+            "Converts 50% of your weapon's RNG Pwr into TEC Pwr."
         ]
     },
     {
+        "Name (JP)": "Revival Reversal",
         "Name (English)": "Revival Reversal",
+        "Name (Global)": "Revival Reversal",
+        "Effect (JP)": [
+            "ジャストリバーサルを行った際にHPが回復する。(最大HPの10%)",
+            "ジャストリバーサルを行った際にHPが回復する。(最大HPの12%)",
+            "ジャストリバーサルを行った際にHPが回復する。(最大HPの14%)"
+        ],
         "Effect (English)": [
-            "Recovers HP by 10% during a successful Just Reversal.",
-            "Recovers HP by 12% during a successful Just Reversal.",
-            "Recovers HP by 14% during a successful Just Reversal."
+            "Recovers HP by 10% when performing a Just Reversal.",
+            "Recovers HP by 12% when performing a Just Reversal.",
+            "Recovers HP by 14% when performing a Just Reversal."
+        ],
+        "Effect (Global)": [
+            "Recovers HP by 10% when performing a Perfect Reversal.",
+            "Recovers HP by 12% when performing a Perfect Reversal.",
+            "Recovers HP by 14% when performing a Perfect Reversal."
         ]
     },
     {
+        "Name (JP)": "必撃衝打",
         "Name (English)": "Inevitable Strike",
+        "Name (Global)": "Critical Impact",
+        "Effect (JP)": [
+            "クリティカル時のダメージを上昇させる。(9%)",
+            "クリティカル時のダメージを上昇させる。(11%)",
+            "クリティカル時のダメージを上昇させる。(13%)"
+        ],
         "Effect (English)": [
-            "Increases damage of critical hits by 9%.",
-            "Increases damage of critical hits by 11%.",
-            "Increases damage of critical hits by 13%."
+            "Increases Critical Hit damage by 9%.",
+            "Increases Critical Hit damage by 11%.",
+            "Increases Critical Hit damage by 13%."
+        ],
+        "Effect (Global)": [
+            "Increases Critical Hit damage by 9%.",
+            "Increases Critical Hit damage by 11%.",
+            "Increases Critical Hit damage by 13%."
         ]
     },
     {
+        "Name (JP)": "遼遠の手",
         "Name (English)": "Precision Sniping",
+        "Name (Global)": "Distant Hands",
+        "Effect (JP)": [
+            "遠距離時にダメージが上昇する。(6%)",
+            "遠距離時にダメージが上昇する。(7%)",
+            "遠距離時にダメージが上昇する。(8%)"
+        ],
         "Effect (English)": [
+            "Increases damage at long range by 6%.",
+            "Increases damage at long range by 7%.",
+            "Increases damage at long range by 8%."
+        ],
+        "Effect (Global)": [
             "Increases damage at long range by 6%.",
             "Increases damage at long range by 7%.",
             "Increases damage at long range by 8%."
         ]
     },
     {
+        "Name (JP)": "戦技昂魂",
         "Name (English)": "Battle Awakening",
+        "Name (Global)": "Battle Awakening",
+        "Effect (JP)": [
+            "ギアゲージの上昇率にボーナスを得る。(60%)",
+            "ギアゲージの上昇率にボーナスを得る。(80%)",
+            "ギアゲージの上昇率にボーナスを得る。(100%)"
+        ],
         "Effect (English)": [
             "Increases Gear Gauge accumulation rate by 60%.",
             "Increases Gear Gauge accumulation rate by 80%.",
             "Increases Gear Gauge accumulation rate by 100%."
+        ],
+        "Effect (Global)": [
+            "Increases Focus Gauge accumulation rate by 60%.",
+            "Increases Focus Gauge accumulation rate by 80%.",
+            "Increases Focus Gauge accumulation rate by 100%."
         ]
     },
     {
-        "Name (English)": "Decree of Intent",
-        "Effect (English)": [
-            "Increases critical hit rate by 6%.",
-            "Increases critical hit rate by 7%.",
-            "Increases critical hit rate by 8%."
-        ]
-    },
-    {
+        "Name (JP)": "必撃の構",
         "Name (English)": "Sure-Strike Stance",
+        "Name (Global)": "Sure-Strike Stance",
+        "Effect (JP)": [
+            "クリティカル率を(15%)上昇させる。",
+            "クリティカル率を(20%)上昇させる。",
+            "クリティカル率を(25%)上昇させる。"
+        ],
         "Effect (English)": [
-            "Increases critical hit rate by 15%.",
-            "Increases critical hit rate by 20%.",
-            "Increases critical hit rate by 25%."
+            "Increases Critical Hit Rate by 15%.",
+            "Increases Critical Hit Rate by 20%.",
+            "Increases Critical Hit Rate by 25%."
+        ],
+        "Effect (Global)": [
+            "Increases Critical Hit Rate by 15%.",
+            "Increases Critical Hit Rate by 20%.",
+            "Increases Critical Hit Rate by 25%."
         ]
     },
     {
+        "Name (JP)": "必撃の閃",
         "Name (English)": "Sure-Strike Flash",
+        "Name (Global)": "Sure-Strike Flash",
+        "Effect (JP)": [
+            "クリティカル率を(20%)上昇させる。",
+            "クリティカル率を(30%)上昇させる。",
+            "クリティカル率を(40%)上昇させる。"
+        ],
         "Effect (English)": [
-            "Increases critical hit rate by 20%.",
-            "Increases critical hit rate by 30%.",
-            "Increases critical hit rate by 40%."
+            "Increases Critical Hit Rate by 20%.",
+            "Increases Critical Hit Rate by 30%.",
+            "Increases Critical Hit Rate by 40%."
+        ],
+        "Effect (Global)": [
+            "Increases Critical Hit Rate by 20%.",
+            "Increases Critical Hit Rate by 30%.",
+            "Increases Critical Hit Rate by 40%."
         ]
     },
     {
-        "Name (English)": "Splendid Chase",
-        "Effect (English)": [
-            "Increases the damage of photon arts by 2%.",
-            "Increases the damage of photon arts by 3%.",
-            "Increases the damage of photon arts by 4%."
-        ]
-    },
-    {
+        "Name (JP)": "星天弾",
         "Name (English)": "Celestial Bullet",
+        "Name (Global)": "Heavenly Shot",
+        "Effect (JP)": [
+            "攻撃時に与えたダメージの(0.3%)をHPとして吸収する。(1ヒットの吸収上限50)",
+            "攻撃時に与えたダメージの(0.4%)をHPとして吸収する。(1ヒットの吸収上限50)",
+            "攻撃時に与えたダメージの(0.5%)をHPとして吸収する。(1ヒットの吸収上限50)"
+        ],
         "Effect (English)": [
-            "Absorb 0.3% of damage inflicted as HP, up to 50 per hit.",
-            "Absorb 0.4% of damage inflicted as HP, up to 50 per hit.",
-            "Absorb 0.5% of damage inflicted as HP, up to 50 per hit."
+            "Restores HP equal to 0.3% of damage dealt, up to 50 per hit.",
+            "Restores HP equal to 0.4% of damage dealt, up to 50 per hit.",
+            "Restores HP equal to 0.5% of damage dealt, up to 50 per hit."
+        ],
+        "Effect (Global)": [
+            "Restores HP equal to 0.3% of damage dealt, up to 50 per hit.",
+            "Restores HP equal to 0.4% of damage dealt, up to 50 per hit.",
+            "Restores HP equal to 0.5% of damage dealt, up to 50 per hit."
         ]
     },
     {
+        "Name (JP)": "奪命剣",
         "Name (English)": "Vampiric Blade",
+        "Name (Global)": "Soulstealing Blade",
+        "Effect (JP)": [
+            "攻撃時に与えたダメージの(4%)をHPとして吸収する。",
+            "攻撃時に与えたダメージの(5%)をHPとして吸収する。",
+            "攻撃時に与えたダメージの(6%)をHPとして吸収する。"
+        ],
         "Effect (English)": [
-            "Absorb 4% of damage inflicted as HP.",
-            "Absorb 5% of damage inflicted as HP.",
-            "Absorb 6% of damage inflicted as HP."
+            "Restores HP equal to 4% of damage dealt.",
+            "Restores HP equal to 5% of damage dealt.",
+            "Restores HP equal to 6% of damage dealt."
+        ],
+        "Effect (Global)": [
+            "Restores HP equal to 4% of damage dealt.",
+            "Restores HP equal to 5% of damage dealt.",
+            "Restores HP equal to 6% of damage dealt."
         ]
     },
     {
+        "Name (JP)": "究極の加護",
         "Name (English)": "Supreme Blessing",
+        "Name (Global)": "Ultimate Protection",
+        "Effect (JP)": [
+            "PPの消費量が(17%)減少する。",
+            "PPの消費量が(19%)減少する。",
+            "PPの消費量が(21%)減少する。"
+        ],
         "Effect (English)": [
+            "Reduces PP consumption by 17%.",
+            "Reduces PP consumption by 19%.",
+            "Reduces PP consumption by 21%."
+        ],
+        "Effect (Global)": [
             "Reduces PP consumption by 17%.",
             "Reduces PP consumption by 19%.",
             "Reduces PP consumption by 21%."
         ]
     },
     {
+        "Name (JP)": "光戦形態",
         "Name (English)": "Visage of Light",
+        "Name (Global)": "Light Warrior",
+        "Effect (JP)": [
+            "PPの消費量が(8%)減少する。",
+            "PPの消費量が(11%)減少する。",
+            "PPの消費量が(14%)減少する。"
+        ],
         "Effect (English)": [
+            "Reduces PP consumption by 8%.",
+            "Reduces PP consumption by 11%.",
+            "Reduces PP consumption by 14%."
+        ],
+        "Effect (Global)": [
             "Reduces PP consumption by 8%.",
             "Reduces PP consumption by 11%.",
             "Reduces PP consumption by 14%."
         ]
     },
     {
+        "Name (JP)": "心意同調",
         "Name (English)": "Mental Alignment",
+        "Name (Global)": "Mind Alignment",
+        "Effect (JP)": [
+            "PBゲージの溜まる上昇量が(20%)上昇する。",
+            "PBゲージの溜まる上昇量が(30%)上昇する。",
+            "PBゲージの溜まる上昇量が(50%)上昇する。"
+        ],
         "Effect (English)": [
+            "Increases PB gauge accumulation by 20%.",
+            "Increases PB gauge accumulation by 30%.",
+            "Increases PB gauge accumulation by 50%."
+        ],
+        "Effect (Global)": [
             "Increases PB gauge accumulation by 20%.",
             "Increases PB gauge accumulation by 30%.",
             "Increases PB gauge accumulation by 50%."
         ]
     },
     {
+        "Name (JP)": "錬成巧者",
         "Name (English)": "Skilled Trainer",
+        "Name (Global)": "Augmentalist",
+        "Effect (JP)": [
+            "ドロップアイテムに特殊能力が付与される確率が上昇する。",
+            "ドロップアイテムに特殊能力が付与される確率が上昇する。",
+            "ドロップアイテムに特殊能力が付与される確率が上昇する。"
+        ],
         "Effect (English)": [
-            "Increases the drop rate of equipments with abilities.",
-            "Increases the drop rate of equipments with abilities.",
-            "Increases the drop rate of equipments with abilities."
+            "Increases the chance of equipment drops having Special Abilities.",
+            "Increases the chance of equipment drops having Special Abilities.",
+            "Increases the chance of equipment drops having Special Abilities."
+        ],
+        "Effect (Global)": [
+            "Increases the chance of equipment drops having Augments.",
+            "Increases the chance of equipment drops having Augments.",
+            "Increases the chance of equipment drops having Augments."
         ]
     },
     {
+        "Name (JP)": "幸運の祥",
         "Name (English)": "Fortunate Omen",
+        "Name (Global)": "Good Fortune",
+        "Effect (JP)": [
+            "未鑑定アイテムの出現確率が上昇する。(※レアドロップ時にSW,SEになる確率のみ)",
+            "未鑑定アイテムの出現確率が上昇する。(※レアドロップ時にSW,SEになる確率のみ)",
+            "未鑑定アイテムの出現確率が上昇する。(※レアドロップ時にSW,SEになる確率のみ)"
+        ],
         "Effect (English)": [
-            "Increases the chances of rare weapons to be unidentified.",
-            "Increases the chances of rare weapons to be unidentified.",
-            "Increases the chances of rare weapons to be unidentified."
+            "Increases the chances of dropped rare weapons being unidentified.",
+            "Increases the chances of dropped rare weapons being unidentified.",
+            "Increases the chances of dropped rare weapons being unidentified. (100%)"
+        ],
+        "Effect (Global)": [
+            "Increases the chances of dropped rare weapons being unidentified.",
+            "Increases the chances of dropped rare weapons being unidentified.",
+            "Increases the chances of dropped rare weapons being unidentified. (100%)"
         ]
     },
     {
+        "Name (JP)": "不退転",
         "Name (English)": "Determination",
+        "Name (Global)": "Determination",
+        "Effect (JP)": [
+            "(40%)の確率でノックバックを消し、HPが回復する。(最大HPの8%%)",
+            "(45%)の確率でノックバックを消し、HPが回復する。(最大HPの10%)",
+            "(50%)の確率でノックバックを消し、HPが回復する。(最大HPの13%)"
+        ],
         "Effect (English)": [
+            "40% chance of nullifying knockback and recovering 8% HP.",
+            "45% chance of nullifying knockback and recovering 10% HP.",
+            "50% chance of nullifying knockback and recovering 13% HP."
+        ],
+        "Effect (Global)": [
             "40% chance of nullifying knockback and recovering 8% HP.",
             "45% chance of nullifying knockback and recovering 10% HP.",
             "50% chance of nullifying knockback and recovering 13% HP."
         ]
     },
     {
+        "Name (JP)": "幸運の羽根",
         "Name (English)": "Wings of Fortune",
+        "Name (Global)": "Lucky Feather",
+        "Effect (JP)": [
+            "一定確率でダメージを無効化する。",
+            "一定確率でダメージを無効化する。",
+            "一定確率でダメージを無効化する。"
+        ],
         "Effect (English)": [
+            "Fixed probability of nullifying damage.",
+            "Fixed probability of nullifying damage.",
+            "Fixed probability of nullifying damage."
+        ],
+        "Effect (Global)": [
             "Fixed probability of nullifying damage.",
             "Fixed probability of nullifying damage.",
             "Fixed probability of nullifying damage."
         ]
     },
     {
+        "Name (JP)": "薬の心得",
         "Name (English)": "Medicinal Knowledge",
+        "Name (Global)": "Medical Know-How",
+        "Effect (JP)": [
+            "回復アイテムの効果が(12%)上昇する。",
+            "回復アイテムの効果が(16%)上昇する。",
+            "回復アイテムの効果が(20%)上昇する。"
+        ],
         "Effect (English)": [
+            "Increases the effect of recovery items by 12%.",
+            "Increases the effect of recovery items by 16%.",
+            "Increases the effect of recovery items by 20%."
+        ],
+        "Effect (Global)": [
             "Increases the effect of recovery items by 12%.",
             "Increases the effect of recovery items by 16%.",
             "Increases the effect of recovery items by 20%."
         ]
     },
     {
+        "Name (JP)": "人導体",
         "Name (English)": "Living Conduit",
+        "Name (Global)": "Conduit",
+        "Effect (JP)": [
+            "エネミーに対するヘイト上昇率と防御性能が上昇する。(被ダメを5%軽減)",
+            "エネミーに対するヘイト上昇率と防御性能が上昇する。(被ダメを7%軽減)",
+            "エネミーに対するヘイト上昇率と防御性能が上昇する。(被ダメを10%軽減)"
+        ],
         "Effect (English)": [
             "Increases hate accumulation and increases defense by 5%.",
             "Increases hate accumulation and increases defense by 7%.",
             "Increases hate accumulation and increases defense by 10%."
+        ],
+        "Effect (Global)": [
+            "Increases Threat Level accumulation and increases defense by 5%.",
+            "Increases Threat Level accumulation and increases defense by 7%.",
+            "Increases Threat Level accumulation and increases defense by 10%."
         ]
     },
     {
+        "Name (JP)": "気配遮断",
         "Name (English)": "Isolated Presence",
+        "Name (Global)": "Concealed Presence",
+        "Effect (JP)": [
+            "エネミーに対するヘイト上昇率を減少させる。(12%)",
+            "エネミーに対するヘイト上昇率を減少させる。(16%)",
+            "エネミーに対するヘイト上昇率を減少させる。(20%)"
+        ],
         "Effect (English)": [
             "Reduces hate accumulation by 12%.",
             "Reduces hate accumulation by 16%.",
             "Reduces hate accumulation by 20%."
+        ],
+        "Effect (Global)": [
+            "Reduces Threat Level accumulation by 12%.",
+            "Reduces Threat Level accumulation by 16%.",
+            "Reduces Threat Level accumulation by 20%."
         ]
     },
     {
+        "Name (JP)": "炎火の追行",
         "Name (English)": "Pursuit of Flame",
+        "Name (Global)": "Stalking Blaze",
+        "Effect (JP)": [
+            "打撃と射撃による状態異常「バーン」の発生確率が上昇する。",
+            "打撃と射撃による状態異常「バーン」の発生確率が上昇する。",
+            "打撃と射撃による状態異常「バーン」の発生確率が上昇する。"
+        ],
         "Effect (English)": [
             "Increases Burn rate of Strike and Ranged attacks.",
             "Increases Burn rate of Strike and Ranged attacks.",
             "Increases Burn rate of Strike and Ranged attacks."
+        ],
+        "Effect (Global)": [
+            "Increases Burn rate of Melee and Ranged attacks.",
+            "Increases Burn rate of Melee and Ranged attacks.",
+            "Increases Burn rate of Melee and Ranged attacks."
         ]
     },
     {
+        "Name (JP)": "細氷の枷",
         "Name (English)": "Shackles of Ice",
+        "Name (Global)": "Shackles of Ice",
+        "Effect (JP)": [
+            "打撃と射撃による状態異常「フリーズ」の発生確率が上昇する。",
+            "打撃と射撃による状態異常「フリーズ」の発生確率が上昇する。",
+            "打撃と射撃による状態異常「フリーズ」の発生確率が上昇する。"
+        ],
         "Effect (English)": [
             "Increases Freeze rate of Strike and Ranged attacks.",
             "Increases Freeze rate of Strike and Ranged attacks.",
             "Increases Freeze rate of Strike and Ranged attacks. "
+        ],
+        "Effect (Global)": [
+            "Increases Freeze rate of Melee and Ranged attacks.",
+            "Increases Freeze rate of Melee and Ranged attacks.",
+            "Increases Freeze rate of Melee and Ranged attacks. "
         ]
     },
     {
+        "Name (JP)": "雷光の戒め",
         "Name (English)": "Chains of Lightning",
+        "Name (Global)": "Punishing Shock",
+        "Effect (JP)": [
+            "打撃と射撃による状態異常「ショック」の発生確率が上昇する。",
+            "打撃と射撃による状態異常「ショック」の発生確率が上昇する。",
+            "打撃と射撃による状態異常「ショック」の発生確率が上昇する。"
+        ],
         "Effect (English)": [
             "Increases Shock rate of Strike and Ranged attacks.",
             "Increases Shock rate of Strike and Ranged attacks.",
             "Increases Shock rate of Strike and Ranged attacks."
+        ],
+        "Effect (Global)": [
+            "Increases Shock rate of Melee and Ranged attacks.",
+            "Increases Shock rate of Melee and Ranged attacks.",
+            "Increases Shock rate of Melee and Ranged attacks."
         ]
     },
     {
+        "Name (JP)": "導く幻影",
         "Name (English)": "Guiding Mirage",
+        "Name (Global)": "Guiding Mirage",
+        "Effect (JP)": [
+            "打撃と射撃による状態異常「ミラージュ」の発生確率が上昇する。",
+            "打撃と射撃による状態異常「ミラージュ」の発生確率が上昇する。",
+            "打撃と射撃による状態異常「ミラージュ」の発生確率が上昇する。"
+        ],
         "Effect (English)": [
             "Increases Mirage rate of Strike and Ranged attacks.",
             "Increases Mirage rate of Strike and Ranged attacks.",
             "Increases Mirage rate of Strike and Ranged attacks."
+        ],
+        "Effect (Global)": [
+            "Increases Blind rate of Melee and Ranged attacks.",
+            "Increases Blind rate of Melee and Ranged attacks.",
+            "Increases Blind rate of Melee and Ranged attacks."
         ]
     },
     {
+        "Name (JP)": "誘う混沌",
         "Name (English)": "Inciting Panic",
+        "Name (Global)": "Inciting Panic",
+        "Effect (JP)": [
+            "打撃と射撃による状態異常「パニック」の発生確率が上昇する。",
+            "打撃と射撃による状態異常「パニック」の発生確率が上昇する。",
+            "打撃と射撃による状態異常「パニック」の発生確率が上昇する。"
+        ],
         "Effect (English)": [
             "Increases Panic rate of Strike and Ranged attacks.",
             "Increases Panic rate of Strike and Ranged attacks.",
             "Increases Panic rate of Strike and Ranged attacks."
+        ],
+        "Effect (Global)": [
+            "Increases Panic rate of Melee and Ranged attacks.",
+            "Increases Panic rate of Melee and Ranged attacks.",
+            "Increases Panic rate of Melee and Ranged attacks."
         ]
     },
     {
+        "Name (JP)": "蝕む害毒",
         "Name (English)": "Festering Poison",
+        "Name (Global)": "Festering Poison",
+        "Effect (JP)": [
+            "打撃と射撃による状態異常「ポイズン」の発生確率が上昇する。",
+            "打撃と射撃による状態異常「ポイズン」の発生確率が上昇する。",
+            "打撃と射撃による状態異常「ポイズン」の発生確率が上昇する。"
+        ],
         "Effect (English)": [
+            "Increases Poison rate of Strike and Ranged attacks.",
+            "Increases Poison rate of Strike and Ranged attacks.",
+            "Increases Poison rate of Strike and Ranged attacks."
+        ],
+        "Effect (Global)": [
             "Increases Poison rate of Strike and Ranged attacks.",
             "Increases Poison rate of Strike and Ranged attacks.",
             "Increases Poison rate of Strike and Ranged attacks."
         ]
     },
     {
+        "Name (JP)": "気光転換",
         "Name (English)": "Spirit Reversal",
+        "Name (Global)": "Spirit Reversal",
+        "Effect (JP)": [
+            "ダメージを受けた際にPPが回復する。(最大PPの10%)",
+            "ダメージを受けた際にPPが回復する。(最大PPの12%)",
+            "ダメージを受けた際にPPが回復する。(最大PPの15%)"
+        ],
         "Effect (English)": [
-            "Recover 10% PP when taking damage.",
-            "Recover 12% PP when taking damage.",
-            "Recover 15% PP when taking damage."
+            "Recovers 10% PP when taking damage.",
+            "Recovers 12% PP when taking damage.",
+            "Recovers 15% PP when taking damage."
+        ],
+        "Effect (Global)": [
+            "Recovers 10% PP when taking damage.",
+            "Recovers 12% PP when taking damage.",
+            "Recovers 15% PP when taking damage."
         ]
     },
     {
+        "Name (JP)": "黄金法則",
         "Name (English)": "Golden Rule",
+        "Name (Global)": "Golden Rule",
+        "Effect (JP)": [
+            "出現するメセタが(5%)増加する。",
+            "出現するメセタが(10%)増加する。",
+            "出現するメセタが(15%)増加する。"
+        ],
         "Effect (English)": [
-            "Increases meseta gained by 5%.",
-            "Increases meseta gained by 10%.",
-            "Increases meseta gained by 15%."
+            "Increases Meseta gained by 5%.",
+            "Increases Meseta gained by 10%.",
+            "Increases Meseta gained by 15%."
+        ],
+        "Effect (Global)": [
+            "Increases Meseta gained by 5%.",
+            "Increases Meseta gained by 10%.",
+            "Increases Meseta gained by 15%."
         ]
     },
     {
+        "Name (JP)": "純粋なる奮励",
         "Name (English)": "Pure Hardwork",
+        "Name (Global)": "Pure Hardwork",
+        "Effect (JP)": [
+            "取得する経験値が(4%)増加する。",
+            "取得する経験値が(7%)増加する。",
+            "取得する経験値が(10%)増加する。"
+        ],
         "Effect (English)": [
-            "Increases experience gained by 4%.",
-            "Increases experience gained by 7%.",
-            "Increases experience gained by 10%."
+            "Increases Experience gained by 4%.",
+            "Increases Experience gained by 7%.",
+            "Increases Experience gained by 10%."
+        ],
+        "Effect (Global)": [
+            "Increases Experience gained by 4%.",
+            "Increases Experience gained by 7%.",
+            "Increases Experience gained by 10%."
         ]
     },
     {
+        "Name (JP)": "慈愛の風",
         "Name (English)": "Benevolent Wind",
+        "Name (Global)": "Benevolent Wind",
+        "Effect (JP)": [
+            "HPを回復した際、周囲のプレイヤーを一定割合分回復する。(9%)",
+            "HPを回復した際、周囲のプレイヤーを一定割合分回復する。(12%)",
+            "HPを回復した際、周囲のプレイヤーを一定割合分回復する。(15%)"
+        ],
         "Effect (English)": [
-            "Heal nearby players by 9% upon being healed.",
-            "Heal nearby players by 12% upon being healed.",
-            "Heal nearby players by 15% upon being healed."
+            "Heals nearby players by 9% upon being healed.",
+            "Heals nearby players by 12% upon being healed.",
+            "Heals nearby players by 15% upon being healed."
+        ],
+        "Effect (Global)": [
+            "Heals nearby players by 9% upon being healed.",
+            "Heals nearby players by 12% upon being healed.",
+            "Heals nearby players by 15% upon being healed."
         ]
     },
     {
+        "Name (JP)": "幻精天恵",
         "Name (English)": "Phantasmal Blessing",
+        "Name (Global)": "Phantasmal Blessing",
+        "Effect (JP)": [
+            "フォトンブラストゲージに応じて威力が変動する。(4%/7%/8%)",
+            "フォトンブラストゲージに応じて威力が変動する。(5%/8%/9%)",
+            "フォトンブラストゲージに応じて威力が変動する。(6%/9%/10%)"
+        ],
         "Effect (English)": [
+            "Increases damage based on Photon Blast Gauge. Increases damage by 4%/7%/8% at minimum/half/full status of the Photon Blast Gauge.",
+            "Increases damage based on Photon Blast Gauge. Increases damage by 5%/8%/9% at minimum/half/full status of the Photon Blast Gauge.",
+            "Increases damage based on Photon Blast Gauge. Increases damage by 6%/9%/10% at minimum/half/full status of the Photon Blast Gauge."
+        ],
+        "Effect (Global)": [
             "Increases damage based on Photon Blast Gauge. Increases damage by 4%/7%/8% at minimum/half/full status of the Photon Blast Gauge.",
             "Increases damage based on Photon Blast Gauge. Increases damage by 5%/8%/9% at minimum/half/full status of the Photon Blast Gauge.",
             "Increases damage based on Photon Blast Gauge. Increases damage by 6%/9%/10% at minimum/half/full status of the Photon Blast Gauge."
         ]
     },
     {
+        "Name (JP)": "技巧匠",
         "Name (English)": "Craft Mastery",
+        "Name (Global)": "Craft Mastery",
+        "Effect (JP)": [
+            "エクステンドした武器の使用時に威力が上昇する。(5%)",
+            "エクステンドした武器の使用時に威力が上昇する。(6%)",
+            "エクステンドした武器の使用時に威力が上昇する。(7%)"
+        ],
         "Effect (English)": [
+            "Increases damage when using extended weapons by 5%.",
+            "Increases damage when using extended weapons by 6%.",
+            "Increases damage when using extended weapons by 7%."
+        ],
+        "Effect (Global)": [
             "Increases damage when using extended weapons by 5%.",
             "Increases damage when using extended weapons by 6%.",
             "Increases damage when using extended weapons by 7%."
         ]
     },
     {
+        "Name (JP)": "飛天の撃",
         "Name (English)": "Aerial Burst",
+        "Name (Global)": "Aerial Burst",
+        "Effect (JP)": [
+            "空中での攻撃時にダメージが上昇する。(6%)",
+            "空中での攻撃時にダメージが上昇する。(8%)",
+            "空中での攻撃時にダメージが上昇する。(10%)"
+        ],
         "Effect (English)": [
-            "Increases airborne attack damage by 6%.",
-            "Increases airborne attack damage by 8%.",
-            "Increases airborne attack damage by 10%."
+            "Increases damage while airborne by 6%.",
+            "Increases damage while airborne by 8%.",
+            "Increases damage while airborne by 10%."
+        ],
+        "Effect (Global)": [
+            "Increases damage while airborne by 6%.",
+            "Increases damage while airborne by 8%.",
+            "Increases damage while airborne by 10%."
         ]
     },
     {
+        "Name (JP)": "瞬闇の翼",
         "Name (English)": "Wings of Darkness",
+        "Name (Global)": "Wings of Twilight",
+        "Effect (JP)": [
+            "異なるPAやテクニックをジャストアタックするとダメージが上昇する。(7%)",
+            "異なるPAやテクニックをジャストアタックするとダメージが上昇する。(10%)",
+            "異なるPAやテクニックをジャストアタックするとダメージが上昇する。(14%)"
+        ],
         "Effect (English)": [
             "Increases JA damage by 7% when using different PAs or Techniques.",
             "Increases JA damage by 10% when using different PAs or Techniques.",
             "Increases JA damage by 14% when using different PAs or Techniques."
+        ],
+        "Effect (Global)": [
+            "Increases Perfect Attack damage by 7% when using different PAs or Techniques.",
+            "Increases Perfect Attack damage by 10% when using different PAs or Techniques.",
+            "Increases Perfect Attack damage by 14% when using different PAs or Techniques."
         ]
     },
     {
@@ -5627,8 +6019,8 @@
     },
     {
         "Name (JP)": "匠魂宿刃",
-        "Name (English)": "Craftsman's Spirit Blade",
-        "Name (Global)": "Craftsman's Spirit Blade",
+        "Name (English)": "Artisan Spirit's Blade",
+        "Name (Global)": "Artisan Spirit's Blade",
         "Effect (JP)": [
             "エクステンドした武器の使用時に威力が上昇する。(?%)",
             "エクステンドした武器の使用時に威力が上昇する。(?%)",
@@ -5666,8 +6058,8 @@
     },
     {
         "Name (JP)": "流星爆砕奏",
-        "Name (English)": "Meteor Explosion",
-        "Name (Global)": "Meteor Explosion",
+        "Name (English)": "Meteor Bombardier",
+        "Name (Global)": "Meteor Bombardier",
         "Effect (JP)": [
             "HPが75%以上の時、与ダメージが(20%)上昇する。",
             "HPが75%以上の時、与ダメージが(21%)上昇する。",
@@ -5704,8 +6096,20 @@
         "Special": "Weaponoid"
     },
     {
-        "Name (English)": "小夜嵐の魔光刃",
+        "Name (JP)": "小夜嵐の魔光刃",
+        "Name (English)": "Gale of Demonic Aura",
+        "Name (Global)": "Gale of Demonic Aura",
+        "Effect (JP)": [
+            "地上での攻撃時、威力とPP回復性能が上昇。",
+            "地上での攻撃時、威力とPP回復性能が上昇。",
+            "地上での攻撃時、威力とPP回復性能が上昇。"
+        ],
         "Effect (English)": [
+            "Increases damage and Active PP Regeneration when on the ground.",
+            "Increases damage and Active PP Regeneration when on the ground.",
+            "Increases damage and Active PP Regeneration when on the ground."
+        ],
+        "Effect (Global)": [
             "Increases damage and Active PP Regeneration when on the ground.",
             "Increases damage and Active PP Regeneration when on the ground.",
             "Increases damage and Active PP Regeneration when on the ground."
@@ -5713,8 +6117,20 @@
         "Special": "Weaponoid"
     },
     {
-        "Name (English)": "蹴撃の次元龍",
+        "Name (JP)": "蹴撃の次元龍",
+        "Name (English)": "Dimensional Dragon's Raid",
+        "Name (Global)": "Dimensional Dragon's Raid",
+        "Effect (JP)": [
+            "空中での攻撃時、威力(?%)とPP回復性能(?%)が上昇。",
+            "空中での攻撃時、威力(?%)とPP回復性能(?%)が上昇。",
+            "空中での攻撃時、威力(20%)とPP回復性能(15%)が上昇。"
+        ],
         "Effect (English)": [
+            "Increases damage by ?% and Active PP Regeneration by ?% while airborne.",
+            "Increases damage by ?% and Active PP Regeneration by ?% while airborne.",
+            "Increases damage by 20% and Active PP Regeneration by 15% while airborne."
+        ],
+        "Effect (Global)": [
             "Increases damage by ?% and Active PP Regeneration by ?% while airborne.",
             "Increases damage by ?% and Active PP Regeneration by ?% while airborne.",
             "Increases damage by 20% and Active PP Regeneration by 15% while airborne."
@@ -5760,9 +6176,9 @@
     {
         "Name (English)": "Anthesis Trainer",
         "Effect (English)": [
-            "Increases damage by 10%. Doubles the effects of Special Abilities attached to the Weapon.",
-            "Increases damage by 12%. Doubles the effects of Special Abilities attached to the Weapon.",
-            "Increases damage by 14%. Doubles the effects of Special Abilities attached to the Weapon."
+            "Increases damage by 10%. Doubles the effects of Special Abilities attached to the Weapon. (Only applies to HP, PP, ATK, DEX and DEF stats on Abilities)",
+            "Increases damage by 12%. Doubles the effects of Special Abilities attached to the Weapon. (Only applies to HP, PP, ATK, DEX and DEF stats on Abilities)",
+            "Increases damage by 14%. Doubles the effects of Special Abilities attached to the Weapon. (Only applies to HP, PP, ATK, DEX and DEF stats on Abilities)"
         ],
         "Special": "Qliphad"
     },
@@ -6093,13 +6509,5 @@
             "Increases damage by 24%. Shorten the charge time of Support Techniques. The damage of Zondeel is reduced."
         ],
         "Special": "Ultimate"
-    },
-    {
-        "Name (English)": "Warsage Stance",
-        "Effect (English)": [
-            "Increases the effects of Element Stance.",
-            "Increases the effects of Element Stance.",
-            "Increases the effects of Element Stance."
-        ]
     }
 ]
