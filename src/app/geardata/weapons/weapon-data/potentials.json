@@ -309,14 +309,14 @@
             "チェインフィニッシュ倍率を(20%)強化する。"
         ],
         "Effect (English)": [
-            "Increases the effect of Chain Finish by 12%",
-            "Increases the effect of Chain Finish by 16%",
-            "Increases the effect of Chain Finish by 20%"
+            "Increases the effect of Chain Finish by 12%.",
+            "Increases the effect of Chain Finish by 16%.",
+            "Increases the effect of Chain Finish by 20%."
         ],
         "Effect (Global)": [
-            "Increases the effect of Chain Finish by 12%",
-            "Increases the effect of Chain Finish by 16%",
-            "Increases the effect of Chain Finish by 20%"
+            "Increases the effect of Chain Finish by 12%.",
+            "Increases the effect of Chain Finish by 16%.",
+            "Increases the effect of Chain Finish by 20%."
         ]
     },
     {
@@ -329,14 +329,14 @@
             "パーフェクトキーパーの効果が上昇する。(9%)"
         ],
         "Effect (English)": [
-            "Increases the effect of Perfect Keeper by 5%",
-            "Increases the effect of Perfect Keeper by 7%",
-            "Increases the effect of Perfect Keeper by 9%"
+            "Increases the effect of Perfect Keeper by 5%.",
+            "Increases the effect of Perfect Keeper by 7%.",
+            "Increases the effect of Perfect Keeper by 9%."
         ],
         "Effect (Global)": [
-            "Increases the effect of Perfectionist by 5%",
-            "Increases the effect of Perfectionist by 7%",
-            "Increases the effect of Perfectionist by 9%"
+            "Increases the effect of Perfectionist by 5%.",
+            "Increases the effect of Perfectionist by 7%.",
+            "Increases the effect of Perfectionist by 9%."
         ]
     },
     {
@@ -449,14 +449,14 @@
             "アベレージスタンスの効果が上昇する。(7%)"
         ],
         "Effect (English)": [
-            "Increases the effects of Average Stance by 5%",
-            "Increases the effects of Average Stance by 6%",
-            "Increases the effects of Average Stance by 7%"
+            "Increases the effects of Average Stance by 5%.",
+            "Increases the effects of Average Stance by 6%.",
+            "Increases the effects of Average Stance by 7%."
         ],
         "Effect (Global)": [
-            "Increases the effects of Basic Stance by 5%",
-            "Increases the effects of Basic Stance by 6%",
-            "Increases the effects of Basic Stance by 7%"
+            "Increases the effects of Basic Stance by 5%.",
+            "Increases the effects of Basic Stance by 6%.",
+            "Increases the effects of Basic Stance by 7%."
         ]
     },
     {
@@ -469,14 +469,14 @@
             "アベレージスタンス時のクリティカル発生率を上昇させる。(20%)"
         ],
         "Effect (English)": [
-            "Increases Critical Hit Rate during Average Stance by 18%",
-            "Increases Critical Hit Rate during Average Stance by 19%",
-            "Increases Critical Hit Rate during Average Stance by 20%"
+            "Increases Critical Hit Rate during Average Stance by 18%.",
+            "Increases Critical Hit Rate during Average Stance by 19%.",
+            "Increases Critical Hit Rate during Average Stance by 20%."
         ],
         "Effect (Global)": [
-            "Increases Critical Hit Rate during Basic Stance by 18%",
-            "Increases Critical Hit Rate during Basic Stance by 19%",
-            "Increases Critical Hit Rate during Basic Stance by 20%"
+            "Increases Critical Hit Rate during Basic Stance by 18%.",
+            "Increases Critical Hit Rate during Basic Stance by 19%.",
+            "Increases Critical Hit Rate during Basic Stance by 20%."
         ]
     },
     {
@@ -489,14 +489,14 @@
             "ウィークスタンスの効果が上昇する。(11%)"
         ],
         "Effect (English)": [
-            "Increases the effect of Weak Stance by 6%",
-            "Increases the effect of Weak Stance by 9%",
-            "Increases the effect of Weak Stance by 11%"
+            "Increases the effect of Weak Stance by 6%.",
+            "Increases the effect of Weak Stance by 9%.",
+            "Increases the effect of Weak Stance by 11%."
         ],
         "Effect (Global)": [
-            "Increases the effect of Precision Stance by 6%",
-            "Increases the effect of Precision Stance by 9%",
-            "Increases the effect of Precision Stance by 11%"
+            "Increases the effect of Precision Stance by 6%.",
+            "Increases the effect of Precision Stance by 9%.",
+            "Increases the effect of Precision Stance by 11%."
         ]
     },
     {
@@ -509,14 +509,14 @@
             "ラピッドシュート時のダメージ量が増加する。(15%)"
         ],
         "Effect (English)": [
-            "Increases attack damage during Rapid Shoot by 10%",
-            "Increases attack damage during Rapid Shoot by 12%",
-            "Increases attack damage during Rapid Shoot by 15%"
+            "Increases attack damage during Rapid Shoot by 10%.",
+            "Increases attack damage during Rapid Shoot by 12%.",
+            "Increases attack damage during Rapid Shoot by 15%."
         ],
         "Effect (Global)": [
-            "Increases attack damage during Rapid Fire by 10%",
-            "Increases attack damage during Rapid Fire by 12%",
-            "Increases attack damage during Rapid Fire by 15%"
+            "Increases attack damage during Rapid Fire by 10%.",
+            "Increases attack damage during Rapid Fire by 12%.",
+            "Increases attack damage during Rapid Fire by 15%."
         ]
     },
     {
@@ -549,14 +549,14 @@
             "スナッチステップが(300%)、スナッチJAコンボの威力が(14%)上昇する。"
         ],
         "Effect (English)": [
-            "Increases the damage of Snatch Step by 100% and Snatch JA Combo by 5%",
-            "Increases the damage of Snatch Step by 200% and Snatch JA Combo by 9%",
-            "Increases the damage of Snatch Step by 300% and Snatch JA Combo by 14%"
+            "Increases the damage of Snatch Step by 100% and Snatch JA Combo by 5%.",
+            "Increases the damage of Snatch Step by 200% and Snatch JA Combo by 9%.",
+            "Increases the damage of Snatch Step by 300% and Snatch JA Combo by 14%."
         ],
         "Effect (Global)": [
-            "Increases the damage of Sidestep Tackle by 100% and Sidestep & Perf. ATK Combo by 5%",
-            "Increases the damage of Sidestep Tackle by 200% and Sidestep & Perf. ATK Combo by 9%",
-            "Increases the damage of Sidestep Tackle by 300% and Sidestep & Perf. ATK Combo by 14%"
+            "Increases the damage of Sidestep Tackle by 100% and Sidestep & Perf. ATK Combo by 5%.",
+            "Increases the damage of Sidestep Tackle by 200% and Sidestep & Perf. ATK Combo by 9%.",
+            "Increases the damage of Sidestep Tackle by 300% and Sidestep & Perf. ATK Combo by 14%."
         ]
     },
     {
@@ -569,14 +569,14 @@
             "エレメンタルスタンス中、弱点属性での攻撃時に威力が(9%)上昇。"
         ],
         "Effect (English)": [
-            "Increases the effect of Elemental Stance by 7%",
-            "Increases the effect of Elemental Stance by 8%",
-            "Increases the effect of Elemental Stance by 9%"
+            "Increases the effect of Elemental Stance by 7%.",
+            "Increases the effect of Elemental Stance by 8%.",
+            "Increases the effect of Elemental Stance by 9%."
         ],
         "Effect (Global)": [
-            "Increases the effect of Elemental Stance by 7%",
-            "Increases the effect of Elemental Stance by 8%",
-            "Increases the effect of Elemental Stance by 9%"
+            "Increases the effect of Elemental Stance by 7%.",
+            "Increases the effect of Elemental Stance by 8%.",
+            "Increases the effect of Elemental Stance by 9%."
         ]
     },
     {
@@ -589,14 +589,14 @@
             "エレメンタルスタンス中、弱点属性での攻撃時に威力が(15%)上昇。"
         ],
         "Effect (English)": [
-            "Increases the effect of Elemental Stance by 9%",
-            "Increases the effect of Elemental Stance by 12%",
-            "Increases the effect of Elemental Stance by 15%"
+            "Increases the effect of Elemental Stance by 9%.",
+            "Increases the effect of Elemental Stance by 12%.",
+            "Increases the effect of Elemental Stance by 15%."
         ],
         "Effect (Global)": [
-            "Increases the effect of Elemental Stance by 9%",
-            "Increases the effect of Elemental Stance by 12%",
-            "Increases the effect of Elemental Stance by 15%"
+            "Increases the effect of Elemental Stance by 9%.",
+            "Increases the effect of Elemental Stance by 12%.",
+            "Increases the effect of Elemental Stance by 15%."
         ]
     },
     {
@@ -609,14 +609,14 @@
             "ブレイクスタンスの効果が上昇する。(14%)"
         ],
         "Effect (English)": [
-            "Increases the effect of Break Stance by 10%",
-            "Increases the effect of Break Stance by 12%",
-            "Increases the effect of Break Stance by 14%"
+            "Increases the effect of Break Stance by 10%.",
+            "Increases the effect of Break Stance by 12%.",
+            "Increases the effect of Break Stance by 14%."
         ],
         "Effect (Global)": [
-            "Increases the effect of Break Stance by 10%",
-            "Increases the effect of Break Stance by 12%",
-            "Increases the effect of Break Stance by 14%"
+            "Increases the effect of Break Stance by 10%.",
+            "Increases the effect of Break Stance by 12%.",
+            "Increases the effect of Break Stance by 14%."
         ]
     },
     {
@@ -629,14 +629,14 @@
             "ブレイクスタンスの効果が大きく上昇する。(60%)"
         ],
         "Effect (English)": [
-            "Increases the effect of Break Stance by 30%",
-            "Increases the effect of Break Stance by 45%",
-            "Increases the effect of Break Stance by 60%"
+            "Increases the effect of Break Stance by 30%.",
+            "Increases the effect of Break Stance by 45%.",
+            "Increases the effect of Break Stance by 60%."
         ],
         "Effect (Global)": [
-            "Increases the effect of Break Stance by 30%",
-            "Increases the effect of Break Stance by 45%",
-            "Increases the effect of Break Stance by 60%"
+            "Increases the effect of Break Stance by 30%.",
+            "Increases the effect of Break Stance by 45%.",
+            "Increases the effect of Break Stance by 60%."
         ]
     },
     {
@@ -769,12 +769,12 @@
             "射撃による弱点へのダメージが(9%)上昇する。"
         ],
         "Effect (English)": [
-            "Increases damage dealt to weak points by Ranged attacks by 6%",
+            "Increases damage dealt to weak points by Ranged attacks by 6%.",
             "Increases damage dealt to weak points by Ranged attacks by 7%.",
             "Increases damage dealt to weak points by Ranged attacks by 9%."
         ],
         "Effect (Global)": [
-            "Increases damage dealt to weak points by Ranged attacks by 6%",
+            "Increases damage dealt to weak points by Ranged attacks by 6%.",
             "Increases damage dealt to weak points by Ranged attacks by 7%.",
             "Increases damage dealt to weak points by Ranged attacks by 9%."
         ]
@@ -789,12 +789,12 @@
             "射撃による弱点へのダメージが(11%)上昇する。"
         ],
         "Effect (English)": [
-            "Increases damage dealt to weak points by Ranged attacks by 7%",
+            "Increases damage dealt to weak points by Ranged attacks by 7%.",
             "Increases damage dealt to weak points by Ranged attacks by 9%.",
             "Increases damage dealt to weak points by Ranged attacks by 11%."
         ],
         "Effect (Global)": [
-            "Increases damage dealt to weak points by Ranged attacks by 7%",
+            "Increases damage dealt to weak points by Ranged attacks by 7%.",
             "Increases damage dealt to weak points by Ranged attacks by 9%.",
             "Increases damage dealt to weak points by Ranged attacks by 11%."
         ]
@@ -1409,14 +1409,14 @@
             "装備している武器の打撃力を一定割合だけ法撃力に変換する。(50%)"
         ],
         "Effect (English)": [
-            "Converts 40% of your weapon's S-ATK into T-ATK.",
-            "Converts 45% of your weapon's S-ATK into T-ATK.",
-            "Converts 50% of your weapon's S-ATK into T-ATK."
+            "Converts 40% of weapon's S-ATK into T-ATK.",
+            "Converts 45% of weapon's S-ATK into T-ATK.",
+            "Converts 50% of weapon's S-ATK into T-ATK."
         ],
         "Effect (Global)": [
-            "Converts 40% of your weapon's MEL Pwr into TEC Pwr.",
-            "Converts 45% of your weapon's MEL Pwr into TEC Pwr.",
-            "Converts 50% of your weapon's MEL Pwr into TEC Pwr."
+            "Converts 40% of weapon's MEL Pwr into TEC Pwr.",
+            "Converts 45% of weapon's MEL Pwr into TEC Pwr.",
+            "Converts 50% of weapon's MEL Pwr into TEC Pwr."
         ]
     },
     {
@@ -1429,14 +1429,14 @@
             "装備している武器の射撃力を一定割合だけ法撃力に変換する。(50%)"
         ],
         "Effect (English)": [
-            "Converts 40% of your weapon's R-ATK into T-ATK.",
-            "Converts 45% of your weapon's R-ATK into T-ATK.",
-            "Converts 50% of your weapon's R-ATK into T-ATK."
+            "Converts 40% of weapon's R-ATK into T-ATK.",
+            "Converts 45% of weapon's R-ATK into T-ATK.",
+            "Converts 50% of weapon's R-ATK into T-ATK."
         ],
         "Effect (Global)": [
-            "Converts 40% of your weapon's RNG Pwr into TEC Pwr.",
-            "Converts 45% of your weapon's RNG Pwr into TEC Pwr.",
-            "Converts 50% of your weapon's RNG Pwr into TEC Pwr."
+            "Converts 40% of weapon's RNG Pwr into TEC Pwr.",
+            "Converts 45% of weapon's RNG Pwr into TEC Pwr.",
+            "Converts 50% of weapon's RNG Pwr into TEC Pwr."
         ]
     },
     {
@@ -2080,315 +2080,703 @@
         ]
     },
     {
+        "Name (JP)": "常昂気功",
         "Name (English)": "Standard Meditation",
+        "Name (Global)": "Standard Meditation",
+        "Effect (JP)": [
+            "通常攻撃のダメージが上昇する。(10%)",
+            "通常攻撃のダメージが上昇する。(15%)",
+            "通常攻撃のダメージが上昇する。(20%)"
+        ],
         "Effect (English)": [
-            "Increases normal attack damage by 10%.",
-            "Increases normal attack damage by 15%.",
-            "Increases normal attack damage by 20%."
+            "Increases Normal Attack damage by 10%.",
+            "Increases Normal Attack damage by 15%.",
+            "Increases Normal Attack damage by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases Normal Attack damage by 10%.",
+            "Increases Normal Attack damage by 15%.",
+            "Increases Normal Attack damage by 20%."
         ]
     },
     {
+        "Name (JP)": "疾風の狩人",
         "Name (English)": "Swift Hunter",
+        "Name (Global)": "The Swift Huntsman",
+        "Effect (JP)": [
+            "移動した状態での射撃のダメージが(9%%)上昇する。",
+            "移動した状態での射撃のダメージが(12%)上昇する。",
+            "移動した状態での射撃のダメージが(15%)上昇する。"
+        ],
         "Effect (English)": [
+            "Increases Ranged damage while moving by 9%.",
+            "Increases Ranged damage while moving by 12%.",
+            "Increases Ranged damage while moving by 15%."
+        ],
+        "Effect (Global)": [
             "Increases Ranged damage while moving by 9%.",
             "Increases Ranged damage while moving by 12%.",
             "Increases Ranged damage while moving by 15%."
         ]
     },
     {
+        "Name (JP)": "死中活性",
         "Name (English)": "Fatal Activity",
+        "Name (Global)": "Fatal Activity",
+        "Effect (JP)": [
+            "一定間隔でダメージを負う代わりに与ダメージとPP回復速度が上昇。(20秒毎に最大HPの5%ダメージ　与ダメージ3%/7%/15%・PP回復速度10%上昇)",
+            "一定間隔でダメージを負う代わりに与ダメージとPP回復速度が上昇。(20秒毎に最大HPの5%ダメージ　与ダメージ3%/7%/15%・PP回復速度10%上昇)",
+            "一定間隔でダメージを負う代わりに与ダメージとPP回復速度が上昇。(20秒毎に最大HPの5%ダメージ　与ダメージ3%/7%/15%・PP回復速度10%上昇)"
+        ],
         "Effect (English)": [
-            "Increases attack damage by 3% and PP recovery by 10% in exchange for receiving 5% damage every 20 seconds.",
-            "Increases attack damage by 7% and PP recovery by 10% in exchange for receiving 5% damage every 20 seconds.",
-            "Increases attack damage by 15% and PP recovery by 10% in exchange for receiving 5% damage every 20 seconds."
+            "Increases damage by 3% and Natural PP Recovery by 10%, but loses 5% HP every 20 seconds.",
+            "Increases damage by 3% and Natural PP Recovery by 10%, but loses 5% HP every 20 seconds.",
+            "Increases damage by 3% and Natural PP Recovery by 10%, but loses 5% HP every 20 seconds."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 3% and Natural PP Recovery by 10%, but loses 5% HP every 20 seconds.",
+            "Increases damage by 3% and Natural PP Recovery by 10%, but loses 5% HP every 20 seconds.",
+            "Increases damage by 3% and Natural PP Recovery by 10%, but loses 5% HP every 20 seconds."
         ]
     },
     {
-        "Name (English)": "Divine Blessings",
-        "Effect (English)": [
-            "Increases Strike, Ranged, and Technique damage when HP is below 50%.",
-            "Increases Strike, Ranged, and Technique damage when HP is below 50%.",
-            "Increases Strike, Ranged, and Technique damage when HP is below 50%."
-        ]
-    },
-    {
-        "Name (English)": "Barbed Restraints",
-        "Effect (English)": [
-            "Fixed probability of inflicting Injury upon yourself.",
-            "Fixed probability of inflicting Injury upon yourself.",
-            "Fixed probability of inflicting Injury upon yourself."
-        ]
-    },
-    {
-        "Name (English)": "Immediate Wounds",
-        "Effect (English)": [
-            "Fixed probability of inflicting Injury during a Just Attack.",
-            "Fixed probability of inflicting Injury during a Just Attack.",
-            "Fixed probability of inflicting Injury during a Just Attack."
-        ]
-    },
-    {
+        "Name (JP)": "刹那の衰気",
         "Name (English)": "Immediate Weakness",
+        "Name (Global)": "Immediate Weakness",
+        "Effect (JP)": [
+            "ジャストアタック時に一定確率でジェルンを付与する。(ジェルン効果2%)",
+            "ジャストアタック時に一定確率でジェルンを付与する。(ジェルン効果6%)",
+            "ジャストアタック時に一定確率でジェルンを付与する。(ジェルン効果10%)"
+        ],
         "Effect (English)": [
-            "Fixed probability of inflicting Jellen during a Just Attack. (Jellen effect 2%)",
-            "Fixed probability of inflicting Jellen during a Just Attack. (Jellen effect 6%)",
-            "Fixed probability of inflicting Jellen during a Just Attack. (Jellen effect 10%)"
+            "2% chance of inflicting Jellen when using a Just Attack.",
+            "6% chance of inflicting Jellen when using a Just Attack.",
+            "10% chance of inflicting Jellen when using a Just Attack."
+        ],
+        "Effect (Global)": [
+            "2% chance of inflicting Jellen when using a Perfect Attack.",
+            "6% chance of inflicting Jellen when using a Perfect Attack.",
+            "10% chance of inflicting Jellen when using a Perfect Attack."
         ]
     },
     {
+        "Name (JP)": "影闘形態",
         "Name (English)": "Visage of Shadow",
+        "Name (Global)": "Shadow Warrior",
+        "Effect (JP)": [
+            "連続でジャストアタックに成功した時のダメージが上昇する。(1% 上限15%)",
+            "連続でジャストアタックに成功した時のダメージが上昇する。(2% 上限15%)",
+            "連続でジャストアタックに成功した時のダメージが上昇する。(3% 上限15%)"
+        ],
         "Effect (English)": [
-            "Increases damage for each consecutive Just Attacks by 1%. (15% MAX)",
-            "Increases damage for each consecutive Just Attacks by 2%. (15% MAX)",
-            "Increases damage for each consecutive Just Attacks by 3%. (15% MAX)"
+            "Increases damage by 1% for each consecutive Just Attack, up to 15%.",
+            "Increases damage by 2% for each consecutive Just Attack, up to 15%.",
+            "Increases damage by 3% for each consecutive Just Attack, up to 15%."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 1% for each consecutive Perfect Attack, up to 15%.",
+            "Increases damage by 2% for each consecutive Perfect Attack, up to 15%.",
+            "Increases damage by 3% for each consecutive Perfect Attack, up to 15%."
         ]
     },
     {
+        "Name (JP)": "瞬撃の連鎖",
         "Name (English)": "Twinkling Chain",
+        "Name (Global)": "Twinkling Chain",
+        "Effect (JP)": [
+            "連続でジャストアタックに成功した時のダメージが上昇する。(3% 上限10%)",
+            "連続でジャストアタックに成功した時のダメージが上昇する。(4% 上限10%)",
+            "連続でジャストアタックに成功した時のダメージが上昇する。(5% 上限10%)"
+        ],
         "Effect (English)": [
-            "Increases damage for each consecutive Just Attacks by 3%, up to 10%.",
-            "Increases damage for each consecutive Just Attacks by 4%, up to 10%.",
-            "Increases damage for each consecutive Just Attacks by 5%, up to 10%."
+            "Increases damage by 3% for each consecutive Just Attack, up to 10%.",
+            "Increases damage by 4% for each consecutive Just Attack, up to 10%.",
+            "Increases damage by 5% for each consecutive Just Attack, up to 10%."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 3% for each consecutive Perfect Attack, up to 10%.",
+            "Increases damage by 4% for each consecutive Perfect Attack, up to 10%.",
+            "Increases damage by 5% for each consecutive Perfect Attack, up to 10%."
         ]
     },
     {
+        "Name (JP)": "月白舞花",
         "Name (English)": "Dancing Night Blossom",
+        "Name (Global)": "Moonlight Petal Shower",
+        "Effect (JP)": [
+            "PA・テクニック使用時にPP消費量が(6%)減少し、威力が(1%)上昇する。",
+            "PA・テクニック使用時にPP消費量が(8%)減少し、威力が(2%)上昇する。",
+            "PA・テクニック使用時にPP消費量が(10%)減少し、威力が(3%)上昇する。"
+        ],
         "Effect (English)": [
+            "Reduces the PP consumption of PAs and Techniques by 6% and increases their damage by 1%.",
+            "Reduces the PP consumption of PAs and Techniques by 8% and increases their damage by 2%.",
+            "Reduces the PP consumption of PAs and Techniques by 10% and increases their damage by 3%."
+        ],
+        "Effect (Global)": [
             "Reduces the PP consumption of PAs and Techniques by 6% and increases their damage by 1%.",
             "Reduces the PP consumption of PAs and Techniques by 8% and increases their damage by 2%.",
             "Reduces the PP consumption of PAs and Techniques by 10% and increases their damage by 3%."
         ]
     },
     {
+        "Name (JP)": "月白淡花",
         "Name (English)": "Pale Night Blossom",
+        "Name (Global)": "Moonlight Fireworks",
+        "Effect (JP)": [
+            "PA・テクニック使用時にPP消費量が(4%)減少し、威力が(4%)上昇する。",
+            "PA・テクニック使用時にPP消費量が(5%)減少し、威力が(5%)上昇する。",
+            "PA・テクニック使用時にPP消費量が(6%)減少し、威力が(6%)上昇する。"
+        ],
         "Effect (English)": [
+            "Reduces the PP consumption of PAs and Techniques by 4% and increases their damage by 4%.",
+            "Reduces the PP consumption of PAs and Techniques by 5% and increases their damage by 5%.",
+            "Reduces the PP consumption of PAs and Techniques by 6% and increases their damage by 6%."
+        ],
+        "Effect (Global)": [
             "Reduces the PP consumption of PAs and Techniques by 4% and increases their damage by 4%.",
             "Reduces the PP consumption of PAs and Techniques by 5% and increases their damage by 5%.",
             "Reduces the PP consumption of PAs and Techniques by 6% and increases their damage by 6%."
         ]
     },
     {
+        "Name (JP)": "限界駆動",
         "Name (English)": "Limit Drive",
+        "Name (Global)": "Pushing the Limit",
+        "Effect (JP)": [
+            "PA・テクニック使用時にPP消費量が15%増加し、威力が(10%)上昇する。",
+            "PA・テクニック使用時にPP消費量が15%増加し、威力が(12%)上昇する。",
+            "PA・テクニック使用時にPP消費量が15%増加し、威力が(15%)上昇する。"
+        ],
         "Effect (English)": [
-            "Consume 15% more PP when you use a PA or Technique and increases its damage by 10%.",
-            "Consume 15% more PP when you use a PA or Technique and increases its damage by 12%.",
-            "Consume 15% more PP when you use a PA or Technique and increases its damage by 15%."
+            "Increases PA and Technique damage by 10%, but increases PP costs by 15%.",
+            "Increases PA and Technique damage by 12%, but increases PP costs by 15%.",
+            "Increases PA and Technique damage by 15%, but increases PP costs by 15%."
+        ],
+        "Effect (Global)": [
+            "Increases PA and Technique damage by 10%, but increases PP costs by 15%.",
+            "Increases PA and Technique damage by 12%, but increases PP costs by 15%.",
+            "Increases PA and Technique damage by 15%, but increases PP costs by 15%."
         ]
     },
     {
+        "Name (JP)": "魔の誓約",
         "Name (English)": "Magic Pledge",
+        "Name (Global)": "Magic Pledge",
+        "Effect (JP)": [
+            "PPが半分以上の時、打撃・射撃・法撃力が上昇する。(200/250/300)",
+            "PPが半分以上の時、打撃・射撃・法撃力が上昇する。(200/250/300)",
+            "PPが半分以上の時、打撃・射撃・法撃力が上昇する。(200/250/300)"
+        ],
         "Effect (English)": [
-            "Increases S-ATK, R-ATK and T-ATK by 200 when PP is more than 50%",
-            "Increases S-ATK, R-ATK and T-ATK by 250 when PP is more than 50%.",
-            "Increases S-ATK, R-ATK and T-ATK by 300 when PP is more than 50%."
+            "Increases S-ATK, R-ATK and T-ATK by 200 when above 50% PP.",
+            "Increases S-ATK, R-ATK and T-ATK by 250 when above 50% PP.",
+            "Increases S-ATK, R-ATK and T-ATK by 300 when above 50% PP."
+        ],
+        "Effect (Global)": [
+            "Increases MEL Pwr, RNG Pwr and TEC Pwr by 200 when above 50% PP",
+            "Increases MEL Pwr, RNG Pwr and TEC Pwr by 250 when above 50% PP.",
+            "Increases MEL Pwr, RNG Pwr and TEC Pwr by 300 when above 50% PP."
         ]
     },
     {
+        "Name (JP)": "背襲の牙",
         "Name (English)": "Rear Assault",
+        "Name (Global)": "Sneaking Fang",
+        "Effect (JP)": [
+            "エネミーの背後から攻撃した際、与ダメージ(8%/11%/14%)とPP回復量(+1/+1.5/+2)が上昇する。",
+            "エネミーの背後から攻撃した際、与ダメージ(8%/11%/14%)とPP回復量(+1/+1.5/+2)が上昇する。",
+            "エネミーの背後から攻撃した際、与ダメージ(8%/11%/14%)とPP回復量(+1/+1.5/+2)が上昇する。"
+        ],
         "Effect (English)": [
-            "Increases damage by 8% and PP recovery amount by 40% when attacking an enemy from behind.",
-            "Increases damage by 11% and PP recovery amount by 60% when attacking an enemy from behind.",
-            "Increases damage by 14% and PP recovery amount by 80% when attacking an enemy from behind."
+            "Increases damage by 8% and Active PP Recovery by +1 when attacking an enemy from the rear.",
+            "Increases damage by 11% and Active PP Recovery by +1.5 when attacking an enemy from the rear.",
+            "Increases damage by 14% and Active PP Recovery by +2 when attacking an enemy from the rear."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 8% and Active PP Recovery by +1 when attacking an enemy from the rear.",
+            "Increases damage by 11% and Active PP Recovery by +1.5 when attacking an enemy from the rear.",
+            "Increases damage by 14% and Active PP Recovery by +2 when attacking an enemy from the rear."
         ]
     },
     {
+        "Name (JP)": "裂砕の咢",
         "Name (English)": "Roar's Smasher",
+        "Name (Global)": "Shock of Destruction",
+        "Effect (JP)": [
+            "破壊可能な部位を攻撃した際、与ダメージ(10%/15%/20%)とPP回復量(+1/+2/+3)が上昇する。",
+            "破壊可能な部位を攻撃した際、与ダメージ(10%/15%/20%)とPP回復量(+1/+2/+3)が上昇する。",
+            "破壊可能な部位を攻撃した際、与ダメージ(10%/15%/20%)とPP回復量(+1/+2/+3)が上昇する。"
+        ],
         "Effect (English)": [
-            "Increases damage by 10% and PP recovery amount by 130% when attacking a breakable part.",
-            "Increases damage by 15% and PP recovery amount by 140% when attacking a breakable part.",
-            "Increases damage by 20% and PP recovery amount by 150% when attacking a breakable part."
+            "Increases damage by 10% and Active PP Recovery by +1 when attacking a breakable part.",
+            "Increases damage by 15% and Active PP Recovery by +2 when attacking a breakable part.",
+            "Increases damage by 20% and Active PP Recovery by +3 when attacking a breakable part."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 10% and Active PP Recovery by +1 when attacking a breakable part.",
+            "Increases damage by 15% and Active PP Recovery by +2 when attacking a breakable part.",
+            "Increases damage by 20% and Active PP Recovery by +3 when attacking a breakable part."
         ]
     },
     {
-        "Name (English)": "Zero Assault",
-        "Effect (English)": [
-            "Increases shooting damage at close-range by 9%.",
-            "Increases shooting damage at close-range by 11%.",
-            "Increases shooting damage at close-range by 13%."
-        ]
-    },
-    {
+        "Name (JP)": "零の理",
         "Name (English)": "Zero Logic",
+        "Name (Global)": "Zero Logic",
+        "Effect (JP)": [
+            "近距離で法撃をヒットさせるとダメージが上昇する。(12%)",
+            "近距離で法撃をヒットさせるとダメージが上昇する。(14%)",
+            "近距離で法撃をヒットさせるとダメージが上昇する。(16%)"
+        ],
         "Effect (English)": [
-            "Increases Technique damage at close-range by 12%.",
-            "Increases Technique damage at close-range by 14%.",
-            "Increases Technique damage at close-range by 16%."
+            "Increases Technique damage at close range by 12%.",
+            "Increases Technique damage at close range by 14%.",
+            "Increases Technique damage at close range by 16%."
+        ],
+        "Effect (Global)": [
+            "Increases Technique damage at close range by 12%.",
+            "Increases Technique damage at close range by 14%.",
+            "Increases Technique damage at close range by 16%."
         ]
     },
     {
+        "Name (JP)": "零の襲",
         "Name (English)": "Zero Strike",
+        "Name (Global)": "Close-up Overlap",
+        "Effect (JP)": [
+            "至近距離で打撃をヒットさせるとダメージが上昇する。(9%)",
+            "至近距離で打撃をヒットさせるとダメージが上昇する。(11%)",
+            "至近距離で打撃をヒットさせるとダメージが上昇する。(13%)"
+        ],
         "Effect (English)": [
-            "Increases Striking damage at close range by 9%.",
-            "Increases Striking damage at close range by 11%.",
-            "Increases Striking damage at close range by 13%."
+            "Increases Strike damage at close range by 9%.",
+            "Increases Strike damage at close range by 11%.",
+            "Increases Strike damage at close range by 13%."
+        ],
+        "Effect (Global)": [
+            "Increases Melee damage at close range by 9%.",
+            "Increases Melee damage at close range by 11%.",
+            "Increases Melee damage at close range by 13%."
         ]
     },
     {
+        "Name (JP)": "零の手",
         "Name (English)": "Zero Effort",
+        "Name (Global)": "Close-up Hands",
+        "Effect (JP)": [
+            "近距離時に射撃ダメージを(12%)上昇する。",
+            "近距離時に射撃ダメージを(14%)上昇する。",
+            "近距離時に射撃ダメージを(16%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases damage dealt from close range by 12%.",
-            "Increases damage dealt from close range by 14%.",
-            "Increases damage dealt from close range by 16%."
+            "Increases damage dealt at close range by 12%.",
+            "Increases damage dealt at close range by 14%.",
+            "Increases damage dealt at close range by 16%."
+        ],
+        "Effect (Global)": [
+            "Increases damage dealt at close range by 12%.",
+            "Increases damage dealt at close range by 14%.",
+            "Increases damage dealt at close range by 16%."
         ]
     },
     {
+        "Name (JP)": "零の撃",
         "Name (English)": "Zero Onslaught",
+        "Name (Global)": "Zero Onslaught",
+        "Effect (JP)": [
+            "近距離時に与ダメージを(8%)上昇する。",
+            "近距離時に与ダメージを(10%)上昇する。",
+            "近距離時に与ダメージを(12%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases all damage dealt from close range by 8%.",
-            "Increases all damage dealt from close range by 10%.",
-            "Increases all damage dealt from close range by 12%."
+            "Increases damage dealt at close range by 8%.",
+            "Increases damage dealt at close range by 10%.",
+            "Increases damage dealt at close range by 12%."
+        ],
+        "Effect (Global)": [
+            "Increases damage dealt at close range by 8%.",
+            "Increases damage dealt at close range by 10%.",
+            "Increases damage dealt at close range by 12%."
         ]
     },
     {
+        "Name (JP)": "剴切の接撃",
         "Name (English)": "Apt Grafter",
+        "Name (Global)": "Apt Grafter",
+        "Effect (JP)": [
+            "至近距離での攻撃時にクリティカル率が(15%)、威力が(6%)上昇する。",
+            "至近距離での攻撃時にクリティカル率が(20%)、威力が(9%)上昇する。",
+            "至近距離での攻撃時にクリティカル率が(25%)、威力が(12%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases your critical rate by 15% and damage by 6% at close range.",
-            "Increases your critical rate by 20% and damage by 9% at close range.",
-            "Increases your critical rate by 25% and damage by 12% at close range."
+            "Increases Critical Hit Rate by 15% and damage by 6% at point-blank range.",
+            "Increases Critical Hit Rate by 20% and damage by 9% at point-blank range.",
+            "Increases Critical Hit Rate by 25% and damage by 12% at point-blank range."
+        ],
+        "Effect (Global)": [
+            "Increases Critical Hit Rate by 15% and damage by 6% at point-blank range.",
+            "Increases Critical Hit Rate by 20% and damage by 9% at point-blank range.",
+            "Increases Critical Hit Rate by 25% and damage by 12% at point-blank range."
         ]
     },
     {
+        "Name (JP)": "剴切の撃",
         "Name (English)": "Apt Hammer",
+        "Name (Global)": "Apt Hammer",
+        "Effect (JP)": [
+            "近距離での攻撃時にクリティカル率が(25%/30%/35%)、威力が(5%/8%/11%)上昇する。",
+            "近距離での攻撃時にクリティカル率が(25%/30%/35%)、威力が(5%/8%/11%)上昇する。",
+            "近距離での攻撃時にクリティカル率が(25%/30%/35%)、威力が(5%/8%/11%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases your critical rate by 25% and damage by 5% at close range.",
-            "Increases your critical rate by 30% and damage by 8% at close range.",
-            "Increases your critical rate by 35% and damage by 11% at close range."
+            "Increases Critical Hit Rate by 25% and damage by 5% at close range.",
+            "Increases Critical Hit Rate by 30% and damage by 8% at close range.",
+            "Increases Critical Hit Rate by 35% and damage by 11% at close range."
+        ],
+        "Effect (Global)": [
+            "Increases Critical Hit Rate by 25% and damage by 5% at close range.",
+            "Increases Critical Hit Rate by 30% and damage by 8% at close range.",
+            "Increases Critical Hit Rate by 35% and damage by 11% at close range."
         ]
     },
     {
+        "Name (JP)": "剴切の隔撃",
         "Name (English)": "Apt Striker",
+        "Name (Global)": "Apt Striker",
+        "Effect (JP)": [
+            "中距離での攻撃時にクリティカル率が(25%)、威力が(5%)上昇する。",
+            "中距離での攻撃時にクリティカル率が(30%)、威力が(8%)上昇する。",
+            "中距離での攻撃時にクリティカル率が(35%)、威力が(11%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases your critical rate by 25% and damage by 5% at medium range.",
-            "Increases your critical rate by 30% and damage by 8% at medium range.",
-            "Increases your critical rate by 35% and damage by 11% at medium range."
+            "Increases Critical Hit Rate by 25% and damage by 5% at medium range.",
+            "Increases Critical Hit Rate by 30% and damage by 8% at medium range.",
+            "Increases Critical Hit Rate by 35% and damage by 11% at medium range."
+        ],
+        "Effect (Global)": [
+            "Increases Critical Hit Rate by 25% and damage by 5% at medium range.",
+            "Increases Critical Hit Rate by 30% and damage by 8% at medium range.",
+            "Increases Critical Hit Rate by 35% and damage by 11% at medium range."
         ]
     },
     {
+        "Name (JP)": "剴切の遼撃",
         "Name (English)": "Apt Sniper",
+        "Name (Global)": "Apt Sniper",
+        "Effect (JP)": [
+            "遠距離での攻撃時にクリティカル率が(35%)、威力が(4%)上昇する。",
+            "遠距離での攻撃時にクリティカル率が(40%)、威力が(7%)上昇する。",
+            "遠距離での攻撃時にクリティカル率が(45%)、威力が(10%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases your critical rate by 35% and damage by 4% at long range.",
-            "Increases your critical rate by 40% and damage by 7% at long range.",
-            "Increases your critical rate by 45% and damage by 10% at long range."
+            "Increases Critical Hit Rate by 35% and damage by 4% at long range.",
+            "Increases Critical Hit Rate by 40% and damage by 7% at long range.",
+            "Increases Critical Hit Rate by 45% and damage by 10% at long range."
+        ],
+        "Effect (Global)": [
+            "Increases Critical Hit Rate by 35% and damage by 4% at long range.",
+            "Increases Critical Hit Rate by 40% and damage by 7% at long range.",
+            "Increases Critical Hit Rate by 45% and damage by 10% at long range."
         ]
     },
     {
+        "Name (JP)": "英知の行使",
         "Name (English)": "Intelligent Usage",
+        "Name (Global)": "Intelligent Usage",
+        "Effect (JP)": [
+            "HPが25%未満になった時、一定の確率でメイト系アイテムを使用する。",
+            "HPが25%未満になった時、一定の確率でメイト系アイテムを使用する。",
+            "HPが25%未満になった時、一定の確率でメイト系アイテムを使用する。"
+        ],
         "Effect (English)": [
-            "Increases the activation rate of Automate Deadline.",
-            "Increases the activation rate of Automate Deadline.",
-            "Increases the activation rate of Automate Deadline."
+            "Chance to automatically use a -mate item when HP falls below 25%.",
+            "Chance to automatically use a -mate item when HP falls below 25%.",
+            "Chance to automatically use a -mate item when HP falls below 25%."
+        ],
+        "Effect (Global)": [
+            "Chance to automatically use a -mate item when HP falls below 25%.",
+            "Chance to automatically use a -mate item when HP falls below 25%.",
+            "Chance to automatically use a -mate item when HP falls below 25%."
         ]
     },
     {
+        "Name (JP)": "花鳥春風",
         "Name (English)": "Spring Breeze",
+        "Name (Global)": "Spring Breeze",
+        "Effect (JP)": [
+            "自動でHPが回復する。(10秒毎に最大HPの5%回復)",
+            "自動でHPが回復する。(10秒毎に最大HPの7%回復)",
+            "自動でHPが回復する。(10秒毎に最大HPの10%回復)"
+        ],
         "Effect (English)": [
-            "Automatically regenerate 5% HP every 10 seconds.",
-            "Automatically regenerate 7% HP every 10 seconds.",
-            "Automatically regenerate 10% HP every 10 seconds."
+            "Recovers 5% HP every 10 seconds.",
+            "Recovers 7% HP every 10 seconds.",
+            "Recovers 10% HP every 10 seconds."
+        ],
+        "Effect (Global)": [
+            "Recovers 5% HP every 10 seconds.",
+            "Recovers 7% HP every 10 seconds.",
+            "Recovers 10% HP every 10 seconds."
         ]
     },
     {
+        "Name (JP)": "負滅牙",
         "Name (English)": "Negative Hunter",
+        "Name (Global)": "Falspawn Bane",
+        "Effect (JP)": [
+            "ダーカーに与えるダメージが(7%)上昇する。",
+            "ダーカーに与えるダメージが(10%)上昇する。",
+            "ダーカーに与えるダメージが(13%)上昇する。"
+        ],
         "Effect (English)": [
             "Damage against Darkers increased by 7%.",
             "Damage against Darkers increased by 10%.",
             "Damage against Darkers increased by 13%."
+        ],
+        "Effect (Global)": [
+            "Damage against Falspawn increased by 7%.",
+            "Damage against Falspawn increased by 10%.",
+            "Damage against Falspawn increased by 13%."
         ]
     },
     {
+        "Name (JP)": "負討滅刃",
         "Name (English)": "Negative Destroyer",
+        "Name (Global)": "Falspawn Slayer",
+        "Effect (JP)": [
+            "ダーカー(9%)と世壊種(DA)(11%)に与えるダメージが上昇する。",
+            "ダーカー(11%)と世壊種(DA)(13%)に与えるダメージが上昇する。",
+            "ダーカー(13%)と世壊種(DA)(15%)に与えるダメージが上昇する。"
+        ],
         "Effect (English)": [
-            "Damage against Darkers increased by 9%, Damage against DA-Aberrations increased by 11%.",
-            "Damage against Darkers increased by 11%, Damage against DA-Aberrations increased by 13%.",
-            "Damage against Darkers increased by 13%, Damage against DA-Aberrations increased by 15%."
+            "Increases damage against Darkers by 9%. Increases damage against (DA) Aberrations by 11%.",
+            "Increases damage against Darkers by 11%. Increases damage against (DA) Aberrations by 13%.",
+            "Increases damage against Darkers by 13%. Increases damage against (DA) Aberrations by 15%."
+        ],
+        "Effect (Global)": [
+            "Increases damage against Falspawn by 9%. Increases damage against Tainted Falspawn by 11%.",
+            "Increases damage against Falspawn by 11%. Increases damage against Tainted Falspawn by 13%.",
+            "Increases damage against Falspawn by 13%. Increases damage against Tainted Falspawn by 15%."
         ]
     },
     {
+        "Name (JP)": "原生滅牙",
         "Name (English)": "Native Hunter",
+        "Name (Global)": "Sylvant Bane",
+        "Effect (JP)": [
+            "原生種に与えるダメージが(10%)上昇する。",
+            "原生種に与えるダメージが(15%)上昇する。",
+            "原生種に与えるダメージが(20%)上昇する。"
+        ],
         "Effect (English)": [
-            "Damage against Natives increased by 10%.",
-            "Damage against Natives increased by 15%.",
-            "Damage against Natives increased by 20%."
+            "Increases damage against Natives by 10%.",
+            "Increases damage against Natives by 15%.",
+            "Increases damage against Natives by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases damage against Sylvants by 10%.",
+            "Increases damage against Sylvants by 15%.",
+            "Increases damage against Sylvants by 20%."
         ]
     },
     {
+        "Name (JP)": "機甲滅牙",
         "Name (English)": "Machine Hunter",
+        "Name (Global)": "Automata Bane",
+        "Effect (JP)": [
+            "機甲種に与えるダメージが(10%)上昇する。",
+            "機甲種に与えるダメージが(15%)上昇する。",
+            "機甲種に与えるダメージが(20%)上昇する。"
+        ],
         "Effect (English)": [
-            "Damage against Mechs increased by 10%.",
-            "Damage against Mechs increased by 15%.",
-            "Damage against Mechs increased by 20%."
+            "Increases damage against Mechs by 10%.",
+            "Increases damage against Mechs by 15%.",
+            "Increases damage against Mechs by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases damage against Automata by 10%.",
+            "Increases damage against Automata by 15%.",
+            "Increases damage against Automata by 20%."
         ]
     },
     {
+        "Name (JP)": "龍滅牙",
         "Name (English)": "Dragon Hunter",
+        "Name (Global)": "Draconian Bane",
+        "Effect (JP)": [
+            "龍族に与えるダメージが(10%)上昇する。",
+            "龍族に与えるダメージが(15%%)上昇する。",
+            "龍族に与えるダメージが(20%)上昇する。"
+        ],
         "Effect (English)": [
-            "Damage against Dragonkin increased by 10%.",
-            "Damage against Dragonkin increased by 15%.",
-            "Damage against Dragonkin increased by 20%."
+            "Increases damage against Dragonkin by 10%.",
+            "Increases damage against Dragonkin by 15%.",
+            "Increases damage against Dragonkin by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases damage against Draconians by 10%.",
+            "Increases damage against Draconians by 15%.",
+            "Increases damage against Draconians by 20%."
         ]
     },
     {
+        "Name (JP)": "海王滅牙",
         "Name (English)": "Oceanid Hunter",
+        "Name (Global)": "Oceanid Bane",
+        "Effect (JP)": [
+            "海王種に与えるダメージが(10%)上昇する。",
+            "海王種に与えるダメージが(15%)上昇する。",
+            "海王種に与えるダメージが(20%)上昇する。"
+        ],
         "Effect (English)": [
-            "Damage against Oceanids increased by 10%.",
-            "Damage against Oceanids increased by 15%.",
-            "Damage against Oceanids increased by 20%."
+            "Increases damage against Oceanids by 10%.",
+            "Increases damage against Oceanids by 15%.",
+            "Increases damage against Oceanids by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases damage against Oceanids by 10%.",
+            "Increases damage against Oceanids by 15%.",
+            "Increases damage against Oceanids by 20%."
         ]
     },
     {
+        "Name (JP)": "妖滅牙",
         "Name (English)": "Demon Hunter",
+        "Name (Global)": "Nightfaller Bane",
+        "Effect (JP)": [
+            "黒の民に与えるダメージが(10%)上昇する。",
+            "黒の民に与えるダメージが(15%)上昇する。",
+            "黒の民に与えるダメージが(20%)上昇する。"
+        ],
         "Effect (English)": [
-            "Damage against Kuronites increased by 10%.",
-            "Damage against Kuronites increased by 15%.",
-            "Damage against Kuronites increased by 20%."
+            "Increases damage against Kuronites by 10%.",
+            "Increases damage against Kuronites by 15%.",
+            "Increases damage against Kuronites by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases damage against Nightfallers by 10%.",
+            "Increases damage against Nightfallers by 15%.",
+            "Increases damage against Nightfallers by 20%."
         ]
     },
     {
+        "Name (JP)": "Dragon's Authority",
         "Name (English)": "Dragon's Authority",
+        "Name (Global)": "Dragon's Authority",
+        "Effect (JP)": [
+            "龍族と世壊種(AM)以外に与えるダメージが上昇する。(12%/14%/16%)",
+            "龍族と世壊種(AM)以外に与えるダメージが上昇する。(12%/14%/16%)",
+            "龍族と世壊種(AM)以外に与えるダメージが上昇する。(12%/14%/16%)"
+        ],
         "Effect (English)": [
-            "Damage against all enemies except Dragonkin increased by 12%.",
-            "Damage against all enemies except Dragonkin increased by 14%.",
-            "Damage against all enemies except Dragonkin increased by 16%."
+            "Increases damage by 12% against all enemies except Dragonkin and AM-Aberrations.",
+            "Increases damage by 14% against all enemies except Dragonkin and AM-Aberrations.",
+            "Increases damage by 16% against all enemies except Dragonkin and AM-Aberrations."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 12% against all enemies except Draconians and Tainted Draconians.",
+            "Increases damage by 14% against all enemies except Draconians and Tainted Draconians.",
+            "Increases damage by 16% against all enemies except Draconians and Tainted Draconians."
         ]
     },
     {
+        "Name (JP)": "強闘心",
         "Name (English)": "Colossal Spirit",
+        "Name (Global)": "Colossal Spirit",
+        "Effect (JP)": [
+            "強敵へのダメージが(10%)上昇する。",
+            "強敵へのダメージが(14%)上昇する。",
+            "強敵へのダメージが(18%)上昇する。"
+        ],
         "Effect (English)": [
-            "Damage against bosses increased by 10%.",
-            "Damage against bosses increased by 14%.",
-            "Damage against bosses increased by 18%."
+            "Increases damage against bosses by 10%.",
+            "Increases damage against bosses by 14%.",
+            "Increases damage against bosses by 18%."
+        ],
+        "Effect (Global)": [
+            "Increases damage against bosses by 10%.",
+            "Increases damage against bosses by 14%.",
+            "Increases damage against bosses by 18%."
         ]
     },
     {
+        "Name (JP)": "絶負印",
         "Name (English)": "Negative Emblem",
+        "Name (Global)": "Falspawn Ward",
+        "Effect (JP)": [
+            "ダーカーから受けるダメージを(30%)軽減する。",
+            "ダーカーから受けるダメージを(35%)軽減する。",
+            "ダーカーから受けるダメージを(40%)軽減する。"
+        ],
         "Effect (English)": [
-            "Damage received from Darkers reduced by 30%.",
-            "Damage received from Darkers reduced by 35%.",
-            "Damage received from Darkers reduced by 40%."
+            "Reduces damage received from Darkers by 30%.",
+            "Reduces damage received from Darkers by 35%.",
+            "Reduces damage received from Darkers by 40%."
+        ],
+        "Effect (Global)": [
+            "Reduces damage received from Falspawn by 30%.",
+            "Reduces damage received from Falspawn by 35%.",
+            "Reduces damage received from Falspawn by 40%."
         ]
     },
     {
+        "Name (JP)": "絶龍印",
         "Name (English)": "Dragon Emblem",
+        "Name (Global)": "Draconian Ward",
+        "Effect (JP)": [
+            "龍族から受けるダメージを(30%)軽減する。",
+            "龍族から受けるダメージを(35%)軽減する。",
+            "龍族から受けるダメージを(40%)軽減する。"
+        ],
         "Effect (English)": [
-            "Damage received from Dragonkin reduced by 30%.",
-            "Damage received from Dragonkin reduced by 35%.",
-            "Damage received from Dragonkin reduced by 40%."
+            "Reduces damage received from Dragonkin by 30%.",
+            "Reduces damage received from Dragonkin by 35%.",
+            "Reduces damage received from Dragonkin by 40%."
+        ],
+        "Effect (Global)": [
+            "Reduces damage received from Draconians by 30%.",
+            "Reduces damage received from Draconians by 35%.",
+            "Reduces damage received from Draconians by 40%."
         ]
     },
     {
+        "Name (JP)": "絶龍印",
         "Name (English)": "Demon Emblem",
+        "Name (Global)": "Nightfaller Ward",
+        "Effect (JP)": [
+            "龍族から受けるダメージを(30%)軽減する。",
+            "龍族から受けるダメージを(35%)軽減する。",
+            "龍族から受けるダメージを(40%)軽減する。"
+        ],
         "Effect (English)": [
-            "Damage received from Kuronites reduced by 30%.",
-            "Damage received from Kuronites reduced by 35%.",
-            "Damage received from Kuronites reduced by 40%."
+            "Reduces damage received from Kuronites by 30%.",
+            "Reduces damage received from Kuronites by 35%.",
+            "Reduces damage received from Kuronites by 40%."
+        ],
+        "Effect (Global)": [
+            "Reduces damage received from Nightfallers by 30%.",
+            "Reduces damage received from Nightfallers by 35%.",
+            "Reduces damage received from Nightfallers by 40%."
         ]
     },
     {
+        "Name (JP)": "昇破刃",
         "Name (English)": "Soaring Edge",
+        "Name (Global)": "Soaring Edge",
+        "Effect (JP)": [
+            "ライジングエッジの威力を上昇させる。(9%)",
+            "ライジングエッジの威力を上昇させる。(13%)",
+            "ライジングエッジの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Rising Edge by 9%",
-            "Increases the damage of Rising Edge by 13%",
-            "Increases the damage of Rising Edge by 17%"
+            "Increases the damage of Rising Edge by 9%.",
+            "Increases the damage of Rising Edge by 13%.",
+            "Increases the damage of Rising Edge by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Rising Edge by 9%.",
+            "Increases the damage of Rising Edge by 13%.",
+            "Increases the damage of Rising Edge by 17%."
         ]
     },
     {
@@ -2401,22 +2789,34 @@
             "ツイスターフォールの威力を上昇させる。(17%)"
         ],
         "Effect (English)": [
-            "Increases the damage of Twister Fall by 9%",
-            "Increases the damage of Twister Fall by 13%",
-            "Increases the damage of Twister Fall by 17%"
+            "Increases the damage of Twister Fall by 9%.",
+            "Increases the damage of Twister Fall by 13%.",
+            "Increases the damage of Twister Fall by 17%."
         ],
         "Effect (Global)": [
-            "Increases the damage of Twister Drop by 9%",
-            "Increases the damage of Twister Drop by 13%",
-            "Increases the damage of Twister Drop by 17%"
+            "Increases the damage of Twister Drop by 9%.",
+            "Increases the damage of Twister Drop by 13%.",
+            "Increases the damage of Twister Drop by 17%."
         ]
     },
     {
+        "Name (JP)": "星砕刃",
         "Name (English)": "Star Breaker",
+        "Name (Global)": "Star Breaker",
+        "Effect (JP)": [
+            "ノヴァストライクの威力を上昇させる。(8%)",
+            "ノヴァストライクの威力を上昇させる。(11%)",
+            "ノヴァストライクの威力を上昇させる。(14%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Nova Strike by 8%",
-            "Increases the damage of Nova Strike by 11%",
-            "Increases the damage of Nova Strike by 14%"
+            "Increases the damage of Nova Strike by 8%.",
+            "Increases the damage of Nova Strike by 11%.",
+            "Increases the damage of Nova Strike by 14%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Nova Strike by 8%.",
+            "Increases the damage of Nova Strike by 11%.",
+            "Increases the damage of Nova Strike by 14%."
         ]
     },
     {
@@ -2429,38 +2829,74 @@
             "ライドスラッシャーの威力を上昇させる。(20%)"
         ],
         "Effect (English)": [
-            "Increases the damage of Ride Slasher by 10%",
-            "Increases the damage of Ride Slasher by 15%",
-            "Increases the damage of Ride Slasher by 20%"
+            "Increases the damage of Ride Slasher by 10%.",
+            "Increases the damage of Ride Slasher by 15%.",
+            "Increases the damage of Ride Slasher by 20%."
         ],
         "Effect (Global)": [
-            "Increases the damage of Ride Slash by 10%",
-            "Increases the damage of Ride Slash by 15%",
-            "Increases the damage of Ride Slash by 20%"
+            "Increases the damage of Ride Slash by 10%.",
+            "Increases the damage of Ride Slash by 15%.",
+            "Increases the damage of Ride Slash by 20%."
         ]
     },
     {
+        "Name (JP)": "星断刃",
         "Name (English)": "Celestial Cleave",
+        "Name (Global)": "Celestial Cleave",
+        "Effect (JP)": [
+            "オーバーエンドの威力を上昇させる。(10%)",
+            "オーバーエンドの威力を上昇させる。(15%)",
+            "オーバーエンドの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Over End by 10%",
-            "Increases the damage of Over End by 15%",
-            "Increases the damage of Over End by 20%"
+            "Increases the damage of Over End by 10%.",
+            "Increases the damage of Over End by 15%.",
+            "Increases the damage of Over End by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Cross Cut by 10%.",
+            "Increases the damage of Cross Cut by 15%.",
+            "Increases the damage of Cross Cut by 20%."
         ]
     },
     {
+        "Name (JP)": "突衝絶刃",
         "Name (English)": "Stunning Edge",
+        "Name (Global)": "Stunning Edge",
+        "Effect (JP)": [
+            "スタンコンサイドの威力を上昇させる。(10%)",
+            "スタンコンサイドの威力を上昇させる。(15%)",
+            "スタンコンサイドの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Stun Concido by 10%",
-            "Increases the damage of Stun Concido by 15%",
-            "Increases the damage of Stun Concido by 20%"
+            "Increases the damage of Stun Concido by 10%.",
+            "Increases the damage of Stun Concido by 15%.",
+            "Increases the damage of Stun Concido by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Blade Bash by 10%.",
+            "Increases the damage of Blade Bash by 15%.",
+            "Increases the damage of Blade Bash by 20%."
         ]
     },
     {
+        "Name (JP)": "弧月翔刃",
         "Name (English)": "Crescent Blade",
+        "Name (Global)": "Crescent Blade",
+        "Effect (JP)": [
+            "ソニックアロウの威力を上昇させる。(8%)",
+            "ソニックアロウの威力を上昇させる。(11%)",
+            "ソニックアロウの威力を上昇させる。(14%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Sonic Arrow by 10%",
-            "Increases the damage of Sonic Arrow by 15%",
-            "Increases the damage of Sonic Arrow by 20%"
+            "Increases the damage of Sonic Arrow by 8%.",
+            "Increases the damage of Sonic Arrow by 11%.",
+            "Increases the damage of Sonic Arrow by 14%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Sonic Arrow by 8%.",
+            "Increases the damage of Sonic Arrow by 11%.",
+            "Increases the damage of Sonic Arrow by 14%."
         ]
     },
     {
@@ -2473,326 +2909,534 @@
             "ギルティブレイクの威力を上昇させる。(17%)"
         ],
         "Effect (English)": [
-            "Increases the damage of Guilty Break by 9%",
-            "Increases the damage of Guilty Break by 13%",
-            "Increases the damage of Guilty Break by 17%"
+            "Increases the damage of Guilty Break by 9%.",
+            "Increases the damage of Guilty Break by 13%.",
+            "Increases the damage of Guilty Break by 17%."
         ],
         "Effect (Global)": [
-            "Increases the damage of Guilty Break by 9%",
-            "Increases the damage of Guilty Break by 13%",
-            "Increases the damage of Guilty Break by 17%"
+            "Increases the damage of Guilty Break by 9%.",
+            "Increases the damage of Guilty Break by 13%.",
+            "Increases the damage of Guilty Break by 17%."
         ]
     },
     {
+        "Name (JP)": "理喰償刃",
         "Name (English)": "Devouring Edge",
+        "Name (Global)": "Devouring Edge",
+        "Effect (JP)": [
+            "サクリファイスバイトの効果中、法撃ダメージが(20%)上昇する。",
+            "サクリファイスバイトの効果中、法撃ダメージが(22%)上昇する。",
+            "サクリファイスバイトの効果中、法撃ダメージが(25%)上昇する。"
+        ],
         "Effect (English)": [
-            "Increases Technique damage during SacrifIce Bite by 20%",
-            "Increases Technique damage during SacrifIce Bite by 22%",
-            "Increases Technique damage during SacrifIce Bite by 25%"
+            "Increases Technique damage by 20% while Sacrifice Bite is active.",
+            "Increases Technique damage by 22% while Sacrifice Bite is active.",
+            "Increases Technique damage by 25% while Sacrifice Bite is active."
+        ],
+        "Effect (Global)": [
+            "Increases Technique damage by 20% while Sacrificial Bite is active.",
+            "Increases Technique damage by 22% while Sacrificial Bite is active.",
+            "Increases Technique damage by 25% while Sacrificial Bite is active."
         ]
     },
     {
+        "Name (JP)": "堕百舌縛",
         "Name (English)": "Lashing Descent",
+        "Name (Global)": "Diving Shrike",
+        "Effect (JP)": [
+            "ヘブンリーフォールの威力を上昇させる。(9%)",
+            "ヘブンリーフォールの威力を上昇させる。(13%)",
+            "ヘブンリーフォールの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Heavenly Fall by 9%",
-            "Increases the damage of Heavenly Fall by 13%",
-            "Increases the damage of Heavenly Fall by 17%"
+            "Increases the damage of Heavenly Fall by 9%.",
+            "Increases the damage of Heavenly Fall by 13%.",
+            "Increases the damage of Heavenly Fall by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Heavenly Drop by 9%.",
+            "Increases the damage of Heavenly Drop by 13%.",
+            "Increases the damage of Heavenly Drop by 17%."
         ]
     },
     {
+        "Name (JP)": "旋風縛",
         "Name (English)": "Intertwining Grip",
+        "Name (Global)": "Intertwining Grip",
+        "Effect (JP)": [
+            "アザーサイクロンの威力を上昇させる。(9%)",
+            "アザーサイクロンの威力を上昇させる。(13%)",
+            "アザーサイクロンの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Other Cyclone by 10%",
-            "Increases the damage of Other Cyclone by 15%",
-            "Increases the damage of Other Cyclone by 20%"
+            "Increases the damage of Other Cyclone by 10%.",
+            "Increases the damage of Other Cyclone by 15%.",
+            "Increases the damage of Other Cyclone by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Cyclone Spin by 10%.",
+            "Increases the damage of Cyclone Spin by 15%.",
+            "Increases the damage of Cyclone Spin by 20%."
         ]
     },
     {
+        "Name (JP)": "狂独楽縛",
         "Name (English)": "Lunatic Spinner",
+        "Name (Global)": "Lunatic Spinner",
+        "Effect (JP)": [
+            "アザースピンの威力を上昇させる。(9%)",
+            "アザースピンの威力を上昇させる。(13%)",
+            "アザースピンの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Other Spin by 9%",
-            "Increases the damage of Other Spin by 13%",
-            "Increases the damage of Other Spin by 17%"
+            "Increases the damage of Other Spin by 9%.",
+            "Increases the damage of Other Spin by 13%.",
+            "Increases the damage of Other Spin by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Twist Driver by 9%.",
+            "Increases the damage of Twist Driver by 13%.",
+            "Increases the damage of Twist Driver by 17%."
         ]
     },
     {
+        "Name (JP)": "紫電束縛",
         "Name (English)": "Shocking Grasp",
+        "Name (Global)": "Binding Shock",
+        "Effect (JP)": [
+            "ホールディングカレントの威力を上昇させる。(8%)",
+            "ホールディングカレントの威力を上昇させる。(11%)",
+            "ホールディングカレントの威力を上昇させる。(14%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Holding Current by 8%",
-            "Increases the damage of Holding Current by 11%",
-            "Increases the damage of Holding Current by 14%"
+            "Increases the damage of Holding Current by 8%.",
+            "Increases the damage of Holding Current by 11%.",
+            "Increases the damage of Holding Current by 14%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Shocktether by 8%.",
+            "Increases the damage of Shocktether by 11%.",
+            "Increases the damage of Shocktether by 14%."
         ]
     },
     {
+        "Name (JP)": "乱舞連縛",
         "Name (English)": "Dancing Savage",
+        "Name (Global)": "Revelry Dance",
+        "Effect (JP)": [
+            "サーベラスダンスの威力を上昇させる。(10%)",
+            "サーベラスダンスの威力を上昇させる。(15%)",
+            "サーベラスダンスの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Cerberus Dance by 10%",
-            "Increases the damage of Cerberus Dance by 15%",
-            "Increases the damage of Cerberus Dance by 20%"
+            "Increases the damage of Cerberus Dance by 10%.",
+            "Increases the damage of Cerberus Dance by 15%.",
+            "Increases the damage of Cerberus Dance by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Cerberus Dance by 10%.",
+            "Increases the damage of Cerberus Dance by 15%.",
+            "Increases the damage of Cerberus Dance by 20%."
         ]
     },
     {
+        "Name (JP)": "烈輪縛",
         "Name (English)": "Wild Round",
+        "Name (Global)": "Wild Round",
+        "Effect (JP)": [
+            "ワイルドラウンドの威力を上昇させる。(10%)",
+            "ワイルドラウンドの威力を上昇させる。(15%)",
+            "ワイルドラウンドの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Wild Round by 10%",
-            "Increases the damage of Wild Round by 15%",
-            "Increases the damage of Wild Round by 20%"
+            "Increases the damage of Wild Round by 10%.",
+            "Increases the damage of Wild Round by 15%.",
+            "Increases the damage of Wild Round by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Wild Round by 10%.",
+            "Increases the damage of Wild Round by 15%.",
+            "Increases the damage of Wild Round by 20%."
         ]
     },
     {
+        "Name (JP)": "皇昇縛",
         "Name (English)": "Imperial Rising",
+        "Name (Global)": "Imperial Rising",
+        "Effect (JP)": [
+            "カイザーライズの威力を上昇させる。(14%)",
+            "カイザーライズの威力を上昇させる。(17%)",
+            "カイザーライズの威力を上昇させる。(20lmfao%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Kaiser Rise by 14%",
-            "Increases the damage of Kaiser Rise by 17%",
-            "Increases the damage of Kaiser Rise by 20%"
+            "Increases the damage of Kaiser Rise by 14%.",
+            "Increases the damage of Kaiser Rise by 17%.",
+            "Increases the damage of Kaiser Rise by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Rising Kaiser by 14%.",
+            "Increases the damage of Rising Kaiser by 17%.",
+            "Increases the damage of Rising Kaiser by 20%."
         ]
     },
     {
+        "Name (JP)": "円穿滑槍",
         "Name (English)": "Sliding Circle",
+        "Name (Global)": "Sliding Circle",
+        "Effect (JP)": [
+            "スライドシェイカーの威力を上昇させる。(9%)",
+            "スライドシェイカーの威力を上昇させる。(13%)",
+            "スライドシェイカーの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Slide Shaker by 10%",
-            "Increases the damage of Slide Shaker by 15%",
-            "Increases the damage of Slide Shaker by 20%"
+            "Increases the damage of Slide Shaker by 10%.",
+            "Increases the damage of Slide Shaker by 15%.",
+            "Increases the damage of Slide Shaker by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Whirlwind Sweep by 10%.",
+            "Increases the damage of Whirlwind Sweep by 15%.",
+            "Increases the damage of Whirlwind Sweep by 20%."
         ]
     },
     {
+        "Name (JP)": "天衝撃",
         "Name (English)": "Heavenly Impact",
+        "Name (Global)": "Heavenly Impact",
+        "Effect (JP)": [
+            "スライドアッパーの威力を上昇させる。(?%)",
+            "スライドアッパーの威力を上昇させる。(?%)",
+            "スライドアッパーの威力を上昇させる。(?%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Slide Upper by ?%",
-            "Increases the damage of Slide Upper by ?%",
-            "Increases the damage of Slide Upper by ?%"
+            "Increases the damage of Slide Upper by ?%.",
+            "Increases the damage of Slide Upper by ?%.",
+            "Increases the damage of Slide Upper by ?%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Sliding Uppercut by ?%.",
+            "Increases the damage of Sliding Uppercut by ?%.",
+            "Increases the damage of Sliding Uppercut by ?%."
         ]
     },
     {
+        "Name (JP)": "裏殺撃",
         "Name (English)": "Backhand Strike",
+        "Name (Global)": "Backhand Strike",
+        "Effect (JP)": [
+            "バックハンドスマッシュの威力を上昇させる。(10%)",
+            "バックハンドスマッシュの威力を上昇させる。(15%)",
+            "バックハンドスマッシュの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Backhand Smash by 10%",
-            "Increases the damage of Backhand Smash by 15%",
-            "Increases the damage of Backhand Smash by 20%"
+            "Increases the damage of Backhand Smash by 10%.",
+            "Increases the damage of Backhand Smash by 15%.",
+            "Increases the damage of Backhand Smash by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Decimator by 10%.",
+            "Increases the damage of Decimator by 15%.",
+            "Increases the damage of Decimator by 20%."
         ]
     },
     {
+        "Name (JP)": "瞬波槍",
         "Name (English)": "Flickering Wave",
+        "Name (Global)": "Flickering Wave",
+        "Effect (JP)": [
+            "スピードレインの威力を上昇させる。(9%)",
+            "スピードレインの威力を上昇させる。(13%)",
+            "スピードレインの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Speed Rain by 9%",
-            "Increases the damage of Speed Rain by 13%",
-            "Increases the damage of Speed Rain by 27%"
+            "Increases the damage of Speed Rain by 9%.",
+            "Increases the damage of Speed Rain by 13%.",
+            "Increases the damage of Speed Rain by 27%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Sudden Tempest by 9%.",
+            "Increases the damage of Sudden Tempest by 13%.",
+            "Increases the damage of Sudden Tempest by 27%."
         ]
     },
     {
+        "Name (JP)": "早贄槍",
         "Name (English)": "Thrusting Spear",
+        "Name (Global)": "Thrusting Spear",
+        "Effect (JP)": [
+            "ピークアップスローの威力を上昇させる。(10%)",
+            "ピークアップスローの威力を上昇させる。(15%)",
+            "ピークアップスローの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Zenith Throw by 10%",
-            "Increases the damage of Zenith Throw by 15%",
-            "Increases the damage of Zenith Throw by 20%"
+            "Increases the damage of Zenith Throw by 10%.",
+            "Increases the damage of Zenith Throw by 15%.",
+            "Increases the damage of Zenith Throw by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Zenith Throw by 10%.",
+            "Increases the damage of Zenith Throw by 15%.",
+            "Increases the damage of Zenith Throw by 20%."
         ]
     },
     {
+        "Name (JP)": "圏断槍",
         "Name (English)": "Discoidal Spear",
+        "Name (Global)": "Discoidal Spear",
+        "Effect (JP)": [
+            "スライドエンドの威力を上昇させる。(8%)",
+            "スライドエンドの威力を上昇させる。(11%)",
+            "スライドエンドの威力を上昇させる。(14%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Slide End by 8%",
-            "Increases the damage of Slide End by 11%",
-            "Increases the damage of Slide End by 14%"
+            "Increases the damage of Slide End by 8%.",
+            "Increases the damage of Slide End by 11%.",
+            "Increases the damage of Slide End by 14%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Decisive Sweep by 8%.",
+            "Increases the damage of Decisive Sweep by 11%.",
+            "Increases the damage of Decisive Sweep by 14%."
         ]
     },
     {
-        "Name (English)": "Battle Cry Spear",
+        "Name (JP)": "吶喊槍",
+        "Name (English)": "Battle Cry",
+        "Name (Global)": "Battle Cry Spear",
+        "Effect (JP)": [
+            "アサルトバスターの威力を上昇させる。(8%)",
+            "アサルトバスターの威力を上昇させる。(11%)",
+            "アサルトバスターの威力を上昇させる。(14%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Assault Buster by 8%",
-            "Increases the damage of Assault Buster by 11%",
-            "Increases the damage of Assault Buster by 14%"
+            "Increases the damage of Assault Buster by 8%.",
+            "Increases the damage of Assault Buster by 11%.",
+            "Increases the damage of Assault Buster by 14%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Assault Buster by 8%.",
+            "Increases the damage of Assault Buster by 11%.",
+            "Increases the damage of Assault Buster by 14%."
         ]
     },
     {
+        "Name (JP)": "廻吶喊槍",
         "Name (English)": "Battle Cry Spear 2",
+        "Name (Global)": "Battlecry 2",
+        "Effect (JP)": [
+            "アサルトバスターのPP消費量を減少させる。(15%)",
+            "アサルトバスターのPP消費量を減少させる。(20%)",
+            "アサルトバスターのPP消費量を減少させる。(25%)"
+        ],
         "Effect (English)": [
-            "Reduces PP cost for Assault Buster by 15%",
-            "Reduces PP cost for Assault Buster by 20%",
-            "Reduces PP cost for Assault Buster by 25%"
+            "Reduces the PP cost for Assault Buster by 15%.",
+            "Reduces the PP cost for Assault Buster by 20%.",
+            "Reduces the PP cost for Assault Buster by 25%."
+        ],
+        "Effect (Global)": [
+            "Reduces the PP cost for Assault Buster by 15%.",
+            "Reduces the PP cost for Assault Buster by 20%.",
+            "Reduces the PP cost for Assault Buster by 25%."
         ]
     },
     {
+        "Name (JP)": "瞬撃殺槍",
         "Name (English)": "Life Snag Spear",
+        "Name (Global)": "Life Snag Spear",
+        "Effect (JP)": [
+            "バンタースナッチの威力を上昇させる。(10%)",
+            "バンタースナッチの威力を上昇させる。(15%)",
+            "バンタースナッチの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
+            "Increases the damage of Bandersnatch by 10%.",
+            "Increases the damage of Bandersnatch by 15%.",
+            "Increases the damage of Bandersnatch by 20%."
+        ],
+        "Effect (Global)": [
             "Increases the damage of Bandersnatch by 10%.",
             "Increases the damage of Bandersnatch by 15%.",
             "Increases the damage of Bandersnatch by 20%."
         ]
     },
     {
+        "Name (JP)": "聖標刺槍",
         "Name (English)": "Sacred Spear",
+        "Name (Global)": "Sacred Spear",
+        "Effect (JP)": [
+            "セイクリッドスキュアの威力を上昇させる。(9%)",
+            "セイクリッドスキュアの威力を上昇させる。(13%)",
+            "セイクリッドスキュアの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Sacred Skewer by 8%.",
-            "Increases the damage of Sacred Skewer by 11%.",
-            "Increases the damage of Sacred Skewer by 14%."
-        ]
-    },
-    {
-        "Name (English)": "Absolute Blade",
-        "Effect (English)": [
-            "Increases damage against airborne enemies by 16%.",
-            "Increases damage against airborne enemies by 18%.",
-            "Increases damage against airborne enemies by 20%."
+            "Increases the damage of Sacred Skewer by 9%.",
+            "Increases the damage of Sacred Skewer by 13%.",
+            "Increases the damage of Sacred Skewer by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Sacred Skewer by 9%.",
+            "Increases the damage of Sacred Skewer by 13%.",
+            "Increases the damage of Sacred Skewer by 17%."
         ]
     },
     {
         "Name (English)": "Aerial Gamboling",
         "Effect (English)": [
-            "Increases the damage of Raging Waltz by 9%",
-            "Increases the damage of Raging Waltz by 13%",
-            "Increases the damage of Raging Waltz by 17%"
+            "Increases the damage of Raging Waltz by 9%.",
+            "Increases the damage of Raging Waltz by 13%.",
+            "Increases the damage of Raging Waltz by 17%."
         ]
     },
     {
         "Name (English)": "Aerial Gamboling 2",
         "Effect (English)": [
-            "Reduces PP cost for Raging Waltz by 15%",
-            "Reduces PP cost for Raging Waltz by 20%",
-            "Reduces PP cost for Raging Waltz by 25%"
+            "Reduces PP cost for Raging Waltz by 15%.",
+            "Reduces PP cost for Raging Waltz by 20%.",
+            "Reduces PP cost for Raging Waltz by 25%."
         ]
     },
     {
         "Name (English)": "Kick-Slash Duet",
         "Effect (English)": [
-            "Increases the damage of Shoot Polka by 10%",
-            "Increases the damage of Shoot Polka by 15%",
-            "Increases the damage of Shoot Polka by 20%"
+            "Increases the damage of Shoot Polka by 10%.",
+            "Increases the damage of Shoot Polka by 15%.",
+            "Increases the damage of Shoot Polka by 20%."
         ]
     },
     {
         "Name (English)": "Robust Collision",
         "Effect (English)": [
-            "Increases the damage of Scar Fugue by 14%",
-            "Increases the damage of Scar Fugue by 17%",
-            "Increases the damage of Scar Fugue by 20%"
+            "Increases the damage of Scar Fugue by 14%.",
+            "Increases the damage of Scar Fugue by 17%.",
+            "Increases the damage of Scar Fugue by 20%."
         ]
     },
     {
         "Name (English)": "Gliding Blades",
         "Effect (English)": [
-            "Increases the damage of Dark Scherzo by 8%",
-            "Increases the damage of Dark Scherzo by 11%",
-            "Increases the damage of Dark Scherzo by 14%"
+            "Increases the damage of Dark Scherzo by 8%.",
+            "Increases the damage of Dark Scherzo by 11%.",
+            "Increases the damage of Dark Scherzo by 14%."
         ]
     },
     {
         "Name (English)": "Jumping Waltz",
         "Effect (English)": [
-            "Increases the damage of Symphonic Drive by 14%",
-            "Increases the damage of Symphonic Drive by 17%",
-            "Increases the damage of Symphonic Drive by 20%"
+            "Increases the damage of Symphonic Drive by 14%.",
+            "Increases the damage of Symphonic Drive by 17%.",
+            "Increases the damage of Symphonic Drive by 20%."
         ]
     },
     {
         "Name (English)": "Gyrating Edges",
         "Effect (English)": [
-            "Increases the damage of Orchestra by 9%",
-            "Increases the damage of Orchestra by 13%",
-            "Increases the damage of Orchestra by 17%"
+            "Increases the damage of Orchestra by 9%.",
+            "Increases the damage of Orchestra by 13%.",
+            "Increases the damage of Orchestra by 17%."
         ]
     },
     {
         "Name (English)": "Bloody Flash",
         "Effect (English)": [
-            "Increases the damage of Bloody Sarabande by 9%",
-            "Increases the damage of Bloody Sarabande by 13%",
-            "Increases the damage of Bloody Sarabande by 17%"
+            "Increases the damage of Bloody Sarabande by 9%.",
+            "Increases the damage of Bloody Sarabande by 13%.",
+            "Increases the damage of Bloody Sarabande by 17%."
         ]
     },
     {
         "Name (English)": "Lunatic Slasher",
         "Effect (English)": [
-            "Increases the damage of Facet Folia by 14%",
-            "Increases the damage of Facet Folia by 17%",
-            "Increases the damage of Facet Folia by 20%"
+            "Increases the damage of Facet Folia by 14%.",
+            "Increases the damage of Facet Folia by 17%.",
+            "Increases the damage of Facet Folia by 20%."
         ]
     },
     {
         "Name (English)": "Rising Claw",
         "Effect (English)": [
-            "Increases the damage of Scissor Edge by 10%",
-            "Increases the damage of Scissor Edge by 15%",
-            "Increases the damage of Scissor Edge by 20%"
+            "Increases the damage of Scissor Edge by 10%.",
+            "Increases the damage of Scissor Edge by 15%.",
+            "Increases the damage of Scissor Edge by 20%."
         ]
     },
     {
         "Name (English)": "Whirling Ring",
         "Effect (English)": [
-            "Increases the damage of Rumbling Moon by 9%",
-            "Increases the damage of Rumbling Moon by 13%",
-            "Increases the damage of Rumbling Moon by 17%"
+            "Increases the damage of Rumbling Moon by 9%.",
+            "Increases the damage of Rumbling Moon by 13%.",
+            "Increases the damage of Rumbling Moon by 17%."
         ]
     },
     {
         "Name (English)": "Dancing Phantom",
         "Effect (English)": [
-            "Increases the damage of Illusion Rave by 9%",
-            "Increases the damage of Illusion Rave by 13%",
-            "Increases the damage of Illusion Rave by 17%"
+            "Increases the damage of Illusion Rave by 9%.",
+            "Increases the damage of Illusion Rave by 13%.",
+            "Increases the damage of Illusion Rave by 17%."
         ]
     },
     {
         "Name (English)": "Mythical Flicker",
         "Effect (English)": [
-            "Increases the damage of Fake Capture by 10%",
-            "Increases the damage of Fake Capture by 15%",
-            "Increases the damage of Fake Capture by 20%"
+            "Increases the damage of Fake Capture by 10%.",
+            "Increases the damage of Fake Capture by 15%.",
+            "Increases the damage of Fake Capture by 20%."
         ]
     },
     {
         "Name (English)": "Slamming Blast",
         "Effect (English)": [
-            "Increases the damage of Surprise Dunk by 9%",
-            "Increases the damage of Surprise Dunk by 13%",
-            "Increases the damage of Surprise Dunk by 17%"
+            "Increases the damage of Surprise Dunk by 9%.",
+            "Increases the damage of Surprise Dunk by 13%.",
+            "Increases the damage of Surprise Dunk by 17%."
         ]
     },
     {
         "Name (English)": "Detaining Toss",
         "Effect (English)": [
-            "Increases the damage of Deadly Archer by 14%",
-            "Increases the damage of Deadly Archer by 17%",
-            "Increases the damage of Deadly Archer by 20%"
+            "Increases the damage of Deadly Archer by 14%.",
+            "Increases the damage of Deadly Archer by 17%.",
+            "Increases the damage of Deadly Archer by 20%."
         ]
     },
     {
         "Name (English)": "Dancing Killer",
         "Effect (English)": [
-            "Increases the damage of Acro Effect by 9%",
-            "Increases the damage of Acro Effect by 13%",
-            "Increases the damage of Acro Effect by 17%"
+            "Increases the damage of Acro Effect by 9%.",
+            "Increases the damage of Acro Effect by 13%.",
+            "Increases the damage of Acro Effect by 17%."
         ]
     },
     {
         "Name (English)": "Countless Slugging",
         "Effect (English)": [
-            "Increases the damage of Pendulum Roll by 9%",
-            "Increases the damage of Pendulum Roll by 13%",
-            "Increases the damage of Pendulum Roll by 17%"
+            "Increases the damage of Pendulum Roll by 9%.",
+            "Increases the damage of Pendulum Roll by 13%.",
+            "Increases the damage of Pendulum Roll by 17%."
         ]
     },
     {
         "Name (English)": "Leading Punch",
         "Effect (English)": [
-            "Increases the damage of Straight Charge by 9%",
-            "Increases the damage of Straight Charge by 13%",
-            "Increases the damage of Straight Charge by 17%"
+            "Increases the damage of Straight Charge by 9%.",
+            "Increases the damage of Straight Charge by 13%.",
+            "Increases the damage of Straight Charge by 17%."
         ]
     },
     {
         "Name (English)": "Altering Jab",
         "Effect (English)": [
-            "Increases the damage of Surprise Knuckle by 9%",
-            "Increases the damage of Surprise Knuckle by 13%",
-            "Increases the damage of Surprise Knuckle by 17%"
+            "Increases the damage of Surprise Knuckle by 9%.",
+            "Increases the damage of Surprise Knuckle by 13%.",
+            "Increases the damage of Surprise Knuckle by 17%."
         ]
     },
     {
         "Name (English)": "Endless Pounding",
         "Effect (English)": [
-            "Increases the damage of Flash Thousand by 8%",
-            "Increases the damage of Flash Thousand by 11%",
-            "Increases the damage of Flash Thousand by 14%"
+            "Increases the damage of Flash Thousand by 8%.",
+            "Increases the damage of Flash Thousand by 11%.",
+            "Increases the damage of Flash Thousand by 14%."
         ]
     },
     {
@@ -2806,345 +3450,345 @@
     {
         "Name (English)": "Dancing Ensemble",
         "Effect (English)": [
-            "Increases the damage of Rage Dance by 9%",
-            "Increases the damage of Rage Dance by 13%",
-            "Increases the damage of Rage Dance by 17%"
+            "Increases the damage of Rage Dance by 9%.",
+            "Increases the damage of Rage Dance by 13%.",
+            "Increases the damage of Rage Dance by 17%."
         ]
     },
     {
         "Name (English)": "Explosive Ensemble",
         "Effect (English)": [
-            "Increases the damage of Thrillsplosion by 9%",
-            "Increases the damage of Thrillsplosion by 13%",
-            "Increases the damage of Thrillsplosion by 17%"
+            "Increases the damage of Thrillsplosion by 9%.",
+            "Increases the damage of Thrillsplosion by 13%.",
+            "Increases the damage of Thrillsplosion by 17%."
         ]
     },
     {
         "Name (English)": "Guillotine Ensemble",
         "Effect (English)": [
-            "Increases the damage of Slash Rave by 14%",
-            "Increases the damage of Slash Rave by 17%",
-            "Increases the damage of Slash Rave by 20%"
+            "Increases the damage of Slash Rave by 14%.",
+            "Increases the damage of Slash Rave by 17%.",
+            "Increases the damage of Slash Rave by 20%."
         ]
     },
     {
         "Name (English)": "Kicking Ensemble",
         "Effect (English)": [
-            "Increases the damage of Additional Bullet by 9%",
-            "Increases the damage of Additional Bullet by 13%",
-            "Increases the damage of Additional Bullet by 17%"
+            "Increases the damage of Additional Bullet by 9%.",
+            "Increases the damage of Additional Bullet by 13%.",
+            "Increases the damage of Additional Bullet by 17%."
         ]
     },
     {
         "Name (English)": "Grenade Shot",
         "Effect (English)": [
-            "Increases the damage of Grenade Shell by 14%",
-            "Increases the damage of Grenade Shell by 17%",
-            "Increases the damage of Grenade Shell by 20%"
+            "Increases the damage of Grenade Shell by 14%.",
+            "Increases the damage of Grenade Shell by 17%.",
+            "Increases the damage of Grenade Shell by 20%."
         ]
     },
     {
         "Name (English)": "Precise Discharge",
         "Effect (English)": [
-            "Increases the damage of One Point by 9%",
-            "Increases the damage of One Point by 13%",
-            "Increases the damage of One Point by 17%"
+            "Increases the damage of One Point by 9%.",
+            "Increases the damage of One Point by 13%.",
+            "Increases the damage of One Point by 17%."
         ]
     },
     {
         "Name (English)": "Sliding Shot",
         "Effect (English)": [
-            "Increases the damage of Impact Slider by 14%",
-            "Increases the damage of Impact Slider by 17%",
-            "Increases the damage of Impact Slider by 20%"
+            "Increases the damage of Impact Slider by 14%.",
+            "Increases the damage of Impact Slider by 17%.",
+            "Increases the damage of Impact Slider by 20%."
         ]
     },
     {
         "Name (English)": "Evading Jump Shot",
         "Effect (English)": [
-            "Increases the damage of Parallel Slider by 10%",
-            "Increases the damage of Parallel Slider by 15%",
-            "Increases the damage of Parallel Slider by 20%"
+            "Increases the damage of Parallel Slider by 10%.",
+            "Increases the damage of Parallel Slider by 15%.",
+            "Increases the damage of Parallel Slider by 20%."
         ]
     },
     {
         "Name (English)": "Concealed Shooting",
         "Effect (English)": [
-            "Increases the damage of Sneak Shooter by 8%",
-            "Increases the damage of Sneak Shooter by 11%",
-            "Increases the damage of Sneak Shooter by 14%"
+            "Increases the damage of Sneak Shooter by 8%.",
+            "Increases the damage of Sneak Shooter by 11%.",
+            "Increases the damage of Sneak Shooter by 14%."
         ]
     },
     {
         "Name (English)": "Lightray Shower",
         "Effect (English)": [
-            "Increases the damage of Glorious Rain by 10%",
-            "Increases the damage of Glorious Rain by 15%",
-            "Increases the damage of Glorious Rain by 20%"
+            "Increases the damage of Glorious Rain by 10%.",
+            "Increases the damage of Glorious Rain by 15%.",
+            "Increases the damage of Glorious Rain by 20%."
         ]
     },
     {
         "Name (English)": "Divine Wrath",
         "Effect (English)": [
-            "Increases the damage of Satellite Cannon by 8%",
-            "Increases the damage of Satellite Cannon by 11%",
-            "Increases the damage of Satellite Cannon by 14%"
+            "Increases the damage of Satellite Cannon by 8%.",
+            "Increases the damage of Satellite Cannon by 11%.",
+            "Increases the damage of Satellite Cannon by 14%."
         ]
     },
     {
         "Name (English)": "Holy Cannon",
         "Effect (English)": [
-            "Increases the damage of Divine Launcher by 8%",
-            "Increases the damage of Divine Launcher by 11%",
-            "Increases the damage of Divine Launcher by 14%"
+            "Increases the damage of Divine Launcher by 8%.",
+            "Increases the damage of Divine Launcher by 11%.",
+            "Increases the damage of Divine Launcher by 14%."
         ]
     },
     {
         "Name (English)": "Barrage Cannon",
         "Effect (English)": [
-            "Increases the damage of Concentrate One by 9%",
-            "Increases the damage of Concentrate One by 13%",
-            "Increases the damage of Concentrate One by 17%"
+            "Increases the damage of Concentrate One by 9%.",
+            "Increases the damage of Concentrate One by 13%.",
+            "Increases the damage of Concentrate One by 17%."
         ]
     },
     {
         "Name (English)": "Celestial Cannon",
         "Effect (English)": [
-            "Increases the damage of Cluster Bullet by 8%",
-            "Increases the damage of Cluster Bullet by 11%",
-            "Increases the damage of Cluster Bullet by 14%"
+            "Increases the damage of Cluster Bullet by 8%.",
+            "Increases the damage of Cluster Bullet by 11%.",
+            "Increases the damage of Cluster Bullet by 14%."
         ]
     },
     {
         "Name (English)": "Point-Blank Cannon",
         "Effect (English)": [
-            "Increases the damage of Zero Distance by 14%",
-            "Increases the damage of Zero Distance by 17%",
-            "Increases the damage of Zero Distance by 20%"
+            "Increases the damage of Zero Distance by 14%.",
+            "Increases the damage of Zero Distance by 17%.",
+            "Increases the damage of Zero Distance by 20%."
         ]
     },
     {
         "Name (English)": "Violent Ride",
         "Effect (English)": [
-            "Increases the damage of Rodeo Drive by 14%",
-            "Increases the damage of Rodeo Drive by 17%",
-            "Increases the damage of Rodeo Drive by 20%"
+            "Increases the damage of Rodeo Drive by 14%.",
+            "Increases the damage of Rodeo Drive by 17%.",
+            "Increases the damage of Rodeo Drive by 20%."
         ]
     },
     {
         "Name (English)": "Altering Cannon",
         "Effect (English)": [
-            "Increases the damage of Crazy Smash by 10%",
-            "Increases the damage of Crazy Smash by 15%",
-            "Increases the damage of Crazy Smash by 20%"
+            "Increases the damage of Crazy Smash by 10%.",
+            "Increases the damage of Crazy Smash by 15%.",
+            "Increases the damage of Crazy Smash by 20%."
         ]
     },
     {
         "Name (English)": "Flame Cannon",
         "Effect (English)": [
-            "Increases the damage of Flame Bullet by 10%",
-            "Increases the damage of Flame Bullet by 15%",
-            "Increases the damage of Flame Bullet by 20%"
+            "Increases the damage of Flame Bullet by 10%.",
+            "Increases the damage of Flame Bullet by 15%.",
+            "Increases the damage of Flame Bullet by 20%."
         ]
     },
     {
         "Name (English)": "Cosmic Crusher",
         "Effect (English)": [
-            "Increases the damage of Cosmos Breaker by 14%",
-            "Increases the damage of Cosmos Breaker by 17%",
-            "Increases the damage of Cosmos Breaker by 20%"
+            "Increases the damage of Cosmos Breaker by 14%.",
+            "Increases the damage of Cosmos Breaker by 17%.",
+            "Increases the damage of Cosmos Breaker by 20%."
         ]
     },
     {
         "Name (English)": "Traditional Spark",
         "Effect (English)": [
-            "Increases the damage of Diffuse Shell by 14%",
-            "Increases the damage of Diffuse Shell by 17%",
-            "Increases the damage of Diffuse Shell by 20%"
+            "Increases the damage of Diffuse Shell by 14%.",
+            "Increases the damage of Diffuse Shell by 17%.",
+            "Increases the damage of Diffuse Shell by 20%."
         ]
     },
     {
         "Name (English)": "Homing Shot",
         "Effect (English)": [
-            "Increases the damage of Homing Emission by 10%",
-            "Increases the damage of Homing Emission by 15%",
-            "Increases the damage of Homing Emission by 20%"
+            "Increases the damage of Homing Emission by 10%.",
+            "Increases the damage of Homing Emission by 15%.",
+            "Increases the damage of Homing Emission by 20%."
         ]
     },
     {
         "Name (English)": "Heroic Dance",
         "Effect (English)": [
-            "Increases the damage of Messiah Time by 9%",
-            "Increases the damage of Messiah Time by 13%",
-            "Increases the damage of Messiah Time by 17%"
+            "Increases the damage of Messiah Time by 9%.",
+            "Increases the damage of Messiah Time by 13%.",
+            "Increases the damage of Messiah Time by 17%."
         ]
     },
     {
         "Name (English)": "Eternal Bullet",
         "Effect (English)": [
-            "Increases the damage of Infinite Fire by 9%",
-            "Increases the damage of Infinite Fire by 13%",
-            "Increases the damage of Infinite Fire by 17%"
+            "Increases the damage of Infinite Fire by 9%.",
+            "Increases the damage of Infinite Fire by 13%.",
+            "Increases the damage of Infinite Fire by 17%."
         ]
     },
     {
         "Name (English)": "Airborne Aim",
         "Effect (English)": [
-            "Increases the damage of Satellite Aim by 14%",
-            "Increases the damage of Satellite Aim by 17%",
-            "Increases the damage of Satellite Aim by 20%"
+            "Increases the damage of Satellite Aim by 14%.",
+            "Increases the damage of Satellite Aim by 17%.",
+            "Increases the damage of Satellite Aim by 20%."
         ]
     },
     {
         "Name (English)": "Extreme Reversal",
         "Effect (English)": [
-            "Increases the damage of Elder Rebellion by 14%",
-            "Increases the damage of Elder Rebellion by 17%",
-            "Increases the damage of Elder Rebellion by 20%"
+            "Increases the damage of Elder Rebellion by 14%.",
+            "Increases the damage of Elder Rebellion by 17%.",
+            "Increases the damage of Elder Rebellion by 20%."
         ]
     },
     {
         "Name (English)": "Fallen Earth",
         "Effect (English)": [
-            "Increases the damage of Heel Stab by 14%",
-            "Increases the damage of Heel Stab by 17%",
-            "Increases the damage of Heel Stab by 20%"
+            "Increases the damage of Heel Stab by 14%.",
+            "Increases the damage of Heel Stab by 17%.",
+            "Increases the damage of Heel Stab by 20%."
         ]
     },
     {
         "Name (English)": "Rotational FLight",
         "Effect (English)": [
-            "Increases the damage of Grim Barrage by 20%",
-            "Increases the damage of Grim Barrage by 25%",
-            "Increases the damage of Grim Barrage by 30%"
+            "Increases the damage of Grim Barrage by 20%.",
+            "Increases the damage of Grim Barrage by 25%.",
+            "Increases the damage of Grim Barrage by 30%."
         ]
     },
     {
         "Name (English)": "Brandish Splendor",
         "Effect (English)": [
-            "Increases the damage of Kanran-kikyou by 9%",
-            "Increases the damage of Kanran-kikyou by 13%",
-            "Increases the damage of Kanran-kikyou by 17%"
+            "Increases the damage of Kanran-kikyou by 9%.",
+            "Increases the damage of Kanran-kikyou by 13%.",
+            "Increases the damage of Kanran-kikyou by 17%."
         ]
     },
     {
         "Name (English)": "Blossoming End",
         "Effect (English)": [
-            "Increases the damage of Sakura-endo by 9%",
-            "Increases the damage of Sakura-endo by 13%",
-            "Increases the damage of Sakura-endo by 17%"
+            "Increases the damage of Sakura-endo by 9%.",
+            "Increases the damage of Sakura-endo by 13%.",
+            "Increases the damage of Sakura-endo by 17%."
         ]
     },
     {
         "Name (English)": "Dragon Wave",
         "Effect (English)": [
-            "Increases the damage of Hatou-rindou by 5%",
-            "Increases the damage of Hatou-rindou by 7%",
-            "Increases the damage of Hatou-rindou by 10%"
+            "Increases the damage of Hatou-rindou by 5%.",
+            "Increases the damage of Hatou-rindou by 7%.",
+            "Increases the damage of Hatou-rindou by 10%."
         ]
     },
     {
         "Name (English)": "Master Bow",
         "Effect (English)": [
-            "Increases the damage of Master Shot by 8%",
-            "Increases the damage of Master Shot by 11%",
-            "Increases the damage of Master Shot by 14%"
+            "Increases the damage of Master Shot by 8%.",
+            "Increases the damage of Master Shot by 11%.",
+            "Increases the damage of Master Shot by 14%."
         ]
     },
     {
         "Name (English)": "Intense Bow",
         "Effect (English)": [
-            "Increases the damage of Penetrating Arrow by 14%",
-            "Increases the damage of Penetrating Arrow by 17%",
-            "Increases the damage of Penetrating Arrow by 20%"
+            "Increases the damage of Penetrating Arrow by 14%.",
+            "Increases the damage of Penetrating Arrow by 17%.",
+            "Increases the damage of Penetrating Arrow by 20%."
         ]
     },
     {
         "Name (English)": "Oracle Bow",
         "Effect (English)": [
-            "Increases the damage of Kamikaze Arrow by 14%",
-            "Increases the damage of Kamikaze Arrow by 17%",
-            "Increases the damage of Kamikaze Arrow by 20%"
+            "Increases the damage of Kamikaze Arrow by 14%.",
+            "Increases the damage of Kamikaze Arrow by 17%.",
+            "Increases the damage of Kamikaze Arrow by 20%."
         ]
     },
     {
         "Name (English)": "Final Bow",
         "Effect (English)": [
-            "Increases the damage of Final Nemesis by 10%",
-            "Increases the damage of Final Nemesis by 15%",
-            "Increases the damage of Final Nemesis by 20%"
+            "Increases the damage of Final Nemesis by 10%.",
+            "Increases the damage of Final Nemesis by 15%.",
+            "Increases the damage of Final Nemesis by 20%."
         ]
     },
     {
         "Name (English)": "Revolving Collision",
         "Effect (English)": [
-            "Increases the damage of Strike Gust by 8%",
-            "Increases the damage of Strike Gust by 11%",
-            "Increases the damage of Strike Gust by 14%"
+            "Increases the damage of Strike Gust by 8%.",
+            "Increases the damage of Strike Gust by 11%.",
+            "Increases the damage of Strike Gust by 14%."
         ]
     },
     {
         "Name (English)": "Gleaming Riot",
         "Effect (English)": [
-            "Increases the damage of Gran Wave by 14%",
-            "Increases the damage of Gran Wave by 17%",
-            "Increases the damage of Gran Wave by 20%"
+            "Increases the damage of Gran Wave by 14%.",
+            "Increases the damage of Gran Wave by 17%.",
+            "Increases the damage of Gran Wave by 20%."
         ]
     },
     {
         "Name (English)": "Swift Outrage",
         "Effect (English)": [
-            "Increases the damage of Moment Gale by 14%",
-            "Increases the damage of Moment Gale by 17%",
-            "Increases the damage of Moment Gale by 20%"
+            "Increases the damage of Moment Gale by 14%.",
+            "Increases the damage of Moment Gale by 17%.",
+            "Increases the damage of Moment Gale by 20%."
         ]
     },
     {
         "Name (English)": "Destruction Rook",
         "Effect (English)": [
-            "Increases the damage of Distraction Wing by 9%",
-            "Increases the damage of Distraction Wing by 13%",
-            "Increases the damage of Distraction Wing by 17%"
+            "Increases the damage of Distraction Wing by 9%.",
+            "Increases the damage of Distraction Wing by 13%.",
+            "Increases the damage of Distraction Wing by 17%."
         ]
     },
     {
         "Name (English)": "Ray Dispersion",
         "Effect (English)": [
-            "Increases the damage of Dispersion Shrike by 10%",
-            "Increases the damage of Dispersion Shrike by 15%",
-            "Increases the damage of Dispersion Shrike by 20%"
+            "Increases the damage of Dispersion Shrike by 10%.",
+            "Increases the damage of Dispersion Shrike by 15%.",
+            "Increases the damage of Dispersion Shrike by 20%."
         ]
     },
     {
         "Name (English)": "Rising Phoenix",
         "Effect (English)": [
-            "Increases the damage of Heavenly Kite by 8%",
-            "Increases the damage of Heavenly Kite by 11%",
-            "Increases the damage of Heavenly Kite by 14%"
+            "Increases the damage of Heavenly Kite by 8%.",
+            "Increases the damage of Heavenly Kite by 11%.",
+            "Increases the damage of Heavenly Kite by 14%."
         ]
     },
     {
         "Name (English)": "Divine JustIce",
         "Effect (English)": [
-            "Increases the damage of JustIce Crow by 14%",
-            "Increases the damage of JustIce Crow by 17%",
-            "Increases the damage of JustIce Crow by 20%"
+            "Increases the damage of JustIce Crow by 14%.",
+            "Increases the damage of JustIce Crow by 17%.",
+            "Increases the damage of JustIce Crow by 20%."
         ]
     },
     {
         "Name (English)": "Star Divide",
         "Effect (English)": [
-            "Increases the damage of Starling Fall by 10%",
-            "Increases the damage of Starling Fall by 15%",
-            "Increases the damage of Starling Fall by 20%"
+            "Increases the damage of Starling Fall by 10%.",
+            "Increases the damage of Starling Fall by 15%.",
+            "Increases the damage of Starling Fall by 20%."
         ]
     },
     {
         "Name (English)": "Rampaging Falcon",
         "Effect (English)": [
-            "Increases the damage of Kestrel Rampage by 14%",
-            "Increases the damage of Kestrel Rampage by 17%",
-            "Increases the damage of Kestrel Rampage by 20%"
+            "Increases the damage of Kestrel Rampage by 14%.",
+            "Increases the damage of Kestrel Rampage by 17%.",
+            "Increases the damage of Kestrel Rampage by 20%."
         ]
     },
     {
@@ -3198,17 +3842,17 @@
     {
         "Name (English)": "Dynamic Reflection",
         "Effect (English)": [
-            "Increases attack damage during Just Guard by 200%",
-            "Increases attack damage during Just Guard by 500%",
-            "Increases attack damage during Just Guard by 700%"
+            "Increases attack damage during Just Guard by 200%.",
+            "Increases attack damage during Just Guard by 500%.",
+            "Increases attack damage during Just Guard by 700%."
         ]
     },
     {
         "Name (English)": "Darkness Release",
         "Effect (English)": [
-            "Increases damage by 6%, PP recovery rate increased by 10%",
-            "Increases damage by 9%, PP recovery rate increased by 10%",
-            "Increases damage by 12%, PP recovery rate increased by 10%"
+            "Increases damage by 6%, PP recovery rate increased by 10%.",
+            "Increases damage by 9%, PP recovery rate increased by 10%.",
+            "Increases damage by 12%, PP recovery rate increased by 10%."
         ]
     },
     {
@@ -3246,9 +3890,9 @@
     {
         "Name (English)": "Blossoming Full Moon Strike",
         "Effect (English)": [
-            "Increases the damage of Kazan-nadeshiko by 5%",
-            "Increases the damage of Kazan-nadeshiko by 7%",
-            "Increases the damage of Kazan-nadeshiko by 10%"
+            "Increases the damage of Kazan-nadeshiko by 5%.",
+            "Increases the damage of Kazan-nadeshiko by 7%.",
+            "Increases the damage of Kazan-nadeshiko by 10%."
         ]
     },
     {
@@ -3262,17 +3906,17 @@
     {
         "Name (English)": "Pleiades Flag Cut",
         "Effect (English)": [
-            "Increases the damage of Rising Flag by 9%",
-            "Increases the damage of Rising Flag by 13%",
-            "Increases the damage of Rising Flag by 17%"
+            "Increases the damage of Rising Flag by 9%.",
+            "Increases the damage of Rising Flag by 13%.",
+            "Increases the damage of Rising Flag by 17%."
         ]
     },
     {
         "Name (English)": "Rolling Cutter Dance",
         "Effect (English)": [
-            "Increases the damage of Wild Rhapsody by 14%",
-            "Increases the damage of Wild Rhapsody by 17%",
-            "Increases the damage of Wild Rhapsody by 20%"
+            "Increases the damage of Wild Rhapsody by 14%.",
+            "Increases the damage of Wild Rhapsody by 17%.",
+            "Increases the damage of Wild Rhapsody by 20%."
         ]
     },
     {
@@ -3395,9 +4039,9 @@
     {
         "Name (English)": "Veteran's Merit",
         "Effect (English)": [
-            "Gain a .2% damage increases every time you kill an enemy. Damage caps at 15%",
-            "Gain a .25% damage increases every time you kill an enemy. Damage caps at 15%",
-            "Gain a 1% damage increases every time you kill an enemy. Damage caps at 15%"
+            "Gain a .2% damage increases every time you kill an enemy. Damage caps at 15%.",
+            "Gain a .25% damage increases every time you kill an enemy. Damage caps at 15%.",
+            "Gain a 1% damage increases every time you kill an enemy. Damage caps at 15%."
         ]
     },
     {
@@ -3623,9 +4267,9 @@
     {
         "Name (English)": "Kickdance Arrow",
         "Effect (English)": [
-            "Increases the damage of Tritt Shooter by ?%",
-            "Increases the damage of Tritt Shooter by ?%",
-            "Increases the damage of Tritt Shooter by ?%"
+            "Increases the damage of Tritt Shooter by ?%.",
+            "Increases the damage of Tritt Shooter by ?%.",
+            "Increases the damage of Tritt Shooter by ?%."
         ]
     },
     {
@@ -3647,17 +4291,17 @@
     {
         "Name (English)": "Dissipating Wave",
         "Effect (English)": [
-            "Fires an energy wave on normal attacks.",
-            "Fires an energy wave on normal attacks.",
-            "Fires an energy wave on normal attacks."
+            "Fires an energy wave on Normal Attacks.",
+            "Fires an energy wave on Normal Attacks.",
+            "Fires an energy wave on Normal Attacks."
         ]
     },
     {
         "Name (English)": "Astral Spirit's Blessing",
         "Effect (English)": [
-            "HP recovery amount up 10%, increases damage by 7%",
-            "HP recovery amount up 20%, increases damage by 9%",
-            "HP recovery amount up 30%, increases damage by 12%"
+            "HP recovery amount up 10%, increases damage by 7%.",
+            "HP recovery amount up 20%, increases damage by 9%.",
+            "HP recovery amount up 30%, increases damage by 12%."
         ]
     },
     {
@@ -3687,9 +4331,9 @@
     {
         "Name (English)": "Limit Release",
         "Effect (English)": [
-            "Increased PP consumption by 30%, increases the damage of normal attacks by 100%.",
-            "Increased PP consumption by 30%, increases the damage of normal attacks by 150%.",
-            "Increased PP consumption by 30%, increases the damage of normal attacks by 200%."
+            "Increased PP consumption by 30%, increases the damage of Normal Attacks by 100%.",
+            "Increased PP consumption by 30%, increases the damage of Normal Attacks by 150%.",
+            "Increased PP consumption by 30%, increases the damage of Normal Attacks by 200%."
         ]
     },
     {
@@ -3847,7 +4491,7 @@
     {
         "Name (English)": "Blessed Season",
         "Effect (English)": [
-            "Increases the damage of Photon Arts/Techniques by 5% and reduce their PP consumption by 10%",
+            "Increases the damage of Photon Arts/Techniques by 5% and reduce their PP consumption by 10%.",
             "Increases the damage of Photon Arts/Techniques by 7% and reduce their PP consumption by 15%.",
             "Increases the damage of Photon Arts/Techniques by 10% and reduce their PP consumption by 20%."
         ]
@@ -3909,7 +4553,7 @@
         ]
     },
     {
-        "Name (English)": "Snow-White SacrifIce",
+        "Name (English)": "Snow-White Sacrifice",
         "Effect (English)": [
             "Increases chance to inflict Status effects to enemies and increases damage by 8%. 5% additional damage against Status inflicted enemies.",
             "Increases chance to inflict Status effects to enemies and increases damage by 9%. 7% additional damage against Status inflicted enemies.",
@@ -3942,14 +4586,14 @@
             "サブクラスがファイター時、クリティカル率(30%)・クリティカル威力(14%)上昇。"
         ],
         "Effect (English)": [
-            "Increases Critical Hit Rate by 10% and Critical damage by 10% when Fighter is set as your Subclass.",
-            "Increases Critical Hit Rate by 20% and Critical damage by 12%  when Fighter is set as your Subclass.",
-            "Increases Critical Hit Rate by 30% and Critical damage by 14%  when Fighter is set as your Subclass."
+            "Increases Critical Hit Rate by 10% and Critical damage by 10% when Fighter is set as Subclass.",
+            "Increases Critical Hit Rate by 20% and Critical damage by 12%  when Fighter is set as Subclass.",
+            "Increases Critical Hit Rate by 30% and Critical damage by 14%  when Fighter is set as Subclass."
         ],
         "Effect (Global)": [
-            "Increases Critical Hit Rate by 10% and Critical damage by 10% when Fighter is set as your Subclass.",
-            "Increases Critical Hit Rate by 20% and Critical damage by 12%  when Fighter is set as your Subclass.",
-            "Increases Critical Hit Rate by 30% and Critical damage by 14%  when Fighter is set as your Subclass."
+            "Increases Critical Hit Rate by 10% and Critical damage by 10% when Fighter is set as Subclass.",
+            "Increases Critical Hit Rate by 20% and Critical damage by 12%  when Fighter is set as Subclass.",
+            "Increases Critical Hit Rate by 30% and Critical damage by 14%  when Fighter is set as Subclass."
         ]
     },
     {
@@ -3962,14 +4606,14 @@
             "サブクラスがブレイバー時、与ダメージ(12%)上昇・PP消費量(30%)減少。"
         ],
         "Effect (English)": [
-            "Increases damage by 8% and reduce PP consumption by 10% when Braver is set as your Subclass.",
-            "Increases damage by 10% and reduce PP consumption by 20% when Braver is set as your Subclass.",
-            "Increases damage by 12% and reduce PP consumption by 30% when Braver is set as your Subclass."
+            "Increases damage by 8% and reduce PP consumption by 10% when Braver is set as Subclass.",
+            "Increases damage by 10% and reduce PP consumption by 20% when Braver is set as Subclass.",
+            "Increases damage by 12% and reduce PP consumption by 30% when Braver is set as Subclass."
         ],
         "Effect (Global)": [
-            "Increases damage by 8% and reduce PP consumption by 10% when Braver is set as your Subclass.",
-            "Increases damage by 10% and reduce PP consumption by 20% when Braver is set as your Subclass.",
-            "Increases damage by 12% and reduce PP consumption by 30% when Braver is set as your Subclass."
+            "Increases damage by 8% and reduce PP consumption by 10% when Braver is set as Subclass.",
+            "Increases damage by 10% and reduce PP consumption by 20% when Braver is set as Subclass.",
+            "Increases damage by 12% and reduce PP consumption by 30% when Braver is set as Subclass."
         ]
     },
     {
@@ -4113,8 +4757,8 @@
         "Name (English)": "Revolving Step",
         "Effect (English)": [
             "Reduces the PP consumption of Grim Barrage by ?%.",
-            "Reduces the PP consumption of Grim Barrage by ?%",
-            "Reduces the PP consumption of Grim Barrage by ?%"
+            "Reduces the PP consumption of Grim Barrage by ?%.",
+            "Reduces the PP consumption of Grim Barrage by ?%."
         ]
     },
     {
@@ -4344,9 +4988,9 @@
     {
         "Name (English)": "Water Bullet",
         "Effect (English)": [
-            "Increases damage by 10% and increases the amount of PP restored by normal attacks (+?).",
-            "Increases damage by 12% and increases the amount of PP restored by normal attacks (+?).",
-            "Increases damage by 14% and increases the amount of PP restored by normal attacks (+2)."
+            "Increases damage by 10% and increases the amount of PP restored by Normal Attacks (+?).",
+            "Increases damage by 12% and increases the amount of PP restored by Normal Attacks (+?).",
+            "Increases damage by 14% and increases the amount of PP restored by Normal Attacks (+2)."
         ]
     },
     {
@@ -4400,9 +5044,9 @@
     {
         "Name (English)": "Cyclic Cyclone",
         "Effect (English)": [
-            "Increases damage by 7%. PP recovery changes when your maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +50%, PP Consumption -10%)",
-            "Increases damage by 8%. PP recovery changes when your maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +75%, PP Consumption -20%)",
-            "Increases damage by 9%. PP recovery changes when your maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +100%, PP Consumption -30%)"
+            "Increases damage by 7%. PP recovery changes when maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +50%, PP Consumption -10%)",
+            "Increases damage by 8%. PP recovery changes when maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +75%, PP Consumption -20%)",
+            "Increases damage by 9%. PP recovery changes when maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +100%, PP Consumption -30%)"
         ]
     },
     {
@@ -4560,9 +5204,9 @@
     {
         "Name (English)": "Hexing Spirit",
         "Effect (English)": [
-            "Increases damage by 6%. Enhance normal attacks and increases the damage of Combat Finish based on the number of normal attack hits.",
-            "Increases damage by 7%. Enhance normal attacks and increases the damage of Combat Finish based on the number of normal attack hits.",
-            "Increases damage by 8%. Enhance normal attacks and increases the damage of Combat Finish based on the number of normal attack hits."
+            "Increases damage by 6%. Enhance Normal Attacks and increases the damage of Combat Finish based on the number of Normal Attack hits.",
+            "Increases damage by 7%. Enhance Normal Attacks and increases the damage of Combat Finish based on the number of Normal Attack hits.",
+            "Increases damage by 8%. Enhance Normal Attacks and increases the damage of Combat Finish based on the number of Normal Attack hits."
         ]
     },
     {
@@ -4616,9 +5260,9 @@
     {
         "Name (English)": "Divine Protection",
         "Effect (English)": [
-            "Increases damage by 5%. Unleash a follow-up attack that damages your surroundings after performing an attack.",
-            "Increases damage by 6%. Unleash a follow-up attack that damages your surroundings after performing an attack.",
-            "Increases damage by 7%. Unleash a follow-up attack that damages your surroundings after performing an attack."
+            "Increases damage by 5%. Unleash a follow-up attack that damages surroundings after performing an attack.",
+            "Increases damage by 6%. Unleash a follow-up attack that damages surroundings after performing an attack.",
+            "Increases damage by 7%. Unleash a follow-up attack that damages surroundings after performing an attack."
         ]
     },
     {
@@ -4792,9 +5436,9 @@
     {
         "Name (English)": "Bright Silver Flame",
         "Effect (English)": [
-            "Increases damage by 6%. Change your 3rd Normal Attack into an explosive bullet.",
-            "Increases damage by 8%. Change your 3rd Normal Attack into an explosive bullet.",
-            "Increases damage by 10%. Change your 3rd Normal Attack into an explosive bullet."
+            "Increases damage by 6%. Change 3rd Normal Attack into an explosive bullet.",
+            "Increases damage by 8%. Change 3rd Normal Attack into an explosive bullet.",
+            "Increases damage by 10%. Change 3rd Normal Attack into an explosive bullet."
         ]
     },
     {
@@ -4856,9 +5500,9 @@
     {
         "Name (English)": "Collective Insight",
         "Effect (English)": [
-            "Increases damage by 4%. Grant additional bonuses based on your maximum PP.",
-            "Increases damage by 5%. Grant additional bonuses based on your maximum PP.",
-            "Increases damage by 6%. Grant additional bonuses based on your maximum PP."
+            "Increases damage by 4%. Grant additional bonuses based on maximum PP.",
+            "Increases damage by 5%. Grant additional bonuses based on maximum PP.",
+            "Increases damage by 6%. Grant additional bonuses based on maximum PP."
         ]
     },
     {
@@ -5000,9 +5644,9 @@
     {
         "Name (English)": "Azure Current",
         "Effect (English)": [
-            "Increases damage by 6%. Recover HP and PP upon sheathing your weapon based on the amount of damage dealt.",
-            "Increases damage by 8%. Recover HP and PP upon sheathing your weapon based on the amount of damage dealt.",
-            "Increases damage by 10%. Recover HP and PP upon sheathing your weapon based on the amount of damage dealt."
+            "Increases damage by 6%. Recover HP and PP upon sheathing weapon based on the amount of damage dealt.",
+            "Increases damage by 8%. Recover HP and PP upon sheathing weapon based on the amount of damage dealt.",
+            "Increases damage by 10%. Recover HP and PP upon sheathing weapon based on the amount of damage dealt."
         ]
     },
     {
@@ -5024,9 +5668,9 @@
     {
         "Name (English)": "Feathered FLight",
         "Effect (English)": [
-            "Increases damage by 6%. Add additional Ranged hits to normal attacks upon blocking an attack with Twin Daggers Spin.",
-            "Increases damage by 8%. Add additional Ranged hits to normal attacks upon blocking an attack with Twin Daggers Spin.",
-            "Increases damage by 10%. Add additional Ranged hits to normal attacks upon blocking an attack with Twin Daggers Spin."
+            "Increases damage by 6%. Add additional Ranged hits to Normal Attacks upon blocking an attack with Twin Daggers Spin.",
+            "Increases damage by 8%. Add additional Ranged hits to Normal Attacks upon blocking an attack with Twin Daggers Spin.",
+            "Increases damage by 10%. Add additional Ranged hits to Normal Attacks upon blocking an attack with Twin Daggers Spin."
         ]
     },
     {
@@ -5112,9 +5756,9 @@
     {
         "Name (English)": "Suzaku Alliance",
         "Effect (English)": [
-            "Increases attack speed over time. Taking 10% of your HP in damage or more resets the attack speed increases.",
-            "Increases attack speed over time. Taking 10% of your HP in damage or more resets the attack speed increases.",
-            "Increases attack speed over time. Taking 10% of your HP in damage or more resets the attack speed increases."
+            "Increases attack speed over time. Taking 10% of HP in damage or more resets the attack speed increases.",
+            "Increases attack speed over time. Taking 10% of HP in damage or more resets the attack speed increases.",
+            "Increases attack speed over time. Taking 10% of HP in damage or more resets the attack speed increases."
         ]
     },
     {
@@ -5436,9 +6080,9 @@
     {
         "Name (English)": "Extreme Speed",
         "Effect (English)": [
-            "Damage +6%. Increases normal attack speed by 15%. Consume Mate items instantly.",
-            "Damage +8%. Increases normal attack speed by 15%. Consume Mate items instantly.",
-            "Damage +10%. Increases normal attack speed by 15%. Consume Mate items instantly."
+            "Damage +6%. Increases Normal Attack speed by 15%. Consume Mate items instantly.",
+            "Damage +8%. Increases Normal Attack speed by 15%. Consume Mate items instantly.",
+            "Damage +10%. Increases Normal Attack speed by 15%. Consume Mate items instantly."
         ]
     },
     {
@@ -5498,9 +6142,9 @@
     {
         "Name (English)": "Absolute Strike",
         "Effect (English)": [
-            "Increases critical rate by 25%, increases damage by 17%.",
-            "Increases critical rate by 25%, increases damage by 19%",
-            "Increases critical rate by 25%, increases damage by 22%"
+            "Increases Critical Hit Rate by 25%, increases damage by 17%.",
+            "Increases Critical Hit Rate by 25%, increases damage by 19%.",
+            "Increases Critical Hit Rate by 25%, increases damage by 22%."
         ],
         "Special": "Hidden"
     },
@@ -5582,9 +6226,9 @@
     {
         "Name (English)": "Storm Barrage",
         "Effect (English)": [
-            "Increases attack damage during Rapid Shoot by 30%",
-            "Increases attack damage during Rapid Shoot by 32%",
-            "Increases attack damage during Rapid Shoot by 34%"
+            "Increases attack damage during Rapid Shoot by 30%.",
+            "Increases attack damage during Rapid Shoot by 32%.",
+            "Increases attack damage during Rapid Shoot by 34%."
         ],
         "Special": "Hidden"
     },
@@ -5627,9 +6271,9 @@
     {
         "Name (English)": "Shining Destruction",
         "Effect (English)": [
-            "Increases damage against DA-Aberrations by 21%.",
-            "Increases damage against DA-Aberrations by 23%.",
-            "Increases damage against DA-Aberrations by 25%."
+            "Increases damage against (DA) Aberrations by 21%.",
+            "Increases damage against (DA) Aberrations by 23%.",
+            "Increases damage against (DA) Aberrations by 25%."
         ],
         "Special": "Hidden"
     },
@@ -5724,14 +6368,14 @@
             "5秒毎に最大HPの(10%)分、自動でHPが回復する。"
         ],
         "Effect (English)": [
-            "Restores 5% of your maximum HP every 5 seconds.",
-            "Restores 7% of your maximum HP every 5 seconds.",
-            "Restores 10% of your maximum HP every 5 seconds."
+            "Restores 5% of maximum HP every 5 seconds.",
+            "Restores 7% of maximum HP every 5 seconds.",
+            "Restores 10% of maximum HP every 5 seconds."
         ],
         "Effect (Global)": [
-            "Restores 5% of your maximum HP every 5 seconds.",
-            "Restores 7% of your maximum HP every 5 seconds.",
-            "Restores 10% of your maximum HP every 5 seconds."
+            "Restores 5% of maximum HP every 5 seconds.",
+            "Restores 7% of maximum HP every 5 seconds.",
+            "Restores 10% of maximum HP every 5 seconds."
         ],
         "Special": "Weaponoid"
     },
@@ -5846,9 +6490,9 @@
     {
         "Name (English)": "Flame Crystal",
         "Effect (English)": [
-            "Increases the damage of Fire Techniques by 12%",
-            "Increases the damage of Fire Techniques by 16%",
-            "Increases the damage of Fire Techniques by 20%"
+            "Increases the damage of Fire Techniques by 12%.",
+            "Increases the damage of Fire Techniques by 16%.",
+            "Increases the damage of Fire Techniques by 20%."
         ],
         "Special": "Weaponoid"
     },
@@ -5873,9 +6517,9 @@
     {
         "Name (English)": "Sealing Dragon's Roar",
         "Effect (English)": [
-            "Increases the damage of normal attacks by 60%.",
-            "Increases the damage of normal attacks by 70%.",
-            "Increases the damage of normal attacks by 80%."
+            "Increases the damage of Normal Attacks by 60%.",
+            "Increases the damage of Normal Attacks by 70%.",
+            "Increases the damage of Normal Attacks by 80%."
         ],
         "Special": "Weaponoid"
     },
@@ -6441,9 +7085,9 @@
     {
         "Name (English)": "Cyclic Cyclone Plus",
         "Effect (English)": [
-            "Increases damage by 16%. PP recovery changes when your maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +50%, PP Consumption -10%)",
-            "Increases damage by 18%. PP recovery changes when your maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +75%, PP Consumption -20%)",
-            "Increases damage by 20%. PP recovery changes when your maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +100%, PP Consumption -30%)"
+            "Increases damage by 16%. PP recovery changes when maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +50%, PP Consumption -10%)",
+            "Increases damage by 18%. PP recovery changes when maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +75%, PP Consumption -20%)",
+            "Increases damage by 20%. PP recovery changes when maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +100%, PP Consumption -30%)"
         ],
         "Special": "Ultimate"
     },
@@ -6468,9 +7112,9 @@
     {
         "Name (English)": "Hexing Spirit Plus",
         "Effect (English)": [
-            "Increases damage by 16%. Enhance normal attacks and increases the damage of Combat Finish based on the number of normal attack hits.",
-            "Increases damage by 18%. Enhance normal attacks and increases the damage of Combat Finish based on the number of normal attack hits.",
-            "Increases damage by 20%. Enhance normal attacks and increases the damage of Combat Finish based on the number of normal attack hits."
+            "Increases damage by 16%. Enhance Normal Attacks and increases the damage of Combat Finish based on the number of Normal Attack hits.",
+            "Increases damage by 18%. Enhance Normal Attacks and increases the damage of Combat Finish based on the number of Normal Attack hits.",
+            "Increases damage by 20%. Enhance Normal Attacks and increases the damage of Combat Finish based on the number of Normal Attack hits."
         ],
         "Special": "Ultimate"
     },
