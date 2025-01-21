@@ -3229,14 +3229,14 @@
             "アサルトバスターのPP消費量を減少させる。(25%)"
         ],
         "Effect (English)": [
-            "Reduces the PP cost for Assault Buster by 15%.",
-            "Reduces the PP cost for Assault Buster by 20%.",
-            "Reduces the PP cost for Assault Buster by 25%."
+            "Reduces the PP cost of Assault Buster by 15%.",
+            "Reduces the PP cost of Assault Buster by 20%.",
+            "Reduces the PP cost of Assault Buster by 25%."
         ],
         "Effect (Global)": [
-            "Reduces the PP cost for Assault Buster by 15%.",
-            "Reduces the PP cost for Assault Buster by 20%.",
-            "Reduces the PP cost for Assault Buster by 25%."
+            "Reduces the PP cost of Assault Buster by 15%.",
+            "Reduces the PP cost of Assault Buster by 20%.",
+            "Reduces the PP cost of Assault Buster by 25%."
         ]
     },
     {
@@ -3280,40 +3280,120 @@
         ]
     },
     {
+        "Name (JP)": "天昇舞",
         "Name (English)": "Aerial Gamboling",
+        "Name (Global)": "Floating Waltz",
+        "Effect (JP)": [
+            "レイジングワルツの威力を上昇させる。(10%)",
+            "レイジングワルツの威力を上昇させる。(15%)",
+            "レイジングワルツの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
-            "Increases the damage of Raging Waltz by 9%.",
-            "Increases the damage of Raging Waltz by 13%.",
-            "Increases the damage of Raging Waltz by 17%."
+            "Increases the damage of Raging Waltz by 10%.",
+            "Increases the damage of Raging Waltz by 15%.",
+            "Increases the damage of Raging Waltz by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Raging Waltz by 10%.",
+            "Increases the damage of Raging Waltz by 15%.",
+            "Increases the damage of Raging Waltz by 20%."
         ]
     },
     {
+        "Name (JP)": "廻天昇舞",
         "Name (English)": "Aerial Gamboling 2",
+        "Name (Global)": "Floating Waltz 2",
+        "Effect (JP)": [
+            "レイジングワルツのPP消費量を減少させる。(15%)",
+            "レイジングワルツのPP消費量を減少させる。(20%)",
+            "レイジングワルツのPP消費量を減少させる。(25%)"
+        ],
         "Effect (English)": [
-            "Reduces PP cost for Raging Waltz by 15%.",
-            "Reduces PP cost for Raging Waltz by 20%.",
-            "Reduces PP cost for Raging Waltz by 25%."
+            "Reduces the PP cost of Raging Waltz by 15%.",
+            "Reduces the PP cost of Raging Waltz by 20%.",
+            "Reduces the PP cost of Raging Waltz by 25%."
+        ],
+        "Effect (Global)": [
+            "Reduces the PP cost of Raging Waltz by 15%.",
+            "Reduces the PP cost of Raging Waltz by 20%.",
+            "Reduces the PP cost of Raging Waltz by 25%."
         ]
     },
     {
+        "Name (JP)": "蹴刃連舞",
         "Name (English)": "Kick-Slash Duet",
+        "Name (Global)": "Kick-Slash Duet",
+        "Effect (JP)": [
+            "シュートポルカの威力を上昇させる。(10%)",
+            "シュートポルカの威力を上昇させる。(15%)",
+            "シュートポルカの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Shoot Polka by 10%.",
             "Increases the damage of Shoot Polka by 15%.",
             "Increases the damage of Shoot Polka by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Air Polka by 10%.",
+            "Increases the damage of Air Polka by 15%.",
+            "Increases the damage of Air Polka by 20%."
         ]
     },
     {
+        "Name (JP)": "剛破墜舞",
         "Name (English)": "Robust Collision",
+        "Name (Global)": "Robust Collision",
+        "Effect (JP)": [
+            "スケアフーガの威力を上昇させる。(14%)",
+            "スケアフーガの威力を上昇させる。(17%)",
+            "スケアフーガの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Scar Fugue by 14%.",
             "Increases the damage of Scar Fugue by 17%.",
             "Increases the damage of Scar Fugue by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Terror Fugue by 14%.",
+            "Increases the damage of Terror Fugue by 17%.",
+            "Increases the damage of Terror Fugue by 20%."
         ]
     },
     {
-        "Name (English)": "Gliding Blades",
+        "Name (JP)": "転蹴斬舞",
+        "Name (English)": "Rolling Cutter Dance",
+        "Name (Global)": "Rolling Cutter Dance",
+        "Effect (JP)": [
+            "ワイルドラプソディの威力を上昇させる。(14%)",
+            "ワイルドラプソディの威力を上昇させる。(17%)",
+            "ワイルドラプソディの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
+            "Increases the damage of Wild Rhapsody by 14%.",
+            "Increases the damage of Wild Rhapsody by 17%.",
+            "Increases the damage of Wild Rhapsody by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Wild Rhapsody by 14%.",
+            "Increases the damage of Wild Rhapsody by 17%.",
+            "Increases the damage of Wild Rhapsody by 20%."
+        ]
+    },
+    {
+        "Name (JP)": "飛刃流舞",
+        "Name (English)": "Gliding Blades",
+        "Name (Global)": "Angel Strike",
+        "Effect (JP)": [
+            "ダークスケルツォの威力を上昇させる。(8%)",
+            "ダークスケルツォの威力を上昇させる。(11%)",
+            "ダークスケルツォの威力を上昇させる。(14%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Dark Scherzo by 8%.",
+            "Increases the damage of Dark Scherzo by 11%.",
+            "Increases the damage of Dark Scherzo by 14%."
+        ],
+        "Effect (Global)": [
             "Increases the damage of Dark Scherzo by 8%.",
             "Increases the damage of Dark Scherzo by 11%.",
             "Increases the damage of Dark Scherzo by 14%."
@@ -3909,14 +3989,6 @@
             "Increases the damage of Rising Flag by 9%.",
             "Increases the damage of Rising Flag by 13%.",
             "Increases the damage of Rising Flag by 17%."
-        ]
-    },
-    {
-        "Name (English)": "Rolling Cutter Dance",
-        "Effect (English)": [
-            "Increases the damage of Wild Rhapsody by 14%.",
-            "Increases the damage of Wild Rhapsody by 17%.",
-            "Increases the damage of Wild Rhapsody by 20%."
         ]
     },
     {
