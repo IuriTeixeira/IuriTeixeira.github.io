@@ -1,6 +1,7 @@
 import React from 'react';
+import Link from 'next/link'
 import { useLanguageContext } from "../language-provider";
-import { Text, Flex, Image, SimpleGrid, Table, Tooltip, List } from '@mantine/core';
+import { Flex, Image, SimpleGrid, Table, Tooltip } from '@mantine/core';
 import { v4 as uuidv4 } from 'uuid';
 import localization from "../localization.json"
 import displayAbilities from './displayAbilities';
@@ -372,7 +373,7 @@ export default function WeaponTableComponent({ data, type }) {
                                         let bufferATKMax: any[] = [];
                                         switch (key) {
                                             case 'Name (JP)':
-                                                return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
+                                                return <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row[key]}`}>{row[key]}</Link></Table.Td>
                                             case 'name_en':
                                             case 'name_global':
                                             case 'old_type':

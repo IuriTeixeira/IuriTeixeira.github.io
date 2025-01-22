@@ -661,7 +661,7 @@
     },
     {
         "Name (JP)": "瞬刻の理",
-        "Name (English)": "Immediate JustIce",
+        "Name (English)": "Immediate Justice",
         "Name (Global)": "Flawless Technique",
         "Effect (JP)": [
             "テクニックジャストアタックの効果が(3%)上昇する。",
@@ -2489,14 +2489,14 @@
             "HPが25%未満になった時、一定の確率でメイト系アイテムを使用する。"
         ],
         "Effect (English)": [
-            "Chance to automatically use a -mate item when HP falls below 25%.",
-            "Chance to automatically use a -mate item when HP falls below 25%.",
-            "Chance to automatically use a -mate item when HP falls below 25%."
+            "Chance to automatically use a Mate item when HP falls below 25%.",
+            "Chance to automatically use a Mate item when HP falls below 25%.",
+            "Chance to automatically use a Mate item when HP falls below 25%."
         ],
         "Effect (Global)": [
-            "Chance to automatically use a -mate item when HP falls below 25%.",
-            "Chance to automatically use a -mate item when HP falls below 25%.",
-            "Chance to automatically use a -mate item when HP falls below 25%."
+            "Chance to automatically use a Mate item when HP falls below 25%.",
+            "Chance to automatically use a Mate item when HP falls below 25%.",
+            "Chance to automatically use a Mate item when HP falls below 25%."
         ]
     },
     {
@@ -3100,46 +3100,6 @@
         ]
     },
     {
-        "Name (JP)": "天衝撃",
-        "Name (English)": "Heavenly Impact",
-        "Name (Global)": "Heavenly Impact",
-        "Effect (JP)": [
-            "スライドアッパーの威力を上昇させる。(?%)",
-            "スライドアッパーの威力を上昇させる。(?%)",
-            "スライドアッパーの威力を上昇させる。(?%)"
-        ],
-        "Effect (English)": [
-            "Increases the damage of Slide Upper by ?%.",
-            "Increases the damage of Slide Upper by ?%.",
-            "Increases the damage of Slide Upper by ?%."
-        ],
-        "Effect (Global)": [
-            "Increases the damage of Sliding Uppercut by ?%.",
-            "Increases the damage of Sliding Uppercut by ?%.",
-            "Increases the damage of Sliding Uppercut by ?%."
-        ]
-    },
-    {
-        "Name (JP)": "裏殺撃",
-        "Name (English)": "Backhand Strike",
-        "Name (Global)": "Backhand Strike",
-        "Effect (JP)": [
-            "バックハンドスマッシュの威力を上昇させる。(10%)",
-            "バックハンドスマッシュの威力を上昇させる。(15%)",
-            "バックハンドスマッシュの威力を上昇させる。(20%)"
-        ],
-        "Effect (English)": [
-            "Increases the damage of Backhand Smash by 10%.",
-            "Increases the damage of Backhand Smash by 15%.",
-            "Increases the damage of Backhand Smash by 20%."
-        ],
-        "Effect (Global)": [
-            "Increases the damage of Decimator by 10%.",
-            "Increases the damage of Decimator by 15%.",
-            "Increases the damage of Decimator by 20%."
-        ]
-    },
-    {
         "Name (JP)": "瞬波槍",
         "Name (English)": "Flickering Wave",
         "Name (Global)": "Flickering Wave",
@@ -3151,12 +3111,32 @@
         "Effect (English)": [
             "Increases the damage of Speed Rain by 9%.",
             "Increases the damage of Speed Rain by 13%.",
-            "Increases the damage of Speed Rain by 27%."
+            "Increases the damage of Speed Rain by 17%."
         ],
         "Effect (Global)": [
             "Increases the damage of Sudden Tempest by 9%.",
             "Increases the damage of Sudden Tempest by 13%.",
-            "Increases the damage of Sudden Tempest by 27%."
+            "Increases the damage of Sudden Tempest by 17%."
+        ]
+    },
+    {
+        "Name (JP)": "昴旗斬槍",
+        "Name (English)": "Pleiades Flag Cut",
+        "Name (Global)": "Pleiades Flag Cut",
+        "Effect (JP)": [
+            "ライジングフラッグの威力を上昇させる。(?%)",
+            "ライジングフラッグの威力を上昇させる。(?%)",
+            "ライジングフラッグの威力を上昇させる。(?%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Rising Flag by 9%.",
+            "Increases the damage of Rising Flag by 13%.",
+            "Increases the damage of Rising Flag by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Impact Rise by 9%.",
+            "Increases the damage of Impact Rise by 13%.",
+            "Increases the damage of Impact Rise by 17%."
         ]
     },
     {
@@ -3280,6 +3260,26 @@
         ]
     },
     {
+        "Name (JP)": "円穿昴斬槍",
+        "Name (English)": "Circular Penetration Spear",
+        "Name (Global)": "Circular Penetration Spear",
+        "Effect (JP)": [
+            "スライドシェイカーとライジングフラッグの威力を(10%)上昇させる。",
+            "スライドシェイカーとライジングフラッグの威力を(13%)上昇させる。",
+            "スライドシェイカーとライジングフラッグの威力を(17%)上昇させる。"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Slide Shaker and Rising Flag by 10%.",
+            "Increases the damage of Slide Shaker and Rising Flag by 13%.",
+            "Increases the damage of Slide Shaker and Rising Flag by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Slide Shaker and Rising Flag by 10%.",
+            "Increases the damage of Slide Shaker and Rising Flag by 13%.",
+            "Increases the damage of Slide Shaker and Rising Flag by 17%."
+        ]
+    },
+    {
         "Name (JP)": "天昇舞",
         "Name (English)": "Aerial Gamboling",
         "Name (Global)": "Floating Waltz",
@@ -3400,216 +3400,860 @@
         ]
     },
     {
+        "Name (JP)": "跳撃円舞",
         "Name (English)": "Jumping Waltz",
+        "Name (Global)": "Jumping Waltz",
+        "Effect (JP)": [
+            "シンフォニックドライブの威力を上昇させる。(14%)",
+            "シンフォニックドライブの威力を上昇させる。(17%)",
+            "シンフォニックドライブの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Symphonic Drive by 14%.",
             "Increases the damage of Symphonic Drive by 17%.",
             "Increases the damage of Symphonic Drive by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Symphonic Driver by 14%.",
+            "Increases the damage of Symphonic Driver by 17%.",
+            "Increases the damage of Symphonic Driver by 20%."
         ]
     },
     {
+        "Name (JP)": "双刃奏舞",
         "Name (English)": "Gyrating Edges",
+        "Name (Global)": "Double-edged Orchestra",
+        "Effect (JP)": [
+            "オウルケストラーの威力を上昇させる。(9%)",
+            "オウルケストラーの威力を上昇させる。(13%)",
+            "オウルケストラーの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
+            "Increases the damage of Orchestra by 9%.",
+            "Increases the damage of Orchestra by 13%.",
+            "Increases the damage of Orchestra by 17%."
+        ],
+        "Effect (Global)": [
             "Increases the damage of Orchestra by 9%.",
             "Increases the damage of Orchestra by 13%.",
             "Increases the damage of Orchestra by 17%."
         ]
     },
     {
+        "Name (JP)": "血閃討舞",
         "Name (English)": "Bloody Flash",
+        "Name (Global)": "Sanguine Sarabande",
+        "Effect (JP)": [
+            "ブラッディサラバンドの威力を上昇させる。(9%)",
+            "ブラッディサラバンドの威力を上昇させる。(13%)",
+            "ブラッディサラバンドの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Bloody Sarabande by 9%.",
             "Increases the damage of Bloody Sarabande by 13%.",
             "Increases the damage of Bloody Sarabande by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Sarabande Shredder by 9%.",
+            "Increases the damage of Sarabande Shredder by 13%.",
+            "Increases the damage of Sarabande Shredder by 17%."
         ]
     },
     {
+        "Name (JP)": "刻狂舞",
         "Name (English)": "Lunatic Slasher",
+        "Name (Global)": "Lunatic Slasher",
+        "Effect (JP)": [
+            "ファセットフォリアの威力を上昇させる。(14%)",
+            "ファセットフォリアの威力を上昇させる。(17%)",
+            "ファセットフォリアの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
+            "Increases the damage of Facet Folia by 14%.",
+            "Increases the damage of Facet Folia by 17%.",
+            "Increases the damage of Facet Folia by 20%."
+        ],
+        "Effect (Global)": [
             "Increases the damage of Facet Folia by 14%.",
             "Increases the damage of Facet Folia by 17%.",
             "Increases the damage of Facet Folia by 20%."
         ]
     },
     {
+        "Name (JP)": "旋風突陣",
+        "Name (English)": "Sudden WhirlWind",
+        "Name (Global)": "Sudden WhirlWind",
+        "Effect (JP)": [
+            "トルネードダンスの威力を上昇させる。(?%)",
+            "トルネードダンスの威力を上昇させる。(?%)",
+            "トルネードダンスの威力を上昇させる。(?%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Tornado Dance by ?%.",
+            "Increases the damage of Tornado Dance by ?%.",
+            "Increases the damage of Tornado Dance by ?%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Tornado Dance by ?%.",
+            "Increases the damage of Tornado Dance by ?%.",
+            "Increases the damage of Tornado Dance by ?%."
+        ]
+    },
+    {
+        "Name (JP)": "昇爪陣",
         "Name (English)": "Rising Claw",
+        "Name (Global)": "Rising Claw",
+        "Effect (JP)": [
+            "シザーエッジの威力を上昇させる。(10%)",
+            "シザーエッジの威力を上昇させる。(15%)",
+            "シザーエッジの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Scissor Edge by 10%.",
             "Increases the damage of Scissor Edge by 15%.",
             "Increases the damage of Scissor Edge by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Scissor Slash by 10%.",
+            "Increases the damage of Scissor Slash by 15%.",
+            "Increases the damage of Scissor Slash by 20%."
         ]
     },
     {
+        "Name (JP)": "旋環陣",
         "Name (English)": "Whirling Ring",
+        "Name (Global)": "Whirling Ring",
+        "Effect (JP)": [
+            "ランブリングムーンの威力を上昇させる。(9%)",
+            "ランブリングムーンの威力を上昇させる。(13%)",
+            "ランブリングムーンの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
+            "Increases the damage of Rumbling Moon by 9%.",
+            "Increases the damage of Rumbling Moon by 13%.",
+            "Increases the damage of Rumbling Moon by 17%."
+        ],
+        "Effect (Global)": [
             "Increases the damage of Rumbling Moon by 9%.",
             "Increases the damage of Rumbling Moon by 13%.",
             "Increases the damage of Rumbling Moon by 17%."
         ]
     },
     {
+        "Name (JP)": "幻影陣",
         "Name (English)": "Dancing Phantom",
+        "Name (Global)": "Dancing Phantom",
+        "Effect (JP)": [
+            "イリュージョンレイヴの威力を上昇させる。(9%)",
+            "イリュージョンレイヴの威力を上昇させる。(13%)",
+            "イリュージョンレイヴの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Illusion Rave by 9%.",
             "Increases the damage of Illusion Rave by 13%.",
             "Increases the damage of Illusion Rave by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Illusion Flurry by 9%.",
+            "Increases the damage of Illusion Flurry by 13%.",
+            "Increases the damage of Illusion Flurry by 17%."
         ]
     },
     {
+        "Name (JP)": "虚縛陣",
         "Name (English)": "Mythical Flicker",
+        "Name (Global)": "Mythical Flicker",
+        "Effect (JP)": [
+            "フェイクキャプチャの威力を上昇させる。(10%)",
+            "フェイクキャプチャの威力を上昇させる。(15%)",
+            "フェイクキャプチャの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Fake Capture by 10%.",
             "Increases the damage of Fake Capture by 15%.",
             "Increases the damage of Fake Capture by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Lure Strike by 10%.",
+            "Increases the damage of Lure Strike by 15%.",
+            "Increases the damage of Lure Strike by 20%."
         ]
     },
     {
+        "Name (JP)": "墜滅陣",
         "Name (English)": "Slamming Blast",
+        "Name (Global)": "Annihilation Drop",
+        "Effect (JP)": [
+            "サプライズダンクの威力を上昇させる。(9%)",
+            "サプライズダンクの威力を上昇させる。(13%)",
+            "サプライズダンクの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Surprise Dunk by 9%.",
             "Increases the damage of Surprise Dunk by 13%.",
             "Increases the damage of Surprise Dunk by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Waylay Drop by 9%.",
+            "Increases the damage of Waylay Drop by 13%.",
+            "Increases the damage of Waylay Drop by 17%."
         ]
     },
     {
+        "Name (JP)": "擲獄陣",
         "Name (English)": "Detaining Toss",
+        "Name (Global)": "Detaining Toss",
+        "Effect (JP)": [
+            "デッドリーアーチャーの威力を上昇させる。(14%)",
+            "デッドリーアーチャーの威力を上昇させる。(17%)",
+            "デッドリーアーチャーの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Deadly Archer by 14%.",
             "Increases the damage of Deadly Archer by 17%.",
             "Increases the damage of Deadly Archer by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Turbine Toss by 14%.",
+            "Increases the damage of Turbine Toss by 17%.",
+            "Increases the damage of Turbine Toss by 20%."
         ]
     },
     {
+        "Name (JP)": "斬躍陣",
         "Name (English)": "Dancing Killer",
+        "Name (Global)": "Dancing Killer",
+        "Effect (JP)": [
+            "アクロエフェクトの威力を上昇させる。(9%)",
+            "アクロエフェクトの威力を上昇させる。(13%)",
+            "アクロエフェクトの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Acro Effect by 9%.",
             "Increases the damage of Acro Effect by 13%.",
             "Increases the damage of Acro Effect by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Acroblitz by 9%.",
+            "Increases the damage of Acroblitz by 13%.",
+            "Increases the damage of Acroblitz by 17%."
         ]
     },
     {
+        "Name (JP)": "交鎖練撃",
         "Name (English)": "Countless Slugging",
+        "Name (Global)": "Practiced Pendulum",
+        "Effect (JP)": [
+            "ペンデュラムロールの威力を上昇させる。(9%)",
+            "ペンデュラムロールの威力を上昇させる。(13%)",
+            "ペンデュラムロールの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Pendulum Roll by 9%.",
             "Increases the damage of Pendulum Roll by 13%.",
             "Increases the damage of Pendulum Roll by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Pendulum Combo by 9%.",
+            "Increases the damage of Pendulum Combo by 13%.",
+            "Increases the damage of Pendulum Combo by 17%."
         ]
     },
     {
+        "Name (JP)": "天衝撃",
+        "Name (English)": "Heavenly Impact",
+        "Name (Global)": "Heavenly Impact",
+        "Effect (JP)": [
+            "スライドアッパーの威力を上昇させる。(?%)",
+            "スライドアッパーの威力を上昇させる。(?%)",
+            "スライドアッパーの威力を上昇させる。(?%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Slide Upper by ?%.",
+            "Increases the damage of Slide Upper by ?%.",
+            "Increases the damage of Slide Upper by ?%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Sliding Uppercut by ?%.",
+            "Increases the damage of Sliding Uppercut by ?%.",
+            "Increases the damage of Sliding Uppercut by ?%."
+        ]
+    },
+    {
+        "Name (JP)": "必倒一撃",
         "Name (English)": "Leading Punch",
+        "Name (Global)": "Knockout Charge",
+        "Effect (JP)": [
+            "ストレイトチャージの威力を上昇させる。(9%)",
+            "ストレイトチャージの威力を上昇させる。(13%)",
+            "ストレイトチャージの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Straight Charge by 9%.",
             "Increases the damage of Straight Charge by 13%.",
             "Increases the damage of Straight Charge by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Advancing Charge by 9%.",
+            "Increases the damage of Advancing Charge by 13%.",
+            "Increases the damage of Advancing Charge by 17%."
         ]
     },
     {
+        "Name (JP)": "意裏閃撃",
         "Name (English)": "Altering Jab",
+        "Name (Global)": "Blindsiding Knuckles",
+        "Effect (JP)": [
+            "サプライズナックルの威力を上昇させる。(9%)",
+            "サプライズナックルの威力を上昇させる。(13%)",
+            "サプライズナックルの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Surprise Knuckle by 9%.",
             "Increases the damage of Surprise Knuckle by 13%.",
             "Increases the damage of Surprise Knuckle by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Nonplussing Knuckle by 9%.",
+            "Increases the damage of Nonplussing Knuckle by 13%.",
+            "Increases the damage of Nonplussing Knuckle by 17%."
         ]
     },
     {
+        "Name (JP)": "閃光千撃",
         "Name (English)": "Endless Pounding",
+        "Name (Global)": "Endless Pounding",
+        "Effect (JP)": [
+            "フラッシュサウザンドの威力を上昇させる。(8%)",
+            "フラッシュサウザンドの威力を上昇させる。(11%)",
+            "フラッシュサウザンドの威力を上昇させる。(14%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Flash Thousand by 8%.",
             "Increases the damage of Flash Thousand by 11%.",
             "Increases the damage of Flash Thousand by 14%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Burst Infinity by 8%.",
+            "Increases the damage of Burst Infinity by 11%.",
+            "Increases the damage of Burst Infinity by 14%."
         ]
     },
     {
-        "Name (English)": "Venus Maximum",
+        "Name (JP)": "裏殺撃",
+        "Name (English)": "Backhand Strike",
+        "Name (Global)": "Backhand Strike",
+        "Effect (JP)": [
+            "バックハンドスマッシュの威力を上昇させる。(10%)",
+            "バックハンドスマッシュの威力を上昇させる。(15%)",
+            "バックハンドスマッシュの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
+            "Increases the damage of Backhand Smash by 10%.",
+            "Increases the damage of Backhand Smash by 15%.",
+            "Increases the damage of Backhand Smash by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Decimator by 10%.",
+            "Increases the damage of Decimator by 15%.",
+            "Increases the damage of Decimator by 20%."
+        ]
+    },
+    {
+        "Name (JP)": "極金星",
+        "Name (English)": "Venus Maximum",
+        "Name (Global)": "Venus Maximum",
+        "Effect (JP)": [
+            "メテオフィストをチャージした時に強力な拳が出やすくなる。",
+            "メテオフィストをチャージした時に強力な拳が出やすくなる。",
+            "メテオフィストをチャージした時に強力な拳が出やすくなる。"
+        ],
+        "Effect (English)": [
+            "Increases the probability of a mighty fist when Meteor Fist is charged",
+            "Increases the probability of a mighty fist when Meteor Fist is charged",
+            "Increases the probability of a mighty fist when Meteor Fist is charged"
+        ],
+        "Effect (Global)": [
             "Increases the probability of a mighty fist when Meteor Fist is charged",
             "Increases the probability of a mighty fist when Meteor Fist is charged",
             "Increases the probability of a mighty fist when Meteor Fist is charged"
         ]
     },
     {
-        "Name (English)": "Dancing Ensemble",
+        "Name (JP)": "剛進渾身撃",
+        "Name (English)": "Full-Body Strike",
+        "Name (Global)": "Full-Body Strike",
+        "Effect (JP)": [
+            "ダッキングブロウ(10%)とハートレスインパクト(10%)の威力を上昇させる。",
+            "ダッキングブロウ(13%)とハートレスインパクト(13%)の威力を上昇させる。",
+            "ダッキングブロウ(17%)とハートレスインパクト(17%)の威力を上昇させる。"
+        ],
         "Effect (English)": [
+            "Increases the damage of Ducking Blow and Heartless Impact by 10%.",
+            "Increases the damage of Ducking Blow and Heartless Impact by 13%.",
+            "Increases the damage of Ducking Blow and Heartless Impact by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Ducking Blow and Heartless Impact by 10%.",
+            "Increases the damage of Ducking Blow and Heartless Impact by 13%.",
+            "Increases the damage of Ducking Blow and Heartless Impact by 17%."
+        ]
+    },
+    {
+        "Name (JP)": "昂舞連奏",
+        "Name (English)": "Dancing Ensemble",
+        "Name (Global)": "Dancing Ensemble",
+        "Effect (JP)": [
+            "レイジダンスの威力を上昇させる。(9%)",
+            "レイジダンスの威力を上昇させる。(13%)",
+            "レイジダンスの威力を上昇させる。(17%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Rage Dance by 9%.",
+            "Increases the damage of Rage Dance by 13%.",
+            "Increases the damage of Rage Dance by 17%."
+        ],
+        "Effect (Global)": [
             "Increases the damage of Rage Dance by 9%.",
             "Increases the damage of Rage Dance by 13%.",
             "Increases the damage of Rage Dance by 17%."
         ]
     },
     {
+        "Name (JP)": "爆砕重奏",
         "Name (English)": "Explosive Ensemble",
+        "Name (Global)": "Explosive Ensemble",
+        "Effect (JP)": [
+            "スリラープロードの威力を上昇させる。(9%)",
+            "スリラープロードの威力を上昇させる。(13%)",
+            "スリラープロードの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Thrillsplosion by 9%.",
             "Increases the damage of Thrillsplosion by 13%.",
             "Increases the damage of Thrillsplosion by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Bomber Toss by 9%.",
+            "Increases the damage of Bomber Toss by 13%.",
+            "Increases the damage of Bomber Toss by 17%."
         ]
     },
     {
+        "Name (JP)": "滑斬舞奏",
         "Name (English)": "Guillotine Ensemble",
+        "Name (Global)": "Guillotine Ensemble",
+        "Effect (JP)": [
+            "スラッシュレイヴの威力を上昇させる。(14%)",
+            "スラッシュレイヴの威力を上昇させる。(17%)",
+            "スラッシュレイヴの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Slash Rave by 14%.",
             "Increases the damage of Slash Rave by 17%.",
             "Increases the damage of Slash Rave by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Sideswiper Slash by 14%.",
+            "Increases the damage of Sideswiper Slash by 17%.",
+            "Increases the damage of Sideswiper Slash by 20%."
         ]
     },
     {
+        "Name (JP)": "剛蹴追奏",
         "Name (English)": "Kicking Ensemble",
+        "Name (Global)": "Kicking Ensemble",
+        "Effect (JP)": [
+            "アディションバレットの威力を上昇させる。(9%)",
+            "アディションバレットの威力を上昇させる。(13%)",
+            "アディションバレットの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Additional Bullet by 9%.",
             "Increases the damage of Additional Bullet by 13%.",
             "Increases the damage of Additional Bullet by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Hailfire Kick by 9%.",
+            "Increases the damage of Hailfire Kick by 13%.",
+            "Increases the damage of Hailfire Kick by 17%."
         ]
     },
     {
+        "Name (JP)": "閃梗華",
+        "Name (English)": "Brandish Splendor",
+        "Name (Global)": "Brandish Splendor",
+        "Effect (JP)": [
+            "カンランキキョウの威力を上昇させる。(9%)",
+            "カンランキキョウの威力を上昇させる。(13%)",
+            "カンランキキョウの威力を上昇させる。(17%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Kanran-kikyou by 9%.",
+            "Increases the damage of Kanran-kikyou by 13%.",
+            "Increases the damage of Kanran-kikyou by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Thriving Bellflower by 9%.",
+            "Increases the damage of Thriving Bellflower by 13%.",
+            "Increases the damage of Thriving Bellflower by 17%."
+        ]
+    },
+    {
+        "Name (JP)": "終桜華",
+        "Name (English)": "Blossoming End",
+        "Name (Global)": "Blossoming End",
+        "Effect (JP)": [
+            "サクラエンドの威力を上昇させる。(9%)",
+            "サクラエンドの威力を上昇させる。(13%)",
+            "サクラエンドの威力を上昇させる。(17%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Sakura-endo by 9%.",
+            "Increases the damage of Sakura-endo by 13%.",
+            "Increases the damage of Sakura-endo by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Cherry Blossom Finale by 9%.",
+            "Increases the damage of Cherry Blossom Finale by 13%.",
+            "Increases the damage of Cherry Blossom Finale by 17%."
+        ]
+    },
+    {
+        "Name (JP)": "濤竜華",
+        "Name (English)": "Dragon Wave",
+        "Name (Global)": "Dragon Wave",
+        "Effect (JP)": [
+            "ハトウリンドウの威力を上昇させる。(5%)",
+            "ハトウリンドウの威力を上昇させる。(7%)",
+            "ハトウリンドウの威力を上昇させる。(10%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Hatou-rindou by 5%.",
+            "Increases the damage of Hatou-rindou by 7%.",
+            "Increases the damage of Hatou-rindou by 10%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Eviscerating Bloom by 5%.",
+            "Increases the damage of Eviscerating Bloom by 7%.",
+            "Increases the damage of Eviscerating Bloom by 10%."
+        ]
+    },
+    {
+        "Name (JP)": "Blossoming Full Moon Strike",
+        "Name (English)": "Blossoming Full Moon Strike",
+        "Name (Global)": "Blossoming Full Moon Strike",
+        "Effect (JP)": [
+            "カザンナデシコの威力を上昇させる。(10%)",
+            "カザンナデシコの威力を上昇させる。(15%)",
+            "カザンナデシコの威力を上昇させる。(20%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Kazan-nadeshiko by 10%.",
+            "Increases the damage of Kazan-nadeshiko by 15%.",
+            "Increases the damage of Kazan-nadeshiko by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Volcanic Carnation by 10%.",
+            "Increases the damage of Volcanic Carnation by 15%.",
+            "Increases the damage of Volcanic Carnation by 20%."
+        ]
+    },{
+        "Name (JP)": "終桜閃鉄華",
+        "Name (English)": "Blossom Flare",
+        "Name (Global)": "Blossom Flare",
+        "Effect (JP)": [
+            "サクラエンドとグレンテッセンの威力を(20%)上昇させる。",
+            "サクラエンドとグレンテッセンの威力を(23%)上昇させる。",
+            "サクラエンドとグレンテッセンの威力を(26%)上昇させる。"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Sakura-endo and Guren-tessen by 20%.",
+            "Increases the damage of Sakura-endo and Guren-tessen by 23%.",
+            "Increases the damage of Sakura-endo and Guren-tessen by 26%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Cherry Blossom Finale and Flash of the Lotus by 20%.",
+            "Increases the damage of Cherry Blossom Finale and Flash of the Lotus by 23%.",
+            "Increases the damage of Cherry Blossom Finale and Flash of the Lotus by 26%."
+        ],
+        "Special": "Hidden"
+    },
+    {
+        "Name (JP)": "滅飛翼",
+        "Name (English)": "Destruction Rook",
+        "Name (Global)": "Destruction Rook",
+        "Effect (JP)": [
+            "ディストラクトウィングの威力を上昇させる。(9%)",
+            "ディストラクトウィングの威力を上昇させる。(13%)",
+            "ディストラクトウィングの威力を上昇させる。(17%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Distraction Wing by 9%.",
+            "Increases the damage of Distraction Wing by 13%.",
+            "Increases the damage of Distraction Wing by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Dash Wing by 9%.",
+            "Increases the damage of Dash Wing by 13%.",
+            "Increases the damage of Dash Wing by 17%."
+        ]
+    },
+    {
+        "Name (JP)": "舞散光翼",
+        "Name (English)": "Ray Dispersion",
+        "Name (Global)": "Ray Dispersion",
+        "Effect (JP)": [
+            "ディスパースシュライクの威力を上昇させる。(10%)",
+            "ディスパースシュライクの威力を上昇させる。(15%)",
+            "ディスパースシュライクの威力を上昇させる。(20%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Dispersion Shrike by 10%.",
+            "Increases the damage of Dispersion Shrike by 15%.",
+            "Increases the damage of Dispersion Shrike by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Disperser Shrike by 10%.",
+            "Increases the damage of Disperser Shrike by 15%.",
+            "Increases the damage of Disperser Shrike by 20%."
+        ]
+    },
+    {
+        "Name (JP)": "凰翔翼",
+        "Name (English)": "Rising Phoenix",
+        "Name (Global)": "Rising Phoenix",
+        "Effect (JP)": [
+            "ヘブンリーカイトの威力を上昇させる。(8%)",
+            "ヘブンリーカイトの威力を上昇させる。(11%)",
+            "ヘブンリーカイトの威力を上昇させる。(14%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Heavenly Kite by 8%.",
+            "Increases the damage of Heavenly Kite by 11%.",
+            "Increases the damage of Heavenly Kite by 14%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Heavenly Kite by 8%.",
+            "Increases the damage of Heavenly Kite by 11%.",
+            "Increases the damage of Heavenly Kite by 14%."
+        ]
+    },
+    {
+        "Name (JP)": "天義翼",
+        "Name (English)": "Divine Justice",
+        "Name (Global)": "Divine Justice",
+        "Effect (JP)": [
+            "ジャスティスクロウの威力を上昇させる。(14%)",
+            "ジャスティスクロウの威力を上昇させる。(17%)",
+            "ジャスティスクロウの威力を上昇させる。(20%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Justice Crow by 14%.",
+            "Increases the damage of Justice Crow by 17%.",
+            "Increases the damage of Justice Crow by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Justice Crow by 14%.",
+            "Increases the damage of Justice Crow by 17%.",
+            "Increases the damage of Justice Crow by 20%."
+        ]
+    },
+    {
+        "Name (JP)": "隼爪狂翼",
+        "Name (English)": "Rampaging Falcon",
+        "Name (Global)": "Rampaging Falcon",
+        "Effect (JP)": [
+            "ケストレルランページの威力を上昇させる。(14%)",
+            "ケストレルランページの威力を上昇させる。(17%)",
+            "ケストレルランページの威力を上昇させる。(20%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Kestrel Rampage by 14%.",
+            "Increases the damage of Kestrel Rampage by 17%.",
+            "Increases the damage of Kestrel Rampage by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Kestrel Rampage by 14%.",
+            "Increases the damage of Kestrel Rampage by 17%.",
+            "Increases the damage of Kestrel Rampage by 20%."
+        ]
+    },
+    {
+        "Name (JP)": "破榴砕射",
         "Name (English)": "Grenade Shot",
+        "Name (Global)": "Grenade Shot",
+        "Effect (JP)": [
+            "グレネードシェルの威力を上昇させる。(14%)",
+            "グレネードシェルの威力を上昇させる。(17%)",
+            "グレネードシェルの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Grenade Shell by 14%.",
             "Increases the damage of Grenade Shell by 17%.",
             "Increases the damage of Grenade Shell by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Grenade Round by 14%.",
+            "Increases the damage of Grenade Round by 17%.",
+            "Increases the damage of Grenade Round by 20%."
         ]
     },
     {
+        "Name (JP)": "一点穴射",
         "Name (English)": "Precise Discharge",
+        "Name (Global)": "Steady Fire",
+        "Effect (JP)": [
+            "ワンポイントの威力を上昇させる。(9%)",
+            "ワンポイントの威力を上昇させる。(13%)",
+            "ワンポイントの威力を上昇させる。(17%)"
+        ],
         "Effect (English)": [
             "Increases the damage of One Point by 9%.",
             "Increases the damage of One Point by 13%.",
             "Increases the damage of One Point by 17%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Steady Shot by 9%.",
+            "Increases the damage of Steady Shot by 13%.",
+            "Increases the damage of Steady Shot by 17%."
         ]
     },
     {
-        "Name (English)": "Sliding Shot",
+        "Name (JP)": "古式点火",
+        "Name (English)": "Traditional Spark",
+        "Name (Global)": "Traditional Spark",
+        "Effect (JP)": [
+            "ディフューズシェルの威力を上昇させる。(14%)",
+            "ディフューズシェルの威力を上昇させる。(17%)",
+            "ディフューズシェルの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
+            "Increases the damage of Diffuse Shell by 14%.",
+            "Increases the damage of Diffuse Shell by 17%.",
+            "Increases the damage of Diffuse Shell by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Diffusion Round by 14%.",
+            "Increases the damage of Diffusion Round by 17%.",
+            "Increases the damage of Diffusion Round by 20%."
+        ]
+    },
+    {
+        "Name (JP)": "追終射",
+        "Name (English)": "Homing Shot",
+        "Name (Global)": "Homing Shot",
+        "Effect (JP)": [
+            "ホーミングエミッションの威力を上昇させる。(10%)",
+            "ホーミングエミッションの威力を上昇させる。(15%)",
+            "ホーミングエミッションの威力を上昇させる。(20%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Homing Emission by 10%.",
+            "Increases the damage of Homing Emission by 15%.",
+            "Increases the damage of Homing Emission by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Homing Volley by 10%.",
+            "Increases the damage of Homing Volley by 15%.",
+            "Increases the damage of Homing Volley by 20%."
+        ]
+    },
+    {
+        "Name (JP)": "滑走駆射",
+        "Name (English)": "Sliding Shot",
+        "Name (Global)": "Sliding Shot",
+        "Effect (JP)": [
+            "インパクトスライダーの威力を上昇させる。(14%)",
+            "インパクトスライダーの威力を上昇させる。(17%)",
+            "インパクトスライダーの威力を上昇させる。(20%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Impact Slider by 14%.",
+            "Increases the damage of Impact Slider by 17%.",
+            "Increases the damage of Impact Slider by 20%."
+        ],
+        "Effect (Global)": [
             "Increases the damage of Impact Slider by 14%.",
             "Increases the damage of Impact Slider by 17%.",
             "Increases the damage of Impact Slider by 20%."
         ]
     },
     {
-        "Name (English)": "Evading Jump Shot",
-        "Effect (English)": [
-            "Increases the damage of Parallel Slider by 10%.",
-            "Increases the damage of Parallel Slider by 15%.",
-            "Increases the damage of Parallel Slider by 20%."
-        ]
-    },
-    {
+        "Name (JP)": "潜心伏射",
         "Name (English)": "Concealed Shooting",
+        "Name (Global)": "Concealed Shooting",
+        "Effect (JP)": [
+            "スニークシューターの威力を上昇させる。(8%)",
+            "スニークシューターの威力を上昇させる。(11%)",
+            "スニークシューターの威力を上昇させる。(14%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Sneak Shooter by 8%.",
             "Increases the damage of Sneak Shooter by 11%.",
             "Increases the damage of Sneak Shooter by 14%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Stealth Shot by 8%.",
+            "Increases the damage of Stealth Shot by 11%.",
+            "Increases the damage of Stealth Shot by 14%."
         ]
     },
     {
+        "Name (JP)": "墜雨光射",
         "Name (English)": "Lightray Shower",
+        "Name (Global)": "Lightray Shower",
+        "Effect (JP)": [
+            "グローリーレインの威力を上昇させる。(10%)",
+            "グローリーレインの威力を上昇させる。(15%)",
+            "グローリーレインの威力を上昇させる。(20%)"
+        ],
         "Effect (English)": [
             "Increases the damage of Glorious Rain by 10%.",
             "Increases the damage of Glorious Rain by 15%.",
             "Increases the damage of Glorious Rain by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Skyfire Salvo by 10%.",
+            "Increases the damage of Skyfire Salvo by 15%.",
+            "Increases the damage of Skyfire Salvo by 20%."
         ]
     },
     {
-        "Name (English)": "Divine Wrath",
+        "Name (JP)": "避跳射",
+        "Name (English)": "Evading Jump Shot",
+        "Name (Global)": "Evading Jump Shot",
+        "Effect (JP)": [
+            "パラレルスライダーの威力を上昇させる。(10%/15%/20%)",
+            "パラレルスライダーの威力を上昇させる。(10%/15%/20%)",
+            "パラレルスライダーの威力を上昇させる。(10%/15%/20%)"
+        ],
         "Effect (English)": [
+            "Increases the damage of Parallel Slider by 10%.",
+            "Increases the damage of Parallel Slider by 15%.",
+            "Increases the damage of Parallel Slider by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases the damage of Slideburst by 10%.",
+            "Increases the damage of Slideburst by 15%.",
+            "Increases the damage of Slideburst by 20%."
+        ]
+    },
+    {
+        "Name (JP)": "天罰執行",
+        "Name (English)": "Divine Wrath",
+        "Name (Global)": "Divine Wrath",
+        "Effect (JP)": [
+            "サテライトカノンの威力を上昇させる。(8%)",
+            "サテライトカノンの威力を上昇させる。(11%)",
+            "サテライトカノンの威力を上昇させる。(14%)"
+        ],
+        "Effect (English)": [
+            "Increases the damage of Satellite Cannon by 8%.",
+            "Increases the damage of Satellite Cannon by 11%.",
+            "Increases the damage of Satellite Cannon by 14%."
+        ],
+        "Effect (Global)": [
             "Increases the damage of Satellite Cannon by 8%.",
             "Increases the damage of Satellite Cannon by 11%.",
             "Increases the damage of Satellite Cannon by 14%."
@@ -3680,22 +4324,6 @@
         ]
     },
     {
-        "Name (English)": "Traditional Spark",
-        "Effect (English)": [
-            "Increases the damage of Diffuse Shell by 14%.",
-            "Increases the damage of Diffuse Shell by 17%.",
-            "Increases the damage of Diffuse Shell by 20%."
-        ]
-    },
-    {
-        "Name (English)": "Homing Shot",
-        "Effect (English)": [
-            "Increases the damage of Homing Emission by 10%.",
-            "Increases the damage of Homing Emission by 15%.",
-            "Increases the damage of Homing Emission by 20%."
-        ]
-    },
-    {
         "Name (English)": "Heroic Dance",
         "Effect (English)": [
             "Increases the damage of Messiah Time by 9%.",
@@ -3741,30 +4369,6 @@
             "Increases the damage of Grim Barrage by 20%.",
             "Increases the damage of Grim Barrage by 25%.",
             "Increases the damage of Grim Barrage by 30%."
-        ]
-    },
-    {
-        "Name (English)": "Brandish Splendor",
-        "Effect (English)": [
-            "Increases the damage of Kanran-kikyou by 9%.",
-            "Increases the damage of Kanran-kikyou by 13%.",
-            "Increases the damage of Kanran-kikyou by 17%."
-        ]
-    },
-    {
-        "Name (English)": "Blossoming End",
-        "Effect (English)": [
-            "Increases the damage of Sakura-endo by 9%.",
-            "Increases the damage of Sakura-endo by 13%.",
-            "Increases the damage of Sakura-endo by 17%."
-        ]
-    },
-    {
-        "Name (English)": "Dragon Wave",
-        "Effect (English)": [
-            "Increases the damage of Hatou-rindou by 5%.",
-            "Increases the damage of Hatou-rindou by 7%.",
-            "Increases the damage of Hatou-rindou by 10%."
         ]
     },
     {
@@ -3821,54 +4425,6 @@
             "Increases the damage of Moment Gale by 14%.",
             "Increases the damage of Moment Gale by 17%.",
             "Increases the damage of Moment Gale by 20%."
-        ]
-    },
-    {
-        "Name (English)": "Destruction Rook",
-        "Effect (English)": [
-            "Increases the damage of Distraction Wing by 9%.",
-            "Increases the damage of Distraction Wing by 13%.",
-            "Increases the damage of Distraction Wing by 17%."
-        ]
-    },
-    {
-        "Name (English)": "Ray Dispersion",
-        "Effect (English)": [
-            "Increases the damage of Dispersion Shrike by 10%.",
-            "Increases the damage of Dispersion Shrike by 15%.",
-            "Increases the damage of Dispersion Shrike by 20%."
-        ]
-    },
-    {
-        "Name (English)": "Rising Phoenix",
-        "Effect (English)": [
-            "Increases the damage of Heavenly Kite by 8%.",
-            "Increases the damage of Heavenly Kite by 11%.",
-            "Increases the damage of Heavenly Kite by 14%."
-        ]
-    },
-    {
-        "Name (English)": "Divine JustIce",
-        "Effect (English)": [
-            "Increases the damage of JustIce Crow by 14%.",
-            "Increases the damage of JustIce Crow by 17%.",
-            "Increases the damage of JustIce Crow by 20%."
-        ]
-    },
-    {
-        "Name (English)": "Star Divide",
-        "Effect (English)": [
-            "Increases the damage of Starling Fall by 10%.",
-            "Increases the damage of Starling Fall by 15%.",
-            "Increases the damage of Starling Fall by 20%."
-        ]
-    },
-    {
-        "Name (English)": "Rampaging Falcon",
-        "Effect (English)": [
-            "Increases the damage of Kestrel Rampage by 14%.",
-            "Increases the damage of Kestrel Rampage by 17%.",
-            "Increases the damage of Kestrel Rampage by 20%."
         ]
     },
     {
@@ -3968,27 +4524,11 @@
         ]
     },
     {
-        "Name (English)": "Blossoming Full Moon Strike",
-        "Effect (English)": [
-            "Increases the damage of Kazan-nadeshiko by 5%.",
-            "Increases the damage of Kazan-nadeshiko by 7%.",
-            "Increases the damage of Kazan-nadeshiko by 10%."
-        ]
-    },
-    {
         "Name (English)": "Glimmering Fluorescence",
         "Effect (English)": [
             "Reduces the PP consumption of PAs and Techniques by 20% and reduce their damage by 5%.",
             "Reduces the PP consumption of PAs and Techniques by 25% and reduce their damage by 5%.",
             "Reduces the PP consumption of PAs and Techniques by 30% and reduce their damage by 5%."
-        ]
-    },
-    {
-        "Name (English)": "Pleiades Flag Cut",
-        "Effect (English)": [
-            "Increases the damage of Rising Flag by 9%.",
-            "Increases the damage of Rising Flag by 13%.",
-            "Increases the damage of Rising Flag by 17%."
         ]
     },
     {
@@ -4050,9 +4590,9 @@
     {
         "Name (English)": "Urgent Maneuver 2",
         "Effect (English)": [
-            "Decrease Natural PP Recovery by 60% while sheathed. While unsheathed, increases Natural PP Recovery by 5%, increases Active PP Recovery by 10% and increases damage by 3%.",
-            "Decrease Natural PP Recovery by 60% while sheathed. While unsheathed, increases Natural PP Recovery by 12%, increases Active PP Recovery by 15% and increases damage by 5%.",
-            "Decrease Natural PP Recovery by 60% while sheathed. While unsheathed, increases Natural PP Recovery by 20%, increases Active PP Recovery by 20% and increases damage by 8%."
+            "Decreases Natural PP Recovery by 60% while sheathed. While unsheathed, increases Natural PP Recovery by 5%, increases Active PP Recovery by 10% and increases damage by 3%.",
+            "Decreases Natural PP Recovery by 60% while sheathed. While unsheathed, increases Natural PP Recovery by 12%, increases Active PP Recovery by 15% and increases damage by 5%.",
+            "Decreases Natural PP Recovery by 60% while sheathed. While unsheathed, increases Natural PP Recovery by 20%, increases Active PP Recovery by 20% and increases damage by 8%."
         ]
     },
     {
@@ -4081,23 +4621,23 @@
             "テクニックを含むジャストアタックの効果が(4%)上昇する。"
         ],
         "Effect (English)": [
-            "Increases damage of all Just Attacks by 2%.",
-            "Increases damage of all Just Attacks by 3%.",
-            "Increases damage of all Just Attacks by 4%."
+            "Increases the damage of all Just Attacks by 2%.",
+            "Increases the damage of all Just Attacks by 3%.",
+            "Increases the damage of all Just Attacks by 4%."
         ],
         "Effect (Global)": [
-            "Increases damage of all Perfect Attacks by 2%.",
-            "Increases damage of all Perfect Attacks by 3%.",
-            "Increases damage of all Perfect Attacks by 4%."
+            "Increases the damage of all Perfect Attacks by 2%.",
+            "Increases the damage of all Perfect Attacks by 3%.",
+            "Increases the damage of all Perfect Attacks by 4%."
         ],
         "Special": "New-Type"
     },
     {
         "Name (English)": "Machine's Mark",
         "Effect (English)": [
-            "Decrease PP Recovery by 60%, increases damage by 5%, increases Critical Hit Rate by 7%, and increases Critical Hit Damage by 5%.",
-            "Decrease PP Recovery by 60%, increases damage by 7%, increases Critical Hit Rate by 10%, and increases Critical Hit Damage by 6%.",
-            "Decrease PP Recovery by 60%, increases damage by 10%, increases Critical Hit Rate by 13%, and increases Critical Hit Damage by 7%."
+            "Decreases PP Recovery by 60%, increases damage by 5%, increases Critical Hit Rate by 7%, and increases Critical Hit Damage by 5%.",
+            "Decreases PP Recovery by 60%, increases damage by 7%, increases Critical Hit Rate by 10%, and increases Critical Hit Damage by 6%.",
+            "Decreases PP Recovery by 60%, increases damage by 10%, increases Critical Hit Rate by 13%, and increases Critical Hit Damage by 7%."
         ]
     },
     {
@@ -4265,14 +4805,6 @@
         ]
     },
     {
-        "Name (English)": "円穿昴斬槍",
-        "Effect (English)": [
-            "Increases the damage of Slide Shaker and Rising Flag by 10%.",
-            "Increases the damage of Slide Shaker and Rising Flag by 13%.",
-            "Increases the damage of Slide Shaker and Rising Flag by 17%."
-        ]
-    },
-    {
         "Name (English)": "Glacial Crystal",
         "Effect (English)": [
             "Increases the damage of Ice Techniques by 12%.",
@@ -4294,14 +4826,6 @@
             "Increases damage when attacking from the air by 6%.",
             "Increases damage when attacking from the air by 8%.",
             "Increases damage when attacking from the air by 10%."
-        ]
-    },
-    {
-        "Name (English)": "Sudden WhirlWind",
-        "Effect (English)": [
-            "Increases damage of Tornado Dance by ?%.",
-            "Increases damage of Tornado Dance by ?%.",
-            "Increases damage of Tornado Dance by ?%."
         ]
     },
     {
@@ -4446,14 +4970,6 @@
             "Increases damage dealt to Phantoms by 9% and reduces damage taken from Phantoms by 10%.",
             "Increases damage dealt to Phantoms by 12% and reduces damage taken from Phantoms by 15%.",
             "Increases damage dealt to Phantoms by 15% and reduces damage taken from Phantoms by 20%."
-        ]
-    },
-    {
-        "Name (English)": "Full-Body Strike",
-        "Effect (English)": [
-            "Increases the damage of Ducking Blow and Heartless Impact by 10%.",
-            "Increases the damage of Ducking Blow and Heartless Impact by 13%.",
-            "Increases the damage of Ducking Blow and Heartless Impact by 17%."
         ]
     },
     {
@@ -4691,25 +5207,25 @@
     {
         "Name (English)": "Heavenly Blessing: Light Wings",
         "Effect (English)": [
-            "Increases damage by 10%, reduce damage taken by 5%, and decrease PP Consumption by 10%.",
-            "Increases damage and Natural PP Recovery by 10%, reduce damage taken by 5%, and decrease PP Consumption by 10%.",
-            "Increases damage, Natural PP Recovery, and Active PP Recovery by 10%, reduce damage taken by 5%, and decrease PP Consumption by 10%."
+            "Increases damage by 10%, reduce damage taken by 5%, and decreases PP Consumption by 10%.",
+            "Increases damage and Natural PP Recovery by 10%, reduce damage taken by 5%, and decreases PP Consumption by 10%.",
+            "Increases damage, Natural PP Recovery, and Active PP Recovery by 10%, reduce damage taken by 5%, and decreases PP Consumption by 10%."
         ]
     },
     {
         "Name (English)": "Perennial Conqueror",
         "Effect (English)": [
-            "Increases damage by ?%, Pet damage by ?%, and decrease damage taken by ?% in the Quest \"The Endless Darkness\".",
-            "Increases damage by ?%, Pet damage by ?%, and decrease damage taken by ?% in the Quest \"The Endless Darkness\".",
-            "Increases damage by 20%, Pet damage by 3% and decrease damage taken by 40% in the Quest \"The Endless Darkness\"."
+            "Increases damage by ?%, Pet damage by ?%, and decreases damage taken by ?% in the Quest \"The Endless Darkness\".",
+            "Increases damage by ?%, Pet damage by ?%, and decreases damage taken by ?% in the Quest \"The Endless Darkness\".",
+            "Increases damage by 20%, Pet damage by 3% and decreases damage taken by 40% in the Quest \"The Endless Darkness\"."
         ]
     },
     {
         "Name (English)": "吸気光弾",
         "Effect (English)": [
-            "Decrease the damage of Normal Attacks by 50%. Increases Active PP recovery by 5 per hit, and damage of non-Normal Attacks by 5%.",
-            "Decrease the damage of Normal Attacks by 50%. Increases Active PP recovery by 7 per hit, and damage of non-Normal Attacks by 7%.",
-            "Decrease the damage of Normal Attacks by 50%. Increases Active PP recovery by 10 per hit, and damage of non-Normal Attacks by 10%."
+            "Decreases the damage of Normal Attacks by 50%. Increases Active PP recovery by 5 per hit, and damage of non-Normal Attacks by 5%.",
+            "Decreases the damage of Normal Attacks by 50%. Increases Active PP recovery by 7 per hit, and damage of non-Normal Attacks by 7%.",
+            "Decreases the damage of Normal Attacks by 50%. Increases Active PP recovery by 10 per hit, and damage of non-Normal Attacks by 10%."
         ]
     },
     {
@@ -4892,9 +5408,9 @@
     {
         "Name (English)": "Demonic Ward",
         "Effect (English)": [
-            "Decrease damage taken from Demons by 15% for both Pets and Players.",
-            "Decrease damage taken from Demons by 17% for both Pets and Players.",
-            "Decrease damage taken from Demons by 20% for both Pets and Players."
+            "Decreases damage taken from Demons by 15% for both Pets and Players.",
+            "Decreases damage taken from Demons by 17% for both Pets and Players.",
+            "Decreases damage taken from Demons by 20% for both Pets and Players."
         ]
     },
     {
@@ -5682,11 +6198,23 @@
         ]
     },
     {
+        "Name (JP)": "怨嗟の祈り",
         "Name (English)": "Resenting Prayer",
+        "Name (Global)": "Invocation of Ire",
+        "Effect (JP)": [
+            "PPが最大の状態でPA・テクニック使用時PPが0に。PPが最大に戻るまで、PPの消費量軽減、超回復。",
+            "PPが最大の状態でPA・テクニック使用時PPが0に。PPが最大に戻るまで、PPの消費量軽減、超回復。",
+            "PPが最大の状態でPA・テクニック使用時PPが0に。PPが最大に戻るまで、PPの消費量軽減、超回復。"
+        ],
         "Effect (English)": [
-            "Reduces PP to 0 when using a PA/Technique while PP is maxed. Reduces PP consumption and recover PP at regular intervals until PP is maxed.",
-            "Reduces PP to 0 when using a PA/Technique while PP is maxed. Reduces PP consumption and recover PP at regular intervals until PP is maxed.",
-            "Reduces PP to 0 when using a PA/Technique while PP is maxed. Reduces PP consumption and recover PP at regular intervals until PP is maxed."
+            "Increases damage by 6%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation.",
+            "Increases damage by 8%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation.",
+            "Increases damage by 10%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 6%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation.",
+            "Increases damage by 8%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation.",
+            "Increases damage by 10%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation."
         ]
     },
     {
@@ -5850,19 +6378,43 @@
         ]
     },
     {
+        "Name (JP)": "解放の牙",
         "Name (English)": "Liberated Fang",
+        "Name (Global)": "Liberated Fang",
+        "Effect (JP)": [
+            "クリティカル率が10%、威力が10%上昇。PP消費量が10%軽減。",
+            "クリティカル率が15%、威力が13%上昇。PP消費量が12%軽減。",
+            "クリティカル率が20%、威力が16%上昇。PP消費量が15%軽減。"
+        ],
         "Effect (English)": [
-            "Increases Critical Hit Rate by 10% and increases damage by 10%. Decrease PP consumption by 10%.",
-            "Increases Critical Hit Rate by 15% and increases damage by 13%. Decrease PP consumption by 12%.",
-            "Increases Critical Hit Rate by 20% and increases damage by 16%. Decrease PP consumption by 15%."
+            "Increases Critical Hit Rate by 10% and increases damage by 10%. Decreases PP consumption by 10%.",
+            "Increases Critical Hit Rate by 15% and increases damage by 13%. Decreases PP consumption by 12%.",
+            "Increases Critical Hit Rate by 20% and increases damage by 16%. Decreases PP consumption by 15%."
+        ],
+        "Effect (Global)": [
+            "Increases Critical Hit Rate by 10% and increases damage by 10%. Decreases PP consumption by 10%.",
+            "Increases Critical Hit Rate by 15% and increases damage by 13%. Decreases PP consumption by 12%.",
+            "Increases Critical Hit Rate by 20% and increases damage by 16%. Decreases PP consumption by 15%."
         ]
     },
     {
+        "Name (JP)": "解放の奏",
         "Name (English)": "Liberated Ensemble",
+        "Name (Global)": "Liberated Psalm",
+        "Effect (JP)": [
+            "クリティカル率が10%、威力が4%上昇。PP消費量が15%軽減。",
+            "クリティカル率が15%、威力が6%上昇。PP消費量が17%軽減。",
+            "クリティカル率が20%、威力が8%上昇。PP消費量が20%軽減。"
+        ],
         "Effect (English)": [
-            "Increases Critical Hit Rate by 10% and increases damage by 4%. Decrease PP consumption by 15%.",
-            "Increases Critical Hit Rate by 15% and increases damage by 6%. Decrease PP consumption by 17%.",
-            "Increases Critical Hit Rate by 20% and increases damage by 8%. Decrease PP consumption by 20%."
+            "Increases Critical Hit Rate by 10% and increases damage by 4%. Decreases PP consumption by 15%.",
+            "Increases Critical Hit Rate by 15% and increases damage by 6%. Decreases PP consumption by 17%.",
+            "Increases Critical Hit Rate by 20% and increases damage by 8%. Decreases PP consumption by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases Critical Hit Rate by 10% and increases damage by 4%. Decreases PP consumption by 15%.",
+            "Increases Critical Hit Rate by 15% and increases damage by 6%. Decreases PP consumption by 17%.",
+            "Increases Critical Hit Rate by 20% and increases damage by 8%. Decreases PP consumption by 20%."
         ]
     },
     {
@@ -5922,11 +6474,23 @@
         ]
     },
     {
+        "Name (JP)": "闘志の鼓舞",
         "Name (English)": "Battle Stimulation",
+        "Name (Global)": "Fighting Spirit",
+        "Effect (JP)": [
+            "威力が(12%)上昇。シフタ効果中打射法撃力が600増加。",
+            "威力が(14%)上昇。シフタ効果中打射法撃力が600増加。",
+            "威力が(16%)上昇。シフタ効果中打射法撃力が600増加。"
+        ],
         "Effect (English)": [
             "Increases damage by 12%. Increases the ATK increases granted by Shifta by 600 ATK.",
             "Increases damage by 14%. Increases the ATK increases granted by Shifta by 600 ATK.",
             "Increases damage by 16%. Increases the ATK increases granted by Shifta by 600 ATK."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 12%. Increases the ATK increases granted by Shifta by 600 Pwr.",
+            "Increases damage by 14%. Increases the ATK increases granted by Shifta by 600 Pwr.",
+            "Increases damage by 16%. Increases the ATK increases granted by Shifta by 600 Pwr."
         ]
     },
     {
@@ -5994,11 +6558,23 @@
         ]
     },
     {
+        "Name (JP)": "堅実なる力",
         "Name (English)": "Steadfast Might",
+        "Name (Global)": "Steadfast Might",
+        "Effect (JP)": [
+            "被ダメ毎に威力低下時間経過で回復。威力(14%)時、被ダメ軽減PP自然回復量60%上昇10秒毎PP回復、頑強。",
+            "被ダメ毎に威力低下時間経過で回復。威力(15%)時、被ダメ軽減PP自然回復量60%上昇10秒毎PP回復、頑強。",
+            "被ダメ毎に威力低下時間経過で回復。威力(16%)時、被ダメ軽減PP自然回復量60%上昇10秒毎PP回復、頑強。"
+        ],
         "Effect (English)": [
-            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 14%, gain 40% Damage Resistance, increases Natural PP Recovery by 60%, regenerate 20 PP every 10 seconds, and become Massive.",
-            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 15%, gain 40% Damage Resistance, increases Natural PP Recovery by 60%, regenerate 20 PP every 10 seconds, and become Massive.",
-            "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 16%, gain 40% Damage Resistance, increases Natural PP Recovery by 60%, regenerate 20 PP every 10 seconds, and become Massive."
+            "Increases damage by 10%, and an additonal +0.4% per second, up to 14% total. Damage increase is reduced by 3% whenever damage is taken (cannot go below 10% total). When damage increase is maxed, activates the following effects: reduces damage taken by 40%, increases Natural PP Recovery by 60%, recovers 20 PP every 10 seconds, and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped.",
+            "Increases damage by 10%, and an additonal +0.4% per second, up to 15% total. Damage increase is reduced by 3% whenever damage is taken (cannot go below 10% total). When damage increase is maxed, activates the following effects: reduces damage taken by 40%, increases Natural PP Recovery by 60%, recovers 20 PP every 10 seconds, and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped.",
+            "Increases damage by 10%, and an additonal +0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken (cannot go below 10% total). When damage increase is maxed, activates the following effects: reduces damage taken by 40%, increases Natural PP Recovery by 60%, recovers 20 PP every 10 seconds, and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 10%, and an additonal +0.4% per second, up to 14% total. Damage increase is reduced by 3% whenever damage is taken (cannot go below 10% total). When damage increase is maxed, activates the following effects: reduces damage taken by 40%, increases Natural PP Recovery by 60%, recovers 20 PP every 10 seconds, and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped.",
+            "Increases damage by 10%, and an additonal +0.4% per second, up to 15% total. Damage increase is reduced by 3% whenever damage is taken (cannot go below 10% total). When damage increase is maxed, activates the following effects: reduces damage taken by 40%, increases Natural PP Recovery by 60%, recovers 20 PP every 10 seconds, and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped.",
+            "Increases damage by 10%, and an additonal +0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken (cannot go below 10% total). When damage increase is maxed, activates the following effects: reduces damage taken by 40%, increases Natural PP Recovery by 60%, recovers 20 PP every 10 seconds, and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped."
         ]
     },
     {
@@ -6102,8 +6678,20 @@
         ]
     },
     {
+        "Name (JP)": "赤の円舞曲",
         "Name (English)": "Crimson Waltz",
+        "Name (Global)": "Crimson Waltz",
+        "Effect (JP)": [
+            "威力(10%)上昇。ヒーロータイム使用時ギア消費量を軽減。HTカウンターボーナス効果上限16回へ増加。",
+            "威力(12%)上昇。ヒーロータイム使用時ギア消費量を軽減。HTカウンターボーナス効果上限16回へ増加。",
+            "威力(14%)上昇。ヒーロータイム使用時ギア消費量を軽減。HTカウンターボーナス効果上限16回へ増加。"
+        ],
         "Effect (English)": [
+            "Increases damage by 10%. Reduces Gear consumption during Hero Time. Increases the activation limit of Hero Time Counter Bonus to 16.",
+            "Increases damage by 12%. Reduces Gear consumption during Hero Time. Increases the activation limit of Hero Time Counter Bonus to 16.",
+            "Increases damage by 14%. Reduces Gear consumption during Hero Time. Increases the activation limit of Hero Time Counter Bonus to 16."
+        ],
+        "Effect (Global)": [
             "Increases damage by 10%. Reduces Gear consumption during Hero Time. Increases the activation limit of Hero Time Counter Bonus to 16.",
             "Increases damage by 12%. Reduces Gear consumption during Hero Time. Increases the activation limit of Hero Time Counter Bonus to 16.",
             "Increases damage by 14%. Reduces Gear consumption during Hero Time. Increases the activation limit of Hero Time Counter Bonus to 16."
@@ -6150,19 +6738,43 @@
         ]
     },
     {
+        "Name (JP)": "神速の一閃",
         "Name (English)": "Extreme Speed",
+        "Name (Global)": "Fleet Flash",
+        "Effect (JP)": [
+            "威力(+6%)、通常攻撃速度+15%。メイト系アイテムを使用すると即時回復。",
+            "威力(+8%)、通常攻撃速度+15%。メイト系アイテムを使用すると即時回復。",
+            "威力(+10%)、通常攻撃速度+15%。メイト系アイテムを使用すると即時回復。"
+        ],
         "Effect (English)": [
+            "Damage +6%. Increases Normal Attack speed by 15%. Consume Mate items instantly.",
+            "Damage +8%. Increases Normal Attack speed by 15%. Consume Mate items instantly.",
+            "Damage +10%. Increases Normal Attack speed by 15%. Consume Mate items instantly."
+        ],
+        "Effect (Global)": [
             "Damage +6%. Increases Normal Attack speed by 15%. Consume Mate items instantly.",
             "Damage +8%. Increases Normal Attack speed by 15%. Consume Mate items instantly.",
             "Damage +10%. Increases Normal Attack speed by 15%. Consume Mate items instantly."
         ]
     },
     {
+        "Name (JP)": "煌めく連牙",
         "Name (English)": "Glittering Fang",
+        "Name (Global)": "Gleaming Fangs",
+        "Effect (JP)": [
+            "威力(+9%)、攻撃命中時20秒間、威力+8%被ダメ-20%、PP上限+100。効果時間は150万ダメージで回復。",
+            "威力(+11%)、攻撃命中時20秒間、威力+8%被ダメ-20%、PP上限+100。効果時間は150万ダメージで回復。",
+            "威力(+13%)、攻撃命中時20秒間、威力+8%被ダメ-20%、PP上限+100。効果時間は150万ダメージで回復。"
+        ],
         "Effect (English)": [
-            "Damage +9%. Upon striking with an attack, increases damage by an additional 8%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage.",
-            "Damage +11%. Upon striking with an attack, increases damage by an additional 8%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage.",
-            "Damage +13%. Upon striking with an attack, increases damage by an additional 8%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage."
+            "Damage +9%. Upon striking with an attack, increases damage by an additional 8%, reduces damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect reapplies after dealing 1,500,000 damage.",
+            "Damage +11%. Upon striking with an attack, increases damage by an additional 8%, reduces damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect reapplies after dealing 1,500,000 damage.",
+            "Damage +13%. Upon striking with an attack, increases damage by an additional 8%, reduces damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect reapplies after dealing 1,500,000 damage."
+        ],
+        "Effect (Global)": [
+            "Damage +9%. Upon striking with an attack, increases damage by an additional 8%, reduces damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect reapplies after dealing 1,500,000 damage.",
+            "Damage +11%. Upon striking with an attack, increases damage by an additional 8%, reduces damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect reapplies after dealing 1,500,000 damage.",
+            "Damage +13%. Upon striking with an attack, increases damage by an additional 8%, reduces damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect reapplies after dealing 1,500,000 damage."
         ]
     },
     {
@@ -6307,9 +6919,9 @@
     {
         "Name (English)": "Skilled Elementary Arts",
         "Effect (English)": [
-            "Increases damage of basic-level Techniques by 18%.",
-            "Increases damage of basic-level Techniques by 20%.",
-            "Increases damage of basic-level Techniques by 23%."
+            "Increases the damage of basic-level Techniques by 18%.",
+            "Increases the damage of basic-level Techniques by 20%.",
+            "Increases the damage of basic-level Techniques by 23%."
         ],
         "Special": "Hidden"
     },
@@ -6364,15 +6976,6 @@
             "Increases the damage of Just Attacks by 35% while Katana Combat is active.",
             "Increases the damage of Just Attacks by 37% while Katana Combat is active.",
             "Increases the damage of Just Attacks by 40% while Katana Combat is active."
-        ],
-        "Special": "Hidden"
-    },
-    {
-        "Name (English)": "Blossom Flare",
-        "Effect (English)": [
-            "Increases the damage of Sakura-endo and Guren-tessen by 20%.",
-            "Increases the damage of Sakura-endo and Guren-tessen by 23%.",
-            "Increases the damage of Sakura-endo and Guren-tessen by 26%."
         ],
         "Special": "Hidden"
     },
@@ -6709,9 +7312,9 @@
     {
         "Name (English)": "Lucky Shot",
         "Effect (English)": [
-            "Increases damage by ?%. Decrease PP consumption by ?% when a special bullet is loaded.",
-            "Increases damage by ?%. Decrease PP consumption by ?% when a special bullet is loaded.",
-            "Increases damage by 13%. Decrease PP consumption by 13% when a special bullet is loaded."
+            "Increases damage by ?%. Decreases PP consumption by ?% when a special bullet is loaded.",
+            "Increases damage by ?%. Decreases PP consumption by ?% when a special bullet is loaded.",
+            "Increases damage by 13%. Decreases PP consumption by 13% when a special bullet is loaded."
         ],
         "Special": "Weaponoid"
     },
@@ -6874,9 +7477,9 @@
     {
         "Name (English)": "Refining Operation",
         "Effect (English)": [
-            "Increases damage based on DMG dealt, decrease DMG received based on DMG taken, decrease PP consumption based on PP consumed (16% MAX: 1% per 150,000 DMG Dealt / 750 DMG Taken / 250 PP Consumed).",
-            "Increases damage based on DMG dealt, decrease DMG received based on DMG taken, decrease PP consumption based on PP consumed (16% MAX: 1% per 100,000 DMG Dealt / 550 DMG Taken / 175 PP Consumed).",
-            "Increases damage based on DMG dealt, decrease DMG received based on DMG taken, decrease PP consumption based on PP consumed (16% MAX: 1% per 50,000 DMG Dealt / 300 DMG Taken / 100 PP Consumed)"
+            "Increases damage based on DMG dealt, decreases DMG received based on DMG taken, decreases PP consumption based on PP consumed (16% MAX: 1% per 150,000 DMG Dealt / 750 DMG Taken / 250 PP Consumed).",
+            "Increases damage based on DMG dealt, decreases DMG received based on DMG taken, decreases PP consumption based on PP consumed (16% MAX: 1% per 100,000 DMG Dealt / 550 DMG Taken / 175 PP Consumed).",
+            "Increases damage based on DMG dealt, decreases DMG received based on DMG taken, decreases PP consumption based on PP consumed (16% MAX: 1% per 50,000 DMG Dealt / 300 DMG Taken / 100 PP Consumed)"
         ],
         "Special": "Arena"
     },
@@ -7002,29 +7605,65 @@
         "Special": "Luminmech"
     },
     {
+        "Name (JP)": "怨嗟の祈り・改",
         "Name (English)": "Resenting Prayer Plus",
-        "Effect (English)": [
+        "Name (Global)": "Invocation of Ire Redux",
+        "Effect (JP)": [
             "Reduces PP to 0 when using a PA/Technique while PP is maxed. Reduces PP consumption and recover PP at regular intervals until PP is maxed.",
             "Reduces PP to 0 when using a PA/Technique while PP is maxed. Reduces PP consumption and recover PP at regular intervals until PP is maxed.",
             "Reduces PP to 0 when using a PA/Technique while PP is maxed. Reduces PP consumption and recover PP at regular intervals until PP is maxed."
         ],
+        "Effect (English)": [
+            "Increases damage by 20%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation.",
+            "Increases damage by 22%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation.",
+            "Increases damage by 24%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation."
+        ],
+        "Effect (Global)": [
+            "Increases damage by 20%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation.",
+            "Increases damage by 22%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation.",
+            "Increases damage by 24%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation."
+        ],
         "Special": "Ultimate"
     },
     {
+        "Name (JP)": "解放の牙・改",
         "Name (English)": "Liberated Fang Plus",
+        "Name (Global)": "Liberated Fang Redux",
+        "Effect (JP)": [
+            "クリティカル率が10%、威力が19%上昇。PP消費量が10%軽減。",
+            "クリティカル率が15%、威力が21%上昇。PP消費量が12%軽減。",
+            "クリティカル率が20%、威力が23%上昇。PP消費量が15%軽減。"
+        ],
         "Effect (English)": [
-            "Increases Critical Hit Rate by 10% and increases damage by 19%. Decrease PP consumption by 10%.",
-            "Increases Critical Hit Rate by 15% and increases damage by 21%. Decrease PP consumption by 12%.",
-            "Increases Critical Hit Rate by 20% and increases damage by 23%. Decrease PP consumption by 15%."
+            "Increases Critical Hit Rate by 10% and increases damage by 19%. Decreases PP consumption by 10%.",
+            "Increases Critical Hit Rate by 15% and increases damage by 21%. Decreases PP consumption by 12%.",
+            "Increases Critical Hit Rate by 20% and increases damage by 23%. Decreases PP consumption by 15%."
+        ],
+        "Effect (Global)": [
+            "Increases Critical Hit Rate by 10% and increases damage by 19%. Decreases PP consumption by 10%.",
+            "Increases Critical Hit Rate by 15% and increases damage by 21%. Decreases PP consumption by 12%.",
+            "Increases Critical Hit Rate by 20% and increases damage by 23%. Decreases PP consumption by 15%."
         ],
         "Special": "Luminmech"
     },
     {
+        "Name (JP)": "解放の奏・改",
         "Name (English)": "Liberated Ensemble Plus",
+        "Name (Global)": "Liberated Psalm Redux",
+        "Effect (JP)": [
+            "クリティカル率が10%、威力が9%上昇。PP消費量が15%軽減",
+            "クリティカル率が15%、威力が10%上昇。PP消費量が17%軽減",
+            "クリティカル率が20%、威力が11%上昇。PP消費量が20%軽減"
+        ],
         "Effect (English)": [
-            "Increases Critical Hit Rate by 10% and increases damage by 9%. Decrease PP consumption by 15%.",
-            "Increases Critical Hit Rate by 15% and increases damage by 10%. Decrease PP consumption by 17%.",
-            "Increases Critical Hit Rate by 20% and increases damage by 11%. Decrease PP consumption by 20%."
+            "Increases Critical Hit Rate by 10% and increases damage by 9%. Decreases PP consumption by 15%.",
+            "Increases Critical Hit Rate by 15% and increases damage by 10%. Decreases PP consumption by 17%.",
+            "Increases Critical Hit Rate by 20% and increases damage by 11%. Decreases PP consumption by 20%."
+        ],
+        "Effect (Global)": [
+            "Increases Critical Hit Rate by 10% and increases damage by 9%. Decreases PP consumption by 15%.",
+            "Increases Critical Hit Rate by 15% and increases damage by 10%. Decreases PP consumption by 17%.",
+            "Increases Critical Hit Rate by 20% and increases damage by 11%. Decreases PP consumption by 20%."
         ],
         "Special": "Luminmech"
     },
