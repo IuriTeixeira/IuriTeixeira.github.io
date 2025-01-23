@@ -3145,7 +3145,7 @@
     },
     {
         "Name (JP)": "アトラヴェイス",
-        "name_en": "Atlas Weiss",
+        "name_en": "Atra Weiss",
         "name_global": "Atlas Weisz",
         "Rarity": 14,
         "Requirement": ["S-ATK",780],
@@ -3400,7 +3400,7 @@
     },
     {
         "Name (JP)": "アトラヴェイス・イクス",
-        "name_en": "Atlas Weiss Ex",
+        "name_en": "Atra Weiss Ex",
         "name_global": "Atlas Weisz EX",
         "Rarity": 15,
         "Requirement": ["S-ATK",850],

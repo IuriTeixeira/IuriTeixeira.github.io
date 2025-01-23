@@ -2,6 +2,7 @@ import React from "react";
 import { Image, Button, Group } from '@mantine/core';
 import swords from '../geardata/weapons/weapon-data/swords.json'
 import wiredlances from '../geardata/weapons/weapon-data/wiredlances.json'
+import partizans from '../geardata/weapons/weapon-data/partizans.json'
 import { useLanguageContext } from "../language-provider";
 
 export default function WeaponHeaderComponent({ setWeaponData, setWeaponType }) {
@@ -13,8 +14,8 @@ export default function WeaponHeaderComponent({ setWeaponData, setWeaponType }) 
                 <Group justify="center" mt="sm">
                     <Button onClick={() => { setWeaponData(swords); setWeaponType("swords") }}><Image src="/icons/Sword.png" alt="Sword" w={16} h={16} /> Sword</Button>
                     <Button onClick={() => { setWeaponData(wiredlances); setWeaponType('wiredlances') }}><Image src="/icons/WiredLance.png" alt="Wired Lance" w={16} h={16} /> Wired Lance</Button>
-                    {language.language === 'English Patch' && <Button><Image src="/icons/Partizan.png" alt="Partizan" w={16} h={16} /> Partizan</Button>}
-                    {language.language === 'Global' && <Button><Image src="/icons/Partizan.png" alt="Partisan" w={16} h={16} /> Partisan</Button>}
+                    {language.language === 'English Patch' && <Button onClick={() => { setWeaponData(partizans); setWeaponType('partizans') }}><Image src="/icons/Partizan.png" alt="Partizan" w={16} h={16} /> Partizan</Button>}
+                    {language.language === 'Global' && <Button onClick={() => { setWeaponData(partizans); setWeaponType('partizans') }}><Image src="/icons/Partizan.png" alt="Partisan" w={16} h={16} /> Partisan</Button>}
                     <Button><Image src="/icons/TwinDagger.png" alt="Twin Daggers" w={16} h={16} /> Twin Daggers</Button>
                     <Button><Image src="/icons/DoubleSaber.png" alt="Double Saber" w={16} h={16} /> Double Saber</Button>
                     <Button><Image src="/icons/Knuckles.png" alt="Knuckles" w={16} h={16} /> Knuckles</Button>
