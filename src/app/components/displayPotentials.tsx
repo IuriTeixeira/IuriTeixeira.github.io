@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguageContext } from "../language-provider";
-import { Text, Flex, Image, SimpleGrid, Table, Tooltip, List } from '@mantine/core';
+import { Text, Flex, Image, SimpleGrid, Tooltip, List } from '@mantine/core';
 import { v4 as uuidv4 } from 'uuid';
 import potentialData from "../geardata/weapons/weapon-data/potentials.json"
 
@@ -28,12 +28,14 @@ export default function displayPotentials(potList: any[]): any[] {
                 localization = "English"
             }
             
-            potEffect =
+            potEffect = <Text key={uuidv4()}>{pot[`Effect (${localization})`]}</Text>
+
+            /*potEffect =
                 <List>
                     <List.Item>Lv1: {pot[`Effect (${localization})`][0]}</List.Item>
                     <List.Item>Lv2: {pot[`Effect (${localization})`][1]}</List.Item>
                     <List.Item>Lv3: {pot[`Effect (${localization})`][2]}</List.Item>
-                </List>
+                </List>*/
             
             switch (pot.Special) {
                 case 'New-Type':
@@ -130,17 +132,16 @@ export default function displayPotentials(potList: any[]): any[] {
 
             }
             let tooltipText: any = <SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{potEffect}{potUnlockString}</SimpleGrid>
-            if (pot[`Effect (English)`][0].length > 100 || pot[`Effect (English)`][2].length > 100 || pot[`Effect (English)`][2].length > 100) {
-            //if (pot[`Effect (${localization})`][0].length > 100 || pot[`Effect (${localization})`][2].length > 100 || pot[`Effect (${localization})`][2].length > 100) {
+            if (pot[`Effect (${localization})`].length > 70) {
                 if (localization === "JP") {
                     buffer.push(
-                        <Tooltip key={uuidv4()} label={tooltipText} color="dark" multiline w={700}>
+                        <Tooltip key={uuidv4()} label={tooltipText} color="dark" multiline w={600}>
                             <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="潜在能力" title="潜在能力" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potName}</Text></Flex>
                         </Tooltip>
                     )
                 } else {
                     buffer.push(
-                        <Tooltip key={uuidv4()} label={tooltipText} color="dark" multiline w={700}>
+                        <Tooltip key={uuidv4()} label={tooltipText} color="dark" multiline w={600}>
                             <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potName}</Text></Flex>
                         </Tooltip>
                     )
