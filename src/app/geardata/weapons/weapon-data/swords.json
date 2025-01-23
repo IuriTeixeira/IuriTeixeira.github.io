@@ -3058,7 +3058,7 @@
     },
     {
         "Name (JP)": "アトラファーダ",
-        "name_en":"Atlas Farder",
+        "name_en":"Atra Farder",
         "name_global": "Atlas Farder",
         "Rarity": 14,
         "Requirement":["S-ATK",780],
@@ -3380,7 +3380,7 @@
     },
     {
         "Name (JP)": "アトラファーダ・イクス",
-        "name_en":"Atlas Farder Ex",
+        "name_en":"Atra Farder Ex",
         "name_global": "Atlas Farder EX",
         "Rarity": 15,
         "Requirement":["S-ATK",850],
