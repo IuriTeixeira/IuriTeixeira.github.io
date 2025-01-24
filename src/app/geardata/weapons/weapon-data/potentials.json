@@ -1273,8 +1273,8 @@
     },
     {
         "Name (JP)": "吶喊槍",
-        "Name (English)": "Battle Cry",
-        "Name (Global)": "Battle Cry Spear",
+        "Name (English)": "Battle Cry Spear",
+        "Name (Global)": "Battle Cry",
         "Effect (JP)": "アサルトバスターの威力を上昇させる。(14%)",
         "Effect (English)": "Increases the damage of Assault Buster by 14%.",
         "Effect (Global)": "Increases the damage of Assault Buster by 14%."
@@ -2247,8 +2247,12 @@
         "Effect (English)": "Reduces the PP consumption of Grim Barrage by ?%."
     },
     {
-        "Name (English)": "堅鎧練陣",
-        "Effect (English)": "Increases Striking and Ranged damage by 12% and increases S-DEF by 180 when Guard Stance is active."
+        "Name (JP)": "堅鎧練陣",
+        "Name (English)": "Armor Guard",
+        "Name (Global)": "Armor Guard",
+        "Effect (JP)": "ガードスタンス発動中、打撃射撃威力(12%)と打撃防御(+180)が上昇する。",
+        "Effect (English)": "Increases Striking and Ranged damage by 12% and increases S-DEF by 180 when Guard Stance is active.",
+        "Effect (Global)": "Increases Striking and Ranged damage by 12% and increases S-DEF by 180 when Guard Stance is active."
     },
     {
         "Name (English)": "Deathblow Fury",
@@ -2303,8 +2307,12 @@
         "Effect (English)": "Increases rate of Dark Blast Gauge accumulation by ?% and Dark Blast [Apprentice] transformation time by ? seconds."
     },
     {
+        "Name (JP)": "一閃壊刃",
         "Name (English)": "Flashing Blades",
-        "Effect (English)": "Increases damage by 13%. Applies Jellen on Attacks (100% rate, 5% effect, 10s duration)."
+        "Name (Global)": "Decrepifying Blade",
+        "Effect (JP)": "与ダメージが13%上昇。攻撃時にジェルンを付与。(ジェルン効果5%、効果時間10秒)",
+        "Effect (English)": "Increases damage by 13%. Applies Jellen on Attacks (100% rate, 5% effect, 10 seconds duration).",
+        "Effect (Global)": "Increases damage by 13%. Applies Jellen on Attacks (100% rate, 5% effect, 10 seconds duration)."
     },
     {
         "Name (English)": "Sacred Shield",
@@ -2351,8 +2359,12 @@
         "Effect (English)": "Increases damage by 10%. During Clear Weather, gain an additional 3% damage bonus."
     },
     {
+        "Name (JP)": "闘護昂浄の陣",
         "Name (English)": "Offensive Defensive",
-        "Effect (English)": "Increases damage (6% Base, 20% MAX after 70s) and reduce damage taken (0% Base, 50% MAX after 180s) over time. Bonus resets if struck by an attack."
+        "Name (Global)": "Offensive Defensive",
+        "Effect (JP)": "時間経過で威力上昇かつ被ダメージ軽減。攻撃を受けると消失。\n(与ダメ:初期状態6%上昇、1秒ごとに0.200%上昇し70秒で効果最大(20%上昇))\n(被ダメ:初期状態0%減少、1秒ごとに0.278%減少し180秒で効果最大(50%減少))",
+        "Effect (English)": "Increases damage by 6%, and reduces damage taken by 0%. Increases damage by an additional 0.2% per second, up to 20% (after 70 seconds), and reduces damage taken by an additional 0.278% per second, up to 50% (after 180 seconds). Bonuses are reset if damage is taken, or a different potential is equipped. Bonuses do not begin increasing until the Quest actually begins (after leaving the Campship or teleporting inside, depending on the Quest).",
+        "Effect (Global)": "Increases damage by 6%, and reduces damage taken by 0%. Increases damage by an additional 0.2% per second, up to 20% (after 70 seconds), and reduces damage taken by an additional 0.278% per second, up to 50% (after 180 seconds). Bonuses are reset if damage is taken, or a different potential is equipped. Bonuses do not begin increasing until the Quest actually begins (after leaving the Campship or teleporting inside, depending on the Quest)."
     },
     {
         "Name (English)": "Black Tactics",
@@ -2500,7 +2512,7 @@
     },
     {
         "Name (English)": "Hawkeyed Phoenix",
-        "Effect (English)": "Increases PA/Tech damage by 16% when attacking an enemy's weak point or Elemental Weakness."
+        "Effect (English)": "Increases PA or Technique damage by 16% when attacking an enemy's weak point or Elemental Weakness."
     },
     {
         "Name (English)": "Lustrous Protection",
@@ -2535,24 +2547,32 @@
         "Effect (English)": "Increases damage by 10%. Enhance the performance of Zero Distance once with a one minute Recast. Recast resets upon successfully evading an attack with Dive Roll."
     },
     {
+        "Name (JP)": "流光の蘇回",
         "Name (English)": "Lightstream Resurrection",
-        "Effect (English)": "Increases damage by 10%. Fully restore PP when casting a PA/Tech while below 10% PP and bestow an additional damage bonus (3%) for 30 seconds (120s Recast)."
+        "Name (Global)": "Photon Resurrection",
+        "Effect (JP)": "威力が10%上昇。PPが一定以下（10%未満）になった時PPが全回復し、一定時間威力が更に3%上昇する。",
+        "Effect (English)": "Increases damage by 17%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Lightstream Resurrection Plus, Lightstream Melody and Lightstream Melody Plus.",
+        "Effect (Global)": "Increases damage by 17%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Photon Resurrection Redux, Photon Serenade, and Photon Serenade Redux."
     },
     {
         "Name (English)": "Star-bound Recollection",
-        "Effect (English)": "Increases damage by 10%. Restores PP by 30% when casting a PA/Tech while below 10% PP."
+        "Effect (English)": "Increases damage by 10%. Restores PP by 30% when casting a PA or Technique while below 10% PP."
     },
     {
         "Name (English)": "Star-bound Melody",
-        "Effect (English)": "Increases damage by 5%. Restores PP by 30% when casting a PA/Tech while below 10% PP (120s Recast)."
+        "Effect (English)": "Increases damage by 5%. Restores PP by 30% when casting a PA or Technique while below 10% PP (120s Recast)."
     },
     {
         "Name (English)": "Lightstream Melody",
-        "Effect (English)": "Increases damage by 5%. Fully restore PP when casting a PA/Tech while below 10% PP and bestow an additional damage bonus (3%) for 30 seconds (120s Recast)."
+        "Effect (English)": "Increases damage by 5%. Fully restore PP when casting a PA or Technique while below 10% PP and bestow an additional damage bonus (3%) for 30 seconds (120s Recast)."
     },
     {
+        "Name (JP)": "不滅の戦魂",
         "Name (English)": "Immortal Soul",
-        "Effect (English)": "Increases damage by 10%. Survive one fatal attack with 1 HP, and restore HP at regular intervals afterwards."
+        "Name (Global)": "Unflagging Spirit",
+        "Effect (JP)": "威力10%上昇。一度だけ致命傷を受けても耐え発動後徐々にHP回復。",
+        "Effect (English)": "Increases damage by 10%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.",
+        "Effect (Global)": "Increases damage by 10%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds."
     },
     {
         "Name (English)": "Phantasmal Darkness",
@@ -2659,8 +2679,12 @@
         "Effect (English)": "Resist knockback and gradually increases damage (12% ~ 16%) when performing consecutive Just Attacks."
     },
     {
+        "Name (JP)": "封印の牙",
         "Name (English)": "Sealing Fang",
-        "Effect (English)": "Increases damage by 14%. Increases Critical Hit Rate by 20%."
+        "Name (Global)": "Sealed Fang",
+        "Effect (JP)": "威力が14%上昇。クリティカル率が20%上昇。",
+        "Effect (English)": "Increases damage by 14%. Increases Critical Hit Rate by 20%.",
+        "Effect (Global)": "Increases damage by 14%. Increases Critical Hit Rate by 20%."
     },
     {
         "Name (English)": "Sealing Duet",
@@ -2839,16 +2863,28 @@
         "Effect (English)": "Increases damage by 10%. Increases Normal Attack damage by an additional 30%, but reduce Normal Attack speed (20%). Become Massive and gain Damage Resistance (10%) while performing Normal Attacks."
     },
     {
+        "Name (JP)": "質実なる勇",
         "Name (English)": "Effortless Mettle",
-        "Effect (English)": "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 16%, become Massive and gain 40% Damage Resistance."
+        "Name (Global)": "Sincere Courage",
+        "Effect (JP)": "被ダメ毎に威力低下、時間経過で回復。威力が16％時、頑強と被ダメ40％軽減。",
+        "Effect (English)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: reduces damage taken by 40% and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped.",
+        "Effect (Global)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: reduces damage taken by 40% and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped."
     },
     {
+        "Name (JP)": "質実なる仁",
         "Name (English)": "Effortless Charity",
-        "Effect (English)": "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 16%, become Massive and regenerate 20 PP every 10 seconds."
+        "Name (Global)": "Sincere Virtue",
+        "Effect (JP)": "被ダメ毎に威力低下時間経過で回復。威力が16%時頑強と10秒毎にPPを20回復。",
+        "Effect (English)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: recovers 20 PP every 10 seconds and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped.",
+        "Effect (Global)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: recovers 20 PP every 10 seconds and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped."
     },
     {
+        "Name (JP)": "質実なる智",
         "Name (English)": "Effortless Wisdom",
-        "Effect (English)": "Damage bonus decreases when taking damage and recovers over time. When damage bonus is 16%, increases Natural PP Recovery by 60% and gain 40% Damage Resistance."
+        "Name (Global)": "Sincere Wisdom",
+        "Effect (JP)": "被ダメ毎に威力低下時間経過で回復。威力が16%時PP自然回復量60%上昇被ダメ40%軽減。",
+        "Effect (English)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: reduces damage taken by 40% and increases Natural PP Recovery by 60%. Damage does not change when a different potential is equipped.",
+        "Effect (Global)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: reduces damage taken by 40% and increases Natural PP Recovery by 60%. Damage does not change when a different potential is equipped."
     },
     {
         "Name (JP)": "堅実なる力",
@@ -2859,12 +2895,20 @@
         "Effect (Global)": "Increases damage by 10%, and an additonal +0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken (cannot go below 10% total). When damage increase is maxed, activates the following effects: reduces damage taken by 40%, increases Natural PP Recovery by 60%, recovers 20 PP every 10 seconds, and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped."
     },
     {
+        "Name (JP)": "質実なる奏",
         "Name (English)": "Effortless Solo",
-        "Effect (English)": "Increases damage by 10%. damage bonus decreases when taking damage and recovers over time."
+        "Name (Global)": "Sincere Performance",
+        "Effect (JP)": "威力が10%上昇。被ダメ毎に威力低下、時間経過で回復。",
+        "Effect (English)": "Increases damage by 0.4% per second, up to 10% total. Damage increase is reduced by 1% whenever damage is taken (including Alter Ego).",
+        "Effect (Global)": "Increases damage by 0.4% per second, up to 10% total. Damage increase is reduced by 1% whenever damage is taken (including Alter Ego)."
     },
     {
+        "Name (JP)": "堅実なる奏",
         "Name (English)": "Steadfast Solo",
-        "Effect (English)": "Increases damage by 10%. damage bonus decreases when taking damage and recovers over time. When damage bonus is 10%, Pet regenerates 10% HP every 10 seconds."
+        "Name (Global)": "Steadfast Solo",
+        "Effect (JP)": "威力が10%上昇。被ダメごとに威力低下、時間経過で回復。威力が10％時、10秒ごとにペットHPを10％回復。",
+        "Effect (English)": "Increases damage by 6%, and an additonal +0.4% per second, up to 10% total. Damage increase is reduced by 1% whenever damage is taken (including Alter Ego). When damage increase is maxed, Pet regenerates 10% HP every 10 seconds.",
+        "Effect (Global)": "Increases damage by 6%, and an additonal +0.4% per second, up to 10% total. Damage increase is reduced by 1% whenever damage is taken (including Alter Ego). When damage increase is maxed, Pet regenerates 10% HP every 10 seconds."
     },
     {
         "Name (English)": "Midnight Wielder",
@@ -2875,8 +2919,8 @@
         "Name (English)": "Dazzling Splendor",
         "Name (Global)": "Dazzling Splendor",
         "Effect (JP)": "威力が15%上昇。低確率(10%)で以下効果を得る。\n被弾時ダメージ(50%)軽減、PA使用時PP消費(50%)軽減、\n通常攻撃時PP回復(+100%)上昇、攻撃命中時HP(100)回復。",
-        "Effect (English)": "Increases damage by 15%. 10% chance to activate any of the following effects: Reduces damage taken upon being attacked (50%), reduce PP consumption upon using a PA/Tech (50%), increases PP recovery when using a Normal Attack (100%), recover HP upon landing an attack (100).",
-        "Effect (Global)": "Increases damage by 15%. 10% chance to activate any of the following effects: Reduces damage taken upon being attacked (50%), reduce PP consumption upon using a PA/Tech (50%), increases PP recovery when using a Normal Attack (100%), recover HP upon landing an attack (100)."
+        "Effect (English)": "Increases damage by 15%. 10% chance to activate any of the following effects: Reduces damage taken upon being attacked (50%), reduce PP consumption upon using a PA or Technique (50%), increases PP recovery when using a Normal Attack (100%), recover HP upon landing an attack (100).",
+        "Effect (Global)": "Increases damage by 15%. 10% chance to activate any of the following effects: Reduces damage taken upon being attacked (50%), reduce PP consumption upon using a PA or Technique (50%), increases PP recovery when using a Normal Attack (100%), recover HP upon landing an attack (100)."
     },
     {
         "Name (JP)": "運命の輪廻",
@@ -2983,7 +3027,7 @@
     },
     {
         "Name (English)": "Converging Light",
-        "Effect (English)": "PA/Tech PP consumption reduced by 20%, PA/Tech damage increased by 10%.",
+        "Effect (English)": "PA or Technique PP consumption reduced by 20%, PA or Technique damage increased by 10%.",
         "Special": "Hidden"
     },
     {
@@ -3370,8 +3414,12 @@
         "Special": "Luminmech"
     },
     {
+        "Name (JP)": "不滅の戦魂・改",
         "Name (English)": "Immortal Soul Plus",
-        "Effect (English)": "Increases damage by 18%. Survive one fatal attack with 1 HP, and restore HP at regular intervals afterwards.",
+        "Name (Global)": "Unflagging Spirit Redux",
+        "Effect (JP)": "威力18%上昇。一度だけ致命傷を受けても耐え発動後徐々にHP回復。",
+        "Effect (English)": "Increases damage by 18%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds for 5 seconds.",
+        "Effect (Global)": "Increases damage by 18%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds for 5 seconds.",
         "Special": "Luminmech"
     },
     {
@@ -3380,13 +3428,17 @@
         "Special": "Luminmech"
     },
     {
+        "Name (JP)": "流光の蘇回・改",
         "Name (English)": "Lightstream Resurrection Plus",
-        "Effect (English)": "Increases damage by 17%. Fully restore PP when casting a PA/Tech while below 10% PP and bestow an additional damage bonus (3%) for 30 seconds (120s Recast).",
+        "Name (Global)": "Photon Resurrection Redux",
+        "Effect (JP)": "威力が17%上昇。PPが一定以下（10%未満）になった時PPが全回復し、一定時間威力が更に3%上昇する。",
+        "Effect (English)": "Increases damage by 17%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Lightstream Resurrection, Lightstream Melody and Lightstream Melody Plus.",
+        "Effect (Global)": "Increases damage by 17%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Photon Resurrection, Photon Serenade, and Photon Serenade Redux.",
         "Special": "Luminmech"
     },
     {
         "Name (English)": "Lightstream Melody Plus",
-        "Effect (English)": "Increases damage by 8%. Fully restore PP when casting a PA/Tech while below 10% PP and bestow an additional damage bonus (3%) for 30 seconds (120s Recast).",
+        "Effect (English)": "Increases damage by 8%. Fully restore PP when casting a PA or Technique while below 10% PP and bestow an additional damage bonus (3%) for 30 seconds (120s Recast).",
         "Special": "Luminmech"
     },
     {

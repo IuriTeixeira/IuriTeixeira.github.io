@@ -3,7 +3,7 @@ import setEffects from "../geardata/sets/sets.json"
 import variantSet from "../geardata/sets/letter-variant-sets.json"
 import sword from "../geardata/weapons/weapon-data/swords.json"
 import wiredlance from "../geardata/weapons/weapon-data/wiredlances.json"
-//import partizan from "../geardata/weapons/weapon-data/partizans.json"
+import partizan from "../geardata/weapons/weapon-data/partizans.json"
 import units from "../geardata/units/unit-data/units.json"
 import { v4 as uuidv4 } from 'uuid';
 import { useLanguageContext } from "../language-provider";
@@ -88,6 +88,10 @@ export default function displaySet(setName: string, name: string): any {
                             let wlName: any = wiredlance.find(item => item['name_en'] === set.Pieces[i + 1])
                             if (wlName) itemName = wlName['name_global']
                             break;
+                        case 'Partizan':
+                            let partizanName: any = partizan.find(item => item['name_en'] === set.Pieces[i + 1])
+                            if (partizanName) itemName = partizanName['name_global']
+                            break;
                     }
                     break;
                 case '日本語':
@@ -108,10 +112,10 @@ export default function displaySet(setName: string, name: string): any {
                             let wlName: any = wiredlance.find(item => item['name_en'] === set.Pieces[i + 1])
                             if (wlName) itemName = wlName['Name (JP)']
                             break;
-                        /* case 'Partizan':
+                        case 'Partizan':
                             let partizanName: any = partizan.find(item => item['name_en'] === set.Pieces[i + 1])
-                            if (partizanName) itemName = partizan['Name (JP)']
-                            break; */
+                            if (partizanName) itemName = partizanName['Name (JP)']
+                            break;
                     }
                     break;
             }
