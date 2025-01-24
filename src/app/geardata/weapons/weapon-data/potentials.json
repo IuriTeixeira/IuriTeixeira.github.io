@@ -2074,8 +2074,12 @@
         "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Light or Dark."
     },
     {
+        "Name (JP)": "属性追従・炎光",
         "Name (English)": "Element Tracking - Fire/Light",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Light."
+        "Name (Global)": "Element Tracking - Fire/Light",
+        "Effect (JP)": "弱点属性が炎・光・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Fire, Light, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Fire, Light, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
         "Name (English)": "Element Tracking - Fire/Wind",
@@ -2231,8 +2235,12 @@
         "Effect (English)": "On Chain Trigger activation, recover 100 PP, become invulnerable for 5 seconds, and increases damage by 14% for 60 seconds."
     },
     {
+        "Name (JP)": "真刃解放",
         "Name (English)": "Natural Release",
-        "Effect (English)": "Changes form with a Just Guard: 10% HP Recovery every 10 sec, fills Gear over time (70 seconds to max), and immunity to flinch (Sealed Form); damage increased by 12% and PP Consumption decreased by 20%, fixed chance to reduce damage taken by 99%. (Unsealed Form); returns to Sealed form if gear runs out."
+        "Name (Global)": "Unsealing Blade",
+        "Effect (JP)": "武器アクションによるJGで封印が解放され性能が変化する。\n(封印時:10秒毎に最大HPの10%回復・ソードギア自動上昇・ノックバック無効)\n(解放時:威力12%上昇・PP消費量20%減少・一定確率で被ダメ99%減少)",
+        "Effect (English)": "Performance changes when Just Guarding with a Weapon Action.\n\nSealed Form: Recovers 10% HP every 10 seconds, fills Gear gauge over time (does not affect Hero Gear), and grants immunity to flinch and knockback.\n\nUnsealed Form: Increases damage by 12%, reduces PP consumption by 20%, and when taking damage there's a 10% chance to reduce damage taken by 99%.\n\nReturns to Sealed Form when Gear is depleted.",
+        "Effect (Global)": "Performance changes when Perfect Guarding with a Weapon Action.\n\nSealed Form: Recovers 10% HP every 10 seconds, fills Focus gauge over time (does not affect Hero Focus), and grants immunity to flinch and knockback.\n\nUnsealed Form: Increases damage by 12%, reduces PP consumption by 20%, and when taking damage there's a 10% chance to reduce damage taken by 99%.\n\nReturns to Sealed Form when Focus is depleted."
     },
     {
         "Name (English)": "Thundering Blades",
@@ -2467,8 +2475,12 @@
         "Effect (English)": "Increases damage by 2%. Increases damage by an additional 3% when attacking an enemy's elemental weakness. Casts Shifta on yourself at regular intervals."
     },
     {
+        "Name (JP)": "動静不二",
         "Name (English)": "Mobility Anomaly",
-        "Effect (English)": "Increases damage by 6%. Increases damage (14%) when the weapon is sheathed for a certain period of time. Bonus disappears after a certain period of time upon attacking."
+        "Name (Global)": "Two Sides of a Coin",
+        "Effect (JP)": "威力が6%上昇。納刀状態の時間経過で威力(14%)上昇。攻撃時に時間経過で効果消失。",
+        "Effect (English)": "Increases damage by 6%. Increases damage by an additional 14% when the weapon is sheathed for 2 seconds. Effect ends 14 seconds after hitting an enemy, or when changing to a different potential.",
+        "Effect (Global)": "Increases damage by 6%. Increases damage by an additional 14% when the weapon is sheathed for 2 seconds. Effect ends 14 seconds after hitting an enemy, or when changing to a different potential."
     },
     {
         "Name (English)": "Angelic Adept",
@@ -2575,16 +2587,28 @@
         "Effect (Global)": "Increases damage by 10%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds."
     },
     {
+        "Name (JP)": "闇き幻精",
         "Name (English)": "Phantasmal Darkness",
-        "Effect (English)": "Increases damage based on the Photon Blast Gauge (5%/6%/7%). Bestow an additional effect based on the Photon Blast type when the Photon Blast is used."
+        "Name (Global)": "Dark Phantom",
+        "Effect (JP)": "フォトンブラストゲージに応じて威力が上昇する。(5%/6%/7%)\nフォトンブラスト発動時幻獣毎に異なる効果発生。",
+        "Effect (English)": "Increases damage based on the Photon Blast Gauge (5% base, 6% when above 1/3, 7% when above 2/3). Increases Native PP Recovery by 10%. When Photon Blast is used, grants an additional effect based on the Photon Blast type:\n\nHelix: +6% damage\nAjax: +60% Active PP Recovery\nKetos: +40% Natural PP Recovery\nJulius: -15% damage taken\nIlios: -20% PP consumption\n\nEffects stack if used by different Mags. Effects last until Quest ends or going back to Campship. Effects are paused when a different potential is equipped, and are resumed when this potential is equipped again.",
+        "Effect (Global)": "Increases damage based on the Photon Blast Gauge (5% base, 6% when above 1/3, 7% when above 2/3). Increases Native PP Recovery by 10%. When Photon Blast is used, grants an additional effect based on the Photon Blast type:\n\nHelix: +6% damage\nAjax: +60% Active PP Recovery\nCetus: +40% Natural PP Recovery\nJulius: -15% damage taken\nTroy: -20% PP consumption\n\nEffects stack if used by different Mags. Effects last until Quest ends or going back to Campship. Effects are paused when a different potential is equipped, and are resumed when this potential is equipped again."
     },
     {
+        "Name (JP)": "闇き聖盾",
         "Name (English)": "Darkness Shield",
-        "Effect (English)": "Increases damage by 9%. Generate a barrier (-60% Damage Taken, 25% PP Cost Reduction) at regular intervals (every 30s)."
+        "Name (Global)": "Shield of the Dark Saint",
+        "Effect (JP)": "威力が9%上昇。一定間隔で被ダメージを軽減するバリアを展開。\n(30秒で再展開・被ダメージ60%減少・消費PP25%減少)",
+        "Effect (English)": "Increases damage by 9%. Generates a barrier that reduces damage taken by 60% and reduces PP consumption by 25%. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Sacred Shield, Enticing Ward and Darkness Ward).",
+        "Effect (Global)": "Increases damage by 9%. Generates a barrier that reduces damage taken by 60% and reduces PP consumption by 25%. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Purifying Shield, Shield of Temptation and Shield of Dark Temptation)."
     },
     {
+        "Name (JP)": "闇き惑盾",
         "Name (English)": "Darkness Ward",
-        "Effect (English)": "Increases damage by 9%. Generates a barrier (Negate Knockback, 30% Automatic PP Recovery and 40% Active PP Recovery) at regular intervals (every 30s)."
+        "Name (Global)": "Shield of Dark Temptation",
+        "Effect (JP)": "威力が9%上昇。一定間隔で吹き飛ばしを無効化するバリアを展開。\n(30秒で再展開・PP自動回復量30%上昇・攻撃時PP回復量40%上昇)",
+        "Effect (English)": "Increases damage by 9%. Generates a barrier that increases Natural PP Recovery by 30% and Active PP Recovery by 40%. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Sacred Shield, Enticing Ward and Darkness Shield).",
+        "Effect (Global)": "Increases damage by 9%. Generates a barrier that increases Natural PP Recovery by 30% and Active PP Recovery by 40%. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Purifying Shield, Shield of Temptation and Shield of the Dark Saint)."
     },
     {
         "Name (English)": "Malicious Return",
@@ -2639,12 +2663,20 @@
         "Effect (English)": "Increases damage by 11%. Enhance the properties of Normal Attacks."
     },
     {
+        "Name (JP)": "集輝の重恵",
         "Name (English)": "Collective Insight",
-        "Effect (English)": "Increases damage by 6%. Grant additional bonuses based on maximum PP."
+        "Name (Global)": "Resplendent Blessings",
+        "Effect (JP)": "威力が6%上昇。最大PPが50増加ごとに追加効果が発生する。追加効果最大値300\n(最大PP150以上:PP自然回復20%、攻撃時PP回復量30%\n最大PP200以上:PP消費軽減20%\n最大PP250以上:威力9%\n最大PP300以上:10秒毎にPP回復40)",
+        "Effect (English)": "Increases damage by 6%. Grant additional bonuses for each 50 points of maximum PP above 100, as follows (effects stack):\n\n150: +20% Natural PP Recovery, +30% Active PP Recovery\n200: -20% PP consumption\n250: +9% damage\n300: Recovers 40 PP every 10 seconds",
+        "Effect (Global)": "Increases damage by 6%. Grant additional bonuses for each 50 points of maximum PP above 100, as follows (effects stack):\n\n150: +20% Natural PP Recovery, +30% Active PP Recovery\n200: -20% PP consumption\n250: +9% damage\n300: Recovers 40 PP every 10 seconds"
     },
     {
+        "Name (JP)": "創痍抗戦",
         "Name (English)": "Wounded Defensive",
-        "Effect (English)": "Increases damage by 13%. When you are below 100% HP for 20 seconds, recover 700 HP and gain 3% damage and 30% Damage Resistance for 120 seconds."
+        "Name (Global)": "Battle Wounds",
+        "Effect (JP)": "威力が13%上昇。HP減少状態が続くとHPが回復し、一定時間威力上昇と被ダメ軽減。\n(累積20秒で発動 HP回復量:700 威力:3% 軽減率:30% 効果時間:120秒)",
+        "Effect (English)": "Increases damage by 13%. After having less than 100% HP for 20 seconds, recovers 700 HP, increases damage by 3% and reduces damage taken by 30% for 120 seconds.",
+        "Effect (Global)": "Increases damage by 13%. After having less than 100% HP for 20 seconds, recovers 700 HP, increases damage by 3% and reduces damage taken by 30% for 120 seconds."
     },
     {
         "Name (English)": "Variating Redress",
@@ -2783,8 +2815,12 @@
         "Effect (English)": "Reduces Normal Attack damage. Normal Attacks Fire Chase Arrows at targets. As PP decreases, the damage of Normal Attacks and Chase Arrows Fired by this Potential's effect increases."
     },
     {
+        "Name (JP)": "聖夜の奇跡",
         "Name (English)": "Christmas Miracle",
-        "Effect (English)": "Increases damage by 10%. If one or more party members are incapacitated, consume 50% HP after 3 seconds and automatically revive all incapacitated party members (300s Recast)."
+        "Name (Global)": "Yuletide Miracle",
+        "Effect (JP)": "威力が10%上昇。PTメンバー戦闘不能時3秒経過後に自身のHPを50%消費し全員を復活。リキャスト300秒発生。",
+        "Effect (English)": "Increases damage by 10%. If one or more party members are incapacitated, after 3 seconds, consumes 50% HP and automatically revive all incapacitated party members (300s Recast).",
+        "Effect (Global)": "Increases damage by 10%. If one or more party members are incapacitated, after 3 seconds, consumes 50% HP and automatically revive all incapacitated party members (300s Recast)."
     },
     {
         "Name (JP)": "解放の牙",
@@ -2867,16 +2903,16 @@
         "Name (English)": "Effortless Mettle",
         "Name (Global)": "Sincere Courage",
         "Effect (JP)": "被ダメ毎に威力低下、時間経過で回復。威力が16％時、頑強と被ダメ40％軽減。",
-        "Effect (English)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: reduces damage taken by 40% and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped.",
-        "Effect (Global)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: reduces damage taken by 40% and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped."
+        "Effect (English)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: reduces damage taken by 40% and grants immunity to flinch and knockback. Damage does not change when a different potential is equipped.",
+        "Effect (Global)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: reduces damage taken by 40% and grants immunity to flinch and knockback. Damage does not change when a different potential is equipped."
     },
     {
         "Name (JP)": "質実なる仁",
         "Name (English)": "Effortless Charity",
         "Name (Global)": "Sincere Virtue",
         "Effect (JP)": "被ダメ毎に威力低下時間経過で回復。威力が16%時頑強と10秒毎にPPを20回復。",
-        "Effect (English)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: recovers 20 PP every 10 seconds and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped.",
-        "Effect (Global)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: recovers 20 PP every 10 seconds and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped."
+        "Effect (English)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: recovers 20 PP every 10 seconds and grants immunity to flinch and knockback. Damage does not change when a different potential is equipped.",
+        "Effect (Global)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: recovers 20 PP every 10 seconds and grants immunity to flinch and knockback. Damage does not change when a different potential is equipped."
     },
     {
         "Name (JP)": "質実なる智",
@@ -2891,8 +2927,8 @@
         "Name (English)": "Steadfast Might",
         "Name (Global)": "Steadfast Might",
         "Effect (JP)": "被ダメ毎に威力低下時間経過で回復。威力(16%)時、被ダメ軽減PP自然回復量60%上昇10秒毎PP回復、頑強。",
-        "Effect (English)": "Increases damage by 10%, and an additonal +0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken (cannot go below 10% total). When damage increase is maxed, activates the following effects: reduces damage taken by 40%, increases Natural PP Recovery by 60%, recovers 20 PP every 10 seconds, and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped.",
-        "Effect (Global)": "Increases damage by 10%, and an additonal +0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken (cannot go below 10% total). When damage increase is maxed, activates the following effects: reduces damage taken by 40%, increases Natural PP Recovery by 60%, recovers 20 PP every 10 seconds, and grants immunity to flinch/knockback. Damage does not change when a different potential is equipped."
+        "Effect (English)": "Increases damage by 10%, and an additonal +0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken (cannot go below 10% total). When damage increase is maxed, activates the following effects: reduces damage taken by 40%, increases Natural PP Recovery by 60%, recovers 20 PP every 10 seconds, and grants immunity to flinch and knockback. Damage does not change when a different potential is equipped.",
+        "Effect (Global)": "Increases damage by 10%, and an additonal +0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken (cannot go below 10% total). When damage increase is maxed, activates the following effects: reduces damage taken by 40%, increases Natural PP Recovery by 60%, recovers 20 PP every 10 seconds, and grants immunity to flinch and knockback. Damage does not change when a different potential is equipped."
     },
     {
         "Name (JP)": "質実なる奏",
@@ -3409,8 +3445,12 @@
         "Effect (English)": "Increases damage by 10%."
     },
     {
+        "Name (JP)": "闇き幻精・改",
         "Name (English)": "Phantasmal Darkness Plus",
-        "Effect (English)": "Increases damage based on the Photon Blast Gauge (18%/19%/20%). Bestow an additional effect based on the Photon Blast type when the Photon Blast is used.",
+        "Name (Global)": "Dark Phantom Redux",
+        "Effect (JP)": "フォトンブラストゲージに応じて威力が上昇する。(18%/19%/20%)\nフォトンブラスト発動時幻獣毎に異なる効果発生。",
+        "Effect (English)": "Increases damage based on the Photon Blast Gauge (18% base, 19% when above 1/3, 20% when above 2/3). Increases Native PP Recovery by 10%. When Photon Blast is used, grants an additional effect based on the Photon Blast type:\n\nHelix: +6% damage\nAjax: +60% Active PP Recovery\nKetos: +40% Natural PP Recovery\nJulius: -15% damage taken\nIlios: -20% PP consumption\n\nEffects stack if used by different Mags. Effects last until Quest ends or going back to Campship. Effects are paused when a different potential is equipped, and are resumed when this potential is equipped again.",
+        "Effect (Global)": "Increases damage based on the Photon Blast Gauge (18% base, 19% when above 1/3, 20% when above 2/3). Increases Native PP Recovery by 10%. When Photon Blast is used, grants an additional effect based on the Photon Blast type:\n\nHelix: +6% damage\nAjax: +60% Active PP Recovery\nCetus: +40% Natural PP Recovery\nJulius: -15% damage taken\nTroy: -20% PP consumption\n\nEffects stack if used by different Mags. Effects last until Quest ends or going back to Campship. Effects are paused when a different potential is equipped, and are resumed when this potential is equipped again.",
         "Special": "Luminmech"
     },
     {
@@ -3494,8 +3534,12 @@
         "Special": "Ultimate"
     },
     {
+        "Name (JP)": "真刃解放・改",
         "Name (English)": "Natural Release Plus",
-        "Effect (English)": "Changes form with a Just Guard: 15% HP Recovery every 10 sec, fills Gear over time (? seconds to max), and immunity to flinch (Sealed Form); damage increased by 20% and PP Consumption decreased by 25%, fixed chance to reduce damage taken by 99%. (Unsealed Form); returns to Sealed form if gear runs out.",
+        "Name (Global)": "Unsealing Blade Redux",
+        "Effect (JP)": "武器アクションによるJGで封印が解放され性能が変化する。\n(封印時:10秒毎に最大HPの15%回復・ソードギア自動上昇・ノックバック無効)\n(解放時:威力20%上昇・PP消費量25%減少・一定確率で被ダメ99%減少)",
+        "Effect (English)": "Performance changes when Just Guarding with a Weapon Action.\n\nSealed Form: Recovers 15% HP every 10 seconds, fills Gear gauge over time (does not affect Hero Gear), and grants immunity to flinch and knockback.\n\nUnsealed Form: Increases damage by 20%, reduces PP consumption by 25%, and when taking damage there's a 10% chance to reduce damage taken by 99%.\n\nReturns to Sealed Form when Gear is depleted.",
+        "Effect (Global)": "Performance changes when Perfect Guarding with a Weapon Action.\n\nSealed Form: Recovers 15% HP every 10 seconds, fills Focus gauge over time (does not affect Hero Focus), and grants immunity to flinch and knockback.\n\nUnsealed Form: Increases damage by 20%, reduces PP consumption by 25%, and when taking damage there's a 10% chance to reduce damage taken by 99%.\n\nReturns to Sealed Form when Focus is depleted.",
         "Special": "Ultimate"
     },
     {

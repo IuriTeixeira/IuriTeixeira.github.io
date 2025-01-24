@@ -20,15 +20,27 @@ export default function displayPotentials(potList: any[]): any[] {
             let potTypeColor: string;
             let potName: string
             let potEffect: any
-            
+
             if (pot[`Name (${localization})`]) {
                 potName = pot[`Name (${localization})`];
             } else {
                 potName = pot["Name (English)"];
                 localization = "English"
             }
-            
-            potEffect = <Text key={uuidv4()}>{pot[`Effect (${localization})`]}</Text>
+
+            if (pot[`Effect (${localization})`]) {
+                let potEffectWithLineBreaks: any[] = []
+                for (let i = 0; i < pot[`Effect (${localization})`].length; i++) {
+                    if (pot[`Effect (${localization})`][i] === '\n') {
+                        potEffectWithLineBreaks.push(<br key={uuidv4()} />)
+                    } else {
+                        potEffectWithLineBreaks.push(pot[`Effect (${localization})`][i])
+                    }
+                }
+                potEffect = <Text key={uuidv4()}>{potEffectWithLineBreaks}</Text>
+            }else{
+                potEffect = <Text key={uuidv4()}>{pot[`Effect (${localization})`]}</Text>
+            }
 
             /*potEffect =
                 <List>
@@ -36,7 +48,7 @@ export default function displayPotentials(potList: any[]): any[] {
                     <List.Item>Lv2: {pot[`Effect (${localization})`][1]}</List.Item>
                     <List.Item>Lv3: {pot[`Effect (${localization})`][2]}</List.Item>
                 </List>*/
-            
+
             switch (pot.Special) {
                 case 'New-Type':
                     potTypeColor = 'paleturquoise'

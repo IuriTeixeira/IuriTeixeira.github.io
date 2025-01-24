@@ -369,7 +369,7 @@ export default function WeaponTableComponent({ data, type }) {
                                                 if (row[key].includes("武装エクステンド")) {
                                                     return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
                                                 } else {
-                                                    return <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row[key]}`}>{row[key]}</Link></Table.Td>
+                                                    return <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row[key].replace('-NT','')}`}>{row[key]}</Link></Table.Td>
                                                 }
                                             case 'name_en':
                                             case 'name_global':
