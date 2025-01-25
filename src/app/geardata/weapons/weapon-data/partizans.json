@@ -231,24 +231,6 @@
         "Set":null
     },
     {
-        "Name (JP)": "バルディス",
-        "name_en": "Berdys",
-        "name_global": null,
-        "Rarity": 4,
-        "Requirement": ["S-ATK",155],
-        "S-ATK": 144,
-        "R-ATK": null,
-        "T-ATK": null,
-        "SAF": null,
-        "Abilities": null,
-        "Potential": null,
-        "Element": null,
-        "PA_enabled": null,
-        "Classes": ["Hu"],
-        "SSA Slots": null,
-        "Set":null
-    },
-    {
         "Name (JP)": "グングニル",
         "name_en": "Gungnir",
         "name_global": null,
@@ -2652,7 +2634,7 @@
         "T-ATK": null,
         "SAF": "Sentence Triple",
         "Abilities": null,
-        "Potential": ["Anthesis Trainer"],
+        "Potential": ["Anthesis Trainer (Qliphad)"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Hu"],

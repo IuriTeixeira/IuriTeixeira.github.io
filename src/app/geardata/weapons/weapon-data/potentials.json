@@ -1064,7 +1064,7 @@
         "Effect (Global)": "Increases damage against Nightfallers by 20%."
     },
     {
-        "Name (JP)": "Dragon's Authority",
+        "Name (JP)": "龍の威光",
         "Name (English)": "Dragon's Authority",
         "Name (Global)": "Dragon's Authority",
         "Effect (JP)": "龍族と世壊種(AM)以外に与えるダメージが上昇する。(12%/14%/16%)",
@@ -1789,12 +1789,20 @@
         "Effect (English)": "Increases the damage of Moment Gale by 20%."
     },
     {
+        "Name (JP)": "大日霊貴",
         "Name (English)": "Great Sun Deity",
-        "Effect (English)": "Increases damage by 12% during a fine weather."
+        "Name (Global)": "Great Sun Deity",
+        "Effect (JP)": "天候が晴れの時にダメージが上昇する。(12%)",
+        "Effect (English)": "Increases damage by 12% during Clear weather. Does not work in areas that do not have weather changes.",
+        "Effect (Global)": "Increases damage by 12% during Clear weather. Does not work in areas that do not have weather changes."
     },
     {
+        "Name (JP)": "極光の功",
         "Name (English)": "Aurora Blessing",
-        "Effect (English)": "Increases damage depending on the weather in Tundra (Snow: 10%, Blizzard: 20%, Diamond Dust: 30%, Aurora: 40%)."
+        "Name (Global)": "Aurora Blessing",
+        "Effect (JP)": "凍土の天候変化でダメージが増加する。最大はオーロラ時。\n(雪:10%/吹雪:20%/ダイヤモンドダスト:30%/オーロラ:40%)",
+        "Effect (English)": "Increases damage based on the weather in the Tundra area (Snow: 10%, Blizzard: 20%, Diamond Dust: 30%, Aurora: 40%).",
+        "Effect (Global)": "Increases damage based on the weather in the Tundra area (Snow: 10%, Blizzard: 20%, Diamond Dust: 30%, Aurora: 40%)."
     },
     {
         "Name (English)": "Meteor Blessing",
@@ -1817,8 +1825,12 @@
         "Effect (English)": "Increases attack damage during Just Guard by 700%."
     },
     {
+        "Name (JP)": "闇き解放",
         "Name (English)": "Darkness Release",
-        "Effect (English)": "Increases damage by 12%, PP recovery rate increased by 10%."
+        "Name (Global)": "Darkness Release",
+        "Effect (JP)": "与ダメージを12%、PP自動回復速度を10%上昇させる。",
+        "Effect (English)": "Increases damage by 12%, and Natural PP Recovery by 10%.",
+        "Effect (Global)": "Increases damage by 12%, and Natural PP Recovery by 10%."
     },
     {
         "Name (English)": "Anti-Air Training",
@@ -1850,7 +1862,7 @@
     },
     {
         "Name (English)": "Murderous Assault",
-        "Effect (English)": "Increases Critical damage by 10% and Damage to Weak Points by 6%."
+        "Effect (English)": "Increases Critical Hit damage by 10% and Damage to Weak Points by 6%."
     },
     {
         "Name (English)": "Light Conversion",
@@ -1898,8 +1910,12 @@
         "Special": "New-Type"
     },
     {
+        "Name (JP)": "機装の印",
         "Name (English)": "Machine's Mark",
-        "Effect (English)": "Decreases PP Recovery by 60%, increases damage by 10%, increases Critical Hit Rate by 13%, and increases Critical Hit Damage by 7%."
+        "Name (Global)": "Gear Ward",
+        "Effect (JP)": "PPの回復効果が減少(-60%)し、クリティカル性能と与ダメージが10%上昇。\n(クリティカル率+13%　クリティカル威力+7%)",
+        "Effect (English)": "Increases damage by 10%, Critical Hit Rate by 13% and Critical Hit damage by 7%, but reduces Natural and Active PP Recovery by 60%.",
+        "Effect (Global)": "Increases damage by 10%, Critical Hit Rate by 13% and Critical Hit damage by 7%, but reduces Natural and Active PP Recovery by 60%."
     },
     {
         "Name (English)": "New-Type's Oath",
@@ -1910,8 +1926,12 @@
         "Effect (English)": "Gain a 1% damage increases every time you kill an enemy. Damage caps at 15%."
     },
     {
+        "Name (JP)": "錬磨天恵",
         "Name (English)": "Heavenly Blessing",
-        "Effect (English)": "Increases damage by 10%, reduce damage taken by 5%, and reduce PP consumption by 10%."
+        "Name (Global)": "Honed Blessings",
+        "Effect (JP)": "与ダメージが10%上昇し、被ダメージが5%、PP消費量が10%減少。",
+        "Effect (English)": "Increases damage by 10%, reduces damage taken by 5%, and reduces PP consumption by 10%.",
+        "Effect (Global)": "Increases damage by 10%, reduces damage taken by 5%, and reduces PP consumption by 10%."
     },
     {
         "Name (JP)": "刹那の決撃",
@@ -1958,8 +1978,12 @@
         "Effect (Global)": "Increases damage dealt to weak points by Ranged attacks by 9%."
     },
     {
+        "Name (JP)": "龍の心火",
         "Name (English)": "Dragon's Infuriation",
-        "Effect (English)": "Increases Critical damage by 16% and Critical Hit Rate by 25% when HP is above 50%."
+        "Name (Global)": "Dragon's Infuriation",
+        "Effect (JP)": "クリティカル威力が16%、HP50%以上の時クリティカル率25%上昇。",
+        "Effect (English)": "Increases Critical Hit damage by 16% and Critical Hit Rate by 25% when HP is above 50%.",
+        "Effect (Global)": "Increases Critical Hit damage by 16% and Critical Hit Rate by 25% when HP is above 50%."
     },
     {
         "Name (English)": "Insentient Innocence",
@@ -2166,8 +2190,8 @@
         "Name (English)": "Fighter Tactics",
         "Name (Global)": "Fighter Tactics",
         "Effect (JP)": "サブクラスがファイター時、クリティカル率(30%)・クリティカル威力(14%)上昇。",
-        "Effect (English)": "Increases Critical Hit Rate by 30% and Critical damage by 14%  when Fighter is set as Subclass.",
-        "Effect (Global)": "Increases Critical Hit Rate by 30% and Critical damage by 14%  when Fighter is set as Subclass."
+        "Effect (English)": "Increases Critical Hit Rate by 30% and Critical Hit damage by 14%  when Fighter is set as Subclass.",
+        "Effect (Global)": "Increases Critical Hit Rate by 30% and Critical Hit damage by 14%  when Fighter is set as Subclass."
     },
     {
         "Name (JP)": "勇士の闘法",
@@ -2178,8 +2202,12 @@
         "Effect (Global)": "Increases damage by 12% and reduce PP consumption by 30% when Braver is set as Subclass."
     },
     {
+        "Name (JP)": "錬磨天恵・光翼",
         "Name (English)": "Heavenly Blessing: Light Wings",
-        "Effect (English)": "Increases damage, Natural PP Recovery, and Active PP Recovery by 10%, reduce damage taken by 5%, and decreases PP Consumption by 10%."
+        "Name (Global)": "Honed Blessings: Wing",
+        "Effect (JP)": "威力・PP回復効果が10%上昇、被ダメージが5%、PP消費量が10%減少。",
+        "Effect (English)": "Increases damage, Natural PP Recovery, and Active PP Recovery by 10%, reduces damage taken by 5%, and decreases PP Consumption by 10%.",
+        "Effect (Global)": "Increases damage, Natural PP Recovery, and Active PP Recovery by 10%, reduces damage taken by 5%, and decreases PP Consumption by 10%."
     },
     {
         "Name (English)": "Perennial Conqueror",
@@ -2228,7 +2256,7 @@
     },
     {
         "Name (English)": "Murderous Raid",
-        "Effect (English)": "Increases Critical Hit Rate by 5%, increases Critical damage by 10%, and Damage on Weak Points by 6%."
+        "Effect (English)": "Increases Critical Hit Rate by 5%, increases Critical Hit damage by 10%, and Damage on Weak Points by 6%."
     },
     {
         "Name (English)": "Monsoon Machinegun",
@@ -2271,8 +2299,12 @@
         "Effect (English)": "Recover PP when an enemy is killed nearby (3 PP/Enemy)."
     },
     {
+        "Name (JP)": "英雄の凱歌",
         "Name (English)": "Heroic Victory",
-        "Effect (English)": "Increases damage by 12%. Increases the rate of Hero Increases accumulation by +100%."
+        "Name (Global)": "Heroic Anthem",
+        "Effect (JP)": "威力が12%上昇。ヒーローブーストを強化し威力増加速度(100%)が上昇。",
+        "Effect (English)": "Increases damage by 12%. Increases the rate of Hero Boost accumulation by +100%.",
+        "Effect (Global)": "Increases damage by 12%. Increases the rate of Heroic Boost accumulation by +100%."
     },
     {
         "Name (English)": "Elusive Offense",
@@ -2343,8 +2375,12 @@
         "Effect (English)": "Increases the damage of Normal Attacks by 50%. Increases the damage of all other attacks by 6%."
     },
     {
+        "Name (JP)": "千年の輝き",
         "Name (English)": "Millennium Blaze",
-        "Effect (English)": "Increases damage by 10%."
+        "Name (Global)": "Enduring Sparkle",
+        "Effect (JP)": "威力が10%上昇する。",
+        "Effect (English)": "Increases damage by 10%.",
+        "Effect (Global)": "Increases damage by 10%."
     },
     {
         "Name (English)": "Soaring Brilliance",
@@ -2363,8 +2399,12 @@
         "Effect (English)": "Increases damage by 10%. Successfully evade an attack with Sway to summon a giant fist."
     },
     {
+        "Name (JP)": "天照大日霊",
         "Name (English)": "Divine Great Sun Deity",
-        "Effect (English)": "Increases damage by 10%. During Clear Weather, gain an additional 3% damage bonus."
+        "Name (Global)": "Sunlit Deity",
+        "Effect (JP)": "威力が10%上昇。天候が晴れの時、さらに3%の威力上昇を追加。",
+        "Effect (English)": "Increases damage by 10%. Increases damage by an additional 3% during Clear weather.",
+        "Effect (Global)": "Increases damage by 10%. Increases damage by an additional 3% during Clear weather."
     },
     {
         "Name (JP)": "闘護昂浄の陣",
@@ -2511,8 +2551,12 @@
         "Effect (English)": "Increases damage based on the Photon Blast Gauge (11%/12%/13%). Bestow an additional effect based on the Photon Blast type when the Photon Blast is used."
     },
     {
+        "Name (JP)": "雷刃の騎士",
         "Name (English)": "Thunderblade Knight",
-        "Effect (English)": "Increases damage by 23% and recovers HP when attacking if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Lightning."
+        "Name (Global)": "Thunderblade Knight",
+        "Effect (JP)": "弱点属性が雷・武器属性のいずれかと一致時、威力(23%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Lightning or the weapon's element, increases damage by 23% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Lightning or the weapon's element, increases damage by 23% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
         "Name (English)": "Swift Courage",
@@ -2563,8 +2607,8 @@
         "Name (English)": "Lightstream Resurrection",
         "Name (Global)": "Photon Resurrection",
         "Effect (JP)": "威力が10%上昇。PPが一定以下（10%未満）になった時PPが全回復し、一定時間威力が更に3%上昇する。",
-        "Effect (English)": "Increases damage by 17%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Lightstream Resurrection Plus, Lightstream Melody and Lightstream Melody Plus.",
-        "Effect (Global)": "Increases damage by 17%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Photon Resurrection Redux, Photon Serenade, and Photon Serenade Redux."
+        "Effect (English)": "Increases damage by 10%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Lightstream Resurrection Plus, Lightstream Melody and Lightstream Melody Plus.",
+        "Effect (Global)": "Increases damage by 10%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Photon Resurrection Redux, Photon Serenade, and Photon Serenade Redux."
     },
     {
         "Name (English)": "Star-bound Recollection",
@@ -2635,8 +2679,12 @@
         "Effect (English)": "Increases damage by 11%. Inflict damage while running. Unleash a Shockwave attack when you disables running."
     },
     {
+        "Name (JP)": "強闘剛心",
         "Name (English)": "Colossal Soul",
-        "Effect (English)": "Increases damage by 20% against bosses. Recover 4 PP per second when near bosses."
+        "Name (Global)": "Mighty Spirit",
+        "Effect (JP)": "強敵への威力が上昇(20%)。強敵が近くにいる時一定時間毎にPPが回復。",
+        "Effect (English)": "Increases damage by 20% against bosses. Recovers 4 PP per second when near a boss.",
+        "Effect (Global)": "Increases damage by 20% against bosses. Recovers 4 PP per second when near a boss."
     },
     {
         "Name (English)": "Revenant Marker",
@@ -2727,8 +2775,12 @@
         "Effect (English)": "Increases damage by 10%. Increases Normal Attack and Sphere Eraser activation speed."
     },
     {
+        "Name (JP)": "春花秋月",
         "Name (English)": "Seasonal Change",
-        "Effect (English)": "Increases damage by 10%. Gain a bonus that evolves over time."
+        "Name (Global)": "Budding Flower Harvest",
+        "Effect (JP)": "威力が10%上昇。時間経過で変化する強化効果を得る。",
+        "Effect (English)": "Increases damage by 10%. Gain a bonus that evolves over time.\n\nRed: +3% damage, -10% PP consumption.\nYellow: +30% Natural PP Recovery, +40% Active PP Recovery.\nRed+Yellow: Both effects combined.",
+        "Effect (Global)": "Increases damage by 10%. Gain a bonus that evolves over time.\n\nRed: +3% damage, -10% PP consumption.\nYellow: +30% Natural PP Recovery, +40% Active PP Recovery.\nRed+Yellow: Both effects combined."
     },
     {
         "Name (JP)": "怨嗟の祈り",
@@ -3067,8 +3119,12 @@
         "Special": "Hidden"
     },
     {
+        "Name (JP)": "万象の祝福",
         "Name (English)": "Myriad Blessings",
-        "Effect (English)": "Increases HP recovery by 30%, increases attack PP recovery by 60%, and increases damage by 15%.",
+        "Name (Global)": "Myriad Blessings",
+        "Effect (JP)": "HP回復量を30%、攻撃時のPP回復量を60%、威力を15%上昇させる。",
+        "Effect (English)": "Increases HP recovery by 30%, Active PP Recovery by 60%, and damage by 15%.",
+        "Effect (Global)": "Increases HP recovery by 30%, Active PP Recovery by 60%, and damage by 15%.",
         "Special": "Hidden"
     },
     {
@@ -3146,8 +3202,12 @@
         "Special": "Hidden"
     },
     {
+        "Name (JP)": "瞬拍の烈閃",
         "Name (English)": "Glimmering Rhythm",
-        "Effect (English)": "Increases the damage of Just Attacks by 22%. Increases the PP Recovery of non-JA attacks by 40%.",
+        "Name (Global)": "Glimmering Rhythm",
+        "Effect (JP)": "JA時の威力が22%上昇、通常攻撃の非JA時PP回復量が40%上昇。",
+        "Effect (English)": "Increases the damage of Just Attacks by 22%. Increases Active PP Recovery of non-Just Attacks by 40%.",
+        "Effect (Global)": "Increases the damage of Perfect Attacks by 22%. Increases Active PP Recovery of non-Perfect Attacks by 40%.",
         "Special": "Weaponoid"
     },
     {
@@ -3210,8 +3270,12 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "必撃猛襲",
         "Name (English)": "Sure-Strike Assault",
-        "Effect (English)": "Increases Critical damage by 18% and Critical Hit Rate by 70%.",
+        "Name (Global)": "Sure-Strike Assault",
+        "Effect (JP)": "クリティカル威力が18%、クリティカル率が70%上昇する。",
+        "Effect (English)": "Increases Critical Hit damage by 18% and Critical Hit Rate by 70%.",
+        "Effect (Global)": "Increases Critical Hit damage by 18% and Critical Hit Rate by 70%.",
         "Special": "Weaponoid"
     },
     {
@@ -3255,8 +3319,12 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "封龍の咆哮",
         "Name (English)": "Sealing Dragon's Roar",
+        "Name (Global)": "Howl of the Sealed Dragon",
+        "Effect (JP)": "通常攻撃のダメージが80%上昇する。",
         "Effect (English)": "Increases the damage of Normal Attacks by 80%.",
+        "Effect (Global)": "Increases the damage of Normal Attacks by 80%.",
         "Special": "Weaponoid"
     },
     {
@@ -3269,8 +3337,12 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "幻精転源",
         "Name (English)": "Phantasmal Source",
+        "Name (Global)": "Phantasmal Source",
+        "Effect (JP)": "フォトンブラストゲージに応じて威力が変動し、少ないほど上昇する。(3%～23%)",
         "Effect (English)": "Damage increases inversely with the Photon Blast Gauge. (3 ~ 23%)",
+        "Effect (Global)": "Damage increases inversely with the Photon Blast Gauge. (3 ~ 23%)",
         "Special": "Weaponoid"
     },
     {
@@ -3304,13 +3376,21 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "瞬護の連華",
         "Name (English)": "Prestigious Protection",
-        "Effect (English)": "Increases damage and PP Recovery for every successful Just Guard. (5%/JG) Bonus is lost when damage is received outside of Guard. (15% MAX)",
+        "Name (Global)": "Garland Guard",
+        "Effect (JP)": "ジャストガード毎に威力・PP回復効果上昇。ガード以外の被ダメージで消失。\n(威力5%(上限15%)　PP回復効果7%(上限20%))",
+        "Effect (English)": "For every successful Just Guard, increases damage by 5% (up to 15%) and PP Recovery by 7% (up to 20%). Effect ends when taking damage without Just Guarding",
+        "Effect (Global)": "For every successful Perfect Guard, increases damage by 5% (up to 15%) and PP Recovery by 7% (up to 20%). Effect ends when taking damage without Perfect Guarding",
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "激闘心",
         "Name (English)": "Extravagant Fighter",
+        "Name (Global)": "Extravagant Fighter",
+        "Effect (JP)": "強敵への与ダメージが21%上昇、かつ通常攻撃の場合PP回復量上昇。(20%)",
         "Effect (English)": "Increases damage against bosses by 21%. Increases Active PP Recovery by 20%.",
+        "Effect (Global)": "Increases damage against bosses by 21%. Increases Active PP Recovery by 20%.",
         "Special": "Weaponoid"
     },
     {
@@ -3400,8 +3480,12 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "精緻なる演算",
         "Name (English)": "Refining Operation",
-        "Effect (English)": "Increases damage based on DMG dealt, decreases DMG received based on DMG taken, decreases PP consumption based on PP consumed (16% MAX: 1% per 50,000 DMG Dealt / 300 DMG Taken / 100 PP Consumed)",
+        "Name (Global)": "Delicate Undertaking",
+        "Effect (JP)": "ダメージ量・被ダメージ量・発動時PP消費量に応じて能力が強化される。(上限16%)\n(与ダメージ50,000・被ダメージ300・消費PP100ごとにそれぞれ1%上昇)",
+        "Effect (English)": "Increases damage dealt by 1% per 50,000 damage dealt, reduces damage taken by 1% per 300 damage taken, and reduces PP consumption by 1% per 100 PP spent, up to 16% each separately. Effect ends if a different potential is equipped.",
+        "Effect (Global)": "Increases damage dealt by 1% per 50,000 damage dealt, reduces damage taken by 1% per 300 damage taken, and reduces PP consumption by 1% per 100 PP spent, up to 16% each separately. Effect ends if a different potential is equipped.",
         "Special": "Arena"
     },
     {
@@ -3410,13 +3494,29 @@
         "Special": "Arena"
     },
     {
+        "Name (JP)": "錬成開花",
         "Name (English)": "Anthesis Trainer",
+        "Name (Global)": "Augmented Blossoming",
+        "Effect (JP)": "威力が14%上昇。特殊能力のステータス変化を2倍にする。",
         "Effect (English)": "Increases damage by 14%. Doubles the effects of Special Abilities attached to the Weapon. (Only applies to HP, PP, ATK, DEX and DEF stats on Abilities)",
+        "Effect (Global)": "Increases damage by 14%. Doubles the effects of Augments attached to the Weapon. (Only applies to HP, PP, ATK, DEX and DEF stats on Augments)",
         "Special": "Qliphad"
     },
     {
+        "Name (JP)": "錬成開花(クリファド)",
+        "Name (English)": "Anthesis Trainer (Qliphad)",
+        "Name (Global)": "Augmented Blossoming (Clifard)",
+        "Effect (JP)": "威力が14%上昇。特殊能力のステータス変化を2倍にする。",
+        "Effect (English)": "Increases damage by 14%. Doubles the effects of Special Abilities attached to the Weapon. (Only applies to HP, PP, ATK, DEX and DEF stats on Abilities)",
+        "Effect (Global)": "Increases damage by 14%. Doubles the effects of Augments attached to the Weapon. (Only applies to HP, PP, ATK, DEX and DEF stats on Augments)"
+    },
+    {
+        "Name (JP)": "錬成練化",
         "Name (English)": "Tempering Trainer",
-        "Effect (English)": "Increases damage and reduces PP Consumption based on the number of Special Abilities attached. (1.625% damage and 2.5% PP cost reduction per Ability)",
+        "Name (Global)": "Practiced Augmentation",
+        "Effect (JP)": "特殊能力数に応じて威力が上昇しPP消費量が減少する。\n(特殊能力数×1.625%(威力)・2.5%(PP消費量))",
+        "Effect (English)": "Increases damage by 1.625% for each Special Ability on the weapon, and reduces PP Consumption by 2.5% for each Special Ability on the weapon.",
+        "Effect (Global)": "Increases damage by 1.625% for each Augment on the weapon, and reduces PP Consumption by 2.5% for each Augment on the weapon.",
         "Special": "Ether"
     },
     {
@@ -3558,8 +3658,12 @@
         "Special": "Ultimate"
     },
     {
+        "Name (JP)": "英雄の凱歌・改",
         "Name (English)": "Heroic Victory Plus",
-        "Effect (English)": "Increases damage by 22%. Increases the rate of Hero Increases accumulation by +100%.",
+        "Name (Global)": "Heroic Anthem Redux",
+        "Effect (JP)": "威力が22%上昇。ヒーローブーストを強化し威力増加速度(100%)が上昇。",
+        "Effect (English)": "Increases damage by 22%. Increases the rate of Hero Boost accumulation by +100%.",
+        "Effect (Global)": "Increases damage by 22%. Increases the rate of Heroic Boost accumulation by +100%.",
         "Special": "Ultimate"
     },
     {

@@ -2065,7 +2065,7 @@
         "R-ATK":null,
         "T-ATK":null,
         "Abilities":["Vinculum","Stamina III","Spirita III"],
-        "Potential":["Colossal Spirit", "Extravagant Fighter"],
+        "Potential":["Colossal Spirit"],
         "Element":["Light",20],
         "Classes":["Hu","Hr"],
         "SSA Slots":null,
@@ -2509,7 +2509,7 @@
         "Set":"Zeinesis"
     },
     {
-        "Name (JP)": "ゼイネシスキャリバー",
+        "Name (JP)": "クリファドキャリバー",
         "name_en":"Qliphad Calibur",
         "name_global": "Clifard Calibur",
         "Rarity": 13,
@@ -2519,7 +2519,7 @@
         "T-ATK":null,
         "SAF":"Sentence Triple",
         "Abilities":null,
-        "Potential":["Anthesis Trainer"],
+        "Potential":["Anthesis Trainer (Qliphad)"],
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":null,
@@ -2968,7 +2968,7 @@
         "T-ATK":null,
         "SAF":"S2:Powering Intent",
         "Abilities":null,
-        "Potential":["Millennium Blaze"],
+        "Potential":["Colossal Soul"],
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2]

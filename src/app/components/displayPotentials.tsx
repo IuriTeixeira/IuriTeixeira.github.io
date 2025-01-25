@@ -22,9 +22,9 @@ export default function displayPotentials(potList: any[]): any[] {
             let potEffect: any
 
             if (pot[`Name (${localization})`]) {
-                potName = pot[`Name (${localization})`];
+                potName = pot[`Name (${localization})`].replace('(クリファド)','').replace(' (Qliphad)','').replace(' (Clifard)','');
             } else {
-                potName = pot["Name (English)"];
+                potName = pot["Name (English)"].replace('(クリファド)','').replace(' (Qliphad)','').replace(' (Clifard)','');
                 localization = "English"
             }
 
