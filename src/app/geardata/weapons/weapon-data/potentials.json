@@ -2054,20 +2054,32 @@
         "Effect (English)": "Increases damage when attacking from the air by 10%."
     },
     {
-        "Name (English)": "裂破の必撃",
-        "Effect (English)": "Increases critical chance by 30% during break stance."
+        "Name (JP)": "裂破の必撃",
+        "Name (English)": "Devastating Blow",
+        "Name (Global)": "Devastating Blow",
+        "Effect (JP)": "ブレイクスタンス時のクリティカル発生率を上昇させる。(30%)",
+        "Effect (English)": "Increases critical chance by 30% during Break Stance.",
+        "Effect (Global)": "Increases critical chance by 30% during Break Stance."
     },
     {
         "Name (English)": "Stimulating Radiance",
         "Effect (English)": "Increases the damage of photon blades by ?% during photon blade fever."
     },
     {
-        "Name (English)": "天輪滅砲",
-        "Effect (English)": "Increases the damage of Sphere Eraser by 20%."
+        "Name (JP)": "天輪滅砲",
+        "Name (English)": "Heaven's Wheel Annihilation Cannon",
+        "Name (Global)": "Heaven's Wheel Annihilation Cannon",
+        "Effect (JP)": "スフィアイレイザーの威力を上昇させる。(20%)",
+        "Effect (English)": "Increases the damage of Sphere Eraser by 20%.",
+        "Effect (Global)": "Increases the damage of Photonic Laser by 20%."
     },
     {
-        "Name (English)": "廻追翔弓",
-        "Effect (English)": "Reduces PP consumption for Chase Arrow by 65%."
+        "Name (JP)": "廻追翔弓",
+        "Name (English)": "Pursuing Bow",
+        "Name (Global)": "Pursuing Bow",
+        "Effect (JP)": "チェイスアロウのPP消費量を減少させる。(35%/50%/65%)",
+        "Effect (English)": "Reduces PP consumption of Chase Arrow by 65%.",
+        "Effect (Global)": "Reduces PP consumption of Chaser Arrow by 65%."
     },
     {
         "Name (English)": "Kickdance Arrow",
@@ -2206,8 +2218,12 @@
         "Effect (English)": "Increases damage by 11% and increases Automatic PP Regeneration by 100% in midair. Increases Active PP Regeneration by 40% on the ground."
     },
     {
-        "Name (English)": "風の囁き",
-        "Effect (English)": "Reduces the charge time of Wind Techniques by 19%."
+        "Name (JP)": "風の囁き",
+        "Name (English)": "Wind's Whisper",
+        "Name (Global)": "Wind's Whisper",
+        "Effect (JP)": "風属性テクニックのチャージ時間を短縮する。(19%)",
+        "Effect (English)": "Reduces the charge time of Wind Techniques by 19%.",
+        "Effect (Global)": "Reduces the charge time of Wind Techniques by 19%."
     },
     {
         "Name (JP)": "刹那の極撃",
@@ -2287,7 +2303,7 @@
     },
     {
         "Name (JP)": "吸気光弾",
-        "Name (English)": "Photon Capture Shot",
+        "Name (English)": "Inspiring Light",
         "Name (Global)": "Photon Capture Shot",
         "Effect (JP)": "通常攻撃の威力低下(-50%)・PP回復量上昇(+10)、通常攻撃以外の威力が10%上昇。\n後継クラスは適用外",
         "Effect (English)": "Decreases the damage of Normal Attacks by 50%. Increases Active PP recovery by 10 per hit, and damage of non-Normal Attacks by 10%.",
@@ -2424,7 +2440,7 @@
     },
     {
         "Name (JP)": "縛刻の闇術",
-        "Name (English)": "Binding Darkness",
+        "Name (English)": "Restrained Dark Art",
         "Name (Global)": "Dark Incantation",
         "Effect (JP)": "ナ・メギドを除く闇属性テクニックのチャージ時間(50%)増加、威力(30%)が上昇。",
         "Effect (English)": "Increases the damage of Dark Techniques by 30%, but increases their charge time by 50%. Excludes Namegid.",
@@ -3490,13 +3506,21 @@
         "Special": "Weaponoid"
     },
     {
-        "Name (English)": "縛光撃陣",
+        "Name (JP)": "縛光撃陣",
+        "Name (English)": "Binding Light Formation",
+        "Name (Global)": "Binding Light Formation",
+        "Effect (JP)": "ショック発生率上昇。ショック状態の敵への与ダメージ(27%)上昇。",
         "Effect (English)": "Increases Shock Status Rate. Increases damage by 27% when attacking an enemy that is inflicted with Shock.",
+        "Effect (Global)": "Increases Shock Status Rate. Increases damage by 27% when attacking an enemy that is inflicted with Shock.",
         "Special": "Weaponoid"
     },
     {
-        "Name (English)": "炎祈浄化",
+        "Name (JP)": "炎祈浄化",
+        "Name (English)": "Blazing Prayer of Purification",
+        "Name (Global)": "Blazing Prayer of Purification",
+        "Effect (JP)": "バーン発生率上昇。バーン状態の敵への与ダメージ(20%/24%/27%)上昇。",
         "Effect (English)": "Increases Burn Status Rate. Increases damage by 27% when attacking an enemy that is afflicted with Burn.",
+        "Effect (Global)": "Increases Burn Status Rate. Increases damage by 27% when attacking an enemy that is afflicted with Burn.",
         "Special": "Weaponoid"
     },
     {
@@ -3547,8 +3571,12 @@
         "Special": "Weaponoid"
     },
     {
-        "Name (English)": "血闇の双魔刃",
+        "Name (JP)": "血闇の双魔刃",
+        "Name (English)": "Twin Demonic Blades of Bloody Darkness",
+        "Name (Global)": "Demon Challenger",
+        "Effect (JP)": "弱点へのダメージが(16%)、クリティカル発生率が(70%)上昇する。",
         "Effect (English)": "Increases damage by 16% on weak points and increases Critical Hit Rate by 70%.",
+        "Effect (Global)": "Increases damage by 16% on weak points and increases Critical Hit Rate by 70%.",
         "Special": "Weaponoid"
     },
     {
@@ -3571,8 +3599,12 @@
         "Special": "Weaponoid"
     },
     {
-        "Name (English)": "影纏う双翼",
-        "Effect (English)": "Increases damage by 8% and PP Recovery by 10% while attacking in midair.",
+        "Name (JP)": "影纏う双翼",
+        "Name (English)": "Umbral Wings",
+        "Name (Global)": "Umbral Wings",
+        "Effect (JP)": "Increases damage by 8% and PP Recovery by 10% while airborne.",
+        "Effect (English)": "Increases damage by 8% and PP Recovery by 10% while airborne.",
+        "Effect (Global)": "Increases damage by 8% and PP Recovery by 10% while airborne.",
         "Special": "Weaponoid"
     },
     {
