@@ -1642,7 +1642,7 @@
         "SSA Slots":null
     },
     {
-        "Name (JP)": "シャープサイクラー",
+        "Name (JP)": "ギグルドミナ",
         "name_en":"Gigur Domina",
         "name_global": null,
         "Rarity": 11,
@@ -2604,7 +2604,7 @@
         "SSA Slots":null
     },
     {
-        "Name (JP)": "イヴリダハンダー",
+        "Name (JP)": "クリシスハンダー",
         "name_en":"Cleasis Hander",
         "name_global": "Cleasis Hander",
         "Rarity": 13,
@@ -2620,7 +2620,7 @@
         "SSA Slots":null
     },
     {
-        "Name (JP)": "イヴリダハンダー",
+        "Name (JP)": "シュベルハンダー",
         "name_en":"Schvelle Hander",
         "name_global": "Schvelle Hander",
         "Rarity": 13,
@@ -2862,6 +2862,22 @@
         "SSA Slots":[1,2,3]
     },
     {
+        "Name (JP)": "グレンノオオダチ",
+        "name_en":"Guren no Odachi",
+        "name_global": "Guren no Ohdachi",
+        "Rarity": 14,
+        "Requirement":["S-ATK",730],
+        "S-ATK":1383,
+        "R-ATK":null,
+        "T-ATK":null,
+        "SAF":"Phrase Weak",
+        "Abilities":null,
+        "Potential":["Crimson Flame Oath"],
+        "Element": null,
+        "Classes":["Hu","Hr"],
+        "SSA Slots":null
+    },
+    {
         "Name (JP)": "セレファウルス・ザラ",
         "name_en":"Ceres Fouls Zara",
         "name_global": "Ceres Fouls-Zara",
@@ -2876,22 +2892,6 @@
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":[1,2,3]
-    },
-    {
-        "Name (JP)": "シエンノオオダチ",
-        "name_en":"Guren no Odachi",
-        "name_global": "Guren no Ohdachi",
-        "Rarity": 14,
-        "Requirement":["S-ATK",730],
-        "S-ATK":1383,
-        "R-ATK":null,
-        "T-ATK":null,
-        "SAF":"Phrase Weak",
-        "Abilities":null,
-        "Potential":["Crimson Flame Oath"],
-        "Element": null,
-        "Classes":["Hu","Hr"],
-        "SSA Slots":null
     },
     {
         "Name (JP)": "リュミエルラーミナ",
@@ -3536,7 +3536,7 @@
         "SSA Slots":[1,4,5]
     },
     {
-        "Name (JP)": "フルクシオヴェルラ",
+        "Name (JP)": "リンザーヴェルラ",
         "name_en":"Rinza Verla",
         "name_global": "Rinser Vella",
         "Rarity": 15,

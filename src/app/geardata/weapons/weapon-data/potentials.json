@@ -804,8 +804,8 @@
         "Name (English)": "Phantasmal Blessing",
         "Name (Global)": "Phantasmal Blessing",
         "Effect (JP)": "フォトンブラストゲージに応じて威力が変動する。(6%/9%/10%)",
-        "Effect (English)": "Increases damage based on Photon Blast Gauge. Increases damage by 6%/9%/10% at minimum/half/full status of the Photon Blast Gauge.",
-        "Effect (Global)": "Increases damage based on Photon Blast Gauge. Increases damage by 6%/9%/10% at minimum/half/full status of the Photon Blast Gauge."
+        "Effect (English)": "Increases damage by 6%/9%/10% at minimum/half/full status of the Photon Blast Gauge.",
+        "Effect (Global)": "Increases damage by 6%/9%/10% at minimum/half/full status of the Photon Blast Gauge."
     },
     {
         "Name (JP)": "技巧匠",
@@ -1817,12 +1817,20 @@
         "Effect (English)": "Protects the lives and hopes of everyone… it defends their future. (Inflicts 150 damage to flames)"
     },
     {
+        "Name (JP)": "贄吸気",
         "Name (English)": "Sacrificial Inspiration",
-        "Effect (English)": "Recover 25% HP when nearby enemies die during Guard Stance"
+        "Name (Global)": "Sacrificial Inspiration",
+        "Effect (JP)": "ガードスタンス時、一定範囲内でエネミーが死亡時HPが回復する。(最大HPの25%)",
+        "Effect (English)": "Recover 25% HP when nearby enemies die during Guard Stance",
+        "Effect (Global)": "Recover 25% HP when nearby enemies die during Guard Stance"
     },
     {
+        "Name (JP)": "動の反射",
         "Name (English)": "Dynamic Reflection",
-        "Effect (English)": "Increases attack damage during Just Guard by 700%."
+        "Name (Global)": "Dynamic Reflection",
+        "Effect (JP)": "ジャストガード時に発生する攻撃の威力を上昇させる。(+700%)",
+        "Effect (English)": "Increases the damage of Just Guard's shockwave by 700%. Does not affect Just Guard related Photon Arts from skill rings.",
+        "Effect (Global)": "Increases the damage of Perfect Guard's shockwave by 700%. Does not affect Perfect Guard related Photon Arts from skill rings."
     },
     {
         "Name (JP)": "闇き解放",
@@ -1837,28 +1845,48 @@
         "Effect (English)": "Increases damage by 10% while in the air."
     },
     {
+        "Name (JP)": "堅甲練陣",
         "Name (English)": "Armor Mastery",
-        "Effect (English)": "Increases S-DEF by 150, striking and Ranged damage by 18% during Guard Stance."
+        "Name (Global)": "Shell Guard",
+        "Effect (JP)": "ガードスタンス発動中、打撃射撃威力(18%)と打撃防御(+150)が上昇する。",
+        "Effect (English)": "While Guard Stance is active, increases S-DEF by 150, and Striking and Ranged damage by 18%.",
+        "Effect (Global)": "While Guard Stance is active, increases MEL Def by 150, and Melee and Ranged damage by 18%."
     },
     {
+        "Name (JP)": "瞬楯転攻",
         "Name (English)": "Immediate Counter",
-        "Effect (English)": "Increases the damage of Just Attacks by 20% after a Just Guard."
+        "Name (Global)": "Immediate Counter",
+        "Effect (JP)": "ジャストガード後のジャストアタックで与えるダメージが20%上昇する。",
+        "Effect (English)": "Increases the damage of Just Attacks by 20% after a Just Guard.",
+        "Effect (Global)": "Increases the damage of Just Attacks by 20% after a Just Guard."
     },
     {
+        "Name (JP)": "勇気の証",
         "Name (English)": "Testament to Courage",
-        "Effect (English)": "Increases damage by 11%, heal 100% HP at fixed intervals (~40 seconds)"
+        "Name (Global)": "Testament to Courage",
+        "Effect (JP)": "一定間隔でHPが回復し、与ダメージが11%上昇。(40秒毎に最大HPの100%回復)",
+        "Effect (English)": "Increases damage by 11%. Recovers 100% HP every 40 seconds.",
+        "Effect (Global)": "Increases damage by 11%. Recovers 100% HP every 40 seconds."
     },
     {
         "Name (English)": "Glimmering Fluorescence",
         "Effect (English)": "Reduces the PP consumption of PAs and Techniques by 30% and reduce their damage by 5%."
     },
     {
+        "Name (JP)": "勇勢疾走",
         "Name (English)": "Heroic Advance",
-        "Effect (English)": "Increases damage by 11% when HP is 30% or greater."
+        "Name (Global)": "Daring Dash",
+        "Effect (JP)": "HPが30%以上のとき、エネミーに与えるダメージが増加する。(11%)",
+        "Effect (English)": "Increases damage by 11% when HP is above 30%.",
+        "Effect (Global)": "Increases damage by 11% when HP is above 30%."
     },
     {
+        "Name (JP)": "心血万全の剛力",
         "Name (English)": "Heroic Strength",
-        "Effect (English)": "Increases damage by 15% when HP is 60% or greater."
+        "Name (Global)": "Heroic Strength",
+        "Effect (JP)": "HPが60%以上のとき、エネミーに与えるダメージが増加する。(15%)",
+        "Effect (English)": "Increases damage by 15% when HP is above 60%.",
+        "Effect (Global)": "Increases damage by 15% when HP is above 60%."
     },
     {
         "Name (English)": "Murderous Assault",
@@ -1918,8 +1946,12 @@
         "Effect (Global)": "Increases damage by 10%, Critical Hit Rate by 13% and Critical Hit damage by 7%, but reduces Natural and Active PP Recovery by 60%."
     },
     {
+        "Name (JP)": "新世の誓い",
         "Name (English)": "New-Type's Oath",
-        "Effect (English)": "Increases damage by 10% when attacking an enemy's elemental weakness."
+        "Name (Global)": "Oath to a New Dawn",
+        "Effect (JP)": "弱点属性で攻撃した時、ダメージが10%上昇する。",
+        "Effect (English)": "Increases damage by 10% when attacking an enemy's elemental weakness.",
+        "Effect (Global)": "Increases damage by 10% when attacking an enemy's elemental weakness."
     },
     {
         "Name (English)": "Veteran's Merit",
@@ -1950,12 +1982,20 @@
         "Effect (Global)": "Increases the damage of charged Techniques by 8%."
     },
     {
+        "Name (JP)": "漆黒の摂理",
         "Name (English)": "Ebony's Providence",
-        "Effect (English)": "Increases damage to bosses by 12% and reduce damage taken from bosses by 15%."
+        "Name (Global)": "Jet-Black Providence",
+        "Effect (JP)": "強敵への与ダメージが12%上昇し、被ダメージが15%減少。",
+        "Effect (English)": "Increases damage to bosses by 12% and reduce damage taken from bosses by 15%.",
+        "Effect (Global)": "Increases damage to bosses by 12% and reduce damage taken from bosses by 15%."
     },
     {
+        "Name (JP)": "絶幻創滅牙",
         "Name (English)": "Phantom Devourer",
-        "Effect (English)": "Increases damage to Phantoms by 13% and reduce damage taken from Phantoms by 20%."
+        "Name (Global)": "Greater Phantasm Bane",
+        "Effect (JP)": "幻創種への与ダメージが13%上昇し、被ダメージが20%減少する。",
+        "Effect (English)": "Increases damage to Phantoms by 13% and reduces damage taken from Phantoms by 20%.",
+        "Effect (Global)": "Increases damage to Phantasms by 13% and reduces damage taken from Phantasms by 20%."
     },
     {
         "Name (English)": "Sentiments of Light",
@@ -2046,28 +2086,48 @@
         "Effect (English)": "Fires an energy wave on Normal Attacks."
     },
     {
+        "Name (JP)": "星霊の加護",
         "Name (English)": "Astral Spirit's Blessing",
-        "Effect (English)": "HP recovery amount up 30%, increases damage by 12%."
+        "Name (Global)": "Astral Spirit's Blessing",
+        "Effect (JP)": "HP回復量を30%、威力を12%上昇させる。",
+        "Effect (English)": "Increases HP recovery effects by 30%, and increases damage by 12%.",
+        "Effect (Global)": "Increases HP recovery effects by 30%, and increases damage by 12%."
     },
     {
+        "Name (JP)": "暴嵐の接撃",
         "Name (English)": "Stormy Grafter",
-        "Effect (English)": "Increases damage by 13% and Critical Hit Rate by 25% while in close range. Restores HP when dealing damage at close range."
+        "Name (Global)": "Eye of the Storm",
+        "Effect (JP)": "至近距離攻撃時にHPが回復、クリティカル率が25%、威力が13%上昇。(1ヒットで1回復)",
+        "Effect (English)": "Increases damage by 13% and Critical Hit Rate by 25% at close range. Restores 1 HP when dealing damage at close range.",
+        "Effect (Global)": "Increases damage by 13% and Critical Hit Rate by 25% at close range. Restores 1 HP when dealing damage at close range."
     },
     {
+        "Name (JP)": "暴嵐の隔撃",
         "Name (English)": "Stormy Striker",
-        "Effect (English)": "Increases damage by 12% and Critical Hit Rate by 35% while at mid-range. Restores HP when dealing damage at mid-range."
+        "Name (Global)": "Approaching Storm",
+        "Effect (JP)": "中距離攻撃時にHPが回復、クリティカル率が35%、威力が12%上昇。(1ヒットで1回復)",
+        "Effect (English)": "Increases damage by 12% and Critical Hit Rate by 35% at medium range. Restores 1 HP when dealing damage at medium range.",
+        "Effect (Global)": "Increases damage by 12% and Critical Hit Rate by 35% at medium range. Restores 1 HP when dealing damage at medium range."
     },
     {
+        "Name (JP)": "暴嵐の遼撃",
         "Name (English)": "Stormy Sniper",
-        "Effect (English)": "Increases damage by 11% and Critical Hit Rate by 45% while at long range. Restores HP when dealing damage at long range."
+        "Name (Global)": "Storm on the Horizon",
+        "Effect (JP)": "遠距離攻撃時にHPが回復、クリティカル率が45%、威力が11%上昇。(1ヒットで1回復)",
+        "Effect (English)": "Increases damage by 11% and Critical Hit Rate by 45% at long range. Restores 1 HP when dealing damage at long range.",
+        "Effect (Global)": "Increases damage by 11% and Critical Hit Rate by 45% at long range. Restores 1 HP when dealing damage at long range."
     },
     {
         "Name (English)": "Limit Release",
         "Effect (English)": "Increased PP consumption by 30%, increases the damage of Normal Attacks by 200%."
     },
     {
+        "Name (JP)": "闘志の奮激",
         "Name (English)": "Offensive Inspiration",
-        "Effect (English)": "Damage is increased by 6% and gradually increases over time up to 20% total. Resets if a Mate item is used (takes 70 seconds to max)."
+        "Name (Global)": "Spirited Persistence",
+        "Effect (JP)": "時間経過で最大20%威力上昇、メイト系アイテム使用で上昇分が消失。\n(初期状態6%上昇、1秒ごとに0.200%上昇し70秒で効果最大)",
+        "Effect (English)": "Increases damage by 6% and an additional 0.2% every second, up to 20% total after 70 seconds. Resets if a Mate item is used.",
+        "Effect (Global)": "Increases damage by 6% and an additional 0.2% every second, up to 20% total after 70 seconds. Resets if a Mate item is used."
     },
     {
         "Name (English)": "Offensive Reverence",
@@ -2080,10 +2140,6 @@
     {
         "Name (English)": "Indomitable Soul",
         "Effect (English)": "Damage is increased by 6%, damage taken is reduced by 20%, and knock back is nullified."
-    },
-    {
-        "Name (English)": "絶幻創滅牙",
-        "Effect (English)": "Increases damage dealt to Phantoms by 15% and reduces damage taken from Phantoms by 20%."
     },
     {
         "Name (English)": "Element Tracking - Lightning/Light",
@@ -2154,12 +2210,20 @@
         "Effect (English)": "Reduces the charge time of Wind Techniques by 19%."
     },
     {
+        "Name (JP)": "刹那の極撃",
         "Name (English)": "Immediate Extstrike",
-        "Effect (English)": "Increases the effect of Just Attacks by 13% and increases Active PP Recovery by 15%."
+        "Name (Global)": "Immediate Extstrike",
+        "Effect (JP)": "ジャストアタック時の威力が13%、PP回復量が15%上昇する。",
+        "Effect (English)": "Increases the damage of Just Attacks by 13% and increases Active PP Recovery of Just Attacks by 15%.",
+        "Effect (Global)": "Increases the damage of Perfect Attacks by 13% and increases Active PP Recovery of Perfect Attacks by 15%."
     },
     {
+        "Name (JP)": "星光の残滓",
         "Name (English)": "Starlight Remnants",
-        "Effect (English)": "Increases damage by 12% and increases Active PP Recovery by 40%."
+        "Name (Global)": "Vestiges of Starlight",
+        "Effect (JP)": "与ダメージを12%、攻撃時のPP回復量を40%上昇させる。",
+        "Effect (English)": "Increases damage by 12% and increases Active PP Recovery by 40%.",
+        "Effect (Global)": "Increases damage by 12% and increases Active PP Recovery by 40%."
     },
     {
         "Name (English)": "Eternal Operation Device",
@@ -2174,8 +2238,12 @@
         "Effect (English)": "Add an extra attack (400% damage) to Normal Attacks that has a chance to inflict Stun. Increases damage by 10% when you are a certain distance from the target."
     },
     {
+        "Name (JP)": "雪白散華",
         "Name (English)": "Snow-White Sacrifice",
-        "Effect (English)": "Increases chance to inflict Status effects to enemies and increases damage by 10%. 10% additional damage against Status inflicted enemies."
+        "Name (Global)": "Snow-white Petals",
+        "Effect (JP)": "威力(10%)・状態異常確率(150%)が上昇、状態異常中のエネミーへの威力(10%)が上昇。",
+        "Effect (English)": "Increases damage by 10%, and increases chance to inflict status effects. Increases damage by an additional 10% against enemies afflicted with a status effect.",
+        "Effect (Global)": "Increases damage by 10%, and increases chance to inflict status effects. Increases damage by an additional 10% against enemies afflicted with a status effect."
     },
     {
         "Name (English)": "Snowlight Blossom",
@@ -2210,20 +2278,36 @@
         "Effect (Global)": "Increases damage, Natural PP Recovery, and Active PP Recovery by 10%, reduces damage taken by 5%, and decreases PP Consumption by 10%."
     },
     {
+        "Name (JP)": "徒花討華",
         "Name (English)": "Perennial Conqueror",
-        "Effect (English)": "Increases damage by 20%, Pet damage by 3% and decreases damage taken by 40% in the Quest \"The Endless Darkness\"."
+        "Name (Global)": "Barren Blossom",
+        "Effect (JP)": "「輝光を屠る輪廻の徒花」にて、威力が上昇し被ダメージが減少(40%)する。\n(与ダメージ　プレイヤー:+20% / ペット:+3%)",
+        "Effect (English)": "In the Quest \"The Endless Darkness\", increases damage by 20% and Pet damage by 3%, and decreases damage taken by 40%.",
+        "Effect (Global)": "In the Quest \"Barren Blossom, Butcher of Light\", increases damage by 20% and Pet damage by 3%, and decreases damage taken by 40%."
     },
     {
-        "Name (English)": "吸気光弾",
-        "Effect (English)": "Decreases the damage of Normal Attacks by 50%. Increases Active PP recovery by 10 per hit, and damage of non-Normal Attacks by 10%."
+        "Name (JP)": "吸気光弾",
+        "Name (English)": "Photon Capture Shot",
+        "Name (Global)": "Photon Capture Shot",
+        "Effect (JP)": "通常攻撃の威力低下(-50%)・PP回復量上昇(+10)、通常攻撃以外の威力が10%上昇。\n後継クラスは適用外",
+        "Effect (English)": "Decreases the damage of Normal Attacks by 50%. Increases Active PP recovery by 10 per hit, and damage of non-Normal Attacks by 10%.",
+        "Effect (Global)": "Decreases the damage of Normal Attacks by 50%. Increases Active PP recovery by 10 per hit, and damage of non-Normal Attacks by 10%."
     },
     {
+        "Name (JP)": "生命の祝福",
         "Name (English)": "Blessing of Life",
-        "Effect (English)": "Increases damage by 12%. Increases ATK for all party members by 2% and restore 10% HP every 30 seconds for all players in the party."
+        "Name (Global)": "Blessing of Life",
+        "Effect (JP)": "威力が12%上昇。PTのHPを一定間隔で回復し攻撃力を(2%)上昇させる。\n(30秒毎に最大HPの10%回復)",
+        "Effect (English)": "Increases damage by 12%. Increases damage of all party members by 2% and restores 10% HP of all party members every 30 seconds.",
+        "Effect (Global)": "Increases damage by 12%. Increases damage of all party members by 2% and restores 10% HP of all party members every 30 seconds."
     },
     {
+        "Name (JP)": "生命の導き",
         "Name (English)": "Guidance of Life",
-        "Effect (English)": "Increases success rate of adding Abilities to the weapon by 10%."
+        "Name (Global)": "Life's Guidance",
+        "Effect (JP)": "この武器への特殊能力追加成功確率が10%上昇する。",
+        "Effect (English)": "Increases transfer rate of Special Abilities by 10%.",
+        "Effect (Global)": "Increases transfer rate of Augments by 10%."
     },
     {
         "Name (English)": "Melody of Life",
@@ -2247,12 +2331,16 @@
         "Effect (English)": "When Alter Ego is active, automatically activates Pet Sympathy and Fires Megid with Pet PAs (2000% potency)."
     },
     {
+        "Name (JP)": "希望の証",
         "Name (English)": "Symbol of Hope",
-        "Effect (English)": "Restores 100% of Max HP every 40s. Increases damage by 11% and reduce damage taken by 5%."
+        "Name (Global)": "Symbol of Hope",
+        "Effect (JP)": "一定間隔でHPが回復し、与ダメージが11%上昇、被ダメージを5%軽減。\n(40秒毎に最大HPの100%回復)",
+        "Effect (English)": "Increases damage by 11% and reduces damage taken by 5%. Recovers 100% HP every 40 seconds.",
+        "Effect (Global)": "Increases damage by 11% and reduces damage taken by 5%. Recovers 100% HP every 40 seconds."
     },
     {
         "Name (English)": "Heavenly Dawnlight",
-        "Effect (English)": "Increases Natural PP Recovery by 10% and Active PP Recovery by 30%. Increases damage by 10% when PP is at 30% or greater."
+        "Effect (English)": "Increases Natural PP Recovery by 10% and Active PP Recovery by 30%. Increases damage by 10% when PP is above 30%."
     },
     {
         "Name (English)": "Murderous Raid",
@@ -2291,12 +2379,16 @@
         "Effect (Global)": "Increases Striking and Ranged damage by 12% and increases S-DEF by 180 when Guard Stance is active."
     },
     {
+        "Name (JP)": "死闘奮迅",
         "Name (English)": "Deathblow Fury",
-        "Effect (English)": "Increases damage by 8%. Recover PP when an enemy is killed nearby (3 PP/Enemy)."
+        "Name (Global)": "Lethal Combat Fury",
+        "Effect (JP)": "威力が8%上昇、周囲のエネミー死亡時にPPが回復する。(+3)",
+        "Effect (English)": "Increases damage by 8%. Recovers 3 PP when an enemy is killed nearby.",
+        "Effect (Global)": "Increases damage by 8%. Recovers 3 PP when an enemy is killed nearby."
     },
     {
         "Name (English)": "Deathblow Honor",
-        "Effect (English)": "Recover PP when an enemy is killed nearby (3 PP/Enemy)."
+        "Effect (English)": "Recovers 3 PP when an enemy is killed nearby."
     },
     {
         "Name (JP)": "英雄の凱歌",
@@ -2307,28 +2399,44 @@
         "Effect (Global)": "Increases damage by 12%. Increases the rate of Heroic Boost accumulation by +100%."
     },
     {
+        "Name (JP)": "避跳攻勢",
         "Name (English)": "Elusive Offense",
-        "Effect (English)": "Increases damage by 10%. Increases damage by an additional 12% for 10 seconds after successfully evading an attack as Hero."
+        "Name (Global)": "Evasive Offense",
+        "Effect (JP)": "威力が10%上昇。ヒーローで攻撃回避後、10秒間威力(12%)が上昇。",
+        "Effect (English)": "Increases damage by 10%. Increases damage by an additional 12% for 10 seconds after successfully evading an attack with Step as a Hero.",
+        "Effect (Global)": "Increases damage by 10%. Increases damage by an additional 12% for 10 seconds after successfully evading an attack with Sidestep as a Hero."
     },
     {
         "Name (English)": "Elusive Blades",
         "Effect (English)": "Increases damage by 14%. Release a damaging blast (damage 1000%) upon successfully evading an attack as Hero."
     },
     {
+        "Name (JP)": "絶魔物滅牙",
         "Name (English)": "Daemon Destroyer",
-        "Effect (English)": "Increases damage dealt to Demons by 15% and reduces damage taken from Demons by 20%."
+        "Name (Global)": "Greater Supernatural Bane",
+        "Effect (JP)": "魔物種への与ダメージが15%上昇し、被ダメージが20%減少する。",
+        "Effect (English)": "Increases damage dealt to Demons by 15% and reduces damage taken from Demons by 20%.",
+        "Effect (Global)": "Increases damage dealt to Supernaturals by 15% and reduces damage taken from Supernaturals by 20%."
     },
     {
         "Name (English)": "Demonic Ward",
         "Effect (English)": "Decreases damage taken from Demons by 20% for both Pets and Players."
     },
     {
-        "Name (English)": "縛刻の闇術",
-        "Effect (English)": "Increases the charge time of Dark Techniques by 50% and increases their damage by 30%. Excludes Namegid."
+        "Name (JP)": "縛刻の闇術",
+        "Name (English)": "Binding Darkness",
+        "Name (Global)": "Dark Incantation",
+        "Effect (JP)": "ナ・メギドを除く闇属性テクニックのチャージ時間(50%)増加、威力(30%)が上昇。",
+        "Effect (English)": "Increases the damage of Dark Techniques by 30%, but increases their charge time by 50%. Excludes Namegid.",
+        "Effect (Global)": "Increases the damage of Dark Techniques by 30%, but increases their charge time by 50%. Excludes Namegid."
     },
     {
+        "Name (JP)": "操闇轟身",
         "Name (English)": "Darkness Roar",
-        "Effect (English)": "Increases damage based on Dark Blast Gauge (up to 17%). Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Elder] transformation time by 7 seconds."
+        "Name (Global)": "Challenger of Darkness",
+        "Effect (JP)": "ダークブラストゲージの上昇率・ゲージ量での威力・【巨躯】の変身時間を増加。\n(ゲージ上昇率20%・威力上昇最大17%・変身時間+7秒)",
+        "Effect (English)": "Increases damage based on Dark Blast Gauge, up to 17%. Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Elder] transformation time by 7 seconds. Damage increase persists at max value after using Dark Blast.",
+        "Effect (Global)": "Increases damage based on Dark Blast Gauge, up to 17%. Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Elder] transformation time by 7 seconds. Damage increase persists at max value after using Dark Blast."
     },
     {
         "Name (English)": "Darkness Brilliance",
@@ -2355,16 +2463,24 @@
         "Effect (Global)": "Increases damage by 13%. Applies Jellen on Attacks (100% rate, 5% effect, 10 seconds duration)."
     },
     {
+        "Name (JP)": "聖浄の盾",
         "Name (English)": "Sacred Shield",
-        "Effect (English)": "Increases damage by 17%. Generates a barrier (-40% Damage Taken, 20% PP Cost Reduction) at regular intervals (every 30s)."
+        "Name (Global)": "Sacred Shield",
+        "Effect (JP)": "与ダメージが17%上昇。一定間隔で被ダメージを軽減するバリアを展開。\n(30秒で再展開・被ダメージ60%減少・消費PP20%減少)",
+        "Effect (English)": "Increases damage by 17%. Generates a barrier that reduces damage taken by 40% and reduces PP consumption by 20%. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Darkness Shield, Enticing Ward and Darkness Ward).",
+        "Effect (Global)": "Increases damage by 17%. Generates a barrier that reduces damage taken by 40% and reduces PP consumption by 20%. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Shield of the Dark Saint, Shield of Temptation and Shield of Dark Temptation)."
     },
     {
         "Name (English)": "Sacred Melody",
         "Effect (English)": "Generates a barrier (-40% Damage Taken, 30% PP Cost Reduction) at regular intervals (every 20s)."
     },
     {
+        "Name (JP)": "誘惑の魔盾",
         "Name (English)": "Enticing Ward",
-        "Effect (English)": "Increases damage by 17%. Generates a barrier (Negate Knockback, 20% Automatic PP Recovery and 30% Active PP Recovery) at regular intervals (every 30s)."
+        "Name (Global)": "Enticing Ward",
+        "Effect (JP)": "与ダメージが17%上昇。一定間隔で吹き飛ばしを無効化するバリアを展開。\n(30秒で再展開・PP自動回復量20%上昇・攻撃時PP回復量30%上昇)",
+        "Effect (English)": "Increases damage by 17%. Generates a barrier that increases Natural PP Recovery by 20% and Active PP Recovery by 30%, and grants immunity to flinch/knockback. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Sacred Shield, Darkness Shield, and Darkness Ward).",
+        "Effect (Global)": "Increases damage by 17%. Generates a barrier that increases Natural PP Recovery by 20% and Active PP Recovery by 30%, and grants immunity to flinch/knockback. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Sacred Shield, Darkness Shield, and Darkness Ward)."
     },
     {
         "Name (English)": "Enticing Melody",
@@ -2427,8 +2543,12 @@
         "Effect (English)": "Increases Critical Hit Rate by 100% and increases the damage of Critical Hits by 12%."
     },
     {
+        "Name (JP)": "必撃の戦陣",
         "Name (English)": "Sure-Strike Field",
-        "Effect (English)": "Increases damage by 12% and increases Critical Hit Rate by 10%."
+        "Name (Global)": "Critical Formation",
+        "Effect (JP)": "威力が12%上昇しクリティカル率が10%上昇する。",
+        "Effect (English)": "Increases damage by 12%. Increases Critical Hit Rate by 10%.",
+        "Effect (Global)": "Increases damage by 12%. Increases Critical Hit Rate by 10%."
     },
     {
         "Name (English)": "Quadruple Grenade",
@@ -2459,28 +2579,40 @@
         "Effect (English)": "Increases JA damage by 17% when using different PAs or Techniques."
     },
     {
+        "Name (JP)": "崩城討邪・攻戦",
         "Name (English)": "Demolisher Conqueror",
-        "Effect (English)": "Increases damage by 20% and halve damage taken in the Emergency Quest \"The Dark Demolisher\"."
+        "Name (Global)": "Ruins Menace: Onslaught",
+        "Effect (JP)": "「崩城に甦る黒衣の邪竜」にて、威力が20%上昇し被ダメージを半減する。",
+        "Effect (English)": "In the Quest \"The Dark Demolisher\", increases damage by 20%, and reduces damage taken by 50%.",
+        "Effect (Global)": "In the Quest \"Black Fellwyrm Rises from the Ruins\", increases damage by 20%, and reduces damage taken by 50%."
     },
     {
         "Name (English)": "Demolisher Tactician",
-        "Effect (English)": "Increases damage by 5% for both Pets and Players and halve damage taken in the Emergency Quest \"The Dark Demolisher\"."
+        "Effect (English)": "In the Quest \"The Dark Demolisher\", increases damage of both Pet and player by 5%, and reduces damage taken by 50%."
     },
     {
+        "Name (JP)": "騎士の心",
         "Name (English)": "Dauntless Knight",
-        "Effect (English)": "Increases damage by 10%. Survive one fatal attack with 1 HP, and restore HP at regular intervals afterwards."
+        "Name (Global)": "Spirit of a Knight",
+        "Effect (JP)": "威力10%上昇。一度だけ致命傷を受けても耐え、発動後徐々にHP回復。",
+        "Effect (English)": "Increases damage by 10%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.",
+        "Effect (Global)": "Increases damage by 10%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds."
     },
     {
+        "Name (JP)": "聖騎士の心",
         "Name (English)": "Dauntless Templar",
-        "Effect (English)": "Increases damage by 12%. Survive one fatal attack with 1 HP, and restore HP at regular intervals afterwards."
+        "Name (Global)": "Spirit of a Paladin",
+        "Effect (JP)": "威力12%上昇。一度だけ致命傷を受けても耐え、発動後徐々にHP回復。",
+        "Effect (English)": "Increases damage by 12%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.",
+        "Effect (Global)": "Increases damage by 12%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds."
     },
     {
         "Name (English)": "Knight's Melody",
-        "Effect (English)": "Survive one fatal attack with 1 HP, and restore HP at regular intervals afterwards."
+        "Effect (English)": "Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds."
     },
     {
         "Name (English)": "Templar's Melody",
-        "Effect (English)": "Increases damage by 2%. Survive one fatal attack with 1 HP, and restore HP at regular intervals afterwards."
+        "Effect (English)": "Increases damage by 2%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds."
     },
     {
         "Name (English)": "Tragic Providence",
@@ -2491,20 +2623,36 @@
         "Effect (English)": "Increases damage by 8%. Produces a Chase Arrow when a PA hits an enemy. Increases the damage of this Potential's Chase Arrow effect for a limited time after successfully dodging an attack with Step."
     },
     {
+        "Name (JP)": "猛威の奮激",
         "Name (English)": "Furious Inspiration",
-        "Effect (English)": "Increases damage and Critical Hit Rate (+16% damage/+?% Critical Hit Rate). Enhance PP efficiency (10% PP Cost Reduction/+20% Natural PP Recovery/+30% Active PP Recovery). Effect resets when damage is taken. Effect restores after a certain period of time (180s to reset)."
+        "Name (Global)": "Persistent Fury",
+        "Effect (JP)": "威力とPP回復性能が上昇。PP消費量軽減。被ダメージで消失。一定時間で効果が復活。\n(威力16%・PP自動回復量20%・攻撃時PP回復量30%・消費PP-10%　再発動180秒)",
+        "Effect (English)": "Increases damage by 16%, Natural PP Recovery by 20% and Active PP Recovery by 30%. Reduces PP consumption by 10%. Effect ends when damage is taken. 180 seconds recast timer from the moment the effect ends.",
+        "Effect (Global)": "Increases damage by 16%, Natural PP Recovery by 20% and Active PP Recovery by 30%. Reduces PP consumption by 10%. Effect ends when damage is taken. 180 seconds recast timer from the moment the effect ends."
     },
     {
+        "Name (JP)": "焔の誓い",
         "Name (English)": "Flame Oath",
-        "Effect (English)": "Increases damage by 7%. Increases damage by an additional 7% when attacking an enemy's elemental weakness."
+        "Name (Global)": "Oath of Flame",
+        "Effect (JP)": "威力が7%上昇。弱点属性で攻撃した時さらに7%上昇。",
+        "Effect (English)": "Increases damage by 7%. Increases damage by an additional 7% when attacking an enemy's elemental weakness.",
+        "Effect (Global)": "Increases damage by 7%. Increases damage by an additional 7% when attacking an enemy's elemental weakness."
     },
     {
+        "Name (JP)": "紅焔の誓い",
         "Name (English)": "Crimson Flame Oath",
-        "Effect (English)": "Increases damage by 13%. Increases damage by an additional 5% when attacking an enemy's elemental weakness. Casts Shifta on yourself at regular intervals."
+        "Name (Global)": "Oath of Crimson Flame",
+        "Effect (JP)": "威力が13%上昇。弱点属性で攻撃した時さらに5%上昇。一定間隔でシフタ発動。",
+        "Effect (English)": "Increases damage by 13%. Increases damage by an additional 5% when attacking an enemy's elemental weakness. Automatically casts Shifta on self every 14 seconds. Uses your currently learned level of Shifta.",
+        "Effect (Global)": "Increases damage by 13%. Increases damage by an additional 5% when attacking an enemy's elemental weakness. Automatically casts Shifta on self every 14 seconds. Uses your currently learned level of Shifta."
     },
     {
+        "Name (JP)": "紫焔の誓い",
         "Name (English)": "Violet Flame Oath",
-        "Effect (English)": "Increases damage by 5%. Increases damage by an additional 13% when attacking an enemy's elemental weakness. Casts Deband on yourself at regular intervals."
+        "Name (Global)": "Violet Flame Oath",
+        "Effect (JP)": "威力が5%上昇。弱点属性で攻撃した時さらに13%上昇。一定間隔でデバンド発動。",
+        "Effect (English)": "Increases damage by 5%. Increases damage by an additional 13% when attacking an enemy's elemental weakness. Automatically casts Deband on self every 14 seconds. Uses your currently learned level of Deband.",
+        "Effect (Global)": "Increases damage by 5%. Increases damage by an additional 13% when attacking an enemy's elemental weakness. Automatically casts Deband on self every 14 seconds. Uses your currently learned level of Deband."
     },
     {
         "Name (English)": "Flame Melody",
@@ -2547,8 +2695,12 @@
         "Effect (English)": "Increases damage based on the Photon Blast Gauge (3%/?%/4%). Bestow an additional effect based on the Photon Blast type when the Photon Blast is used."
     },
     {
+        "Name (JP)": "幻精天賦",
         "Name (English)": "Phantasmal Gift",
-        "Effect (English)": "Increases damage based on the Photon Blast Gauge (11%/12%/13%). Bestow an additional effect based on the Photon Blast type when the Photon Blast is used."
+        "Name (Global)": "Phantom Nature",
+        "Effect (JP)": "フォトンブラストゲージに応じて威力が上昇する。(11%/12%/13%)\nフォトンブラスト発動時、幻獣毎に異なる効果発生。",
+        "Effect (English)": "Increases damage by 11%/12%/13% at minimum/half/full status of the Photon Blast Gauge. When Photon Blast is used, grants an additional effect based on the Photon Blast type:\n\nHelix: +4% damage\nAjax: +40% Active PP Recovery\nKetos: +30% Natural PP Recovery\nJulius: -12% damage taken\nIlios: -15% PP consumption\n\nEffects stack if used by different Mags. Effects last until Quest ends or going back to Campship. Effects are paused when a different potential is equipped, and are resumed when this potential is equipped again.",
+        "Effect (Global)": "Increases damage by 11%/12%/13% at minimum/half/full status of the Photon Blast Gauge. When Photon Blast is used, grants an additional effect based on the Photon Blast type:\n\nHelix: +4% damage\nAjax: +40% Active PP Recovery\nKetos: +30% Natural PP Recovery\nJulius: -12% damage taken\nIlios: -15% PP consumption\n\nEffects stack if used by different Mags. Effects last until Quest ends or going back to Campship. Effects are paused when a different potential is equipped, and are resumed when this potential is equipped again."
     },
     {
         "Name (JP)": "雷刃の騎士",
@@ -2567,8 +2719,12 @@
         "Effect (English)": "Increases damage by 7%. Unleash a follow-up attack that damages surroundings after performing an attack."
     },
     {
+        "Name (JP)": "鳳の慧眼",
         "Name (English)": "Hawkeyed Phoenix",
-        "Effect (English)": "Increases PA or Technique damage by 16% when attacking an enemy's weak point or Elemental Weakness."
+        "Name (Global)": "Eye of the Phoenix",
+        "Effect (JP)": "弱点部位への攻撃か弱点属性に法撃による攻撃で威力が16%上昇。",
+        "Effect (English)": "Increases non-Technique damage by 16% when hitting an enemy weakspot. Increases Technique damage by 16% when attacking an enemy's Elemental Weakness.",
+        "Effect (Global)": "Increases non-Technique damage by 16% when hitting an enemy weakspot. Increases Technique damage by 16% when attacking an enemy's Elemental Weakness."
     },
     {
         "Name (English)": "Lustrous Protection",
@@ -2579,16 +2735,28 @@
         "Effect (English)": "Increases the damage of Tech Explosions based on the number of hits inflicted by Tech Explosions. Bonus is lost upon attacking with a Technique and the damage of Techniques is increased for a limited time."
     },
     {
+        "Name (JP)": "千古の史",
         "Name (English)": "Eternal History",
-        "Effect (English)": "Increases damage by 10%. Increases damage (up to 7.5%) based on the number of hits. Generate a barrier when damage bonus is maxed. Barrier disappears if no targets are attacked in a certain period of time."
+        "Name (Global)": "Enduring History",
+        "Effect (JP)": "ヒット数に応じ威力上昇。最大時吹き飛ばし無効のバリア展開。攻撃しない時間が続くと効果消失。",
+        "Effect (English)": "Increases damage by 10%. Increases damage by an additional 1% every 3 hits, up to 5%. Generates a barrier that grants immunity to flinch/knockback when damage bonus is maxed. Effect ends if no targets are attacked in 8 seconds.",
+        "Effect (Global)": "Increases damage by 10%. Increases damage by an additional 1%¨every 3 hits, up to 5%. Generates a barrier that grants immunity to flinch/knockback when damage bonus is maxed. Effect ends if no targets are attacked in 8 seconds."
     },
     {
+        "Name (JP)": "不朽の息吹",
         "Name (English)": "Immortal Breath",
-        "Effect (English)": "Increases damage by 10%. Increases damage (up to 7.5%) based on the number of hits. Generate a barrier when damage bonus is maxed. Barrier disappears if no targets are attacked in a certain period of time. increases Damage Resistance (10% MAX) based on the number of hits. Requires few hits to max bonus, but Barrier duration is short."
+        "Name (Global)": "Everlasting Life",
+        "Effect (JP)": "｢千古の史｣の効果に加えヒット数に応じて被ダメージ軽減効果上昇。\n必要ヒット数が少なくバリア維持の時間が短い。\n(ダメージ倍率10%、ヒット数に応じて最大7.5%、被ダメージ軽減最大10%、必要ヒット数15ヒット、バリア維持時間8秒)",
+        "Effect (English)": "Increases damage by 10%. Increases damage by an additional 1.5% every 3 hits, up to 7.5%. Generates a barrier that reduces damage taken by 10% and grants immunity to flinch/knockback when damage bonus is maxed. Effect ends if no targets are attacked in 8 seconds.",
+        "Effect (Global)": "Increases damage by 10%. Increases damage by an additional 1.5% every 3 hits, up to 7.5%. Generates a barrier that reduces damage taken by 10% and grants immunity to flinch/knockback when damage bonus is maxed. Effect ends if no targets are attacked in 8 seconds."
     },
     {
+        "Name (JP)": "不朽の鼓動",
         "Name (English)": "Immortal Beat",
-        "Effect (English)": "Increases damage by 10%. Increases damage (up to 7.5%) based on the number of hits. Generate a barrier when damage bonus is maxed. Barrier disappears if no targets are attacked in a certain period of time. Increases Damage Resistance (up to 20%) based on the number of hits. Requires many hits to max bonus, but Barrier duration is long."
+        "Name (Global)": "Everlasting Pulse",
+        "Effect (JP)": "｢千古の史｣の効果に加えヒット数に応じて被ダメージ軽減効果上昇。\n必要ヒット数が多くバリア維持の時間が長い。\n(ダメージ倍率10%、ヒット数に応じて最大7.5%、被ダメージ軽減最大20%、必要ヒット数50ヒット、バリア維持時間40秒)",
+        "Effect (English)": "Increases damage by 10%. Increases damage by an additional 1.5% every 10 hits, up to 7.5%. Generates a barrier that reduces damage taken by 20% and grants immunity to flinch/knockback when damage bonus is maxed. Effect ends if no targets are attacked in 40 seconds.",
+        "Effect (Global)": "Increases damage by 10%. Increases damage by an additional 1.5% every 10 hits, up to 7.5%. Generates a barrier that reduces damage taken by 20% and grants immunity to flinch/knockback when damage bonus is maxed. Effect ends if no targets are attacked in 40 seconds."
     },
     {
         "Name (English)": "Immortal Retainer",
@@ -2611,8 +2779,12 @@
         "Effect (Global)": "Increases damage by 10%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Photon Resurrection Redux, Photon Serenade, and Photon Serenade Redux."
     },
     {
+        "Name (JP)": "星絆の想起",
         "Name (English)": "Star-bound Recollection",
-        "Effect (English)": "Increases damage by 10%. Restores PP by 30% when casting a PA or Technique while below 10% PP."
+        "Name (Global)": "威力が10%上昇。PPが一定以下（10%未満）になった時PPが30%回復する。",
+        "Effect (JP)": "Increases damage by 10%. Restores PP by 30% when casting a PA or Technique while below 10% PP.",
+        "Effect (English)": "Increases damage by 10%. Increases Dark Blast duration by 10 seconds. Restores PP by 30% when casting a PA or Technique while below 10% PP. 120 seconds recast time.",
+        "Effect (Global)": "Increases damage by 10%. Increases Dark Blast duration by 10 seconds. Restores PP by 30% when casting a PA or Technique while below 10% PP. 120 seconds recast time."
     },
     {
         "Name (English)": "Star-bound Melody",
@@ -2651,12 +2823,16 @@
         "Name (English)": "Darkness Ward",
         "Name (Global)": "Shield of Dark Temptation",
         "Effect (JP)": "威力が9%上昇。一定間隔で吹き飛ばしを無効化するバリアを展開。\n(30秒で再展開・PP自動回復量30%上昇・攻撃時PP回復量40%上昇)",
-        "Effect (English)": "Increases damage by 9%. Generates a barrier that increases Natural PP Recovery by 30% and Active PP Recovery by 40%. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Sacred Shield, Enticing Ward and Darkness Shield).",
-        "Effect (Global)": "Increases damage by 9%. Generates a barrier that increases Natural PP Recovery by 30% and Active PP Recovery by 40%. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Purifying Shield, Shield of Temptation and Shield of the Dark Saint)."
+        "Effect (English)": "Increases damage by 9%. Generates a barrier that increases Natural PP Recovery by 30% and Active PP Recovery by 40%, and grants immunity to flinch/knockback. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Sacred Shield, Enticing Ward and Darkness Shield).",
+        "Effect (Global)": "Increases damage by 9%. Generates a barrier that increases Natural PP Recovery by 30% and Active PP Recovery by 40%, and grants immunity to flinch/knockback. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Purifying Shield, Shield of Temptation and Shield of the Dark Saint)."
     },
     {
+        "Name (JP)": "闇恨の再臨",
         "Name (English)": "Malicious Return",
-        "Effect (English)": "Increases damage by 10%."
+        "Name (Global)": "Second Coming of Darkness",
+        "Effect (JP)": "威力が10%上昇。",
+        "Effect (English)": "Increases damage by 10%.",
+        "Effect (Global)": "Increases damage by 10%."
     },
     {
         "Name (English)": "Malicious Melody",
@@ -2667,8 +2843,12 @@
         "Effect (English)": "Increases damage by 12%. Apply bonus effects based on the active Field Skills."
     },
     {
+        "Name (JP)": "金煌騎士の祝福",
         "Name (English)": "Golden Knight's Blessing",
-        "Effect (English)": "Increases damage by 17%. Increases ATK for all party members by 2% and restore 10% HP every 30 seconds for all players in the party."
+        "Name (Global)": "Golden Knight's Blessing",
+        "Effect (JP)": "威力が17%上昇。PTのHPを一定間隔で回復し、攻撃力を(2%)上昇させる。\n(30秒毎に最大HPの10%回復)",
+        "Effect (English)": "Increases damage by 17%. Increases damage of all party members by 2% and restores 10% HP of all party members every 30 seconds.",
+        "Effect (Global)": "Increases damage by 17%. Increases damage of all party members by 2% and restores 10% HP of all party members every 30 seconds."
     },
     {
         "Name (English)": "Bright Silver Flame",
@@ -2691,8 +2871,12 @@
         "Effect (English)": "Increases damage by 13%. Increases Marker Accumulation Rate upon detonating a Phantom Marker."
     },
     {
+        "Name (JP)": "黒装天恵",
         "Name (English)": "Darkened Blessing",
-        "Effect (English)": "Increases damage by 12% and Damage Resistance by 10%."
+        "Name (Global)": "Blessings in Black",
+        "Effect (JP)": "威力が12%上昇。被ダメージが10%軽減。",
+        "Effect (English)": "Increases damage by 12%. Reduces damage taken by 10%.",
+        "Effect (Global)": "Increases damage by 12%. Reduces damage taken by 10%."
     },
     {
         "Name (English)": "Darkened Performance",
@@ -2755,8 +2939,12 @@
         "Effect (English)": "Increases damage by 9%. Grant a Just Guard effect (0.6s) when activating a Photon Art."
     },
     {
+        "Name (JP)": "循環促進",
         "Name (English)": "Circular Progression",
-        "Effect (English)": "Resist knockback and gradually increases damage (12% ~ 16%) when performing consecutive Just Attacks."
+        "Name (Global)": "Virtuous Cycle",
+        "Effect (JP)": "連続でジャストアタックに成功した時ダメージが上昇しノックバックを無効化。\n(ジャストアタック毎に12%ずつ上昇。上限16%)",
+        "Effect (English)": "When performing consecutive Just Attacks, gradually increases damage (12% ~ 16%) and grants flinch/knockback immunity.",
+        "Effect (Global)": "When performing consecutive Just Attacks, gradually increases damage (12% ~ 16%) and grants flinch/knockback immunity."
     },
     {
         "Name (JP)": "封印の牙",
@@ -2919,8 +3107,12 @@
         "Effect (English)": "Increases damage by 12%. Grant 60% damage reduction for 7 seconds after successfully evading an attack with Step, Dive Roll, or Stylish Roll. Triggers Recast upon activation."
     },
     {
+        "Name (JP)": "覇王の覚醒",
         "Name (English)": "Despot Awakening",
-        "Effect (English)": "Trigger by using a Normal Attack after being near enemies for 40 seconds. Regenerate PP every second and increases damage by 11% for 20 seconds."
+        "Name (Global)": "Supreme King Awakening",
+        "Effect (JP)": "一定範囲内に敵がいる状態を合計40秒達成後通常攻撃で発動。20秒間毎秒PP回復11%威力上昇。",
+        "Effect (English)": "Increases damage by 10%. After being near enemies (lock-on range) for 40 seconds, using a Normal Attack will activate the following effects: increases damage by an additional 11% and recovers 6 PP per second for 20 seconds.",
+        "Effect (Global)": "Increases damage by 10%. After being near enemies (lock-on range) for 40 seconds, using a Normal Attack will activate the following effects: increases damage by an additional 11% and recovers 6 PP per second for 20 seconds."
     },
     {
         "Name (JP)": "闘志の鼓舞",
@@ -3123,13 +3315,17 @@
         "Name (English)": "Myriad Blessings",
         "Name (Global)": "Myriad Blessings",
         "Effect (JP)": "HP回復量を30%、攻撃時のPP回復量を60%、威力を15%上昇させる。",
-        "Effect (English)": "Increases HP recovery by 30%, Active PP Recovery by 60%, and damage by 15%.",
-        "Effect (Global)": "Increases HP recovery by 30%, Active PP Recovery by 60%, and damage by 15%.",
+        "Effect (English)": "Increases HP recovery effects by 30%, Active PP Recovery by 60%, and damage by 15%.",
+        "Effect (Global)": "Increases HP recovery effects by 30%, Active PP Recovery by 60%, and damage by 15%.",
         "Special": "Hidden"
     },
     {
+        "Name (JP)": "連刃蛇咬",
         "Name (English)": "Serpent's Bite",
-        "Effect (English)": "Damage increased when doing consecutive Just Attacks by 4%, max limit 40%.",
+        "Name (Global)": "Serpent's Bite",
+        "Effect (JP)": "連続でジャストアタックに成功した時のダメージが上昇する。(4% 上限40%)",
+        "Effect (English)": "Increases damage by 4% for each consecutive Just Attack, up to 40%.",
+        "Effect (Global)": "Increases damage by 4% for each consecutive Perfect Attack, up to 40%.",
         "Special": "Hidden"
     },
     {
@@ -3366,8 +3562,12 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "万象破断の護刃",
         "Name (English)": "Shredding Shields",
-        "Effect (English)": "When PP is 25% or above, increases Damage dealt by 22%.",
+        "Name (Global)": "Shredding Shields",
+        "Effect (JP)": "PPが25%以上の時、与ダメージが22%上昇する。",
+        "Effect (English)": "Increases damage by 22% when PP is above 25%.",
+        "Effect (Global)": "Increases damage by 22% when PP is above 25%.",
         "Special": "Weaponoid"
     },
     {
@@ -3447,8 +3647,12 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "魂の形成",
         "Name (English)": "Soul Formation",
-        "Effect (English)": "Increases damage dealt by 15% and reduces damage taken by 15%.",
+        "Name (Global)": "Soul Formation",
+        "Effect (JP)": "威力が15%上昇し被ダメージを15%軽減。",
+        "Effect (English)": "Increases damage by 15% and reduces damage taken by 15%.",
+        "Effect (Global)": "Increases damage by 15% and reduces damage taken by 15%.",
         "Special": "Weaponoid"
     },
     {
@@ -3489,8 +3693,12 @@
         "Special": "Arena"
     },
     {
+        "Name (JP)": "錬成進化",
         "Name (English)": "Evolution Trainer",
-        "Effect (English)": "Increases damage,  automatic and attack PP Recovery based on the number of Special Abilities attached. (2% damage, 3.75% Auto PP Recov., 2.875% Atk PP Recov. / Ability)",
+        "Name (Global)": "Augmented Evolution",
+        "Effect (JP)": "特殊能力数に応じて威力・PP回復効果が上昇する。\n(特殊能力数×2%(威力)・2%(攻撃時PP回復量)・3.75%(PP自動回復量))",
+        "Effect (English)": "For each Special Ability on the weapon, increases damage by 2% Natural PP Recovery by 3.75%, and Active PP Recovery bt 2.",
+        "Effect (Global)": "For each Augment on the weapon, increases damage by 2% Natural PP Recovery by 3.75%, and Active PP Recovery bt 2.",
         "Special": "Arena"
     },
     {
@@ -3515,8 +3723,8 @@
         "Name (English)": "Tempering Trainer",
         "Name (Global)": "Practiced Augmentation",
         "Effect (JP)": "特殊能力数に応じて威力が上昇しPP消費量が減少する。\n(特殊能力数×1.625%(威力)・2.5%(PP消費量))",
-        "Effect (English)": "Increases damage by 1.625% for each Special Ability on the weapon, and reduces PP Consumption by 2.5% for each Special Ability on the weapon.",
-        "Effect (Global)": "Increases damage by 1.625% for each Augment on the weapon, and reduces PP Consumption by 2.5% for each Augment on the weapon.",
+        "Effect (English)": "For each Special Ability on the weapon, increases damage by 1.625%, and reduces PP Consumption by 2.5%.",
+        "Effect (Global)": "For each Augment on the weapon, increases damage by 1.625%, and reduces PP Consumption by 2.5%.",
         "Special": "Ether"
     },
     {
@@ -3525,12 +3733,20 @@
         "Special": "Ether"
     },
     {
+        "Name (JP)": "死闘奮迅・堅守",
         "Name (English)": "Deathblow Fury - Defense",
-        "Effect (English)": "Damage increases by 12% during the Buster Quest Defense Phase in addition to Deathblow Fury's effects."
+        "Name (Global)": "Deathblow Fury - Defense",
+        "Effect (JP)": "死闘奮迅に加え、ディフェンスフェイズ時に威力上昇効果が発生。(12%)",
+        "Effect (English)": "Increases damage by 8%. Recovers 3 PP when an enemy is killed nearby. Increases damage by an additional 12% during the Defense Phase in Buster Quests.",
+        "Effect (Global)": "Increases damage by 8%. Recovers 3 PP when an enemy is killed nearby. Increases damage by an additional 12% during the Defense Phase in Buster Quests."
     },
     {
+        "Name (JP)": "死闘奮迅・進攻",
         "Name (English)": "Deathblow Fury - Advance Attack",
-        "Effect (English)": "Damage increases by 12% during the Buster Quest Attack and Buster Phase in addition to Deathblow Fury's effects."
+        "Name (Global)": "Lethal Combat Fury: Offensive",
+        "Effect (JP)": "死闘奮迅に加え、ディフェンスフェイズ時に威力上昇効果が発生。(12%)",
+        "Effect (English)": "Increases damage by 8%. Recovers 3 PP when an enemy is killed nearby. Increases damage by an additional 12% during the Attack and Buster Phases in Buster Quests.",
+        "Effect (Global)": "Increases damage by 8%. Recovers 3 PP when an enemy is killed nearby. Increases damage by an additional 12% during the Attack and Buster Phases in Buster Quests."
     },
     {
         "Name (English)": "Deathblow Honor - Defense",
@@ -3541,16 +3757,20 @@
         "Effect (English)": "Damage increases by 3% during the Buster Quest Attack and Buster Phase in addition to Deathblow Honor's effects."
     },
     {
+        "Name (JP)": "千年の輝き",
         "Name (English)": "Millenium Blaze",
-        "Effect (English)": "Increases damage by 10%."
+        "Name (Global)": "Enduring Sparkle",
+        "Effect (JP)": "威力が10%上昇する。",
+        "Effect (English)": "Increases damage by 10%.",
+        "Effect (Global)": "Increases damage by 10%."
     },
     {
         "Name (JP)": "闇き幻精・改",
         "Name (English)": "Phantasmal Darkness Plus",
         "Name (Global)": "Dark Phantom Redux",
         "Effect (JP)": "フォトンブラストゲージに応じて威力が上昇する。(18%/19%/20%)\nフォトンブラスト発動時幻獣毎に異なる効果発生。",
-        "Effect (English)": "Increases damage based on the Photon Blast Gauge (18% base, 19% when above 1/3, 20% when above 2/3). Increases Native PP Recovery by 10%. When Photon Blast is used, grants an additional effect based on the Photon Blast type:\n\nHelix: +6% damage\nAjax: +60% Active PP Recovery\nKetos: +40% Natural PP Recovery\nJulius: -15% damage taken\nIlios: -20% PP consumption\n\nEffects stack if used by different Mags. Effects last until Quest ends or going back to Campship. Effects are paused when a different potential is equipped, and are resumed when this potential is equipped again.",
-        "Effect (Global)": "Increases damage based on the Photon Blast Gauge (18% base, 19% when above 1/3, 20% when above 2/3). Increases Native PP Recovery by 10%. When Photon Blast is used, grants an additional effect based on the Photon Blast type:\n\nHelix: +6% damage\nAjax: +60% Active PP Recovery\nCetus: +40% Natural PP Recovery\nJulius: -15% damage taken\nTroy: -20% PP consumption\n\nEffects stack if used by different Mags. Effects last until Quest ends or going back to Campship. Effects are paused when a different potential is equipped, and are resumed when this potential is equipped again.",
+        "Effect (English)": "Increases damage by 18%/19%/20% at minimum/half/full status of the Photon Blast Gauge. Increases Native PP Recovery by 10%. When Photon Blast is used, grants an additional effect based on the Photon Blast type:\n\nHelix: +6% damage\nAjax: +60% Active PP Recovery\nKetos: +40% Natural PP Recovery\nJulius: -15% damage taken\nIlios: -20% PP consumption\n\nEffects stack if used by different Mags. Effects last until Quest ends or going back to Campship. Effects are paused when a different potential is equipped, and are resumed when this potential is equipped again.",
+        "Effect (Global)": "Increases damage by 18%/19%/20% at minimum/half/full status of the Photon Blast Gauge. Increases Native PP Recovery by 10%. When Photon Blast is used, grants an additional effect based on the Photon Blast type:\n\nHelix: +6% damage\nAjax: +60% Active PP Recovery\nCetus: +40% Natural PP Recovery\nJulius: -15% damage taken\nTroy: -20% PP consumption\n\nEffects stack if used by different Mags. Effects last until Quest ends or going back to Campship. Effects are paused when a different potential is equipped, and are resumed when this potential is equipped again.",
         "Special": "Luminmech"
     },
     {
