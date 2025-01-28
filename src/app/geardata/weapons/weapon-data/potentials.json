@@ -576,7 +576,7 @@
         "Effect (Global)": "Converts 50% of weapon's RNG Pwr into TEC Pwr."
     },
     {
-        "Name (JP)": "Revival Reversal",
+        "Name (JP)": "回生転換",
         "Name (English)": "Revival Reversal",
         "Name (Global)": "Revival Reversal",
         "Effect (JP)": "ジャストリバーサルを行った際にHPが回復する。(最大HPの14%)",
@@ -1800,17 +1800,25 @@
         "Name (JP)": "極光の功",
         "Name (English)": "Aurora Blessing",
         "Name (Global)": "Aurora Blessing",
-        "Effect (JP)": "凍土の天候変化でダメージが増加する。最大はオーロラ時。\n(雪:10%/吹雪:20%/ダイヤモンドダスト:30%/オーロラ:40%)",
+        "Effect (JP)": "凍土の天候変化でダメージが増加する。最大はオーロラ時。\n(雪10%/吹雪20%/ダイヤモンドダスト30%/オーロラ40%)",
         "Effect (English)": "Increases damage based on the weather in the Tundra area (Snow: 10%, Blizzard: 20%, Diamond Dust: 30%, Aurora: 40%).",
         "Effect (Global)": "Increases damage based on the weather in the Tundra area (Snow: 10%, Blizzard: 20%, Diamond Dust: 30%, Aurora: 40%)."
     },
     {
+        "Name (JP)": "流星の功",
         "Name (English)": "Meteor Blessing",
-        "Effect (English)": "Increases damage depending on the weather in Desert (Dust: 10%, Sandstorm: 20%, Magnetic Storm: 30%, Meteor Shower: 40%)."
+        "Name (Global)": "Meteor Blessing",
+        "Effect (JP)": "凍土の天候変化でダメージが増加する。最大はオーロラ時。\n(ダスト10%/砂嵐20%/磁気嵐30%/流星群40%)",
+        "Effect (English)": "Increases damage based on the weather in the Desert area (Dust: 10%, Sandstorm: 20%, Magnetic Storm: 30%, Meteor Shower: 40%).",
+        "Effect (Global)": "Increases damage based on the weather in the Desert area (Dust: 10%, Sandstorm: 20%, Magnetic Storm: 30%, Meteor Shower: 40%)."
     },
     {
+        "Name (JP)": "浄土の功",
         "Name (English)": "Paradise Blessing",
-        "Effect (English)": "Increases damage depending on the weather in Shironia (Butterflies: 10%, Wind: 20%, Petals: 30%, Ideographs: 40%)."
+        "Name (Global)": "Paradise Blessing",
+        "Effect (JP)": "白ノ領域の天候変化でダメージが増加する。最大は白黒文字時。\n(蝶舞10%/風舞20%/花舞30%/文舞40%)",
+        "Effect (English)": "Increases damage based on the weather in the Shironia area (Butterflies: 10%, Wind: 20%, Petals: 30%, Ideographs: 40%).",
+        "Effect (Global)": "Increases damage based on the weather in the Daybreak Province area (Butterflies: 10%, Wind: 20%, Petals: 30%, Ideographs: 40%)."
     },
     {
         "Name (English)": "Burning Hearts",
@@ -2086,8 +2094,12 @@
         "Effect (English)": "Increases the damage of Tritt Shooter by ?%."
     },
     {
+        "Name (JP)": "覚悟の天秤",
         "Name (English)": "Readying Balance",
-        "Effect (English)": "Increases damage taken by 15% and damage done by 15% when the weapon is unsheathed."
+        "Name (Global)": "Resolute Balance",
+        "Effect (JP)": "抜刀時の被ダメージ15%上昇、与ダメージ15%上昇。",
+        "Effect (English)": "When the weapon is unsheathed, increases damage dealt and taken by 15%.",
+        "Effect (Global)": "When the weapon is unsheathed, increases damage dealt and taken by 15%."
     },
     {
         "Name (English)": "Photon's Vessel",
@@ -2150,64 +2162,116 @@
         "Effect (English)": "Damage is increased by 6% and gradually increases over time up to 20% total. Resets if Mirage Escape is used (takes 60 seconds to max)."
     },
     {
+        "Name (JP)": "不撓不屈の魂",
         "Name (English)": "Indomitable Soul",
-        "Effect (English)": "Damage is increased by 6%, damage taken is reduced by 20%, and knock back is nullified."
+        "Name (Global)": "Tenacious Spirit",
+        "Effect (JP)": "与ダメージが6%上昇、ダメージを20%軽減しノックバックを消す。",
+        "Effect (English)": "Increases damage by 6%, reduces damage taken by 20%, and grants immunity to flinch/knockback. Does not prevent being downed or launched.",
+        "Effect (Global)": "Increases damage by 6%, reduces damage taken by 20%, and grants immunity to flinch/knockback. Does not prevent being downed or launched."
     },
     {
+        "Name (JP)": "属性追従・雷光",
         "Name (English)": "Element Tracking - Lightning/Light",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Lightning or Light."
+        "Name (Global)": "Element Sync: Lightning & Light",
+        "Effect (JP)": "弱点属性が雷・光・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Lightning, Light, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Lightning, Light, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
+        "Name (JP)": "属性追従・氷光",
         "Name (English)": "Element Tracking - Ice/Light",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Light or Ice."
+        "Name (Global)": "Element Sync: Ice & Light",
+        "Effect (JP)": "弱点属性が氷・光・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Ice, Light, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Ice, Light, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
+        "Name (JP)": "属性追従・光闇",
         "Name (English)": "Element Tracking - Light/Dark",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Light or Dark."
+        "Name (Global)": "Element Sync: Light & Dark",
+        "Effect (JP)": "弱点属性が光・闇・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Light, Dark, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Light, Dark, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
         "Name (JP)": "属性追従・炎光",
         "Name (English)": "Element Tracking - Fire/Light",
-        "Name (Global)": "Element Tracking - Fire/Light",
+        "Name (Global)": "Element Sync: Fire & Light",
         "Effect (JP)": "弱点属性が炎・光・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
         "Effect (English)": "When hitting an enemy weak to Fire, Light, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
         "Effect (Global)": "When hitting an enemy weak to Fire, Light, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
+        "Name (JP)": "属性追従・炎風",
         "Name (English)": "Element Tracking - Fire/Wind",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Wind."
+        "Name (Global)": "Element Sync: Fire & Wind",
+        "Effect (JP)": "弱点属性が炎・風・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Fire, Wind, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Fire, Wind, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
+        "Name (JP)": "属性追従・風闇",
         "Name (English)": "Element Tracking - Wind/Dark",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Wind or Dark."
+        "Name (Global)": "Element Sync: Wind & Dark",
+        "Effect (JP)": "弱点属性が風・闇・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Wind, Dark, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Wind, Dark, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
+        "Name (JP)": "属性追従・炎雷",
         "Name (English)": "Element Tracking - Fire/Lightning",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Lightning."
+        "Name (Global)": "Element Sync: Fire & Lightning",
+        "Effect (JP)": "弱点属性が炎・雷・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Fire, Lightning, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Fire, Lightning, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
+        "Name (JP)": "属性追従・氷雷",
         "Name (English)": "Element Tracking - Ice/Lightning",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Ice or Lightning."
+        "Name (Global)": "Element Sync: Ice & Lightning",
+        "Effect (JP)": "弱点属性が氷・雷・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Ice, Lightning, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Ice, Lightning, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
+        "Name (JP)": "属性追従・風光",
         "Name (English)": "Element Tracking - Wind/Light",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Wind or Light."
+        "Name (Global)": "Element Sync: Wind & Light",
+        "Effect (JP)": "弱点属性が風・光・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Wind, Light, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Wind, Light, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
+        "Name (JP)": "属性追従・氷風",
         "Name (English)": "Element Tracking - Ice/Wind",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Ice or Wind."
+        "Name (Global)": "Element Sync: Ice & Wind",
+        "Effect (JP)": "弱点属性が氷・風・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Ice, Wind, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Ice, Wind, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
+        "Name (JP)": "属性追従・雷闇",
         "Name (English)": "Element Tracking - Lightning/Dark",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Lightning or Dark."
+        "Name (Global)": "Element Sync: Lightning & Dark",
+        "Effect (JP)": "弱点属性が雷・闇・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Lightning, Dark, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Lightning, Dark, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
+        "Name (JP)": "属性追従・炎闇",
         "Name (English)": "Element Tracking - Fire/Dark",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) when attacking if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Dark."
+        "Name (Global)": "Element Sync: Fire & Dark",
+        "Effect (JP)": "弱点属性が炎・闇・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Fire, Dark, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Fire, Dark, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
+        "Name (JP)": "属性追従・炎氷",
         "Name (English)": "Element Tracking - Fire/Ice",
-        "Effect (English)": "Increases damage by 14% and recover 1% of damage dealt as HP (50 HP MAX) if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire or Ice."
+        "Name (Global)": "Element Sync: Fire & Ice",
+        "Effect (JP)": "弱点属性が炎・氷・武器属性のいずれかと一致時、威力(14%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Fire, Ice, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Fire, Ice, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
         "Name (English)": "Blessed Season",
@@ -2455,20 +2519,24 @@
         "Effect (Global)": "Increases damage based on Dark Blast Gauge, up to 17%. Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Elder] transformation time by 7 seconds. Damage increase persists at max value after using Dark Blast."
     },
     {
+        "Name (JP)": "操闇知略",
         "Name (English)": "Darkness Brilliance",
-        "Effect (English)": "Increases damage based on Dark Blast Gauge (up to 15%). Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Loser] transformation time by 7 seconds."
-    },
-    {
-        "Name (English)": "Darkness Brilliance",
-        "Effect (English)": "Increases damage based on Dark Blast Gauge (up to 15%). Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Apprentice] transformation time by 7 seconds."
-    },
-    {
-        "Name (English)": "Darkness Game",
-        "Effect (English)": "Increases damage based on Dark Blast Gauge (up to 15%). Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Double] transformation time by 7 seconds."
+        "Name (Global)": "Dark Ingenuity",
+        "Effect (JP)": "ダークブラストゲージの上昇率・ゲージ量での威力・【敗者】の変身時間を増加。\n(ゲージ上昇率20%・威力上昇最大15%・変身時間+7秒)",
+        "Effect (English)": "Increases damage based on Dark Blast Gauge, up to 15%. Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Loser] transformation time by 7 seconds. Damage increase persists at max value after using Dark Blast.",
+        "Effect (Global)": "Increases damage based on Dark Blast Gauge, up to 15%. Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Luther] transformation time by 7 seconds. Damage increase persists at max value after using Dark Blast."
     },
     {
         "Name (English)": "Bewitching Performance",
-        "Effect (English)": "Increases rate of Dark Blast Gauge accumulation by ?% and Dark Blast [Apprentice] transformation time by ? seconds."
+        "Effect (English)": "Increases damage based on Dark Blast Gauge, up to 15%. Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Apprentice] transformation time by 7 seconds. Damage increase persists at max value after using Dark Blast."
+    },
+    {
+        "Name (JP)": "操闇遊戯",
+        "Name (English)": "Darkness Game",
+        "Name (Global)": "Dark Playtime",
+        "Effect (JP)": "ダークブラストゲージの上昇率、ゲージ量での威力【双子】の変身時間を増加。\n(ゲージ上昇率20%・威力上昇最大15%・変身時間+7秒)",
+        "Effect (English)": "Increases damage based on Dark Blast Gauge, up to 17%. Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Double] transformation time by 7 seconds. Damage increase persists at max value after using Dark Blast.",
+        "Effect (Global)": "Increases damage based on Dark Blast Gauge, up to 17%. Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Gemini] transformation time by 7 seconds. Damage increase persists at max value after using Dark Blast."
     },
     {
         "Name (JP)": "一閃壊刃",
@@ -2555,8 +2623,12 @@
         "Effect (English)": "Increases damage by 14% and increases the amount of PP restored by Normal Attacks (+2)."
     },
     {
+        "Name (JP)": "白の戦略",
         "Name (English)": "White Tactics",
-        "Effect (English)": "Increases Critical Hit Rate by 100% and increases the damage of Critical Hits by 12%."
+        "Name (Global)": "Daybreak Tactics",
+        "Effect (JP)": "クリティカル威力が12%、クリティカル率が100%上昇する。",
+        "Effect (English)": "Increases Critical Hit damage by 12% and Critical Hit Rate by 100%.",
+        "Effect (Global)": "Increases Critical Hit damage by 12% and Critical Hit Rate by 100%."
     },
     {
         "Name (JP)": "必撃の戦陣",
@@ -2575,8 +2647,12 @@
         "Effect (English)": "Increases damage by 8%. Automatically charge Gear while in mid-air (Bouncer only)."
     },
     {
+        "Name (JP)": "閃光の自在槍",
         "Name (English)": "Gleaming Lance",
-        "Effect (English)": "Increases the damage of Grappling PAs when at max Gear (10%). Consume no Gear for a short duration after performing a Just Guard (15s). (damage +4%)"
+        "Name (Global)": "Gleaming Wired Lance",
+        "Effect (JP)": "威力が4%上昇し、ジャストガード成功時一定時間ギア消費なし。\n(JG成功時:15秒間ギア消費無し　ギアゲージ最大時:ホールドPAの威力10%上昇)",
+        "Effect (English)": "Increases damage by 4%. Increases the damage of Grappling PAs by 10% when Gear is maxed. Consumes no Gear for 15 seconds after performing a Just Guard.",
+        "Effect (Global)": "Increases damage by 4%. Increases the damage of Grappling PAs by 10% when Focus is maxed. Consumes no Focus for 15 seconds after performing a Perfect Guard."
     },
     {
         "Name (English)": "Illusion Technique",
@@ -2631,8 +2707,12 @@
         "Effect (English)": "Increases damage by 2%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds."
     },
     {
+        "Name (JP)": "破滅の摂理",
         "Name (English)": "Tragic Providence",
-        "Effect (English)": "Increases damage by 12%.  Further increases damage (5%) and Active PP Recovery (+40%) against bosses."
+        "Name (Global)": "Ruinous Providence",
+        "Effect (JP)": "威力が12%上昇。強敵に対しては威力(5%)とPP回復量(40%)が更に上昇。",
+        "Effect (English)": "Increases damage by 12%. Increases damage by an additional 5% and Active PP Recovery by 40% against bosses.",
+        "Effect (Global)": "Increases damage by 12%. Increases damage by an additional 5% and Active PP Recovery by 40% against bosses."
     },
     {
         "Name (English)": "Auxiliary Dart",
@@ -2743,8 +2823,12 @@
         "Effect (Global)": "Increases non-Technique damage by 16% when hitting an enemy weakspot. Increases Technique damage by 16% when attacking an enemy's Elemental Weakness."
     },
     {
+        "Name (JP)": "輝撃の加護",
         "Name (English)": "Lustrous Protection",
-        "Effect (English)": "Increases damage by 10%. Increases Active PP Recovery by 15% and reduce PP consumption by 15%."
+        "Name (Global)": "Lustrous Protection",
+        "Effect (JP)": "威力10%上昇。攻撃時にPP回復量が15%上昇しPP消費量が15%減少。",
+        "Effect (English)": "Increases damage by 10% and Active PP Recovery by 15%. Reduces PP consumption by 15%.",
+        "Effect (Global)": "Increases damage by 10% and Active PP Recovery by 15%. Reduces PP consumption by 15%."
     },
     {
         "Name (English)": "Circular Release",
@@ -2927,8 +3011,12 @@
         "Effect (Global)": "Increases damage by 13%. After having less than 100% HP for 20 seconds, recovers 700 HP, increases damage by 3% and reduces damage taken by 30% for 120 seconds."
     },
     {
+        "Name (JP)": "変異の代償",
         "Name (English)": "Variating Redress",
-        "Effect (English)": "Increases damage by 8%. Take damage when using a PA/Technique and reduce PP Consumption by 45%."
+        "Name (Global)": "Mutated Consolation",
+        "Effect (JP)": "威力8%上昇。PA、テクニック使用時ダメージを受けるがPP消費量45%減少。",
+        "Effect (English)": "Increases damage by 8%. Reduces PP consumption by 45%, but take 90 damage when using PAs or Techniques. Effect will not reduce HP below 1. Does not affect Compound Techniques.",
+        "Effect (Global)": "Increases damage by 8%. Reduces PP consumption by 45%, but take 90 damage when using PAs or Techniques. Effect will not reduce HP below 1. Does not affect Compound Techniques."
     },
     {
         "Name (English)": "Agonizing Blaze",
@@ -2943,8 +3031,12 @@
         "Effect (English)": "Increases damage by 15%. When the Gear Gauge is maxed, enhance the performance of Distract Wing and consume Gear on activation."
     },
     {
+        "Name (JP)": "閃影の鎚撃",
         "Name (English)": "Luminecho Hammer",
-        "Effect (English)": "Increases damage by 10%. When the Gear Gauge is maxed, consume all Gear when using Heavenly Fall and execute an additional attack that hits all nearby enemies."
+        "Name (Global)": "Hammer Flash",
+        "Effect (JP)": "威力が10％増加。ギア最大状態でヘブンリーフォール命中時、ギアを全て消費し周囲に追撃を行う。",
+        "Effect (English)": "Increases damage by 10%. Using Heavenly Fall while Gear gauge is maxed will consume all Gear to increase damage by 5% and execute an additional attack that hits all nearby enemies.",
+        "Effect (Global)": "Increases damage by 10%. Using Heavenly Drop while Focus gauge is maxed will consume all Focus to increase damage by 5% and execute an additional attack that hits all nearby enemies."
     },
     {
         "Name (English)": "Twilight Demon Leg",
@@ -3027,8 +3119,12 @@
         "Effect (English)": "Increases damage by 8%. Hasten startup speed of Vinto Gigue. Enhance the area of effect of Vinto Gigue Branched Action."
     },
     {
+        "Name (JP)": "青竜の契",
         "Name (English)": "Seiryu Vow",
-        "Effect (English)": "Increases damage by 8%. Grant an additional damage bonus when hitting with a PA that consumes Gear. damage greatly increases after the third PA."
+        "Name (Global)": "Azure Dragon's Vow",
+        "Effect (JP)": "威力8%上昇。ギア消費PA命中時に威力が更に上昇。3回目のギア消費PA命中時に大幅に強化される。",
+        "Effect (English)": "Increases damage by 8%. Increases damage by an additional 2%/5%/10% based on Gear level.",
+        "Effect (Global)": "Increases damage by 8%. Increases damage by an additional 2%/5%/10% based on Focus level."
     },
     {
         "Name (English)": "Golden Dragon's Eruption",
@@ -3379,8 +3475,12 @@
         "Special": "Hidden"
     },
     {
+        "Name (JP)": "清明なる加護",
         "Name (English)": "Divine Purity",
-        "Effect (English)": "Increases Active PP recovery by 40%, Automatic PP recovery by 20%, and damage by 15%.",
+        "Name (Global)": "Divine Purity",
+        "Effect (JP)": "攻撃時のPP回復量を40%、PP自動回復量を20%、威力を15%上昇させる。",
+        "Effect (English)": "Increases damage by 15%, Natural PP recovery by 20%, and Active PP recovery by 40%.",
+        "Effect (Global)": "Increases damage by 15%, Natural PP recovery by 20%, and Active PP recovery by 40%.",
         "Special": "Hidden"
     },
     {
@@ -3438,8 +3538,12 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "創地の宝槍",
         "Name (English)": "Earthly Treasure",
-        "Effect (English)": "Increases damage when attacking from the ground by 12%. Increases PP recovery by 30%.",
+        "Name (Global)": "Buried Treasure",
+        "Effect (JP)": "地上での攻撃時に与ダメージが12%、PP回復量が30%上昇。",
+        "Effect (English)": "Increases damage by 12% when attacking from the ground. Increases PP recovery by 30%.",
+        "Effect (Global)": "Increases damage by 12% when attacking from the ground. Increases PP recovery by 30%.",
         "Special": "Weaponoid"
     },
     {
@@ -3534,8 +3638,12 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "烈地の撃",
         "Name (English)": "Land's Wrath",
-        "Effect (English)": "Increases damage by 23% when you are on the ground.",
+        "Name (Global)": "Land's Wrath",
+        "Effect (JP)": "地上での攻撃時に与ダメージが23%上昇。",
+        "Effect (English)": "Increases damage by 23% when attacking from the ground.",
+        "Effect (Global)": "Increases damage by 23% when attacking from the ground.",
         "Special": "Weaponoid"
     },
     {

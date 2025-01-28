@@ -2409,7 +2409,7 @@
         "SSA Slots": null
     },
     {
-        "Name (JP)": "ボクスドビュー",
+        "Name (JP)": "ボクスドビュール",
         "name_en": "Box Dobule",
         "name_global": "Voxed Buhl",
         "Rarity": 13,
@@ -3328,9 +3328,9 @@
         "SSA Slots": [3]
     },
     {
-        "Name (JP)": "シホウセイリュウ",
-        "name_en": "Shihou Seiryu",
-        "name_global": "Pride of Seiryu",
+        "Name (JP)": "クルヴァピュラス",
+        "name_en": "Cruva Puras",
+        "name_global": "Curva Puras",
         "Rarity": 15,
         "Requirement": ["S-ATK",900],
         "S-ATK": 1612,
