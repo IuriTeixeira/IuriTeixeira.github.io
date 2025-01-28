@@ -604,7 +604,7 @@
         "Name (English)": "Battle Awakening",
         "Name (Global)": "Battle Awakening",
         "Effect (JP)": "ギアゲージの上昇率にボーナスを得る。(100%)",
-        "Effect (English)": "Increases Gear Gauge accumulation rate by 100%.",
+        "Effect (English)": "Increases Gear gauge accumulation rate by 100%.",
         "Effect (Global)": "Increases Focus Gauge accumulation rate by 100%."
     },
     {
@@ -2015,7 +2015,7 @@
     },
     {
         "Name (English)": "Type of Thunder",
-        "Effect (English)": "Increases damage by 10% when the Gear Gauge is Level 2 or higher and increases pp recovery from attacks by 20%."
+        "Effect (English)": "Increases damage by 10% when the Gear gauge is Level 2 or higher and increases pp recovery from attacks by 20%."
     },
     {
         "Name (JP)": "正中必壊",
@@ -2591,8 +2591,12 @@
         "Effect (English)": "Increases the potency of Elemental Burst (20% damage) and automatically activate Elemental Burst when using a Photon Art's variant attack. (+8% damage)"
     },
     {
+        "Name (JP)": "聖鳥の祝福",
         "Name (English)": "Angelic Blessing",
-        "Effect (English)": "Restores PP when Guarding (+300% PP Regen). When the Gear Gauge is maxed, Partizan Gear will not be consumed while airborne. (+9% damage)"
+        "Name (Global)": "Sacred Bird Blessing",
+        "Effect (JP)": "威力が9%上昇。ガード中、PP回復量上昇。ギア最大時、空中ではギアを消費しなくなる。\n(PP自動回復量+300%)",
+        "Effect (English)": "Increases damage by 9%. Increases Natural PP Recovery while guarding by 300%. When the Gear gauge is maxed, Partizan Gear will not be consumed while airborne.",
+        "Effect (Global)": "Increases damage by 9%. Increases Natural PP Recovery while guarding by 300%. When the Focus gauge is maxed, Partisan Focus will not be consumed while airborne."
     },
     {
         "Name (English)": "Retaliating Fist",
@@ -2768,7 +2772,7 @@
     },
     {
         "Name (English)": "Angelic Adept",
-        "Effect (English)": "Increases damage by 10%. Increases Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying."
+        "Effect (English)": "Increases damage by 10%. Increases Gear gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying."
     },
     {
         "Name (English)": "Chaotic Arm",
@@ -2955,8 +2959,12 @@
         "Effect (English)": "Increases damage by 10%. Change 3rd Normal Attack into an explosive bullet."
     },
     {
+        "Name (JP)": "疾駆奮迅",
         "Name (English)": "Torrential Dash",
-        "Effect (English)": "Increases damage by 11%. Inflict damage while running. Unleash a Shockwave attack when you disables running."
+        "Name (Global)": "Furious Dash",
+        "Effect (JP)": "威力が11%上昇。ダッシュ状態時、接触した敵にダメージ。ダッシュの停止時に衝撃波が発生。",
+        "Effect (English)": "Increases damage by 11%. Inflict damage while running. Unleash a Shockwave attack when you stop running.",
+        "Effect (Global)": "Increases damage by 11%. Inflict damage while running. Unleash a Shockwave attack when you stop running."
     },
     {
         "Name (JP)": "強闘剛心",
@@ -3020,15 +3028,15 @@
     },
     {
         "Name (English)": "Agonizing Blaze",
-        "Effect (English)": "Increases damage by 10%. Increases the damage of Counter Edge by 15%. Restores Gear Gauge when you successfully perform Katana Counter."
+        "Effect (English)": "Increases damage by 10%. Increases the damage of Counter Edge by 15%. Restores Gear gauge when you successfully perform Katana Counter."
     },
     {
         "Name (English)": "Luminecho Slug",
-        "Effect (English)": "Increases damage by 10%. Enhance the performance of Shift Period when the Gear Gauge is above a certain level."
+        "Effect (English)": "Increases damage by 10%. Enhance the performance of Shift Period when the Gear gauge is above a certain level."
     },
     {
         "Name (English)": "Luminecho Guillotine",
-        "Effect (English)": "Increases damage by 15%. When the Gear Gauge is maxed, enhance the performance of Distract Wing and consume Gear on activation."
+        "Effect (English)": "Increases damage by 15%. When the Gear gauge is maxed, enhance the performance of Distract Wing and consume Gear on activation."
     },
     {
         "Name (JP)": "閃影の鎚撃",
@@ -3091,8 +3099,12 @@
         "Effect (English)": "Increases damage by 15%. Increases Natural PP Recovery by 15% in exchange for receiving 5% HP in damage every 10s. Natural PP Recovery increases to +70% if 200 HP in damage is taken via this Potential's effect."
     },
     {
+        "Name (JP)": "縛魂の斬閃",
         "Name (English)": "Soulbound Guillotine",
-        "Effect (English)": "Increases damage by 12%. Add an additional slash attack to Normal Attacks. The effect of the additional slash changes based on HP."
+        "Name (Global)": "Soulbound Sunderer",
+        "Effect (JP)": "威力が12%上昇。通常攻撃に斬撃が追加。斬撃は自身のHPが最大時と減少時で効果が異なる。",
+        "Effect (English)": "Increases damage by 12%. Normal Attacks shoot an energy blade that behaves differently based on HP. If HP is full, the energy blade is fast and short range, and recovers 14 PP on hit. If HP is not full, the energy blade is slow and long range, and recovers 100 HP on hit.",
+        "Effect (Global)": "Increases damage by 12%. Normal Attacks shoot an energy blade that behaves differently based on HP. If HP is full, the energy blade is fast and short range, and recovers 14 PP on hit. If HP is not full, the energy blade is slow and long range, and recovers 100 HP on hit."
     },
     {
         "Name (English)": "Brilliant Front",
@@ -3147,12 +3159,16 @@
         "Effect (English)": "Increases damage by 6%. Your Pet can survive one fatal attack with 1 HP. Your Pet restores HP at regular intervals afterwards."
     },
     {
+        "Name (JP)": "濃紺の夜明",
         "Name (English)": "Midnight Dawn",
-        "Effect (English)": "Increases damage by 13%. Natural PP recovery is halted, in return you regain 5 PP every second."
+        "Name (Global)": "Deep Blue Dawn",
+        "Effect (JP)": "威力が13%上昇。PP自然回復が停止し代わりに1秒ごとにPPを5回復する。",
+        "Effect (English)": "Increases damage by 13%. Recovers 5 PP per second, but prevents Natural PP Recovery.",
+        "Effect (Global)": "Increases damage by 13%. Recovers 5 PP per second, but prevents Natural PP Recovery."
     },
     {
         "Name (English)": "Crimson Evening",
-        "Effect (English)": "Increases damage by 6%. Restores 2 PP every second."
+        "Effect (English)": "Increases damage by 6%. Recovers 2 PP per second."
     },
     {
         "Name (English)": "Impulsive Assault",
@@ -3479,8 +3495,8 @@
         "Name (English)": "Divine Purity",
         "Name (Global)": "Divine Purity",
         "Effect (JP)": "攻撃時のPP回復量を40%、PP自動回復量を20%、威力を15%上昇させる。",
-        "Effect (English)": "Increases damage by 15%, Natural PP recovery by 20%, and Active PP recovery by 40%.",
-        "Effect (Global)": "Increases damage by 15%, Natural PP recovery by 20%, and Active PP recovery by 40%.",
+        "Effect (English)": "Increases damage by 15%, Natural PP Recovery by 20%, and Active PP recovery by 40%.",
+        "Effect (Global)": "Increases damage by 15%, Natural PP Recovery by 20%, and Active PP recovery by 40%.",
         "Special": "Hidden"
     },
     {
@@ -4027,8 +4043,12 @@
         "Special": "Ultimate"
     },
     {
+        "Name (JP)": "聖鳥の祝福・改",
         "Name (English)": "Angelic Blessing Plus",
-        "Effect (English)": "Increases damage by 20%. Restores PP when Guarding (+?% PP Regen). When the Gear Gauge is maxed, Partizan Gear will not be consumed while airborne.",
+        "Name (Global)": "Sacred Bird Blessing Redux",
+        "Effect (JP)": "威力が20%上昇。ガード中、PP回復量上昇。ギア最大時、空中ではギアを消費しなくなる。\n(PP自動回復量+400%)",
+        "Effect (English)": "Increases damage by 20%. Increases Natural PP Recovery while guarding by 400%. When the Gear gauge is maxed, Partizan Gear will not be consumed while airborne.",
+        "Effect (Global)": "Increases damage by 20%. Increases Natural PP Recovery while guarding by 400%. When the Focus gauge is maxed, Partisan Focus will not be consumed while airborne.",
         "Special": "Ultimate"
     },
     {
@@ -4053,7 +4073,7 @@
     },
     {
         "Name (English)": "Angelic Adept Plus",
-        "Effect (English)": "Increases damage by 22%. Increases Gear Gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying.",
+        "Effect (English)": "Increases damage by 22%. Increases Gear gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying.",
         "Special": "Ultimate"
     },
     {
