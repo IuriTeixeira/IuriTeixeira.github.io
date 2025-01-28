@@ -5103,16 +5103,16 @@
         "Name (English)": "Guidance Trainer",
         "Name (Global)": "Augment Guidance",
         "Effect (JP)": [
-            "この装備品への特殊能力追加成功率が上昇する",
-            10
+            null,
+            "この装備品への特殊能力追加成功率が上昇する5%"
         ],
         "Effect (English)": [
             null,
-            "Increases transfer rate of abilities by 5%"
+            "Increases transfer rate of Special Abilities by 5%"
         ],
         "Effect (Global)": [
             null,
-            "Increases transfer rate of augments by 5%"
+            "Increases transfer rate of Augments by 5%"
         ]
     },
     {
@@ -5672,7 +5672,7 @@
         ],
         "Effect (Global)": [
             null,
-            "Increases damage by 0.5% for every augment affixed to this weapon. Maxes at 4% for 8 augments."
+            "Increases damage by 0.5% for every augment affixed to this weapon. Maxes at 4% for 8 Augments."
         ]
     },
     {
@@ -5690,7 +5690,7 @@
         ],
         "Effect (Global)": [
             null,
-            "Increases damage by 0.75% for every augment affixed to this weapon. Maxes at 6% for 8 augments."
+            "Increases damage by 0.75% for every augment affixed to this weapon. Maxes at 6% for 8 Augments."
         ]
     },
     {
@@ -9002,7 +9002,7 @@
         ],
         "Effect (Global)": [
             null,
-            "Doubles the effects of HP, PP, Pwr, Def, and Dex augments on this weapon."
+            "Doubles the effects of HP, PP, Pwr, Def, and Dex Augments on this weapon."
         ]
     },
     {

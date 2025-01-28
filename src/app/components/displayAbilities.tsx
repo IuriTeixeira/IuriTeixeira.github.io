@@ -236,7 +236,18 @@ export default function displayAbilities(abilities: any[]): any {
             }
             return buffer
         } else {
-            let image = <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${imageIcon}.png`} alt="Ability" title="Ability" w={16} h={16} />
+            let imageLabel: string
+            switch (language.language) {
+                case "日本語":
+                    imageLabel = "特殊能力追加"
+                    break;
+                case "Global":
+                    imageLabel = "Augment"
+                    break;
+                default:
+                    imageLabel = "Ability"
+            }
+            let image = <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${imageIcon}.png`} alt={imageLabel} title={imageLabel} w={16} h={16} />
             for (let i = 0; i < abilities.length; i++) {
                 let ab: any = abilityData.find(ab => ab['Name (English)'] === abilities[i])
                 switch (language.language) {

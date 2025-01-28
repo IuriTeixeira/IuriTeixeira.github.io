@@ -42,7 +42,7 @@ export default function WeaponHeaderComponent({ setWeaponData, setWeaponType }) 
                 <Group justify="center" mt="sm">
                     <Button onClick={() => { setWeaponData(swords); setWeaponType("swords") }}><Image src="/icons/Sword.png" alt="ソード" w={16} h={16} /> ソード</Button>
                     <Button onClick={() => { setWeaponData(wiredlances); setWeaponType('wiredlances') }}><Image src="/icons/WiredLance.png" alt="ワイヤードランス" w={16} h={16} /> ワイヤードランス</Button>
-                    <Button><Image src="/icons/Partizan.png" alt="パルチザン" w={16} h={16} /> パルチザン</Button>
+                    <Button onClick={() => { setWeaponData(partizans); setWeaponType('partizans') }}><Image src="/icons/Partizan.png" alt="パルチザン" w={16} h={16} /> パルチザン</Button>
                     <Button><Image src="/icons/TwinDagger.png" alt="ツインダガー" w={16} h={16} /> ツインダガー</Button>
                     <Button><Image src="/icons/DoubleSaber.png" alt="ダブルセイバー" w={16} h={16} /> ダブルセイバー</Button>
                     <Button><Image src="/icons/Knuckles.png" alt="ナックル" w={16} h={16} /> ナックル</Button>

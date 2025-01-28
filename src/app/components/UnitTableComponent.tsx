@@ -61,7 +61,7 @@ export default function UnitTableComponent({ data, type }) {
                                     case 'Dark Resistance': return
                                     case 'id': return;
                                     case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Abilities</Table.Th>
-                                    case 'Set': return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
+                                    case 'Set': return <Table.Th key={uuidv4()} className="centerCell">Set Effect</Table.Th>
                                     case 'SAF': return
                                     case 'Default Sub Icon': return
                                     default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
@@ -90,7 +90,7 @@ export default function UnitTableComponent({ data, type }) {
                                     case 'Dark Resistance': return
                                     case 'id': return;
                                     case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Augments</Table.Th>
-                                    case 'Set': return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
+                                    case 'Set': return <Table.Th key={uuidv4()} className="centerCell">Set Effect</Table.Th>
                                     case 'SAF': return
                                     case 'Default Sub Icon': return
                                     default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
@@ -103,7 +103,7 @@ export default function UnitTableComponent({ data, type }) {
                                     case 'name_global': return
                                     case 'Rarity': return <Table.Th key={uuidv4()} className="centerCell">レア</Table.Th>;
                                     case 'Requirement': return <Table.Th key={uuidv4()} className="centerCell">装備条件</Table.Th>;
-                                    case 'S-DEF': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">防御</Table.Th><Table.Th key={uuidv4()} className="centerCell">最大出防御</Table.Th></React.Fragment>
+                                    case 'S-DEF': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">防御</Table.Th><Table.Th key={uuidv4()} className="centerCell">強化防御</Table.Th></React.Fragment>
                                     case 'R-DEF': return
                                     case 'T-DEF': return
                                     case 'S-ATK': return <Table.Th key={uuidv4()} className="centerCell">力</Table.Th>
@@ -121,7 +121,7 @@ export default function UnitTableComponent({ data, type }) {
                                     case 'Dark Resistance': return
                                     case 'id': return;
                                     case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">特殊能力</Table.Th>
-                                    case 'Set': return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
+                                    case 'Set': return <Table.Th key={uuidv4()} className="centerCell">セット効果</Table.Th>
                                     case 'SAF': return
                                     case 'Default Sub Icon': return
                                     default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
