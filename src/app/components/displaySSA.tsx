@@ -8,13 +8,13 @@ export default function displaySSA(listSSA: any[]): any {
     let returnList:any[] = []
     for (let i = 0; i < listSSA.length; i++) {
         switch (language.language) {
-            case 'English Patch':
+            case 'English':
                 buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`SSA Slot ${listSSA[i]} enabled`} title={`SSA Slot ${listSSA[i]} enabled`} w={16} h={16} />)
                 break;
             case 'Global':
                 buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`SGA Slot ${listSSA[i]} enabled`} title={`SGA Slot ${listSSA[i]} enabled`} w={16} h={16} />)
                 break;
-            case '日本語':
+            case 'JP':
                 buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`S級特殊能力スロット${listSSA[i]}有効`} title={`S級特殊能力スロット${listSSA[i]}有効`} w={16} h={16} />)
                 break;
         }

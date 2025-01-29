@@ -12,13 +12,13 @@ export default function displayStat(key: string, value: number): any[] {
 
     if (statName) {
         switch (language.language) {
-            case 'English Patch':
+            case 'English':
                 name = statName['Name (English)']
                 break;
             case 'Global':
                 name = statName['Name (Global)']
                 break;
-            case '日本語':
+            case 'JP':
                 name = statName['Name (JP)']
                 break;
         }

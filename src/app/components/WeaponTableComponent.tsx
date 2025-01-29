@@ -21,9 +21,9 @@ export default function WeaponTableComponent({ data, type }) {
     let theadData: any = getHeadings();
     let tbodyData: any = data;
 
-    function calculateMaxAtk(baseATK: number, rarity: number, saf: string): number {
+    function calculateMaxAtk(baseATK: number, rarity: number, saf: string, potential: string): number {
         let maxATK: number = 0;
-        if (!saf) {
+        if (!saf && type !== 'takts' || type === 'takts' && !potential) {
             switch (rarity) {
                 case 1:
                 case 2:
@@ -53,15 +53,14 @@ export default function WeaponTableComponent({ data, type }) {
 
         if (statName) {
             switch (language.language) {
-                case 'English Patch':
-                    name = statName['Name (English)']
-                    break;
                 case 'Global':
                     name = statName['Name (Global)']
                     break;
-                case '日本語':
+                case 'JP':
                     name = statName['Name (JP)']
                     break;
+                default:
+                    name = statName['Name (English)']
             }
         }
 
@@ -82,7 +81,7 @@ export default function WeaponTableComponent({ data, type }) {
                         </Tooltip>
                     )
                     break;
-                case "日本語":
+                case "JP":
                     buffer.push(
                         <Tooltip className='centerCell' key={uuidv4()} label={`クラスや装備の条件に関係なくPAを使用できる`} color="dark">
                             <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Photon_Art.png`} alt={`PA`} w={16} h={16} /> {namePA}</Flex>
@@ -108,15 +107,15 @@ export default function WeaponTableComponent({ data, type }) {
         <Table striped stickyHeader withColumnBorders>
             <Table.Thead>
                 <Table.Tr>
-                    {(language.language === 'English Patch' || language.language === 'Global') && <Table.Th className="centerCell">Icon</Table.Th>}
-                    {language.language === '日本語' && <Table.Th className="centerCell">画像</Table.Th>}
+                    {language.language !== 'JP' && <Table.Th className="centerCell">Icon</Table.Th>}
+                    {language.language === 'JP' && <Table.Th className="centerCell">画像</Table.Th>}
                     {theadData.map((heading: string) => {
                         switch (language.language) {
-                            case 'English Patch':
+                            case 'English':
                                 switch (heading) {
                                     case 'Name (JP)': return;
-                                    case 'name_en': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
-                                    case 'name_global': return;
+                                    case 'Name (English)': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
+                                    case 'Name (Global)': return;
                                     case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">ATK</Table.Th><Table.Th key={uuidv4()} className="centerCell">ATK<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
                                     case 'R-ATK': return;
                                     case 'T-ATK': return;
@@ -132,8 +131,8 @@ export default function WeaponTableComponent({ data, type }) {
                             case 'Global':
                                 switch (heading) {
                                     case 'Name (JP)': return;
-                                    case 'name_en': return;
-                                    case 'name_global': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
+                                    case 'Name (English)': return;
+                                    case 'Name (Global)': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
                                     case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">ATK</Table.Th><Table.Th key={uuidv4()} className="centerCell">ATK<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
                                     case 'R-ATK': return;
                                     case 'T-ATK': return;
@@ -146,11 +145,11 @@ export default function WeaponTableComponent({ data, type }) {
                                     case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S-Grade Augment Slots Enabled" title="S-Grade Augment Slots Enabled" w={16} h={16} /> SGA</Flex></Table.Th>
                                     default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
                                 }
-                            case '日本語':
+                            case 'JP':
                                 switch (heading) {
                                     case 'Name (JP)': return <Table.Th key={uuidv4()} className="centerCell">名称</Table.Th>;
-                                    case 'name_en': return;
-                                    case 'name_global': return;
+                                    case 'Name (English)': return;
+                                    case 'Name (Global)': return;
                                     case 'Rarity': return <Table.Th key={uuidv4()} className="centerCell">レア</Table.Th>;
                                     case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">力</Table.Th><Table.Th key={uuidv4()} className="centerCell">強化力</Table.Th></React.Fragment>
                                     case 'R-ATK': return;
@@ -172,9 +171,9 @@ export default function WeaponTableComponent({ data, type }) {
             {<Table.Tbody>
                 {tbodyData.map((row: any, index: any) => {
                     switch (language.language) {
-                        case 'English Patch':
+                        case 'English':
                             return <Table.Tr key={uuidv4()}>
-                                {row['Name (JP)'] && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['name_en'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${row['name_en']}`} w={64} h={64} /></Flex></Table.Td>}
+                                {row['Name (JP)'] && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
                                 {theadData.map((key: string, index: any) => {
                                     if (row['Name (JP)']) {
                                         let bufferProperties: any[] = [];
@@ -182,9 +181,9 @@ export default function WeaponTableComponent({ data, type }) {
                                         let bufferATKMax: any[] = [];
                                         switch (key) {
                                             case 'Name (JP)':
-                                                return <Table.Td key={uuidv4()}><Flex justify="center" direction="column" key={uuidv4()} gap={5}>{row['name_en']}<br key={uuidv4()} />{row['Name (JP)']}</Flex></Table.Td>
-                                            case 'name_en':
-                                            case 'name_global':
+                                                return <Table.Td key={uuidv4()}><Flex justify="center" direction="column" key={uuidv4()} gap={5}>{row['Name (English)']}<br key={uuidv4()} />{row['Name (JP)']}</Flex></Table.Td>
+                                            case 'Name (English)':
+                                            case 'Name (Global)':
                                             case 'id':
                                                 return;
                                             case 'Rarity':
@@ -196,15 +195,15 @@ export default function WeaponTableComponent({ data, type }) {
                                             case 'T-ATK':
                                                 if (row['S-ATK']) {
                                                     bufferATK.push(displayStat('S-ATK', row['S-ATK']));
-                                                    bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'])));
+                                                    bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
                                                 }
                                                 if (row['R-ATK']) {
                                                     bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'])));
+                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
                                                 }
                                                 if (row['T-ATK']) {
                                                     bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'])));
+                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
                                                 }
                                                 if (index === 5) {
                                                     if (bufferATK[0]) return (
@@ -236,7 +235,7 @@ export default function WeaponTableComponent({ data, type }) {
                                                     bufferProperties.push(<span key={uuidv4()}>{displayPA(row['PA_enabled'])}</span>);
                                                 }
                                                 if (row['Set']) {
-                                                    bufferProperties.push(displaySet(row['Set'], row['name_en']));
+                                                    bufferProperties.push(displaySet(row['Set'], row['Name (English)']));
                                                 }
                                                 if (index === 9) {
                                                     if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
@@ -266,17 +265,17 @@ export default function WeaponTableComponent({ data, type }) {
                             </Table.Tr>;
                         case 'Global':
                             return <Table.Tr key={uuidv4()}>
-                                {row['name_global'] && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['name_en'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${row['name_global']}`} w={64} h={64} /></Flex></Table.Td>}
+                                {row['Name (Global)'] && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${row['Name (Global)']}`} w={64} h={64} /></Flex></Table.Td>}
                                 {theadData.map((key: string, index: any) => {
-                                    if (row['name_global']) {
+                                    if (row['Name (Global)']) {
                                         let bufferProperties: any[] = [];
                                         let bufferATK: any[] = [];
                                         let bufferATKMax: any[] = [];
                                         switch (key) {
-                                            case 'name_global':
+                                            case 'Name (Global)':
                                                 return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
                                             case 'Name (JP)':
-                                            case 'name_en':
+                                            case 'Name (English)':
                                             case 'id':
                                                 return;
                                             case 'Rarity':
@@ -288,15 +287,15 @@ export default function WeaponTableComponent({ data, type }) {
                                             case 'T-ATK':
                                                 if (row['S-ATK']) {
                                                     bufferATK.push(displayStat('S-ATK', row['S-ATK']));
-                                                    bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'])));
+                                                    bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
                                                 }
                                                 if (row['R-ATK']) {
                                                     bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'])));
+                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
                                                 }
                                                 if (row['T-ATK']) {
                                                     bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'])));
+                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
                                                 }
                                                 if (index === 5) {
                                                     if (bufferATK[0]) return (
@@ -328,7 +327,7 @@ export default function WeaponTableComponent({ data, type }) {
                                                     bufferProperties.push(<span key={uuidv4()}>{displayPA(row['PA_enabled'])}</span>);
                                                 }
                                                 if (row['Set']) {
-                                                    bufferProperties.push(displaySet(row['Set'], row['name_global']));
+                                                    bufferProperties.push(displaySet(row['Set'], row['Name (Global)']));
                                                 }
                                                 if (index === 9) {
                                                     if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
@@ -356,9 +355,10 @@ export default function WeaponTableComponent({ data, type }) {
                                     }
                                 })}
                             </Table.Tr>;
-                        case '日本語':
+                        case 'JP':
                             return <Table.Tr key={uuidv4()}>
-                                {row['Name (JP)'] && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['name_en'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={row['Name (JP)']} w={64} h={64} /></Flex></Table.Td>}
+                                {row['Name (JP)'] && row['Name (JP)'] !== 'タクト-NT' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={row['Name (JP)']} w={64} h={64} /></Flex></Table.Td>}
+                                {row['Name (JP)'] && row['Name (JP)'] === 'タクト-NT' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)']}.png`} alt={row['Name (JP)']} w={64} h={64} /></Flex></Table.Td>}
                                 {theadData.map((key: string, index: any) => {
                                     if (row['Name (JP)']) {
                                         let bufferProperties: any[] = [];
@@ -369,11 +369,14 @@ export default function WeaponTableComponent({ data, type }) {
                                                 if (row[key].includes("武装エクステンド")) {
                                                     return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
                                                 } else {
-                                                    return <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row[key].replace('-NT','')}`}>{row[key]}</Link></Table.Td>
+                                                    if (row['Name (JP)'] === 'ネメシスバール-NT' || row['Name (JP)'] === 'スレイヴバール-NT' || row['Name (JP)'] === 'アーレスタクト-NT') {
+                                                        return <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row[key]}`}>{row[key]}</Link></Table.Td>
+                                                    } else {
+                                                        return <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row[key].replace('-NT', '')}`}>{row[key]}</Link></Table.Td>
+                                                    }
                                                 }
-                                            case 'name_en':
-                                            case 'name_global':
-                                            case 'old_type':
+                                            case 'Name (English)':
+                                            case 'Name (Global)':
                                             case 'id':
                                                 return;
                                             case 'Rarity':
@@ -385,15 +388,15 @@ export default function WeaponTableComponent({ data, type }) {
                                             case 'T-ATK':
                                                 if (row['S-ATK']) {
                                                     bufferATK.push(displayStat('S-ATK', row['S-ATK']));
-                                                    bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'])));
+                                                    bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
                                                 }
                                                 if (row['R-ATK']) {
                                                     bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'])));
+                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
                                                 }
                                                 if (row['T-ATK']) {
                                                     bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'])));
+                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
                                                 }
                                                 if (index === 5) {
                                                     if (bufferATK[0]) return (

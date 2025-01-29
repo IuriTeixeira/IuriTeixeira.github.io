@@ -1,0 +1,17 @@
+[
+    {
+        "Name (JP)": "バレットボウ",
+        "Name (English)": "Bullet Bow",
+        "Name (Global)": null,
+        "Rarity": 1,
+        "Requirement": ["DEX",11],
+        "S-ATK": null,
+        "R-ATK": 79,
+        "T-ATK": null,
+        "SAF": null,
+        "Abilities": null,
+        "Potential": null,
+        "Classes": ["Br"],
+        "SSA Slots": null
+    }
+]

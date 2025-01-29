@@ -9,54 +9,34 @@ export default function displayClasses(classes: any[]): any {
     let classList: any[] = []
     if (classes) {
         if (classes[0] === 'All') {
+            let classNames: string[] = []
+            switch (language.language) {
+                case 'Global': classNames = ["Hunter", "Ranger", "Force", "Fighter", "Gunner", "Techer", "Braver", "Bouncer", "Summoner", "Hero", "Phantom", "Etoile", "Luster"]; break;
+                case 'JP': classNames = ["Hunter", "Ranger", "Force", "Fighter", "Gunner", "Techter", "Braver", "Bouncer", "Summoner", "Hero", "Phantom", "Étoile", "Luster"]; break;
+                default: classNames = ["ハンター", "レンジャー", "フォース", "ファイター", "ガンナー", "テクター", "ブレイバー", "バウンサー", "サモナー", "ヒーロー", "ファントム", "エトワール", "ラスター"]
+            }
             classList.push(
                 <React.Fragment key={uuidv4()}>
                     <Flex key={uuidv4()} gap={0}>
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hu.png`} alt='Hunter' title='Hunter' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hu.png`} alt='Hunter' title='Hunter' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hu.png`} alt='ハンター' title='ハンター' w={16} h={16} />}
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt='Ranger' title='Ranger' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt='Ranger' title='Ranger' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt='レンジャー' title='レンジャー' w={16} h={16} />}
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fo.png`} alt='Force' title='Force' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fo.png`} alt='Force' title='Force' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fo.png`} alt='フォース' title='フォース' w={16} h={16} />}
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hu.png`} alt={classNames[0]} title={classNames[0]} w={16} h={16} />
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ra.png`} alt={classNames[1]} title={classNames[1]} w={16} h={16} />
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fo.png`} alt={classNames[2]} title={classNames[2]} w={16} h={16} />
                     </Flex>
                     <Flex key={uuidv4()} gap={0}>
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fi.png`} alt='Fighter' title='Fighter' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fi.png`} alt='Fighter' title='Fighter' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fi.png`} alt='ファイター' title='ファイター' w={16} h={16} />}
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Gu.png`} alt='Gunner' title='Gunner' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Gu.png`} alt='Gunner' title='Gunner' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Gu.png`} alt='ガンナー' title='ガンナー' w={16} h={16} />}
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Te.png`} alt='Techer' title='Techer' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Te.png`} alt='Techter' title='Techter' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Te.png`} alt='テクター' title='テクター' w={16} h={16} />}
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Fi.png`} alt={classNames[3]} title={classNames[3]} w={16} h={16} />
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Gu.png`} alt={classNames[4]} title={classNames[4]} w={16} h={16} />
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Te.png`} alt={classNames[5]} title={classNames[5]} w={16} h={16} />
                     </Flex>
                     <Flex key={uuidv4()} gap={0}>
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Br.png`} alt='Braver' title='Braver' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Br.png`} alt='Braver' title='Braver' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Br.png`} alt='ブレイバー' title='ブレイバー' w={16} h={16} />}
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Bo.png`} alt='Bouncer' title='Bouncer' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Bo.png`} alt='Bouncer' title='Bouncer' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Bo.png`} alt='バウンサー' title='バウンサー' w={16} h={16} />}
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Su.png`} alt='Summoner' title='Summoner' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Su.png`} alt='Summoner' title='Summoner' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Su.png`} alt='サモナー' title='サモナー' w={16} h={16} />}
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Br.png`} alt={classNames[6]} title={classNames[6]} w={16} h={16} />
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Bo.png`} alt={classNames[7]} title={classNames[7]} w={16} h={16} />
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Su.png`} alt={classNames[8]} title={classNames[8]} w={16} h={16} />
                     </Flex>
                     <Flex key={uuidv4()} gap={0}>
-                    {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hr.png`} alt='Hero' title='Hero' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hr.png`} alt='Hero' title='Hero' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hr.png`} alt='ヒーロー' title='ヒーロー' w={16} h={16} />}
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ph.png`} alt='Phantom' title='Phantom' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ph.png`} alt='Phantom' title='Phantom' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ph.png`} alt='ファントム' title='ファントム' w={16} h={16} />}
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Et.png`} alt='Etoile' title='Etoile' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Et.png`} alt='Étoile' title='Étoile' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Et.png`} alt='エトワール' title='エトワール' w={16} h={16} />}
-                        {language.language === 'English Patch' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Lu.png`} alt='Luster' title='Luster' w={16} h={16} />}
-                        {language.language === 'Global' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Lu.png`} alt='Luster' title='Luster' w={16} h={16} />}
-                        {language.language === '日本語' && <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Lu.png`} alt='ラスター' title='ラスター' w={16} h={16} />}
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Hr.png`} alt={classNames[9]} title={classNames[9]} w={16} h={16} />
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Ph.png`} alt={classNames[10]} title={classNames[10]} w={16} h={16} />
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Et.png`} alt={classNames[11]} title={classNames[11]} w={16} h={16} />
+                        <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Lu.png`} alt={classNames[12]} title={classNames[12]} w={16} h={16} />
                     </Flex>
                 </React.Fragment>
             )
@@ -67,18 +47,7 @@ export default function displayClasses(classes: any[]): any {
             for (let i = 0; i < classes.length; i++) {
                 loc = localization.find(name => name['Abbreviation'] === classes[i])
                 let currentClass: any = null
-                let className: string = ''
-                switch (language.language) {
-                    case 'English Patch':
-                        className = loc['Name (English)'];
-                        break;
-                    case 'Global':
-                        className = loc['Name (Global)'];
-                        break;
-                    case '日本語':
-                        className = loc['Name (JP)'];
-                        break;
-                }
+                let className: string = loc[`Name (${language.language})`];
                 currentClass = <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${classes[i]}.png`} alt={className} title={className} w={16} h={16} />
                 classListAux.push(currentClass)
                 switch (classes.length) {

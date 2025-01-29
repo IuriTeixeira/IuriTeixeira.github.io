@@ -181,12 +181,6 @@ export default function displayAbilities(abilities: any[]): any {
         if (typeof (abilities) === 'string') {
             ab = abilityData.find(ab => ab['Name (English)'] === abilities)
             switch (language.language) {
-                case 'English Patch':
-                    if (ab) {
-                        name = ab['Name (English)'];
-                        effect = ab['Effect (English)']
-                    }
-                    break;
                 case 'Global':
                     if (ab) {
                         name = ab['Name (Global)'];
@@ -194,13 +188,19 @@ export default function displayAbilities(abilities: any[]): any {
                         else effect = ab['Effect (English)']
                     }
                     break;
-                case '日本語':
+                case 'JP':
                     if (ab) {
                         name = ab['Name (JP)'];
                         if (ab['Effect (JP)']) effect = ab['Effect (JP)']
                         else effect = ab['Effect (English)']
                     }
                     break;
+                default:
+                    if (ab) {
+                        name = ab['Name (English)'];
+                        effect = ab['Effect (English)']
+                    }
+
             }
             if (ab) {
                 let abEffect: any[] = []
@@ -238,7 +238,7 @@ export default function displayAbilities(abilities: any[]): any {
         } else {
             let imageLabel: string
             switch (language.language) {
-                case "日本語":
+                case "JP":
                     imageLabel = "特殊能力追加"
                     break;
                 case "Global":
@@ -251,12 +251,6 @@ export default function displayAbilities(abilities: any[]): any {
             for (let i = 0; i < abilities.length; i++) {
                 let ab: any = abilityData.find(ab => ab['Name (English)'] === abilities[i])
                 switch (language.language) {
-                    case 'English Patch':
-                        if (ab) {
-                            name = ab['Name (English)'];
-                            effect = ab['Effect (English)']
-                        }
-                        break;
                     case 'Global':
                         if (ab) {
                             name = ab['Name (Global)'];
@@ -264,13 +258,19 @@ export default function displayAbilities(abilities: any[]): any {
                             else effect = ab['Effect (English)']
                         }
                         break;
-                    case '日本語':
+                    case 'JP':
                         if (ab) {
                             name = ab['Name (JP)'];
                             if (ab['Effect (JP)']) effect = ab['Effect (JP)']
                             else effect = ab['Effect (English)']
                         }
                         break;
+                    default:
+                        if (ab) {
+                            name = ab['Name (English)'];
+                            effect = ab['Effect (English)']
+                        }
+
                 }
                 if (ab) {
                     let abEffect: any[] = []

@@ -8,26 +8,18 @@ import { useLanguageContext } from "../language-provider";
 
 export default function UnitHeaderComponent({ setUnitData, setUnitType }) {
     const language = useLanguageContext()
+    let unitTypes: string[] = []
     switch (language.language) {
-        case 'English Patch':
-        case 'Global':
-            return (
-                <Group justify="center" mt="sm">
-                    {language.language === 'English Patch' && <Button onClick={() => { setUnitData(rear); setUnitType("rear") }}><Image src="/icons/Rear.png" alt="Rear Units" w={16} h={16} /> Rear</Button>}
-                    {language.language === 'Global' && <Button onClick={() => { setUnitData(rear); setUnitType("rear") }}><Image src="/icons/Rear.png" alt="Back Units" w={16} h={16} /> Back</Button>}
-                    <Button onClick={() => { setUnitData(arm); setUnitType('arm') }}><Image src="/icons/Arm.png" alt="Arm Units" w={16} h={16} /> Arm</Button>
-                    <Button onClick={() => { setUnitData(leg); setUnitType('leg') }}><Image src="/icons/Leg.png" alt="Leg Units" w={16} h={16} /> Leg</Button>
-                    <Button onClick={() => { setUnitData(sub); setUnitType('sub') }}><Image src="/icons/Sub.png" alt="Sub Units" w={16} h={16} /> Sub</Button>
-                </Group>
-            )
-        case '日本語':
-            return (
-                <Group justify="center" mt="sm">
-                    <Button onClick={() => { setUnitData(rear); setUnitType("rear") }}><Image src="/icons/Rear.png" alt="リア" w={16} h={16} /> リア</Button>
-                    <Button onClick={() => { setUnitData(arm); setUnitType('arm') }}><Image src="/icons/Arm.png" alt="アーム" w={16} h={16} /> アーム</Button>
-                    <Button onClick={() => { setUnitData(leg); setUnitType('leg') }}><Image src="/icons/Leg.png" alt="レッグ" w={16} h={16} /> レッグ</Button>
-                    <Button onClick={() => { setUnitData(sub); setUnitType('sub') }}><Image src="/icons/Sub.png" alt="サブ" w={16} h={16} /> サブ</Button>
-                </Group>
-            )
+        case 'Global': unitTypes = ["Back", "Arms", "Legs", "Sub"]; break;
+        case 'JP': unitTypes = ["リア", "アーム", "レッグ", "サブ"]; break;
+        default: unitTypes = ["Rear", "Arm", "Leg", "Sub"]
     }
+    return (
+        <Group justify="center" mt="sm">
+            <Button onClick={() => { setUnitData(rear); setUnitType('rear') }}><Image src="/icons/Rear.png" alt={unitTypes[0]} w={16} h={16} /> {unitTypes[0]}</Button>
+            <Button onClick={() => { setUnitData(arm); setUnitType('arm') }}><Image src="/icons/Arm.png" alt={unitTypes[1]} w={16} h={16} /> {unitTypes[1]}</Button>
+            <Button onClick={() => { setUnitData(leg); setUnitType('leg') }}><Image src="/icons/Leg.png" alt={unitTypes[2]} w={16} h={16} /> {unitTypes[2]}</Button>
+            <Button onClick={() => { setUnitData(sub); setUnitType('sub') }}><Image src="/icons/Sub.png" alt={unitTypes[3]} w={16} h={16} /> {unitTypes[3]}</Button>
+        </Group>
+    )
 }

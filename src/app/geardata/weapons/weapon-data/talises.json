@@ -1,0 +1,18 @@
+[
+    {
+        "Name (JP)": "タリス",
+        "Name (English)": "Talis",
+        "Name (Global)": null,
+        "Rarity": 1,
+        "Requirement":["T-ATK",1],
+        "S-ATK":null,
+        "R-ATK":null,
+        "T-ATK":78,
+        "SAF":null,
+        "Abilities":null,
+        "Potential":null,
+        "Element": null,
+        "Classes":["Fo","Te","Hr"],
+        "SSA Slots":null
+    }
+]

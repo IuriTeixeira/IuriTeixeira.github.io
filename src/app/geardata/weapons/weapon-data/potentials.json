@@ -2330,8 +2330,12 @@
         "Effect (English)": "Increases chance to inflict Status effects to enemies and increases damage by 10%. 10% additional damage against Status inflicted enemies."
     },
     {
+        "Name (JP)": "雪駆祝華",
         "Name (English)": "Snowfall Splendor",
-        "Effect (English)": "Damage received by Pets is reduced by 5%, Pet HP regenerates by 10% every 10 seconds."
+        "Name (Global)": "Snow-kissed Petals",
+        "Effect (JP)": "ペットの被ダメージが5%減少し、HPが10秒ごとに10%回復する。",
+        "Effect (English)": "Reduces Pet damage taken by 5%. Pet recovers 10% HP every 10 seconds.",
+        "Effect (Global)": "Reduces Pet damage taken by 5%. Pet recovers 10% HP every 10 seconds."
     },
     {
         "Name (JP)": "闘士の闘法",
@@ -2390,13 +2394,29 @@
         "Effect (Global)": "Increases transfer rate of Augments by 10%."
     },
     {
+        "Name (JP)": "生命の旋律",
         "Name (English)": "Melody of Life",
-        "Effect (English)": "Increases ATK for all party members by 2% and restore 10% HP every 30 seconds for all players in the party."
+        "Name (Global)": "Melody of Life",
+        "Effect (JP)": "PTメンバーのHPを一定間隔で回復し攻撃力を(2%)上昇させる。\n(30秒毎に最大HPの10%回復)",
+        "Effect (English)": "Increases damage of all party members by 2% and restores 10% HP of all party members every 30 seconds.",
+        "Effect (Global)": "Increases damage of all party members by 2% and restores 10% HP of all party members every 30 seconds."
     },
     {
+        "Name (JP)": "邪悪の旋律",
         "Name (English)": "Melody of Evil",
+        "Name (Global)": "Malicious Melody",
+        "Effect (JP)": "PP自然回復量(10%)、ペット攻撃時のPP回復量(15%)が上昇する。",
         "Effect (English)": "Increases Natural PP Recovery by 10% and Active PP Recovery by 15%.",
+        "Effect (Global)": "Increases Natural PP Recovery by 10% and Active PP Recovery by 15%.",
         "Special": "Qliphad"
+    },
+    {
+        "Name (JP)": "邪悪の旋律(クリファド)",
+        "Name (English)": "Melody of Evil (Qliphad)",
+        "Name (Global)": "Malicious Melody (Clifard)",
+        "Effect (JP)": "PP自然回復量(10%)、ペット攻撃時のPP回復量(15%)が上昇する。",
+        "Effect (English)": "Increases Natural PP Recovery by 10% and Active PP Recovery by 15%.",
+        "Effect (Global)": "Increases Natural PP Recovery by 10% and Active PP Recovery by 15%."
     },
     {
         "Name (English)": "Double Scarlet Blade",
@@ -2407,8 +2427,12 @@
         "Effect (English)": "Increases the speed of Normal Attacks by 28%. Generates a Wave Attack on the third Normal Attack."
     },
     {
+        "Name (JP)": "闇の一瞥",
         "Name (English)": "Glance of Darkness",
-        "Effect (English)": "When Alter Ego is active, automatically activates Pet Sympathy and Fires Megid with Pet PAs (2000% potency)."
+        "Name (Global)": "Sinister Stare",
+        "Effect (JP)": "アルターエゴ発動中、状況に応じた自動支援を行う。(メギド威力2000%)",
+        "Effect (English)": "When Alter Ego is active, automatically activates Pet Sympathy after 5 seconds of request, and automatically casts uncharged Megid with 2000% potency when a Pet Photon Art is used.",
+        "Effect (Global)": "When Alter Ego is active, automatically activates Pet Sympathy after 5 seconds of request, and automatically casts uncharged Megid with 2000% potency when a Pet Photon Art is used."
     },
     {
         "Name (JP)": "希望の証",
@@ -2467,8 +2491,12 @@
         "Effect (Global)": "Increases damage by 8%. Recovers 3 PP when an enemy is killed nearby."
     },
     {
+        "Name (JP)": "死闘操演",
         "Name (English)": "Deathblow Honor",
-        "Effect (English)": "Recovers 3 PP when an enemy is killed nearby."
+        "Name (Global)": "Lethal Combat Control",
+        "Effect (JP)": "周囲のエネミー死亡時にPPが回復する。(+3)",
+        "Effect (English)": "Recovers 3 PP when an enemy is killed nearby.",
+        "Effect (Global)": "Recovers 3 PP when an enemy is killed nearby."
     },
     {
         "Name (JP)": "英雄の凱歌",
@@ -2499,8 +2527,12 @@
         "Effect (Global)": "Increases damage dealt to Supernaturals by 15% and reduces damage taken from Supernaturals by 20%."
     },
     {
+        "Name (JP)": "絶魔物奏印",
         "Name (English)": "Demonic Ward",
-        "Effect (English)": "Decreases damage taken from Demons by 20% for both Pets and Players."
+        "Name (Global)": "Supernatural Repellent",
+        "Effect (JP)": "魔物種から受けるダメージが、プレイヤー・ペット共に15%減少。",
+        "Effect (English)": "Decreases damage taken from Demons by 20% for both Pets and Player.",
+        "Effect (Global)": "Decreases damage taken from Supernaturals by 20% for both Pets and Player."
     },
     {
         "Name (JP)": "縛刻の闇術",
@@ -2527,8 +2559,12 @@
         "Effect (Global)": "Increases damage based on Dark Blast Gauge, up to 15%. Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Luther] transformation time by 7 seconds. Damage increase persists at max value after using Dark Blast."
     },
     {
+        "Name (JP)": "奏闇妖艶",
         "Name (English)": "Bewitching Performance",
-        "Effect (English)": "Increases damage based on Dark Blast Gauge, up to 15%. Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Apprentice] transformation time by 7 seconds. Damage increase persists at max value after using Dark Blast."
+        "Name (Global)": "Bewitching Darkness",
+        "Effect (JP)": "ダークブラストゲージの上昇率・【若人】の変身時間を増加。\n(ゲージ上昇率20%・変身時間+7秒)",
+        "Effect (English)": "Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Apprentice] transformation time by 7 seconds.",
+        "Effect (Global)": "Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Apprentice] transformation time by 7 seconds."
     },
     {
         "Name (JP)": "操闇遊戯",
@@ -2555,8 +2591,12 @@
         "Effect (Global)": "Increases damage by 17%. Generates a barrier that reduces damage taken by 40% and reduces PP consumption by 20%. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Shield of the Dark Saint, Shield of Temptation and Shield of Dark Temptation)."
     },
     {
+        "Name (JP)": "聖浄の旋律",
         "Name (English)": "Sacred Melody",
-        "Effect (English)": "Generates a barrier (-40% Damage Taken, 30% PP Cost Reduction) at regular intervals (every 20s)."
+        "Name (Global)": "Purifying Melody",
+        "Effect (JP)": "一定間隔で被ダメージを軽減するバリアを展開。\n(20秒で再展開・被ダメージ60%減少・消費PP30%減少)",
+        "Effect (English)": "Generates a barrier that reduces damage taken by 60% and reduces PP consumption by 30%. 20 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Enticing Melody).",
+        "Effect (Global)": "Generates a barrier that reduces damage taken by 60% and reduces PP consumption by 30%. 20 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Notes of Temptation)."
     },
     {
         "Name (JP)": "誘惑の魔盾",
@@ -2567,8 +2607,12 @@
         "Effect (Global)": "Increases damage by 17%. Generates a barrier that increases Natural PP Recovery by 20% and Active PP Recovery by 30%, and grants immunity to flinch/knockback. 30 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Sacred Shield, Darkness Shield, and Darkness Ward)."
     },
     {
+        "Name (JP)": "誘惑の調べ",
         "Name (English)": "Enticing Melody",
-        "Effect (English)": "Generates a barrier (Negate Knockback, 30% Automatic PP Recovery and 40% Active PP Recovery) at regular intervals (every 20s)."
+        "Name (Global)": "Notes of Temptation",
+        "Effect (JP)": "一定間隔で吹き飛ばしを無効化するバリアを展開。\n(20秒で再展開・PP自動回復量30%上昇・攻撃時PP回復量40%上昇)",
+        "Effect (English)": "Generates a barrier that increases Natural PP Recovery by 30% and Active PP Recovery by 40%, and grants immunity to flinch/knockback. 20 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Sacred Melody).",
+        "Effect (Global)": "Generates a barrier that increases Natural PP Recovery by 30% and Active PP Recovery by 40%, and grants immunity to flinch/knockback. 20 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Purifying Melody)."
     },
     {
         "Name (English)": "Advancing Strike",
@@ -2683,32 +2727,44 @@
         "Effect (Global)": "In the Quest \"Black Fellwyrm Rises from the Ruins\", increases damage by 20%, and reduces damage taken by 50%."
     },
     {
+        "Name (JP)": "崩城討邪・戦律",
         "Name (English)": "Demolisher Tactician",
-        "Effect (English)": "In the Quest \"The Dark Demolisher\", increases damage of both Pet and player by 5%, and reduces damage taken by 50%."
+        "Name (Global)": "Ruins Menace: War Song",
+        "Effect (JP)": "「崩城に甦る黒衣の邪竜」にて、威力が5%上昇し被ダメージを半減する。",
+        "Effect (English)": "In the Quest \"The Dark Demolisher\", increases damage of both Pet and player by 5%, and reduces damage taken by 50%.",
+        "Effect (Global)": "In the Quest \"Black Fellwyrm Rises from the Ruins\", increases damage of both Pet and player by 5%, and reduces damage taken by 50%."
     },
     {
         "Name (JP)": "騎士の心",
         "Name (English)": "Dauntless Knight",
         "Name (Global)": "Spirit of a Knight",
         "Effect (JP)": "威力10%上昇。一度だけ致命傷を受けても耐え、発動後徐々にHP回復。",
-        "Effect (English)": "Increases damage by 10%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.",
-        "Effect (Global)": "Increases damage by 10%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds."
+        "Effect (English)": "Increases damage by 10%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.\nThe revival effect of Dauntless Knight, Dauntless Templar, Knight's Melody and Templar's Melody is shared and only one may activate per Quest.",
+        "Effect (Global)": "Increases damage by 10%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.\nThe revival effect of Spirit of a Knight, Spirit of a Paladin, Knight's Melody and Paladin's Melody is shared and only one may activate per Quest."
     },
     {
         "Name (JP)": "聖騎士の心",
         "Name (English)": "Dauntless Templar",
         "Name (Global)": "Spirit of a Paladin",
         "Effect (JP)": "威力12%上昇。一度だけ致命傷を受けても耐え、発動後徐々にHP回復。",
-        "Effect (English)": "Increases damage by 12%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.",
-        "Effect (Global)": "Increases damage by 12%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds."
+        "Effect (English)": "Increases damage by 12%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.\nThe revival effect of Dauntless Knight, Dauntless Templar, Knight's Melody and Templar's Melody is shared and only one may activate per Quest.",
+        "Effect (Global)": "Increases damage by 12%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.\nThe revival effect of Spirit of a Knight, Spirit of a Paladin, Knight's Melody and Paladin's Melody is shared and only one may activate per Quest."
     },
     {
+        "Name (JP)": "騎士の旋律",
         "Name (English)": "Knight's Melody",
-        "Effect (English)": "Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds."
+        "Name (Global)": "Knight's Melody",
+        "Effect (JP)": "一度だけ致命傷を受けても耐え、発動後徐々にHP回復。",
+        "Effect (English)": "Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.\nThe revival effect of Dauntless Knight, Dauntless Templar, Knight's Melody and Templar's Melody is shared and only one may activate per Quest.",
+        "Effect (Global)": "Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.\nThe revival effect of Spirit of a Knight, Spirit of a Paladin, Knight's Melody and Paladin's Melody is shared and only one may activate per Quest."
     },
     {
+        "Name (JP)": "聖騎士の旋律",
         "Name (English)": "Templar's Melody",
-        "Effect (English)": "Increases damage by 2%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds."
+        "Name (Global)": "Paladin's Melody",
+        "Effect (JP)": "威力2%上昇。一度だけ致命傷を受けても耐え、発動後徐々にHP回復。",
+        "Effect (English)": "Increases damage by 2%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.\nThe revival effect of Dauntless Knight, Dauntless Templar, Knight's Melody and Templar's Melody is shared and only one may activate per Quest.",
+        "Effect (Global)": "Increases damage by 2%. Once per Quest, survive a fatal attack with 1 HP (must have more than 1 HP for effect to trigger), then grants invulnerability and recovers 10% max HP every 0.5 seconds, for 5 seconds.\nThe revival effect of Spirit of a Knight, Spirit of a Paladin, Knight's Melody and Paladin's Melody is shared and only one may activate per Quest."
     },
     {
         "Name (JP)": "破滅の摂理",
@@ -2743,8 +2799,8 @@
         "Name (English)": "Crimson Flame Oath",
         "Name (Global)": "Oath of Crimson Flame",
         "Effect (JP)": "威力が13%上昇。弱点属性で攻撃した時さらに5%上昇。一定間隔でシフタ発動。",
-        "Effect (English)": "Increases damage by 13%. Increases damage by an additional 5% when attacking an enemy's elemental weakness. Automatically casts Shifta on self every 14 seconds. Uses your currently learned level of Shifta.",
-        "Effect (Global)": "Increases damage by 13%. Increases damage by an additional 5% when attacking an enemy's elemental weakness. Automatically casts Shifta on self every 14 seconds. Uses your currently learned level of Shifta."
+        "Effect (English)": "Increases damage by 13%. Increases damage by an additional 5% when attacking an enemy's elemental weakness. Automatically casts Shifta on self every 14 seconds. Uses currently learned level of Shifta.",
+        "Effect (Global)": "Increases damage by 13%. Increases damage by an additional 5% when attacking an enemy's elemental weakness. Automatically casts Shifta on self every 14 seconds. Uses currently learned level of Shifta."
     },
     {
         "Name (JP)": "紫焔の誓い",
@@ -2755,12 +2811,20 @@
         "Effect (Global)": "Increases damage by 5%. Increases damage by an additional 13% when attacking an enemy's elemental weakness. Automatically casts Deband on self every 14 seconds. Uses your currently learned level of Deband."
     },
     {
+        "Name (JP)": "焔の旋律",
         "Name (English)": "Flame Melody",
-        "Effect (English)": "Increases damage by 1%. Increases damage by an additional 3% when attacking an enemy's elemental weakness."
+        "Name (Global)": "Melody of Flame",
+        "Effect (JP)": "威力が1%上昇。弱点属性で攻撃した時さらに3%上昇。",
+        "Effect (English)": "Increases damage by 1%. Increases damage by an additional 3% when attacking an enemy's elemental weakness.",
+        "Effect (Global)": "Increases damage by 1%. Increases damage by an additional 3% when attacking an enemy's elemental weakness."
     },
     {
+        "Name (JP)": "紅焔の旋律",
         "Name (English)": "Crimson Flame Melody",
-        "Effect (English)": "Increases damage by 2%. Increases damage by an additional 3% when attacking an enemy's elemental weakness. Casts Shifta on yourself at regular intervals."
+        "Name (Global)": "Melody of Crimson Flame",
+        "Effect (JP)": "威力が2%上昇。弱点属性で攻撃した時さらに3%上昇。一定間隔でシフタ発動。",
+        "Effect (English)": "Increases damage by 2%. Increases damage by an additional 3% when attacking an enemy's elemental weakness. Automatically casts Shifta on self every 14 seconds. Uses currently learned level of Shifta.",
+        "Effect (Global)": "Increases damage by 2%. Increases damage by an additional 3% when attacking an enemy's elemental weakness. Automatically casts Shifta on self every 14 seconds. Uses currently learned level of Shifta."
     },
     {
         "Name (JP)": "動静不二",
@@ -2791,8 +2855,12 @@
         "Effect (English)": "Increases damage by 10%. Enhance the performance of Normal Attacks and increases the damage of Rod Shoot."
     },
     {
+        "Name (JP)": "幻精天奏",
         "Name (English)": "Phantasmal Song",
-        "Effect (English)": "Increases damage based on the Photon Blast Gauge (3%/?%/4%). Bestow an additional effect based on the Photon Blast type when the Photon Blast is used."
+        "Name (Global)": "Phantom Performance",
+        "Effect (JP)": "フォトンブラストゲージに応じて威力が上昇する。(3%/3%/4%)\nフォトンブラスト発動時、幻獣毎に異なる効果発生。",
+        "Effect (English)": "Increases damage by 3%/3%/4% at minimum/half/full status of the Photon Blast Gauge. When Photon Blast is used, grants an additional effect based on the Photon Blast type:\n\nHelix: +4% damage\nAjax: +40% Active PP Recovery\nKetos: +30% Natural PP Recovery\nJulius: -12% damage taken\nIlios: -15% PP consumption\n\nEffects stack if used by different Mags. Effects last until Quest ends or going back to Campship. Effects are paused when a different potential is equipped, and are resumed when this potential is equipped again.",
+        "Effect (Global)": "Increases damage by 3%/3%/4% at minimum/half/full status of the Photon Blast Gauge. When Photon Blast is used, grants an additional effect based on the Photon Blast type:\n\nHelix: +4% damage\nAjax: +40% Active PP Recovery\nKetos: +30% Natural PP Recovery\nJulius: -12% damage taken\nIlios: -15% PP consumption\n\nEffects stack if used by different Mags. Effects last until Quest ends or going back to Campship. Effects are paused when a different potential is equipped, and are resumed when this potential is equipped again."
     },
     {
         "Name (JP)": "幻精天賦",
@@ -2863,12 +2931,20 @@
         "Effect (Global)": "Increases damage by 10%. Increases damage by an additional 1.5% every 10 hits, up to 7.5%. Generates a barrier that reduces damage taken by 20% and grants immunity to flinch/knockback when damage bonus is maxed. Effect ends if no targets are attacked in 40 seconds."
     },
     {
+        "Name (JP)": "千古の暦奏",
         "Name (English)": "Immortal Retainer",
-        "Effect (English)": "Increases damage by 3%. Increases damage (2% MAX) based on the number of hits. Generate a barrier when damage bonus is maxed. Barrier disappears if no targets are attacked in a certain period of time."
+        "Name (Global)": "Enduring Ceremony",
+        "Effect (JP)": "ヒット数に応じ威力上昇。最大時吹き飛ばし無効のバリア展開。攻撃しない時間が続くと効果消失。\n(ダメージ倍率3%、ヒット数に応じて最大2%、必要ヒット数10ヒット、バリア維持時間15秒)",
+        "Effect (English)": "Increases damage by 3%. Increases damage by an additional 0.4% every 10 hits, up to 2%. Generates a barrier that grants immunity to flinch/knockback when damage bonus is maxed. Effect ends if no targets are attacked in 15 seconds.",
+        "Effect (Global)": "Increases damage by 3%. Increases damage by an additional 0.4% every 10 hits, up to 2%. Generates a barrier that grants immunity to flinch/knockback when damage bonus is maxed. Effect ends if no targets are attacked in 15 seconds."
     },
     {
+        "Name (JP)": "不朽の刻奏",
         "Name (English)": "Immortal Moment",
-        "Effect (English)": "Increases damage by 3%. Increases damage (2% MAX) based on the number of hits. Generate a barrier when damage bonus is maxed. Barrier disappears if no targets are attacked in a certain period of time. Increases Damage Resistance (up to 10%) based on the number of hits. "
+        "Name (Global)": "Everlasting Performance",
+        "Effect (JP)": "｢千古の暦奏｣の効果に加え、ヒット数に応じて被ダメージ軽減効果上昇。\n(ダメージ倍率3%、ヒット数に応じて最大3%、被ダメージ軽減最大10%、必要ヒット数10ヒット、バリア維持時間15秒)",
+        "Effect (English)": "Increases damage by 3%. Increases damage by an additional 0.6% every 10 hits, up to 3%. Generates a barrier that reduces damage taken by 10% and grants immunity to flinch/knockback when damage bonus is maxed. Effect ends if no targets are attacked in 15 seconds.",
+        "Effect (Global)": "Increases damage by 3%. Increases damage by an additional 0.6% every 10 hits, up to 3%. Generates a barrier that reduces damage taken by 10% and grants immunity to flinch/knockback when damage bonus is maxed. Effect ends if no targets are attacked in 15 seconds."
     },
     {
         "Name (English)": "Zero-Distance Launcher",
@@ -2885,18 +2961,26 @@
     {
         "Name (JP)": "星絆の想起",
         "Name (English)": "Star-bound Recollection",
-        "Name (Global)": "威力が10%上昇。PPが一定以下（10%未満）になった時PPが30%回復する。",
-        "Effect (JP)": "Increases damage by 10%. Restores PP by 30% when casting a PA or Technique while below 10% PP.",
+        "Name (Global)": "Starry Remembrance",
+        "Effect (JP)": "威力が10%上昇。PPが一定以下（10%未満）になった時PPが30%回復する。",
         "Effect (English)": "Increases damage by 10%. Increases Dark Blast duration by 10 seconds. Restores PP by 30% when casting a PA or Technique while below 10% PP. 120 seconds recast time.",
         "Effect (Global)": "Increases damage by 10%. Increases Dark Blast duration by 10 seconds. Restores PP by 30% when casting a PA or Technique while below 10% PP. 120 seconds recast time."
     },
     {
+        "Name (JP)": "星絆の巡歌",
         "Name (English)": "Star-bound Melody",
-        "Effect (English)": "Increases damage by 5%. Restores PP by 30% when casting a PA or Technique while below 10% PP (120s Recast)."
+        "Name (Global)": "Starry Serenade",
+        "Effect (JP)": "威力が5%上昇。PPが一定以下（10%未満）になった時PPが30%回復する。",
+        "Effect (English)": "Increases damage by 5%. Increases Dark Blast duration by 10 seconds. Restores PP by 30% when casting a PA or Technique while below 10% PP. 120 seconds recast time.",
+        "Effect (Global)": "Increases damage by 5%. Increases Dark Blast duration by 10 seconds. Restores PP by 30% when casting a PA or Technique while below 10% PP. 120 seconds recast time."
     },
     {
+        "Name (JP)": "流光の巡歌",
         "Name (English)": "Lightstream Melody",
-        "Effect (English)": "Increases damage by 5%. Fully restore PP when casting a PA or Technique while below 10% PP and bestow an additional damage bonus (3%) for 30 seconds (120s Recast)."
+        "Name (Global)": "Photon Serenade",
+        "Effect (JP)": "威力が5%上昇。PPが一定以下（10%未満）になった時PPが全回復し、一定時間威力が更に3%上昇する。",
+        "Effect (English)": "Increases damage by 5%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Lightstream Resurrection, Lightstream Resurrection Plus and Lightstream Melody Plus.",
+        "Effect (Global)": "Increases damage by 5%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Photon Resurrection, Photon Resurrection Redux and Photon Serenade Redux."
     },
     {
         "Name (JP)": "不滅の戦魂",
@@ -2939,8 +3023,12 @@
         "Effect (Global)": "Increases damage by 10%."
     },
     {
+        "Name (JP)": "闇恨の巡歌",
         "Name (English)": "Malicious Melody",
-        "Effect (English)": "Increases damage by 5%."
+        "Name (Global)": "Serenade of Darkness",
+        "Effect (JP)": "威力が5%上昇。",
+        "Effect (English)": "Increases damage by 5%.",
+        "Effect (Global)": "Increases damage by 5%."
     },
     {
         "Name (English)": "Diligent Domain",
@@ -2987,8 +3075,12 @@
         "Effect (Global)": "Increases damage by 12%. Reduces damage taken by 10%."
     },
     {
+        "Name (JP)": "黒装天奏",
         "Name (English)": "Darkened Performance",
-        "Effect (English)": "Increases damage by 3% and Damage Resistance by 10%."
+        "Name (Global)": "Performance in Black",
+        "Effect (JP)": "威力が3%上昇。被ダメージが10%軽減。",
+        "Effect (English)": "Increases damage by 3% and reduces damage taken by Pet and player by 10%.",
+        "Effect (Global)": "Increases damage by 3% and reduces damage taken by Pet and player by 10%."
     },
     {
         "Name (JP)": "機動応変・三式",
@@ -3071,8 +3163,12 @@
         "Effect (Global)": "Increases damage by 14%. Increases Critical Hit Rate by 20%."
     },
     {
+        "Name (JP)": "封印の奏",
         "Name (English)": "Sealing Duet",
-        "Effect (English)": "Increases damage by 3%. Increases Critical Hit Rate by 20%."
+        "Name (Global)": "Sealed Canticle",
+        "Effect (JP)": "威力が3%上昇。クリティカル率が20%上昇。",
+        "Effect (English)": "Increases damage by 3%. Increases Critical Hit Rate by 20%.",
+        "Effect (Global)": "Increases damage by 3%. Increases Critical Hit Rate by 20%."
     },
     {
         "Name (English)": "Soulbound Warfare",
@@ -3111,8 +3207,12 @@
         "Effect (English)": "Grant Deband when casting Shifta. Reduces the PP consumption of Shifta by 50%."
     },
     {
+        "Name (JP)": "蒼き潮流",
         "Name (English)": "Azure Current",
-        "Effect (English)": "Increases damage by 10%. Recover HP and PP upon sheathing weapon based on the amount of damage dealt."
+        "Name (Global)": "Cerulean Tide",
+        "Effect (JP)": "威力10%上昇。抜刀時のダメージ量に応じて、納刀時にHPとPPを回復。",
+        "Effect (English)": "Increases damage by 10%. Recovers HP and PP upon sheathing the weapon, based on the amount of damage dealt since it was unsheathed:\n\n400,000+ damage: 20% HP, 30 PP\n700,000+ damage: 60% HP, 100 PP",
+        "Effect (Global)": "Increases damage by 10%. Recovers HP and PP upon sheathing the weapon, based on the amount of damage dealt since it was unsheathed:\n\n400,000+ damage: 20% HP, 30 PP\n700,000+ damage: 60% HP, 100 PP"
     },
     {
         "Name (English)": "Deadeye's Reward",
@@ -3151,12 +3251,20 @@
         "Effect (English)": "Increases damage by 3%. After casting a Technique, charging a JA'd Technique with the same Element as the previous Technique greatly decreases charge time once."
     },
     {
+        "Name (JP)": "千年の響き",
         "Name (English)": "Millennium Timber",
-        "Effect (English)": "Increases damage by 3%."
+        "Name (Global)": "Enduring Echo",
+        "Effect (JP)": "威力3%上昇する。",
+        "Effect (English)": "Increases damage by 3%.",
+        "Effect (Global)": "Increases damage by 3%."
     },
     {
+        "Name (JP)": "不滅の戦奏",
         "Name (English)": "Eternal War Scherzo",
-        "Effect (English)": "Increases damage by 6%. Your Pet can survive one fatal attack with 1 HP. Your Pet restores HP at regular intervals afterwards."
+        "Name (Global)": "Unflagging Battle Hymn",
+        "Effect (JP)": "威力6%上昇。ペットが一度だけ致命傷を受けても耐え発動後徐々にHP回復。",
+        "Effect (English)": "Increases damage by 6%. Your Pet can survive one fatal attack with 1 HP. Your Pet restores HP at regular intervals afterwards. Does not prevent Maron or Melon from dying to its self-destruct effect.",
+        "Effect (Global)": "Increases damage by 6%. Your Pet can survive one fatal attack with 1 HP. Your Pet restores HP at regular intervals afterwards. Does not prevent Marron or Melon from dying to its self-destruct effect."
     },
     {
         "Name (JP)": "濃紺の夜明",
@@ -3167,8 +3275,12 @@
         "Effect (Global)": "Increases damage by 13%. Recovers 5 PP per second, but prevents Natural PP Recovery."
     },
     {
+        "Name (JP)": "紅緋の夕映",
         "Name (English)": "Crimson Evening",
-        "Effect (English)": "Increases damage by 6%. Recovers 2 PP per second."
+        "Name (Global)": "Blood Red Sunset",
+        "Effect (JP)": "威力が6％上昇。1秒ごとにPPを2回復。",
+        "Effect (English)": "Increases damage by 6%. Recovers 2 PP per second.",
+        "Effect (Global)": "Increases damage by 6%. Recovers 2 PP per second."
     },
     {
         "Name (English)": "Impulsive Assault",
@@ -3223,8 +3335,12 @@
         "Effect (Global)": "Increases the damage of Brightblade Buster and Nova Strike when charged by 17%. Upon casting charged Brightblade Buster or Nova Strike, produce an explosive sword that detonates 15 seconds after activation."
     },
     {
+        "Name (JP)": "南国の潮騒",
         "Name (English)": "Southern Seas",
-        "Effect (English)": "Increases damage by 6%. Pet recovers 1% of damage dealt as HP (30 MAX) if the Pet's Attribute matches the enemy's Elemental Weakness."
+        "Name (Global)": "Southern Seas",
+        "Effect (JP)": "威力が6%上昇。ペットの攻撃属性とエネミー弱点属性が一致した場合ペットのHPを回復。",
+        "Effect (English)": "Increases damage by 6%. Pet recovers 1% of damage dealt as HP, up to 30 per hit, if the Pet's Attribute matches the enemy's Elemental Weakness.",
+        "Effect (Global)": "Increases damage by 6%. Pet recovers 1% of damage dealt as HP, up to 30 per hit, if the Pet's Attribute matches the enemy's Elemental Weakness."
     },
     {
         "Name (English)": "Rose Dew",
@@ -3340,8 +3456,12 @@
         "Special": "Lightweaver"
     },
     {
+        "Name (JP)": "運命の輪奏",
         "Name (English)": "Cycle of Fate",
+        "Name (Global)": "Fated Cycle",
+        "Effect (JP)": "威力が11%上昇。PP消費量軽減。10秒毎にPPが20回復。",
         "Effect (English)": "Increases damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds.",
+        "Effect (Global)": "Increases damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds.",
         "Special": "Lightweaver"
     },
     {
@@ -3349,13 +3469,17 @@
         "Name (English)": "Lightweaving Guardian",
         "Name (Global)": "Lightring Guardian",
         "Effect (JP)": "通常攻撃3回使用で「運命の輪廻」から30秒間、性能が変化。威力18.72%上昇。頑強、被ダメ30%軽減",
-        "Effect (English)": "Increases damage by 12%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 18.72%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential).",
-        "Effect (Global)": "Increases damage by 12%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 18.72%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends, or after changing to a weapon with a different potential).",
+        "Effect (English)": "Increases damage by 12%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 18.72%, reduces damage taken by 30%, and grants immunity to flinch/knockback. 30 seconds recast after effect ends.",
+        "Effect (Global)": "Increases damage by 12%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 18.72%, reduces damage taken by 30%, and grants immunity to flinch/knockback. 30 seconds recast after effect ends.",
         "Special": "Lightweaver"
     },
     {
+        "Name (JP)": "光奏の守護輝士",
         "Name (English)": "Lightsong Guardian",
-        "Effect (English)": "Increases damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 15.44%, reduces damage taken by 30%, and negates knockback (30s Recast after effect ends).",
+        "Name (Global)": "Shimmerdance Guardian",
+        "Effect (JP)": "通常攻撃3回使用で「運命の輪奏」から30秒間、性能が変化。威力15%上昇。頑強、被ダメ30%軽減。",
+        "Effect (English)": "Increases damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 15.44%, reduces damage taken by 30%, and grants immunity to flinch/knockback. 30 seconds recast after effect ends.",
+        "Effect (Global)": "Increases damage by 11%. Reduces PP consumption by 20%. Recovers 20 PP every 10 seconds. After using three Normal Attacks, for 30 seconds, changes the effect of this Potential to: Increases damage by 15.44%, reduces damage taken by 30%, and grants immunity to flinch/knockback. 30 seconds recast after effect ends.",
         "Special": "Lightweaver"
     },
     {
@@ -3388,31 +3512,35 @@
     },
     {
         "Name (English)": "Divine Judgment",
-        "Effect (English)": "Damage +15%. Increases the damage of uncharged Satellite Cannon by 300%."
+        "Effect (English)": "Increases damage by 15%. Increases the damage of uncharged Satellite Cannon by 300%."
     },
     {
         "Name (JP)": "神速の一閃",
         "Name (English)": "Extreme Speed",
         "Name (Global)": "Fleet Flash",
         "Effect (JP)": "威力(+10%)、通常攻撃速度+15%。メイト系アイテムを使用すると即時回復。",
-        "Effect (English)": "Damage +10%. Increases Normal Attack speed by 15%. Consume Mate items instantly.",
-        "Effect (Global)": "Damage +10%. Increases Normal Attack speed by 15%. Consume Mate items instantly."
+        "Effect (English)": "Increases damage by 10%. Increases Normal Attack speed by 15%. Consume Mate items instantly.",
+        "Effect (Global)": "Increases damage by 10%. Increases Normal Attack speed by 15%. Consume Mate items instantly."
     },
     {
         "Name (JP)": "煌めく連牙",
         "Name (English)": "Glittering Fang",
         "Name (Global)": "Gleaming Fangs",
         "Effect (JP)": "威力(+13%)、攻撃命中時20秒間、威力+8%被ダメ-20%、PP上限+100。効果時間は150万ダメージで回復。",
-        "Effect (English)": "Damage +13%. Upon striking with an attack, increases damage by an additional 8%, reduces damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect reapplies after dealing 1,500,000 damage.",
-        "Effect (Global)": "Damage +13%. Upon striking with an attack, increases damage by an additional 8%, reduces damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect reapplies after dealing 1,500,000 damage."
+        "Effect (English)": "Increases damage by 13%. Upon hitting an enemy, increases damage by an additional 8%, reduces damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect reapplies after dealing 1,500,000 damage.",
+        "Effect (Global)": "Increases damage by 13%. Upon striking with an attack, increases damage by an additional 8%, reduces damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect reapplies after dealing 1,500,000 damage."
     },
     {
+        "Name (JP)": "煌めく連奏",
         "Name (English)": "Glittering Circle",
-        "Effect (English)": "Damage +8%. Upon striking with an attack, increases damage by an additional 5%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect timer regenerates after dealing 1,500,000 damage."
+        "Name (Global)": "Gleaming Ensemble",
+        "Effect (JP)": "威力+8%。攻撃命中時20秒間、威力+5% 被ダメ-20%、PP上限+100。効果時間は150万ダメージで回復。",
+        "Effect (English)": "Increases damage by 8%. Upon hitting an enemy, increases damage by an additional 5%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect reapplies after dealing 1,500,000 damage.",
+        "Effect (Global)": "Increases damage by 8%. Upon hitting an enemy, increases damage by an additional 5%, reduce damage taken by 20%, and increases maximum PP by 100 for 20 seconds. Effect reapplies after dealing 1,500,000 damage."
     },
     {
         "Name (English)": "Supernova",
-        "Effect (English)": "Damage +10%. Produce a follow-up attack when casting a Charged Technique from a Talis card."
+        "Effect (English)": "Increases damage by 10%. Produce a follow-up attack when casting a Charged Technique from a Talis card."
     },
     {
         "Name (English)": "Glittering Blade",
@@ -3905,12 +4033,20 @@
         "Effect (Global)": "Increases damage by 8%. Recovers 3 PP when an enemy is killed nearby. Increases damage by an additional 12% during the Attack and Buster Phases in Buster Quests."
     },
     {
+        "Name (JP)": "死闘操演・堅守",
         "Name (English)": "Deathblow Honor - Defense",
-        "Effect (English)": "Damage increases by 3% during the Buster Quest Defense Phase in addition to Deathblow Honor's effects."
+        "Name (Global)": "Lethal Combat Control: Defense",
+        "Effect (JP)": "死闘操演に加え、ディフェンスフェイズ時に威力上昇効果が発生。(3%)",
+        "Effect (English)": "Recovers 3 PP when an enemy is killed nearby. Increases damage by 3% during the Defense Phase in Buster Quests.",
+        "Effect (Global)": "Recovers 3 PP when an enemy is killed nearby. Increases damage by 3% during the Defense Phase in Buster Quests."
     },
     {
+        "Name (JP)": "死闘操演・進攻",
         "Name (English)": "Deathblow Honor - Advance Attack",
-        "Effect (English)": "Damage increases by 3% during the Buster Quest Attack and Buster Phase in addition to Deathblow Honor's effects."
+        "Name (Global)": "Lethal Combat Control: Offense",
+        "Effect (JP)": "死闘操演に加え、アタック及びバスターフェイズ時に威力上昇効果が発生。(3%)",
+        "Effect (English)": "Recovers 3 PP when an enemy is killed nearby. Increases damage by 3% during the Attack and Buster Phases in Buster Quests.",
+        "Effect (Global)": "Recovers 3 PP when an enemy is killed nearby. Increases damage by 3% during the Attack and Buster Phases in Buster Quests."
     },
     {
         "Name (JP)": "千年の輝き",
@@ -3939,8 +4075,12 @@
         "Special": "Luminmech"
     },
     {
+        "Name (JP)": "不滅の戦奏・改",
         "Name (English)": "Eternal War Scherzo Plus",
-        "Effect (English)": "Increases damage by 8%. Your Pet can survive one fatal attack with 1 HP. Your Pet restores HP at regular intervals afterwards.",
+        "Name (Global)": "Unflagging Battle Hymn Redux",
+        "Effect (JP)": "威力8%上昇。ペットが一度だけ致命傷を受けても耐え発動後徐々にHP回復。",
+        "Effect (English)": "Increases damage by 6%. Your Pet can survive one fatal attack with 1 HP. Your Pet restores HP at regular intervals afterwards. Does not prevent Marron or Melon from dying to its self-destruct effect.",
+        "Effect (Global)": "Increases damage by 6%. Your Pet can survive one fatal attack with 1 HP. Your Pet restores HP at regular intervals afterwards. Does not prevent Marron or Melon from dying to its self-destruct effect.",
         "Special": "Luminmech"
     },
     {
@@ -3953,8 +4093,12 @@
         "Special": "Luminmech"
     },
     {
+        "Name (JP)": "流光の巡歌・改",
         "Name (English)": "Lightstream Melody Plus",
-        "Effect (English)": "Increases damage by 8%. Fully restore PP when casting a PA or Technique while below 10% PP and bestow an additional damage bonus (3%) for 30 seconds (120s Recast).",
+        "Name (Global)": "Photon Serenade Redux",
+        "Effect (JP)": "威力が8%上昇。PPが一定以下（10%未満）になった時PPが全回復し、一定時間威力が更に3%上昇する。",
+        "Effect (English)": "Increases damage by 8%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Lightstream Resurrection, Lightstream Resurrection Plus and Lightstream Melody.",
+        "Effect (Global)": "Increases damage by 8%. Increases Dark Blast duration by 10 seconds. Fully restores PP when casting a PA or Technique while below 10% PP, and then increases damage by an additional 3% for 30 seconds. 120 seconds recast time. Shares recast time with Photon Resurrection, Photon Resurrection Redux and Photon Serenade.",
         "Special": "Luminmech"
     },
     {
@@ -4000,8 +4144,12 @@
         "Special": "Ultimate"
     },
     {
+        "Name (JP)": "闇の一瞥・改",
         "Name (English)": "Glance of Darkness Plus",
-        "Effect (English)": "When Alter Ego is active, automatically activates Pet Sympathy and Fires Megid with Pet PAs (2500% potency).",
+        "Name (Global)": "Sinister Stare Redux",
+        "Effect (JP)": "アルターエゴ発動中、状況に応じた自動支援を行う。(メギド威力2500%)",
+        "Effect (English)": "When Alter Ego is active, automatically activates Pet Sympathy after 3 seconds of request, and automatically casts uncharged Megid with 2500% potency when a Pet Photon Art is used.",
+        "Effect (Global)": "When Alter Ego is active, automatically activates Pet Sympathy after 3 seconds of request, and automatically casts uncharged Megid with 2500% potency when a Pet Photon Art is used.",
         "Special": "Ultimate"
     },
     {

@@ -2,8 +2,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／バーチェスタa",
-        "name_en": "Arm / Berchesta a",
-        "name_global": "Arms / Verchesta A",
+        "Name (English)": "Arm / Berchesta a",
+        "Name (Global)": "Arms / Verchesta A",
         "Rarity": 2,
         "Requirement": [
             "S-DEF",
@@ -32,8 +32,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／バーティガルa",
-        "name_en": "Arm / Bertigal a",
-        "name_global": "Arms / Vertigal A",
+        "Name (English)": "Arm / Bertigal a",
+        "Name (Global)": "Arms / Vertigal A",
         "Rarity": 2,
         "Requirement": [
             "S-DEF",
@@ -61,8 +61,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／バーゴイランa",
-        "name_en": "Arm / Bergoilan a",
-        "name_global": "Arms / Vergoyran A",
+        "Name (English)": "Arm / Bergoilan a",
+        "Name (Global)": "Arms / Vergoyran A",
         "Rarity": 2,
         "Requirement": [
             "S-DEF",
@@ -90,8 +90,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ライパウチa",
-        "name_en": "Arm / Lypouch a",
-        "name_global": "Arms / Rypouch A",
+        "Name (English)": "Arm / Lypouch a",
+        "Name (Global)": "Arms / Rypouch A",
         "Rarity": 2,
         "Requirement": [
             "S-DEF",
@@ -119,8 +119,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ラジウパウチa",
-        "name_en": "Arm / Ladiupouch a",
-        "name_global": "Arms / Radiupouch A",
+        "Name (English)": "Arm / Ladiupouch a",
+        "Name (Global)": "Arms / Radiupouch A",
         "Rarity": 2,
         "Requirement": [
             "S-DEF",
@@ -148,8 +148,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ラズアームパウチa",
-        "name_en": "Arm / Lazuliapouch a",
-        "name_global": "Arms / Razliapouch A",
+        "Name (English)": "Arm / Lazuliapouch a",
+        "Name (Global)": "Arms / Razliapouch A",
         "Rarity": 2,
         "Requirement": [
             "S-DEF",
@@ -177,8 +177,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ティタスティンa",
-        "name_en": "Arm / Titastin a",
-        "name_global": "Arms / Titastin A",
+        "Name (English)": "Arm / Titastin a",
+        "Name (Global)": "Arms / Titastin A",
         "Rarity": 2,
         "Requirement": [
             "R-DEF",
@@ -206,8 +206,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ティテルダムa",
-        "name_en": "Arm / Titeldum a",
-        "name_global": "Arms / Titeldum A",
+        "Name (English)": "Arm / Titeldum a",
+        "Name (Global)": "Arms / Titeldum A",
         "Rarity": 2,
         "Requirement": [
             "R-DEF",
@@ -235,8 +235,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ティトディグオa",
-        "name_en": "Arm / Titodigo a",
-        "name_global": "Arms / Titodiguo A",
+        "Name (English)": "Arm / Titodigo a",
+        "Name (Global)": "Arms / Titodiguo A",
         "Rarity": 2,
         "Requirement": [
             "R-DEF",
@@ -264,8 +264,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サーカルゥターa",
-        "name_en": "Arm / Circluder a",
-        "name_global": "Arms / Circaluter A",
+        "Name (English)": "Arm / Circluder a",
+        "Name (Global)": "Arms / Circaluter A",
         "Rarity": 2,
         "Requirement": [
             "T-DEF",
@@ -293,8 +293,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サーカリジュアa",
-        "name_en": "Arm / Circlidua a",
-        "name_global": "Arms / Circalijure A",
+        "Name (English)": "Arm / Circlidua a",
+        "Name (Global)": "Arms / Circalijure A",
         "Rarity": 2,
         "Requirement": [
             "T-DEF",
@@ -322,8 +322,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サーカレディアa",
-        "name_en": "Arm / Circaledia a",
-        "name_global": "Arms / Circaladia A",
+        "Name (English)": "Arm / Circaledia a",
+        "Name (Global)": "Arms / Circaladia A",
         "Rarity": 2,
         "Requirement": [
             "T-DEF",
@@ -351,8 +351,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／バーチェスタb",
-        "name_en": "Arm / Berchesta b",
-        "name_global": "Arms / Vertigal B",
+        "Name (English)": "Arm / Berchesta b",
+        "Name (Global)": "Arms / Vertigal B",
         "Rarity": 3,
         "Requirement": [
             "S-DEF",
@@ -380,8 +380,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／バーティガルb",
-        "name_en": "Arm / Bertigal b",
-        "name_global": "Arms / Vertigal b",
+        "Name (English)": "Arm / Bertigal b",
+        "Name (Global)": "Arms / Vertigal b",
         "Rarity": 3,
         "Requirement": [
             "S-DEF",
@@ -409,8 +409,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／バーゴイランb",
-        "name_en": "Arm / Bergoilan b",
-        "name_global": "Arms / Vergoyran b",
+        "Name (English)": "Arm / Bergoilan b",
+        "Name (Global)": "Arms / Vergoyran b",
         "Rarity": 3,
         "Requirement": [
             "S-DEF",
@@ -438,8 +438,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ライパウチb",
-        "name_en": "Arm / Lypouch b",
-        "name_global": "Arms / Rypouch b",
+        "Name (English)": "Arm / Lypouch b",
+        "Name (Global)": "Arms / Rypouch b",
         "Rarity": 3,
         "Requirement": [
             "S-DEF",
@@ -467,8 +467,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ラジウパウチb",
-        "name_en": "Arm / Ladiupouch b",
-        "name_global": "Arms / Radiupouch b",
+        "Name (English)": "Arm / Ladiupouch b",
+        "Name (Global)": "Arms / Radiupouch b",
         "Rarity": 3,
         "Requirement": [
             "S-DEF",
@@ -496,8 +496,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ラズアームパウチb",
-        "name_en": "Arm / Lazuliapouch b",
-        "name_global": "Arms / Razliapouch b",
+        "Name (English)": "Arm / Lazuliapouch b",
+        "Name (Global)": "Arms / Razliapouch b",
         "Rarity": 3,
         "Requirement": [
             "S-DEF",
@@ -525,8 +525,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ティタスティンb",
-        "name_en": "Arm / Titastin b",
-        "name_global": "Arms / Titastin b",
+        "Name (English)": "Arm / Titastin b",
+        "Name (Global)": "Arms / Titastin b",
         "Rarity": 3,
         "Requirement": [
             "R-DEF",
@@ -554,8 +554,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ティテルダムb",
-        "name_en": "Arm / Titeldum b",
-        "name_global": "Arms / Titeldum b",
+        "Name (English)": "Arm / Titeldum b",
+        "Name (Global)": "Arms / Titeldum b",
         "Rarity": 3,
         "Requirement": [
             "R-DEF",
@@ -583,8 +583,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ティトディグオb",
-        "name_en": "Arm / Titodigo b",
-        "name_global": "Arms / Titodiguo b",
+        "Name (English)": "Arm / Titodigo b",
+        "Name (Global)": "Arms / Titodiguo b",
         "Rarity": 3,
         "Requirement": [
             "R-DEF",
@@ -612,8 +612,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サーカルゥターb",
-        "name_en": "Arm / Circluder b",
-        "name_global": "Arms / Circaluter b",
+        "Name (English)": "Arm / Circluder b",
+        "Name (Global)": "Arms / Circaluter b",
         "Rarity": 3,
         "Requirement": [
             "T-DEF",
@@ -641,8 +641,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サーカリジュアb",
-        "name_en": "Arm / Circlidua b",
-        "name_global": "Arms / Circalijure b",
+        "Name (English)": "Arm / Circlidua b",
+        "Name (Global)": "Arms / Circalijure b",
         "Rarity": 3,
         "Requirement": [
             "T-DEF",
@@ -670,8 +670,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サーカレディアb",
-        "name_en": "Arm / Circaledia b",
-        "name_global": "Arms / Circaladia b",
+        "Name (English)": "Arm / Circaledia b",
+        "Name (Global)": "Arms / Circaladia b",
         "Rarity": 3,
         "Requirement": [
             "T-DEF",
@@ -699,8 +699,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ブリステアa",
-        "name_en": "Arm / Bristea a",
-        "name_global": "Arms / Bristare A",
+        "Name (English)": "Arm / Bristea a",
+        "Name (Global)": "Arms / Bristare A",
         "Rarity": 4,
         "Requirement": [
             "S-DEF",
@@ -728,8 +728,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ブリダインa",
-        "name_en": "Arm / Brideinn a",
-        "name_global": "Arms / Bridyne A",
+        "Name (English)": "Arm / Brideinn a",
+        "Name (Global)": "Arms / Bridyne A",
         "Rarity": 4,
         "Requirement": [
             "S-DEF",
@@ -757,8 +757,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ブリモイヤーa",
-        "name_en": "Arm / Brimoier a",
-        "name_global": "Arms / Brimoyer A",
+        "Name (English)": "Arm / Brimoier a",
+        "Name (Global)": "Arms / Brimoyer A",
         "Rarity": 4,
         "Requirement": [
             "S-DEF",
@@ -786,8 +786,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／アパドットa",
-        "name_en": "Arm / Apdot a",
-        "name_global": "Arms / Apadot A",
+        "Name (English)": "Arm / Apdot a",
+        "Name (Global)": "Arms / Apadot A",
         "Rarity": 4,
         "Requirement": [
             "S-DEF",
@@ -815,8 +815,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／アパディクターa",
-        "name_en": "Arm / Apdicter a",
-        "name_global": "Arms / Apadictor A",
+        "Name (English)": "Arm / Apdicter a",
+        "Name (Global)": "Arms / Apadictor A",
         "Rarity": 4,
         "Requirement": [
             "S-DEF",
@@ -844,8 +844,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／アプバキュドアa",
-        "name_en": "Arm / Apbacudol a",
-        "name_global": "Arms / Apvacudor A",
+        "Name (English)": "Arm / Apbacudol a",
+        "Name (Global)": "Arms / Apvacudor A",
         "Rarity": 4,
         "Requirement": [
             "S-DEF",
@@ -873,8 +873,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サイマームa",
-        "name_en": "Arm / Psymurm a",
-        "name_global": "Arms / Cymarm A",
+        "Name (English)": "Arm / Psymurm a",
+        "Name (Global)": "Arms / Cymarm A",
         "Rarity": 4,
         "Requirement": [
             "R-DEF",
@@ -902,8 +902,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サイバアームムa",
-        "name_en": "Arm / Psybariam a",
-        "name_global": "Arms / Cybarium A",
+        "Name (English)": "Arm / Psybariam a",
+        "Name (Global)": "Arms / Cybarium A",
         "Rarity": 4,
         "Requirement": [
             "R-DEF",
@@ -931,8 +931,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サイタロジラムa",
-        "name_en": "Arm / Psytalgiram a",
-        "name_global": "Arms / Cytorogilum A",
+        "Name (English)": "Arm / Psytalgiram a",
+        "Name (Global)": "Arms / Cytorogilum A",
         "Rarity": 4,
         "Requirement": [
             "R-DEF",
@@ -960,8 +960,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／クロスアッパーa",
-        "name_en": "Arm / Crossupper a",
-        "name_global": "Arms / Cross Upper A",
+        "Name (English)": "Arm / Crossupper a",
+        "Name (Global)": "Arms / Cross Upper A",
         "Rarity": 4,
         "Requirement": [
             "T-DEF",
@@ -989,8 +989,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／クロスアメインa",
-        "name_en": "Arm / Crossmain  a",
-        "name_global": "Arms / Crossamain A",
+        "Name (English)": "Arm / Crossmain  a",
+        "Name (Global)": "Arms / Crossamain A",
         "Rarity": 4,
         "Requirement": [
             "T-DEF",
@@ -1018,8 +1018,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／クロサーマルa",
-        "name_en": "Arm / Crossarmor a",
-        "name_global": "Arms / Crossarmal A",
+        "Name (English)": "Arm / Crossarmor a",
+        "Name (Global)": "Arms / Crossarmal A",
         "Rarity": 4,
         "Requirement": [
             "T-DEF",
@@ -1047,8 +1047,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ブリステアb",
-        "name_en": "Arm / Bristea b",
-        "name_global": "Arms / Bristare B",
+        "Name (English)": "Arm / Bristea b",
+        "Name (Global)": "Arms / Bristare B",
         "Rarity": 5,
         "Requirement": [
             "S-DEF",
@@ -1076,8 +1076,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ブリダインb",
-        "name_en": "Arm / Brideinn b",
-        "name_global": "Arms / Bridyne B",
+        "Name (English)": "Arm / Brideinn b",
+        "Name (Global)": "Arms / Bridyne B",
         "Rarity": 5,
         "Requirement": [
             "S-DEF",
@@ -1105,8 +1105,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ブリモイヤーb",
-        "name_en": "Arm / Brimoier b",
-        "name_global": "Arms / Brimoyer B",
+        "Name (English)": "Arm / Brimoier b",
+        "Name (Global)": "Arms / Brimoyer B",
         "Rarity": 5,
         "Requirement": [
             "S-DEF",
@@ -1134,8 +1134,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／アパドットb",
-        "name_en": "Arm / Apdot b",
-        "name_global": "Arms / Apadot B",
+        "Name (English)": "Arm / Apdot b",
+        "Name (Global)": "Arms / Apadot B",
         "Rarity": 5,
         "Requirement": [
             "S-DEF",
@@ -1163,8 +1163,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／アパディクターb",
-        "name_en": "Arm / Apdicter b",
-        "name_global": "Arms / Apadictor B",
+        "Name (English)": "Arm / Apdicter b",
+        "Name (Global)": "Arms / Apadictor B",
         "Rarity": 5,
         "Requirement": [
             "S-DEF",
@@ -1192,8 +1192,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／アプバキュドアb",
-        "name_en": "Arm / Apbacudol b",
-        "name_global": "Arms / Apvacudor B",
+        "Name (English)": "Arm / Apbacudol b",
+        "Name (Global)": "Arms / Apvacudor B",
         "Rarity": 5,
         "Requirement": [
             "S-DEF",
@@ -1221,8 +1221,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サイマームb",
-        "name_en": "Arm / Psymurm b",
-        "name_global": "Arms / Cymarm B",
+        "Name (English)": "Arm / Psymurm b",
+        "Name (Global)": "Arms / Cymarm B",
         "Rarity": 5,
         "Requirement": [
             "R-DEF",
@@ -1250,8 +1250,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サイバアームムb",
-        "name_en": "Arm / Psybariam b",
-        "name_global": "Arms / Cybarium B",
+        "Name (English)": "Arm / Psybariam b",
+        "Name (Global)": "Arms / Cybarium B",
         "Rarity": 5,
         "Requirement": [
             "R-DEF",
@@ -1279,8 +1279,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サイタロジラムb",
-        "name_en": "Arm / Psytalgiram b",
-        "name_global": "Arms / Cytorogilum B",
+        "Name (English)": "Arm / Psytalgiram b",
+        "Name (Global)": "Arms / Cytorogilum B",
         "Rarity": 5,
         "Requirement": [
             "R-DEF",
@@ -1308,8 +1308,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／クロスアッパーb",
-        "name_en": "Arm / Crossupper b",
-        "name_global": "Arms / Cross Upper B",
+        "Name (English)": "Arm / Crossupper b",
+        "Name (Global)": "Arms / Cross Upper B",
         "Rarity": 5,
         "Requirement": [
             "T-DEF",
@@ -1337,8 +1337,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／クロスアメインb",
-        "name_en": "Arm / Crossmain  b",
-        "name_global": "Arms / Crossamain B",
+        "Name (English)": "Arm / Crossmain  b",
+        "Name (Global)": "Arms / Crossamain B",
         "Rarity": 5,
         "Requirement": [
             "T-DEF",
@@ -1366,8 +1366,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／クロサーマルb",
-        "name_en": "Arm / Crossarmor b",
-        "name_global": "Arms / Crossarmal B",
+        "Name (English)": "Arm / Crossarmor b",
+        "Name (Global)": "Arms / Crossarmal B",
         "Rarity": 5,
         "Requirement": [
             "T-DEF",
@@ -1395,8 +1395,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／バーチェスタc",
-        "name_en": "Arm / Berchesta c",
-        "name_global": "Arms / Vertigal C",
+        "Name (English)": "Arm / Berchesta c",
+        "Name (Global)": "Arms / Vertigal C",
         "Rarity": 6,
         "Requirement": [
             "S-DEF",
@@ -1424,8 +1424,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ライパウチc",
-        "name_en": "Arm / Lypouch c",
-        "name_global": "Arms / Rypouch C",
+        "Name (English)": "Arm / Lypouch c",
+        "Name (Global)": "Arms / Rypouch C",
         "Rarity": 6,
         "Requirement": [
             "S-DEF",
@@ -1453,8 +1453,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ティタスティンc",
-        "name_en": "Arm / Titastin c",
-        "name_global": "Arms / Titastin C",
+        "Name (English)": "Arm / Titastin c",
+        "Name (Global)": "Arms / Titastin C",
         "Rarity": 6,
         "Requirement": [
             "R-DEF",
@@ -1482,8 +1482,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サーカルゥターc",
-        "name_en": "Arm / Circluder c",
-        "name_global": "Arms / Circaluter C",
+        "Name (English)": "Arm / Circluder c",
+        "Name (Global)": "Arms / Circaluter C",
         "Rarity": 6,
         "Requirement": [
             "T-DEF",
@@ -1511,8 +1511,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ブリステアc",
-        "name_en": "Arm / Bristea c",
-        "name_global": "Arms / Bristare C",
+        "Name (English)": "Arm / Bristea c",
+        "Name (Global)": "Arms / Bristare C",
         "Rarity": 6,
         "Requirement": [
             "S-DEF",
@@ -1540,8 +1540,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／アパドットc",
-        "name_en": "Arm / Apdot c",
-        "name_global": "Arms / Apadot C",
+        "Name (English)": "Arm / Apdot c",
+        "Name (Global)": "Arms / Apadot C",
         "Rarity": 6,
         "Requirement": [
             "S-DEF",
@@ -1569,8 +1569,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／サイマームc",
-        "name_en": "Arm / Psymurm c",
-        "name_global": "Arms / Cymarm C",
+        "Name (English)": "Arm / Psymurm c",
+        "Name (Global)": "Arms / Cymarm C",
         "Rarity": 6,
         "Requirement": [
             "R-DEF",
@@ -1598,8 +1598,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／クロスアッパーc",
-        "name_en": "Arm / Crossupper c",
-        "name_global": "Arms / Cross Upper C",
+        "Name (English)": "Arm / Crossupper c",
+        "Name (Global)": "Arms / Cross Upper C",
         "Rarity": 6,
         "Requirement": [
             "T-DEF",
@@ -1627,8 +1627,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ヒエイソウ",
-        "name_en": "Arm / Hiei Sou",
-        "name_global": "Arms / Hiei Sou",
+        "Name (English)": "Arm / Hiei Sou",
+        "Name (Global)": "Arms / Hiei Sou",
         "Rarity": 7,
         "Requirement": [
             "DEX",
@@ -1656,8 +1656,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／フレキュレイ",
-        "name_en": "Arm / Flacuray",
-        "name_global": "Arms / Flagray",
+        "Name (English)": "Arm / Flacuray",
+        "Name (Global)": "Arms / Flagray",
         "Rarity": 7,
         "Requirement": [
             "DEX",
@@ -1685,8 +1685,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／フレキュイート",
-        "name_en": "Arm / Flacuete",
-        "name_global": "Arms / Flaguete",
+        "Name (English)": "Arm / Flacuete",
+        "Name (Global)": "Arms / Flaguete",
         "Rarity": 7,
         "Requirement": [
             "DEX",
@@ -1714,8 +1714,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／アイジョイン",
-        "name_en": "Arm / Aijoin",
-        "name_global": "Arms / Aijoin",
+        "Name (English)": "Arm / Aijoin",
+        "Name (Global)": "Arms / Aijoin",
         "Rarity": 7,
         "Requirement": [
             "DEX",
@@ -1743,8 +1743,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／アイジグレイ",
-        "name_en": "Arm / Aijigrey",
-        "name_global": "Arms / Aijigray",
+        "Name (English)": "Arm / Aijigrey",
+        "Name (Global)": "Arms / Aijigray",
         "Rarity": 7,
         "Requirement": [
             "DEX",
@@ -1772,8 +1772,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／エレギスター",
-        "name_en": "Arm / Elegister",
-        "name_global": "Arms / Elegistar",
+        "Name (English)": "Arm / Elegister",
+        "Name (Global)": "Arms / Elegistar",
         "Rarity": 7,
         "Requirement": [
             "DEX",
@@ -1801,8 +1801,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／エレギラック",
-        "name_en": "Arm / Elegirack",
-        "name_global": "Arms / Elegirack",
+        "Name (English)": "Arm / Elegirack",
+        "Name (Global)": "Arms / Elegirack",
         "Rarity": 7,
         "Requirement": [
             "DEX",
@@ -1830,8 +1830,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ヤークトクロー",
-        "name_en": "Arm / Jagd Klaue",
-        "name_global": "Arms / Jagdklaue",
+        "Name (English)": "Arm / Jagd Klaue",
+        "Name (Global)": "Arms / Jagdklaue",
         "Rarity": 8,
         "Requirement": [
             "S-DEF",
@@ -1859,8 +1859,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ヴォルハンズ",
-        "name_en": "Arm / Vol Hands",
-        "name_global": "Arms / Vol Hands",
+        "Name (English)": "Arm / Vol Hands",
+        "Name (Global)": "Arms / Vol Hands",
         "Rarity": 8,
         "Requirement": [
             "R-DEF",
@@ -1888,8 +1888,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／クォーツハンズ",
-        "name_en": "Arm / Quartz Hands",
-        "name_global": "Arms / Quartz Hands",
+        "Name (English)": "Arm / Quartz Hands",
+        "Name (Global)": "Arms / Quartz Hands",
         "Rarity": 8,
         "Requirement": [
             "T-DEF",
@@ -1917,8 +1917,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／レムジース",
-        "name_en": "Arm / Remjees",
-        "name_global": "Arms / Remjees",
+        "Name (English)": "Arm / Remjees",
+        "Name (Global)": "Arms / Remjees",
         "Rarity": 8,
         "Requirement": [
             "S-DEF",
@@ -1945,8 +1945,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ヴァレムジース",
-        "name_en": "Arm / Varemjees",
-        "name_global": "Arms / Va Remjees",
+        "Name (English)": "Arm / Varemjees",
+        "Name (Global)": "Arms / Va Remjees",
         "Rarity": 8,
         "Requirement": [
             "S-DEF",
@@ -1973,8 +1973,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ファンブラム",
-        "name_en": "Arm / Fan Blam",
-        "name_global": "Arms / Fanblam",
+        "Name (English)": "Arm / Fan Blam",
+        "Name (Global)": "Arms / Fanblam",
         "Rarity": 8,
         "Requirement": [
             "S-DEF",
@@ -2002,8 +2002,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／フェヌリオン",
-        "name_en": "Arm / Fen Urion",
-        "name_global": "Arms / Fenulion",
+        "Name (English)": "Arm / Fen Urion",
+        "Name (Global)": "Arms / Fenulion",
         "Rarity": 8,
         "Requirement": [
             "S-DEF",
@@ -2031,8 +2031,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ミンストフリー",
-        "name_en": "Arm / Minst Free",
-        "name_global": "Arms / Minstfree",
+        "Name (English)": "Arm / Minst Free",
+        "Name (Global)": "Arms / Minstfree",
         "Rarity": 9,
         "Requirement": [
             "DEX",
@@ -2060,8 +2060,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ミンストブール",
-        "name_en": "Arm / Minst Boole",
-        "name_global": "Arms / Minstboule",
+        "Name (English)": "Arm / Minst Boole",
+        "Name (Global)": "Arms / Minstboule",
         "Rarity": 9,
         "Requirement": [
             "DEX",
@@ -2089,8 +2089,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／リュクスフィン",
-        "name_en": "Arm / Luxe Fin",
-        "name_global": "Arms / Luxe Fin",
+        "Name (English)": "Arm / Luxe Fin",
+        "Name (Global)": "Arms / Luxe Fin",
         "Rarity": 9,
         "Requirement": [
             "DEX",
@@ -2118,8 +2118,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／リュクスエンデ",
-        "name_en": "Arm / Luxe Ende",
-        "name_global": "Arms / Luxe Ende",
+        "Name (English)": "Arm / Luxe Ende",
+        "Name (Global)": "Arms / Luxe Ende",
         "Rarity": 9,
         "Requirement": [
             "DEX",
@@ -2147,8 +2147,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ネグロルーブル",
-        "name_en": "Arm / Negro Rouble",
-        "name_global": "Arms / Noir Ruble",
+        "Name (English)": "Arm / Negro Rouble",
+        "Name (Global)": "Arms / Noir Ruble",
         "Rarity": 9,
         "Requirement": [
             "T-DEF",
@@ -2176,8 +2176,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ヘラスラスト",
-        "name_en": "Arm / Hera Thrust",
-        "name_global": "Arms / Hera Thrust",
+        "Name (English)": "Arm / Hera Thrust",
+        "Name (Global)": "Arms / Hera Thrust",
         "Rarity": 9,
         "Requirement": [
             "S-DEF",
@@ -2205,8 +2205,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／カルバアームトール",
-        "name_en": "Arm / Calvaria Toll",
-        "name_global": "Arms / Calvaria Tor",
+        "Name (English)": "Arm / Calvaria Toll",
+        "Name (Global)": "Arms / Calvaria Tor",
         "Rarity": 9,
         "Requirement": [
             "R-DEF",
@@ -2234,8 +2234,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ブルーミィアート",
-        "name_en": "Arm / Bloom Art",
-        "name_global": "Arms / Bloomiart",
+        "Name (English)": "Arm / Bloom Art",
+        "Name (Global)": "Arms / Bloomiart",
         "Rarity": 9,
         "Requirement": [
             "T-DEF",
@@ -2263,8 +2263,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ヴェントヘクサ",
-        "name_en": "Arm / Vent Hexa",
-        "name_global": "Arms / Vent Hexa",
+        "Name (English)": "Arm / Vent Hexa",
+        "Name (Global)": "Arms / Vent Hexa",
         "Rarity": 9,
         "Requirement": [
             "R-DEF",
@@ -2292,8 +2292,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ブリッツサイン",
-        "name_en": "Arm / Blitz Sign",
-        "name_global": "Arms / Blitz Sign",
+        "Name (English)": "Arm / Blitz Sign",
+        "Name (Global)": "Arms / Blitz Sign",
         "Rarity": 9,
         "Requirement": [
             "R-DEF",
@@ -2321,8 +2321,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ルベルタロン",
-        "name_en": "Arm / Rubel Talon",
-        "name_global": "Arms / Rubel Talon",
+        "Name (English)": "Arm / Rubel Talon",
+        "Name (Global)": "Arms / Rubel Talon",
         "Rarity": 9,
         "Requirement": [
             "T-DEF",
@@ -2349,8 +2349,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ディスタロン",
-        "name_en": "Arm / Dis Talon",
-        "name_global": null,
+        "Name (English)": "Arm / Dis Talon",
+        "Name (Global)": null,
         "Rarity": 9,
         "Requirement": [
             "T-DEF",
@@ -2377,8 +2377,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／シフォンドーレ",
-        "name_en": "Arm / Chiffon Dore",
-        "name_global": "Arms / Chiffon Dorer",
+        "Name (English)": "Arm / Chiffon Dore",
+        "Name (Global)": "Arms / Chiffon Dorer",
         "Rarity": 9,
         "Requirement": [
             "T-DEF",
@@ -2406,8 +2406,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ザンフェロー",
-        "name_en": "Arm / Zan Fellow",
-        "name_global": "Arms / Zan Pharaoh",
+        "Name (English)": "Arm / Zan Fellow",
+        "Name (Global)": "Arms / Zan Pharaoh",
         "Rarity": 9,
         "Requirement": [
             "S-DEF",
@@ -2435,8 +2435,8 @@
     {
         "Type":"Arm",
         "Name (JP)": "アーム／ティアンエン",
-        "name_en": "Arm / Tian En",
-        "name_global": "Arms / Tianen",
+        "Name (English)": "Arm / Tian En",
+        "Name (Global)": "Arms / Tianen",
         "Rarity": 9,
         "Requirement": [
             "R-DEF",
@@ -2464,8 +2464,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ラグネアンカ",
-        "name_en": "Arm / Ragne Ancaire",
-        "name_global": "Arms / Ragne Ancaire",
+        "Name (English)": "Arm / Ragne Ancaire",
+        "Name (Global)": "Arms / Ragne Ancaire",
         "Rarity": 10,
         "Requirement":["S-DEF",360],
         "S-DEF":110,
@@ -2490,8 +2490,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／アグラネアンカ",
-        "name_en": "Arm / Agrani Ancaire",
-        "name_global": "Arms / Agrane Ancaire",
+        "Name (English)": "Arm / Agrani Ancaire",
+        "Name (Global)": "Arms / Agrane Ancaire",
         "Rarity": 10,
         "Requirement":["R-DEF",400],
         "S-DEF":124,
@@ -2516,8 +2516,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ヴァーダーアルム",
-        "name_en": "Arm / Vardha Arm",
-        "name_global": "Arms / Varder Arm",
+        "Name (English)": "Arm / Vardha Arm",
+        "Name (Global)": "Arms / Varder Arm",
         "Rarity": 10,
         "Requirement":["R-DEF",360],
         "S-DEF":144,
@@ -2542,8 +2542,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／キングスアルム",
-        "name_en": "Arm / King's Arm",
-        "name_global": "Arms / King's Arm",
+        "Name (English)": "Arm / King's Arm",
+        "Name (Global)": "Arms / King's Arm",
         "Rarity": 10,
         "Requirement":["T-DEF",400],
         "S-DEF":166,
@@ -2568,8 +2568,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／クロームハンズ",
-        "name_en": "Arm / Chrome Hands",
-        "name_global": "Arms / Chrome Hands",
+        "Name (English)": "Arm / Chrome Hands",
+        "Name (Global)": "Arms / Chrome Hands",
         "Rarity": 10,
         "Requirement":["R-DEF",360],
         "S-DEF":110,
@@ -2594,8 +2594,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ヘイズハンズ",
-        "name_en": "Arm / Haze Hands",
-        "name_global": "Arms / Haze Hands",
+        "Name (English)": "Arm / Haze Hands",
+        "Name (Global)": "Arms / Haze Hands",
         "Rarity": 10,
         "Requirement":["S-DEF",400],
         "S-DEF":124,
@@ -2620,8 +2620,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／スロートクロー",
-        "name_en": "Arm / Schlacht Klaue",
-        "name_global": "Arms / Schlachtklaue",
+        "Name (English)": "Arm / Schlacht Klaue",
+        "Name (Global)": "Arms / Schlachtklaue",
         "Rarity": 10,
         "Requirement":["T-DEF",360],
         "S-DEF":144,
@@ -2646,8 +2646,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／エルダーブラゾ",
-        "name_en": "Arm / Elder Blazo",
-        "name_global": "Arms / Elder Brazo",
+        "Name (English)": "Arm / Elder Blazo",
+        "Name (Global)": "Arms / Elder Brazo",
         "Rarity": 10,
         "Requirement":["DEX",325],
         "S-DEF":0,
@@ -2672,8 +2672,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／エルディアル",
-        "name_en": "Arm / Eldial",
-        "name_global": "Arms / Eldiar",
+        "Name (English)": "Arm / Eldial",
+        "Name (Global)": "Arms / Eldiar",
         "Rarity": 10,
         "Requirement":["DEX",325],
         "S-DEF":0,
@@ -2698,8 +2698,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／アーヴィスエクス",
-        "name_en": "Arm / Irvis Ex",
-        "name_global": "Arms / Irvis X",
+        "Name (English)": "Arm / Irvis Ex",
+        "Name (Global)": "Arms / Irvis X",
         "Rarity": 10,
         "Requirement":["DEX",325],
         "S-DEF":182,
@@ -2724,8 +2724,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／アーヴィスノワル",
-        "name_en": "Arm / Irvis Noire",
-        "name_global": "Arms / Irvis Noire",
+        "Name (English)": "Arm / Irvis Noire",
+        "Name (Global)": "Arms / Irvis Noire",
         "Rarity": 10,
         "Requirement":["S-DEF",400],
         "S-DEF":211,
@@ -2750,8 +2750,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ヘイレムジース",
-        "name_en": "Arm / Heiremjees",
-        "name_global": null,
+        "Name (English)": "Arm / Heiremjees",
+        "Name (Global)": null,
         "Rarity": 10,
         "Requirement":["S-DEF",420],
         "S-DEF":211,
@@ -2775,8 +2775,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／フォビラシラム",
-        "name_en": "Arm / Fobi Rashiram",
-        "name_global": "Arms / Phobiraslam",
+        "Name (English)": "Arm / Fobi Rashiram",
+        "Name (Global)": "Arms / Phobiraslam",
         "Rarity": 10,
         "Requirement":["S-DEF",420],
         "S-DEF":202,
@@ -2801,8 +2801,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／レサンスラスト",
-        "name_en": "Arm / Resan Thrust",
-        "name_global": "Arms / Resan Thrust",
+        "Name (English)": "Arm / Resan Thrust",
+        "Name (Global)": "Arms / Resan Thrust",
         "Rarity": 10,
         "Requirement":["S-DEF",420],
         "S-DEF":157,
@@ -2827,8 +2827,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／グロームサイン",
-        "name_en": "Arm / Gloam Sign",
-        "name_global": "Arms / Gloam Sign",
+        "Name (English)": "Arm / Gloam Sign",
+        "Name (Global)": "Arms / Gloam Sign",
         "Rarity": 10,
         "Requirement":["R-DEF",420],
         "S-DEF":184,
@@ -2853,8 +2853,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／カルブントール",
-        "name_en": "Arm / Calbun Toll",
-        "name_global": "Arms / Calvin Toll",
+        "Name (English)": "Arm / Calbun Toll",
+        "Name (Global)": "Arms / Calvin Toll",
         "Rarity": 10,
         "Requirement":["R-DEF",420],
         "S-DEF":202,
@@ -2879,8 +2879,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／グワンマンエン",
-        "name_en": "Arm / Gwanman En",
-        "name_global": "Arms / Gwan Man'en",
+        "Name (English)": "Arm / Gwanman En",
+        "Name (Global)": "Arms / Gwan Man'en",
         "Rarity": 10,
         "Requirement":["R-DEF",420],
         "S-DEF":211,
@@ -2905,8 +2905,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／フォアームドーレ",
-        "name_en": "Arm / Folia Dore",
-        "name_global": "Arms / Folia Dorer",
+        "Name (English)": "Arm / Folia Dore",
+        "Name (Global)": "Arms / Folia Dorer",
         "Rarity": 10,
         "Requirement":["R-DEF",420],
         "S-DEF":211,
@@ -2931,8 +2931,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ウラノスヘクサ",
-        "name_en": "Arm / Uranus Hexa",
-        "name_global": "Arms / Ouranos Hexa",
+        "Name (English)": "Arm / Uranus Hexa",
+        "Name (Global)": "Arms / Ouranos Hexa",
         "Rarity": 10,
         "Requirement":["T-DEF",420],
         "S-DEF":211,
@@ -2956,8 +2956,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／プリムラフェザー",
-        "name_en": "Arm / Primula Art",
-        "name_global": "Arms / Primula Art",
+        "Name (English)": "Arm / Primula Art",
+        "Name (Global)": "Arms / Primula Art",
         "Rarity": 10,
         "Requirement":["T-DEF",420],
         "S-DEF":202,
@@ -2982,8 +2982,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／フラーウタロン",
-        "name_en": "Arm / Flau Talon",
-        "name_global": "Arms / Frau Talon",
+        "Name (English)": "Arm / Flau Talon",
+        "Name (Global)": "Arms / Frau Talon",
         "Rarity": 10,
         "Requirement":["T-DEF",420],
         "S-DEF":179,
@@ -3007,8 +3007,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ミディアルーブル",
-        "name_en": "Arm / Midia Rouble",
-        "name_global": "Arms / Midia Ruble",
+        "Name (English)": "Arm / Midia Rouble",
+        "Name (Global)": "Arms / Midia Ruble",
         "Rarity": 10,
         "Requirement":["T-DEF",420],
         "S-DEF":202,
@@ -3033,8 +3033,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ルーサーフェルズ",
-        "name_en": "Arm / Loser Felz",
-        "name_global": "Arms / Luther Felz",
+        "Name (English)": "Arm / Loser Felz",
+        "Name (Global)": "Arms / Luther Felz",
         "Rarity": 10,
         "Requirement":["T-DEF",420],
         "S-DEF":184,
@@ -3059,8 +3059,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／フレキュベニー",
-        "name_en": "Arm / Flacubeny",
-        "name_global": "Arms / Flagbenny",
+        "Name (English)": "Arm / Flacubeny",
+        "Name (Global)": "Arms / Flagbenny",
         "Rarity": 10,
         "Requirement":["DEX",261],
         "S-DEF":179,
@@ -3085,8 +3085,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／アイジワイト",
-        "name_en": "Arm / Aijewight",
-        "name_global": "Arms / Aijiwhite",
+        "Name (English)": "Arm / Aijewight",
+        "Name (Global)": "Arms / Aijiwhite",
         "Rarity": 10,
         "Requirement":["DEX",395],
         "S-DEF":179,
@@ -3111,8 +3111,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／エレギワット",
-        "name_en": "Arm / Elegiwatt",
-        "name_global": "Arms / Elegiwat",
+        "Name (English)": "Arm / Elegiwatt",
+        "Name (Global)": "Arms / Elegiwat",
         "Rarity": 10,
         "Requirement":["DEX",395],
         "S-DEF":179,
@@ -3137,8 +3137,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／バーンハンズ",
-        "name_en": "Arm / Burn Hands",
-        "name_global": "Arms / Burning Hands",
+        "Name (English)": "Arm / Burn Hands",
+        "Name (Global)": "Arms / Burning Hands",
         "Rarity": 10,
         "Requirement":["DEX",395],
         "S-DEF":166,
@@ -3163,8 +3163,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／クリスハンズ",
-        "name_en": "Arm / Crys Hands",
-        "name_global": "Arms / Crys Hands",
+        "Name (English)": "Arm / Crys Hands",
+        "Name (Global)": "Arms / Crys Hands",
         "Rarity": 10,
         "Requirement":["DEX",395],
         "S-DEF":124,
@@ -3189,8 +3189,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ビブラスグリーフ",
-        "name_en": "Arm / Vibrace Grief",
-        "name_global": "Arms / Vibras Grief",
+        "Name (English)": "Arm / Vibrace Grief",
+        "Name (Global)": "Arms / Vibras Grief",
         "Rarity": 10,
         "Requirement":["DEX",395],
         "S-DEF":124,
@@ -3215,8 +3215,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ゼッシュシルト",
-        "name_en": "Arm / Zesh Silt",
-        "name_global": null,
+        "Name (English)": "Arm / Zesh Silt",
+        "Name (Global)": null,
         "Rarity": 10,
         "Requirement":["S-DEF",420],
         "S-DEF":182,
@@ -3240,8 +3240,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ジュアフェロー",
-        "name_en": "Arm / Jua Fellow",
-        "name_global": "Arms / Jua Pherau",
+        "Name (English)": "Arm / Jua Fellow",
+        "Name (Global)": "Arms / Jua Pherau",
         "Rarity": 10,
         "Requirement":["DEX",395],
         "S-DEF":184,
@@ -3266,8 +3266,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ミンストロッカ",
-        "name_en": "Arm / Minst Rocha",
-        "name_global": "Arms / Minstlock",
+        "Name (English)": "Arm / Minst Rocha",
+        "Name (Global)": "Arms / Minstlock",
         "Rarity": 10,
         "Requirement":["DEX",395],
         "S-DEF":179,
@@ -3292,8 +3292,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／リュクスサリー",
-        "name_en": "Arm / Luxe Sully",
-        "name_global": "Arms / Luxe Sally",
+        "Name (English)": "Arm / Luxe Sully",
+        "Name (Global)": "Arms / Luxe Sally",
         "Rarity": 10,
         "Requirement":["DEX",395],
         "S-DEF":157,
@@ -3318,8 +3318,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／リンガヴィール",
-        "name_en": "Arm / Ringa Veal",
-        "name_global": "Arms / Ringa Veal",
+        "Name (English)": "Arm / Ringa Veal",
+        "Name (Global)": "Arms / Ringa Veal",
         "Rarity": 10,
         "Requirement":["DEX",400],
         "S-DEF":184,
@@ -3344,8 +3344,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ロニアシェル",
-        "name_en": "Arm / Ronia Shell",
-        "name_global": "Arms / Ronia Shell",
+        "Name (English)": "Arm / Ronia Shell",
+        "Name (Global)": "Arms / Ronia Shell",
         "Rarity": 11,
         "Requirement":["S-DEF",400],
         "S-DEF":181,
@@ -3370,8 +3370,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ローズプラナ",
-        "name_en": "Arm / Rose Prana",
-        "name_global": "Arms / Rose Prana",
+        "Name (English)": "Arm / Rose Prana",
+        "Name (Global)": "Arms / Rose Prana",
         "Rarity": 11,
         "Requirement":["S-DEF",400],
         "S-DEF":181,
@@ -3396,8 +3396,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／エクエスシリル",
-        "name_en": "Arm / Eques Cyril",
-        "name_global": "Arms / Eques Cyril",
+        "Name (English)": "Arm / Eques Cyril",
+        "Name (Global)": "Arms / Eques Cyril",
         "Rarity": 11,
         "Requirement":["S-DEF",400],
         "S-DEF":157,
@@ -3422,8 +3422,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／クローズエイム",
-        "name_en": "Arm / Close Aim",
-        "name_global": "Arms / Close Aim",
+        "Name (English)": "Arm / Close Aim",
+        "Name (Global)": "Arms / Close Aim",
         "Rarity": 11,
         "Requirement":["S-DEF",400],
         "S-DEF":157,
@@ -3448,8 +3448,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ネイバーウルス",
-        "name_en": "Arm / Neighbor Urus",
-        "name_global": "Arms / Naver Urs",
+        "Name (English)": "Arm / Neighbor Urus",
+        "Name (Global)": "Arms / Naver Urs",
         "Rarity": 11,
         "Requirement":["S-DEF",400],
         "S-DEF":157,
@@ -3474,8 +3474,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／レーベンヒード",
-        "name_en": "Arm / Raven Heed",
-        "name_global": "Arms / Raven Heed",
+        "Name (English)": "Arm / Raven Heed",
+        "Name (Global)": "Arms / Raven Heed",
         "Rarity": 11,
         "Requirement":["S-DEF",400],
         "S-DEF":157,
@@ -3500,8 +3500,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ディスタゴル",
-        "name_en": "Arm / Dista Gol",
-        "name_global": "Arms / Dista Gol",
+        "Name (English)": "Arm / Dista Gol",
+        "Name (Global)": "Arms / Dista Gol",
         "Rarity": 11,
         "Requirement":["R-DEF",400],
         "S-DEF":157,
@@ -3526,8 +3526,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ディールシール",
-        "name_en": "Arm / Deal Seal",
-        "name_global": "Arms / Diehl Seal",
+        "Name (English)": "Arm / Deal Seal",
+        "Name (Global)": "Arms / Diehl Seal",
         "Rarity": 11,
         "Requirement":["R-DEF",400],
         "S-DEF":181,
@@ -3552,8 +3552,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ウィングシルダ",
-        "name_en": "Arm / Wing Shilda",
-        "name_global": "Arms / Wing Shielder",
+        "Name (English)": "Arm / Wing Shilda",
+        "Name (Global)": "Arms / Wing Shielder",
         "Rarity": 11,
         "Requirement":["R-DEF",400],
         "S-DEF":157,
@@ -3578,8 +3578,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／シャープシュルト",
-        "name_en": "Arm / Sharp Schilt",
-        "name_global": "Arms / Sharpshooter",
+        "Name (English)": "Arm / Sharp Schilt",
+        "Name (Global)": "Arms / Sharpshooter",
         "Rarity": 11,
         "Requirement":["R-DEF",400],
         "S-DEF":157,
@@ -3604,8 +3604,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／イェーガーネル",
-        "name_en": "Arm / Jaeger Nel",
-        "name_global": "Arms / Jaeger Heed",
+        "Name (English)": "Arm / Jaeger Nel",
+        "Name (Global)": "Arms / Jaeger Heed",
         "Rarity": 11,
         "Requirement":["R-DEF",400],
         "S-DEF":157,
@@ -3630,8 +3630,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／サウザーイド",
-        "name_en": "Arm / Thouser Id",
-        "name_global": "Arms / Sauzayed",
+        "Name (English)": "Arm / Thouser Id",
+        "Name (Global)": "Arms / Sauzayed",
         "Rarity": 11,
         "Requirement":["R-DEF",400],
         "S-DEF":157,
@@ -3656,8 +3656,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ファウマリュエル",
-        "name_en": "Arm / Fauma Ruel",
-        "name_global": "Arms / Fauma Ruel",
+        "Name (English)": "Arm / Fauma Ruel",
+        "Name (Global)": "Arms / Fauma Ruel",
         "Rarity": 11,
         "Requirement":["T-DEF",400],
         "S-DEF":181,
@@ -3682,8 +3682,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ファーネンビス",
-        "name_en": "Arm / Fanen Biss",
-        "name_global": "Arms / Farnen Bis",
+        "Name (English)": "Arm / Fanen Biss",
+        "Name (Global)": "Arms / Farnen Bis",
         "Rarity": 11,
         "Requirement":["T-DEF",400],
         "S-DEF":181,
@@ -3708,8 +3708,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／センシアスアル",
-        "name_en": "Arm / Sensias Ar",
-        "name_global": "Arms / Sentious Al",
+        "Name (English)": "Arm / Sensias Ar",
+        "Name (Global)": "Arms / Sentious Al",
         "Rarity": 11,
         "Requirement":["T-DEF",400],
         "S-DEF":157,
@@ -3734,8 +3734,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／フィールアーダ",
-        "name_en": "Arm / Feel Arda",
-        "name_global": "Arms / Feuille Ada",
+        "Name (English)": "Arm / Feel Arda",
+        "Name (Global)": "Arms / Feuille Ada",
         "Rarity": 11,
         "Requirement":["T-DEF",400],
         "S-DEF":157,
@@ -3760,8 +3760,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／マギカウィッカ",
-        "name_en": "Arm / Magica Wika",
-        "name_global": "Arms / Magika Wick",
+        "Name (English)": "Arm / Magica Wika",
+        "Name (Global)": "Arms / Magika Wick",
         "Rarity": 11,
         "Requirement":["T-DEF",400],
         "S-DEF":157,
@@ -3786,8 +3786,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／リュインヴァイゼ",
-        "name_en": "Arm / Ruine Weisse",
-        "name_global": "Arms / Rua Weise",
+        "Name (English)": "Arm / Ruine Weisse",
+        "Name (Global)": "Arms / Rua Weise",
         "Rarity": 11,
         "Requirement":["T-DEF",400],
         "S-DEF":157,
@@ -3812,8 +3812,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ファーレンパウア",
-        "name_en": "Arm / Fahren Paua",
-        "name_global": null,
+        "Name (English)": "Arm / Fahren Paua",
+        "Name (Global)": null,
         "Rarity": 11,
         "Requirement":["S-DEF",430],
         "S-DEF":229,
@@ -3839,8 +3839,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ファーレンダード",
-        "name_en": "Arm / Fahren Dard",
-        "name_global": null,
+        "Name (English)": "Arm / Fahren Dard",
+        "Name (Global)": null,
         "Rarity": 11,
         "Requirement":["R-DEF",430],
         "S-DEF":202,
@@ -3866,8 +3866,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ファーレンマーヴ",
-        "name_en": "Arm / Fahren Marv",
-        "name_global": null,
+        "Name (English)": "Arm / Fahren Marv",
+        "Name (Global)": null,
         "Rarity": 11,
         "Requirement":["T-DEF",430],
         "S-DEF":202,
@@ -3893,8 +3893,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ファーレントリド",
-        "name_en": "Arm / Fahren Tredd",
-        "name_global": null,
+        "Name (English)": "Arm / Fahren Tredd",
+        "Name (Global)": null,
         "Rarity": 11,
         "Requirement":["DEX",430],
         "S-DEF":211,
@@ -3920,8 +3920,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ダランフィス",
-        "name_en": "Arm / Dolanfis",
-        "name_global": "Arms / Dranphis",
+        "Name (English)": "Arm / Dolanfis",
+        "Name (Global)": "Arms / Dranphis",
         "Rarity": 11,
         "Requirement":["T-DEF",430],
         "S-DEF":245,
@@ -3946,8 +3946,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ベンダオッジ",
-        "name_en": "Arm / Benda Oggi",
-        "name_global": null,
+        "Name (English)": "Arm / Benda Oggi",
+        "Name (Global)": null,
         "Rarity": 11,
         "Requirement":["DEX",350],
         "S-DEF":190,
@@ -3973,8 +3973,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ブリサオッジ",
-        "name_en": "Arm / Brisa Oggi",
-        "name_global": "Arms / Brissa Oggi",
+        "Name (English)": "Arm / Brisa Oggi",
+        "Name (Global)": "Arms / Brissa Oggi",
         "Rarity": 11,
         "Requirement":["R-DEF",430],
         "S-DEF":211,
@@ -3999,8 +3999,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／サイキソウ",
-        "name_en": "Arm / Saiki Sou",
-        "name_global": "Arms / Saiki Sou",
+        "Name (English)": "Arm / Saiki Sou",
+        "Name (Global)": "Arms / Saiki Sou",
         "Rarity": 11,
         "Requirement":["DEX",430],
         "S-DEF":229,
@@ -4025,8 +4025,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／グランパイク",
-        "name_en": "Arm / Guran Pike",
-        "name_global": "Arms / Glan Pike",
+        "Name (English)": "Arm / Guran Pike",
+        "Name (Global)": "Arms / Glan Pike",
         "Rarity": 11,
         "Requirement":["R-DEF",430],
         "S-DEF":211,
@@ -4051,8 +4051,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／イデアルヤード",
-        "name_en": "Arm / Ideal Yard",
-        "name_global": null,
+        "Name (English)": "Arm / Ideal Yard",
+        "Name (Global)": null,
         "Rarity": 11,
         "Requirement":["DEX",445],
         "S-DEF":206,
@@ -4077,8 +4077,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／インヴェンド",
-        "name_en": "Arm / Invand",
-        "name_global": "Arms / Invend",
+        "Name (English)": "Arm / Invand",
+        "Name (Global)": "Arms / Invend",
         "Rarity": 11,
         "Requirement":["DEX",435],
         "S-DEF":230,
@@ -4103,8 +4103,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／オフゼンド",
-        "name_en": "Arm / Austend",
-        "name_global": null,
+        "Name (English)": "Arm / Austend",
+        "Name (Global)": null,
         "Rarity": 11,
         "Requirement":["DEX",450],
         "S-DEF":235,
@@ -4129,8 +4129,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／雷剛タガシキ",
-        "name_en": "Arm / Thunder Tagashiki",
-        "name_global": "Arms / Lightning Bolt Tagashiki",
+        "Name (English)": "Arm / Thunder Tagashiki",
+        "Name (Global)": "Arms / Lightning Bolt Tagashiki",
         "Rarity": 11,
         "Requirement":["DEX",450],
         "S-DEF":225,
@@ -4155,8 +4155,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／カイゼルカフテ",
-        "name_en": "Arm / Kaiser Kaphte",
-        "name_global": "Arms / Kaiser Cafte",
+        "Name (English)": "Arm / Kaiser Kaphte",
+        "Name (Global)": "Arms / Kaiser Cafte",
         "Rarity": 11,
         "Requirement":["S-DEF",430],
         "S-DEF":210,
@@ -4181,8 +4181,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／アトラムノワルガ",
-        "name_en": "Arm / Atram Noirega",
-        "name_global": "Arms / Atram Noirga",
+        "Name (English)": "Arm / Atram Noirega",
+        "Name (Global)": "Arms / Atram Noirga",
         "Rarity": 11,
         "Requirement":["S-DEF",430],
         "S-DEF":230,
@@ -4207,8 +4207,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／サーカレイ",
-        "name_en": "Arm / Circa Ray",
-        "name_global": "Arms / Circaray",
+        "Name (English)": "Arm / Circa Ray",
+        "Name (Global)": "Arms / Circaray",
         "Rarity": 12,
         "Requirement":["DEX",450],
         "S-DEF":225,
@@ -4233,8 +4233,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／サーカユニオン",
-        "name_en": "Arm / Circa Union",
-        "name_global": "Arms / Circanion",
+        "Name (English)": "Arm / Circa Union",
+        "Name (Global)": "Arms / Circanion",
         "Rarity": 12,
         "Requirement":["DEX",450],
         "S-DEF":229,
@@ -4259,8 +4259,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／デッドリオエスト",
-        "name_en": "Arm / Deadliost",
-        "name_global": "Arms / Deadlio Est",
+        "Name (English)": "Arm / Deadliost",
+        "Name (Global)": "Arms / Deadlio Est",
         "Rarity": 12,
         "Requirement":["S-DEF",450],
         "S-DEF":229,
@@ -4285,8 +4285,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ギクスクード",
-        "name_en": "Arm / Gix Khudu",
-        "name_global": "Arms / Gix Qud",
+        "Name (English)": "Arm / Gix Khudu",
+        "Name (Global)": "Arms / Gix Qud",
         "Rarity": 12,
         "Requirement":["DEX",450],
         "S-DEF":214,
@@ -4310,8 +4310,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ミルキャティ",
-        "name_en": "Arm / Milkatty",
-        "name_global": null,
+        "Name (English)": "Arm / Milkatty",
+        "Name (Global)": null,
         "Rarity": 12,
         "Requirement":["S-DEF",500],
         "S-DEF":224,
@@ -4335,8 +4335,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ホワイティルピナ",
-        "name_en": "Arm / Whitill Pinna",
-        "name_global": "Arms / Whiteal Pina",
+        "Name (English)": "Arm / Whitill Pinna",
+        "Name (Global)": "Arms / Whiteal Pina",
         "Rarity": 12,
         "Requirement":["T-DEF",460],
         "S-DEF":193,
@@ -4360,8 +4360,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／雷閃イザネシキ",
-        "name_en": "Arm / Thunder Izaneshiki",
-        "name_global": "Arms / Lightning Glow Izaneishiki",
+        "Name (English)": "Arm / Thunder Izaneshiki",
+        "Name (Global)": "Arms / Lightning Glow Izaneishiki",
         "Rarity": 12,
         "Requirement":["DEX",440],
         "S-DEF":258,
@@ -4385,8 +4385,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／アストラパイオ",
-        "name_en": "Arm / Astra Pioh",
-        "name_global": "Arms / Astra Paio",
+        "Name (English)": "Arm / Astra Pioh",
+        "Name (Global)": "Arms / Astra Paio",
         "Rarity": 12,
         "Requirement":["DEX",450],
         "S-DEF":233,
@@ -4410,8 +4410,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／フィオガルズ",
-        "name_en": "Arm / Fiogals",
-        "name_global": null,
+        "Name (English)": "Arm / Fiogals",
+        "Name (Global)": null,
         "Rarity": 12,
         "Requirement":["R-DEF",450],
         "S-DEF":200,
@@ -4436,8 +4436,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／レイガルズ",
-        "name_en": "Arm / Raegals",
-        "name_global": null,
+        "Name (English)": "Arm / Raegals",
+        "Name (Global)": null,
         "Rarity": 12,
         "Requirement":["S-DEF",450],
         "S-DEF":229,
@@ -4462,8 +4462,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ゼイネシスリタ",
-        "name_en": "Arm / Zeinesis Lita",
-        "name_global": "Arms / Zeinesis Lita",
+        "Name (English)": "Arm / Zeinesis Lita",
+        "Name (Global)": "Arms / Zeinesis Lita",
         "Rarity": 12,
         "Requirement":["T-DEF",450],
         "S-DEF":240,
@@ -4487,8 +4487,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／クリファドリタ",
-        "name_en": "Arm / Qliphad Lita",
-        "name_global": "Arms / Clifard Lita",
+        "Name (English)": "Arm / Qliphad Lita",
+        "Name (Global)": "Arms / Clifard Lita",
         "Rarity": 12,
         "Requirement":["R-DEF",450],
         "S-DEF":230,
@@ -4512,8 +4512,8 @@
     {
         "Type": "Rear",
         "Name (JP)": "アーム／ハングボード",
-        "name_en": "Rear / Hang Bode",
-        "name_global": "Back / Hanging Board",
+        "Name (English)": "Rear / Hang Bode",
+        "Name (Global)": "Back / Hanging Board",
         "Rarity": 12,
         "Requirement":["DEX",440],
         "S-DEF":237,
@@ -4537,8 +4537,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／イヴリダリット",
-        "name_en": "Arm / Evleda Ret",
-        "name_global": "Arms / Ivlida Ritt",
+        "Name (English)": "Arm / Evleda Ret",
+        "Name (Global)": "Arms / Ivlida Ritt",
         "Rarity": 12,
         "Requirement":["S-DEF",460],
         "S-DEF":234,
@@ -4562,8 +4562,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／クリシスリット",
-        "name_en": "Arm / Cleasis Ret",
-        "name_global": "Arms / Cleasis Ritt",
+        "Name (English)": "Arm / Cleasis Ret",
+        "Name (Global)": "Arms / Cleasis Ritt",
         "Rarity": 12,
         "Requirement":["S-DEF",500],
         "S-DEF":246,
@@ -4587,8 +4587,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／フォボスヘッジ",
-        "name_en": "Arm / Phobos Hedge",
-        "name_global": "Arms / Phobos Hedge",
+        "Name (English)": "Arm / Phobos Hedge",
+        "Name (Global)": "Arms / Phobos Hedge",
         "Rarity": 12,
         "Requirement":["DEX",500],
         "S-DEF":263,
@@ -4612,8 +4612,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／シャライラケラス",
-        "name_en": "Arm / Chalyra Kelas",
-        "name_global": "Arms / Xerraire Cuirass",
+        "Name (English)": "Arm / Chalyra Kelas",
+        "Name (Global)": "Arms / Xerraire Cuirass",
         "Rarity": 12,
         "Requirement":["S-DEF",540],
         "S-DEF":286,
@@ -4637,8 +4637,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／セレアルローン",
-        "name_en": "Arm / Ceres Allon",
-        "name_global": "Arms / Ceres Arloon",
+        "Name (English)": "Arm / Ceres Allon",
+        "Name (Global)": "Arms / Ceres Arloon",
         "Rarity": 12,
         "Requirement":["DEX",400],
         "S-DEF":236,
@@ -4663,8 +4663,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ザラアルローン",
-        "name_en": "Arm / Zara Allon",
-        "name_global": "Arms / Zara Arloon",
+        "Name (English)": "Arm / Zara Allon",
+        "Name (Global)": "Arms / Zara Arloon",
         "Rarity": 12,
         "Requirement":["DEX",400],
         "S-DEF":242,
@@ -4689,8 +4689,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／オフゼエンデ",
-        "name_en": "Arm / Austende",
-        "name_global": "Arms / Ofzende",
+        "Name (English)": "Arm / Austende",
+        "Name (Global)": "Arms / Ofzende",
         "Rarity": 12,
         "Requirement":["DEX",450],
         "S-DEF":235,
@@ -4715,8 +4715,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／星震装ルシオン",
-        "name_en": "Arm / Celestial Luxion",
-        "name_global": "Arms / Starquake Drape Luxion",
+        "Name (English)": "Arm / Celestial Luxion",
+        "Name (Global)": "Arms / Starquake Drape Luxion",
         "Rarity": 12,
         "Requirement":["DEX",400],
         "S-DEF":238,
@@ -4740,8 +4740,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／光跡装ルシオン",
-        "name_en": "Arm / Lightstream Luxion",
-        "name_global": "Arms / Trailblazer Drape Luxion",
+        "Name (English)": "Arm / Lightstream Luxion",
+        "Name (Global)": "Arms / Trailblazer Drape Luxion",
         "Rarity": 12,
         "Requirement":["DEX",545],
         "S-DEF":265,
@@ -4765,8 +4765,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／アウェイクヤード",
-        "name_en": "Arm / Awake Yard",
-        "name_global": "Arms / Awake Yard",
+        "Name (English)": "Arm / Awake Yard",
+        "Name (Global)": "Arms / Awake Yard",
         "Rarity": 12,
         "Requirement":["T-DEF",500],
         "S-DEF":235,
@@ -4790,8 +4790,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ロニアシム",
-        "name_en": "Arm / Ronia Sim",
-        "name_global": "Arms / Ronia Cim",
+        "Name (English)": "Arm / Ronia Sim",
+        "Name (Global)": "Arms / Ronia Cim",
         "Rarity": 13,
         "Requirement":["S-DEF",570],
         "S-DEF":270,
@@ -4818,8 +4818,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ネイバーウト",
-        "name_en": "Arm / Neighbor Out",
-        "name_global": "Arms / Naver Ut",
+        "Name (English)": "Arm / Neighbor Out",
+        "Name (Global)": "Arms / Naver Ut",
         "Rarity": 13,
         "Requirement":["S-DEF",570],
         "S-DEF":180,
@@ -4846,8 +4846,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ローズプル",
-        "name_en": "Arm / Rose Pull",
-        "name_global": "Arms / Rhodes Pul",
+        "Name (English)": "Arm / Rose Pull",
+        "Name (Global)": "Arms / Rhodes Pul",
         "Rarity": 13,
         "Requirement":["S-DEF",570],
         "S-DEF":260,
@@ -4874,8 +4874,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／エクエスシズ",
-        "name_en": "Arm / Eques Shizu",
-        "name_global": "Arms / Eques Ciz",
+        "Name (English)": "Arm / Eques Shizu",
+        "Name (Global)": "Arms / Eques Ciz",
         "Rarity": 13,
         "Requirement":["S-DEF",570],
         "S-DEF":220,
@@ -4902,8 +4902,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／クローズエル",
-        "name_en": "Arm / Close El",
-        "name_global": "Arms / Close El",
+        "Name (English)": "Arm / Close El",
+        "Name (Global)": "Arms / Close El",
         "Rarity": 13,
         "Requirement":["S-DEF",570],
         "S-DEF":240,
@@ -4930,8 +4930,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／レーベンヒル",
-        "name_en": "Arm / Raven Hill",
-        "name_global": "Arms / Raven Hill",
+        "Name (English)": "Arm / Raven Hill",
+        "Name (Global)": "Arms / Raven Hill",
         "Rarity": 13,
         "Requirement":["S-DEF",570],
         "S-DEF":200,
@@ -4958,8 +4958,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ディスタゴア",
-        "name_en": "Arm / Dista Goa",
-        "name_global": "Arms / Dista Gore",
+        "Name (English)": "Arm / Dista Goa",
+        "Name (Global)": "Arms / Dista Gore",
         "Rarity": 13,
         "Requirement":["R-DEF",570],
         "S-DEF":270,
@@ -4986,8 +4986,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／サウザンイン",
-        "name_en": "Arm / Thousand In",
-        "name_global": "Arms / Sauzan Een",
+        "Name (English)": "Arm / Thousand In",
+        "Name (Global)": "Arms / Sauzan Een",
         "Rarity": 13,
         "Requirement":["R-DEF",570],
         "S-DEF":160,
@@ -5014,8 +5014,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ディールシス",
-        "name_en": "Arm / Deal Sees",
-        "name_global": "Arms / Diehl Cis",
+        "Name (English)": "Arm / Deal Sees",
+        "Name (Global)": "Arms / Diehl Cis",
         "Rarity": 13,
         "Requirement":["R-DEF",570],
         "S-DEF":240,
@@ -5042,8 +5042,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ウィングシア",
-        "name_en": "Arm / Wing Sheer",
-        "name_global": "Arms / Wing Schier",
+        "Name (English)": "Arm / Wing Sheer",
+        "Name (Global)": "Arms / Wing Schier",
         "Rarity": 13,
         "Requirement":["R-DEF",570],
         "S-DEF":200,
@@ -5070,8 +5070,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／シャープシルエ",
-        "name_en": "Arm / Sharp Silhoue",
-        "name_global": "Arms / Sharp Silue",
+        "Name (English)": "Arm / Sharp Silhoue",
+        "Name (Global)": "Arms / Sharp Silue",
         "Rarity": 13,
         "Requirement":["R-DEF",570],
         "S-DEF":220,
@@ -5098,8 +5098,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／イェーガーネア",
-        "name_en": "Arm / Jaeger Near",
-        "name_global": "Arms / Jaeger Nair",
+        "Name (English)": "Arm / Jaeger Near",
+        "Name (Global)": "Arms / Jaeger Nair",
         "Rarity": 13,
         "Requirement":["R-DEF",570],
         "S-DEF":180,
@@ -5126,8 +5126,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ファウマリルベ",
-        "name_en": "Arm / Fauma Relube",
-        "name_global": "Arms / Fauma Lillube",
+        "Name (English)": "Arm / Fauma Relube",
+        "Name (Global)": "Arms / Fauma Lillube",
         "Rarity": 13,
         "Requirement":["T-DEF",570],
         "S-DEF":270,
@@ -5154,8 +5154,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／マギカウィル",
-        "name_en": "Arm / Magica Will",
-        "name_global": "Arms / Magika Will",
+        "Name (English)": "Arm / Magica Will",
+        "Name (Global)": "Arms / Magika Will",
         "Rarity": 13,
         "Requirement":["T-DEF",570],
         "S-DEF":160,
@@ -5182,8 +5182,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ファーネンビア",
-        "name_en": "Arm / Fanen Via",
-        "name_global": "Arms / Farnen Bhea",
+        "Name (English)": "Arm / Fanen Via",
+        "Name (Global)": "Arms / Farnen Bhea",
         "Rarity": 13,
         "Requirement":["T-DEF",570],
         "S-DEF":240,
@@ -5210,8 +5210,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／センシアスアイ",
-        "name_en": "Arm / Sensias Ai",
-        "name_global": "Arms / Sentious Ai",
+        "Name (English)": "Arm / Sensias Ai",
+        "Name (Global)": "Arms / Sentious Ai",
         "Rarity": 13,
         "Requirement":["T-DEF",570],
         "S-DEF":220,
@@ -5238,8 +5238,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／フィールアネ",
-        "name_en": "Arm / Feel Ane",
-        "name_global": "Arms / Feuille Aneh",
+        "Name (English)": "Arm / Feel Ane",
+        "Name (Global)": "Arms / Feuille Aneh",
         "Rarity": 13,
         "Requirement":["T-DEF",570],
         "S-DEF":200,
@@ -5266,8 +5266,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／リュアヴァイゼ",
-        "name_en": "Arm / Lua Weisse",
-        "name_global": "Arms / Rua Weise",
+        "Name (English)": "Arm / Lua Weisse",
+        "Name (Global)": "Arms / Rua Weise",
         "Rarity": 13,
         "Requirement":["T-DEF",570],
         "S-DEF":180,
@@ -5294,8 +5294,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／シュベルリット",
-        "name_en": "Arm / Schvelle Ret",
-        "name_global": "Arms / Schvelle Ritt",
+        "Name (English)": "Arm / Schvelle Ret",
+        "Name (Global)": "Arms / Schvelle Ritt",
         "Rarity": 13,
         "Requirement":["S-DEF",600],
         "S-DEF":282,
@@ -5321,8 +5321,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／ノヴェルワン",
-        "name_en": "Arm / Novel One",
-        "name_global": "Arms / Novel One",
+        "Name (English)": "Arm / Novel One",
+        "Name (Global)": "Arms / Novel One",
         "Rarity": 13,
         "Requirement":["DEX",560],
         "S-DEF":305,
@@ -5348,8 +5348,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／リバレイトワン",
-        "name_en": "Arm / Liberate One",
-        "name_global": "Arms / Rivalate One",
+        "Name (English)": "Arm / Liberate One",
+        "Name (Global)": "Arms / Rivalate One",
         "Rarity": 13,
         "Requirement":["DEX",560],
         "S-DEF":275,
@@ -5375,8 +5375,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム/オフゼテリコ",
-        "name_en": "Arm / Austerico",
-        "name_global": "Arms / Ofzeterico",
+        "Name (English)": "Arm / Austerico",
+        "Name (Global)": "Arms / Ofzeterico",
         "Rarity": 13,
         "Requirement":["DEX",560],
         "S-DEF":291,
@@ -5403,8 +5403,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／アトラシャテン",
-        "name_en": "Arm / Atlas Shatan",
-        "name_global": "Arms / Atlas Chatten",
+        "Name (English)": "Arm / Atlas Shatan",
+        "Name (Global)": "Arms / Atlas Chatten",
         "Rarity": 13,
         "Requirement":["DEX",560],
         "S-DEF":267,
@@ -5430,8 +5430,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／光跡装ビシオン",
-        "name_en": "Arm / Lightstream Vixion",
-        "name_global": "Arms / Trailblazer Mount Bixion",
+        "Name (English)": "Arm / Lightstream Vixion",
+        "Name (Global)": "Arms / Trailblazer Mount Bixion",
         "Rarity": 13,
         "Requirement":["DEX",560],
         "S-DEF":283,
@@ -5457,8 +5457,8 @@
     {
         "Type": "Arm",
         "Name (JP)": "アーム／クラースヌーム",
-        "name_en": "Arm / Cras Noom",
-        "name_global": "Arms / Klauznum",
+        "Name (English)": "Arm / Cras Noom",
+        "Name (Global)": "Arms / Klauznum",
         "Rarity": 13,
         "Requirement":["DEX",565],
         "S-DEF":286,

@@ -7,12 +7,6 @@ import potentialData from "../geardata/weapons/weapon-data/potentials.json"
 export default function displayPotentials(potList: any[]): any[] {
     const language = useLanguageContext()
     let buffer: any[] = []
-    let localization: string
-    switch (language.language) {
-        case "Global": localization = "Global"; break;
-        case "日本語": localization = "JP"; break;
-        default: localization = "English";
-    }
     for (let i = 0; i < potList.length; i++) {
         let pot = potentialData.find(pot => pot[`Name (English)`] === potList[i])
         if (pot) {
@@ -21,56 +15,46 @@ export default function displayPotentials(potList: any[]): any[] {
             let potName: string
             let potEffect: any
 
-            if (pot[`Name (${localization})`]) {
-                potName = pot[`Name (${localization})`].replace('(クリファド)','').replace(' (Qliphad)','').replace(' (Clifard)','');
-            } else {
-                potName = pot["Name (English)"].replace('(クリファド)','').replace(' (Qliphad)','').replace(' (Clifard)','');
-                localization = "English"
-            }
-
-            if (pot[`Effect (${localization})`]) {
+            if (pot[`Name (${language.language})`]) {
+                potName = pot[`Name (${language.language})`].replace('(クリファド)','').replace(' (Qliphad)','').replace(' (Clifard)','');
                 let potEffectWithLineBreaks: any[] = []
-                for (let i = 0; i < pot[`Effect (${localization})`].length; i++) {
-                    if (pot[`Effect (${localization})`][i] === '\n') {
+                for (let i = 0; i < pot[`Effect (${language.language})`].length; i++) {
+                    if (pot[`Effect (${language.language})`][i] === '\n') {
                         potEffectWithLineBreaks.push(<br key={uuidv4()} />)
                     } else {
-                        potEffectWithLineBreaks.push(pot[`Effect (${localization})`][i])
+                        potEffectWithLineBreaks.push(pot[`Effect (${language.language})`][i])
                     }
                 }
                 potEffect = <Text key={uuidv4()}>{potEffectWithLineBreaks}</Text>
-            }else{
-                potEffect = <Text key={uuidv4()}>{pot[`Effect (${localization})`]}</Text>
+            } else {
+                potName = pot["Name (English)"].replace('(クリファド)','').replace(' (Qliphad)','').replace(' (Clifard)','');
+                potEffect = <Text key={uuidv4()}>{pot[`Effect (English})`]}</Text>
+                //potEffect = <Text key={uuidv4()}>{pot[`Effect (${language.language})`]}</Text>
+                //language.language = "English"
             }
-
-            /*potEffect =
-                <List>
-                    <List.Item>Lv1: {pot[`Effect (${localization})`][0]}</List.Item>
-                    <List.Item>Lv2: {pot[`Effect (${localization})`][1]}</List.Item>
-                    <List.Item>Lv3: {pot[`Effect (${localization})`][2]}</List.Item>
-                </List>*/
 
             switch (pot.Special) {
                 case 'New-Type':
                     potTypeColor = 'paleturquoise'
-                    if (localization === 'JP') unlockItem = 'フォトンドロップ'
+                    if (language.language === 'JP') unlockItem = 'フォトンドロップ'
                     else unlockItem = 'Photon Drop'
                     break;
                 case 'Hidden':
                     potTypeColor = 'red';
-                    if (localization === 'JP') unlockItem = 'フォトンブースター'
+                    if (language.language === 'JP') unlockItem = 'フォトンブースター'
                     else unlockItem = 'Photon Booster';
                     break;
                 case 'Weaponoid':
                     potTypeColor = 'green';
-                    if (localization === 'JP') unlockItem = 'ウェポノイドブースター'
+                    if (language.language === 'JP') unlockItem = 'ウェポノイドブースター'
                     else unlockItem = 'Weaponoid Booster';
                     break;
                 case 'Ether':
                     potTypeColor = 'blue';
-                    if (localization === 'JP') {
+                    if (language.language === 'JP') {
                         unlockItem = 'エーテルフューズ'
                     } else {
-                        if (localization === 'Global') {
+                        if (language.language === 'Global') {
                             unlockItem = 'Aether Fuse'
                         } else {
                             unlockItem = 'Ether Fuse';
@@ -79,10 +63,10 @@ export default function displayPotentials(potList: any[]): any[] {
                     break;
                 case 'Qliphad':
                     potTypeColor = 'orange';
-                    if (localization === 'JP') {
+                    if (language.language === 'JP') {
                         unlockItem = 'クリファドフューズ'
                     } else {
-                        if (localization === 'Global') {
+                        if (language.language === 'Global') {
                             unlockItem = 'Cliffard Fuse'
                         } else {
                             unlockItem = 'Qliphad Fuse';
@@ -91,20 +75,20 @@ export default function displayPotentials(potList: any[]): any[] {
                     break;
                 case 'Ultimate':
                     potTypeColor = 'indigo';
-                    if (localization === 'JP') unlockItem = 'アルティメットブースター'
+                    if (language.language === 'JP') unlockItem = 'アルティメットブースター'
                     else unlockItem = 'Ultimate Booster';
                     break;
                 case 'Arena':
                     potTypeColor = 'yellow';
-                    if (localization === 'JP') unlockItem = 'アリーナブースター'
+                    if (language.language === 'JP') unlockItem = 'アリーナブースター'
                     else unlockItem = 'Arena Booster';
                     break;
                 case 'Luminmech':
                     potTypeColor = 'grape';
-                    if (localization === 'JP') {
+                    if (language.language === 'JP') {
                         unlockItem = '閃機片エメル'
                     } else {
-                        if (localization === 'Global') {
+                        if (language.language === 'Global') {
                             unlockItem = 'Luminfragment Emel'
                         } else {
                             unlockItem = 'Luminmech Emer Fragment';
@@ -112,11 +96,11 @@ export default function displayPotentials(potList: any[]): any[] {
                     }
                     break;
                 default:
-                    if (localization === "JP") unlockItem = "フォトンスフィア"
+                    if (language.language === "JP") unlockItem = "フォトンスフィア"
                     else unlockItem = 'Photon Sphere';
             }
             let potUnlockString: any;
-            switch (localization) {
+            switch (language.language) {
                 case "English":
                     potUnlockString =
                         <Flex align="center" key={uuidv4()} gap={5}>
@@ -144,8 +128,9 @@ export default function displayPotentials(potList: any[]): any[] {
 
             }
             let tooltipText: any = <SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{potEffect}{potUnlockString}</SimpleGrid>
-            if (pot[`Effect (${localization})`].length > 70) {
-                if (localization === "JP") {
+            if (pot[`Effect (English)`].length > 70) {
+            //if (pot[`Effect (${language.language})`].length > 70) {
+                if (language.language === "JP") {
                     buffer.push(
                         <Tooltip key={uuidv4()} label={tooltipText} color="dark" multiline w={600}>
                             <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="潜在能力" title="潜在能力" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potName}</Text></Flex>
@@ -159,7 +144,7 @@ export default function displayPotentials(potList: any[]): any[] {
                     )
                 }
             } else {
-                if (localization === "JP") {
+                if (language.language === "JP") {
                     buffer.push(
                         <Tooltip key={uuidv4()} label={tooltipText} color="dark">
                             <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="潜在能力" title="潜在能力" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potName}</Text></Flex>

@@ -1,0 +1,18 @@
+[
+    {
+        "Name (JP)": "ツインダガー",
+        "Name (English)": "Twin Dagger",
+        "Name (Global)": null,
+        "Rarity": 1,
+        "Requirement":["S-ATK",1],
+        "S-ATK":59,
+        "R-ATK":null,
+        "T-ATK":null,
+        "SAF":null,
+        "Abilities":null,
+        "Potential":null,
+        "Element": null,
+        "Classes":["Fi"],
+        "SSA Slots":null
+    }
+]

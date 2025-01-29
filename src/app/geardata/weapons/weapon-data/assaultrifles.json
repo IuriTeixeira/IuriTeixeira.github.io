@@ -1,0 +1,17 @@
+[
+    {
+        "Name (JP)": "ライフル",
+        "Name (English)": "Rifle",
+        "Name (Global)": null,
+        "Rarity": 1,
+        "Requirement": ["R-ATK",1],
+        "S-ATK": null,
+        "R-ATK": 79,
+        "T-ATK": null,
+        "SAF": null,
+        "Abilities": null,
+        "Potential": null,
+        "Classes": ["Ra","Gu","Ph"],
+        "SSA Slots": null
+    }
+]

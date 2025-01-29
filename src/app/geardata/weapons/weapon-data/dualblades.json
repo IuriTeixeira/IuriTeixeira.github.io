@@ -1,0 +1,18 @@
+[
+    {
+        "Name (JP)": "デュアルブレード",
+        "Name (English)": "Dual Blades",
+        "Name (Global)": null,
+        "Rarity": 1,
+        "Requirement":["S-ATK",1],
+        "S-ATK":84,
+        "R-ATK":null,
+        "T-ATK":null,
+        "SAF":null,
+        "Abilities":null,
+        "Potential":null,
+        "Element": null,
+        "Classes":["Bo","Et"],
+        "SSA Slots":null
+    }
+]

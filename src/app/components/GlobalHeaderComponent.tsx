@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function GlobalHeaderComponent() {
     const language = useLanguageContext()
     switch (language.language) {
-        case 'English Patch':
+        case 'English':
         case 'Global':
             return (
                 <Group justify="center" mt="sm">
@@ -17,7 +17,7 @@ export default function GlobalHeaderComponent() {
                     <Link href="/geardata/units"><Button><Image src="/icons/Rear.png" alt="Units" w={16} h={16} /> Units page</Button></Link>
                 </Group>
             )
-        case '日本語':
+        case 'JP':
             return (
                 <Group justify="center" mt="sm">
                     <Link href="/"><Button><Image src="/favicon.ico" alt="Home" w={16} h={16} /> Home page</Button></Link>

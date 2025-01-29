@@ -9,7 +9,7 @@ export default function displayResistance(key: string, value: number): any {
     switch (language.language) {
         case 'Global':
             if (statName) return <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${key.replace(' ', '')}.png`} alt={statName['Name (Global)']} title={statName['Name (Global)']} w={16} h={16} />  {value}%</Flex>
-        case '日本語':
+        case 'JP':
             if (statName) return <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${key.replace(' ', '')}.png`} alt={statName['Name (JP)']} title={statName['Name (JP)']} w={16} h={16} />  {value}%</Flex>
         default:
             return <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${key.replace(' ', '')}.png`} alt={key} title={key} w={16} h={16} />  {value}%</Flex>

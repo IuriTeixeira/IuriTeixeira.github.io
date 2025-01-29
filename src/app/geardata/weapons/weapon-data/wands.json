@@ -1,0 +1,17 @@
+[
+    {
+        "Name (JP)": "ウォンド",
+        "Name (English)": "Wand",
+        "Name (Global)": null,
+        "Rarity": 1,
+        "Requirement": ["T-ATK",1],
+        "S-ATK": 85,
+        "R-ATK": null,
+        "T-ATK": 83,
+        "SAF": null,
+        "Abilities": null,
+        "Potential": null,
+        "Classes": ["Te","Et"],
+        "SSA Slots": null
+    }
+]

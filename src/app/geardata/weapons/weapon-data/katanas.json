@@ -1,0 +1,18 @@
+[
+    {
+        "Name (JP)": "カタナ",
+        "Name (English)": "Katana",
+        "Name (Global)": null,
+        "Rarity": 1,
+        "Requirement":["DEX",1],
+        "S-ATK":79,
+        "R-ATK":null,
+        "T-ATK":null,
+        "SAF":null,
+        "Abilities":null,
+        "Potential":null,
+        "Element": null,
+        "Classes":["Br","Ph"],
+        "SSA Slots":null
+    }
+]

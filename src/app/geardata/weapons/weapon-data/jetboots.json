@@ -1,0 +1,18 @@
+[
+    {
+        "Name (JP)": "ジェットブーツ",
+        "Name (English)": "Jet Boots",
+        "Name (Global)": null,
+        "Rarity": 1,
+        "Requirement":["T-ATK",1],
+        "S-ATK":78,
+        "R-ATK":null,
+        "T-ATK":79,
+        "SAF":null,
+        "Abilities":null,
+        "Potential":null,
+        "Element": null,
+        "Classes":["Bo"],
+        "SSA Slots":null
+    }
+]

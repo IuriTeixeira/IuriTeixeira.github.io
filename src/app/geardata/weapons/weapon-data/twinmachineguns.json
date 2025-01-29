@@ -1,0 +1,18 @@
+[
+    {
+        "Name (JP)": "ツインマシンガン",
+        "Name (English)": "Twin Machineguns",
+        "Name (Global)": null,
+        "Rarity": 1,
+        "Requirement":["R-ATK",1],
+        "S-ATK":null,
+        "R-ATK":86,
+        "T-ATK":null,
+        "SAF":null,
+        "Abilities":null,
+        "Potential":null,
+        "Element": null,
+        "Classes":["Gu","Hr"],
+        "SSA Slots":null
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "Name (JP)": "ロッド",
+        "Name (English)": "Rod",
+        "Name (Global)": null,
+        "Rarity": 1,
+        "Requirement":["T-ATK",1],
+        "S-ATK":68,
+        "R-ATK":null,
+        "T-ATK":102,
+        "SAF":null,
+        "Abilities":null,
+        "Potential":null,
+        "Element": null,
+        "Classes":["Fo","Ph"],
+        "SSA Slots":null
+    }
+]

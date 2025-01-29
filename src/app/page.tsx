@@ -68,7 +68,7 @@ export default function Home() {
     ));
 
     switch (language.language) {
-        case 'English Patch':
+        default:
             return (
                 <>
                     <h1>PSO2 Character Simulator</h1>

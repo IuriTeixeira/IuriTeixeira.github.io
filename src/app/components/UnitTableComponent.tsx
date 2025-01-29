@@ -33,16 +33,16 @@ export default function UnitTableComponent({ data, type }) {
         <Table striped stickyHeader withColumnBorders>
             <Table.Thead>
                 <Table.Tr>
-                    {(language.language === 'English Patch' || language.language === 'Global') && <Table.Th className="centerCell">Icon</Table.Th>}
-                    {language.language === '日本語' && <Table.Th className="centerCell">画像</Table.Th>}
+                    {(language.language === 'English' || language.language === 'Global') && <Table.Th className="centerCell">Icon</Table.Th>}
+                    {language.language === 'JP' && <Table.Th className="centerCell">画像</Table.Th>}
                     {theadData.map((heading: string) => {
                         switch (language.language) {
-                            case 'English Patch':
+                            case 'English':
                                 switch (heading) {
                                     case 'Type': return
                                     case 'Name (JP)': return
-                                    case 'name_en': return
-                                    case 'name_global': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
+                                    case 'Name (English)': return
+                                    case 'Name (Global)': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
                                     case 'S-DEF': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">DEF</Table.Th><Table.Th key={uuidv4()} className="centerCell">DEF<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
                                     case 'R-DEF': return
                                     case 'T-DEF': return
@@ -70,8 +70,8 @@ export default function UnitTableComponent({ data, type }) {
                                 switch (heading) {
                                     case 'Type': return
                                     case 'Name (JP)': return
-                                    case 'name_en': return
-                                    case 'name_global': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
+                                    case 'Name (English)': return
+                                    case 'Name (Global)': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
                                     case 'S-DEF': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">DEF</Table.Th><Table.Th key={uuidv4()} className="centerCell">DEF<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
                                     case 'R-DEF': return
                                     case 'T-DEF': return
@@ -95,12 +95,12 @@ export default function UnitTableComponent({ data, type }) {
                                     case 'Default Sub Icon': return
                                     default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
                                 }
-                            case '日本語':
+                            case 'JP':
                                 switch (heading) {
                                     case 'Type': return
                                     case 'Name (JP)': return <Table.Th key={uuidv4()} className="centerCell">名称</Table.Th>;
-                                    case 'name_en': return
-                                    case 'name_global': return
+                                    case 'Name (English)': return
+                                    case 'Name (Global)': return
                                     case 'Rarity': return <Table.Th key={uuidv4()} className="centerCell">レア</Table.Th>;
                                     case 'Requirement': return <Table.Th key={uuidv4()} className="centerCell">装備条件</Table.Th>;
                                     case 'S-DEF': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">防御</Table.Th><Table.Th key={uuidv4()} className="centerCell">強化防御</Table.Th></React.Fragment>
@@ -135,10 +135,10 @@ export default function UnitTableComponent({ data, type }) {
                 {tbodyData.map((row: any, index: any) => {
                     //TODO: FILTER THE MAP
                     switch (language.language) {
-                        case 'English Patch':
+                        case 'English':
                             return <Table.Tr key={uuidv4()}>
-                                {row['Name (JP)'] && type !== 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${type}/${row['name_en'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['name_en']}`} w={64} h={64} /></Flex></Table.Td>}
-                                {row['Name (JP)'] && type == 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/${type}/${row['name_en'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['name_en']}`} w={64} h={64} /></Flex></Table.Td>}
+                                {row['Name (JP)'] && type !== 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
+                                {row['Name (JP)'] && type == 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
                                 {theadData.map((key: string, index: any) => {
                                     let bufferDEF: any[] = [];
                                     let bufferDEFMax: any[] = [];
@@ -148,10 +148,10 @@ export default function UnitTableComponent({ data, type }) {
                                     if (row['Name (JP)']) {
                                         switch (key) {
                                             case 'Name (JP)':
-                                                return <Table.Td key={uuidv4()}>{row['name_en']}<br key={uuidv4()} />{row['Name (JP)']}</Table.Td>
+                                                return <Table.Td key={uuidv4()}>{row['Name (English)']}<br key={uuidv4()} />{row['Name (JP)']}</Table.Td>
                                             case 'Type':
-                                            case 'name_en':
-                                            case 'name_global':
+                                            case 'Name (English)':
+                                            case 'Name (Global)':
                                             case 'Default Sub Icon':
                                             case 'id':
                                                 return
@@ -258,7 +258,7 @@ export default function UnitTableComponent({ data, type }) {
                                                     return;
                                                 }
                                             case 'Set':
-                                                return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['name_en'])}</Table.Td>
+                                                return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['Name (English)'])}</Table.Td>
                                             case 'Default Sub Icon':
                                                 return
                                             case 'id':
@@ -272,22 +272,22 @@ export default function UnitTableComponent({ data, type }) {
                             </Table.Tr>;
                         case 'Global':
                             return <Table.Tr key={uuidv4()}>
-                                {row['name_global'] && type !== 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${type}/${row['name_en'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['name_en']}`} w={64} h={64} /></Flex></Table.Td>}
-                                {row['name_global'] && row['name_global'] !== 'Sub / Solid Barrier' && type == 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/${type}/${row['name_en'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['name_en']}`} w={64} h={64} /></Flex></Table.Td>}
-                                {row['name_global'] && row['name_global'] === 'Sub / Solid Barrier' && type == 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/WeaponsBarrier`} w={64} h={64} /></Flex></Table.Td>}
+                                {row['Name (Global)'] && type !== 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
+                                {row['Name (Global)'] && row['Name (Global)'] !== 'Sub / Solid Barrier' && type == 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
+                                {row['Name (Global)'] && row['Name (Global)'] === 'Sub / Solid Barrier' && type == 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/WeaponsBarrier`} w={64} h={64} /></Flex></Table.Td>}
                                 {theadData.map((key: string, index: any) => {
                                     let bufferDEF: any[] = [];
                                     let bufferDEFMax: any[] = [];
                                     let bufferResistance: any[] = [];
                                     let bufferATK: any[] = [];
                                     let bufferProperties: any[] = [];
-                                    if (row['name_global']) {
+                                    if (row['Name (Global)']) {
                                         switch (key) {
-                                            case 'name_global':
+                                            case 'Name (Global)':
                                                 return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
                                             case 'Type':
                                             case 'Name (JP)':
-                                            case 'name_en':
+                                            case 'Name (English)':
                                             case 'Default Sub Icon':
                                             case 'id':
                                                 return
@@ -394,7 +394,7 @@ export default function UnitTableComponent({ data, type }) {
                                                     return;
                                                 }
                                             case 'Set':
-                                                return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['name_global'])}</Table.Td>
+                                                return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['Name (Global)'])}</Table.Td>
                                             default:
                                                 if (row[key]) return <Table.Td key={uuidv4()} className="centerCell">{row[key]}</Table.Td>
                                                 else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
@@ -402,10 +402,10 @@ export default function UnitTableComponent({ data, type }) {
                                     }
                                 })}
                             </Table.Tr>;
-                        case '日本語':
+                        case 'JP':
                             return <Table.Tr key={uuidv4()}>
-                                {row['Name (JP)'] && type !== 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${type}/${row['name_en'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['name_en']}`} w={64} h={64} /></Flex></Table.Td>}
-                                {row['Name (JP)'] && type == 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/${type}/${row['name_en'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['name_en']}`} w={64} h={64} /></Flex></Table.Td>}
+                                {row['Name (JP)'] && type !== 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
+                                {row['Name (JP)'] && type == 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
                                 {theadData.map((key: string, index: any) => {
                                     let bufferDEF: any[] = [];
                                     let bufferDEFMax: any[] = [];
@@ -417,8 +417,8 @@ export default function UnitTableComponent({ data, type }) {
                                             case 'Name (JP)':
                                                 return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
                                             case 'Type':
-                                            case 'name_en':
-                                            case 'name_global':
+                                            case 'Name (English)':
+                                            case 'Name (Global)':
                                             case 'Default Sub Icon':
                                             case 'id':
                                                 return
@@ -525,7 +525,7 @@ export default function UnitTableComponent({ data, type }) {
                                                     return;
                                                 }
                                             case 'Set':
-                                                return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['name_en'])}</Table.Td>
+                                                return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['Name (English)'])}</Table.Td>
                                             default:
                                                 if (row[key]) return <Table.Td key={uuidv4()} className="centerCell">{row[key]}</Table.Td>
                                                 else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>

@@ -1,0 +1,18 @@
+[
+    {
+        "Name (JP)": "ガンスラッシュ",
+        "Name (English)": "Gunslash",
+        "Name (Global)": null,
+        "Rarity": 1,
+        "Requirement":["DEX",1],
+        "S-ATK":72,
+        "R-ATK":65,
+        "T-ATK":null,
+        "SAF":null,
+        "Abilities":null,
+        "Potential":null,
+        "Element": null,
+        "Classes":["All"],
+        "SSA Slots":null
+    }
+]
