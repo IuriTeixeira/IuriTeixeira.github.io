@@ -99,7 +99,18 @@ export default function WeaponTableComponent({ data, type }) {
         return buffer;
     }
 
-    tbodyData.map((item: any, id: number) => {
+    let headerEnglish: string[] = ["Icon", "Name", "Rarity", "Requirement", "ATK", "ATK (Max)", "Special Ability Factor", "Properties", "Potential", "Classes", "SSA", "Main Classes that can wield this weapon", "S-Class Special Ability Slots Enabled"]
+    let headerGlobal: string[] = ["Icon", "Name", "Rarity", "Requirement", "Pwr", "Pwr (Max)", "Augment Factor", "Properties", "Potential", "Classes", "SGA", "Main Classes that can wield this weapon", "S-Grade Augment Slots Enabled"]
+    let headerJP: string[] = ["画像", "名称", "装備条件", "レア", "力", "強化力", "特殊能力因子", "特性", "潜在能力", "クラス", "S級特殊能力", "この武器を扱える主なクラス", "S級特殊能力"]
+    let tableHeader: string[]
+    let filteredData: any
+    switch (language.language) {
+        case "Global": tableHeader = headerGlobal; filteredData = tbodyData.filter((key:any) => key["Name (Global)"] !== null); break;
+        case "JP": tableHeader = headerJP; filteredData = tbodyData.filter((key:any) => key["Name (JP)"] !== null); break;
+        default: tableHeader = headerEnglish; filteredData = tbodyData.filter((key:any) => key["Name (JP)"] !== null);
+    }
+
+    filteredData.map((item: any, id: number) => {
         Object.assign(item, { id })
     })
 
@@ -107,356 +118,140 @@ export default function WeaponTableComponent({ data, type }) {
         <Table striped stickyHeader withColumnBorders>
             <Table.Thead>
                 <Table.Tr>
-                    {language.language !== 'JP' && <Table.Th className="centerCell">Icon</Table.Th>}
-                    {language.language === 'JP' && <Table.Th className="centerCell">画像</Table.Th>}
-                    {theadData.map((heading: string) => {
-                        switch (language.language) {
-                            case 'English':
-                                switch (heading) {
-                                    case 'Name (JP)': return;
-                                    case 'Name (English)': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
-                                    case 'Name (Global)': return;
-                                    case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">ATK</Table.Th><Table.Th key={uuidv4()} className="centerCell">ATK<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
-                                    case 'R-ATK': return;
-                                    case 'T-ATK': return;
-                                    case 'SAF': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="Special Ability Factor" title="Special Ability Factor" w={16} h={16} /> Special Ability Factor</Flex></Table.Th>
-                                    case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Properties</Table.Th>
-                                    case 'Element': return;
-                                    case 'id': return;
-                                    case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> Potential</Flex></Table.Th>
-                                    case 'Classes': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt="Main Classes that can wield this weapon" w={16} h={16} /> {heading}</Flex></Table.Th>
-                                    case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S-Class Special Ability Slots Enabled" title="S-Class Special Ability Slots Enabled" w={16} h={16} /> SSA</Flex></Table.Th>
-                                    default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
-                                }
-                            case 'Global':
-                                switch (heading) {
-                                    case 'Name (JP)': return;
-                                    case 'Name (English)': return;
-                                    case 'Name (Global)': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
-                                    case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">ATK</Table.Th><Table.Th key={uuidv4()} className="centerCell">ATK<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
-                                    case 'R-ATK': return;
-                                    case 'T-ATK': return;
-                                    case 'SAF': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="Ability Factor" title="Ability Factor" w={16} h={16} /> Ability Factor</Flex></Table.Th>
-                                    case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Properties</Table.Th>
-                                    case 'Element': return;
-                                    case 'id': return;
-                                    case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> Potential</Flex></Table.Th>
-                                    case 'Classes': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt="Main Classes that can wield this weapon" w={16} h={16} /> {heading}</Flex></Table.Th>
-                                    case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S-Grade Augment Slots Enabled" title="S-Grade Augment Slots Enabled" w={16} h={16} /> SGA</Flex></Table.Th>
-                                    default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
-                                }
-                            case 'JP':
-                                switch (heading) {
-                                    case 'Name (JP)': return <Table.Th key={uuidv4()} className="centerCell">名称</Table.Th>;
-                                    case 'Name (English)': return;
-                                    case 'Name (Global)': return;
-                                    case 'Rarity': return <Table.Th key={uuidv4()} className="centerCell">レア</Table.Th>;
-                                    case 'S-ATK': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">力</Table.Th><Table.Th key={uuidv4()} className="centerCell">強化力</Table.Th></React.Fragment>
-                                    case 'R-ATK': return;
-                                    case 'T-ATK': return;
-                                    case 'Requirement': return <Table.Th key={uuidv4()} className="centerCell">装備条件</Table.Th>;
-                                    case 'SAF': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt="特殊能力因子" title="特殊能力因子" w={16} h={16} /> 特殊能力因子</Flex></Table.Th>
-                                    case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">特性</Table.Th>
-                                    case 'Element': return;
-                                    case 'id': return;
-                                    case 'Potential': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="潜在能力" title="潜在能力" w={16} h={16} /> 潜在能力</Flex></Table.Th>
-                                    case 'Classes': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt="この武器を扱える主なクラス" w={16} h={16} /> クラス</Flex></Table.Th>
-                                    case 'SSA Slots': return <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt="S級特殊能力" title="S級特殊能力" w={16} h={16} /> S級特殊能力</Flex></Table.Th>
-                                    default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
-                                }
-                        }
-                    })}
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[0]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[1]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[2]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[3]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[4]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[5]}</Table.Th>
+                    <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SpecialAbility.png" alt={tableHeader[6]} title={tableHeader[6]} w={16} h={16} /> {tableHeader[6]}</Flex></Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[7]}</Table.Th>
+                    <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt={tableHeader[8]} title={tableHeader[8]} w={16} h={16} /> {tableHeader[8]}</Flex></Table.Th>
+                    <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/MainClass.png" alt={tableHeader[11]} title={tableHeader[11]} w={16} h={16} /> {tableHeader[9]}</Flex></Table.Th>
+                    <Table.Th key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/SClassAbility.png" alt={tableHeader[12]} title={tableHeader[12]} w={16} h={16} /> {tableHeader[10]}</Flex></Table.Th>
                 </Table.Tr>
             </Table.Thead>
             {<Table.Tbody>
-                {tbodyData.map((row: any, index: any) => {
+                {filteredData.map((row: any, index: any) => {
+                    let iconLabelEnglish: string = `Icon of ${row['Name (English)']}`
+                    let iconLabelGlobal: string = `Icon of ${row['Name (Global)']}`
+                    let iconLabelJP: string = `${row['Name (JP)']}のアイコン`
+                    let iconLabel: string
                     switch (language.language) {
-                        case 'English':
-                            return <Table.Tr key={uuidv4()}>
-                                {row['Name (JP)'] && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
-                                {theadData.map((key: string, index: any) => {
-                                    if (row['Name (JP)']) {
-                                        let bufferProperties: any[] = [];
-                                        let bufferATK: any[] = [];
-                                        let bufferATKMax: any[] = [];
-                                        switch (key) {
-                                            case 'Name (JP)':
-                                                return <Table.Td key={uuidv4()}><Flex justify="center" direction="column" key={uuidv4()} gap={5}>{row['Name (English)']}<br key={uuidv4()} />{row['Name (JP)']}</Flex></Table.Td>
-                                            case 'Name (English)':
-                                            case 'Name (Global)':
-                                            case 'id':
-                                                return;
-                                            case 'Rarity':
-                                                return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} title={`${row[key]} Star`} w={16} h={16} /></Flex></Table.Td>
-                                            case 'Requirement':
-                                                return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayStat(row[key][0], row[key][1])}</Flex></Table.Td>
-                                            case 'S-ATK':
-                                            case 'R-ATK':
-                                            case 'T-ATK':
-                                                if (row['S-ATK']) {
-                                                    bufferATK.push(displayStat('S-ATK', row['S-ATK']));
-                                                    bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
-                                                }
-                                                if (row['R-ATK']) {
-                                                    bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
-                                                }
-                                                if (row['T-ATK']) {
-                                                    bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
-                                                }
-                                                if (index === 5) {
-                                                    if (bufferATK[0]) return (
-                                                        <React.Fragment key={uuidv4()}>
-                                                            <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
-                                                            <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATKMax}</Flex></Table.Td>
-                                                        </React.Fragment>
-                                                    )
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                                return
-                                            case 'Potential':
-                                                if (row[key]) {
-                                                    return <Table.Td key={uuidv4()}>{displayPotentials(row[key])}</Table.Td>
-                                                } else {
-                                                    return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                            case 'Abilities':
-                                            case 'Element':
-                                            case 'PA_enabled':
-                                            case 'Set':
-                                                if (row['Abilities']) {
-                                                    bufferProperties.push(<span key={uuidv4()}>{displayAbilities(row['Abilities'])}</span>)
-                                                }
-                                                if (row['Element']) {
-                                                    bufferProperties.push(<span key={uuidv4()}>{displayElement(row['Element'])}</span>);
-                                                }
-                                                if (row['PA_enabled']) {
-                                                    bufferProperties.push(<span key={uuidv4()}>{displayPA(row['PA_enabled'])}</span>);
-                                                }
-                                                if (row['Set']) {
-                                                    bufferProperties.push(displaySet(row['Set'], row['Name (English)']));
-                                                }
-                                                if (index === 9) {
-                                                    if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                } else {
-                                                    return;
-                                                }
-                                            case 'SAF':
-                                                if (row[key]) {
-                                                    return <Table.Td key={uuidv4()}><Flex align="center" key={uuidv4()} gap={5}>{displayAbilities(row['SAF'])}</Flex></Table.Td>
-                                                } else {
-                                                    return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                            case 'SSA Slots':
-                                                if (row[key]) {
-                                                    return <Table.Td key={uuidv4()}>{displaySSA(row[key])}</Table.Td>
-                                                } else {
-                                                    return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                            case 'Classes': return <Table.Td key={uuidv4()}>{displayClasses(row[key])}</Table.Td>
-                                            default:
-                                                if (row[key]) return <Table.Td key={uuidv4()} className="centerCell">{row[key]}</Table.Td>
-                                                else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                        }
-                                    }
-                                })}
-                            </Table.Tr>;
-                        case 'Global':
-                            return <Table.Tr key={uuidv4()}>
-                                {row['Name (Global)'] && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${row['Name (Global)']}`} w={64} h={64} /></Flex></Table.Td>}
-                                {theadData.map((key: string, index: any) => {
-                                    if (row['Name (Global)']) {
-                                        let bufferProperties: any[] = [];
-                                        let bufferATK: any[] = [];
-                                        let bufferATKMax: any[] = [];
-                                        switch (key) {
-                                            case 'Name (Global)':
-                                                return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
-                                            case 'Name (JP)':
-                                            case 'Name (English)':
-                                            case 'id':
-                                                return;
-                                            case 'Rarity':
-                                                return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} title={`${row[key]} Star`} w={16} h={16} /></Flex></Table.Td>
-                                            case 'Requirement':
-                                                return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayStat(row[key][0], row[key][1])}</Flex></Table.Td>
-                                            case 'S-ATK':
-                                            case 'R-ATK':
-                                            case 'T-ATK':
-                                                if (row['S-ATK']) {
-                                                    bufferATK.push(displayStat('S-ATK', row['S-ATK']));
-                                                    bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
-                                                }
-                                                if (row['R-ATK']) {
-                                                    bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
-                                                }
-                                                if (row['T-ATK']) {
-                                                    bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
-                                                }
-                                                if (index === 5) {
-                                                    if (bufferATK[0]) return (
-                                                        <React.Fragment key={uuidv4()}>
-                                                            <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
-                                                            <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATKMax}</Flex></Table.Td>
-                                                        </React.Fragment>
-                                                    )
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                                return
-                                            case 'Potential':
-                                                if (row[key]) {
-                                                    return <Table.Td key={uuidv4()}>{displayPotentials(row[key])}</Table.Td>
-                                                } else {
-                                                    return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                            case 'Abilities':
-                                            case 'Element':
-                                            case 'PA_enabled':
-                                            case 'Set':
-                                                if (row['Abilities']) {
-                                                    bufferProperties.push(<span key={uuidv4()}>{displayAbilities(row['Abilities'])}</span>)
-                                                }
-                                                if (row['Element']) {
-                                                    bufferProperties.push(<span key={uuidv4()}>{displayElement(row['Element'])}</span>);
-                                                }
-                                                if (row['PA_enabled']) {
-                                                    bufferProperties.push(<span key={uuidv4()}>{displayPA(row['PA_enabled'])}</span>);
-                                                }
-                                                if (row['Set']) {
-                                                    bufferProperties.push(displaySet(row['Set'], row['Name (Global)']));
-                                                }
-                                                if (index === 9) {
-                                                    if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                } else {
-                                                    return;
-                                                }
-                                            case 'SAF':
-                                                if (row[key]) {
-                                                    return <Table.Td key={uuidv4()}><Flex align="center" key={uuidv4()} gap={5}>{displayAbilities(row['SAF'])}</Flex></Table.Td>
-                                                } else {
-                                                    return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                            case 'SSA Slots':
-                                                if (row[key]) {
-                                                    return <Table.Td key={uuidv4()}>{displaySSA(row[key])}</Table.Td>
-                                                } else {
-                                                    return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                            case 'Classes': return <Table.Td key={uuidv4()}>{displayClasses(row[key])}</Table.Td>
-                                            default:
-                                                if (row[key]) return <Table.Td key={uuidv4()} className="centerCell">{row[key]}</Table.Td>
-                                                else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                        }
-                                    }
-                                })}
-                            </Table.Tr>;
-                        case 'JP':
-                            return <Table.Tr key={uuidv4()}>
-                                {row['Name (JP)'] && row['Name (JP)'] !== 'タクト-NT' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={row['Name (JP)']} w={64} h={64} /></Flex></Table.Td>}
-                                {row['Name (JP)'] && row['Name (JP)'] === 'タクト-NT' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)']}.png`} alt={row['Name (JP)']} w={64} h={64} /></Flex></Table.Td>}
-                                {theadData.map((key: string, index: any) => {
-                                    if (row['Name (JP)']) {
-                                        let bufferProperties: any[] = [];
-                                        let bufferATK: any[] = [];
-                                        let bufferATKMax: any[] = [];
-                                        switch (key) {
-                                            case 'Name (JP)':
-                                                if (row[key].includes("武装エクステンド")) {
-                                                    return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
-                                                } else {
-                                                    if (row['Name (JP)'] === 'ネメシスバール-NT' || row['Name (JP)'] === 'スレイヴバール-NT' || row['Name (JP)'] === 'アーレスタクト-NT') {
-                                                        return <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row[key]}`}>{row[key]}</Link></Table.Td>
-                                                    } else {
-                                                        return <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row[key].replace('-NT', '')}`}>{row[key]}</Link></Table.Td>
-                                                    }
-                                                }
-                                            case 'Name (English)':
-                                            case 'Name (Global)':
-                                            case 'id':
-                                                return;
-                                            case 'Rarity':
-                                                return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={row[key]} title={row[key]} w={16} h={16} /></Flex></Table.Td>
-                                            case 'Requirement':
-                                                return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayStat(row[key][0], row[key][1])}</Flex></Table.Td>
-                                            case 'S-ATK':
-                                            case 'R-ATK':
-                                            case 'T-ATK':
-                                                if (row['S-ATK']) {
-                                                    bufferATK.push(displayStat('S-ATK', row['S-ATK']));
-                                                    bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
-                                                }
-                                                if (row['R-ATK']) {
-                                                    bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
-                                                }
-                                                if (row['T-ATK']) {
-                                                    bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
-                                                }
-                                                if (index === 5) {
-                                                    if (bufferATK[0]) return (
-                                                        <React.Fragment key={uuidv4()}>
-                                                            <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
-                                                            <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATKMax}</Flex></Table.Td>
-                                                        </React.Fragment>
-                                                    )
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                                return
-                                            case 'Potential':
-                                                if (row[key]) {
-                                                    return <Table.Td key={uuidv4()}>{displayPotentials(row[key])}</Table.Td>
-                                                } else {
-                                                    return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                            case 'Abilities':
-                                            case 'Element':
-                                            case 'PA_enabled':
-                                            case 'Set':
-                                                if (row['Abilities']) {
-                                                    bufferProperties.push(<span key={uuidv4()}>{displayAbilities(row['Abilities'])}</span>)
-                                                }
-                                                if (row['Element']) {
-                                                    bufferProperties.push(<span key={uuidv4()}>{displayElement(row['Element'])}</span>);
-                                                }
-                                                if (row['PA_enabled']) {
-                                                    bufferProperties.push(<span key={uuidv4()}>{displayPA(row['PA_enabled'])}</span>);
-                                                }
-                                                if (row['Set']) {
-                                                    bufferProperties.push(displaySet(row['Set'], row['Name (JP)']));
-                                                }
-                                                if (index === 9) {
-                                                    if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                } else {
-                                                    return;
-                                                }
-                                            case 'SAF':
-                                                if (row[key]) {
-                                                    return <Table.Td key={uuidv4()}><Flex align="center" key={uuidv4()} gap={5}>{displayAbilities(row['SAF'])}</Flex></Table.Td>
-                                                } else {
-                                                    return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                            case 'SSA Slots':
-                                                if (row[key]) {
-                                                    return <Table.Td key={uuidv4()}>{displaySSA(row[key])}</Table.Td>
-                                                } else {
-                                                    return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                            case 'Classes': return <Table.Td key={uuidv4()}>{displayClasses(row[key])}</Table.Td>
-                                            default:
-                                                if (row[key]) return <Table.Td key={uuidv4()} className="centerCell">{row[key]}</Table.Td>
-                                                else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                        }
-                                    }
-                                })}
-                            </Table.Tr>;
+                        case "Global": iconLabel = iconLabelGlobal; break;
+                        case "JP": iconLabel = iconLabelJP; break;
+                        default: iconLabel = iconLabelEnglish; break;
                     }
+                    return <Table.Tr key={uuidv4()}>
+                        {row["Name (English)"] !== "Takt-NT" && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT','')}.png`} alt={iconLabel} w={64} h={64} /></Flex></Table.Td>}
+                        {row["Name (English)"] === "Takt-NT" && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/takts/Takt-NT.png`} alt={iconLabel} w={64} h={64} /></Flex></Table.Td>}
+                        {theadData.map((key: string, index: any) => {
+                            let itemName: any
+
+                            switch (language.language) {
+                                case "Global":
+                                    itemName = <Table.Td key={uuidv4()}>{row["Name (Global)"]}</Table.Td>; break;
+                                case "JP":
+                                    if (row["Name (JP)"] !== null && row["Name (JP)"].includes("武装エクステンド")) {
+                                        itemName = <Table.Td key={uuidv4()}>{row["Name (JP)"]}</Table.Td>
+                                    } else {
+                                        if (row['Name (JP)'] === 'ネメシスバール-NT' || row['Name (JP)'] === 'スレイヴバール-NT' || row['Name (JP)'] === 'アーレスタクト-NT') {
+                                            itemName = <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row["Name (JP)"]}`}>{row["Name (JP)"]}</Link></Table.Td>
+                                        } else {
+                                            itemName = <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row["Name (JP)"].replace('-NT', '')}`}>{row["Name (JP)"]}</Link></Table.Td>
+                                        }
+                                    }
+                                    break;
+                                default:
+                                    itemName = <Table.Td key={uuidv4()}><Flex justify="center" direction="column" key={uuidv4()} gap={5}>{row['Name (English)']}<br key={uuidv4()} />{row['Name (JP)']}</Flex></Table.Td>
+                            }
+
+                            let bufferProperties: any[] = [];
+                            let bufferATK: any[] = [];
+                            let bufferATKMax: any[] = [];
+                            switch (key) {
+                                case 'Name (JP)':
+                                    return itemName
+                                case 'Name (English)':
+                                case 'Name (Global)':
+                                case 'id':
+                                    return
+                                case 'Rarity':
+                                    return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={row[key]} title={row[key]} w={16} h={16} /></Flex></Table.Td>
+                                case 'Requirement':
+                                    return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayStat(row[key][0], row[key][1])}</Flex></Table.Td>
+                                case 'S-ATK':
+                                case 'R-ATK':
+                                case 'T-ATK':
+                                    if (row['S-ATK']) {
+                                        bufferATK.push(displayStat('S-ATK', row['S-ATK']));
+                                        bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
+                                    }
+                                    if (row['R-ATK']) {
+                                        bufferATK.push(displayStat('R-ATK', row['R-ATK']));
+                                        bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
+                                    }
+                                    if (row['T-ATK']) {
+                                        bufferATK.push(displayStat('T-ATK', row['T-ATK']));
+                                        bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
+                                    }
+                                    if (index === 5) {
+                                        if (bufferATK[0]) return (
+                                            <React.Fragment key={uuidv4()}>
+                                                <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
+                                                <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATKMax}</Flex></Table.Td>
+                                            </React.Fragment>
+                                        )
+                                        else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                                    }
+                                    return
+                                case 'Potential':
+                                    if (row[key]) {
+                                        return <Table.Td key={uuidv4()}>{displayPotentials(row[key])}</Table.Td>
+                                    } else {
+                                        return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                                    }
+                                case 'Abilities':
+                                case 'Element':
+                                case 'PA_enabled':
+                                case 'Set':
+                                    if (row['Abilities']) {
+                                        bufferProperties.push(<span key={uuidv4()}>{displayAbilities(row['Abilities'])}</span>)
+                                    }
+                                    if (row['Element']) {
+                                        bufferProperties.push(<span key={uuidv4()}>{displayElement(row['Element'])}</span>);
+                                    }
+                                    if (row['PA_enabled']) {
+                                        bufferProperties.push(<span key={uuidv4()}>{displayPA(row['PA_enabled'])}</span>);
+                                    }
+                                    if (row['Set']) {
+                                        bufferProperties.push(displaySet(row['Set'], row['Name (English)']));
+                                    }
+                                    if (index === 9) {
+                                        if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
+                                        else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                                    } else {
+                                        return;
+                                    }
+                                case 'SAF':
+                                    if (row[key]) {
+                                        return <Table.Td key={uuidv4()}><Flex align="center" key={uuidv4()} gap={5}>{displayAbilities(row['SAF'])}</Flex></Table.Td>
+                                    } else {
+                                        return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                                    }
+                                case 'SSA Slots':
+                                    if (row[key]) {
+                                        return <Table.Td key={uuidv4()}>{displaySSA(row[key])}</Table.Td>
+                                    } else {
+                                        return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                                    }
+                                case 'Classes': return <Table.Td key={uuidv4()}>{displayClasses(row[key])}</Table.Td>
+                                default:
+                                    if (row[key]) return <Table.Td key={uuidv4()} className="centerCell">{row[key]}</Table.Td>
+                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                            }
+                        })}
+                    </Table.Tr>
                 })}
             </Table.Tbody>}
         </Table>

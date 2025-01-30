@@ -8,6 +8,7 @@ import displayAbilities from './displayAbilities';
 import displaySet from './displaySet';
 import displayStat from './displayStat';
 import displayResistance from './displayResistance';
+import Link from 'next/link';
 
 //import localFont from 'next/font/local'
 
@@ -25,7 +26,18 @@ export default function UnitTableComponent({ data, type }) {
         return Math.trunc((baseDEF * 140) / 100)
     }
 
-    tbodyData.map((item: any, id: number) => {
+    let headerEnglish: string[] = ["Icon", "Name", "Rarity", "Requirement", "DEF", "DEF (Max)", "HP", "PP", "ATK", "Resistances", "Abilities", "Set Effect"]
+    let headerGlobal: string[] = ["Icon", "Name", "Rarity", "Requirement", "Def", "Def (Max)", "HP", "PP", "Pwr", "Resistances", "Augments", "Set Effect"]
+    let headerJP: string[] = ["画像", "名称", "レア", "装備条件", "防御", "強化防御", "HP", "PP", "力", "耐性", "特殊能力", "セット効果"]
+    let tableHeader: string[]
+    let filteredData: any
+    switch (language.language) {
+        case "Global": tableHeader = headerGlobal; filteredData = tbodyData.filter((key: any) => key["Name (Global)"] !== null); break;
+        case "JP": tableHeader = headerJP; filteredData = tbodyData.filter((key: any) => key["Name (JP)"] !== null); break;
+        default: tableHeader = headerEnglish; filteredData = tbodyData.filter((key: any) => key["Name (JP)"] !== null);
+    }
+
+    filteredData.map((item: any, id: number) => {
         Object.assign(item, { id })
     })
 
@@ -33,507 +45,174 @@ export default function UnitTableComponent({ data, type }) {
         <Table striped stickyHeader withColumnBorders>
             <Table.Thead>
                 <Table.Tr>
-                    {(language.language === 'English' || language.language === 'Global') && <Table.Th className="centerCell">Icon</Table.Th>}
-                    {language.language === 'JP' && <Table.Th className="centerCell">画像</Table.Th>}
-                    {theadData.map((heading: string) => {
-                        switch (language.language) {
-                            case 'English':
-                                switch (heading) {
-                                    case 'Type': return
-                                    case 'Name (JP)': return
-                                    case 'Name (English)': return
-                                    case 'Name (Global)': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
-                                    case 'S-DEF': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">DEF</Table.Th><Table.Th key={uuidv4()} className="centerCell">DEF<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
-                                    case 'R-DEF': return
-                                    case 'T-DEF': return
-                                    case 'S-ATK': return <Table.Th key={uuidv4()} className="centerCell">ATK</Table.Th>
-                                    case 'R-ATK': return
-                                    case 'T-ATK': return
-                                    case 'DEX': return
-                                    case 'Strike Resistance': return <Table.Th key={uuidv4()} className="centerCell">Resistances</Table.Th>
-                                    case 'Ranged Resistance': return
-                                    case 'Tech Resistance': return
-                                    case 'Fire Resistance': return
-                                    case 'Ice Resistance': return
-                                    case 'Lightning Resistance': return
-                                    case 'Wind Resistance': return
-                                    case 'Light Resistance': return
-                                    case 'Dark Resistance': return
-                                    case 'id': return;
-                                    case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Abilities</Table.Th>
-                                    case 'Set': return <Table.Th key={uuidv4()} className="centerCell">Set Effect</Table.Th>
-                                    case 'SAF': return
-                                    case 'Default Sub Icon': return
-                                    default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
-                                }
-                            case 'Global':
-                                switch (heading) {
-                                    case 'Type': return
-                                    case 'Name (JP)': return
-                                    case 'Name (English)': return
-                                    case 'Name (Global)': return <Table.Th key={uuidv4()} className="centerCell">Name</Table.Th>;
-                                    case 'S-DEF': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">DEF</Table.Th><Table.Th key={uuidv4()} className="centerCell">DEF<br key={uuidv4()} />(Max)</Table.Th></React.Fragment>
-                                    case 'R-DEF': return
-                                    case 'T-DEF': return
-                                    case 'S-ATK': return <Table.Th key={uuidv4()} className="centerCell">ATK</Table.Th>
-                                    case 'R-ATK': return
-                                    case 'T-ATK': return
-                                    case 'DEX': return
-                                    case 'Strike Resistance': return <Table.Th key={uuidv4()} className="centerCell">Resistances</Table.Th>
-                                    case 'Ranged Resistance': return
-                                    case 'Tech Resistance': return
-                                    case 'Fire Resistance': return
-                                    case 'Ice Resistance': return
-                                    case 'Lightning Resistance': return
-                                    case 'Wind Resistance': return
-                                    case 'Light Resistance': return
-                                    case 'Dark Resistance': return
-                                    case 'id': return;
-                                    case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">Augments</Table.Th>
-                                    case 'Set': return <Table.Th key={uuidv4()} className="centerCell">Set Effect</Table.Th>
-                                    case 'SAF': return
-                                    case 'Default Sub Icon': return
-                                    default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
-                                }
-                            case 'JP':
-                                switch (heading) {
-                                    case 'Type': return
-                                    case 'Name (JP)': return <Table.Th key={uuidv4()} className="centerCell">名称</Table.Th>;
-                                    case 'Name (English)': return
-                                    case 'Name (Global)': return
-                                    case 'Rarity': return <Table.Th key={uuidv4()} className="centerCell">レア</Table.Th>;
-                                    case 'Requirement': return <Table.Th key={uuidv4()} className="centerCell">装備条件</Table.Th>;
-                                    case 'S-DEF': return <React.Fragment key={uuidv4()}><Table.Th key={uuidv4()} className="centerCell">防御</Table.Th><Table.Th key={uuidv4()} className="centerCell">強化防御</Table.Th></React.Fragment>
-                                    case 'R-DEF': return
-                                    case 'T-DEF': return
-                                    case 'S-ATK': return <Table.Th key={uuidv4()} className="centerCell">力</Table.Th>
-                                    case 'R-ATK': return
-                                    case 'T-ATK': return
-                                    case 'DEX': return
-                                    case 'Strike Resistance': return <Table.Th key={uuidv4()} className="centerCell">耐性</Table.Th>
-                                    case 'Ranged Resistance': return
-                                    case 'Tech Resistance': return
-                                    case 'Fire Resistance': return
-                                    case 'Ice Resistance': return
-                                    case 'Lightning Resistance': return
-                                    case 'Wind Resistance': return
-                                    case 'Light Resistance': return
-                                    case 'Dark Resistance': return
-                                    case 'id': return;
-                                    case 'Abilities': return <Table.Th key={uuidv4()} className="centerCell">特殊能力</Table.Th>
-                                    case 'Set': return <Table.Th key={uuidv4()} className="centerCell">セット効果</Table.Th>
-                                    case 'SAF': return
-                                    case 'Default Sub Icon': return
-                                    default: return <Table.Th key={uuidv4()} className="centerCell">{heading}</Table.Th>
-                                }
-                        }
-
-                    })}
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[0]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[1]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[2]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[3]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[4]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[5]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[6]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[7]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[8]}</Table.Th>
+                    <Table.Th key={uuidv4()} className="centerCell">{tableHeader[9]}</Table.Th>
+                    {type !== 'sub' && <Table.Th key={uuidv4()} className="centerCell">{tableHeader[10]}</Table.Th>}
+                    {type !== 'sub' && <Table.Th key={uuidv4()} className="centerCell">{tableHeader[11]}</Table.Th>}
                 </Table.Tr>
             </Table.Thead>
             {<Table.Tbody>
-                {tbodyData.map((row: any, index: any) => {
-                    //TODO: FILTER THE MAP
+                {filteredData.map((row: any, index: any) => {
+                    let iconLabelEnglish: string = `Icon of ${row['Name (English)']}`
+                    let iconLabelGlobal: string = `Icon of ${row['Name (Global)']}`
+                    let iconLabelJP: string = `${row['Name (JP)']}のアイコン`
+                    let iconLabel: string
                     switch (language.language) {
-                        case 'English':
-                            return <Table.Tr key={uuidv4()}>
-                                {row['Name (JP)'] && type !== 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
-                                {row['Name (JP)'] && type == 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
-                                {theadData.map((key: string, index: any) => {
-                                    let bufferDEF: any[] = [];
-                                    let bufferDEFMax: any[] = [];
-                                    let bufferResistance: any[] = [];
-                                    let bufferATK: any[] = [];
-                                    let bufferProperties: any[] = [];
-                                    if (row['Name (JP)']) {
-                                        switch (key) {
-                                            case 'Name (JP)':
-                                                return <Table.Td key={uuidv4()}>{row['Name (English)']}<br key={uuidv4()} />{row['Name (JP)']}</Table.Td>
-                                            case 'Type':
-                                            case 'Name (English)':
-                                            case 'Name (Global)':
-                                            case 'Default Sub Icon':
-                                            case 'id':
-                                                return
-                                            case 'Rarity':
-                                                return <Table.Td key={uuidv4()} className="centerCell"><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} title={`${row[key]} Star`} w={16} h={16} /></Flex></Table.Td>
-                                            case 'Requirement':
-                                                return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayStat(row[key][0], row[key][1])}</Flex></Table.Td>
-                                            case 'S-DEF':
-                                            case 'R-DEF':
-                                            case 'T-DEF':
-                                                if (row['S-DEF'] >= 0) {
-                                                    bufferDEF.push(displayStat('S-DEF', row['S-DEF']));
-                                                    bufferDEFMax.push(displayStat('S-DEF', calculateMaxDef(row['S-DEF'])));
-                                                }
-                                                if (row['R-DEF'] >= 0) {
-                                                    bufferDEF.push(displayStat('R-DEF', row['R-DEF']));
-                                                    bufferDEFMax.push(displayStat('R-DEF', calculateMaxDef(row['R-DEF'])));
-                                                }
-                                                if (row['T-DEF'] >= 0) {
-                                                    bufferDEF.push(displayStat('T-DEF', row['T-DEF']));
-                                                    bufferDEFMax.push(displayStat('T-DEF', calculateMaxDef(row['T-DEF'])));
-                                                }
-                                                if (index === 6) {
-                                                    return (
-                                                        <React.Fragment key={uuidv4()}>
-                                                            <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferDEF}</Flex></Table.Td>
-                                                            <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferDEFMax}</Flex></Table.Td>
-                                                        </React.Fragment>
-                                                    )
-                                                }
-                                            case 'S-ATK':
-                                            case 'R-ATK':
-                                            case 'T-ATK':
-                                            case 'DEX':
-                                                if (row['S-ATK']) {
-                                                    bufferATK.push(displayStat('S-ATK', row['S-ATK']));
-                                                }
-                                                if (row['R-ATK']) {
-                                                    bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                }
-                                                if (row['T-ATK']) {
-                                                    bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                }
-                                                if (row['DEX']) {
-                                                    bufferATK.push(displayStat('DEX', row['DEX']));
-                                                }
-                                                if (index === 11) {
-                                                    if (bufferATK[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                            case 'Strike Resistance':
-                                            case 'Ranged Resistance':
-                                            case 'Tech Resistance':
-                                            case 'Fire Resistance':
-                                            case 'Ice Resistance':
-                                            case 'Lightning Resistance':
-                                            case 'Wind Resistance':
-                                            case 'Light Resistance':
-                                            case 'Dark Resistance':
-                                                if (row['Strike Resistance']) {
-                                                    bufferResistance.push(displayResistance('Strike Resistance', row['Strike Resistance']));
-                                                }
-                                                if (row['Ranged Resistance']) {
-                                                    bufferResistance.push(displayResistance('Ranged Resistance', row['Ranged Resistance']));
-                                                }
-                                                if (row['Tech Resistance']) {
-                                                    bufferResistance.push(displayResistance('Tech Resistance', row['Tech Resistance']));
-                                                }
-                                                if (row['Fire Resistance']) {
-                                                    bufferResistance.push(displayResistance('Fire Resistance', row['Fire Resistance']));
-                                                }
-                                                if (row['Ice Resistance']) {
-                                                    bufferResistance.push(displayResistance('Ice Resistance', row['Ice Resistance']));
-                                                }
-                                                if (row['Lightning Resistance']) {
-                                                    bufferResistance.push(displayResistance('Lightning Resistance', row['Lightning Resistance']));
-                                                }
-                                                if (row['Wind Resistance']) {
-                                                    bufferResistance.push(displayResistance('Wind Resistance', row['Wind Resistance']));
-                                                }
-                                                if (row['Light Resistance']) {
-                                                    bufferResistance.push(displayResistance('Light Resistance', row['Light Resistance']));
-                                                }
-                                                if (row['Dark Resistance']) {
-                                                    bufferResistance.push(displayResistance('Dark Resistance', row['Dark Resistance']));
-                                                }
-                                                if (index === 14) {
-                                                    if (bufferResistance[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><SimpleGrid key={uuidv4()} cols={3} spacing="xs" verticalSpacing={0}>{bufferResistance}</SimpleGrid></Flex></Table.Td>
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                                else return
-                                            case 'Abilities':
-                                            case 'SAF':
-                                                if (row['SAF']) {
-                                                    bufferProperties.push(displayAbilities(row['SAF']))
-                                                }
-                                                if (row['Abilities']) {
-                                                    bufferProperties.push(displayAbilities(row['Abilities']))
-                                                }
-                                                if (index === 23) {
-                                                    if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                } else {
-                                                    return;
-                                                }
-                                            case 'Set':
-                                                return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['Name (English)'])}</Table.Td>
-                                            case 'Default Sub Icon':
-                                                return
-                                            case 'id':
-                                                return
-                                            default:
-                                                if (row[key]) return <Table.Td key={uuidv4()} className="centerCell">{row[key]}</Table.Td>
-                                                else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                        }
-                                    }
-                                })}
-                            </Table.Tr>;
-                        case 'Global':
-                            return <Table.Tr key={uuidv4()}>
-                                {row['Name (Global)'] && type !== 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
-                                {row['Name (Global)'] && row['Name (Global)'] !== 'Sub / Solid Barrier' && type == 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
-                                {row['Name (Global)'] && row['Name (Global)'] === 'Sub / Solid Barrier' && type == 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/WeaponsBarrier`} w={64} h={64} /></Flex></Table.Td>}
-                                {theadData.map((key: string, index: any) => {
-                                    let bufferDEF: any[] = [];
-                                    let bufferDEFMax: any[] = [];
-                                    let bufferResistance: any[] = [];
-                                    let bufferATK: any[] = [];
-                                    let bufferProperties: any[] = [];
-                                    if (row['Name (Global)']) {
-                                        switch (key) {
-                                            case 'Name (Global)':
-                                                return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
-                                            case 'Type':
-                                            case 'Name (JP)':
-                                            case 'Name (English)':
-                                            case 'Default Sub Icon':
-                                            case 'id':
-                                                return
-                                            case 'Rarity':
-                                                return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} title={`${row[key]} Star`} w={16} h={16} /></Flex></Table.Td>
-                                            case 'Requirement':
-                                                return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayStat(row[key][0], row[key][1])}</Flex></Table.Td>
-                                            case 'S-DEF':
-                                            case 'R-DEF':
-                                            case 'T-DEF':
-                                                if (row['S-DEF'] >= 0) {
-                                                    bufferDEF.push(displayStat('S-DEF', row['S-DEF']));
-                                                    bufferDEFMax.push(displayStat('S-DEF', calculateMaxDef(row['S-DEF'])));
-                                                }
-                                                if (row['R-DEF'] >= 0) {
-                                                    bufferDEF.push(displayStat('R-DEF', row['R-DEF']));
-                                                    bufferDEFMax.push(displayStat('R-DEF', calculateMaxDef(row['R-DEF'])));
-                                                }
-                                                if (row['T-DEF'] >= 0) {
-                                                    bufferDEF.push(displayStat('T-DEF', row['T-DEF']));
-                                                    bufferDEFMax.push(displayStat('T-DEF', calculateMaxDef(row['T-DEF'])));
-                                                }
-                                                if (index === 6) {
-                                                    return (
-                                                        <React.Fragment key={uuidv4()}>
-                                                            <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferDEF}</Flex></Table.Td>
-                                                            <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferDEFMax}</Flex></Table.Td>
-                                                        </React.Fragment>
-                                                    )
-                                                }
-                                            case 'S-ATK':
-                                            case 'R-ATK':
-                                            case 'T-ATK':
-                                            case 'DEX':
-                                                if (row['S-ATK']) {
-                                                    bufferATK.push(displayStat('S-ATK', row['S-ATK']));
-                                                }
-                                                if (row['R-ATK']) {
-                                                    bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                }
-                                                if (row['T-ATK']) {
-                                                    bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                }
-                                                if (row['DEX']) {
-                                                    bufferATK.push(displayStat('DEX', row['DEX']));
-                                                }
-                                                if (index === 11) {
-                                                    if (bufferATK[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                            case 'Strike Resistance':
-                                            case 'Ranged Resistance':
-                                            case 'Tech Resistance':
-                                            case 'Fire Resistance':
-                                            case 'Ice Resistance':
-                                            case 'Lightning Resistance':
-                                            case 'Wind Resistance':
-                                            case 'Light Resistance':
-                                            case 'Dark Resistance':
-                                                if (row['Strike Resistance']) {
-                                                    bufferResistance.push(displayResistance('Strike Resistance', row['Strike Resistance']));
-                                                }
-                                                if (row['Ranged Resistance']) {
-                                                    bufferResistance.push(displayResistance('Ranged Resistance', row['Ranged Resistance']));
-                                                }
-                                                if (row['Tech Resistance']) {
-                                                    bufferResistance.push(displayResistance('Tech Resistance', row['Tech Resistance']));
-                                                }
-                                                if (row['Fire Resistance']) {
-                                                    bufferResistance.push(displayResistance('Fire Resistance', row['Fire Resistance']));
-                                                }
-                                                if (row['Ice Resistance']) {
-                                                    bufferResistance.push(displayResistance('Ice Resistance', row['Ice Resistance']));
-                                                }
-                                                if (row['Lightning Resistance']) {
-                                                    bufferResistance.push(displayResistance('Lightning Resistance', row['Lightning Resistance']));
-                                                }
-                                                if (row['Wind Resistance']) {
-                                                    bufferResistance.push(displayResistance('Wind Resistance', row['Wind Resistance']));
-                                                }
-                                                if (row['Light Resistance']) {
-                                                    bufferResistance.push(displayResistance('Light Resistance', row['Light Resistance']));
-                                                }
-                                                if (row['Dark Resistance']) {
-                                                    bufferResistance.push(displayResistance('Dark Resistance', row['Dark Resistance']));
-                                                }
-                                                if (index === 14) {
-                                                    if (bufferResistance[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><SimpleGrid key={uuidv4()} cols={3} spacing="xs" verticalSpacing={0}>{bufferResistance}</SimpleGrid></Flex></Table.Td>
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                                else return
-                                            case 'Abilities':
-                                            case 'SAF':
-                                                if (row['SAF']) {
-                                                    bufferProperties.push(displayAbilities(row['SAF']))
-                                                }
-                                                if (row['Abilities']) {
-                                                    bufferProperties.push(displayAbilities(row['Abilities']))
-                                                }
-                                                if (index === 23) {
-                                                    if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                } else {
-                                                    return;
-                                                }
-                                            case 'Set':
-                                                return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['Name (Global)'])}</Table.Td>
-                                            default:
-                                                if (row[key]) return <Table.Td key={uuidv4()} className="centerCell">{row[key]}</Table.Td>
-                                                else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                        }
-                                    }
-                                })}
-                            </Table.Tr>;
-                        case 'JP':
-                            return <Table.Tr key={uuidv4()}>
-                                {row['Name (JP)'] && type !== 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
-                                {row['Name (JP)'] && type == 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
-                                {theadData.map((key: string, index: any) => {
-                                    let bufferDEF: any[] = [];
-                                    let bufferDEFMax: any[] = [];
-                                    let bufferResistance: any[] = [];
-                                    let bufferATK: any[] = [];
-                                    let bufferProperties: any[] = [];
-                                    if (row['Name (JP)']) {
-                                        switch (key) {
-                                            case 'Name (JP)':
-                                                return <Table.Td key={uuidv4()}>{row[key]}</Table.Td>
-                                            case 'Type':
-                                            case 'Name (English)':
-                                            case 'Name (Global)':
-                                            case 'Default Sub Icon':
-                                            case 'id':
-                                                return
-                                            case 'Rarity':
-                                                return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={row[key]} title={row[key]} w={16} h={16} /></Flex></Table.Td>
-                                            case 'Requirement':
-                                                return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayStat(row[key][0], row[key][1])}</Flex></Table.Td>
-                                            case 'S-DEF':
-                                            case 'R-DEF':
-                                            case 'T-DEF':
-                                                if (row['S-DEF'] >= 0) {
-                                                    bufferDEF.push(displayStat('S-DEF', row['S-DEF']));
-                                                    bufferDEFMax.push(displayStat('S-DEF', calculateMaxDef(row['S-DEF'])));
-                                                }
-                                                if (row['R-DEF'] >= 0) {
-                                                    bufferDEF.push(displayStat('R-DEF', row['R-DEF']));
-                                                    bufferDEFMax.push(displayStat('R-DEF', calculateMaxDef(row['R-DEF'])));
-                                                }
-                                                if (row['T-DEF'] >= 0) {
-                                                    bufferDEF.push(displayStat('T-DEF', row['T-DEF']));
-                                                    bufferDEFMax.push(displayStat('T-DEF', calculateMaxDef(row['T-DEF'])));
-                                                }
-                                                if (index === 6) {
-                                                    return (
-                                                        <React.Fragment key={uuidv4()}>
-                                                            <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferDEF}</Flex></Table.Td>
-                                                            <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferDEFMax}</Flex></Table.Td>
-                                                        </React.Fragment>
-                                                    )
-                                                }
-                                            case 'S-ATK':
-                                            case 'R-ATK':
-                                            case 'T-ATK':
-                                            case 'DEX':
-                                                if (row['S-ATK']) {
-                                                    bufferATK.push(displayStat('S-ATK', row['S-ATK']));
-                                                }
-                                                if (row['R-ATK']) {
-                                                    bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                }
-                                                if (row['T-ATK']) {
-                                                    bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                }
-                                                if (row['DEX']) {
-                                                    bufferATK.push(displayStat('DEX', row['DEX']));
-                                                }
-                                                if (index === 11) {
-                                                    if (bufferATK[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                            case 'Strike Resistance':
-                                            case 'Ranged Resistance':
-                                            case 'Tech Resistance':
-                                            case 'Fire Resistance':
-                                            case 'Ice Resistance':
-                                            case 'Lightning Resistance':
-                                            case 'Wind Resistance':
-                                            case 'Light Resistance':
-                                            case 'Dark Resistance':
-                                                if (row['Strike Resistance']) {
-                                                    bufferResistance.push(displayResistance('Strike Resistance', row['Strike Resistance']));
-                                                }
-                                                if (row['Ranged Resistance']) {
-                                                    bufferResistance.push(displayResistance('Ranged Resistance', row['Ranged Resistance']));
-                                                }
-                                                if (row['Tech Resistance']) {
-                                                    bufferResistance.push(displayResistance('Tech Resistance', row['Tech Resistance']));
-                                                }
-                                                if (row['Fire Resistance']) {
-                                                    bufferResistance.push(displayResistance('Fire Resistance', row['Fire Resistance']));
-                                                }
-                                                if (row['Ice Resistance']) {
-                                                    bufferResistance.push(displayResistance('Ice Resistance', row['Ice Resistance']));
-                                                }
-                                                if (row['Lightning Resistance']) {
-                                                    bufferResistance.push(displayResistance('Lightning Resistance', row['Lightning Resistance']));
-                                                }
-                                                if (row['Wind Resistance']) {
-                                                    bufferResistance.push(displayResistance('Wind Resistance', row['Wind Resistance']));
-                                                }
-                                                if (row['Light Resistance']) {
-                                                    bufferResistance.push(displayResistance('Light Resistance', row['Light Resistance']));
-                                                }
-                                                if (row['Dark Resistance']) {
-                                                    bufferResistance.push(displayResistance('Dark Resistance', row['Dark Resistance']));
-                                                }
-                                                if (index === 14) {
-                                                    if (bufferResistance[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><SimpleGrid key={uuidv4()} cols={3} spacing="xs" verticalSpacing={0}>{bufferResistance}</SimpleGrid></Flex></Table.Td>
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                }
-                                                else return
-                                            case 'Abilities':
-                                            case 'SAF':
-                                                if (row['SAF']) {
-                                                    bufferProperties.push(displayAbilities(row['SAF']))
-                                                }
-                                                if (row['Abilities']) {
-                                                    bufferProperties.push(displayAbilities(row['Abilities']))
-                                                }
-                                                if (index === 23) {
-                                                    if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
-                                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                                } else {
-                                                    return;
-                                                }
-                                            case 'Set':
-                                                return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['Name (English)'])}</Table.Td>
-                                            default:
-                                                if (row[key]) return <Table.Td key={uuidv4()} className="centerCell">{row[key]}</Table.Td>
-                                                else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
-                                        }
-                                    }
-                                })}
-                            </Table.Tr>;
+                        case "Global": iconLabel = iconLabelGlobal; break;
+                        case "JP": iconLabel = iconLabelJP; break;
+                        default: iconLabel = iconLabelEnglish; break;
                     }
+                    return <Table.Tr key={uuidv4()}>
+                        {row["Name (English)"] && type !== 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
+                        {row["Name (English)"] && type === 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
+                        {theadData.map((key: string, index: any) => {
+                            let itemName: any
+                            switch (language.language) {
+                                case "Global":
+                                    itemName = <Table.Td key={uuidv4()}>{row["Name (Global)"]}</Table.Td>; break;
+                                case "JP":
+                                    itemName = <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row["Name (JP)"].replace('リア／', '').replace('アーム／', '').replace('レッグ／', '').replace('サブ／', '').replace('a', '').replace('b', '').replace('c', '').replace('d', '').replace('e', '')}`}>{row["Name (JP)"]}</Link></Table.Td>
+                                    break;
+                                default:
+                                    itemName = <Table.Td key={uuidv4()}><Flex justify="center" direction="column" key={uuidv4()} gap={5}>{row['Name (English)']}<br key={uuidv4()} />{row['Name (JP)']}</Flex></Table.Td>
+                            }
+
+                            let bufferDEF: any[] = [];
+                            let bufferDEFMax: any[] = [];
+                            let bufferResistance: any[] = [];
+                            let bufferATK: any[] = [];
+                            let bufferProperties: any[] = [];
+                            switch (key) {
+                                case 'Name (JP)':
+                                    return itemName
+                                case 'Type':
+                                case 'Name (English)':
+                                case 'Name (Global)':
+                                case 'Default Sub Icon':
+                                case 'id':
+                                    return
+                                case 'Rarity':
+                                    return <Table.Td key={uuidv4()} className="centerCell"><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} title={`${row[key]} Star`} w={16} h={16} /></Flex></Table.Td>
+                                case 'Requirement':
+                                    return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayStat(row[key][0], row[key][1])}</Flex></Table.Td>
+                                case 'S-DEF':
+                                case 'R-DEF':
+                                case 'T-DEF':
+                                    if (row['S-DEF'] >= 0) {
+                                        bufferDEF.push(displayStat('S-DEF', row['S-DEF']));
+                                        bufferDEFMax.push(displayStat('S-DEF', calculateMaxDef(row['S-DEF'])));
+                                    }
+                                    if (row['R-DEF'] >= 0) {
+                                        bufferDEF.push(displayStat('R-DEF', row['R-DEF']));
+                                        bufferDEFMax.push(displayStat('R-DEF', calculateMaxDef(row['R-DEF'])));
+                                    }
+                                    if (row['T-DEF'] >= 0) {
+                                        bufferDEF.push(displayStat('T-DEF', row['T-DEF']));
+                                        bufferDEFMax.push(displayStat('T-DEF', calculateMaxDef(row['T-DEF'])));
+                                    }
+                                    if (index === 6) {
+                                        return (
+                                            <React.Fragment key={uuidv4()}>
+                                                <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferDEF}</Flex></Table.Td>
+                                                <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferDEFMax}</Flex></Table.Td>
+                                            </React.Fragment>
+                                        )
+                                    }
+                                case 'S-ATK':
+                                case 'R-ATK':
+                                case 'T-ATK':
+                                case 'DEX':
+                                    if (row['S-ATK']) {
+                                        bufferATK.push(displayStat('S-ATK', row['S-ATK']));
+                                    }
+                                    if (row['R-ATK']) {
+                                        bufferATK.push(displayStat('R-ATK', row['R-ATK']));
+                                    }
+                                    if (row['T-ATK']) {
+                                        bufferATK.push(displayStat('T-ATK', row['T-ATK']));
+                                    }
+                                    if (row['DEX']) {
+                                        bufferATK.push(displayStat('DEX', row['DEX']));
+                                    }
+                                    if (index === 11) {
+                                        if (bufferATK[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
+                                        else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                                    }
+                                case 'Strike Resistance':
+                                case 'Ranged Resistance':
+                                case 'Tech Resistance':
+                                case 'Fire Resistance':
+                                case 'Ice Resistance':
+                                case 'Lightning Resistance':
+                                case 'Wind Resistance':
+                                case 'Light Resistance':
+                                case 'Dark Resistance':
+                                    if (row['Strike Resistance']) {
+                                        bufferResistance.push(displayResistance('Strike Resistance', row['Strike Resistance']));
+                                    }
+                                    if (row['Ranged Resistance']) {
+                                        bufferResistance.push(displayResistance('Ranged Resistance', row['Ranged Resistance']));
+                                    }
+                                    if (row['Tech Resistance']) {
+                                        bufferResistance.push(displayResistance('Tech Resistance', row['Tech Resistance']));
+                                    }
+                                    if (row['Fire Resistance']) {
+                                        bufferResistance.push(displayResistance('Fire Resistance', row['Fire Resistance']));
+                                    }
+                                    if (row['Ice Resistance']) {
+                                        bufferResistance.push(displayResistance('Ice Resistance', row['Ice Resistance']));
+                                    }
+                                    if (row['Lightning Resistance']) {
+                                        bufferResistance.push(displayResistance('Lightning Resistance', row['Lightning Resistance']));
+                                    }
+                                    if (row['Wind Resistance']) {
+                                        bufferResistance.push(displayResistance('Wind Resistance', row['Wind Resistance']));
+                                    }
+                                    if (row['Light Resistance']) {
+                                        bufferResistance.push(displayResistance('Light Resistance', row['Light Resistance']));
+                                    }
+                                    if (row['Dark Resistance']) {
+                                        bufferResistance.push(displayResistance('Dark Resistance', row['Dark Resistance']));
+                                    }
+                                    if (index === 14) {
+                                        if (bufferResistance[0]) return <Table.Td key={uuidv4()}><Flex justify="center" align="center" key={uuidv4()} gap={5}><SimpleGrid key={uuidv4()} cols={3} spacing="xs" verticalSpacing={0}>{bufferResistance}</SimpleGrid></Flex></Table.Td>
+                                        else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                                    }
+                                    else return
+                                case 'Abilities':
+                                case 'SAF':
+                                    if (row['SAF']) {
+                                        bufferProperties.push(displayAbilities(row['SAF']))
+                                    }
+                                    if (row['Abilities']) {
+                                        bufferProperties.push(displayAbilities(row['Abilities']))
+                                    }
+                                    if (index === 23) {
+                                        if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
+                                        else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                                    } else {
+                                        return;
+                                    }
+                                case 'Set':
+                                    return <Table.Td key={uuidv4()} className="centerCell">{displaySet(row[key], row['Name (English)'])}</Table.Td>
+                                case 'Default Sub Icon':
+                                    return
+                                case 'id':
+                                    return
+                                default:
+                                    if (row[key]) return <Table.Td key={uuidv4()} className="centerCell">{row[key]}</Table.Td>
+                                    else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
+                            }
+                        })}
+                    </Table.Tr>
                 })}
             </Table.Tbody>}
         </Table>
