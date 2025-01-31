@@ -105,9 +105,9 @@ export default function WeaponTableComponent({ data, type }) {
     let tableHeader: string[]
     let filteredData: any
     switch (language.language) {
-        case "Global": tableHeader = headerGlobal; filteredData = tbodyData.filter((key:any) => key["Name (Global)"] !== null); break;
-        case "JP": tableHeader = headerJP; filteredData = tbodyData.filter((key:any) => key["Name (JP)"] !== null); break;
-        default: tableHeader = headerEnglish; filteredData = tbodyData.filter((key:any) => key["Name (JP)"] !== null);
+        case "Global": tableHeader = headerGlobal; filteredData = tbodyData.filter((key: any) => key["Name (Global)"] !== null); break;
+        case "JP": tableHeader = headerJP; filteredData = tbodyData.filter((key: any) => key["Name (JP)"] !== null); break;
+        default: tableHeader = headerEnglish; filteredData = tbodyData.filter((key: any) => key["Name (JP)"] !== null);
     }
 
     filteredData.map((item: any, id: number) => {
@@ -143,7 +143,7 @@ export default function WeaponTableComponent({ data, type }) {
                         default: iconLabel = iconLabelEnglish; break;
                     }
                     return <Table.Tr key={uuidv4()}>
-                        {row["Name (English)"] !== "Takt-NT" && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT','')}.png`} alt={iconLabel} w={64} h={64} /></Flex></Table.Td>}
+                        {row["Name (English)"] !== "Takt-NT" && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={iconLabel} w={64} h={64} /></Flex></Table.Td>}
                         {row["Name (English)"] === "Takt-NT" && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/takts/Takt-NT.png`} alt={iconLabel} w={64} h={64} /></Flex></Table.Td>}
                         {theadData.map((key: string, index: any) => {
                             let itemName: any
@@ -152,10 +152,19 @@ export default function WeaponTableComponent({ data, type }) {
                                 case "Global":
                                     itemName = <Table.Td key={uuidv4()}>{row["Name (Global)"]}</Table.Td>; break;
                                 case "JP":
-                                    if (row["Name (JP)"] !== null && row["Name (JP)"].includes("武装エクステンド")) {
+                                    if (row["Name (JP)"].includes("武装エクステンド")) {
                                         itemName = <Table.Td key={uuidv4()}>{row["Name (JP)"]}</Table.Td>
                                     } else {
-                                        if (row['Name (JP)'] === 'ネメシスバール-NT' || row['Name (JP)'] === 'スレイヴバール-NT' || row['Name (JP)'] === 'アーレスタクト-NT') {
+                                        const exceptionNames: string[] = [
+                                            "スレイヴバール-NT",
+                                            "アーレスタクト-NT",
+                                            "ゲインスクラッパー-NT",
+                                            "ハコベハヤセ-NT",
+                                            "ブレードスタビライザー-NT",
+                                            "ネメシスバール-NT",
+                                            "ブレードスタビライザー-NT"
+                                        ]
+                                        if (exceptionNames.includes(row['Name (JP)'])) {
                                             itemName = <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row["Name (JP)"]}`}>{row["Name (JP)"]}</Link></Table.Td>
                                         } else {
                                             itemName = <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row["Name (JP)"].replace('-NT', '')}`}>{row["Name (JP)"]}</Link></Table.Td>
