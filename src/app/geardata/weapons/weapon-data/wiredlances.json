@@ -2509,7 +2509,8 @@
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Hu"],
-        "SSA Slots": null
+        "SSA Slots": null,
+        "Set":"Astra"
     },
     {
         "Name (JP)": "ゼイネシスランス",

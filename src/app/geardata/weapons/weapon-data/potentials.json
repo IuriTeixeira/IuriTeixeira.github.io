@@ -2014,6 +2014,10 @@
         "Effect (English)": "Increases Critical Hit Rate by 25% while Elemental Stance is active."
     },
     {
+        "Name (English)": "Immediate Breathing",
+        "Effect (English)": "Increases Damage of Just Attacks by 16% during Rapid Boost."
+    },
+    {
         "Name (English)": "Type of Thunder",
         "Effect (English)": "Increases damage by 10% when the Gear gauge is Level 2 or higher and increases pp recovery from attacks by 20%."
     },
