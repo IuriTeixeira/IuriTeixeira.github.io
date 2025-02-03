@@ -544,7 +544,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Red Sword-NT",
+        "Name (English)": "Red Sword/Global",
         "Name (Global)": "Red Sword",
         "Rarity": 7,
         "Requirement":["S-ATK",597],
@@ -711,7 +711,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)":"Lambda Aristin-NT",
+        "Name (English)":"Lambda Aristin/Global",
         "Name (Global)": "Lambda Aristene",
         "Rarity": 8,
         "Requirement":["DEX",345],
@@ -1884,7 +1884,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)":"Sigma Zeredder-NT",
+        "Name (English)":"Sigma Zeredder/Global",
         "Name (Global)": "Sigma Zeredder",
         "Rarity": 12,
         "Requirement":["DEX",440],
@@ -3120,7 +3120,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)":"Sakuou-NT",
+        "Name (English)":"Sakuou/Global",
         "Name (Global)": "Blossom of the New Moon",
         "Rarity": 14,
         "Requirement":["S-ATK",810],

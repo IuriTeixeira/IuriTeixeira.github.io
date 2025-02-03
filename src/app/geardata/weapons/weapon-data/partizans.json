@@ -575,7 +575,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Red Partizan-NT",
+        "Name (English)": "Red Partizan/Global",
         "Name (Global)": "Red Partisan",
         "Rarity": 7,
         "Requirement": ["S-ATK",597],
@@ -773,7 +773,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Lambda Patty Lumeria-NT",
+        "Name (English)": "Lambda Patty Lumeria/Global",
         "Name (Global)": "Lambda Patilmeria",
         "Rarity": 8,
         "Requirement": ["DEX",345],
@@ -1942,7 +1942,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Sigma Xialo-NT",
+        "Name (English)": "Sigma Xialo/Global",
         "Name (Global)": "Sigma Xiaolo",
         "Rarity": 12,
         "Requirement": ["DEX",440],
@@ -3273,7 +3273,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Haru Hirame-NT",
+        "Name (English)": "Haru Hirame/Global",
         "Name (Global)": "Flash of Spring",
         "Rarity": 14,
         "Requirement": ["S-ATK",810],

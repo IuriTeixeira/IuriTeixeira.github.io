@@ -343,7 +343,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Red Jet Boots-NT",
+        "Name (English)": "Red Jet Boots/Global",
         "Name (Global)": "Red Jet Boots",
         "Rarity": 7,
         "Requirement":["T-ATK",597],
@@ -541,7 +541,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Lambda Arestice-NT",
+        "Name (English)": "Lambda Arestice/Global",
         "Name (Global)": "Lambda Arestice",
         "Rarity": 8,
         "Requirement":["DEX",345],
@@ -1386,7 +1386,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Sigma Thulen-NT",
+        "Name (English)": "Sigma Thulen/Global",
         "Name (Global)": "Sigma Thullen",
         "Rarity": 12,
         "Requirement":["DEX",440],
@@ -2933,7 +2933,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Ruka Kazehana-NT",
+        "Name (English)": "Ruka Kazehana/Global",
         "Name (Global)": "Flowery Breeze",
         "Rarity": 14,
         "Requirement":["DEX",500],

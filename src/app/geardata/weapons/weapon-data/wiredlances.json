@@ -520,7 +520,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Red Wired Lance-NT",
+        "Name (English)": "Red Wired Lance/Global",
         "Name (Global)": "Red Wired Lance",
         "Rarity": 7,
         "Requirement": ["S-ATK",597],
@@ -699,7 +699,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Lambda Hyperion-NT",
+        "Name (English)": "Lambda Hyperion/Global",
         "Name (Global)": "Lambda Hyperion",
         "Rarity": 8,
         "Requirement": ["DEX",345],
@@ -1878,7 +1878,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Sigma Gaira-NT",
+        "Name (English)": "Sigma Gaira/Global",
         "Name (Global)": "Sigma Gyler",
         "Rarity": 12,
         "Requirement": ["DEX",440],
@@ -3178,7 +3178,7 @@
     },
     {
         "Name (JP)": null,
-        "Name (English)": "Kaze Kasumi-NT",
+        "Name (English)": "Kaze Kasumi/Global",
         "Name (Global)": "Miasma Wind",
         "Rarity": 14,
         "Requirement": ["S-ATK",810],

@@ -143,7 +143,7 @@ export default function WeaponTableComponent({ data, type }) {
                         default: iconLabel = iconLabelEnglish; break;
                     }
                     return <Table.Tr key={uuidv4()}>
-                        {row["Name (English)"] !== "Takt-NT" && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={iconLabel} w={64} h={64} /></Flex></Table.Td>}
+                        {row["Name (English)"] !== "Takt-NT" && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('/Global', '').replace('/', '')}.png`} alt={iconLabel} w={64} h={64} /></Flex></Table.Td>}
                         {row["Name (English)"] === "Takt-NT" && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/takts/Takt-NT.png`} alt={iconLabel} w={64} h={64} /></Flex></Table.Td>}
                         {theadData.map((key: string, index: any) => {
                             let itemName: any
@@ -162,7 +162,8 @@ export default function WeaponTableComponent({ data, type }) {
                                             "ハコベハヤセ-NT",
                                             "ブレードスタビライザー-NT",
                                             "ネメシスバール-NT",
-                                            "ブレードスタビライザー-NT"
+                                            "ブレードスタビライザー-NT",
+                                            "カドルフ-NT"
                                         ]
                                         if (exceptionNames.includes(row['Name (JP)'])) {
                                             itemName = <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row["Name (JP)"]}`}>{row["Name (JP)"]}</Link></Table.Td>
