@@ -17,10 +17,12 @@ export default function displayAbilities(abilities: any[]): any {
                 case 'Rare Drop Rate':
                 case 'Experience Earned':
                 case 'Experience Earned until Lv30':
+                case 'Weapon EXP when grinding':
                 case '出現するメセタが増加':
                 case '取得する経験値が増加':
                 case 'レアドロップ倍率が増加':
                 case 'Lv30に到達するまで取得する経験値が増加する':
+                case '新世武器強化時の経験値が増加する':
                     abIcon = null;
                     break;
                 default:
@@ -138,7 +140,11 @@ export default function displayAbilities(abilities: any[]): any {
                         }
                 }
             } else {
-                abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}>{effect[index]}+{effect[index + 1]}%</Flex>)
+                if(effect[index] === 'Weapon EXP when grinding' || effect[index] === '新世武器強化時の経験値が増加する'){
+                    abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}>{effect[index]}+{effect[index + 1]}</Flex>)
+                }else{
+                    abEffect.push(<Flex align="center" justify="center" key={uuidv4()} gap={3}>{effect[index]}+{effect[index + 1]}%</Flex>)
+                }
             }
         } else {
             if (isNaN(Number(effect[index]))) {

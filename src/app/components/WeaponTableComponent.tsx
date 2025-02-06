@@ -163,7 +163,9 @@ export default function WeaponTableComponent({ data, type }) {
                                             "ブレードスタビライザー-NT",
                                             "ネメシスバール-NT",
                                             "ブレードスタビライザー-NT",
-                                            "カドルフ-NT"
+                                            "カドルフ-NT",
+                                            "EXPウェポン-NT",
+                                            "EXPウェポン2-NT"
                                         ]
                                         if (exceptionNames.includes(row['Name (JP)'])) {
                                             itemName = <Table.Td key={uuidv4()}><Link href={`https://pso2.swiki.jp/index.php?${row["Name (JP)"]}`}>{row["Name (JP)"]}</Link></Table.Td>

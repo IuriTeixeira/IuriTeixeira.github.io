@@ -1723,7 +1723,7 @@
         "Potential": null,
         "Element": null,
         "PA_enabled":null,
-        "Classes": ["Bo"],
+        "Classes": ["Te","Et"],
         "SSA Slots": null
     },
     {
@@ -2714,7 +2714,7 @@
         "PA_enabled": null,
         "Classes": ["Te", "Et"],
         "SSA Slots": null,
-        "Set": "Yes"
+        "Set": null
     },
     {
         "Name (JP)": "ユニオンウォンド",
@@ -2745,7 +2745,7 @@
         "T-ATK": 1077,
         "SAF": "Phrase Weak",
         "Abilities": null,
-        "Potential": null,
+        "Potential": ["Element Tracking - Fire/Lightning"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Te", "Et"],
@@ -3051,7 +3051,7 @@
         "T-ATK": 1125,
         "SAF": "Sentence Magia",
         "Abilities": null,
-        "Potential": null,
+        "Potential": ["Deathblow Fury - Advance Attack"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Te", "Et"],
@@ -3288,7 +3288,7 @@
         "Potential": null,
         "Element": null,
         "PA_enabled": null,
-        "Classes": ["Bo"],
+        "Classes": ["Te","Et"],
         "SSA Slots": null
     },
     {
@@ -3626,7 +3626,7 @@
         "T-ATK": 1424,
         "SAF": "Phrase Weak",
         "Abilities": null,
-        "Potential": null,
+        "Potential": ["Element Tracking - Fire/Lightning"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["All"],

@@ -112,6 +112,14 @@
         "Effect (Global)": "Increases the effect of Spring Traps by 26%."
     },
     {
+        "Name (JP)": "巧罠師",
+        "Name (English)": "Trap Expert",
+        "Name (Global)": "Trap Expert",
+        "Effect (JP)": "トラップ使用時のリキャストを軽減する。(30%)",
+        "Effect (English)": "Reduces the recast time of Traps by 30%.",
+        "Effect (Global)": "Reduces the recast time of Traps by 30%."
+    },
+    {
         "Name (JP)": "魔弾襲撃",
         "Name (English)": "Phantom Bullet",
         "Name (Global)": "Phantom Bullet",
@@ -2564,7 +2572,7 @@
     },
     {
         "Name (JP)": "奏闇妖艶",
-        "Name (English)": "Bewitching Performance",
+        "Name (English)": "Darkness Allure",
         "Name (Global)": "Bewitching Darkness",
         "Effect (JP)": "ダークブラストゲージの上昇率・【若人】の変身時間を増加。\n(ゲージ上昇率20%・変身時間+7秒)",
         "Effect (English)": "Increases rate of Dark Blast Gauge accumulation by 20% and Dark Blast [Apprentice] transformation time by 7 seconds.",
