@@ -1905,8 +1905,12 @@
         "Effect (Global)": "Increases damage by 15% when HP is above 60%."
     },
     {
+        "Name (JP)": "殺心必撃",
         "Name (English)": "Murderous Assault",
-        "Effect (English)": "Increases Critical Hit damage by 10% and Damage to Weak Points by 6%."
+        "Name (Global)": "弱点へのダメージが6%、クリティカル時は更に10%上昇する。",
+        "Effect (JP)": "Increases Critical Hit damage by 10% and Damage to Weak Points by 6%.",
+        "Effect (English)": "When hitting an enemy weakspot, increases damage by 6% and Critical Hit damage by 10%.",
+        "Effect (Global)": "When hitting an enemy weakspot, increases damage by 6% and Critical Hit damage by 10%."
     },
     {
         "Name (English)": "Light Conversion",
@@ -2459,8 +2463,12 @@
         "Effect (English)": "Increases Natural PP Recovery by 10% and Active PP Recovery by 30%. Increases damage by 10% when PP is above 30%."
     },
     {
+        "Name (JP)": "殺心襲撃",
         "Name (English)": "Murderous Raid",
-        "Effect (English)": "Increases Critical Hit Rate by 5%, increases Critical Hit damage by 10%, and Damage on Weak Points by 6%."
+        "Name (Global)": "Homicidal Attack",
+        "Effect (JP)": "クリティカル率が5%、クリティカル威力が10%、弱点への威力が6%上昇。",
+        "Effect (English)": "Increases damage when hitting an enemy weakspot by 6%. Increases Critical Hit Rate by 5% and Critical Hit damage by 10%.",
+        "Effect (Global)": "Increases damage when hitting an enemy weakspot by 6%. Increases Critical Hit Rate by 5% and Critical Hit damage by 10%."
     },
     {
         "Name (English)": "Monsoon Machinegun",
@@ -2627,8 +2635,12 @@
         "Effect (Global)": "Generates a barrier that increases Natural PP Recovery by 30% and Active PP Recovery by 40%, and grants immunity to flinch/knockback. 20 seconds recast timer from generation. Effect is lost when damage is taken, or when changing to a different potential (except for Purifying Melody)."
     },
     {
+        "Name (JP)": "撃技昇攻",
         "Name (English)": "Advancing Strike",
-        "Effect (English)": "Increases the damage of Normal Attacks by 50%. Increases the damage of all other attacks by 6%."
+        "Name (Global)": "Impressive Assault",
+        "Effect (JP)": "通常攻撃の威力が50%、通常攻撃以外の威力が6%上昇。後継クラスは適用外",
+        "Effect (English)": "Increases the damage of Normal Attacks by 50%. Increases the damage of all other attacks by 6%. No effect on Successor Classes.",
+        "Effect (Global)": "Increases the damage of Normal Attacks by 50%. Increases the damage of all other attacks by 6%. No effect on Scion Classes."
     },
     {
         "Name (JP)": "千年の輝き",
@@ -2719,12 +2731,20 @@
         "Effect (English)": "Increases damage by 13%. Shorten the charge time of Support Techniques. The damage of Zondeel is reduced."
     },
     {
+        "Name (JP)": "旋風循環",
         "Name (English)": "Cyclic Cyclone",
-        "Effect (English)": "Increases damage by 9%. PP recovery changes when maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +100%, PP Consumption -30%)"
+        "Name (Global)": "Cyclone Circuit",
+        "Effect (JP)": "威力が9%上昇。PP50%を境にPPの消費量・回復速度が変化。\n(PP50%以下:PP自動回復量+100%・消費PP-30%)\n(PP50%以上:PP自動回復停止)",
+        "Effect (English)": "Increases damage by 9%. When PP is above 50%, disables Natural PP recovery. When PP is below 50%, increases Natural PP Recovery by 100%, and reduces PP consumption by 30%.",
+        "Effect (Global)": "Increases damage by 9%. When PP is above 50%, disables Natural PP recovery. When PP is below 50%, increases Natural PP Recovery by 100%, and reduces PP consumption by 30%."
     },
     {
+        "Name (JP)": "四刀妖鬼の閃",
         "Name (English)": "Demonic Flash",
-        "Effect (English)": "Increases damage by 17% when HP is below 25%."
+        "Name (Global)": "Light of the Demon Blade",
+        "Effect (JP)": "HPが1/4以下でダメージが17%上昇。",
+        "Effect (English)": "Increases damage by 17% when HP is below 25%.",
+        "Effect (Global)": "Increases damage by 17% when HP is below 25%."
     },
     {
         "Name (English)": "Consecutive Flash",
@@ -2895,8 +2915,12 @@
         "Effect (English)": "Increases damage by 8%. Stop Natural PP Regeneration, but restore PP (+100) upon successfully evading an attack with Sway or Step. (Active PP Recovery +50%)"
     },
     {
+        "Name (JP)": "天の加護",
         "Name (English)": "Divine Protection",
-        "Effect (English)": "Increases damage by 7%. Unleash a follow-up attack that damages surroundings after performing an attack."
+        "Name (Global)": "Divine Protection",
+        "Effect (JP)": "威力7%上昇。攻撃後、一定時間経過で周囲にダメージを与える。",
+        "Effect (English)": "Increases damage by 7%. Unleashes a follow-up attack that damages surroundings after performing an attack.",
+        "Effect (Global)": "Increases damage by 7%. Unleashes a follow-up attack that damages surroundings after performing an attack."
     },
     {
         "Name (JP)": "鳳の慧眼",
@@ -3146,7 +3170,7 @@
         "Name (JP)": "閃影の鎚撃",
         "Name (English)": "Luminecho Hammer",
         "Name (Global)": "Hammer Flash",
-        "Effect (JP)": "威力が10％増加。ギア最大状態でヘブンリーフォール命中時、ギアを全て消費し周囲に追撃を行う。",
+        "Effect (JP)": "威力が10%増加。ギア最大状態でヘブンリーフォール命中時、ギアを全て消費し周囲に追撃を行う。",
         "Effect (English)": "Increases damage by 10%. Using Heavenly Fall while Gear gauge is maxed will consume all Gear to increase damage by 5% and execute an additional attack that hits all nearby enemies.",
         "Effect (Global)": "Increases damage by 10%. Using Heavenly Drop while Focus gauge is maxed will consume all Focus to increase damage by 5% and execute an additional attack that hits all nearby enemies."
     },
@@ -3203,8 +3227,12 @@
         "Effect (Global)": "Increases damage by 10%. When PP is full, the next PA/Technique consumes all PP, and then activates the following effects: Increases damage by an additional 3%, reduces PP consumption of PAs and Techniques to 1, disables Natural and Active PP Recovery, and recovers 6 PP every 0.5 seconds. Effect ends when PP is full. 120 seconds recast time from activation."
     },
     {
+        "Name (JP)": "死中発揚",
         "Name (English)": "Fatal Exhilaration",
-        "Effect (English)": "Increases damage by 15%. Increases Natural PP Recovery by 15% in exchange for receiving 5% HP in damage every 10s. Natural PP Recovery increases to +70% if 200 HP in damage is taken via this Potential's effect."
+        "Name (Global)": "Exalted in Death",
+        "Effect (JP)": "威力が15%上昇。PP自然回復量が上昇。一定間隔でダメージを負い一定量を負うと更にPP自然回復量が上昇。",
+        "Effect (English)": "Increases damage by 15%. Increases Natural PP Recovery by 15%, but loses 5% HP every 10 seconds. Natural PP Recovery increases to +70% after losing more than 200 HP from this Potential's effect. Improved effect ends when a different Potential is equipped.",
+        "Effect (Global)": "Increases damage by 15%. Increases Natural PP Recovery by 15%, but loses 5% HP every 10 seconds. Natural PP Recovery increases to +70% after losing more than 200 HP from this Potential's effect. Improved effect ends when a different Potential is equipped."
     },
     {
         "Name (JP)": "縛魂の斬閃",
@@ -3235,8 +3263,12 @@
         "Effect (English)": "Increases damage by 8%. Reduces damage taken by 20% and gain knockback resistance."
     },
     {
+        "Name (JP)": "風切の羽",
         "Name (English)": "Feathered Flight",
-        "Effect (English)": "Increases damage by 10%. Add additional Ranged hits to Normal Attacks upon blocking an attack with Twin Daggers Spin."
+        "Name (Global)": "Slicing Wings",
+        "Effect (JP)": "威力が10%上昇。スピンでのガード成功後通常攻撃に遠距離攻撃が数回(24発)分追加される。",
+        "Effect (English)": "Increases damage by 10%. The next 24 Normal Attacks after a successful Just Guard with Twin Daggers Spin will throw a long range projectile.",
+        "Effect (Global)": "Increases damage by 10%. The next 24 Normal Attacks after a successful Perfect Guard with Twin Daggers Spin will throw a long range projectile."
     },
     {
         "Name (English)": "Miracle Confluence",
@@ -3290,7 +3322,7 @@
         "Name (JP)": "紅緋の夕映",
         "Name (English)": "Crimson Evening",
         "Name (Global)": "Blood Red Sunset",
-        "Effect (JP)": "威力が6％上昇。1秒ごとにPPを2回復。",
+        "Effect (JP)": "威力が6%上昇。1秒ごとにPPを2回復。",
         "Effect (English)": "Increases damage by 6%. Recovers 2 PP per second.",
         "Effect (Global)": "Increases damage by 6%. Recovers 2 PP per second."
     },
@@ -3303,8 +3335,12 @@
         "Effect (English)": "Increases attack speed over time. Taking 10% of HP in damage or more resets the attack speed increases."
     },
     {
+        "Name (JP)": "白虎の掟",
         "Name (English)": "Byakko Accordant",
-        "Effect (English)": "Reduces Normal Attack damage. Normal Attacks Fire Chase Arrows at targets. As PP decreases, the damage of Normal Attacks and Chase Arrows Fired by this Potential's effect increases."
+        "Name (Global)": "Byakko's Decree",
+        "Effect (JP)": "通常攻撃の威力が低下。代わりに通常攻撃時ターゲットへ追撃発生。PP減少時、追撃と通常攻撃の威力が上昇。",
+        "Effect (English)": "Increases damage by 10%. Reduces damage of Normal Attacks. Normal Attacks fire Chase Arrows at targets. Increases damage of Normal Attacks and Chase Arrows fired by this Potential's effect as PP decreases.",
+        "Effect (Global)": "Increases damage by 10%. Reduces damage of Normal Attacks. Normal Attacks fire Chase Arrows at targets. Increases damage of Normal Attacks and Chase Arrows fired by this Potential's effect as PP decreases."
     },
     {
         "Name (JP)": "聖夜の奇跡",
@@ -3402,7 +3438,7 @@
         "Name (JP)": "質実なる勇",
         "Name (English)": "Effortless Mettle",
         "Name (Global)": "Sincere Courage",
-        "Effect (JP)": "被ダメ毎に威力低下、時間経過で回復。威力が16％時、頑強と被ダメ40％軽減。",
+        "Effect (JP)": "被ダメ毎に威力低下、時間経過で回復。威力が16%時、頑強と被ダメ40%軽減。",
         "Effect (English)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: reduces damage taken by 40% and grants immunity to flinch and knockback. Damage does not change when a different potential is equipped.",
         "Effect (Global)": "Increases damage by 0.4% per second, up to 16% total. Damage increase is reduced by 3% whenever damage is taken. When damage increase is maxed, activates the following effects: reduces damage taken by 40% and grants immunity to flinch and knockback. Damage does not change when a different potential is equipped."
     },
@@ -3442,7 +3478,7 @@
         "Name (JP)": "堅実なる奏",
         "Name (English)": "Steadfast Solo",
         "Name (Global)": "Steadfast Solo",
-        "Effect (JP)": "威力が10%上昇。被ダメごとに威力低下、時間経過で回復。威力が10％時、10秒ごとにペットHPを10％回復。",
+        "Effect (JP)": "威力が10%上昇。被ダメごとに威力低下、時間経過で回復。威力が10%時、10秒ごとにペットHPを10%回復。",
         "Effect (English)": "Increases damage by 6%, and an additonal +0.4% per second, up to 10% total. Damage increase is reduced by 1% whenever damage is taken (including Alter Ego). When damage increase is maxed, Pet regenerates 10% HP every 10 seconds.",
         "Effect (Global)": "Increases damage by 6%, and an additonal +0.4% per second, up to 10% total. Damage increase is reduced by 1% whenever damage is taken (including Alter Ego). When damage increase is maxed, Pet regenerates 10% HP every 10 seconds."
     },
@@ -3900,13 +3936,17 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "煌炎貫撃",
         "Name (English)": "Sparking Offensive",
-        "Effect (English)": "Increases damage by 24% and recovers HP when attacking if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Fire.",
+        "Name (Global)": "Sparking Offensive",
+        "Effect (JP)": "弱点属性が炎・武器属性のいずれかと一致時、威力(24%)上昇しHP回復。\n(与ダメの1%回復。1ヒットの回復上限50)",
+        "Effect (English)": "When hitting an enemy weak to Fire or the weapon's element, increases damage by 24% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
+        "Effect (Global)": "When hitting an enemy weak to Fire or the weapon's element, increases damage by 24% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
         "Special": "Weaponoid"
     },
     {
         "Name (English)": "Innocent Wings",
-        "Effect (English)": "Increases damage by 24% and recovers HP when attacking if the weapon element matches the enemy elemental weakness or if the enemy elemental weakness is Wind.",
+        "Effect (English)": "When hitting an enemy weak to Wind or the weapon's element, increases damage by 24% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately.",
         "Special": "Weaponoid"
     },
     {
@@ -3975,8 +4015,12 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "黒衣の花嫁",
         "Name (English)": "Glooming Bride",
-        "Effect (English)": "Increases damage by up to 25% over time.",
+        "Name (Global)": "Glooming Bride",
+        "Effect (JP)": "時間経過で最大25%威力上昇。",
+        "Effect (English)": "Increases damage over time, up to 25%. Effect ends and timer is reset if a different Potential is equipped, or if changing areas in a Quest.",
+        "Effect (Global)": "Increases damage over time, up to 25%. Effect ends and timer is reset if a different Potential is equipped, or if changing areas in a Quest.",
         "Special": "Weaponoid"
     },
     {
@@ -4227,8 +4271,12 @@
         "Special": "Ultimate"
     },
     {
+        "Name (JP)": "旋風循環・改",
         "Name (English)": "Cyclic Cyclone Plus",
-        "Effect (English)": "Increases damage by 20%. PP recovery changes when maximum PP falls below 50%. (PP > 50%: Stop Natural PP Regen, PP < 50%: PP Regen +100%, PP Consumption -30%)",
+        "Name (Global)": "Cyclone Circuit Redux",
+        "Effect (JP)": "威力が20%上昇。PP50%を境にPPの消費量・回復速度が変化。\n(PP50%以下:PP自動回復量+100%・消費PP-30%)\n(PP50%以上:PP自動回復停止)",
+        "Effect (English)": "Increases damage by 20%. When PP is above 50%, disables Natural PP recovery. When PP is below 50%, increases Natural PP Recovery by 100%, and reduces PP consumption by 30%.",
+        "Effect (Global)": "Increases damage by 20%. When PP is above 50%, disables Natural PP recovery. When PP is below 50%, increases Natural PP Recovery by 100%, and reduces PP consumption by 30%.",
         "Special": "Ultimate"
     },
     {
