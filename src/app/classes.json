@@ -1,0 +1,16 @@
+[
+    {
+        "Name (JP)": "ハンター",
+        "Name (English)": "Hunter",
+        "Name (Global)": "Hunter",
+        "HP":    1.18,
+        "PP":    1.00,
+        "S-ATK": 1.07,
+        "R-ATK": 1.00,
+        "T-ATK": 0.83,
+        "DEX":   1.00,
+        "S-DEF": 1.29,
+        "R-DEF": 1.00,
+        "T-DEF": 1.00
+    }
+]
