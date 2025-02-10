@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { Image, Button, Flex, Table, InputBase, Combobox, useCombobox, Checkbox, Group } from "@mantine/core";
+import { Image, Button, Flex, Table, InputBase, Combobox, useCombobox, Checkbox, Group, Tooltip } from "@mantine/core";
 import { useLanguageContext } from "./language-provider";
 import { v4 as uuidv4 } from 'uuid';
 import displayResistance from './components/displayResistance';
@@ -14,47 +14,38 @@ export default function Home() {
     const [race, setRace] = useState<string>('Human Male')
     const [magType, setMagType] = useState<string>('S-ATK')
     const [mainClass, setMainClass] = useState<string>('Hunter')
-    const [subClass, setSubClass] = useState<string>(null)
+    const [subClass, setSubClass] = useState<string>('None')
     const [weapon, setWeapon] = useState<string>('Lightweaver Cras Edge')
     const [rear, setRear] = useState<string>('Rear / Cras Dyne')
     const [arm, setArm] = useState<string>('Rear / Cras Noom')
     const [leg, setLeg] = useState<string>('Rear / Cras Ment')
-    const [baseHp, setBaseHp] = useState<number>(650)
     const [bonusHp, setBonusHp] = useState<number>(0)
-    const [totalHp, setTotalHp] = useState<number>(650)
-    const [basePp, setBasePp] = useState<number>(110)
+    const [totalHp, setTotalHp] = useState<number>(0)
     const [bonusPp, setBonusPp] = useState<number>(0)
-    const [totalPp, setTotalPp] = useState<number>(110)
-    const [baseSAtk, setBaseSAtk] = useState<number>(540)
+    const [totalPp, setTotalPp] = useState<number>(0)
     const [bonusSAtk, setBonusSAtk] = useState<number>(0)
-    const [totalSAtk, setTotalSAtk] = useState<number>(540)
-    const [baseRAtk, setBaseRAtk] = useState<number>(540)
+    const [totalSAtk, setTotalSAtk] = useState<number>(0)
     const [bonusRAtk, setBonusRAtk] = useState<number>(0)
     const [totalRAtk, setTotalRAtk] = useState<number>(540)
-    const [baseTAtk, setBaseTAtk] = useState<number>(540)
     const [bonusTAtk, setBonusTAtk] = useState<number>(0)
-    const [totalTAtk, setTotalTAtk] = useState<number>(540)
-    const [baseDex, setBaseDex] = useState<number>(415)
+    const [totalTAtk, setTotalTAtk] = useState<number>(0)
     const [bonusDex, setBonusDex] = useState<number>(0)
-    const [totalDex, setTotalDex] = useState<number>(415)
-    const [baseSDef, setBaseSDef] = useState<number>(450)
+    const [totalDex, setTotalDex] = useState<number>(0)
     const [bonusSDef, setBonusSDef] = useState<number>(0)
-    const [totalSDef, setTotalSDef] = useState<number>(450)
-    const [baseRDef, setBaseRDef] = useState<number>(450)
+    const [totalSDef, setTotalSDef] = useState<number>(0)
     const [bonusRDef, setBonusRDef] = useState<number>(0)
-    const [totalRDef, setTotalRDef] = useState<number>(450)
-    const [baseTDef, setBaseTDef] = useState<number>(450)
+    const [totalRDef, setTotalRDef] = useState<number>(0)
     const [bonusTDef, setBonusTDef] = useState<number>(0)
-    const [totalTDef, setTotalTDef] = useState<number>(450)
-    const [classBoosts, setClassBoosts] = useState<string[]>([])//<boolean[]>([false,false,false,false,false,false,false,false,false,false,false,false])
+    const [totalTDef, setTotalTDef] = useState<number>(0)
+    const [classBoosts, setClassBoosts] = useState<string[]>(['Hunter', 'Ranger', 'Force', 'Fighter', 'Gunner', 'Techer', 'Braver', 'Bouncer', 'Summoner'])
 
     let raceData: any = raceStats.find(selectedRace => selectedRace[`Name (English)`] === race)
     let mainClassData: any = classStats.find(selectedClass => selectedClass[`Name (English)`] === mainClass)
     let subClassData: any = classStats.find(selectedClass => selectedClass[`Name (English)`] === subClass)
-    const raceList: string[] = ['Human Male', 'Human Female', 'Newman Male', 'Newman Female', 'CAST Male', 'Cast Female', 'Dewman Male', 'Dewman Female']
+    const raceList: string[] = ['Human Male', 'Human Female', 'Newman Male', 'Newman Female', 'CAST Male', 'CAST Female', 'Dewman Male', 'Dewman Female']
     const magTypeList: string[] = ['S-ATK', 'R-ATK', 'T-ATK', 'DEX', 'S-DEF', 'R-DEF', 'T-DEF']
-    const mainClassList: string[] = ['Hunter', 'Ranger', 'Force', 'Fighter', 'Gunner', 'Techer', 'Summoner', 'Hero', 'Phantom', 'Etoile', 'Luster']
-    const subClassList: string[] = [null, 'Hunter', 'Ranger', 'Force', 'Fighter', 'Gunner', 'Techer', 'Summoner', 'Phantom', 'Etoile', 'Luster']
+    const mainClassList: string[] = ['Hunter', 'Ranger', 'Force', 'Fighter', 'Gunner', 'Techer', 'Braver', 'Bouncer', 'Summoner', 'Hero', 'Phantom', 'Etoile', 'Luster']
+    const subClassList: string[] = ['None', 'Hunter', 'Ranger', 'Force', 'Fighter', 'Gunner', 'Techer', 'Braver', 'Bouncer', 'Summoner', 'Phantom', 'Etoile', 'Luster']
     const successorClassList: string[] = ['Hero', 'Phantom', 'Etoile', 'Luster']
 
     const raceCombobox = useCombobox({
@@ -85,32 +76,57 @@ export default function Home() {
             {item}
         </Combobox.Option>
     ));
-    const subClassOptions = subClassList.map((item) => (
-        <Combobox.Option value={item} key={uuidv4()}>
-            {item}
-        </Combobox.Option>
-    ));
+    const [subClassOptions, setSubClassOptions] = useState(
+        subClassList.map((item) => (
+            <Combobox.Option value={item} key={uuidv4()}>{item}</Combobox.Option>
+        )));
 
-    function updateRace(value:string){
+    function updateRace(value: string) {
         setRace(value)
         raceData = raceStats.find(selectedRace => selectedRace[`Name (English)`] === value)
-        updateStats(classBoosts,magType)
+        updateStats(classBoosts, magType)
     }
 
-    function updateClass(main:string, sub:string){
-        setMainClass(main)
-        setSubClass(sub)
-        mainClassData = classStats.find(selectedClass => selectedClass[`Name (English)`] === main)
-        if(sub) subClassData = classStats.find(selectedClass => selectedClass[`Name (English)`] === sub)
-        updateStats(classBoosts,magType)
+    function updateClass(main: string, sub: string) {
+        if (sub === 'None') {
+            setSubClassOptions(subClassList.filter((item) => (!item.includes(main))).map((item) => (
+                <Combobox.Option value={item} key={uuidv4()}>{item}</Combobox.Option>
+            )))
+        }else{
+            setSubClassOptions(subClassList.map((item) => (
+                <Combobox.Option value={item} key={uuidv4()}>{item}</Combobox.Option>
+            )))
+        }
+        if (main === sub) {
+            main = subClass
+            sub = mainClass
+            mainClassData = classStats.find(selectedClass => selectedClass[`Name (English)`] === subClass)
+            subClassData = classStats.find(selectedClass => selectedClass[`Name (English)`] === mainClass)
+            setMainClass(main)
+            setSubClass(sub)
+        } else {
+            if (successorClassList.includes(main)) {
+                sub = 'None'
+                setSubClass(sub)
+                subClassData = null
+            }
+            mainClassData = classStats.find(selectedClass => selectedClass[`Name (English)`] === main)
+            setSubClass(sub)
+            if (sub !== 'None') {
+                subClassData = classStats.find(selectedClass => selectedClass[`Name (English)`] === sub)
+            } else {
+                subClassData = null
+            }
+        }
+        updateStats(classBoosts, magType)
     }
 
-    function updateMag(type:string){
+    function updateMag(type: string) {
         setMagType(type)
-        updateStats(classBoosts,type)
+        updateStats(classBoosts, type)
     }
 
-    function updateStats(value: string[], mag:string) {
+    function updateStats(value: string[], mag: string) {
         setClassBoosts(value)
         //0 = HP
         //1 = PP
@@ -141,7 +157,7 @@ export default function Home() {
         if (value.includes('Fighter')) {
             bonusBaseStats[1] += 2
             bonusBaseStats[2] += 50
-            bonusBaseStats[4] += 5
+            bonusBaseStats[4] += 15
             bonusBaseStats[8] += 10
         }
         if (value.includes('Gunner')) {
@@ -175,45 +191,74 @@ export default function Home() {
             bonusBaseStats[8] += 40
         }
 
-        let totalBaseHp:number
-        let totalBasePp:number
-        let totalBaseSAtk:number
-        let totalBaseRAtk:number
-        let totalBaseTAtk:number
-        let totalBaseDex:number
-        let totalBaseSDef:number
-        let totalBaseRDef:number
-        let totalBaseTDef:number
+        let totalBaseHp: number
+        let totalBasePp: number
+        let totalBaseSAtk: number
+        let totalBaseRAtk: number
+        let totalBaseTAtk: number
+        let totalBaseDex: number
+        let totalBaseSDef: number
+        let totalBaseRDef: number
+        let totalBaseTDef: number
         if (subClassData) {
-            totalBaseHp = ((baseHp + bonusBaseStats[0]) * raceData["HP"] * mainClassData["HP"] + ((baseHp + bonusBaseStats[0]) * (subClassData["HP"] * 0.2)))
-            totalBasePp = ((basePp + bonusBaseStats[1]) * raceData["PP"] * mainClassData["PP"] + ((basePp + bonusBaseStats[1]) * (subClassData["PP"] * 0.2)))
-            totalBaseSAtk = ((baseSAtk + bonusBaseStats[2]) * raceData["S-ATK"] * mainClassData["S-ATK"] + ((baseSAtk + bonusBaseStats[2]) * (subClassData["S-ATK"] * 0.2)))
-            totalBaseRAtk = ((baseRAtk + bonusBaseStats[3]) * raceData["R-ATK"] * mainClassData["R-ATK"] + ((baseRAtk + bonusBaseStats[3]) * (subClassData["R-ATK"] * 0.2)))
-            totalBaseTAtk = ((baseTAtk + bonusBaseStats[4]) * raceData["T-ATK"] * mainClassData["T-ATK"] + ((baseTAtk + bonusBaseStats[4]) * (subClassData["T-ATK"] * 0.2)))
-            totalBaseDex = ((baseDex + bonusBaseStats[5]) * raceData["DEX"] * mainClassData["DEX"] + ((baseDex + bonusBaseStats[5]) * (subClassData["DEX"] * 0.2)))
-            totalBaseSDef = ((baseSDef + bonusBaseStats[6]) * raceData["S-DEF"] * mainClassData["S-DEF"] + ((baseSDef + bonusBaseStats[6]) * (subClassData["S-DEF"] * 0.2)))
-            totalBaseRDef = ((baseRDef + bonusBaseStats[7]) * raceData["R-DEF"] * mainClassData["R-DEF"] + ((baseRDef + bonusBaseStats[7]) * (subClassData["R-DEF"] * 0.2)))
-            totalBaseTDef = ((baseTDef + bonusBaseStats[8]) * raceData["T-DEF"] * mainClassData["T-DEF"] + ((baseTDef + bonusBaseStats[8]) * (subClassData["T-DEF"] * 0.2)))
+            totalBaseHp = ((mainClassData["HP"] * raceData["HP"]) + (subClassData["HP"] * 0.2) + bonusBaseStats[0])
+            totalBasePp = ((mainClassData["PP"] * raceData["PP"]) + (subClassData["PP"] * 0.2) + bonusBaseStats[1])
+            totalBaseSAtk = ((mainClassData["S-ATK"] * raceData["S-ATK"]) + (subClassData["S-ATK"] * 0.2) + bonusBaseStats[2])
+            totalBaseRAtk = ((mainClassData["R-ATK"] * raceData["R-ATK"]) + (subClassData["R-ATK"] * 0.2) + bonusBaseStats[3])
+            totalBaseTAtk = ((mainClassData["T-ATK"] * raceData["T-ATK"]) + (subClassData["T-ATK"] * 0.2) + bonusBaseStats[4])
+            totalBaseDex = ((mainClassData["DEX"] * raceData["DEX"]) + (subClassData["DEX"] * 0.2) + bonusBaseStats[5])
+            totalBaseSDef = ((mainClassData["S-DEF"] * raceData["S-DEF"]) + (subClassData["S-DEF"] * 0.2) + bonusBaseStats[6])
+            totalBaseRDef = ((mainClassData["R-DEF"] * raceData["R-DEF"]) + (subClassData["R-DEF"] * 0.2) + bonusBaseStats[7])
+            totalBaseTDef = ((mainClassData["T-DEF"] * raceData["T-DEF"]) + (subClassData["T-DEF"] * 0.2) + bonusBaseStats[8])
         } else {
-            totalBaseHp = ((baseHp + bonusBaseStats[0]) * raceData["HP"] * mainClassData["HP"])
-            totalBasePp = ((basePp + bonusBaseStats[1]) * raceData["PP"] * mainClassData["PP"])
-            totalBaseSAtk = ((baseSAtk + bonusBaseStats[2]) * raceData["S-ATK"] * mainClassData["S-ATK"])
-            totalBaseRAtk = ((baseRAtk + bonusBaseStats[3]) * raceData["R-ATK"] * mainClassData["R-ATK"])
-            totalBaseTAtk = ((baseTAtk + bonusBaseStats[4]) * raceData["T-ATK"] * mainClassData["T-ATK"])
-            totalBaseDex = ((baseDex + bonusBaseStats[5]) * raceData["DEX"] * mainClassData["DEX"])
-            totalBaseSDef = ((baseSDef + bonusBaseStats[6]) * raceData["S-DEF"] * mainClassData["S-DEF"])
-            totalBaseRDef = ((baseRDef + bonusBaseStats[7]) * raceData["R-DEF"] * mainClassData["R-DEF"])
-            totalBaseTDef = ((baseTDef + bonusBaseStats[8]) * raceData["T-DEF"] * mainClassData["T-DEF"])
+            totalBaseHp = ((mainClassData["HP"] * raceData["HP"]) + bonusBaseStats[0])
+            totalBasePp = ((mainClassData["PP"] * raceData["PP"]) + bonusBaseStats[1])
+            totalBaseSAtk = ((mainClassData["S-ATK"] * raceData["S-ATK"]) + bonusBaseStats[2])
+            totalBaseRAtk = ((mainClassData["R-ATK"] * raceData["R-ATK"]) + bonusBaseStats[3])
+            totalBaseTAtk = ((mainClassData["T-ATK"] * raceData["T-ATK"]) + bonusBaseStats[4])
+            totalBaseDex = ((mainClassData["DEX"] * raceData["DEX"]) + bonusBaseStats[5])
+            totalBaseSDef = ((mainClassData["S-DEF"] * raceData["S-DEF"]) + bonusBaseStats[6])
+            totalBaseRDef = ((mainClassData["R-DEF"] * raceData["R-DEF"]) + bonusBaseStats[7])
+            totalBaseTDef = ((mainClassData["T-DEF"] * raceData["T-DEF"]) + bonusBaseStats[8])
         }
         switch (mag) {
             case 'S-ATK':
-                totalBaseSAtk += 200; break;
+                totalBaseSAtk += 200;
+                if (mainClass === 'Hero' || mainClass === 'Etoile' || mainClass === 'Luster' || subClass === 'Etoile' || subClass === 'Luster') {
+                    totalBaseRAtk += 200;
+                    totalBaseTAtk += 200;
+                }
+                break;
             case 'R-ATK':
-                totalBaseRAtk += 200; break;
+                totalBaseRAtk += 200;
+                if (mainClass === 'Hero' || mainClass === 'Etoile' || mainClass === 'Luster' || subClass === 'Etoile' || subClass === 'Luster') {
+                    totalBaseSAtk += 200;
+                    totalBaseTAtk += 200;
+                }
+                break;
             case 'T-ATK':
-                totalBaseTAtk += 200; break;
+                totalBaseTAtk += 200;
+                if (mainClass === 'Hero' || mainClass === 'Etoile' || mainClass === 'Luster' || subClass === 'Etoile' || subClass === 'Luster') {
+                    totalBaseSAtk += 200;
+                    totalBaseRAtk += 200;
+                }
+                break;
             case 'DEX':
-                totalBaseDex += 200; break;
+                totalBaseDex += 200;
+                if (mainClass === 'Phantom' || subClass === 'Phantom') {
+                    totalBaseSAtk += 200;
+                    totalBaseRAtk += 200;
+                    totalBaseTAtk += 200;
+                }
+                if (mainClass === 'Braver' || subClass === 'Braver') {
+                    totalBaseSAtk += 200;
+                    totalBaseRAtk += 200;
+                }
+                if (mainClass === 'Bouncer' || subClass === 'Bouncer') {
+                    totalBaseSAtk += 200;
+                    totalBaseTAtk += 200;
+                }
+                break;
             case 'S-DEF':
                 totalBaseSDef += 200; break;
             case 'R-DEF':
@@ -231,10 +276,11 @@ export default function Home() {
         setTotalSDef(totalBaseSDef + bonusSDef)
         setTotalRDef(totalBaseRDef + bonusRDef)
         setTotalTDef(totalBaseTDef + bonusTDef)
-}
+    }
 
     useEffect(() => {
-        updateStats([],magType);
+        updateClass('Hunter','None');
+        updateStats(classBoosts, magType);
     }, []);
 
     switch (language.language) {
@@ -278,7 +324,7 @@ export default function Home() {
                                 <Table.Th>Main Class</Table.Th>
                                 <Table.Td>
                                     <Combobox store={mainClassCombobox} onOptionSubmit={(val) => {
-                                        updateClass(val,subClass)
+                                        updateClass(val, subClass)
                                         mainClassCombobox.closeDropdown();
                                     }}>
                                         <Combobox.Target>
@@ -304,8 +350,8 @@ export default function Home() {
                                 <Table.Td>
                                     {!successorClassList.includes(mainClass) &&
                                         <Combobox store={subClassCombobox} onOptionSubmit={(val) => {
-                                            updateClass(mainClass,val)
-                                            updateStats(classBoosts,magType)
+                                            updateClass(mainClass, val)
+                                            updateStats(classBoosts, magType)
                                             subClassCombobox.closeDropdown();
                                         }}>
                                             <Combobox.Target>
@@ -360,24 +406,26 @@ export default function Home() {
                     <Table withColumnBorders w='70%' align='center'>
                         <Table.Thead>
                             <Table.Tr>
-                                <Table.Th><Flex justify='center'>CLASS BONUSES</Flex></Table.Th>
+                                <Table.Th>
+                                    <Flex justify='center'>CLASS BOOSTS</Flex>
+                                </Table.Th>
                             </Table.Tr>
                         </Table.Thead>
                         <Table.Tbody>
                             <Table.Tr>
                                 <Table.Td>
                                     <Flex justify='center'>
-                                        <Checkbox.Group value={classBoosts} onChange={(val) => updateStats(val,magType)}>
+                                        <Checkbox.Group description="Classes with the Lv75 stat boost title acquired" value={classBoosts} onChange={(val) => updateStats(val, magType)}>
                                             <Group mt="xs">
-                                                <Checkbox value="Hunter" label="Hunter" />
-                                                <Checkbox value="Ranger" label="Ranger" />
-                                                <Checkbox value="Force" label="Force" />
-                                                <Checkbox value="Fighter" label="Fighter" />
-                                                <Checkbox value="Gunner" label="Gunner" />
-                                                <Checkbox value="Techer" label="Techer" />
-                                                <Checkbox value="Braver" label="Braver" />
-                                                <Checkbox value="Bouncer" label="Bouncer" />
-                                                <Checkbox value="Summoner" label="Summoner" />
+                                                <Checkbox value="Hunter" label="Hunter" checked />
+                                                <Checkbox value="Ranger" label="Ranger" checked />
+                                                <Checkbox value="Force" label="Force" checked />
+                                                <Checkbox value="Fighter" label="Fighter" checked />
+                                                <Checkbox value="Gunner" label="Gunner" checked />
+                                                <Checkbox value="Techer" label="Techer" checked />
+                                                <Checkbox value="Braver" label="Braver" checked />
+                                                <Checkbox value="Bouncer" label="Bouncer" checked />
+                                                <Checkbox value="Summoner" label="Summoner" checked />
                                             </Group>
                                         </Checkbox.Group>
                                     </Flex>
