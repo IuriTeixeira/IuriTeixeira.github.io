@@ -1,7 +1,7 @@
 'use client'
 
-import React, { useState } from 'react'
-import { Image, Button, Flex, Table, InputBase, Combobox, useCombobox, SimpleGrid } from "@mantine/core";
+import React, { useEffect, useState } from 'react'
+import { Image, Button, Flex, Table, InputBase, Combobox, useCombobox, Checkbox, Group } from "@mantine/core";
 import { useLanguageContext } from "./language-provider";
 import { v4 as uuidv4 } from 'uuid';
 import displayResistance from './components/displayResistance';
@@ -22,7 +22,9 @@ export default function Home() {
     const [baseHp, setBaseHp] = useState<number>(650)
     const [bonusHp, setBonusHp] = useState<number>(0)
     const [totalHp, setTotalHp] = useState<number>(650)
-    const [pp, setPp] = useState<number>(120)
+    const [basePp, setBasePp] = useState<number>(110)
+    const [bonusPp, setBonusPp] = useState<number>(0)
+    const [totalPp, setTotalPp] = useState<number>(110)
     const [baseSAtk, setBaseSAtk] = useState<number>(540)
     const [bonusSAtk, setBonusSAtk] = useState<number>(0)
     const [totalSAtk, setTotalSAtk] = useState<number>(540)
@@ -44,11 +46,13 @@ export default function Home() {
     const [baseTDef, setBaseTDef] = useState<number>(450)
     const [bonusTDef, setBonusTDef] = useState<number>(0)
     const [totalTDef, setTotalTDef] = useState<number>(450)
+    const [classBoosts, setClassBoosts] = useState<string[]>([])//<boolean[]>([false,false,false,false,false,false,false,false,false,false,false,false])
 
     let raceData: any = raceStats.find(selectedRace => selectedRace[`Name (English)`] === race)
     let mainClassData: any = classStats.find(selectedClass => selectedClass[`Name (English)`] === mainClass)
+    let subClassData: any = classStats.find(selectedClass => selectedClass[`Name (English)`] === subClass)
     const raceList: string[] = ['Human Male', 'Human Female', 'Newman Male', 'Newman Female', 'CAST Male', 'Cast Female', 'Dewman Male', 'Dewman Female']
-    const magTypeList: string[] = ['S-ATK', 'R-ATK', 'T-ATK', 'DEX']
+    const magTypeList: string[] = ['S-ATK', 'R-ATK', 'T-ATK', 'DEX', 'S-DEF', 'R-DEF', 'T-DEF']
     const mainClassList: string[] = ['Hunter', 'Ranger', 'Force', 'Fighter', 'Gunner', 'Techer', 'Summoner', 'Hero', 'Phantom', 'Etoile', 'Luster']
     const subClassList: string[] = [null, 'Hunter', 'Ranger', 'Force', 'Fighter', 'Gunner', 'Techer', 'Summoner', 'Phantom', 'Etoile', 'Luster']
     const successorClassList: string[] = ['Hero', 'Phantom', 'Etoile', 'Luster']
@@ -87,6 +91,152 @@ export default function Home() {
         </Combobox.Option>
     ));
 
+    function updateRace(value:string){
+        setRace(value)
+        raceData = raceStats.find(selectedRace => selectedRace[`Name (English)`] === value)
+        updateStats(classBoosts,magType)
+    }
+
+    function updateClass(main:string, sub:string){
+        setMainClass(main)
+        setSubClass(sub)
+        mainClassData = classStats.find(selectedClass => selectedClass[`Name (English)`] === main)
+        if(sub) subClassData = classStats.find(selectedClass => selectedClass[`Name (English)`] === sub)
+        updateStats(classBoosts,magType)
+    }
+
+    function updateMag(type:string){
+        setMagType(type)
+        updateStats(classBoosts,type)
+    }
+
+    function updateStats(value: string[], mag:string) {
+        setClassBoosts(value)
+        //0 = HP
+        //1 = PP
+        //2 = S-ATK
+        //3 = R-ATK
+        //4 = T-ATK
+        //5 = DEX
+        //6 = S-DEF
+        //7 = R-DEF
+        //8 = T-DEF
+        let bonusBaseStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+        if (value.includes('Hunter')) {
+            bonusBaseStats[0] += 50
+            bonusBaseStats[3] += 15
+            bonusBaseStats[6] += 40
+        }
+        if (value.includes('Ranger')) {
+            bonusBaseStats[3] += 20
+            bonusBaseStats[4] += 15
+            bonusBaseStats[7] += 40
+        }
+        if (value.includes('Force')) {
+            bonusBaseStats[3] += 15
+            bonusBaseStats[4] += 20
+            bonusBaseStats[8] += 40
+        }
+        if (value.includes('Fighter')) {
+            bonusBaseStats[1] += 2
+            bonusBaseStats[2] += 50
+            bonusBaseStats[4] += 5
+            bonusBaseStats[8] += 10
+        }
+        if (value.includes('Gunner')) {
+            bonusBaseStats[1] += 2
+            bonusBaseStats[2] += 15
+            bonusBaseStats[3] += 50
+            bonusBaseStats[6] += 10
+        }
+        if (value.includes('Techer')) {
+            bonusBaseStats[1] += 2
+            bonusBaseStats[2] += 15
+            bonusBaseStats[4] += 50
+            bonusBaseStats[7] += 10
+        }
+        if (value.includes('Braver')) {
+            bonusBaseStats[1] += 2
+            bonusBaseStats[2] += 20
+            bonusBaseStats[3] += 20
+            bonusBaseStats[5] += 30
+        }
+        if (value.includes('Bouncer')) {
+            bonusBaseStats[1] += 2
+            bonusBaseStats[2] += 20
+            bonusBaseStats[4] += 20
+            bonusBaseStats[5] += 30
+        }
+        if (value.includes('Summoner')) {
+            bonusBaseStats[0] += 10
+            bonusBaseStats[6] += 40
+            bonusBaseStats[7] += 40
+            bonusBaseStats[8] += 40
+        }
+
+        let totalBaseHp:number
+        let totalBasePp:number
+        let totalBaseSAtk:number
+        let totalBaseRAtk:number
+        let totalBaseTAtk:number
+        let totalBaseDex:number
+        let totalBaseSDef:number
+        let totalBaseRDef:number
+        let totalBaseTDef:number
+        if (subClassData) {
+            totalBaseHp = ((baseHp + bonusBaseStats[0]) * raceData["HP"] * mainClassData["HP"] + ((baseHp + bonusBaseStats[0]) * (subClassData["HP"] * 0.2)))
+            totalBasePp = ((basePp + bonusBaseStats[1]) * raceData["PP"] * mainClassData["PP"] + ((basePp + bonusBaseStats[1]) * (subClassData["PP"] * 0.2)))
+            totalBaseSAtk = ((baseSAtk + bonusBaseStats[2]) * raceData["S-ATK"] * mainClassData["S-ATK"] + ((baseSAtk + bonusBaseStats[2]) * (subClassData["S-ATK"] * 0.2)))
+            totalBaseRAtk = ((baseRAtk + bonusBaseStats[3]) * raceData["R-ATK"] * mainClassData["R-ATK"] + ((baseRAtk + bonusBaseStats[3]) * (subClassData["R-ATK"] * 0.2)))
+            totalBaseTAtk = ((baseTAtk + bonusBaseStats[4]) * raceData["T-ATK"] * mainClassData["T-ATK"] + ((baseTAtk + bonusBaseStats[4]) * (subClassData["T-ATK"] * 0.2)))
+            totalBaseDex = ((baseDex + bonusBaseStats[5]) * raceData["DEX"] * mainClassData["DEX"] + ((baseDex + bonusBaseStats[5]) * (subClassData["DEX"] * 0.2)))
+            totalBaseSDef = ((baseSDef + bonusBaseStats[6]) * raceData["S-DEF"] * mainClassData["S-DEF"] + ((baseSDef + bonusBaseStats[6]) * (subClassData["S-DEF"] * 0.2)))
+            totalBaseRDef = ((baseRDef + bonusBaseStats[7]) * raceData["R-DEF"] * mainClassData["R-DEF"] + ((baseRDef + bonusBaseStats[7]) * (subClassData["R-DEF"] * 0.2)))
+            totalBaseTDef = ((baseTDef + bonusBaseStats[8]) * raceData["T-DEF"] * mainClassData["T-DEF"] + ((baseTDef + bonusBaseStats[8]) * (subClassData["T-DEF"] * 0.2)))
+        } else {
+            totalBaseHp = ((baseHp + bonusBaseStats[0]) * raceData["HP"] * mainClassData["HP"])
+            totalBasePp = ((basePp + bonusBaseStats[1]) * raceData["PP"] * mainClassData["PP"])
+            totalBaseSAtk = ((baseSAtk + bonusBaseStats[2]) * raceData["S-ATK"] * mainClassData["S-ATK"])
+            totalBaseRAtk = ((baseRAtk + bonusBaseStats[3]) * raceData["R-ATK"] * mainClassData["R-ATK"])
+            totalBaseTAtk = ((baseTAtk + bonusBaseStats[4]) * raceData["T-ATK"] * mainClassData["T-ATK"])
+            totalBaseDex = ((baseDex + bonusBaseStats[5]) * raceData["DEX"] * mainClassData["DEX"])
+            totalBaseSDef = ((baseSDef + bonusBaseStats[6]) * raceData["S-DEF"] * mainClassData["S-DEF"])
+            totalBaseRDef = ((baseRDef + bonusBaseStats[7]) * raceData["R-DEF"] * mainClassData["R-DEF"])
+            totalBaseTDef = ((baseTDef + bonusBaseStats[8]) * raceData["T-DEF"] * mainClassData["T-DEF"])
+        }
+        switch (mag) {
+            case 'S-ATK':
+                totalBaseSAtk += 200; break;
+            case 'R-ATK':
+                totalBaseRAtk += 200; break;
+            case 'T-ATK':
+                totalBaseTAtk += 200; break;
+            case 'DEX':
+                totalBaseDex += 200; break;
+            case 'S-DEF':
+                totalBaseSDef += 200; break;
+            case 'R-DEF':
+                totalBaseRDef += 200; break;
+            case 'T-DEF':
+                totalBaseTDef += 200; break;
+        }
+
+        setTotalHp(totalBaseHp + bonusHp)
+        setTotalPp(totalBasePp + bonusPp)
+        setTotalSAtk(totalBaseSAtk + bonusSAtk)
+        setTotalRAtk(totalBaseRAtk + bonusRAtk)
+        setTotalTAtk(totalBaseTAtk + bonusTAtk)
+        setTotalDex(totalBaseDex + bonusDex)
+        setTotalSDef(totalBaseSDef + bonusSDef)
+        setTotalRDef(totalBaseRDef + bonusRDef)
+        setTotalTDef(totalBaseTDef + bonusTDef)
+}
+
+    useEffect(() => {
+        updateStats([],magType);
+    }, []);
+
     switch (language.language) {
         default:
             return (
@@ -103,8 +253,7 @@ export default function Home() {
                                 <Table.Th>Race</Table.Th>
                                 <Table.Td>
                                     <Combobox store={raceCombobox} onOptionSubmit={(val) => {
-                                        setRace(val);
-                                        setTotalHp(baseHp*raceData["HP"]*mainClassData["HP"])
+                                        updateRace(val)
                                         raceCombobox.closeDropdown();
                                     }}>
                                         <Combobox.Target>
@@ -129,7 +278,7 @@ export default function Home() {
                                 <Table.Th>Main Class</Table.Th>
                                 <Table.Td>
                                     <Combobox store={mainClassCombobox} onOptionSubmit={(val) => {
-                                        setMainClass(val);
+                                        updateClass(val,subClass)
                                         mainClassCombobox.closeDropdown();
                                     }}>
                                         <Combobox.Target>
@@ -155,7 +304,8 @@ export default function Home() {
                                 <Table.Td>
                                     {!successorClassList.includes(mainClass) &&
                                         <Combobox store={subClassCombobox} onOptionSubmit={(val) => {
-                                            setSubClass(val);
+                                            updateClass(mainClass,val)
+                                            updateStats(classBoosts,magType)
                                             subClassCombobox.closeDropdown();
                                         }}>
                                             <Combobox.Target>
@@ -182,7 +332,7 @@ export default function Home() {
                                 <Table.Th>MAG Type</Table.Th>
                                 <Table.Td>
                                     <Combobox store={magCombobox} onOptionSubmit={(val) => {
-                                        setMagType(val);
+                                        updateMag(val)
                                         magCombobox.closeDropdown();
                                     }}>
                                         <Combobox.Target>
@@ -210,7 +360,35 @@ export default function Home() {
                     <Table withColumnBorders w='70%' align='center'>
                         <Table.Thead>
                             <Table.Tr>
-                                <Table.Th colSpan={10}><Flex justify='center'>Gear</Flex></Table.Th>
+                                <Table.Th><Flex justify='center'>CLASS BONUSES</Flex></Table.Th>
+                            </Table.Tr>
+                        </Table.Thead>
+                        <Table.Tbody>
+                            <Table.Tr>
+                                <Table.Td>
+                                    <Flex justify='center'>
+                                        <Checkbox.Group value={classBoosts} onChange={(val) => updateStats(val,magType)}>
+                                            <Group mt="xs">
+                                                <Checkbox value="Hunter" label="Hunter" />
+                                                <Checkbox value="Ranger" label="Ranger" />
+                                                <Checkbox value="Force" label="Force" />
+                                                <Checkbox value="Fighter" label="Fighter" />
+                                                <Checkbox value="Gunner" label="Gunner" />
+                                                <Checkbox value="Techer" label="Techer" />
+                                                <Checkbox value="Braver" label="Braver" />
+                                                <Checkbox value="Bouncer" label="Bouncer" />
+                                                <Checkbox value="Summoner" label="Summoner" />
+                                            </Group>
+                                        </Checkbox.Group>
+                                    </Flex>
+                                </Table.Td>
+                            </Table.Tr>
+                        </Table.Tbody>
+                    </Table >
+                    <Table withColumnBorders w='70%' align='center'>
+                        <Table.Thead>
+                            <Table.Tr>
+                                <Table.Th colSpan={10}><Flex justify='center'>GEAR</Flex></Table.Th>
                             </Table.Tr>
                         </Table.Thead>
                         <Table.Tbody>
@@ -258,13 +436,8 @@ export default function Home() {
                             </Table.Tr>
                             <Table.Tr>
                                 <Table.Td><Flex justify="center" align="center" key={uuidv4()} gap={5}>{Math.floor(totalHp)}</Flex></Table.Td>
-                                <Table.Td><Flex justify="center" align="center" key={uuidv4()} gap={5}>{pp}</Flex></Table.Td>
-                                <Table.Td>
-                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>
-                                        {magType === 'DEX' && displayStat('DEX', Math.floor(totalDex) + 200)}
-                                        {magType !== 'DEX' && displayStat('DEX', Math.floor(totalDex))}
-                                    </Flex>
-                                </Table.Td>
+                                <Table.Td><Flex justify="center" align="center" key={uuidv4()} gap={5}>{Math.floor(totalPp)}</Flex></Table.Td>
+                                <Table.Td><Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('DEX', Math.floor(totalDex))}</Flex></Table.Td>
                             </Table.Tr>
                             <Table.Tr>
                                 <Table.Th><Flex justify="center" align="center" key={uuidv4()} gap={5}>ATK</Flex></Table.Th>
@@ -273,18 +446,9 @@ export default function Home() {
                             </Table.Tr>
                             <Table.Tr>
                                 <Table.Td>
-                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>
-                                        {magType === 'S-ATK' && displayStat('S-ATK', Math.floor(totalSAtk + 200))}
-                                        {magType !== 'S-ATK' && displayStat('S-ATK', Math.floor(totalSAtk))}
-                                    </Flex>
-                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>
-                                        {magType === 'R-ATK' && displayStat('R-ATK', Math.floor(totalRAtk + 200))}
-                                        {magType !== 'R-ATK' && displayStat('R-ATK', Math.floor(totalRAtk))}
-                                    </Flex>
-                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>
-                                        {magType === 'T-ATK' && displayStat('T-ATK', Math.floor(totalTAtk + 200))}
-                                        {magType !== 'T-ATK' && displayStat('T-ATK', Math.floor(totalTAtk))}
-                                    </Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('S-ATK', Math.floor(totalSAtk))}</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('R-ATK', Math.floor(totalRAtk))}</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('T-ATK', Math.floor(totalTAtk))}</Flex>
                                 </Table.Td>
                                 <Table.Td>
                                     <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('S-DEF', Math.floor(totalSDef))}</Flex>
@@ -302,19 +466,19 @@ export default function Home() {
                             </Table.Tr>
                             <Table.Tr>
                                 <Table.Td>
-                                        <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Strike Resistance', 10)}</Flex>
-                                        <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Ranged Resistance', 10)}</Flex>
-                                        <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Tech Resistance', 10)}</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Strike Resistance', 10)}</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Ranged Resistance', 10)}</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Tech Resistance', 10)}</Flex>
                                 </Table.Td>
                                 <Table.Td>
-                                        <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Fire Resistance', 10)}</Flex>
-                                        <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Ice Resistance', 10)}</Flex>
-                                        <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Lightning Resistance', 10)}</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Fire Resistance', 10)}</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Ice Resistance', 10)}</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Lightning Resistance', 10)}</Flex>
                                 </Table.Td>
                                 <Table.Td>
-                                        <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Wind Resistance', 10)}</Flex>
-                                        <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Light Resistance', 10)}</Flex>
-                                        <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Dark Resistance', 10)}</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Wind Resistance', 10)}</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Light Resistance', 10)}</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Dark Resistance', 10)}</Flex>
                                 </Table.Td>
                             </Table.Tr>
                         </Table.Tbody>
