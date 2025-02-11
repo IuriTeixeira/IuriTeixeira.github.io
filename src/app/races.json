@@ -43,8 +43,8 @@
     },
     {
         "Name (JP)": "ニューマン女",
-        "Name (English)": "Newman Male",
-        "Name (Global)": "Newman Male",
+        "Name (English)": "Newman Female",
+        "Name (Global)": "Newman Female",
         "HP":    0.96,
         "PP":    1.00,
         "S-ATK": 1.00,

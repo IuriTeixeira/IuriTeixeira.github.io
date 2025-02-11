@@ -315,5 +315,8 @@ export default function displayAbilities(abilities: any[]): any {
     } else {
         return '-'
     }
-    return <SimpleGrid key={uuidv4()} cols={2} spacing="md" verticalSpacing={0}>{buffer}</SimpleGrid>
+    if(buffer.length == 1)
+        return <Flex align="center" key={uuidv4()}>{buffer}</Flex>
+    else
+        return <SimpleGrid key={uuidv4()} cols={2} spacing="md" verticalSpacing={0}>{buffer}</SimpleGrid>
 }
