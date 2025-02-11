@@ -1,15 +1,16 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { Image, Button, Flex, Table, InputBase, Combobox, useCombobox, Checkbox, Group, Tooltip } from "@mantine/core";
+import { Image, Button, Flex, Table, InputBase, Checkbox, Group, Select } from "@mantine/core";
 import { useLanguageContext } from "./language-provider";
 import { v4 as uuidv4 } from 'uuid';
-import displayAbilities from './components/displayAbilities';
+import displayGearAbilities from './components/displayGearAbilities';
 import displayResistance from './components/displayResistance';
 import displayStat from './components/displayStat';
 import raceStats from './races.json'
 import classStats from './classes.json'
 import units from './geardata/units/unit-data/units.json'
+import displayClasses from './components/displayClasses';
 
 export default function Home() {
     const language = useLanguageContext()
@@ -48,7 +49,57 @@ export default function Home() {
     const [windRes, setWindRes] = useState<number>(0)
     const [lightRes, setLightRes] = useState<number>(0)
     const [darkRes, setDarkRes] = useState<number>(0)
-    const [classBoosts, setClassBoosts] = useState<string[]>(['Hunter', 'Ranger', 'Force', 'Fighter', 'Gunner', 'Techer', 'Braver', 'Bouncer', 'Summoner'])
+    const [classBoosts, setClassBoosts] = useState<string[]>([
+        'Hunter',
+        'Ranger',
+        'Force',
+        'Fighter',
+        'Gunner',
+        'Techer',
+        'Braver',
+        'Bouncer',
+        'Summoner'
+    ])
+    const [weaponAbilities, setWeaponAbilities] = useState<string[]>([
+        'S1:Augment Intent 2',
+        'S2:Skilled Intent 2',
+        'S3:Skilled Intent 2',
+        'S4:Raising Pursuit',
+        'S5:Thundering Pursuit',
+        'Astral Soul',
+        'Ether Factor',
+        'Phrase Decay'
+    ])
+    const [rearAbilities, setRearAbilities] = useState<string[]>([
+        'S6:Wise Skill',
+        'Ex-Ares Soul',
+        'Grace Stamina',
+        'Persona Reverie',
+        'Power V',
+        'Sentence Power',
+        'Lesser Stamina IV',
+        'ARKS Fever'
+    ])
+    const [armAbilities, setArmAbilities] = useState<string[]>([
+        'S7:S-ATK Up 2',
+        'Ex-Ares Soul',
+        'Grace Power',
+        'Persona Reverie',
+        'Mitra Glare',
+        'Power V',
+        'Sentence Power',
+        'ARKS Fever'
+    ])
+    const [legAbilities, setLegAbilities] = useState<string[]>([
+        'S8:Sky Dance\'s Boon',
+        'Ex-Ares Soul',
+        'Grace Power',
+        'Persona Reverie',
+        'Varuna Glare',
+        'Power V',
+        'Sentence Power',
+        'ARKS Fever'
+    ])
 
     let rearData: any = units.find(selectedUnit => selectedUnit["Name (English)"] === rear)
     let armData: any = units.find(selectedUnit => selectedUnit["Name (English)"] === arm)
@@ -63,38 +114,16 @@ export default function Home() {
     const subClassList: string[] = ['None', 'Hunter', 'Ranger', 'Force', 'Fighter', 'Gunner', 'Techer', 'Braver', 'Bouncer', 'Summoner', 'Phantom', 'Etoile', 'Luster']
     const successorClassList: string[] = ['Hero', 'Phantom', 'Etoile', 'Luster']
 
-    const raceCombobox = useCombobox({
-        onDropdownClose: () => raceCombobox.resetSelectedOption(),
-    });
-    const magCombobox = useCombobox({
-        onDropdownClose: () => magCombobox.resetSelectedOption(),
-    });
-    const mainClassCombobox = useCombobox({
-        onDropdownClose: () => mainClassCombobox.resetSelectedOption(),
-    });
-    const subClassCombobox = useCombobox({
-        onDropdownClose: () => subClassCombobox.resetSelectedOption(),
-    });
-
-    const raceOptions = raceList.map((item) => (
-        <Combobox.Option value={item} key={uuidv4()}>
-            {item}
-        </Combobox.Option>
-    ));
-    const magTypeOptions = magTypeList.map((item) => (
-        <Combobox.Option value={item} key={uuidv4()}>
-            {item}
-        </Combobox.Option>
-    ));
-    const mainClassOptions = mainClassList.map((item) => (
-        <Combobox.Option value={item} key={uuidv4()}>
-            {item}
-        </Combobox.Option>
-    ));
-    const [subClassOptions, setSubClassOptions] = useState(
-        subClassList.map((item) => (
-            <Combobox.Option value={item} key={uuidv4()}>{item}</Combobox.Option>
-        )));
+    const raceOptions = raceList.map((item) => ({
+        value: item,
+        label: item,
+    }));
+    const magTypeOptions = magTypeList.map((item) => ({
+        value: item,
+        label: item,
+    }));
+    const mainClassOptions = mainClassList.map((item) => (item));
+    const [subClassOptions, setSubClassOptions] = useState(subClassList.map((item) => (item)))
 
     function updateRace(value: string) {
         setRace(value)
@@ -104,21 +133,15 @@ export default function Home() {
 
     function updateClass(main: string, sub: string) {
         if (sub === 'None') {
-            setSubClassOptions(subClassList.filter((item) => (!item.includes(main))).map((item) => (
-                <Combobox.Option value={item} key={uuidv4()}>{item}</Combobox.Option>
-            )))
+            setSubClassOptions(subClassList.filter((item) => (!item.includes(main))).map((item) => (item)))
         } else {
-            setSubClassOptions(subClassList.map((item) => (
-                <Combobox.Option value={item} key={uuidv4()}>{item}</Combobox.Option>
-            )))
+            setSubClassOptions(subClassList.map((item) => (item)))
         }
         if (main === sub) {
             main = subClass
             sub = mainClass
             mainClassData = classStats.find(selectedClass => selectedClass[`Name (English)`] === subClass)
             subClassData = classStats.find(selectedClass => selectedClass[`Name (English)`] === mainClass)
-            setMainClass(main)
-            setSubClass(sub)
         } else {
             if (successorClassList.includes(main)) {
                 sub = 'None'
@@ -133,6 +156,8 @@ export default function Home() {
                 subClassData = null
             }
         }
+        setMainClass(main)
+        setSubClass(sub)
         updateStats(classBoosts, magType)
     }
 
@@ -324,15 +349,15 @@ export default function Home() {
         setBonusRDef(totalBonusRDef)
         setBonusTDef(totalBonusTDef)
 
-        setStrikeRes(1 - (1 - (rearData["Strike Resistance"] || 0) / 100) * (1 - (armData["Strike Resistance"] || 0) / 100) * (1 - (legData["Strike Resistance"] || 0) / 100))
-        setRangedRes(1 - (1 - (rearData["Ranged Resistance"] || 0) / 100) * (1 - (armData["Ranged Resistance"] || 0) / 100) * (1 - (legData["Ranged Resistance"] || 0) / 100))
-        setTechRes(1 - (1 - (rearData["Tech Resistance"] || 0) / 100) * (1 - (armData["Tech Resistance"] || 0) / 100) * (1 - (legData["Tech Resistance"] || 0) / 100))
-        setFireRes(1 - (1 - (rearData["Fire Resistance"] || 0) / 100) * (1 - (armData["Fire Resistance"] || 0) / 100) * (1 - (legData["Fire Resistance"] || 0) / 100))
-        setIceRes(1 - (1 - (rearData["Ice Resistance"] || 0) / 100) * (1 - (armData["Ice Resistance"] || 0) / 100) * (1 - (legData["Ice Resistance"] || 0) / 100))
-        setLightningRes(1 - (1 - (rearData["Lightning Resistance"] || 0) / 100) * (1 - (armData["Lightning Resistance"] || 0) / 100) * (1 - (legData["Lightning Resistance"] || 0) / 100))
-        setWindRes(1 - (1 - (rearData["Wind Resistance"] || 0) / 100) * (1 - (armData["Wind Resistance"] || 0) / 100) * (1 - (legData["Wind Resistance"] || 0) / 100))
-        setLightRes(1 - (1 - (rearData["Light Resistance"] || 0) / 100) * (1 - (armData["Light Resistance"] || 0) / 100) * (1 - (legData["Light Resistance"] || 0) / 100))
-        setDarkRes(1 - (1 - (rearData["Dark Resistance"] || 0) / 100) * (1 - (armData["Dark Resistance"] || 0) / 100) * (1 - (legData["Dark Resistance"] || 0) / 100))
+        setStrikeRes(((rearData["Strike Resistance"] || 0) + (armData["Strike Resistance"] || 0) + (legData["Strike Resistance"] || 0)) / 100)
+        setRangedRes(((rearData["Ranged Resistance"] || 0) + (armData["Ranged Resistance"] || 0) + (legData["Ranged Resistance"] || 0)) / 100)
+        setTechRes(((rearData["Tech Resistance"] || 0) + (armData["Tech Resistance"] || 0) + (legData["Tech Resistance"] || 0)) / 100)
+        setFireRes(((rearData["Fire Resistance"] || 0) + (armData["Fire Resistance"] || 0) + (legData["Fire Resistance"] || 0)) / 100)
+        setIceRes(((rearData["Ice Resistance"] || 0) + (armData["Ice Resistance"] || 0) + (legData["Ice Resistance"] || 0)) / 100)
+        setLightningRes(((rearData["Lightning Resistance"] || 0) + (armData["Lightning Resistance"] || 0) + (legData["Lightning Resistance"] || 0)) / 100)
+        setWindRes(((rearData["Wind Resistance"] || 0) + (armData["Wind Resistance"] || 0) + (legData["Wind Resistance"] || 0)) / 100)
+        setLightRes(((rearData["Light Resistance"] || 0) + (armData["Light Resistance"] || 0) + (legData["Light Resistance"] || 0)) / 100)
+        setDarkRes(((rearData["Dark Resistance"] || 0) + (armData["Dark Resistance"] || 0) + (legData["Dark Resistance"] || 0)) / 100)
     }
 
     useEffect(() => {
@@ -358,107 +383,38 @@ export default function Home() {
                             <Table.Tr>
                                 <Table.Th>Race</Table.Th>
                                 <Table.Td>
-                                    <Combobox store={raceCombobox} onOptionSubmit={(val) => {
-                                        updateRace(val)
-                                        raceCombobox.closeDropdown();
-                                    }}>
-                                        <Combobox.Target>
-                                            <InputBase
-                                                component="button"
-                                                type="button"
-                                                pointer
-                                                rightSection={<Combobox.Chevron />}
-                                                rightSectionPointerEvents="none"
-                                                onClick={() => raceCombobox.toggleDropdown()}
-                                            >
-                                                {race}
-                                            </InputBase>
-                                        </Combobox.Target>
-                                        <Combobox.Dropdown>
-                                            <Combobox.Options>
-                                                {raceOptions}
-                                            </Combobox.Options>
-                                        </Combobox.Dropdown>
-                                    </Combobox>
+                                    <Select
+                                        data={raceOptions}
+                                        value={race}
+                                        onChange={updateRace}
+                                    />
                                 </Table.Td>
                                 <Table.Th>Main Class</Table.Th>
                                 <Table.Td>
-                                    <Combobox store={mainClassCombobox} onOptionSubmit={(val) => {
-                                        updateClass(val, subClass)
-                                        mainClassCombobox.closeDropdown();
-                                    }}>
-                                        <Combobox.Target>
-                                            <InputBase
-                                                component="button"
-                                                type="button"
-                                                pointer
-                                                rightSection={<Combobox.Chevron />}
-                                                rightSectionPointerEvents="none"
-                                                onClick={() => mainClassCombobox.toggleDropdown()}
-                                            >
-                                                {mainClass}
-                                            </InputBase>
-                                        </Combobox.Target>
-                                        <Combobox.Dropdown>
-                                            <Combobox.Options>
-                                                {mainClassOptions}
-                                            </Combobox.Options>
-                                        </Combobox.Dropdown>
-                                    </Combobox>
+                                    <Select
+                                        data={mainClassOptions}
+                                        value={mainClass}
+                                        onChange={(value) => updateClass(value, subClass)}
+                                    />
                                 </Table.Td>
                                 <Table.Th>Sub Class</Table.Th>
                                 <Table.Td>
                                     {!successorClassList.includes(mainClass) &&
-                                        <Combobox store={subClassCombobox} onOptionSubmit={(val) => {
-                                            updateClass(mainClass, val)
-                                            updateStats(classBoosts, magType)
-                                            subClassCombobox.closeDropdown();
-                                        }}>
-                                            <Combobox.Target>
-                                                <InputBase
-                                                    component="button"
-                                                    type="button"
-                                                    pointer
-                                                    rightSection={<Combobox.Chevron />}
-                                                    rightSectionPointerEvents="none"
-                                                    onClick={() => subClassCombobox.toggleDropdown()}
-                                                >
-                                                    {subClass}
-                                                </InputBase>
-                                            </Combobox.Target>
-                                            <Combobox.Dropdown>
-                                                <Combobox.Options>
-                                                    {subClassOptions}
-                                                </Combobox.Options>
-                                            </Combobox.Dropdown>
-                                        </Combobox>
+                                        <Select
+                                            data={subClassOptions}
+                                            value={subClass}
+                                            onChange={(value) => { updateClass(mainClass, value) }}
+                                        />
                                     }
                                     {successorClassList.includes(mainClass) && <Flex justify='center'>Not available for Successor Class</Flex>}
                                 </Table.Td>
                                 <Table.Th>MAG Type</Table.Th>
                                 <Table.Td>
-                                    <Combobox store={magCombobox} onOptionSubmit={(val) => {
-                                        updateMag(val)
-                                        magCombobox.closeDropdown();
-                                    }}>
-                                        <Combobox.Target>
-                                            <InputBase
-                                                component="button"
-                                                type="button"
-                                                pointer
-                                                rightSection={<Combobox.Chevron />}
-                                                rightSectionPointerEvents="none"
-                                                onClick={() => magCombobox.toggleDropdown()}
-                                            >
-                                                {magType}
-                                            </InputBase>
-                                        </Combobox.Target>
-                                        <Combobox.Dropdown>
-                                            <Combobox.Options>
-                                                {magTypeOptions}
-                                            </Combobox.Options>
-                                        </Combobox.Dropdown>
-                                    </Combobox>
+                                    <Select
+                                        data={magTypeOptions}
+                                        value={magType}
+                                        onChange={(value) => updateMag(value)}
+                                    />
                                 </Table.Td>
                             </Table.Tr>
                         </Table.Tbody>
@@ -493,221 +449,6 @@ export default function Home() {
                             </Table.Tr>
                         </Table.Tbody>
                     </Table >
-                    <Table withColumnBorders w='90%' align='center'>
-                        <Table.Thead>
-                            <Table.Tr>
-                                <Table.Th colSpan={10}><Flex justify='center'>GEAR</Flex></Table.Th>
-                            </Table.Tr>
-                        </Table.Thead>
-                        <Table.Tbody>
-                            <Table.Tr>
-                                <Table.Th w='25%' colSpan={2}><Flex justify='center'>Weapon</Flex></Table.Th>
-                                <Table.Th w='25%' colSpan={2}><Flex justify='center'>Rear</Flex></Table.Th>
-                                <Table.Th w='25%' colSpan={2}><Flex justify='center'>Arm</Flex></Table.Th>
-                                <Table.Th w='25%' colSpan={2}><Flex justify='center'>Leg</Flex></Table.Th>
-                            </Table.Tr>
-                            <Table.Tr>
-                                <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/dualblades/${weapon.replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
-                                <Table.Td w='25%'>
-                                    <Flex justify='center' align='center' direction='column'>
-                                        <strong>{weapon}</strong>
-                                        <Table>
-                                            <Table.Thead>
-                                                <Table.Tr>
-                                                    <Table.Th colSpan={2}>
-                                                        <Flex justify='center' align='center'>Special Abilities</Flex>
-                                                    </Table.Th>
-                                                </Table.Tr>
-                                            </Table.Thead>
-                                            <Table.Tbody>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['S1:Augment Intent 2'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 1</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['S2:Skilled Intent 2'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 2</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['S3:Skilled Intent 2'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 3</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['S4:Raising Pursuit'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 4</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['S5:Thundering Pursuit'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 5</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['Astral Soul'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 6</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['Ether Factor'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 7</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['Phrase Decay'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 8</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                            </Table.Tbody>
-                                        </Table>
-                                        <br />
-                                        <Button size="compact-sm">Choose Weapon</Button>
-                                    </Flex>
-                                </Table.Td>
-                                <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/rear/${rear.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
-                                <Table.Td w='25%'>
-                                    <Flex justify='center' direction='column'>
-                                        <strong>{rear}</strong>
-                                        <Table>
-                                            <Table.Thead>
-                                                <Table.Tr>
-                                                    <Table.Th colSpan={2}>
-                                                        <Flex justify='center' align='center'>Special Abilities</Flex>
-                                                    </Table.Th>
-                                                </Table.Tr>
-                                            </Table.Thead>
-                                            <Table.Tbody>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['S6:Wise Skill'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 1</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['Ex-Ares Soul'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 2</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['Grace Stamina'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 3</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['Persona Reverie'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 4</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['Power V'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 5</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['Sentence Power'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 6</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['Lesser Stamina IV'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 7</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                                <Table.Tr>
-                                                    <Table.Td w='66%'>
-                                                        {displayAbilities(['ARKS Fever'])}
-                                                    </Table.Td>
-                                                    <Table.Td w='66%'>
-                                                        <Button size="compact-xs">Choose Slot 8</Button>
-                                                    </Table.Td>
-                                                </Table.Tr>
-                                            </Table.Tbody>
-                                        </Table>
-                                        <br />
-                                        <Button size="compact-sm">Choose Rear Unit</Button></Flex></Table.Td>
-                                <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/arm/${arm.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
-                                {/* S7: S-ATK Up 2
-                                Ex Ares Soul
-                                Grace Power
-                                Persona Reverie
-                                Mitra Glare
-                                Power V
-                                Sentence Power
-                                ARKS Fever */}
-                                <Table.Td w='25%'><Flex justify='center' direction='column'>{arm}<Button>Choose Arm Unit</Button></Flex></Table.Td>
-                                <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/leg/${leg.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
-                                {/* S8:Sky Dance's Boon
-                                Ex Ares Soul
-                                Grace Power
-                                Persona Reverie
-                                Varuna Glare
-                                Power V
-                                Sentence Power
-                                ARKS Fever */}
-                                <Table.Td w='25%'><Flex justify='center' direction='column'>{leg}<Button>Choose Leg Unit</Button></Flex></Table.Td>
-                                {/* L / Easy Connect +20
-                                R / C Strike Striking +20 */}
-                            </Table.Tr>
-                        </Table.Tbody>
-                    </Table >
-                    <Table withColumnBorders w='90%' align='center'>
-                        <Table.Thead>
-                            <Table.Tr>
-                                <Table.Th><Flex justify='center'>SKILLS</Flex></Table.Th>
-                            </Table.Tr>
-                        </Table.Thead>
-                        <Table.Tbody>
-                            <Table.Tr>
-                                <Table.Td><Flex justify='center'><Button>Set Skills</Button></Flex></Table.Td>
-                            </Table.Tr>
-                        </Table.Tbody>
-                    </Table>
                     <Table withColumnBorders w='90%' align='center'>
                         <Table.Thead>
                             <Table.Tr>
@@ -769,6 +510,89 @@ export default function Home() {
                             </Table.Tr>
                         </Table.Tbody>
                     </Table >
+                    <Table withColumnBorders w='90%' align='center'>
+                        <Table.Thead>
+                            <Table.Tr>
+                                <Table.Th colSpan={10}><Flex justify='center'>GEAR</Flex></Table.Th>
+                            </Table.Tr>
+                        </Table.Thead>
+                        <Table.Tbody>
+                            <Table.Tr>
+                                <Table.Th w='25%' colSpan={2}><Flex justify='center'>Weapon</Flex></Table.Th>
+                                <Table.Th w='25%' colSpan={2}><Flex justify='center'>Rear</Flex></Table.Th>
+                                <Table.Th w='25%' colSpan={2}><Flex justify='center'>Arm</Flex></Table.Th>
+                                <Table.Th w='25%' colSpan={2}><Flex justify='center'>Leg</Flex></Table.Th>
+                            </Table.Tr>
+                            <Table.Tr>
+                                <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/dualblades/${weapon.replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
+                                <Table.Td w='25%'>
+                                    <Flex justify='center' align='center' direction='column'>
+                                        <strong>{weapon}</strong>
+                                    </Flex>
+                                </Table.Td>
+                                <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/rear/${rear.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
+                                <Table.Td w='25%'>
+                                    <Flex justify='center' direction='column'>
+                                        <strong>{rear}</strong>
+                                    </Flex>
+                                </Table.Td>
+                                <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/arm/${arm.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
+                                <Table.Td w='25%'>
+                                    <Flex justify='center' direction='column'>
+                                        <strong>{arm}</strong>
+                                    </Flex>
+                                </Table.Td>
+                                <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/leg/${leg.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
+                                <Table.Td w='25%'>
+                                    <Flex justify='center' direction='column'>
+                                        <strong>{leg}</strong>
+                                    </Flex>
+                                </Table.Td>
+                                {/* L / Easy Connect +20
+                                R / C Strike Striking +20 */}
+                            </Table.Tr>
+                            <Table.Tr>
+                                <Table.Td colSpan={2}>
+                                    {displayGearAbilities(weaponAbilities)}
+                                </Table.Td>
+                                <Table.Td colSpan={2}>
+                                    {displayGearAbilities(rearAbilities)}
+                                </Table.Td>
+                                <Table.Td colSpan={2}>
+                                    {displayGearAbilities(armAbilities)}
+                                </Table.Td>
+                                <Table.Td colSpan={2}>
+                                    {displayGearAbilities(legAbilities)}
+                                </Table.Td>
+                            </Table.Tr>
+                            <Table.Tr>
+                                <Table.Td colSpan={2} align='center'>
+                                    <Button size="compact-sm">Choose Weapon</Button>
+                                </Table.Td>
+                                <Table.Td colSpan={2} align='center'>
+                                    <Button size="compact-sm">Choose Rear Unit</Button>
+                                </Table.Td>
+                                <Table.Td colSpan={2} align='center'>
+                                    <Button size="compact-sm">Choose Arm Unit</Button>
+                                </Table.Td>
+                                <Table.Td colSpan={2} align='center'>
+                                    <Button size="compact-sm">Choose Leg Unit</Button>
+                                </Table.Td>
+                            </Table.Tr>
+                        </Table.Tbody>
+                    </Table >
+                    <Table withColumnBorders w='90%' align='center'>
+                        <Table.Thead>
+                            <Table.Tr>
+                                <Table.Th><Flex justify='center'>SKILLS</Flex></Table.Th>
+                            </Table.Tr>
+                        </Table.Thead>
+                        <Table.Tbody>
+                            <Table.Tr>
+                                <Table.Td><Flex justify='center'><Button>Set Skills</Button></Flex></Table.Td>
+                            </Table.Tr>
+                        </Table.Tbody>
+                    </Table>
                 </>
             );
     }

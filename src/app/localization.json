@@ -238,6 +238,18 @@
         "Name (Global)": "Luster"
     },
     {
+        "Abbreviation": "Ch",
+        "Name (JP)": "チャレンジャー",
+        "Name (English)": "Challenger",
+        "Name (Global)": "Challenger"
+    },
+    {
+        "Abbreviation": "No",
+        "Name (JP)": "-",
+        "Name (English)": "No Class",
+        "Name (Global)": "No Class"
+    },
+    {
         "Name (JP)": "ソード",
         "Name (English)": "Sword",
         "Name (Global)": "Sword"
