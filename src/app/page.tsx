@@ -1,16 +1,17 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { Image, Button, Flex, Table, InputBase, Checkbox, Group, Select } from "@mantine/core";
+import { Image, Button, Flex, Table, InputBase, Checkbox, Group, Select, Text } from "@mantine/core";
 import { useLanguageContext } from "./language-provider";
 import { v4 as uuidv4 } from 'uuid';
+import displayGearStats from './components/displayGearStats';
 import displayGearAbilities from './components/displayGearAbilities';
 import displayResistance from './components/displayResistance';
 import displayStat from './components/displayStat';
 import raceStats from './races.json'
 import classStats from './classes.json'
+import weapons from './geardata/weapons/weapon-data/weapons.json'
 import units from './geardata/units/unit-data/units.json'
-import displayClasses from './components/displayClasses';
 
 export default function Home() {
     const language = useLanguageContext()
@@ -101,6 +102,7 @@ export default function Home() {
         'ARKS Fever'
     ])
 
+    let weaponData: any = weapons.find(selectedWeapon => selectedWeapon["Name (English)"] === weapon)
     let rearData: any = units.find(selectedUnit => selectedUnit["Name (English)"] === rear)
     let armData: any = units.find(selectedUnit => selectedUnit["Name (English)"] === arm)
     let legData: any = units.find(selectedUnit => selectedUnit["Name (English)"] === leg)
@@ -171,6 +173,7 @@ export default function Home() {
         setRear(newRear)
         setArm(newArm)
         setLeg(newLeg)
+        weaponData = weapons.find(selectedWeapon => selectedWeapon["Name (English)"] === weapon)
         rearData = units.find(selectedUnit => selectedUnit["Name (English)"] === newRear)
         armData = units.find(selectedUnit => selectedUnit["Name (English)"] === newArm)
         legData = units.find(selectedUnit => selectedUnit["Name (English)"] === newLeg)
@@ -318,15 +321,15 @@ export default function Home() {
                 totalBaseTDef += 200; break;
         }
 
-        let totalBonusHp: number = (rearData["HP"] || 0) + (armData["HP"] || 0) + (legData["HP"] || 0)
-        let totalBonusPp: number = (rearData["PP"] || 0) + (armData["PP"] || 0) + (legData["PP"] || 0)
-        let totalBonusSAtk: number = (rearData["S-ATK"] || 0) + (armData["S-ATK"] || 0) + (legData["S-ATK"] || 0)
-        let totalBonusRAtk: number = (rearData["R-ATK"] || 0) + (armData["R-ATK"] || 0) + (legData["R-ATK"] || 0)
-        let totalBonusTAtk: number = (rearData["T-ATK"] || 0) + (armData["T-ATK"] || 0) + (legData["T-ATK"] || 0)
-        let totalBonusDex: number = (rearData["DEX"] || 0) + (armData["DEX"] || 0) + (legData["DEX"] || 0)
-        let totalBonusSDef: number = (rearData["S-DEF"] || 0) + (armData["S-DEF"] || 0) + (legData["S-DEF"] || 0)
-        let totalBonusRDef: number = (rearData["R-DEF"] || 0) + (armData["R-DEF"] || 0) + (legData["R-DEF"] || 0)
-        let totalBonusTDef: number = (rearData["T-DEF"] || 0) + (armData["T-DEF"] || 0) + (legData["T-DEF"] || 0)
+        let totalBonusHp: number = (weaponData["HP"] || 0) + (rearData["HP"] || 0) + (armData["HP"] || 0) + (legData["HP"] || 0)
+        let totalBonusPp: number = (weaponData["PP"] || 0) + (rearData["PP"] || 0) + (armData["PP"] || 0) + (legData["PP"] || 0)
+        let totalBonusSAtk: number = (weaponData["S-ATK"] || 0) + (rearData["S-ATK"] || 0) + (armData["S-ATK"] || 0) + (legData["S-ATK"] || 0)
+        let totalBonusRAtk: number = (weaponData["R-ATK"] || 0) + (rearData["R-ATK"] || 0) + (armData["R-ATK"] || 0) + (legData["R-ATK"] || 0)
+        let totalBonusTAtk: number = (weaponData["T-ATK"] || 0) + (rearData["T-ATK"] || 0) + (armData["T-ATK"] || 0) + (legData["T-ATK"] || 0)
+        let totalBonusDex: number = (weaponData["DEX"] || 0) + (rearData["DEX"] || 0) + (armData["DEX"] || 0) + (legData["DEX"] || 0)
+        let totalBonusSDef: number = (weaponData["S-DEF"] || 0) + (rearData["S-DEF"] || 0) + (armData["S-DEF"] || 0) + (legData["S-DEF"] || 0)
+        let totalBonusRDef: number = (weaponData["R-DEF"] || 0) + (rearData["R-DEF"] || 0) + (armData["R-DEF"] || 0) + (legData["R-DEF"] || 0)
+        let totalBonusTDef: number = (weaponData["T-DEF"] || 0) + (rearData["T-DEF"] || 0) + (armData["T-DEF"] || 0) + (legData["T-DEF"] || 0)
 
 
         setTotalHp(totalBaseHp + totalBonusHp)
@@ -371,12 +374,13 @@ export default function Home() {
         default:
             return (
                 <>
-                    {/* <>{JSON.stringify(rearData, null, 2)}</> */}
                     <Flex justify="center" align="center" key={uuidv4()} gap={5}><h1>PSO2 Character Simulator</h1></Flex>
-                    <Table withColumnBorders w='90%' align='center'>
+                    <Table withTableBorder withColumnBorders w='98%' align='center'>
                         <Table.Thead>
                             <Table.Tr>
-                                <Table.Th colSpan={10}><Flex justify='center'>CHARACTER SHEET</Flex></Table.Th>
+                                <Table.Th colSpan={10} style={{ backgroundColor: '#151515' }}>
+                                    <Flex justify='center'><Text fz="h4"><strong>CHARACTER INFO</strong></Text></Flex>
+                                </Table.Th>
                             </Table.Tr>
                         </Table.Thead>
                         <Table.Tbody>
@@ -419,11 +423,11 @@ export default function Home() {
                             </Table.Tr>
                         </Table.Tbody>
                     </Table>
-                    <Table withColumnBorders w='90%' align='center'>
+                    <Table withTableBorder withColumnBorders w='98%' align='center'>
                         <Table.Thead>
                             <Table.Tr>
-                                <Table.Th>
-                                    <Flex justify='center'>CLASS BOOSTS</Flex>
+                                <Table.Th style={{ backgroundColor: '#151515' }}>
+                                    <Flex justify='center'><Text fz="h4"><strong>CLASS BOOSTS</strong></Text></Flex>
                                 </Table.Th>
                             </Table.Tr>
                         </Table.Thead>
@@ -449,10 +453,12 @@ export default function Home() {
                             </Table.Tr>
                         </Table.Tbody>
                     </Table >
-                    <Table withColumnBorders w='90%' align='center'>
+                    <Table withTableBorder withColumnBorders w='98%' align='center'>
                         <Table.Thead>
                             <Table.Tr>
-                                <Table.Th colSpan={3}><Flex justify='center'>STATS</Flex></Table.Th>
+                                <Table.Th colSpan={3} style={{ backgroundColor: '#151515' }}>
+                                    <Flex justify='center'><Text fz="h4"><strong>STATS</strong></Text></Flex>
+                                </Table.Th>
                             </Table.Tr>
                         </Table.Thead>
                         <Table.Tbody>
@@ -483,13 +489,13 @@ export default function Home() {
                                     <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('T-DEF', Math.floor(totalTDef))}</Flex>
                                 </Table.Td>
                                 <Table.Td w='33%'>
-                                    <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('S-ATK', 100)}%</Flex>
-                                    <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('R-ATK', 100)}%</Flex>
-                                    <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('T-ATK', 100)}%</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('S-ATK', 0)}%</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('R-ATK', 0)}%</Flex>
+                                    <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('T-ATK', 0)}%</Flex>
                                 </Table.Td>
                             </Table.Tr>
                             <Table.Tr>
-                                <Table.Th colSpan={3}><Flex justify="center" align="center" key={uuidv4()} gap={5}>RESISTANCES</Flex></Table.Th>
+                                <Table.Th colSpan={3}><Flex justify="center" align="center" key={uuidv4()} gap={5}>Resistances</Flex></Table.Th>
                             </Table.Tr>
                             <Table.Tr>
                                 <Table.Td w='33%'>
@@ -510,10 +516,12 @@ export default function Home() {
                             </Table.Tr>
                         </Table.Tbody>
                     </Table >
-                    <Table withColumnBorders w='90%' align='center'>
+                    <Table withTableBorder withColumnBorders w='98%' align='center'>
                         <Table.Thead>
                             <Table.Tr>
-                                <Table.Th colSpan={10}><Flex justify='center'>GEAR</Flex></Table.Th>
+                                <Table.Th colSpan={10} style={{ backgroundColor: '#151515' }}>
+                                    <Flex justify='center'><Text fz="h4"><strong>GEAR</strong></Text></Flex>
+                                </Table.Th>
                             </Table.Tr>
                         </Table.Thead>
                         <Table.Tbody>
@@ -524,28 +532,42 @@ export default function Home() {
                                 <Table.Th w='25%' colSpan={2}><Flex justify='center'>Leg</Flex></Table.Th>
                             </Table.Tr>
                             <Table.Tr>
+                                <Table.Td colSpan={2} align='center'>
+                                    <Button size="compact-sm">Choose Weapon</Button>
+                                </Table.Td>
+                                <Table.Td colSpan={2} align='center'>
+                                    <Button size="compact-sm">Choose Rear Unit</Button>
+                                </Table.Td>
+                                <Table.Td colSpan={2} align='center'>
+                                    <Button size="compact-sm">Choose Arm Unit</Button>
+                                </Table.Td>
+                                <Table.Td colSpan={2} align='center'>
+                                    <Button size="compact-sm">Choose Leg Unit</Button>
+                                </Table.Td>
+                            </Table.Tr>
+                            <Table.Tr>
                                 <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/dualblades/${weapon.replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
                                 <Table.Td w='25%'>
                                     <Flex justify='center' align='center' direction='column'>
-                                        <strong>{weapon}</strong>
+                                        {displayGearStats(weapon)}
                                     </Flex>
                                 </Table.Td>
                                 <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/rear/${rear.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
                                 <Table.Td w='25%'>
                                     <Flex justify='center' direction='column'>
-                                        <strong>{rear}</strong>
+                                        {displayGearStats(rear)}
                                     </Flex>
                                 </Table.Td>
                                 <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/arm/${arm.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
                                 <Table.Td w='25%'>
                                     <Flex justify='center' direction='column'>
-                                        <strong>{arm}</strong>
+                                        {displayGearStats(arm)}
                                     </Flex>
                                 </Table.Td>
                                 <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/leg/${leg.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
                                 <Table.Td w='25%'>
                                     <Flex justify='center' direction='column'>
-                                        <strong>{leg}</strong>
+                                        {displayGearStats(leg)}
                                     </Flex>
                                 </Table.Td>
                                 {/* L / Easy Connect +20
@@ -565,26 +587,14 @@ export default function Home() {
                                     {displayGearAbilities(legAbilities)}
                                 </Table.Td>
                             </Table.Tr>
-                            <Table.Tr>
-                                <Table.Td colSpan={2} align='center'>
-                                    <Button size="compact-sm">Choose Weapon</Button>
-                                </Table.Td>
-                                <Table.Td colSpan={2} align='center'>
-                                    <Button size="compact-sm">Choose Rear Unit</Button>
-                                </Table.Td>
-                                <Table.Td colSpan={2} align='center'>
-                                    <Button size="compact-sm">Choose Arm Unit</Button>
-                                </Table.Td>
-                                <Table.Td colSpan={2} align='center'>
-                                    <Button size="compact-sm">Choose Leg Unit</Button>
-                                </Table.Td>
-                            </Table.Tr>
                         </Table.Tbody>
                     </Table >
-                    <Table withColumnBorders w='90%' align='center'>
+                    <Table withTableBorder withColumnBorders w='98%' align='center'>
                         <Table.Thead>
                             <Table.Tr>
-                                <Table.Th><Flex justify='center'>SKILLS</Flex></Table.Th>
+                                <Table.Th style={{ backgroundColor: '#151515' }}>
+                                    <Flex justify='center'><Text fz="h4"><strong>SKILLS</strong></Text></Flex>
+                                </Table.Th>
                             </Table.Tr>
                         </Table.Thead>
                         <Table.Tbody>

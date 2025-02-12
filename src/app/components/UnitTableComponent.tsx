@@ -9,6 +9,7 @@ import displaySet from './displaySet';
 import displayStat from './displayStat';
 import displayResistance from './displayResistance';
 import Link from 'next/link';
+import displayRarity from './displayRarity';
 
 //import localFont from 'next/font/local'
 
@@ -42,7 +43,7 @@ export default function UnitTableComponent({ data, type }) {
     })
 
     return (
-        <Table striped stickyHeader withColumnBorders>
+        <Table highlightOnHover striped stickyHeader withColumnBorders>
             <Table.Thead>
                 <Table.Tr>
                     <Table.Th key={uuidv4()} className="centerCell">{tableHeader[0]}</Table.Th>
@@ -100,7 +101,7 @@ export default function UnitTableComponent({ data, type }) {
                                 case 'id':
                                     return
                                 case 'Rarity':
-                                    return <Table.Td key={uuidv4()} className="centerCell"><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={`${row[key]} Star`} title={`${row[key]} Star`} w={16} h={16} /></Flex></Table.Td>
+                                    return <Table.Td key={uuidv4()} className="centerCell"><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayRarity(row[key])}</Flex></Table.Td>
                                 case 'Requirement':
                                     return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayStat(row[key][0], row[key][1])}</Flex></Table.Td>
                                 case 'S-DEF':

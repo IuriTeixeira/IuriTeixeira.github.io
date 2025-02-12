@@ -3,15 +3,17 @@ import Link from 'next/link'
 import { useLanguageContext } from "../language-provider";
 import { Flex, Image, SimpleGrid, Table, Tooltip } from '@mantine/core';
 import { v4 as uuidv4 } from 'uuid';
-import localization from "../localization.json"
 import displayAbilities from './displayAbilities';
+import displayClasses from './displayClasses';
+import displayElement from './displayElement';
+import displayPA from './displayPA';
 import displayPotentials from './displayPotentials';
 import displaySet from './displaySet';
 import displaySSA from './displaySSA';
 import displayStat from './displayStat';
-import displayClasses from './displayClasses';
 import './WeaponTableComponent.css';
 import '@mantine/core/styles/Table.layer.css';
+import displayRarity from './displayRarity';
 
 export default function WeaponTableComponent({ data, type }) {
     const language = useLanguageContext()
@@ -45,59 +47,7 @@ export default function WeaponTableComponent({ data, type }) {
         return Math.trunc(maxATK)
     }
 
-    function displayElement(array: [string, number]): any[] {
-        let buffer: any[] = []
-
-        let statName: any = localization.find(name => name['Name (English)'] === array[0])
-        let name: string
-
-        if (statName) {
-            switch (language.language) {
-                case 'Global':
-                    name = statName['Name (Global)']
-                    break;
-                case 'JP':
-                    name = statName['Name (JP)']
-                    break;
-                default:
-                    name = statName['Name (English)']
-            }
-        }
-
-        if (!isNaN(array[1])) {
-            buffer.push(<Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${array[0]}.png`} alt={name} title={name} w={16} h={16} /> {array[1]}</Flex>)
-        }
-        return buffer;
-    }
-
-    function displayPA(namePA: string[]): any[] {
-        let buffer: any[] = []
-        if (namePA) {
-            switch (language.language) {
-                case "Global":
-                    buffer.push(
-                        <Tooltip className='centerCell' key={uuidv4()} label={`Enables usage of specific Photon Arts/Techniques regardless of class or equipment requirements`} color="dark">
-                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Photon_Art.png`} alt={`PA`} w={16} h={16} /> {namePA}</Flex>
-                        </Tooltip>
-                    )
-                    break;
-                case "JP":
-                    buffer.push(
-                        <Tooltip className='centerCell' key={uuidv4()} label={`クラスや装備の条件に関係なくPAを使用できる`} color="dark">
-                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Photon_Art.png`} alt={`PA`} w={16} h={16} /> {namePA}</Flex>
-                        </Tooltip>
-                    )
-                    break;
-                default:
-                    buffer.push(
-                        <Tooltip className='centerCell' key={uuidv4()} label={`Enables usage of specific Photon Arts/Techniques regardless of class or equipment requirements`} color="dark">
-                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/Photon_Art.png`} alt={`PA`} w={16} h={16} /> {namePA}</Flex>
-                        </Tooltip>
-                    )
-            }
-        }
-        return buffer;
-    }
+    
 
     let headerEnglish: string[] = ["Icon", "Name", "Rarity", "Requirement", "ATK", "ATK (Max)", "Special Ability Factor", "Properties", "Potential", "Classes", "SSA", "Main Classes that can wield this weapon", "S-Class Special Ability Slots Enabled"]
     let headerGlobal: string[] = ["Icon", "Name", "Rarity", "Requirement", "Pwr", "Pwr (Max)", "Augment Factor", "Properties", "Potential", "Classes", "SGA", "Main Classes that can wield this weapon", "S-Grade Augment Slots Enabled"]
@@ -115,7 +65,7 @@ export default function WeaponTableComponent({ data, type }) {
     })
 
     return (
-        <Table striped stickyHeader withColumnBorders>
+        <Table highlightOnHover striped stickyHeader withColumnBorders>
             <Table.Thead>
                 <Table.Tr>
                     <Table.Th key={uuidv4()} className="centerCell">{tableHeader[0]}</Table.Th>
@@ -189,7 +139,7 @@ export default function WeaponTableComponent({ data, type }) {
                                 case 'id':
                                     return
                                 case 'Rarity':
-                                    return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${row[key]}star.png`} alt={row[key]} title={row[key]} w={16} h={16} /></Flex></Table.Td>
+                                    return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayRarity(row[key])}</Flex></Table.Td>
                                 case 'Requirement':
                                     return <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}>{displayStat(row[key][0], row[key][1])}</Flex></Table.Td>
                                 case 'S-ATK':
