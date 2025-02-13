@@ -3436,6 +3436,24 @@
         "Set": null
     },
     {
+        "Name (JP)": null,
+        "Name (English)": "Haru Hayate/Global",
+        "Name (Global)": "Spring Tempest",
+        "Rarity": 14,
+        "Requirement": ["S-ATK",810],
+        "S-ATK": 1041,
+        "R-ATK": null,
+        "T-ATK": null,
+        "SAF": "Power VI",
+        "Abilities": ["Ability IV"],
+        "Potential": ["Dancing Night Blossom"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["Fi"],
+        "SSA Slots": [1,2,3],
+        "Set": null
+    },
+    {
         "Name (JP)": "アクルドベセト",
         "Name (English)": "Aculd Beset",
         "Name (Global)": null,

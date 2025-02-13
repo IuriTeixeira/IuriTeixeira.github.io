@@ -3033,6 +3033,24 @@
         "Set": null
     },
     {
+        "Name (JP)": null,
+        "Name (English)": "Shikon Ryuusui/Global",
+        "Name (Global)": "Violet Stream",
+        "Rarity": 14,
+        "Requirement":["DEX",500],
+        "S-ATK":1514,
+        "R-ATK":null,
+        "T-ATK":null,
+        "SAF":"Power VI",
+        "Abilities":["Ability IV"],
+        "Potential":["Pale Night Blossom"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes":["Bo","Et"],
+        "SSA Slots":[1,2,3],
+        "Set":null
+    },
+    {
         "Name (JP)": "アクルドザルク",
         "Name (English)": "Aculd Zalque",
         "Name (Global)": null,

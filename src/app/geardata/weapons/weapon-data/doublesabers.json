@@ -1653,7 +1653,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Fahren"
     },
     {
         "Name (JP)": "クセルク",
@@ -2498,7 +2498,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Invade Weapon"
     },
     {
         "Name (JP)": "ゲイルフェブリス",
@@ -3367,7 +3367,7 @@
         "Name (JP)": null,
         "Name (English)": "Yasourin/Global",
         "Name (Global)": "Twin Night Wheels",
-        "Rarity": 13,
+        "Rarity": 14,
         "Requirement": ["S-ATK",810],
         "S-ATK": 1115,
         "R-ATK": null,

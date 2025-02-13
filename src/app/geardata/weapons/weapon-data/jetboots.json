@@ -2941,7 +2941,7 @@
         "R-ATK":null,
         "T-ATK":1449,
         "SAF":"Technique VI",
-        "Abilities":"Ability IV",
+        "Abilities":["Ability IV"],
         "Potential":["Dancing Night Blossom"],
         "Element": null,
         "PA_enabled": null,

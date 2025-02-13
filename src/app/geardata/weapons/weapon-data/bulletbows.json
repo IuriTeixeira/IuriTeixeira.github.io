@@ -1527,7 +1527,7 @@
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Fahren"
     },
     {
         "Name (JP)": "ハードリカーブ",
@@ -2282,7 +2282,7 @@
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Invade Weapon"
     },
     {
         "Name (JP)": "グライジャダク",

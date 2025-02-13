@@ -1959,7 +1959,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Fahren"
     },
     {
         "Name (JP)": "プルミケロース",
@@ -2660,7 +2660,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Invade Weapon"
     },
     {
         "Name (JP)": "オフスティアアルム",

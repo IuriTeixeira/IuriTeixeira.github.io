@@ -2238,7 +2238,7 @@
         "R-ATK": null,
         "T-ATK": null,
         "SAF": "Phrase Chase",
-        "Abilities": "Freeze V",
+        "Abilities": ["Freeze V"],
         "Potential": ["Snow-White Sacrifice"],
         "Element": null,
         "PA_enabled": null,

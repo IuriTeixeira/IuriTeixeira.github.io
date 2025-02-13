@@ -1617,7 +1617,7 @@
         "PA_enabled": null,
         "Classes": ["Fi"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Fahren"
     },
     {
         "Name (JP)": "エクサローグ",
@@ -2282,7 +2282,7 @@
         "PA_enabled": null,
         "Classes": ["Fi"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Tagami Weapon"
     },
     {
         "Name (JP)": "グレイヤーオービット",
@@ -2426,7 +2426,7 @@
         "PA_enabled": null,
         "Classes": ["Fi"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Invade Weapon"
     },
     {
         "Name (JP)": "幻創艦砲甲",
@@ -3331,13 +3331,13 @@
         "Name (JP)": null,
         "Name (English)": "Tousou Shishi/Global",
         "Name (Global)": "Lion Fighter",
-        "Rarity": 13,
+        "Rarity": 14,
         "Requirement": ["S-ATK",810],
         "S-ATK": 1519,
         "R-ATK": null,
         "T-ATK": null,
         "SAF": "Power VI",
-        "Abilities": null,
+        "Abilities": ["Ability IV"],
         "Potential": ["Dancing Night Blossom"],
         "Element": null,
         "PA_enabled": null,

@@ -1689,7 +1689,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Fahren"
     },
     {
         "Name (JP)": "インフィニットコランダム",
@@ -2552,7 +2552,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Invade Weapon"
     },
     {
         "Name (JP)": "D-A.I.Sバルカン",

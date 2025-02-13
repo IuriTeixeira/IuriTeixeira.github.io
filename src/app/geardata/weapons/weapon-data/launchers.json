@@ -1869,7 +1869,7 @@
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Fahren"
     },
     {
         "Name (JP)": "チャージハウザー",
@@ -2642,7 +2642,7 @@
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Invade Weapon"
     },
     {
         "Name (JP)": "D-I.A.I.Sブラスター",
