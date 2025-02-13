@@ -1059,7 +1059,7 @@
         "PA_enabled": null,
         "Classes": ["Hu", "Ra", "Fo", "Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Vibrace"
     },
     {
         "Name (JP)": "ネブラウィンド",
@@ -1473,7 +1473,7 @@
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ringa"
     },
     {
         "Name (JP)": "サザンクロス",
@@ -1617,7 +1617,7 @@
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Loser"
     },
     {
         "Name (JP)": "クスフサ",
@@ -2066,7 +2066,7 @@
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ideal Weapon"
     },
     {
         "Name (JP)": "ネメシスフェザー",
@@ -2156,7 +2156,7 @@
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ray"
     },
     {
         "Name (JP)": "グライロウ",
@@ -2354,7 +2354,7 @@
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Austere Weapon"
     },
     {
         "Name (JP)": "ユニオンボウ",
@@ -2372,7 +2372,7 @@
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Union"
     },
     {
         "Name (JP)": "フォルニスエスビア",
@@ -2480,7 +2480,7 @@
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Astra"
     },
     {
         "Name (JP)": "アーチドミナシオ",
@@ -2516,7 +2516,7 @@
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Zeinesis"
     },
     {
         "Name (JP)": "クリファドアロウ",
@@ -2529,12 +2529,12 @@
         "T-ATK": null,
         "SAF": "Sentence Triple",
         "Abilities": null,
-        "Potential": ["Anthesis Trainer"],
+        "Potential": ["Anthesis Trainer (Qliphad)"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Qliphad"
     },
     {
         "Name (JP)": "タクティオフラゼン",
@@ -2696,7 +2696,7 @@
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Gix"
     },
     {
         "Name (JP)": "ジュティスフレーシュ",
@@ -3199,7 +3199,7 @@
         "PA_enabled": null,
         "Classes": ["Br"],
         "SSA Slots": [1, 2, 3],
-        "Set": null
+        "Set": "Austere-NT Weapon"
     },
     {
         "Name (JP)": "ゲノンアイン",

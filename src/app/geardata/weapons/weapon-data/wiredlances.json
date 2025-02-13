@@ -2390,7 +2390,8 @@
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Hu"],
-        "SSA Slots": null
+        "SSA Slots": null,
+        "Set":"Union"
     },
     {
         "Name (JP)": "セイカイザーシールド",
@@ -2527,7 +2528,8 @@
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Hu"],
-        "SSA Slots": null
+        "SSA Slots": null,
+        "Set":"Zeinesis"
     },
     {
         "Name (JP)": "クリファドランス",
@@ -2544,7 +2546,7 @@
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Hu"],
-        "SSA Slots": null
+        "SSA Slots": "Qliphad"
     },
     {
         "Name (JP)": "マルスデルウォッグ",
@@ -3225,7 +3227,8 @@
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Hu"],
-        "SSA Slots": [1,2,3]
+        "SSA Slots": [1,2,3],
+        "Set":"Austere-NT Weapon"
     },
     {
         "Name (JP)": "アキュレハーリス",

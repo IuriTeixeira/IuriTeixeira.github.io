@@ -663,7 +663,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Vardha"
     },
     {
         "Name (JP)": "フェザーエッジ",
@@ -717,7 +717,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Quartz"
     },
     {
         "Name (JP)": "ラムダフェザーエッジ",
@@ -1113,7 +1113,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "King's"
     },
     {
         "Name (JP)": "リフリジオン",
@@ -1185,7 +1185,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Crys"
     },
     {
         "Name (JP)": "ルイドブローヴァ",
@@ -2192,7 +2192,7 @@
         "PA_enabled": "Deadly Archer",
         "Classes": ["All"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Quartz"
     },
     {
         "Name (JP)": "夜双輪",
@@ -2228,7 +2228,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ideal Weapon"
     },
     {
         "Name (JP)": "流星棍-NT",
@@ -2336,7 +2336,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ray"
     },
     {
         "Name (JP)": "ヴィヴィアン",
@@ -2534,7 +2534,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Austere Weapon"
     },
     {
         "Name (JP)": "ユニオンDセイバー",
@@ -2552,7 +2552,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Union"
     },
     {
         "Name (JP)": "フォルニスゲノン",
@@ -2660,7 +2660,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Astra"
     },
     {
         "Name (JP)": "ストームドミナシオ",
@@ -2696,7 +2696,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Zeinesis"
     },
     {
         "Name (JP)": "クリファドヴァーペン",
@@ -2709,12 +2709,12 @@
         "T-ATK": null,
         "SAF": "Sentence Triple",
         "Abilities": null,
-        "Potential": ["Anthesis Trainer"],
+        "Potential": ["Anthesis Trainer (Qliphad)"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Qliphad"
     },
     {
         "Name (JP)": "オルグスメーディオ",
@@ -2876,7 +2876,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Gix"
     },
     {
         "Name (JP)": "ジュティスシフォス",
@@ -3433,7 +3433,7 @@
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
         "SSA Slots": [1, 2, 3],
-        "Set": null
+        "Set": "Austere-NT Weapon"
     },
     {
         "Name (JP)": "アナカテスシアン",

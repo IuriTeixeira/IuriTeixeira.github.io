@@ -771,7 +771,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Schlacht"
     },
     {
         "Name (JP)": "ラムダフユジオン",
@@ -1023,7 +1023,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Vardha"
     },
     {
         "Name (JP)": "カルックスガン",
@@ -1185,7 +1185,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "King's"
     },
     {
         "Name (JP)": "ブランミラーズ",
@@ -1401,7 +1401,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Heretic"
     },
     {
         "Name (JP)": "パオホウオウ",
@@ -2211,7 +2211,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Noire"
     },
     {
         "Name (JP)": "イーグルフリント",
@@ -2318,7 +2318,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Magatsu"
     },
     {
         "Name (JP)": "ジグマフェイズ",
@@ -2534,7 +2534,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ideal Weapon"
     },
     {
         "Name (JP)": "ネメシスバレット",
@@ -2660,7 +2660,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ray"
     },
     {
         "Name (JP)": "ラサハディス",
@@ -2912,7 +2912,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Austere Weapon"
     },
     {
         "Name (JP)": "ユニオンTマシンガン",
@@ -2930,7 +2930,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Union"
     },
     {
         "Name (JP)": "フォルニスフィジス",
@@ -3056,7 +3056,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Astra"
     },
     {
         "Name (JP)": "バレットドミナシオ",
@@ -3092,7 +3092,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Zeinesis"
     },
     {
         "Name (JP)": "クリファドバルカン",
@@ -3105,12 +3105,12 @@
         "T-ATK": null,
         "SAF": "Sentence Triple",
         "Abilities": null,
-        "Potential": ["Anthesis Trainer"],
+        "Potential": ["Anthesis Trainer (Qliphad)"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Qliphad"
     },
     {
         "Name (JP)": "サラマディアカレウス",
@@ -3290,7 +3290,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Gix"
     },
     {
         "Name (JP)": "バレットクナイ",
@@ -3901,7 +3901,7 @@
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
         "SSA Slots": [1, 2, 3],
-        "Set": null
+        "Set": "Austere-NT Weapon"
     },
     {
         "Name (JP)": "オルゲイランコア",

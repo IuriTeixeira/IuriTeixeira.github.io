@@ -125,7 +125,8 @@
         "Potential":["Melody of Life","Melody of Evil"],
         "Element": null,
         "Classes":["Su"],
-        "SSA Slots":null
+        "SSA Slots":null,
+        "Set":"Zeinesis"
     },
     {
         "Name (JP)": "クリファドピック",
@@ -141,7 +142,8 @@
         "Potential":["Melody of Evil (Qliphad)"],
         "Element": null,
         "Classes":["Su"],
-        "SSA Slots":null
+        "SSA Slots":null,
+        "Set":"Qliphad"
     },
     {
         "Name (JP)": "イヴリダアンクス",

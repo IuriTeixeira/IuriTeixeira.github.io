@@ -4405,7 +4405,8 @@
         "Lightning Resistance":null,
         "Wind Resistance":null,
         "Light Resistance":null,
-        "Dark Resistance":3
+        "Dark Resistance":3,
+        "Set":"Astra"
     },
     {
         "Type": "Arm",

@@ -1059,7 +1059,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Vardha"
     },
     {
         "Name (JP)": "マフ",
@@ -1293,7 +1293,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "King's"
     },
     {
         "Name (JP)": "メタリラキエス",
@@ -1527,7 +1527,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Heretic"
     },
     {
         "Name (JP)": "セイメイキカミ",
@@ -2013,7 +2013,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Loser"
     },
     {
         "Name (JP)": "シキハジン",
@@ -2462,7 +2462,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ideal Weapon"
     },
     {
         "Name (JP)": "ネメシスシンボル",
@@ -2534,7 +2534,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ray"
     },
     {
         "Name (JP)": "スレイヴシンボル",
@@ -2678,7 +2678,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Austere Weapon"
     },
     {
         "Name (JP)": "ユニオンタリス",
@@ -2696,7 +2696,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Union"
     },
     {
         "Name (JP)": "フォルニスオジェンド",
@@ -2822,7 +2822,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Astra"
     },
     {
         "Name (JP)": "カードドミナシオ",
@@ -2858,7 +2858,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Zeinesis"
     },
     {
         "Name (JP)": "クリファドフィデル",
@@ -2871,12 +2871,12 @@
         "T-ATK": 1030,
         "SAF": "Sentence Triple",
         "Abilities": null,
-        "Potential": ["Anthesis Trainer"],
+        "Potential": ["Anthesis Trainer (Qliphad)"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Qliphad"
     },
     {
         "Name (JP)": "アルタフェイナ",
@@ -3056,7 +3056,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Gix"
     },
     {
         "Name (JP)": "ジュティスサルース",
@@ -3595,7 +3595,7 @@
         "PA_enabled": null,
         "Classes": ["Fo", "Te", "Hr"],
         "SSA Slots": [1, 2, 3],
-        "Set": null
+        "Set": "Austere-NT Weapon"
     },
     {
         "Name (JP)": "オブリサナヴォルツ",

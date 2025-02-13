@@ -2120,7 +2120,7 @@
         "PA_enabled": null,
         "Classes":["Bo","Et"],
         "SSA Slots":null,
-        "Set":null
+        "Set":"Union"
     },
     {
         "Name (JP)": "アストラルブレイズ",
@@ -2257,7 +2257,7 @@
         "PA_enabled": null,
         "Classes": ["Bo", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Astra"
     },
     {
         "Name (JP)": "ブレードドミナシオ",
@@ -2293,7 +2293,7 @@
         "PA_enabled": null,
         "Classes": ["Bo", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Zeinesis"
     },
     {
         "Name (JP)": "クリファドサーベル",
@@ -2306,12 +2306,12 @@
         "T-ATK": null,
         "SAF": "Sentence Triple",
         "Abilities": null,
-        "Potential": ["Anthesis Trainer"],
+        "Potential": ["Anthesis Trainer (Qliphad)"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Bo", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Qliphad"
     },
     {
         "Name (JP)": "マルスヴォルザーグ",
@@ -2491,7 +2491,7 @@
         "PA_enabled": null,
         "Classes": ["Bo", "Et"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Gix"
     },
     {
         "Name (JP)": "ジュティスレプシオン",
@@ -3102,7 +3102,7 @@
         "PA_enabled": null,
         "Classes": ["Bo", "Et"],
         "SSA Slots": [1, 2, 3],
-        "Set": null
+        "Set": "Austere-NT Weapon"
     },
     {
         "Name (JP)": "オルゲイマリス",

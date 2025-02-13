@@ -2264,7 +2264,7 @@
         "PA_enabled": null,
         "Classes":["Bo"],
         "SSA Slots":null,
-        "Set":null
+        "Set":"Zeinesis"
     },
     {
         "Name (JP)": "クリファドギア",
@@ -2282,7 +2282,7 @@
         "PA_enabled": null,
         "Classes":["Bo"],
         "SSA Slots":null,
-        "Set":null
+        "Set":"Qliphad"
     },
     {
         "Name (JP)": "クラーデムカージス",
@@ -3037,7 +3037,7 @@
         "PA_enabled": null,
         "Classes":["Bo"],
         "SSA Slots":[1,2,3],
-        "Set":null
+        "Set":"Austere-NT Weapon"
     },
     {
         "Name (JP)": "ゲノンサーク",

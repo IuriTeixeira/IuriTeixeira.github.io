@@ -1005,7 +1005,7 @@
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Vardha"
     },
     {
         "Name (JP)": "プロジオン",
@@ -1131,7 +1131,7 @@
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "King's"
     },
     {
         "Name (JP)": "グレンファナル",
@@ -1365,7 +1365,7 @@
         "PA_enabled": null,
         "Classes": ["Hu", "Ra", "Fo", "Br"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Vibrace"
     },
     {
         "Name (JP)": "セイントブーム",
@@ -1419,7 +1419,7 @@
         "PA_enabled": null,
         "Classes": ["Hu", "Ra", "Te"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Traitor"
     },
     {
         "Name (JP)": "ウェトムジオン",
@@ -1977,7 +1977,7 @@
         "PA_enabled": null,
         "Classes": ["Hu", "Ra", "Te"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Traitor"
     },
     {
         "Name (JP)": "ファイナルインパクト-NT",
@@ -2390,7 +2390,7 @@
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ideal Weapon"
     },
     {
         "Name (JP)": "アーレスランチャー",
@@ -2480,7 +2480,7 @@
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ray"
     },
     {
         "Name (JP)": "ヴィトルオービット",
@@ -2714,7 +2714,7 @@
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Austere Weapon"
     },
     {
         "Name (JP)": "ヤスミノコフ4000F",
@@ -2768,7 +2768,7 @@
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Union"
     },
     {
         "Name (JP)": "ウェルクナセル",
@@ -2876,7 +2876,7 @@
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Astra"
     },
     {
         "Name (JP)": "キャノンドミナシオ",
@@ -2930,7 +2930,7 @@
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Zeinesis"
     },
     {
         "Name (JP)": "クリファドキャノン",
@@ -2943,12 +2943,12 @@
         "T-ATK": null,
         "SAF": "Sentence Triple",
         "Abilities": null,
-        "Potential": ["Anthesis Trainer"],
+        "Potential": ["Anthesis Trainer (Qliphad)"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Qliphad"
     },
     {
         "Name (JP)": "ストラジオキャスルク",
@@ -3110,7 +3110,7 @@
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Gix"
     },
     {
         "Name (JP)": "ジュティスシーティオ",
@@ -3613,7 +3613,7 @@
         "PA_enabled": null,
         "Classes": ["Ra"],
         "SSA Slots": [1, 2, 3],
-        "Set": null
+        "Set": "Austere-NT Weapon"
     },
     {
         "Name (JP)": "オブリサナフェルサ",

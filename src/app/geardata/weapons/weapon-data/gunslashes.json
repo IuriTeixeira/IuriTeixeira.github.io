@@ -1347,7 +1347,7 @@
         "PA_enabled": null,
         "Classes": ["All"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ex"
     },
     {
         "Name (JP)": "コールサイファー",
@@ -1491,7 +1491,7 @@
         "PA_enabled": null,
         "Classes": ["All"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Noire"
     },
     {
         "Name (JP)": "カルデスタ-NT",
@@ -1689,7 +1689,7 @@
         "PA_enabled": null,
         "Classes": ["All"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Loser"
     },
     {
         "Name (JP)": "シャットラウンダー",
@@ -2174,7 +2174,7 @@
         "PA_enabled": null,
         "Classes": ["All"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ideal Weapon"
     },
     {
         "Name (JP)": "ネメシススラッシュ",
@@ -2282,7 +2282,7 @@
         "PA_enabled": null,
         "Classes": ["All"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ray"
     },
     {
         "Name (JP)": "アトルオービット",
@@ -2390,7 +2390,7 @@
         "PA_enabled": null,
         "Classes": ["All"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Austere Weapon"
     },
     {
         "Name (JP)": "ユニオンスラッシュ",
@@ -2408,7 +2408,7 @@
         "PA_enabled": null,
         "Classes": ["All"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Union"
     },
     {
         "Name (JP)": "フォルニスハルーブ",
@@ -2570,7 +2570,7 @@
         "PA_enabled": null,
         "Classes": ["All"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Astra"
     },
     {
         "Name (JP)": "スラッシュドミナシオ",
@@ -2606,7 +2606,7 @@
         "PA_enabled": null,
         "Classes": ["All"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Zeinesis"
     },
     {
         "Name (JP)": "クリファドガンシザー",
@@ -2619,12 +2619,12 @@
         "T-ATK": null,
         "SAF": "Sentence Triple",
         "Abilities": null,
-        "Potential": ["Anthesis Trainer"],
+        "Potential": ["Anthesis Trainer (Qliphad)"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["All"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Qliphad"
     },
     {
         "Name (JP)": "レガロヤクートスカル",
@@ -2786,7 +2786,7 @@
         "PA_enabled": null,
         "Classes": ["All"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Gix"
     },
     {
         "Name (JP)": "ジュティスシュティク",
@@ -3307,7 +3307,7 @@
         "PA_enabled": null,
         "Classes": ["All"],
         "SSA Slots": [1, 2, 3],
-        "Set": null
+        "Set": "Austere-NT Weapon"
     },
     {
         "Name (JP)": "アナカテスヒンメル",

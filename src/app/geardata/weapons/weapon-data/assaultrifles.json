@@ -987,7 +987,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Elder"
     },
     {
         "Name (JP)": "アヴェンジャー",
@@ -1023,7 +1023,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Chrome"
     },
     {
         "Name (JP)": "ディブルニゲル",
@@ -1167,7 +1167,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Haze"
     },
     {
         "Name (JP)": "ディブルアルブス",
@@ -1797,7 +1797,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Loser"
     },
     {
         "Name (JP)": "インフィニットコランダム-NT",
@@ -2246,7 +2246,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ideal Weapon"
     },
     {
         "Name (JP)": "アストラルライザー-NT",
@@ -2390,7 +2390,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Ray"
     },
     {
         "Name (JP)": "スクヴァールオービット",
@@ -2624,7 +2624,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Austere Weapon"
     },
     {
         "Name (JP)": "ユニオンライフル",
@@ -2642,7 +2642,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Union"
     },
     {
         "Name (JP)": "フォルニスロンベル",
@@ -2750,7 +2750,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Astra"
     },
     {
         "Name (JP)": "ショットドミナシオ",
@@ -2786,7 +2786,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Zeinesis"
     },
     {
         "Name (JP)": "クリファドレーザー",
@@ -2799,12 +2799,12 @@
         "T-ATK": null,
         "SAF": "Sentence Triple",
         "Abilities": null,
-        "Potential": ["Anthesis Trainer"],
+        "Potential": ["Anthesis Trainer (Qliphad)"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Qliphad"
     },
     {
         "Name (JP)": "マルスレガルス",
@@ -2984,7 +2984,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": null,
-        "Set": null
+        "Set": "Gix"
     },
     {
         "Name (JP)": "ジュティススフェラ",
@@ -3595,7 +3595,7 @@
         "PA_enabled": null,
         "Classes": ["Ra", "Gu", "Ph"],
         "SSA Slots": [1, 2, 3],
-        "Set": null
+        "Set": "Austere-NT Weapon"
     },
     {
         "Name (JP)": "ショットインクルシオ",
