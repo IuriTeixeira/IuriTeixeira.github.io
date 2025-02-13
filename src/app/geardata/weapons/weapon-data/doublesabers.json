@@ -3378,7 +3378,7 @@
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Fi", "Et"],
-        "SSA Slots": null,
+        "SSA Slots": [1,2,3],
         "Set": null
     },
     {
