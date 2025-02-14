@@ -56,7 +56,7 @@
     {
         "Name (JP)": "ガンスラッシュ-NT",
         "Name (English)": "Gunslash-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Gunblade",
         "Rarity": 1,
         "Requirement": ["DEX",1],
         "S-ATK": 157,
@@ -74,7 +74,7 @@
     {
         "Name (JP)": "EXPウェポン-NT",
         "Name (English)": "EXP Weapon-NT",
-        "Name (Global)": null,
+        "Name (Global)": "EXP Weapon",
         "Rarity": 1,
         "Requirement": ["DEX",1],
         "S-ATK": 157,
@@ -82,6 +82,24 @@
         "T-ATK": null,
         "SAF": "React III",
         "Abilities": ["NT Weapon Boost"],
+        "Potential": ["New-Type's Law"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["All"],
+        "SSA Slots": null,
+        "Set": null
+    },
+    {
+        "Name (JP)": null,
+        "Name (English)": "EXP Weapon/Global",
+        "Name (Global)": "EXP Weapon Mini",
+        "Rarity": 1,
+        "Requirement": ["DEX",1],
+        "S-ATK": 157,
+        "R-ATK": 149,
+        "T-ATK": null,
+        "SAF": "React III",
+        "Abilities": ["EXP Weapon Mini"],
         "Potential": ["New-Type's Law"],
         "Element": null,
         "PA_enabled": null,
@@ -146,7 +164,7 @@
     {
         "Name (JP)": "アルバスラッシュ-NT",
         "Name (English)": "Alva Slash-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Alba Gunblade",
         "Rarity": 2,
         "Requirement": ["DEX",126],
         "S-ATK": 196,
@@ -218,7 +236,7 @@
     {
         "Name (JP)": "ヴィタスラッシュ-NT",
         "Name (English)": "Vita Slash-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Vita Gunblade",
         "Rarity": 3,
         "Requirement": ["DEX",257],
         "S-ATK": 235,
@@ -272,7 +290,7 @@
     {
         "Name (JP)": "ガンシザー-NT",
         "Name (English)": "Gunscissor-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Gunscissor",
         "Rarity": 4,
         "Requirement": ["DEX",96],
         "S-ATK": 255,
@@ -290,7 +308,7 @@
     {
         "Name (JP)": "ガンハチェット-NT",
         "Name (English)": "Gunhatchet-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Gunhatchet",
         "Rarity": 4,
         "Requirement": ["DEX",147],
         "S-ATK": 276,
@@ -344,7 +362,7 @@
     {
         "Name (JP)": "アルバシザー-NT",
         "Name (English)": "Alva Scissor-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Alba Gunscissor",
         "Rarity": 5,
         "Requirement": ["DEX",199],
         "S-ATK": 274,
@@ -362,7 +380,7 @@
     {
         "Name (JP)": "アルバハチェット-NT",
         "Name (English)": "Alva Hatchet-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Alba Gunhatchet",
         "Rarity": 5,
         "Requirement": ["DEX",250],
         "S-ATK": 295,
@@ -416,7 +434,7 @@
     {
         "Name (JP)": "ヴィタシザー-NT",
         "Name (English)": "Vita Scissor-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Vita Gunscissor",
         "Rarity": 6,
         "Requirement": ["DEX",301],
         "S-ATK": 294,
@@ -434,7 +452,7 @@
     {
         "Name (JP)": "ヴィタハチェット-NT",
         "Name (English)": "Vita Hatchet-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Vita Gunhatchet",
         "Rarity": 6,
         "Requirement": ["DEX",352],
         "S-ATK": 315,
@@ -477,6 +495,24 @@
         "R-ATK": 120,
         "T-ATK": null,
         "SAF": null,
+        "Abilities": null,
+        "Potential": ["Fortunate Omen", "Glimmering Rhythm"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["All"],
+        "SSA Slots": null,
+        "Set": null
+    },
+    {
+        "Name (JP)": null,
+        "Name (English)": "Vraolet/Global",
+        "Name (Global)": "Vraolet",
+        "Rarity": 7,
+        "Requirement": ["R-ATK",1],
+        "S-ATK": 174,
+        "R-ATK": 156,
+        "T-ATK": null,
+        "SAF": "Mutation I",
         "Abilities": null,
         "Potential": ["Fortunate Omen", "Glimmering Rhythm"],
         "Element": null,
@@ -560,7 +596,7 @@
     {
         "Name (JP)": "ガンスラッシュゼロ-NT",
         "Name (English)": "Gunslash Zero-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Gunblade Zero",
         "Rarity": 7,
         "Requirement": ["S-ATK",400],
         "S-ATK": 313,
@@ -578,7 +614,7 @@
     {
         "Name (JP)": "レイデュプル-NT",
         "Name (English)": "Ray Duplex-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Rey Duple",
         "Rarity": 7,
         "Requirement": ["T-ATK",270],
         "S-ATK": 384,
@@ -623,6 +659,24 @@
         "SAF": null,
         "Abilities": null,
         "Potential": ["Red Recalescence"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["All"],
+        "SSA Slots": null,
+        "Set": null
+    },
+    {
+        "Name (JP)": null,
+        "Name (English)": "Red Gunslash/Global",
+        "Name (Global)": "Red Gunblade",
+        "Rarity": 7,
+        "Requirement": ["DEX",389],
+        "S-ATK": 462,
+        "R-ATK": 439,
+        "T-ATK": null,
+        "SAF": "Shoot III",
+        "Abilities": null,
+        "Potential": ["Immediate Strike"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["All"],
@@ -810,6 +864,24 @@
         "Set": null
     },
     {
+        "Name (JP)": null,
+        "Name (English)": "Lambda Twizzler/Global",
+        "Name (Global)": "Lambda Twissler",
+        "Rarity": 8,
+        "Requirement": ["R-ATK",547],
+        "S-ATK": 332,
+        "R-ATK": 298,
+        "T-ATK": null,
+        "SAF": "Shoot III",
+        "Abilities": null,
+        "Potential": ["Defensive Stance"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["All"],
+        "SSA Slots": null,
+        "Set": null
+    },
+    {
         "Name (JP)": "ビアンコパラソーレ",
         "Name (English)": "Bianco Parasol",
         "Name (Global)": null,
@@ -866,7 +938,7 @@
     {
         "Name (JP)": "ジャレイド-NT",
         "Name (English)": "Jareid-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Jareid",
         "Rarity": 9,
         "Requirement": ["S-ATK",458],
         "S-ATK": 452,
@@ -938,7 +1010,7 @@
     {
         "Name (JP)": "EXPウェポン2-NT",
         "Name (English)": "EXP Weapon 2-NT",
-        "Name (Global)": null,
+        "Name (Global)": "EXP Weapon 2",
         "Rarity": 10,
         "Requirement": ["DEX",2],
         "S-ATK": 222,
@@ -1298,7 +1370,7 @@
     {
         "Name (JP)": "エンペルアキシオン-NT",
         "Name (English)": "Emperor Axeon-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Emperor Axeon",
         "Rarity": 10,
         "Requirement": ["DEX",450],
         "S-ATK": 586,
@@ -1496,7 +1568,7 @@
     {
         "Name (JP)": "カルデスタ-NT",
         "Name (English)": "Cardesta-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Cardestad",
         "Rarity": 10,
         "Requirement": ["DEX",450],
         "S-ATK": 634,
@@ -1514,7 +1586,7 @@
     {
         "Name (JP)": "ディオジャレイド-NT",
         "Name (English)": "Dio Jareid-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Deo Jareid",
         "Rarity": 10,
         "Requirement": ["S-ATK",645],
         "S-ATK": 634,
@@ -1532,7 +1604,7 @@
     {
         "Name (JP)": "ブラオレットゼロ-NT",
         "Name (English)": "Vraolet Zero-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Vraolet Zero",
         "Rarity": 10,
         "Requirement": ["R-ATK",520],
         "S-ATK": 636,
@@ -1892,7 +1964,7 @@
     {
         "Name (JP)": "ルフネシア-NT",
         "Name (English)": "Lufnesia-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Luffenesia",
         "Rarity": 11,
         "Requirement": ["DEX",400],
         "S-ATK": 683,
@@ -1910,7 +1982,7 @@
     {
         "Name (JP)": "機甲剣メックカタール-NT",
         "Name (English)": "Mech Katar-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Automata Blade Mech Katar",
         "Rarity": 11,
         "Requirement": ["DEX",400],
         "S-ATK": 752,
@@ -1953,6 +2025,24 @@
         "T-ATK": null,
         "SAF": null,
         "Abilities": ["Power III", "Stamina III", "Ability III", "Soul Receptor"],
+        "Potential": ["Dragon's Infuriation"],
+        "Element": null,
+        "PA_enabled": "Megiverse",
+        "Classes": ["All"],
+        "SSA Slots": null,
+        "Set": null
+    },
+    {
+        "Name (JP)": null,
+        "Name (English)": "Sigma Dienzer/Global",
+        "Name (Global)": "Sigma Jienza",
+        "Rarity": 12,
+        "Requirement": ["DEX",440],
+        "S-ATK": 673,
+        "R-ATK": 630,
+        "T-ATK": null,
+        "SAF": "Shoot IV",
+        "Abilities": null,
         "Potential": ["Dragon's Infuriation"],
         "Element": null,
         "PA_enabled": "Megiverse",
@@ -2033,6 +2123,24 @@
         "Set": null
     },
     {
+        "Name (JP)": null,
+        "Name (English)": "Queen Viera/Global",
+        "Name (Global)": "Queen Viella-C",
+        "Rarity": 12,
+        "Requirement": ["DEX",450],
+        "S-ATK": 455,
+        "R-ATK": 455,
+        "T-ATK": 550,
+        "SAF": null,
+        "Abilities": null,
+        "Potential": null,
+        "Element": null,
+        "PA_enabled": "Ilgrants",
+        "Classes": ["All"],
+        "SSA Slots": null,
+        "Set": null
+    },
+    {
         "Name (JP)": "リンドオネット",
         "Name (English)": "Lind Onett",
         "Name (Global)": null,
@@ -2089,7 +2197,7 @@
     {
         "Name (JP)": "ノクスシュディクス-NT",
         "Name (English)": "Nox Schdyx-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Nox Stucke",
         "Rarity": 12,
         "Requirement": ["R-DEF",425],
         "S-ATK": 782,
@@ -2107,7 +2215,7 @@
     {
         "Name (JP)": "リカスネシア-NT",
         "Name (English)": "Licasnesia-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Licusnesia",
         "Rarity": 12,
         "Requirement": ["R-DEF",440],
         "S-ATK": 790,
@@ -2125,7 +2233,7 @@
     {
         "Name (JP)": "サーハリングVer2",
         "Name (English)": "Sarhaling Ver2",
-        "Name (Global)": null,
+        "Name (Global)": "Sahre Ling v2",
         "Rarity": 13,
         "Requirement": ["DEX",400],
         "S-ATK": 752,
@@ -2195,6 +2303,24 @@
         "Set": null
     },
     {
+        "Name (JP)": "スレイヴスラッシュ",
+        "Name (English)": "Slave Slash",
+        "Name (Global)": null,
+        "Rarity": 13,
+        "Requirement": ["DEX",455],
+        "S-ATK": 836,
+        "R-ATK": 795,
+        "T-ATK": null,
+        "SAF": null,
+        "Abilities": null,
+        "Potential": ["Magic Pledge"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["All"],
+        "SSA Slots": null,
+        "Set": null
+    },
+    {
         "Name (JP)": "アーレスバスター",
         "Name (English)": "Ares Buster",
         "Name (Global)": null,
@@ -2231,27 +2357,9 @@
         "Set": null
     },
     {
-        "Name (JP)": "スレイヴスラッシュ",
-        "Name (English)": "Slave Slash",
-        "Name (Global)": null,
-        "Rarity": 13,
-        "Requirement": ["DEX",455],
-        "S-ATK": 836,
-        "R-ATK": 795,
-        "T-ATK": null,
-        "SAF": null,
-        "Abilities": null,
-        "Potential": ["Magic Pledge"],
-        "Element": null,
-        "PA_enabled": null,
-        "Classes": ["All"],
-        "SSA Slots": null,
-        "Set": null
-    },
-    {
         "Name (JP)": "凍時雨",
         "Name (English)": "Ite Shigure",
-        "Name (Global)": null,
+        "Name (Global)": "Idesigure",
         "Rarity": 13,
         "Requirement": ["DEX",455],
         "S-ATK": 868,
@@ -2269,7 +2377,7 @@
     {
         "Name (JP)": "レイスラッシュ",
         "Name (English)": "Ray Slash",
-        "Name (Global)": null,
+        "Name (Global)": "Ray Gunblade",
         "Rarity": 13,
         "Requirement": ["DEX",440],
         "S-ATK": 870,
@@ -2305,7 +2413,7 @@
     {
         "Name (JP)": "マーセナリシュバルツ",
         "Name (English)": "Mercenary Schwarz",
-        "Name (Global)": null,
+        "Name (Global)": "Mercenary Schwarz",
         "Rarity": 13,
         "Requirement": ["DEX",450],
         "S-ATK": 878,
@@ -2341,7 +2449,7 @@
     {
         "Name (JP)": "スラッシュレボルシオ",
         "Name (English)": "Slash Revolucio",
-        "Name (Global)": null,
+        "Name (Global)": "Gunblade Revolsio",
         "Rarity": 13,
         "Requirement": ["DEX",450],
         "S-ATK": 884,
@@ -2395,7 +2503,7 @@
     {
         "Name (JP)": "ユニオンスラッシュ",
         "Name (English)": "Union Slash",
-        "Name (Global)": null,
+        "Name (Global)": "Union Gunblade",
         "Rarity": 13,
         "Requirement": ["DEX",445],
         "S-ATK": 938,
@@ -2413,7 +2521,7 @@
     {
         "Name (JP)": "フォルニスハルーブ",
         "Name (English)": "Fornis Halube",
-        "Name (Global)": null,
+        "Name (Global)": "Fornis Haluv",
         "Rarity": 13,
         "Requirement": ["DEX",460],
         "S-ATK": 940,
@@ -2449,7 +2557,7 @@
     {
         "Name (JP)": "クラーデムエルピーダ",
         "Name (English)": "Clawdem Elpida",
-        "Name (Global)": null,
+        "Name (Global)": "Claudium Elpida",
         "Rarity": 13,
         "Requirement": ["DEX",430],
         "S-ATK": 941,
@@ -2467,7 +2575,7 @@
     {
         "Name (JP)": "マーセナリスターロード",
         "Name (English)": "Mercenary Starlord",
-        "Name (Global)": null,
+        "Name (Global)": "Mercenary Star Rod",
         "Rarity": 13,
         "Requirement": ["DEX",465],
         "S-ATK": 942,
@@ -2485,7 +2593,7 @@
     {
         "Name (JP)": "スカジラーススカル",
         "Name (English)": "Skuzirath Skull",
-        "Name (Global)": null,
+        "Name (Global)": "Skuzirath Skull",
         "Rarity": 13,
         "Requirement": ["R-ATK",660],
         "S-ATK": 942,
@@ -2503,7 +2611,7 @@
     {
         "Name (JP)": "アリュールラウブ",
         "Name (English)": "Allure Raub",
-        "Name (Global)": null,
+        "Name (Global)": "Allure Lauv",
         "Rarity": 13,
         "Requirement": ["DEX",430],
         "S-ATK": 943,
@@ -2521,7 +2629,7 @@
     {
         "Name (JP)": "シャライラペティラ",
         "Name (English)": "Chalyra Petira",
-        "Name (Global)": null,
+        "Name (Global)": "Xerraire Petila",
         "Rarity": 13,
         "Requirement": ["DEX",430],
         "S-ATK": 943,
@@ -2539,7 +2647,7 @@
     {
         "Name (JP)": "ディトネションヒュージ",
         "Name (English)": "Detonation Huge",
-        "Name (Global)": null,
+        "Name (Global)": "Detonation Fuge",
         "Rarity": 13,
         "Requirement": ["DEX",460],
         "S-ATK": 945,
@@ -2557,7 +2665,7 @@
     {
         "Name (JP)": "アストラディフィ",
         "Name (English)": "Astra Diffie",
-        "Name (Global)": null,
+        "Name (Global)": "Astra Difi",
         "Rarity": 13,
         "Requirement": ["R-DEF",470],
         "S-ATK": 947,
@@ -2593,7 +2701,7 @@
     {
         "Name (JP)": "ゼイネシスガンシザー",
         "Name (English)": "Zeinesis Gunscissor",
-        "Name (Global)": null,
+        "Name (Global)": "Zeinesis Gunscissor",
         "Rarity": 13,
         "Requirement": ["DEX",465],
         "S-ATK": 951,
@@ -2611,7 +2719,7 @@
     {
         "Name (JP)": "クリファドガンシザー",
         "Name (English)": "Qliphad Gunscissor",
-        "Name (Global)": null,
+        "Name (Global)": "Clifard Gunscissor",
         "Rarity": 13,
         "Requirement": ["DEX",465],
         "S-ATK": 951,
@@ -2629,7 +2737,7 @@
     {
         "Name (JP)": "レガロヤクートスカル",
         "Name (English)": "Regaloyakut Skull",
-        "Name (Global)": null,
+        "Name (Global)": "Regaloyakut Skull",
         "Rarity": 13,
         "Requirement": ["R-ATK",660],
         "S-ATK": 961,
@@ -2647,7 +2755,7 @@
     {
         "Name (JP)": "バルアルズ",
         "Name (English)": "Val Ars",
-        "Name (Global)": null,
+        "Name (Global)": "Val Alz",
         "Rarity": 13,
         "Requirement": ["DEX",400],
         "S-ATK": 966,
@@ -2665,7 +2773,7 @@
     {
         "Name (JP)": "アスカルドロプ",
         "Name (English)": "Azucardrop",
-        "Name (Global)": null,
+        "Name (Global)": "Azucar Drops",
         "Rarity": 13,
         "Requirement": ["DEX",400],
         "S-ATK": 973,
@@ -2683,7 +2791,7 @@
     {
         "Name (JP)": "イヴリダビュクゼ",
         "Name (English)": "Evleda Buechse",
-        "Name (Global)": null,
+        "Name (Global)": "Ivlida Bukse",
         "Rarity": 13,
         "Requirement": ["DEX",430],
         "S-ATK": 978,
@@ -2701,7 +2809,7 @@
     {
         "Name (JP)": "クリシスビュクゼ",
         "Name (English)": "Cleasis Buechse",
-        "Name (Global)": null,
+        "Name (Global)": "Cleasis Bukse",
         "Rarity": 13,
         "Requirement": ["DEX",430],
         "S-ATK": 978,
@@ -2719,7 +2827,7 @@
     {
         "Name (JP)": "シュベルビュクゼ",
         "Name (English)": "Schvelle Buechse",
-        "Name (Global)": null,
+        "Name (Global)": "Schvelle Bukse",
         "Rarity": 13,
         "Requirement": ["DEX",430],
         "S-ATK": 978,
@@ -2737,7 +2845,7 @@
     {
         "Name (JP)": "バジリスディソニア",
         "Name (English)": "Basilis Dysonia",
-        "Name (Global)": null,
+        "Name (Global)": "Basilisk Dissonia",
         "Rarity": 13,
         "Requirement": ["DEX",430],
         "S-ATK": 982,
@@ -2755,7 +2863,7 @@
     {
         "Name (JP)": "ホムラノフシチョウ",
         "Name (English)": "Homura no Fushichou",
-        "Name (Global)": null,
+        "Name (Global)": "Homura no Fushichou",
         "Rarity": 13,
         "Requirement": ["DEX",400],
         "S-ATK": 985,
@@ -2773,7 +2881,7 @@
     {
         "Name (JP)": "ギクスグラナス",
         "Name (English)": "Gix Granas",
-        "Name (Global)": null,
+        "Name (Global)": "Gix Granas",
         "Rarity": 13,
         "Requirement": ["DEX",460],
         "S-ATK": 987,
@@ -2791,7 +2899,7 @@
     {
         "Name (JP)": "ジュティスシュティク",
         "Name (English)": "Jutus Stich",
-        "Name (Global)": null,
+        "Name (Global)": "Jutus Stic",
         "Rarity": 13,
         "Requirement": ["DEX",465],
         "S-ATK": 989,
@@ -2809,7 +2917,7 @@
     {
         "Name (JP)": "セレラウィール",
         "Name (English)": "Ceres Raeir",
-        "Name (Global)": null,
+        "Name (Global)": "Ceres Lavere",
         "Rarity": 13,
         "Requirement": ["DEX",410],
         "S-ATK": 992,
@@ -2827,7 +2935,7 @@
     {
         "Name (JP)": "仲秋丸-NT",
         "Name (English)": "Chuushuumaru-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Chuushuumaru",
         "Rarity": 13,
         "Requirement": ["R-ATK",730],
         "S-ATK": 1022,
@@ -2845,7 +2953,7 @@
     {
         "Name (JP)": "インヴェイドバスター-NT",
         "Name (English)": "Invade Buster-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Invade Buster",
         "Rarity": 13,
         "Requirement": ["DEX",440],
         "S-ATK": 1025,
@@ -2863,7 +2971,7 @@
     {
         "Name (JP)": "ネメシススラッシュ-NT",
         "Name (English)": "Nemesis Slash-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Nemesis Gunblade",
         "Rarity": 13,
         "Requirement": ["DEX",470],
         "S-ATK": 1030,
@@ -2881,7 +2989,7 @@
     {
         "Name (JP)": "スレイヴスラッシュ-NT",
         "Name (English)": "Slave Slash-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Raven Gunblade",
         "Rarity": 13,
         "Requirement": ["DEX",470],
         "S-ATK": 1034,
@@ -2899,7 +3007,7 @@
     {
         "Name (JP)": "ディアグラナス",
         "Name (English)": "Dia Granas",
-        "Name (Global)": null,
+        "Name (Global)": "Dia Granas",
         "Rarity": 13,
         "Requirement": ["DEX",470],
         "S-ATK": 1035,
@@ -2917,7 +3025,7 @@
     {
         "Name (JP)": "グラテスグラナス",
         "Name (English)": "Grates Granas",
-        "Name (Global)": null,
+        "Name (Global)": "Gratis Granas",
         "Rarity": 13,
         "Requirement": ["DEX",460],
         "S-ATK": 1041,
@@ -2935,7 +3043,7 @@
     {
         "Name (JP)": "深遠刻インテンシオン",
         "Name (English)": "Profound Intenxion",
-        "Name (Global)": null,
+        "Name (Global)": "Profound Sabre Intexion",
         "Rarity": 13,
         "Requirement": ["DEX",400],
         "S-ATK": 1067,
@@ -2970,7 +3078,7 @@
     {
         "Name (JP)": "シエンノフシチョウ",
         "Name (English)": "Shien no Fushichou",
-        "Name (Global)": null,
+        "Name (Global)": "Xien no Fushichou",
         "Rarity": 14,
         "Requirement": ["DEX",430],
         "S-ATK": 1023,
@@ -2986,27 +3094,9 @@
         "Set": null
     },
     {
-        "Name (JP)": "セレラウィール・ザラ",
-        "Name (English)": "Ceres Raeir Zara",
-        "Name (Global)": null,
-        "Rarity": 14,
-        "Requirement": ["DEX",430],
-        "S-ATK": 1036,
-        "R-ATK": 984,
-        "T-ATK": null,
-        "SAF": "Doom Break II",
-        "Abilities": null,
-        "Potential": ["Immortal Breath", "Immortal Beat"],
-        "Element": null,
-        "PA_enabled": null,
-        "Classes": ["All"],
-        "SSA Slots": [1, 2, 3],
-        "Set": null
-    },
-    {
         "Name (JP)": "グレンノフシチョウ",
         "Name (English)": "Guren no Fushichou",
-        "Name (Global)": null,
+        "Name (Global)": "Guren no Fushichou",
         "Rarity": 14,
         "Requirement": ["DEX",430],
         "S-ATK": 1065,
@@ -3022,9 +3112,27 @@
         "Set": null
     },
     {
+        "Name (JP)": "セレラウィール・ザラ",
+        "Name (English)": "Ceres Raeir Zara",
+        "Name (Global)": "Ceres Lavere-Zara",
+        "Rarity": 14,
+        "Requirement": ["DEX",430],
+        "S-ATK": 1036,
+        "R-ATK": 984,
+        "T-ATK": null,
+        "SAF": "Doom Break II",
+        "Abilities": null,
+        "Potential": ["Immortal Breath", "Immortal Beat"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["All"],
+        "SSA Slots": [1, 2, 3],
+        "Set": null
+    },
+    {
         "Name (JP)": "リュミエルシュティク",
         "Name (English)": "Lumiere Stich",
-        "Name (Global)": null,
+        "Name (Global)": "Lumiere Stic",
         "Rarity": 14,
         "Requirement": ["DEX",460],
         "S-ATK": 1092,
@@ -3060,7 +3168,7 @@
     {
         "Name (JP)": "アーレスバスター-NT",
         "Name (English)": "Ares Buster-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Ares Buster",
         "Rarity": 14,
         "Requirement": ["DEX",500],
         "S-ATK": 1112,
@@ -3078,7 +3186,7 @@
     {
         "Name (JP)": "アトラアルズ",
         "Name (English)": "Atra Ars",
-        "Name (Global)": null,
+        "Name (Global)": "Atlas Alz",
         "Rarity": 14,
         "Requirement": ["DEX",470],
         "S-ATK": 1117,
@@ -3096,7 +3204,7 @@
     {
         "Name (JP)": "アウェイクバネット",
         "Name (English)": "Awake Banette",
-        "Name (Global)": null,
+        "Name (Global)": "Awake Banette",
         "Rarity": 14,
         "Requirement": ["R-DEF",575],
         "S-ATK": 1122,
@@ -3114,7 +3222,7 @@
     {
         "Name (JP)": "アトルミラージュ",
         "Name (English)": "Atol Mirage",
-        "Name (Global)": null,
+        "Name (Global)": "Ator Mirage",
         "Rarity": 14,
         "Requirement": ["DEX",470],
         "S-ATK": 1159,
@@ -3132,7 +3240,7 @@
     {
         "Name (JP)": "ディムスラッシュ",
         "Name (English)": "Dim Slash",
-        "Name (Global)": null,
+        "Name (Global)": "Dim Gunblade",
         "Rarity": 14,
         "Requirement": ["DEX",440],
         "S-ATK": 1195,
@@ -3150,7 +3258,7 @@
     {
         "Name (JP)": "ブリンガーライフル",
         "Name (English)": "Bringer's Rifle",
-        "Name (Global)": null,
+        "Name (Global)": "Bringer Rifle",
         "Rarity": 14,
         "Requirement": ["DEX",480],
         "S-ATK": 1206,
@@ -3168,7 +3276,7 @@
     {
         "Name (JP)": "星震刻インテンシオン",
         "Name (English)": "Celestial Intenxion",
-        "Name (Global)": null,
+        "Name (Global)": "Starquake Sabre Intexion",
         "Rarity": 14,
         "Requirement": ["DEX",440],
         "S-ATK": 1208,
@@ -3186,7 +3294,7 @@
     {
         "Name (JP)": "ブラッドスリドゥン",
         "Name (English)": "Blood Slidawn",
-        "Name (Global)": null,
+        "Name (Global)": "Blood Slidun",
         "Rarity": 14,
         "Requirement": ["DEX",470],
         "S-ATK": 1211,
@@ -3204,7 +3312,7 @@
     {
         "Name (JP)": "フォボスガンシクル",
         "Name (English)": "Phobos Gunsickle",
-        "Name (Global)": null,
+        "Name (Global)": "Phobos Gunsickle",
         "Rarity": 14,
         "Requirement": ["DEX",500],
         "S-ATK": 1213,
@@ -3222,7 +3330,7 @@
     {
         "Name (JP)": "フラクガヴエル",
         "Name (English)": "Flacgavuel",
-        "Name (Global)": null,
+        "Name (Global)": "Frac Gaverl",
         "Rarity": 14,
         "Requirement": ["DEX",470],
         "S-ATK": 1214,
@@ -3238,9 +3346,27 @@
         "Set": null
     },
     {
+        "Name (JP)": null,
+        "Name (English)": "Shiguro Sakura/Global",
+        "Name (Global)": "Violet Sakura",
+        "Rarity": 14,
+        "Requirement": ["DEX",500],
+        "S-ATK": 1225,
+        "R-ATK": 1164,
+        "T-ATK": null,
+        "SAF": "Shoot VI",
+        "Abilities": ["Ability IV"],
+        "Potential": ["Pale Night Blossom"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["All"],
+        "SSA Slots": [1,2,3],
+        "Set": null
+    },
+    {
         "Name (JP)": "アクルドハルーブ",
         "Name (English)": "Aculd Halube",
-        "Name (Global)": null,
+        "Name (Global)": "Occuld Haluv",
         "Rarity": 14,
         "Requirement": ["DEX",460],
         "S-ATK": 1238,
@@ -3258,7 +3384,7 @@
     {
         "Name (JP)": "サインバーン",
         "Name (English)": "Sign Burn",
-        "Name (Global)": null,
+        "Name (Global)": "Sein Burn",
         "Rarity": 14,
         "Requirement": ["DEX",450],
         "S-ATK": 1252,
@@ -3276,7 +3402,7 @@
     {
         "Name (JP)": "ニーケガンシクル",
         "Name (English)": "Nike Gunsickle",
-        "Name (Global)": null,
+        "Name (Global)": "Nike Gunsickle",
         "Rarity": 14,
         "Requirement": ["DEX",510],
         "S-ATK": 1307,
@@ -3294,7 +3420,7 @@
     {
         "Name (JP)": "オフスティアバスター-NT",
         "Name (English)": "Austere Buster-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Ophistia Buster",
         "Rarity": 15,
         "Requirement": ["DEX",530],
         "S-ATK": 1346,
@@ -3312,7 +3438,7 @@
     {
         "Name (JP)": "アナカテスヒンメル",
         "Name (English)": "Anacates Himmel",
-        "Name (Global)": null,
+        "Name (Global)": "Anacates Himmel",
         "Rarity": 15,
         "Requirement": ["DEX",520],
         "S-ATK": 1395,
@@ -3330,7 +3456,7 @@
     {
         "Name (JP)": "アトラアルズ・イクス",
         "Name (English)": "Atra Ars Ex",
-        "Name (Global)": null,
+        "Name (Global)": "Atlas Alz EX",
         "Rarity": 15,
         "Requirement": ["DEX",530],
         "S-ATK": 1418,
@@ -3348,7 +3474,7 @@
     {
         "Name (JP)": "ノヴェルスラッシュ",
         "Name (English)": "Novel Slash",
-        "Name (Global)": null,
+        "Name (Global)": "Novel Gunblade",
         "Rarity": 15,
         "Requirement": ["DEX",530],
         "S-ATK": 1422,
@@ -3366,7 +3492,7 @@
     {
         "Name (JP)": "バヨネクトオーブ",
         "Name (English)": "Bayonect Orb",
-        "Name (Global)": null,
+        "Name (Global)": "Bayonect Orb",
         "Rarity": 15,
         "Requirement": ["DEX",560],
         "S-ATK": 1447,
@@ -3384,7 +3510,7 @@
     {
         "Name (JP)": "バヨネクトダスク",
         "Name (English)": "Bayonect Dusk",
-        "Name (Global)": null,
+        "Name (Global)": "Bayonect Dusk",
         "Rarity": 15,
         "Requirement": ["DEX",560],
         "S-ATK": 1447,
@@ -3402,7 +3528,7 @@
     {
         "Name (JP)": "ヴレードピュラス",
         "Name (English)": "Wreid Puras",
-        "Name (Global)": null,
+        "Name (Global)": "Vlade Puras",
         "Rarity": 15,
         "Requirement": ["DEX",550],
         "S-ATK": 1463,
@@ -3438,7 +3564,7 @@
     {
         "Name (JP)": "光跡刻インテンシオン",
         "Name (English)": "Lightstream Intenxion",
-        "Name (Global)": null,
+        "Name (Global)": "Trailblazer Sabre Intexion",
         "Rarity": 15,
         "Requirement": ["DEX",550],
         "S-ATK": 1473,
@@ -3456,7 +3582,7 @@
     {
         "Name (JP)": "ミリオンディガンツ",
         "Name (English)": "Million Deganth",
-        "Name (Global)": null,
+        "Name (Global)": "Millionaire Digantz",
         "Rarity": 15,
         "Requirement": ["DEX",555],
         "S-ATK": 1478,
@@ -3474,7 +3600,7 @@
     {
         "Name (JP)": "クリーサディガンツ",
         "Name (English)": "Krisa Deganth",
-        "Name (Global)": null,
+        "Name (Global)": "Croesus Digantz",
         "Rarity": 15,
         "Requirement": ["DEX",300],
         "S-ATK": 1478,
@@ -3492,7 +3618,7 @@
     {
         "Name (JP)": "アトルノヴァ",
         "Name (English)": "Atol Nova",
-        "Name (Global)": null,
+        "Name (Global)": "Ator Nova",
         "Rarity": 15,
         "Requirement": ["DEX",500],
         "S-ATK": 1491,
@@ -3510,7 +3636,7 @@
     {
         "Name (JP)": "ヴォルテクスラーマ",
         "Name (English)": "Vortex Rama",
-        "Name (Global)": null,
+        "Name (Global)": "Vortex Lammour",
         "Rarity": 15,
         "Requirement": ["DEX",565],
         "S-ATK": 1538,
@@ -3528,7 +3654,7 @@
     {
         "Name (JP)": "リバレイトスラッシュ",
         "Name (English)": "Liberate Slash",
-        "Name (Global)": null,
+        "Name (Global)": "Rivalate Gunblade",
         "Rarity": 15,
         "Requirement": ["DEX",550],
         "S-ATK": 1609,
@@ -3546,7 +3672,7 @@
     {
         "Name (JP)": "リュミグニー",
         "Name (English)": "Lumigunny",
-        "Name (Global)": null,
+        "Name (Global)": "Lumignie",
         "Rarity": 15,
         "Requirement": ["DEX",560],
         "S-ATK": 1686,
@@ -3564,7 +3690,7 @@
     {
         "Name (JP)": "ヴレードスティル",
         "Name (English)": "Wreid Stil",
-        "Name (Global)": null,
+        "Name (Global)": "Vlade Steel",
         "Rarity": 15,
         "Requirement": ["DEX",565],
         "S-ATK": 1695,
@@ -3582,7 +3708,7 @@
     {
         "Name (JP)": "闇征刻アジェルティア",
         "Name (English)": "Darkbanisher Ayer Tier",
-        "Name (Global)": null,
+        "Name (Global)": "Darkweave Agile Tear",
         "Rarity": 15,
         "Requirement": ["DEX",565],
         "S-ATK": 1712,
@@ -3600,7 +3726,7 @@
     {
         "Name (JP)": "フルクシオタラッサ",
         "Name (English)": "Fluxio Thalassa",
-        "Name (Global)": null,
+        "Name (Global)": "Fluxio Talassa",
         "Rarity": 15,
         "Requirement": ["DEX",565],
         "S-ATK": 1755,
@@ -3618,7 +3744,7 @@
     {
         "Name (JP)": "リンザータラッサ",
         "Name (English)": "Rinza Thalassa",
-        "Name (Global)": null,
+        "Name (Global)": "Rinser Talassa",
         "Rarity": 15,
         "Requirement": ["DEX",565],
         "S-ATK": 1755,
@@ -3636,7 +3762,7 @@
     {
         "Name (JP)": "タロンシュナイデル",
         "Name (English)": "Talon Schneider",
-        "Name (Global)": null,
+        "Name (Global)": "Talon Schneider",
         "Rarity": 15,
         "Requirement": ["DEX",565],
         "S-ATK": 1780,
@@ -3654,7 +3780,7 @@
     {
         "Name (JP)": "光纏刻クラースティア",
         "Name (English)": "Lightweaver Cras Tier",
-        "Name (Global)": null,
+        "Name (Global)": "Lightweave Klauz Tear",
         "Rarity": 15,
         "Requirement": ["DEX",570],
         "S-ATK": 1815,
