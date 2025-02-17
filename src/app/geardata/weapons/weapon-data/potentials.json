@@ -3411,8 +3411,8 @@
         "Name (English)": "Battle Stimulation",
         "Name (Global)": "Fighting Spirit",
         "Effect (JP)": "威力が(16%)上昇。シフタ効果中打射法撃力が600増加。",
-        "Effect (English)": "Increases damage by 16%. Increases the ATK increases granted by Shifta by 600 ATK.",
-        "Effect (Global)": "Increases damage by 16%. Increases the ATK increases granted by Shifta by 600 Pwr."
+        "Effect (English)": "Increases damage by 16%. Increases the ATK bonus granted by Shifta by 600 ATK.",
+        "Effect (Global)": "Increases damage by 16%. Increases the ATK bonus granted by Shifta by 600 Pwr."
     },
     {
         "Name (English)": "Carbine Vortex",
