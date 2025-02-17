@@ -3440,6 +3440,22 @@
         "SSA Slots":[1,3]
     },
     {
+        "Name (JP)": null,
+        "Name (English)":"Obliance Wuft/Global",
+        "Name (Global)": "Obliance Wucht",
+        "Rarity": 15,
+        "Requirement":["S-ATK",920],
+        "S-ATK":1925,
+        "R-ATK":null,
+        "T-ATK":null,
+        "SAF":"Varuna Glare",
+        "Abilities":null,
+        "Potential":["Battle Stimulation"],
+        "Element": null,
+        "Classes":["Hu","Hr"],
+        "SSA Slots":[1,3]
+    },
+    {
         "Name (JP)": "リバレイトソード",
         "Name (English)":"Liberate Sword",
         "Name (Global)": "Rivalate Sword",

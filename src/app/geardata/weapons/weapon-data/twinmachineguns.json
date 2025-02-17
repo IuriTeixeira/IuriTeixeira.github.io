@@ -56,7 +56,7 @@
     {
         "Name (JP)": "レスキューガン",
         "Name (English)": "Rescue Gun",
-        "Name (Global)": null,
+        "Name (Global)": "Rescue Guns-C",
         "Rarity": 1,
         "Requirement": ["R-ATK",1],
         "S-ATK": null,
@@ -72,9 +72,27 @@
         "Set": null
     },
     {
+        "Name (JP)": null,
+        "Name (English)": "Rescue Gun/Global",
+        "Name (Global)": "Rescue Guns",
+        "Rarity": 1,
+        "Requirement": ["R-ATK",1],
+        "S-ATK": null,
+        "R-ATK": 165,
+        "T-ATK": null,
+        "SAF": "React III",
+        "Abilities": null,
+        "Potential": ["Burning Hearts"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["All"],
+        "SSA Slots": null,
+        "Set": null
+    },
+    {
         "Name (JP)": "ツインマシンガン-NT",
         "Name (English)": "Twin Machineguns-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Twin Machine Guns",
         "Rarity": 1,
         "Requirement": ["R-ATK",1],
         "S-ATK": null,
@@ -146,7 +164,7 @@
     {
         "Name (JP)": "アルバTマシンガン-NT",
         "Name (English)": "Alva Twin Machineguns-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Alba Twin Machine Guns",
         "Rarity": 2,
         "Requirement": ["R-ATK",150],
         "S-ATK": null,
@@ -218,7 +236,7 @@
     {
         "Name (JP)": "ヴィタTマシンガン-NT",
         "Name (English)": "Vita Twin Machineguns-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Vita Twin Machine Guns",
         "Rarity": 3,
         "Requirement": ["R-ATK",300],
         "S-ATK": null,
@@ -272,7 +290,7 @@
     {
         "Name (JP)": "ツインガトリング-NT",
         "Name (English)": "Twin Gatling-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Twin Gatlings",
         "Rarity": 4,
         "Requirement": ["R-ATK",150],
         "S-ATK": null,
@@ -290,7 +308,7 @@
     {
         "Name (JP)": "ツインバルカン-NT",
         "Name (English)": "Twin Vulcan-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Twin Vulcans",
         "Rarity": 4,
         "Requirement": ["R-ATK",200],
         "S-ATK": null,
@@ -344,7 +362,7 @@
     {
         "Name (JP)": "アルバTガトリング-NT",
         "Name (English)": "Alva Twin Gatling-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Alba Twin Gatlings",
         "Rarity": 5,
         "Requirement": ["R-ATK",250],
         "S-ATK": null,
@@ -362,7 +380,7 @@
     {
         "Name (JP)": "アルバTバルカン-NT",
         "Name (English)": "Alva Twin Vulcan-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Alba Twin Vulcans",
         "Rarity": 5,
         "Requirement": ["R-ATK",300],
         "S-ATK": null,
@@ -416,7 +434,7 @@
     {
         "Name (JP)": "ヴィタTガトリング-NT",
         "Name (English)": "Vita Twin Gatling-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Vita Twin Gatlings",
         "Rarity": 6,
         "Requirement": ["R-ATK",350],
         "S-ATK": null,
@@ -434,7 +452,7 @@
     {
         "Name (JP)": "ヴィタTバルカン-NT",
         "Name (English)": "Vita Twin Vulcan-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Vita Twin Vulcans",
         "Rarity": 6,
         "Requirement": ["R-ATK",400],
         "S-ATK": null,
@@ -596,7 +614,7 @@
     {
         "Name (JP)": "アレスヴィス-NT",
         "Name (English)": "Aresvis-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Aresvis",
         "Rarity": 7,
         "Requirement": ["R-ATK",1],
         "S-ATK": null,
@@ -614,7 +632,7 @@
     {
         "Name (JP)": "H＆S25ジャスティス-NT",
         "Name (English)": "H&S25 Justice-NT",
-        "Name (Global)": null,
+        "Name (Global)": "H&S 25 Justice",
         "Rarity": 7,
         "Requirement": ["R-ATK",270],
         "S-ATK": null,
@@ -659,6 +677,24 @@
         "SAF": null,
         "Abilities": null,
         "Potential": ["Red Recalescence"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["Gu", "Hr"],
+        "SSA Slots": null,
+        "Set": null
+    },
+    {
+        "Name (JP)": null,
+        "Name (English)": "Red Machineguns/Global",
+        "Name (Global)": "Red Machine Guns",
+        "Rarity": 7,
+        "Requirement": ["R-ATK",597],
+        "S-ATK": null,
+        "R-ATK": 547,
+        "T-ATK": null,
+        "SAF": "Shoot III",
+        "Abilities": null,
+        "Potential": ["Immediate Strike"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
@@ -810,6 +846,24 @@
         "Set": null
     },
     {
+        "Name (JP)": "ラムダサークウェイド",
+        "Name (English)": "Lambda Sarcueid",
+        "Name (Global)": null,
+        "Rarity": 8,
+        "Requirement": ["R-ATK",547],
+        "S-ATK": null,
+        "R-ATK": 507,
+        "T-ATK": null,
+        "SAF": "Shoot III",
+        "Abilities": null,
+        "Potential": ["Enraged Stance"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["Gu", "Hr"],
+        "SSA Slots": null,
+        "Set": null
+    },
+    {
         "Name (JP)": "イシュライ",
         "Name (English)": "Ishurai",
         "Name (Global)": null,
@@ -884,7 +938,7 @@
     {
         "Name (JP)": "ラディエグル-NT",
         "Name (English)": "Radiegle-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Radiegle",
         "Rarity": 9,
         "Requirement": ["R-ATK",458],
         "S-ATK": null,
@@ -1442,7 +1496,7 @@
     {
         "Name (JP)": "パンドラエクストリーム-NT",
         "Name (English)": "Pandora Extreme-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Pandora Extreme",
         "Rarity": 10,
         "Requirement": ["R-ATK",620],
         "S-ATK": null,
@@ -1568,7 +1622,7 @@
     {
         "Name (JP)": "ブランミラーズ-NT",
         "Name (English)": "Bran Mirrors-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Blanc Mirrors",
         "Rarity": 10,
         "Requirement": ["R-ATK",680],
         "S-ATK": null,
@@ -1586,7 +1640,7 @@
     {
         "Name (JP)": "ディオラディエグル-NT",
         "Name (English)": "Dio Radiegle-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Deo Radiegle",
         "Rarity": 10,
         "Requirement": ["R-ATK",655],
         "S-ATK": null,
@@ -1604,7 +1658,7 @@
     {
         "Name (JP)": "ヤスミノコフ9000M-NT",
         "Name (English)": "Yasminkov 9000M-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Yasminokov 9000M",
         "Rarity": 10,
         "Requirement": ["R-ATK",560],
         "S-ATK": null,
@@ -2072,7 +2126,7 @@
     {
         "Name (JP)": "ミズーリM13-NT",
         "Name (English)": "Missouri M13-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Missouri M13",
         "Rarity": 11,
         "Requirement": ["R-ATK",600],
         "S-ATK": null,
@@ -2234,7 +2288,7 @@
     {
         "Name (JP)": "ファルコフリント-NT",
         "Name (English)": "Falco Flint-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Falco Flint",
         "Rarity": 11,
         "Requirement": ["DEX",400],
         "S-ATK": null,
@@ -2339,6 +2393,24 @@
         "Set": null
     },
     {
+        "Name (JP)": null,
+        "Name (English)": "Sigma Phase/Global",
+        "Name (Global)": "Sigma Phase",
+        "Rarity": 12,
+        "Requirement": ["DEX",440],
+        "S-ATK": null,
+        "R-ATK": 815,
+        "T-ATK": null,
+        "SAF": "Shoot IV",
+        "Abilities": null,
+        "Potential": ["Dragon's Infuriation"],
+        "Element": null,
+        "PA_enabled": "Satellite Aim",
+        "Classes": ["All"],
+        "SSA Slots": null,
+        "Set": null
+    },
+    {
         "Name (JP)": "ライブファンガー",
         "Name (English)": "Live Fanger",
         "Name (Global)": null,
@@ -2431,7 +2503,7 @@
     {
         "Name (JP)": "ノクスシャリオ-NT",
         "Name (English)": "Nox Chario-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Nox Chario",
         "Rarity": 12,
         "Requirement": ["R-DEF",425],
         "S-ATK": null,
@@ -2449,7 +2521,7 @@
     {
         "Name (JP)": "イーグルフリント-NT",
         "Name (English)": "Eagle Flint-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Eagle Flint",
         "Rarity": 12,
         "Requirement": ["R-DEF",440],
         "S-ATK": null,
@@ -2467,7 +2539,7 @@
     {
         "Name (JP)": "ヒストリカ",
         "Name (English)": "Historica",
-        "Name (Global)": null,
+        "Name (Global)": "Historica",
         "Rarity": 12,
         "Requirement": ["R-ATK",685],
         "S-ATK": null,
@@ -2485,7 +2557,7 @@
     {
         "Name (JP)": "ラムダサークウェイドVer2",
         "Name (English)": "Lambda Sarcueid Ver2",
-        "Name (Global)": null,
+        "Name (Global)": "Lambda Sarcueid v2",
         "Rarity": 13,
         "Requirement": ["DEX",400],
         "S-ATK": null,
@@ -2555,6 +2627,24 @@
         "Set": null
     },
     {
+        "Name (JP)": "スレイヴバレット",
+        "Name (English)": "Slave Bullet",
+        "Name (Global)": null,
+        "Rarity": 13,
+        "Requirement": ["R-ATK",735],
+        "S-ATK": null,
+        "R-ATK": 1005,
+        "T-ATK": null,
+        "SAF": null,
+        "Abilities": null,
+        "Potential": ["Magic Pledge"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["Gu", "Hr"],
+        "SSA Slots": null,
+        "Set": null
+    },
+    {
         "Name (JP)": "アーレスマシンガン",
         "Name (English)": "Ares Machine Gun",
         "Name (Global)": null,
@@ -2609,27 +2699,9 @@
         "Set": null
     },
     {
-        "Name (JP)": "スレイヴバレット",
-        "Name (English)": "Slave Bullet",
-        "Name (Global)": null,
-        "Rarity": 13,
-        "Requirement": ["R-ATK",735],
-        "S-ATK": null,
-        "R-ATK": 1005,
-        "T-ATK": null,
-        "SAF": null,
-        "Abilities": null,
-        "Potential": ["Magic Pledge"],
-        "Element": null,
-        "PA_enabled": null,
-        "Classes": ["Gu", "Hr"],
-        "SSA Slots": null,
-        "Set": null
-    },
-    {
         "Name (JP)": "虚細氷",
         "Name (English)": "Kosai Hyou",
-        "Name (Global)": null,
+        "Name (Global)": "Hollow Ice Crystals",
         "Rarity": 13,
         "Requirement": ["R-ATK",730],
         "S-ATK": null,
@@ -2647,7 +2719,7 @@
     {
         "Name (JP)": "レイTマシンガン",
         "Name (English)": "Ray Twin Machineguns",
-        "Name (Global)": null,
+        "Name (Global)": "Ray Twin Machine Guns",
         "Rarity": 13,
         "Requirement": ["R-ATK",730],
         "S-ATK": null,
@@ -2683,7 +2755,7 @@
     {
         "Name (JP)": "雷銃タガミコウガ",
         "Name (English)": "Thunder Gun Tagamikouga",
-        "Name (Global)": null,
+        "Name (Global)": "Lightning Guns Tagami Kouga",
         "Rarity": 13,
         "Requirement": ["DEX",460],
         "S-ATK": null,
@@ -2755,7 +2827,7 @@
     {
         "Name (JP)": "バレットレボルシオ",
         "Name (English)": "Bullet Revolucio",
-        "Name (Global)": null,
+        "Name (Global)": "Bullet Revolsio",
         "Rarity": 13,
         "Requirement": ["R-ATK",730],
         "S-ATK": null,
@@ -2773,7 +2845,7 @@
     {
         "Name (JP)": "アウラディアズス",
         "Name (English)": "Aura Diazuth",
-        "Name (Global)": null,
+        "Name (Global)": "Aura Diazuth",
         "Rarity": 13,
         "Requirement": ["R-DEF",750],
         "S-ATK": null,
@@ -2809,7 +2881,7 @@
     {
         "Name (JP)": "H10ミズーリT-NT",
         "Name (English)": "H10 Missouri T-NT",
-        "Name (Global)": null,
+        "Name (Global)": "H10 Missouri Twin",
         "Rarity": 13,
         "Requirement": ["DEX",450],
         "S-ATK": null,
@@ -2845,7 +2917,7 @@
     {
         "Name (JP)": "三連幻創機銃",
         "Name (English)": "Phantom Triple Cannon",
-        "Name (Global)": null,
+        "Name (Global)": "Three Strike Phantasm Guns",
         "Rarity": 13,
         "Requirement": ["R-ATK",750],
         "S-ATK": null,
@@ -2863,7 +2935,7 @@
     {
         "Name (JP)": "モナクハディス",
         "Name (English)": "Monarchadis",
-        "Name (Global)": null,
+        "Name (Global)": "Monak Hadis",
         "Rarity": 13,
         "Requirement": ["DEX",475],
         "S-ATK": null,
@@ -2881,7 +2953,7 @@
     {
         "Name (JP)": "ステルクシュタヤー",
         "Name (English)": "Stelk Shooteyr",
-        "Name (Global)": null,
+        "Name (Global)": "Stelk Steyr",
         "Rarity": 13,
         "Requirement": ["R-ATK",740],
         "S-ATK": null,
@@ -2917,7 +2989,7 @@
     {
         "Name (JP)": "ユニオンTマシンガン",
         "Name (English)": "Union Twin Machineguns",
-        "Name (Global)": null,
+        "Name (Global)": "Union Twin Machine Guns",
         "Rarity": 13,
         "Requirement": ["R-ATK",740],
         "S-ATK": null,
@@ -2935,7 +3007,7 @@
     {
         "Name (JP)": "フォルニスフィジス",
         "Name (English)": "Fornis Physis",
-        "Name (Global)": null,
+        "Name (Global)": "Fornis Fugit",
         "Rarity": 13,
         "Requirement": ["DEX",460],
         "S-ATK": null,
@@ -2971,7 +3043,7 @@
     {
         "Name (JP)": "サラマディアトルスト",
         "Name (English)": "Salamandia Tolst",
-        "Name (Global)": null,
+        "Name (Global)": "Salamandia Tolst",
         "Rarity": 13,
         "Requirement": ["R-ATK",660],
         "S-ATK": null,
@@ -2989,7 +3061,7 @@
     {
         "Name (JP)": "ワルキューレR25S",
         "Name (English)": "Valkyrie R25S",
-        "Name (Global)": null,
+        "Name (Global)": "Valkyrie R25S",
         "Rarity": 13,
         "Requirement": ["R-ATK",735],
         "S-ATK": null,
@@ -3007,7 +3079,7 @@
     {
         "Name (JP)": "シャライラパシュテ",
         "Name (English)": "Chalyra Paxte",
-        "Name (Global)": null,
+        "Name (Global)": "Xerraire Paxte",
         "Rarity": 13,
         "Requirement": ["DEX",430],
         "S-ATK": null,
@@ -3025,7 +3097,7 @@
     {
         "Name (JP)": "トリディアシュタヤー",
         "Name (English)": "Tridia Shooter",
-        "Name (Global)": null,
+        "Name (Global)": "Tridia Steyr",
         "Rarity": 13,
         "Requirement": ["R-ATK",740],
         "S-ATK": null,
@@ -3043,7 +3115,7 @@
     {
         "Name (JP)": "アストラスクリ",
         "Name (English)": "Astra Screa",
-        "Name (Global)": null,
+        "Name (Global)": "Astra Skree",
         "Rarity": 13,
         "Requirement": ["R-DEF",470],
         "S-ATK": null,
@@ -3079,7 +3151,7 @@
     {
         "Name (JP)": "ゼイネシスバルカン",
         "Name (English)": "Zeinesis Vulcan",
-        "Name (Global)": null,
+        "Name (Global)": "Zeinesis Vulcan",
         "Rarity": 13,
         "Requirement": ["R-ATK",755],
         "S-ATK": null,
@@ -3097,7 +3169,7 @@
     {
         "Name (JP)": "クリファドバルカン",
         "Name (English)": "Qliphad Vulcan",
-        "Name (Global)": null,
+        "Name (Global)": "Clifard Vulcan",
         "Rarity": 13,
         "Requirement": ["R-ATK",755],
         "S-ATK": null,
@@ -3115,7 +3187,7 @@
     {
         "Name (JP)": "サラマディアカレウス",
         "Name (English)": "Salamandia Callus",
-        "Name (Global)": null,
+        "Name (Global)": "Salamandia Calleus",
         "Rarity": 13,
         "Requirement": ["R-ATK",660],
         "S-ATK": null,
@@ -3133,7 +3205,7 @@
     {
         "Name (JP)": "バルラッダ",
         "Name (English)": "Val Radda",
-        "Name (Global)": null,
+        "Name (Global)": "Val Radda",
         "Rarity": 13,
         "Requirement": ["R-ATK",700],
         "S-ATK": null,
@@ -3151,7 +3223,7 @@
     {
         "Name (JP)": "アルタバレル",
         "Name (English)": "Alta Barrel",
-        "Name (Global)": null,
+        "Name (Global)": "Alta Barrel",
         "Rarity": 13,
         "Requirement": ["R-ATK",750],
         "S-ATK": null,
@@ -3169,7 +3241,7 @@
     {
         "Name (JP)": "マルスディアズス",
         "Name (English)": "Mars Diazuth",
-        "Name (Global)": null,
+        "Name (Global)": "Mars Diazuth",
         "Rarity": 13,
         "Requirement": ["R-DEF",500],
         "S-ATK": null,
@@ -3187,7 +3259,7 @@
     {
         "Name (JP)": "イヴリダディナレス",
         "Name (English)": "Evleda Dinares",
-        "Name (Global)": null,
+        "Name (Global)": "Ivlida Dinares",
         "Rarity": 13,
         "Requirement": ["R-ATK",720],
         "S-ATK": null,
@@ -3205,7 +3277,7 @@
     {
         "Name (JP)": "クリシスディナレス",
         "Name (English)": "Cleasis Dinares",
-        "Name (Global)": null,
+        "Name (Global)": "Cleasis Dinares",
         "Rarity": 13,
         "Requirement": ["R-ATK",720],
         "S-ATK": null,
@@ -3223,7 +3295,7 @@
     {
         "Name (JP)": "シュベルディナレス",
         "Name (English)": "Schvelle Dinares",
-        "Name (Global)": null,
+        "Name (Global)": "Schvelle Dinares",
         "Rarity": 13,
         "Requirement": ["R-ATK",720],
         "S-ATK": null,
@@ -3241,7 +3313,7 @@
     {
         "Name (JP)": "バジリスリオード",
         "Name (English)": "Basilis Reode",
-        "Name (Global)": null,
+        "Name (Global)": "Basilisk Leode",
         "Rarity": 13,
         "Requirement": ["R-ATK",720],
         "S-ATK": null,
@@ -3259,7 +3331,7 @@
     {
         "Name (JP)": "ホムラノサミダレ",
         "Name (English)": "Homura no Samidare",
-        "Name (Global)": null,
+        "Name (Global)": "Homura no Samidare",
         "Rarity": 13,
         "Requirement": ["R-ATK",700],
         "S-ATK": null,
@@ -3277,7 +3349,7 @@
     {
         "Name (JP)": "ギクスカフィール",
         "Name (English)": "Gix Kafir",
-        "Name (Global)": null,
+        "Name (Global)": "Gix Cafuil",
         "Rarity": 13,
         "Requirement": ["R-ATK",760],
         "S-ATK": null,
@@ -3295,7 +3367,7 @@
     {
         "Name (JP)": "バレットクナイ",
         "Name (English)": "Bullet Kunai",
-        "Name (Global)": null,
+        "Name (Global)": "Bullet Kunai",
         "Rarity": 13,
         "Requirement": ["R-ATK",750],
         "S-ATK": null,
@@ -3313,7 +3385,7 @@
     {
         "Name (JP)": "ジュティススウィープ",
         "Name (English)": "Jutus Sweep",
-        "Name (Global)": null,
+        "Name (Global)": "Jutus Sweep",
         "Rarity": 13,
         "Requirement": ["R-ATK",760],
         "S-ATK": null,
@@ -3321,7 +3393,7 @@
         "T-ATK": null,
         "SAF": "S2:Rupturing Intent",
         "Abilities": null,
-        "Potential": [" Dauntless Knight"],
+        "Potential": ["Dauntless Knight"],
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Gu", "Hr"],
@@ -3331,7 +3403,7 @@
     {
         "Name (JP)": "セレシオステガ",
         "Name (English)": "Ceres Zeostega",
-        "Name (Global)": null,
+        "Name (Global)": "Ceres Zeostiga",
         "Rarity": 13,
         "Requirement": ["R-ATK",720],
         "S-ATK": null,
@@ -3349,7 +3421,7 @@
     {
         "Name (JP)": "不知火星-NT",
         "Name (English)": "Shiranuiboshi-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Unknown Mars",
         "Rarity": 13,
         "Requirement": ["R-ATK",730],
         "S-ATK": null,
@@ -3367,7 +3439,7 @@
     {
         "Name (JP)": "インヴェイドレイン-NT",
         "Name (English)": "Invade Rain-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Invade Rain",
         "Rarity": 13,
         "Requirement": ["R-ATK",730],
         "S-ATK": null,
@@ -3385,7 +3457,7 @@
     {
         "Name (JP)": "ネメシスバレット-NT",
         "Name (English)": "Nemesis Bullet-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Nemesis Bullet",
         "Rarity": 13,
         "Requirement": ["R-ATK",770],
         "S-ATK": null,
@@ -3403,7 +3475,7 @@
     {
         "Name (JP)": "スレイヴバレット-NT",
         "Name (English)": "Slave Bullet-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Raven Bullet",
         "Rarity": 13,
         "Requirement": ["R-ATK",770],
         "S-ATK": null,
@@ -3421,7 +3493,7 @@
     {
         "Name (JP)": "ディアカフィール",
         "Name (English)": "Dia Kafir",
-        "Name (Global)": null,
+        "Name (Global)": "Dia Cafuil",
         "Rarity": 13,
         "Requirement": ["R-ATK",770],
         "S-ATK": null,
@@ -3439,7 +3511,7 @@
     {
         "Name (JP)": "グラテスカフィール",
         "Name (English)": "Grates Kafir",
-        "Name (Global)": null,
+        "Name (Global)": "Gratis Cafuil",
         "Rarity": 13,
         "Requirement": ["R-ATK",750],
         "S-ATK": null,
@@ -3457,7 +3529,7 @@
     {
         "Name (JP)": "深遠弾エヘクシオン",
         "Name (English)": "Profound Execuxion",
-        "Name (Global)": null,
+        "Name (Global)": "Profound Bullet Ejecuxion",
         "Rarity": 13,
         "Requirement": ["R-ATK",700],
         "S-ATK": null,
@@ -3492,7 +3564,7 @@
     {
         "Name (JP)": "ラミアセルガム",
         "Name (English)": "Lamia Sergam",
-        "Name (Global)": null,
+        "Name (Global)": "Lamia Selgam",
         "Rarity": 14,
         "Requirement": ["R-ATK",580],
         "S-ATK": null,
@@ -3510,7 +3582,7 @@
     {
         "Name (JP)": "シエンノサミダレ",
         "Name (English)": "Shien no Samidare",
-        "Name (Global)": null,
+        "Name (Global)": "Xien no Samidare",
         "Rarity": 14,
         "Requirement": ["R-ATK",730],
         "S-ATK": null,
@@ -3526,27 +3598,9 @@
         "Set": null
     },
     {
-        "Name (JP)": "セレシオステガ・ザラ",
-        "Name (English)": "Ceres Zeostega Zara",
-        "Name (Global)": null,
-        "Rarity": 14,
-        "Requirement": ["R-ATK",740],
-        "S-ATK": null,
-        "R-ATK": 1244,
-        "T-ATK": null,
-        "SAF": "Doom Break II",
-        "Abilities": null,
-        "Potential": ["Immortal Breath", "Immortal Beat"],
-        "Element": null,
-        "PA_enabled": null,
-        "Classes": ["Gu", "Hr"],
-        "SSA Slots": [1, 2, 3],
-        "Set": null
-    },
-    {
         "Name (JP)": "グレンノサミダレ",
         "Name (English)": "Guren no Samidare",
-        "Name (Global)": null,
+        "Name (Global)": "Guren no Samidare",
         "Rarity": 14,
         "Requirement": ["R-ATK",730],
         "S-ATK": null,
@@ -3562,9 +3616,27 @@
         "Set": null
     },
     {
+        "Name (JP)": "セレシオステガ・ザラ",
+        "Name (English)": "Ceres Zeostega Zara",
+        "Name (Global)": "Ceres Zeostiga-Zara",
+        "Rarity": 14,
+        "Requirement": ["R-ATK",740],
+        "S-ATK": null,
+        "R-ATK": 1244,
+        "T-ATK": null,
+        "SAF": "Doom Break II",
+        "Abilities": null,
+        "Potential": ["Immortal Breath", "Immortal Beat"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["Gu", "Hr"],
+        "SSA Slots": [1, 2, 3],
+        "Set": null
+    },
+    {
         "Name (JP)": "リュミエルスウィープ",
         "Name (English)": "Lumiere Sweep",
-        "Name (Global)": null,
+        "Name (Global)": "Lumiere Sweep",
         "Rarity": 14,
         "Requirement": ["R-ATK",760],
         "S-ATK": null,
@@ -3600,7 +3672,7 @@
     {
         "Name (JP)": "アーレスマシンガン-NT",
         "Name (English)": "Ares Machine Gun-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Ares Machineguns",
         "Rarity": 14,
         "Requirement": ["R-ATK",810],
         "S-ATK": null,
@@ -3618,7 +3690,7 @@
     {
         "Name (JP)": "アトララッダ",
         "Name (English)": "Atra Radda",
-        "Name (Global)": null,
+        "Name (Global)": "Atlas Radda",
         "Rarity": 14,
         "Requirement": ["R-ATK",780],
         "S-ATK": null,
@@ -3636,7 +3708,7 @@
     {
         "Name (JP)": "アウェイクトリガー",
         "Name (English)": "Awake Trigger",
-        "Name (Global)": null,
+        "Name (Global)": "Awake Trigger",
         "Rarity": 14,
         "Requirement": ["R-DEF",575],
         "S-ATK": null,
@@ -3672,7 +3744,7 @@
     {
         "Name (JP)": "ミストールミラージュ",
         "Name (English)": "Mistral Mirage",
-        "Name (Global)": null,
+        "Name (Global)": "Mistral Mirage",
         "Rarity": 14,
         "Requirement": ["DEX",470],
         "S-ATK": null,
@@ -3690,7 +3762,7 @@
     {
         "Name (JP)": "ディムTマシンガン",
         "Name (English)": "Dim Twin Machinegun",
-        "Name (Global)": null,
+        "Name (Global)": "Dim Twin Machine Guns",
         "Rarity": 14,
         "Requirement": ["R-ATK",730],
         "S-ATK": null,
@@ -3708,7 +3780,7 @@
     {
         "Name (JP)": "デモニアブラスター",
         "Name (English)": "Demonia Blaster",
-        "Name (Global)": null,
+        "Name (Global)": "Demonia Blaster",
         "Rarity": 14,
         "Requirement": ["DEX",480],
         "S-ATK": null,
@@ -3726,7 +3798,7 @@
     {
         "Name (JP)": "星震弾エヘクシオン",
         "Name (English)": "Celestial Execuxion",
-        "Name (Global)": null,
+        "Name (Global)": "Starquake Bullet Ejecuxion",
         "Rarity": 14,
         "Requirement": ["R-ATK",730],
         "S-ATK": null,
@@ -3744,7 +3816,7 @@
     {
         "Name (JP)": "ブラッドファンガー",
         "Name (English)": "Blood Fanger",
-        "Name (Global)": null,
+        "Name (Global)": "Blood Fanger",
         "Rarity": 14,
         "Requirement": ["DEX",470],
         "S-ATK": null,
@@ -3762,7 +3834,7 @@
     {
         "Name (JP)": "フォボスグラオザム",
         "Name (English)": "Phobos Grauzam",
-        "Name (Global)": null,
+        "Name (Global)": "Phobos Grauzam",
         "Rarity": 14,
         "Requirement": ["R-ATK",810],
         "S-ATK": null,
@@ -3780,7 +3852,7 @@
     {
         "Name (JP)": "シノノメリンカ",
         "Name (English)": "Shinonome Rinka",
-        "Name (Global)": null,
+        "Name (Global)": "Shinonome Ringka",
         "Rarity": 14,
         "Requirement": ["DEX",470],
         "S-ATK": null,
@@ -3798,7 +3870,7 @@
     {
         "Name (JP)": "クヴェレウィンディア",
         "Name (English)": "Quelle Windea",
-        "Name (Global)": null,
+        "Name (Global)": "Cuvele Wyndia",
         "Rarity": 14,
         "Requirement": ["R-ATK",800],
         "S-ATK": null,
@@ -3814,9 +3886,27 @@
         "Set": null
     },
     {
+        "Name (JP)": null,
+        "Name (English)": "Sou Awatsuki/Global",
+        "Name (Global)": "Twin Fire Moons",
+        "Rarity": 14,
+        "Requirement": ["R-ATK",810],
+        "S-ATK": null,
+        "R-ATK": 1470,
+        "T-ATK": null,
+        "SAF": "Shoot VI",
+        "Abilities": ["Ability IV"],
+        "Potential": ["Pale Night Blossom"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes": ["Gu", "Hr"],
+        "SSA Slots": [1,2,3],
+        "Set": null
+    },
+    {
         "Name (JP)": "デュアルバード",
         "Name (English)": "Dual Bird",
-        "Name (Global)": null,
+        "Name (Global)": "Dual Bird",
         "Rarity": 14,
         "Requirement": ["R-ATK",800],
         "S-ATK": null,
@@ -3834,7 +3924,7 @@
     {
         "Name (JP)": "アクルドフィジス",
         "Name (English)": "Aculd Physis",
-        "Name (Global)": null,
+        "Name (Global)": "Occuld Fugit",
         "Rarity": 14,
         "Requirement": ["DEX",460],
         "S-ATK": null,
@@ -3852,7 +3942,7 @@
     {
         "Name (JP)": "ニーケグラオザム",
         "Name (English)": "Nike Grauzam",
-        "Name (Global)": null,
+        "Name (Global)": "Nike Grauzam",
         "Rarity": 14,
         "Requirement": ["R-ATK",820],
         "S-ATK": null,
@@ -3870,7 +3960,7 @@
     {
         "Name (JP)": "ダインオンブロス",
         "Name (English)": "Dyne Ombros",
-        "Name (Global)": null,
+        "Name (Global)": "Dyne Ombros",
         "Rarity": 15,
         "Requirement": ["R-ATK",860],
         "S-ATK": null,
@@ -3888,7 +3978,7 @@
     {
         "Name (JP)": "オフスティアレイン-NT",
         "Name (English)": "Austere Rain-NT",
-        "Name (Global)": null,
+        "Name (Global)": "Ophistia Rain",
         "Rarity": 15,
         "Requirement": ["R-ATK",850],
         "S-ATK": null,
@@ -3906,7 +3996,7 @@
     {
         "Name (JP)": "オルゲイランコア",
         "Name (English)": "Orgei Rancor",
-        "Name (Global)": null,
+        "Name (Global)": "Orgei Rancor",
         "Rarity": 15,
         "Requirement": ["R-ATK",860],
         "S-ATK": null,
@@ -3924,7 +4014,7 @@
     {
         "Name (JP)": "アトララッダ・イクス",
         "Name (English)": "Atra Radda Ex",
-        "Name (Global)": null,
+        "Name (Global)": "Atlas Radda EX",
         "Rarity": 15,
         "Requirement": ["R-ATK",850],
         "S-ATK": null,
@@ -3942,7 +4032,7 @@
     {
         "Name (JP)": "ノヴェルTマシンガン",
         "Name (English)": "Novel Twin Machineguns",
-        "Name (Global)": null,
+        "Name (Global)": "Novel Twin Machine Guns",
         "Rarity": 15,
         "Requirement": ["R-ATK",850],
         "S-ATK": null,
@@ -3960,7 +4050,7 @@
     {
         "Name (JP)": "ゲアモルタオーブ",
         "Name (English)": "Giamorta Orb",
-        "Name (Global)": null,
+        "Name (Global)": "Geamorta Orb",
         "Rarity": 15,
         "Requirement": ["R-ATK",880],
         "S-ATK": null,
@@ -3978,7 +4068,7 @@
     {
         "Name (JP)": "ゲアモルタダスク",
         "Name (English)": "Giamorta Dusk",
-        "Name (Global)": null,
+        "Name (Global)": "Geamorta Dusk",
         "Rarity": 15,
         "Requirement": ["R-ATK",880],
         "S-ATK": null,
@@ -3996,7 +4086,7 @@
     {
         "Name (JP)": "バイピュラス",
         "Name (English)": "Vai Puras",
-        "Name (Global)": null,
+        "Name (Global)": "Wei Puras",
         "Rarity": 15,
         "Requirement": ["R-ATK",900],
         "S-ATK": null,
@@ -4014,7 +4104,7 @@
     {
         "Name (JP)": "光跡弾エヘクシオン",
         "Name (English)": "Lightstream Execuxion",
-        "Name (Global)": null,
+        "Name (Global)": "Trailblazer Bullet Ejecuxion",
         "Rarity": 15,
         "Requirement": ["R-ATK",900],
         "S-ATK": null,
@@ -4032,7 +4122,7 @@
     {
         "Name (JP)": "ミリオンバラージャ",
         "Name (English)": "Million Baraja",
-        "Name (Global)": null,
+        "Name (Global)": "Millionaire Barrage",
         "Rarity": 15,
         "Requirement": ["DEX",555],
         "S-ATK": null,
@@ -4050,7 +4140,7 @@
     {
         "Name (JP)": "クリーサバラージャ",
         "Name (English)": "Krisa Baraja",
-        "Name (Global)": null,
+        "Name (Global)": "Croesus Barrage",
         "Rarity": 15,
         "Requirement": ["DEX",555],
         "S-ATK": null,
@@ -4068,7 +4158,7 @@
     {
         "Name (JP)": "ミストールノヴァ",
         "Name (English)": "Mistral Nova",
-        "Name (Global)": null,
+        "Name (Global)": "Mistral Nova",
         "Rarity": 15,
         "Requirement": ["DEX",500],
         "S-ATK": null,
@@ -4086,7 +4176,7 @@
     {
         "Name (JP)": "ヴォルテクスグラス",
         "Name (English)": "Vortex Glass",
-        "Name (Global)": null,
+        "Name (Global)": "Vortex Glass",
         "Rarity": 15,
         "Requirement": ["R-ATK",920],
         "S-ATK": null,
@@ -4104,7 +4194,7 @@
     {
         "Name (JP)": "アエストリア",
         "Name (English)": "Aestria",
-        "Name (Global)": null,
+        "Name (Global)": "Aestoria",
         "Rarity": 15,
         "Requirement": ["R-ATK",880],
         "S-ATK": null,
@@ -4122,7 +4212,7 @@
     {
         "Name (JP)": "リバレイトTマシンガン",
         "Name (English)": "Liberate Twin Machineguns",
-        "Name (Global)": null,
+        "Name (Global)": "Rivalate Twin Machine Guns",
         "Rarity": 15,
         "Requirement": ["R-ATK",900],
         "S-ATK": null,
@@ -4140,7 +4230,7 @@
     {
         "Name (JP)": "バイスティル",
         "Name (English)": "Vai Stil",
-        "Name (Global)": null,
+        "Name (Global)": "Wei Steel",
         "Rarity": 15,
         "Requirement": ["R-ATK",920],
         "S-ATK": null,
@@ -4158,7 +4248,7 @@
     {
         "Name (JP)": "ブラックダークネス",
         "Name (English)": "Black Darkness",
-        "Name (Global)": null,
+        "Name (Global)": "Obsidian Darkness",
         "Rarity": 15,
         "Requirement": ["R-ATK",920],
         "S-ATK": null,
@@ -4176,7 +4266,7 @@
     {
         "Name (JP)": "闇征弾アジェルバレル",
         "Name (English)": "Darkbanisher Ayer Barrel",
-        "Name (Global)": null,
+        "Name (Global)": "Darkweave Agile Barrel",
         "Rarity": 15,
         "Requirement": ["R-ATK",930],
         "S-ATK": null,
@@ -4194,7 +4284,7 @@
     {
         "Name (JP)": "アデルクルーヴェ",
         "Name (English)": "Adel Kluwe",
-        "Name (Global)": null,
+        "Name (Global)": "Adell Crouve",
         "Rarity": 15,
         "Requirement": ["R-ATK",930],
         "S-ATK": null,
@@ -4212,7 +4302,7 @@
     {
         "Name (JP)": "フルクシオボレア",
         "Name (English)": "Fluxio Borea",
-        "Name (Global)": null,
+        "Name (Global)": "Fluxio Bolea",
         "Rarity": 15,
         "Requirement": ["R-ATK",940],
         "S-ATK": null,
@@ -4230,7 +4320,7 @@
     {
         "Name (JP)": "リンザーボレア",
         "Name (English)": "Rinza Borea",
-        "Name (Global)": null,
+        "Name (Global)": "Rinser Bolea",
         "Rarity": 15,
         "Requirement": ["R-ATK",940],
         "S-ATK": null,
@@ -4248,7 +4338,7 @@
     {
         "Name (JP)": "光纏弾クラースバレル",
         "Name (English)": "Lightweaver Cras Barrel",
-        "Name (Global)": null,
+        "Name (Global)": "Lightweave Klauz Barrel",
         "Rarity": 15,
         "Requirement": ["R-ATK",950],
         "S-ATK": null,
