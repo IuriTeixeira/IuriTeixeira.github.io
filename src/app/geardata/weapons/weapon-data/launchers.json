@@ -3598,8 +3598,8 @@
         "Set": null
     },
     {
-        "Name (JP)": "霞囃子",
-        "Name (English)": "Kasumi Hayashi",
+        "Name (JP)": null,
+        "Name (English)": "Kasumi Hayashi/Global",
         "Name (Global)": "Kasumibayashi",
         "Rarity": 14,
         "Requirement": ["R-ATK",810],

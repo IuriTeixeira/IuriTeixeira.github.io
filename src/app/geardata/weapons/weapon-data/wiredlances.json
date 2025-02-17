@@ -2546,7 +2546,8 @@
         "Element": null,
         "PA_enabled": null,
         "Classes": ["Hu"],
-        "SSA Slots": "Qliphad"
+        "SSA Slots": null,
+        "Set": "Qliphad"
     },
     {
         "Name (JP)": "マルスデルウォッグ",

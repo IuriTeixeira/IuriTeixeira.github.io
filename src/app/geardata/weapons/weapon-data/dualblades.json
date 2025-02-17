@@ -576,6 +576,24 @@
         "Set":"Fen"
     },
     {
+        "Name (JP)": null,
+        "Name (English)": "Lambda Lextear/Global",
+        "Name (Global)": "Lambda Lextear",
+        "Rarity": 8,
+        "Requirement":["DEX",345],
+        "S-ATK":491,
+        "R-ATK":null,
+        "T-ATK":null,
+        "SAF":"Power III",
+        "Abilities":null,
+        "Potential":["Fragile Assault"],
+        "Element": null,
+        "PA_enabled": null,
+        "Classes":["All"],
+        "SSA Slots":null,
+        "Set":null
+    },
+    {
         "Name (JP)": "セラヴァーン-NT",
         "Name (English)": "Seravahn-NT",
         "Name (Global)": "Serravan",
