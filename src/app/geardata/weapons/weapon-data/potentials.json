@@ -346,7 +346,7 @@
     {
         "Name (JP)": "煌気光",
         "Name (English)": "Spirit Radiance",
-        "Name (Global)": "Spirit Radiance",
+        "Name (Global)": "Photon Shimmer",
         "Effect (JP)": "攻撃時のPP回復量が(80%)上昇する。",
         "Effect (English)": "Increases Active PP Recovery by 80%.",
         "Effect (Global)": "Increases Active PP Recovery by 80%."
@@ -1921,8 +1921,12 @@
         "Effect (English)": "Increases damage to weak points by 11%."
     },
     {
+        "Name (JP)": "戦士の歌",
         "Name (English)": "Warrior's Song",
-        "Effect (English)": "Damage is increased by 11% and damage received is reduced by 15%."
+        "Name (Global)": "Warrior's Song",
+        "Effect (JP)": "与ダメージが11%上昇し被ダメージが15%減少する。",
+        "Effect (English)": "Increases damage by 11%. Reduces damage taken by 11%.",
+        "Effect (Global)": "Increases damage by 11%. Reduces damage taken by 11%."
     },
     {
         "Name (JP)": "機動応変・一式",
@@ -2070,12 +2074,20 @@
         "Effect (English)": "Increases the damage of Ice Techniques by 20%."
     },
     {
+        "Name (JP)": "幻精共鳴",
         "Name (English)": "Phantom Resonance",
-        "Effect (English)": "Increases the damage of Photon Blasts by 50%."
+        "Name (Global)": "Phantom Resonance",
+        "Effect (JP)": "フォトンブラストの威力が上昇する。(50%)",
+        "Effect (English)": "Increases the damage of Photon Blast by 50%.",
+        "Effect (Global)": "Increases the damage of Photon Blast by 50%."
     },
     {
+        "Name (JP)": "飛天の撃",
         "Name (English)": "Sky-Rending Strike",
-        "Effect (English)": "Increases damage when attacking from the air by 10%."
+        "Name (Global)": "Sky-Rending Strike",
+        "Effect (JP)": "空中での攻撃時にダメージが上昇する。(10%)",
+        "Effect (English)": "Increases damage while airborne by 10%.",
+        "Effect (Global)": "Increases damage while airborne by 10%."
     },
     {
         "Name (JP)": "裂破の必撃",
@@ -2435,8 +2447,12 @@
         "Effect (Global)": "Increases Natural PP Recovery by 10% and Active PP Recovery by 15%."
     },
     {
+        "Name (JP)": "緋炎の両刃",
         "Name (English)": "Double Scarlet Blade",
-        "Effect (English)": "Increases damage by 10%. Increases the damage of Double Saber's Kamaitachi and increases duration by 16 seconds."
+        "Name (Global)": "Saber of Scarlet Flame",
+        "Effect (JP)": "カマイタチが強化され発動時間が(16秒)延長。威力が10%上昇。",
+        "Effect (English)": "Increases damage by 10%. Increases the damage of Double Saber's Kamaitachi and increases its duration by 16 seconds.",
+        "Effect (Global)": "Increases damage by 10%. Increases the damage of Double Saber's Whirlwind and increases its duration by 16 seconds."
     },
     {
         "Name (English)": "Mysterious Conjurer",
@@ -2867,8 +2883,12 @@
         "Effect (Global)": "Increases damage by 6%. Increases damage by an additional 14% when the weapon is sheathed for 2 seconds. Effect ends 14 seconds after hitting an enemy, or when changing to a different potential."
     },
     {
+        "Name (JP)": "聖鳥の託宣",
         "Name (English)": "Angelic Adept",
-        "Effect (English)": "Increases damage by 10%. Increases Gear gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying."
+        "Name (Global)": "Sacred Bird Oracle",
+        "Effect (JP)": "威力が10%上昇。DSウィンドパリング成功時、ギアが上昇し強力な連撃で切り刻む。",
+        "Effect (English)": "Increases damage by 10%. Upon successfully executing a Double Saber Wind Parry, Gear Gauge is set to maximum, generates a Kamaitachi without consuming Gear Gauge, and unleash a counterattack with Scissor Edge while being invulnerable.\nCounterattack uses 4x potency of your currently learned level of Scissor Edge. Treated as Lv1 if Scissor Edge is not learned.",
+        "Effect (Global)": "Increases damage by 10%. Upon successfully executing a Double Saber Wind Parry, Focus Gauge is set to maximum, generates a Whirlwind without consuming Focus Gauge, and unleash a counterattack with Scissor Slash while being invulnerable.\nCounterattack uses 4x potency of your currently learned level of Scissor Slash. Treated as Lv1 if Scissor Slash is not learned."
     },
     {
         "Name (English)": "Chaotic Arm",
@@ -3367,8 +3387,12 @@
         "Effect (Global)": "Increases Critical Hit Rate by 20% and increases damage by 8%. Decreases PP consumption by 20%."
     },
     {
+        "Name (JP)": "明星の光束",
         "Name (English)": "Venusian Beam",
-        "Effect (English)": "Increases damage by 12%. Recover an additional 5PP when Just Guard PP Aile is activated."
+        "Name (Global)": "Beam of the Morning Star",
+        "Effect (JP)": "威力が12%上昇。ジャストガードPPエール発動時の回復量が5増加する。",
+        "Effect (English)": "Increases damage by 12%. Recovers an additional 5 PP when Just Guard PP Aile is activated.",
+        "Effect (Global)": "Increases damage by 12%. Recovers an additional 5 PP when Just Guard PP Aile is activated."
     },
     {
         "Name (English)": "Battle Hardened",
@@ -3391,8 +3415,12 @@
         "Effect (Global)": "Increases damage by 6%. Pet recovers 1% of damage dealt as HP, up to 30 per hit, if the Pet's Attribute matches the enemy's Elemental Weakness."
     },
     {
+        "Name (JP)": "薔薇の朝露",
         "Name (English)": "Rose Dew",
-        "Effect (English)": "Increases damage by 13%. Instantly use Mates without drinking. Recast period occurs after use or when swapping weapons."
+        "Name (Global)": "Dew-kissed Rose",
+        "Effect (JP)": "威力が13%上昇。メイト系アイテムを使用すると即時回復。武器切り替え時と使用後リキャストが発生。",
+        "Effect (English)": "Increases damage by 13%. Instantly use Mates without drinking. Prevents Mate usage during Recast timer, as follows:\n\nMonomate: 1s\nDimate: 2s\nTrimate: 3s\nEquip different Potential: 10s\n\nAutomate effects do not trigger Recast timer.",
+        "Effect (Global)": "Increases damage by 13%. Instantly use Mates without drinking. Prevents Mate usage during Recast timer, as follows:\n\nMonomate: 1s\nDimate: 2s\nTrimate: 3s\nEquip different Potential: 10s\n\nAutomate effects do not trigger Recast timer."
     },
     {
         "Name (English)": "Ionizing Barrier",
@@ -3555,8 +3583,12 @@
         "Effect (English)": "Increases Damage by 15%. Step Attacks Fire a homing shot when you successfully dodge using Step."
     },
     {
+        "Name (JP)": "銀の追奏曲",
         "Name (English)": "Silvered Sonata",
-        "Effect (English)": "Increases damage by 14%. Increases the PP cost reduction of Same Arts PP Save by 5%. Increases the duration of Tech Arts Count Bonus by 2."
+        "Name (Global)": "Silver Accompaniment",
+        "Effect (JP)": "威力14%上昇。セイムアーツPPセイブ減少率5%上昇。テックアーツカウントボーナス持続回数2増加。",
+        "Effect (English)": "Increases damage by 14%. Increases the PP cost reduction of Same Arts PP Save by 5%. Increases the duration of Tech Arts Count Bonus by 2.",
+        "Effect (Global)": "Increases damage by 14%. Increases the PP cost reduction of Same Arts PP Save by 5%. Increases the duration of Tech Arts Count Bonus by 2."
     },
     {
         "Name (English)": "Divine Judgment",
@@ -3681,13 +3713,21 @@
         "Special": "Hidden"
     },
     {
+        "Name (JP)": "飛天の崩撃",
         "Name (English)": "Aerial Break",
-        "Effect (English)": "Increases damage by 25% in midair.",
+        "Name (Global)": "Aerial Break",
+        "Effect (JP)": "空中での攻撃時に与ダメージが25%上昇。",
+        "Effect (English)": "Increases damage by 25% while airborne.",
+        "Effect (Global)": "Increases damage by 25% while airborne.",
         "Special": "Hidden"
     },
     {
+        "Name (JP)": "滅壊の光刃",
         "Name (English)": "Shining Destruction",
-        "Effect (English)": "Increases damage against (DA) Aberrations by 25%.",
+        "Name (Global)": "Shining Destruction",
+        "Effect (JP)": "世壊種(DA)に与えるダメージが25%上昇する。",
+        "Effect (English)": "Increases damage by 25% against (DA) Aberrations.",
+        "Effect (Global)": "Increases damage by 25% against Tainted Falspawn.",
         "Special": "Hidden"
     },
     {
@@ -3964,8 +4004,12 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "幻精転芽",
         "Name (English)": "Phantasmal Burgeoning",
-        "Effect (English)": "Damage fluctuates depending on the Photon Blast Gauge. (?%~16%)",
+        "Name (Global)": "Phantasmal Burgeoning",
+        "Effect (JP)": "フォトンブラストゲージに応じて威力が変動し、少ないほど上昇する。(?%～16%)",
+        "Effect (English)": "Increases damage based Photon Blast Gauge, the lower the gauge, the higher the damage, up to 16% at empty gauge.",
+        "Effect (Global)": "Increases damage based Photon Blast Gauge, the lower the gauge, the higher the damage, up to 16% at empty gauge.",
         "Special": "Weaponoid"
     },
     {
@@ -3978,8 +4022,12 @@
         "Special": "Weaponoid"
     },
     {
+        "Name (JP)": "流星演舞",
         "Name (English)": "Meteor Dance",
-        "Effect (English)": "Increases damage as successive Just Attacks are performed. (9% per JA, 18% MAX)",
+        "Name (Global)": "Meteor Dance",
+        "Effect (JP)": "連続でジャストアタックに成功した時のダメージが上昇する。(9% 上限18%)",
+        "Effect (English)": "Increases damage by 9% for each consecutive Just Attack, up to 18%.",
+        "Effect (Global)": "Increases damage by 9% for each consecutive Just Attack, up to 18%.",
         "Special": "Weaponoid"
     },
     {
@@ -4190,8 +4238,12 @@
         "Special": "Ultimate"
     },
     {
+        "Name (JP)": "緋炎の両刃・改",
         "Name (English)": "Double Scarlet Blade Plus",
-        "Effect (English)": "Increases damage by 24%. Increases the damage of Double Saber's Kamaitachi and increases duration by 16 seconds.",
+        "Name (Global)": "Saber of Scarlet Flame Redux",
+        "Effect (JP)": "カマイタチが強化され発動時間が(16秒)延長。威力が24%上昇。",
+        "Effect (English)": "Increases damage by 24%. Increases the damage of Double Saber's Kamaitachi and increases its duration by 16 seconds.",
+        "Effect (Global)": "Increases damage by 24%. Increases the damage of Double Saber's Whirlwind and increases its duration by 16 seconds.",
         "Special": "Ultimate"
     },
     {
@@ -4280,8 +4332,12 @@
         "Special": "Ultimate"
     },
     {
+        "Name (JP)": "聖鳥の託宣・改",
         "Name (English)": "Angelic Adept Plus",
-        "Effect (English)": "Increases damage by 22%. Increases Gear gauge and unleash a counterattack upon successfully blocking an attack with DS Wind Parrying.",
+        "Name (Global)": "Sacred Bird Oracle Redux",
+        "Effect (JP)": "威力が22%上昇。DSウィンドパリング成功時、ギアが上昇し強力な連撃で切り刻む。",
+        "Effect (English)": "Increases damage by 22%. Upon successfully executing a Double Saber Wind Parry, Gear Gauge is set to maximum, generates a Kamaitachi without consuming Gear Gauge, and unleash a counterattack with Scissor Edge while being invulnerable.\nCounterattack uses 4x potency of your currently learned level of Scissor Edge. Treated as Lv1 if Scissor Edge is not learned.",
+        "Effect (Global)": "Increases damage by 22%. Upon successfully executing a Double Saber Wind Parry, Focus Gauge is set to maximum, generates a Whirlwind without consuming Focus Gauge, and unleash a counterattack with Scissor Slash while being invulnerable.\nCounterattack uses 4x potency of your currently learned level of Scissor Slash. Treated as Lv1 if Scissor Slash is not learned.",
         "Special": "Ultimate"
     },
     {
