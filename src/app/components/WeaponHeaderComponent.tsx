@@ -26,7 +26,7 @@ export default function WeaponHeaderComponent({ setWeaponData, setWeaponType }) 
     switch (language.language) {
         case 'Global': weaponTypes = ["Sword", "Wired Lance", "Partisan", "Twin Daggers", "Double Saber", "Knuckle", "Katana", "Soaring Blades", "Gunblade", "Assault Rifle", "Launcher", "Twin Machine Guns", "Bow", "Rod", "Talis", "Wand", "Jet Boots", "Harmonizer"]; break;
         case 'JP': weaponTypes = ["ソード", "ワイヤードランス", "パルチザン", "ツインダガー", "ダブルセイバー", "ナックル", "カタナ", "デュアルブレード", "ガンスラッシュ", "アサルトライフル", "ランチャー", "ツインマシンガン", "バレットボウ", "ロッド", "タリス", "ウォンド", "ジェットブーツ", "タクト"]; break;
-        default: weaponTypes = ["Sword", "Wired Lance", "Partizan", "Twin Daggers", "Double Saber", "Knuckle", "Katana", "Dual Blades", "Gunslash", "Assault Rifle", "Launcher", "Twin Machineguns", "Bullet Bow", "Rod", "Talis", "Wand", "Jet Boots", "Takt"];
+        default: weaponTypes = ["Sword", "Wired Lance", "Partizan", "Twin Daggers", "Double Saber", "Knuckle", "Katana", "Dual Blades", "Gunslash", "Assault Rifle", "Launcher", "Twin Machine Guns", "Bullet Bow", "Rod", "Talis", "Wand", "Jet Boots", "Takt"];
     }
     return (
         <>

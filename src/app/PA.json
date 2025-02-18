@@ -1,0 +1,127 @@
+[
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "ライジングエッジ",
+        "Name (English)": "Rising Edge",
+        "Name (Global)": "Rising Edge",
+        "Potency": "2613",
+        "PP Cost": 20,
+        "DEX Correction": 1,
+        "Charge": true,
+        "Distribution": [40, 15, 25]
+    },
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "ツイスターフォール",
+        "Name (English)": "Twister Fall",
+        "Name (Global)": "Twister Drop",
+        "Potency": "1246",
+        "PP Cost": 20,
+        "DEX Correction": 1,
+        "Charge": false,
+        "Distribution": [19,19,39,27,26]
+    },
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "ツイスターフォール零式",
+        "Name (English)": "Twister Fall Type-0",
+        "Name (Global)": "Twister Drop Zero",
+        "Potency": "3538",
+        "PP Cost": 40,
+        "DEX Correction": 1,
+        "Charge": "Hold",
+        "Distribution": [5,18,9],
+        "Power Craft": [0, 254],
+        "PP Craft": [0, -10]
+    },
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "ノヴァストライク",
+        "Name (English)": "Nova Strike",
+        "Name (Global)": "Nova Strike",
+        "Potency": "2369",
+        "PP Cost": 20,
+        "DEX Correction": 1
+    },
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "ライドスラッシャー",
+        "Name (English)": "Ride Slasher",
+        "Name (Global)": "Ride Slash",
+        "Potency": "2702",
+        "PP Cost": 25,
+        "DEX Correction": 1
+    },
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "オーバーエンド",
+        "Name (English)": "Over End",
+        "Name (Global)": "Cross Cut",
+        "Potency": "3596",
+        "PP Cost": 40,
+        "DEX Correction": 1
+    },
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "スタンコンサイド",
+        "Name (English)": "Stun Concido",
+        "Name (Global)": "Blade Bash",
+        "Potency": "572",
+        "PP Cost": 15,
+        "DEX Correction": 1
+    },
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "ソニックアロウ",
+        "Name (English)": "Sonic Arrow",
+        "Name (Global)": "Sonic Arrow",
+        "Potency": "555",
+        "PP Cost": 25,
+        "DEX Correction": 1
+    },
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "クルーエルスロー",
+        "Name (English)": "Cruel Throw",
+        "Name (Global)": "Merciless Throw",
+        "Potency": "2880",
+        "PP Cost": 20,
+        "DEX Correction": 1
+    },
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "ギルティブレイク",
+        "Name (English)": "Guilty Break",
+        "Name (Global)": "Guilty Break",
+        "Potency": "1364",
+        "PP Cost": 20,
+        "DEX Correction": 1
+    },
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "サクリファイスバイト",
+        "Name (English)": "Sacrifice Bite",
+        "Name (Global)": "Sacrificial Bite",
+        "Potency": "1478",
+        "PP Cost": 20,
+        "DEX Correction": 1
+    },
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "サクリファイスバイト零式",
+        "Name (English)": "Sacrifice Bite Type-0",
+        "Name (Global)": "Sacrificial Bite Zero",
+        "Potency": "1479",
+        "PP Cost": 20,
+        "DEX Correction": 1
+    },
+    {
+        "Weapon Type": "Sword",
+        "Name (JP)": "イグナイトパリング",
+        "Name (English)": "Ignition Parry",
+        "Name (Global)": "Blaze Parry",
+        "Potency": "2301",
+        "PP Cost": 20,
+        "DEX Correction": 1
+    }
+]
