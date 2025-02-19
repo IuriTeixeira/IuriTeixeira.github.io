@@ -33,9 +33,9 @@ export default function UnitTableComponent({ data, type }) {
     let tableHeader: string[]
     let filteredData: any
     switch (language.language) {
-        case "Global": tableHeader = headerGlobal; filteredData = tbodyData.filter((key: any) => key["Name (Global)"] !== null); break;
-        case "JP": tableHeader = headerJP; filteredData = tbodyData.filter((key: any) => key["Name (JP)"] !== null); break;
-        default: tableHeader = headerEnglish; filteredData = tbodyData.filter((key: any) => key["Name (JP)"] !== null);
+        case "Global": tableHeader = headerGlobal; filteredData = tbodyData.filter((key: any) => key["Name (Global)"] !== null).filter((key:any) => key["Type"] === type); break;
+        case "JP": tableHeader = headerJP; filteredData = tbodyData.filter((key: any) => key["Name (JP)"] !== null).filter((key:any) => key["Type"] === type); break;
+        default: tableHeader = headerEnglish; filteredData = tbodyData.filter((key: any) => key["Name (JP)"] !== null).filter((key:any) => key["Type"] === type);
     }
 
     filteredData.map((item: any, id: number) => {
@@ -72,8 +72,8 @@ export default function UnitTableComponent({ data, type }) {
                         default: iconLabel = iconLabelEnglish; break;
                     }
                     return <Table.Tr key={uuidv4()}>
-                        {row["Name (English)"] && type !== 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
-                        {row["Name (English)"] && type === 'sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
+                        {row["Name (English)"] && type !== 'Sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
+                        {row["Name (English)"] && type === 'Sub' && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/units/sub/SubUnit.png' key={uuidv4()} src={`/units/${type}/${row['Name (English)'].replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${row['Name (English)']}`} w={64} h={64} /></Flex></Table.Td>}
                         {theadData.map((key: string, index: any) => {
                             let itemName: any
                             switch (language.language) {

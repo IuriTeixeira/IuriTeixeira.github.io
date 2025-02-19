@@ -1,12 +1,11 @@
 import { Flex, SimpleGrid } from "@mantine/core";
 import { useLanguageContext } from "../language-provider";
-import dualblades from '../geardata/weapons/weapon-data/dualblades.json'
-import units from '../geardata/units/unit-data/units.json'
+import weapons from '../geardata/weapons/weapons.json'
+import units from '../geardata/units/units.json'
 import displayRarity from "./displayRarity";
 import displayStat from "./displayStat";
 import displayResistance from "./displayResistance";
 import displayPotentials from "./displayPotentials";
-import displayElement from "./displayElement";
 import displayPA from "./displayPA";
 import displaySSA from "./displaySSA";
 import displaySet from "./displaySet";
@@ -15,7 +14,7 @@ import displaySet from "./displaySet";
 export default function displayGearStats(gear: any): any {
     const language = useLanguageContext()
     let gearData: any = units.find(unit => unit["Name (English)"] === gear)
-    if (!gearData) gearData = dualblades.find(unit => unit["Name (English)"] === gear)
+    if (!gearData) gearData = weapons.find(unit => unit["Name (English)"] === gear)
     return (
         <Flex justify='center' align='center' direction='column' >
             <Flex justify='center' align='center' gap='xs'>

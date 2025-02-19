@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguageContext } from "../language-provider";
 import { Text, Flex, Image, SimpleGrid, Tooltip, List } from '@mantine/core';
 import { v4 as uuidv4 } from 'uuid';
-import potentialData from "../geardata/weapons/weapon-data/potentials.json"
+import potentialData from "../geardata/weapons/potentials.json"
 
 export default function displayPotentials(potList: any[]): any[] {
     const language = useLanguageContext()
@@ -29,8 +29,6 @@ export default function displayPotentials(potList: any[]): any[] {
             } else {
                 potName = pot["Name (English)"].replace('(クリファド)','').replace(' (Qliphad)','').replace(' (Clifard)','');
                 potEffect = <Text key={uuidv4()}>{pot[`Effect (English})`]}</Text>
-                //potEffect = <Text key={uuidv4()}>{pot[`Effect (${language.language})`]}</Text>
-                //language.language = "English"
             }
 
             switch (pot.Special) {

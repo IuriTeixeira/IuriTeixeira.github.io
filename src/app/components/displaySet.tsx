@@ -1,10 +1,8 @@
 import { Image, Flex, SimpleGrid, Tooltip } from '@mantine/core';
 import setEffects from "../geardata/sets/sets.json"
 import variantSet from "../geardata/sets/letter-variant-sets.json"
-import sword from "../geardata/weapons/weapon-data/swords.json"
-import wiredlance from "../geardata/weapons/weapon-data/wiredlances.json"
-import partizan from "../geardata/weapons/weapon-data/partizans.json"
-import units from "../geardata/units/unit-data/units.json"
+import weapons from "../geardata/weapons/weapons.json"
+import units from "../geardata/units/units.json"
 import { v4 as uuidv4 } from 'uuid';
 import { useLanguageContext } from "../language-provider";
 
@@ -80,18 +78,9 @@ export default function displaySet(setName: string, name: string): any {
                             if (variant) unitName = units.find(item => item['Name (English)'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1] + ' a')
                             else unitName = units.find(item => item['Name (English)'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1])
                             if (unitName) itemName = unitName['Name (Global)'].replace(' A', '')
-                        case 'Sword':
-                            let swordName: any = sword.find(item => item['Name (English)'] === set.Pieces[i + 1])
-                            if (swordName) itemName = swordName['Name (Global)']
-                            break;
-                        case 'Wired Lance':
-                            let wlName: any = wiredlance.find(item => item['Name (English)'] === set.Pieces[i + 1])
-                            if (wlName) itemName = wlName['Name (Global)']
-                            break;
-                        case 'Partizan':
-                            let partizanName: any = partizan.find(item => item['Name (English)'] === set.Pieces[i + 1])
-                            if (partizanName) itemName = partizanName['Name (Global)']
-                            break;
+                        default:
+                            let weaponName: any = weapons.find(item => item['Name (English)'] === set.Pieces[i + 1])
+                            if (weaponName) itemName = weaponName['Name (Global)']
                     }
                     break;
                 case 'JP':
@@ -104,18 +93,9 @@ export default function displaySet(setName: string, name: string): any {
                             else unitName = units.find(item => item['Name (English)'] === set.Pieces[i] + ' / ' + set.Pieces[i + 1])
                             if (unitName) itemName = unitName['Name (JP)'].replace('a', '')
                             break;
-                        case 'Sword':
-                            let swordName: any = sword.find(item => item['Name (English)'] === set.Pieces[i + 1])
-                            if (swordName) itemName = swordName['Name (JP)']
-                            break;
-                        case 'Wired Lance':
-                            let wlName: any = wiredlance.find(item => item['Name (English)'] === set.Pieces[i + 1])
-                            if (wlName) itemName = wlName['Name (JP)']
-                            break;
-                        case 'Partizan':
-                            let partizanName: any = partizan.find(item => item['Name (English)'] === set.Pieces[i + 1])
-                            if (partizanName) itemName = partizanName['Name (JP)']
-                            break;
+                        default:
+                            let weaponName: any = weapons.find(item => item['Name (English)'] === set.Pieces[i + 1])
+                            if (weaponName) itemName = weaponName['Name (JP)'];
                     }
                     break;
             }
@@ -123,29 +103,35 @@ export default function displaySet(setName: string, name: string): any {
                 if (set.Pieces[i] === 'Rear' || set.Pieces[i] === 'Arm' || set.Pieces[i] === 'Leg') {
                     switch (language.language) {
                         case 'English':
-                            if (name[name.length - 2] === ' ') {
-                                name = name.slice(0, -2)
+                            if (itemName[itemName.length - 2] === ' ') {
+                                itemName = itemName.slice(0, -2)
                             }
                             break
                         case 'Global':
                             let globalName: any
                             globalName = units.find(item => item['Name (English)'] === name)
-                            if (globalName) name = globalName['Name (Global)']
-                            if (name[name.length - 2] === ' ') {
-                                name = name.slice(0, -2)
+                            if (globalName) itemName = globalName['Name (Global)']
+                            if (itemName[itemName.length - 2] === ' ') {
+                                itemName = itemName.slice(0, -2)
                             }
                             break
                         case 'JP':
                             let jpName: any
                             jpName = units.find(item => item['Name (English)'] === name)
-                            if (jpName) name = jpName['Name (JP)']
-                            name = name.replace('a', '').replace('b', '').replace('c', '').replace('d', '').replace('e', '')
+                            if (jpName) itemName = jpName['Name (JP)']
+                            itemName = itemName.replace('a', '').replace('b', '').replace('c', '').replace('d', '').replace('e', '')
                     }
-                }
-                if (itemName === name) {
-                    bufferMembers.push(<strong key={uuidv4()}>{name}</strong>)
+                    if ((variant && itemName === name.slice(0,-2)) || (!variant && itemName === name)) {
+                        bufferMembers.push(<strong key={uuidv4()}>{itemName}</strong>)
+                    } else {
+                        bufferMembers.push(itemName)
+                    }
                 } else {
-                    bufferMembers.push(itemName)
+                    if (set.Pieces[i + 1] === name) {
+                        bufferMembers.push(<strong key={uuidv4()}>{itemName}</strong>)
+                    } else {
+                        bufferMembers.push(itemName)
+                    }
                 }
             } else {
                 if (set.Pieces[i + 1] === name) {

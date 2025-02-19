@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link'
 import { useLanguageContext } from "../language-provider";
-import { Flex, Image, SimpleGrid, Table, Tooltip } from '@mantine/core';
+import { Flex, Image, SimpleGrid, Table } from '@mantine/core';
 import { v4 as uuidv4 } from 'uuid';
 import displayAbilities from './displayAbilities';
 import displayClasses from './displayClasses';
@@ -25,7 +25,7 @@ export default function WeaponTableComponent({ data, type }) {
 
     function calculateMaxAtk(baseATK: number, rarity: number, saf: string, potential: string): number {
         let maxATK: number = 0;
-        if (!saf && type !== 'takts' || type === 'takts' && !potential) {
+        if (!saf && type !== 'Takt' || type === 'Takt' && !potential) {
             switch (rarity) {
                 case 1:
                 case 2:
@@ -55,9 +55,9 @@ export default function WeaponTableComponent({ data, type }) {
     let tableHeader: string[]
     let filteredData: any
     switch (language.language) {
-        case "Global": tableHeader = headerGlobal; filteredData = tbodyData.filter((key: any) => key["Name (Global)"] !== null); break;
-        case "JP": tableHeader = headerJP; filteredData = tbodyData.filter((key: any) => key["Name (JP)"] !== null); break;
-        default: tableHeader = headerEnglish; filteredData = tbodyData.filter((key: any) => key["Name (JP)"] !== null);
+        case "Global": tableHeader = headerGlobal; filteredData = tbodyData.filter((key: any) => key["Name (Global)"] !== null).filter((key:any) => key["Weapon Type"] === type); break;
+        case "JP": tableHeader = headerJP; filteredData = tbodyData.filter((key: any) => key["Name (JP)"] !== null).filter((key:any) => key["Weapon Type"] === type); break;
+        default: tableHeader = headerEnglish; filteredData = tbodyData.filter((key: any) => key["Name (JP)"] !== null).filter((key:any) => key["Weapon Type"] === type);
     }
 
     filteredData.map((item: any, id: number) => {
@@ -94,7 +94,7 @@ export default function WeaponTableComponent({ data, type }) {
                     }
                     return <Table.Tr key={uuidv4()}>
                         {row["Name (English)"] !== "Takt-NT" && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('/Global', '').replace('/', '')}.png`} alt={iconLabel} w={64} h={64} /></Flex></Table.Td>}
-                        {row["Name (English)"] === "Takt-NT" && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/takts/Takt-NT.png`} alt={iconLabel} w={64} h={64} /></Flex></Table.Td>}
+                        {row["Name (English)"] === "Takt-NT" && <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/Takt/Takt-NT.png`} alt={iconLabel} w={64} h={64} /></Flex></Table.Td>}
                         {theadData.map((key: string, index: any) => {
                             let itemName: any
 
@@ -134,6 +134,7 @@ export default function WeaponTableComponent({ data, type }) {
                             switch (key) {
                                 case 'Name (JP)':
                                     return itemName
+                                case 'Weapon Type':
                                 case 'Name (English)':
                                 case 'Name (Global)':
                                 case 'id':
@@ -157,7 +158,7 @@ export default function WeaponTableComponent({ data, type }) {
                                         bufferATK.push(displayStat('T-ATK', row['T-ATK']));
                                         bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
                                     }
-                                    if (index === 5) {
+                                    if (index === 6) {
                                         if (bufferATK[0]) return (
                                             <React.Fragment key={uuidv4()}>
                                                 <Table.Td key={uuidv4()}><Flex justify="center" align="center" direction="column" key={uuidv4()} gap={0}>{bufferATK}</Flex></Table.Td>
@@ -189,7 +190,7 @@ export default function WeaponTableComponent({ data, type }) {
                                     if (row['Set']) {
                                         bufferProperties.push(displaySet(row['Set'], row['Name (English)']));
                                     }
-                                    if (index === 9) {
+                                    if (index === 10) {
                                         if (bufferProperties[0]) return <Table.Td key={uuidv4()}><SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
                                         else return <Table.Td key={uuidv4()} className="centerCell">-</Table.Td>
                                     } else {
