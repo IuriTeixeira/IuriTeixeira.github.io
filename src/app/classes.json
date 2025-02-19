@@ -1,5 +1,19 @@
 [
     {
+        "Name (JP)": "選択なし",
+        "Name (English)": "None",
+        "Name (Global)": "None",
+        "HP":    0,
+        "PP":    0,
+        "S-ATK": 0,
+        "R-ATK": 0,
+        "T-ATK": 0,
+        "DEX":   0,
+        "S-DEF": 0,
+        "R-DEF": 0,
+        "T-DEF": 0
+    },
+    {
         "Name (JP)": "ハンター",
         "Name (English)": "Hunter",
         "Name (Global)": "Hunter",
@@ -137,7 +151,8 @@
         "DEX":   549,
         "S-DEF": 697,
         "R-DEF": 697,
-        "T-DEF": 697
+        "T-DEF": 697,
+        "Successor": true
     },
     {
         "Name (JP)": "ファントム",
@@ -151,7 +166,8 @@
         "DEX":   564,
         "S-DEF": 659,
         "R-DEF": 659,
-        "T-DEF": 659
+        "T-DEF": 659,
+        "Successor": true
     },
     {
         "Name (JP)": "エトワール",
@@ -165,7 +181,8 @@
         "DEX":   543,
         "S-DEF": 730,
         "R-DEF": 730,
-        "T-DEF": 730
+        "T-DEF": 730,
+        "Successor": true
     },
     {
         "Name (JP)": "ラスター",
@@ -179,6 +196,7 @@
         "DEX":   576,
         "S-DEF": 710,
         "R-DEF": 710,
-        "T-DEF": 710
+        "T-DEF": 710,
+        "Successor": true
     }
 ]

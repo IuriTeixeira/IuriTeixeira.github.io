@@ -9,13 +9,13 @@ export default function displaySSA(listSSA: any[]): any {
     for (let i = 0; i < listSSA.length; i++) {
         switch (language.language) {
             case 'English':
-                buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`SSA Slot ${listSSA[i]} enabled`} title={`SSA Slot ${listSSA[i]} enabled`} w={16} h={16} />)
+                buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`SSA Slot ${listSSA[i]} enabled`} title={`SSA Slot ${listSSA[i]} enabled`} w={18} h={18} />)
                 break;
             case 'Global':
-                buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`SGA Slot ${listSSA[i]} enabled`} title={`SGA Slot ${listSSA[i]} enabled`} w={16} h={16} />)
+                buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`SGA Slot ${listSSA[i]} enabled`} title={`SGA Slot ${listSSA[i]} enabled`} w={18} h={18} />)
                 break;
             case 'JP':
-                buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`S級特殊能力スロット${listSSA[i]}有効`} title={`S級特殊能力スロット${listSSA[i]}有効`} w={16} h={16} />)
+                buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`S級特殊能力スロット${listSSA[i]}有効`} title={`S級特殊能力スロット${listSSA[i]}有効`} w={18} h={18} />)
                 break;
         }
 

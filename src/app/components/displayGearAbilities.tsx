@@ -1,13 +1,26 @@
 import { Flex, Table, Button } from "@mantine/core"
 import displayAbilities from "./displayAbilities"
+import { useLanguageContext } from "../language-provider";
 
 export default function displayGearAbilities(abilities: any[]): any {
+    const language = useLanguageContext()
+    let title: string
+    switch (language.language) {
+        case 'Global':
+            title = 'Augments'
+            break
+        case 'JP':
+            title = '特殊能力追加'
+            break
+        default:
+            title = 'Special Abilities'
+    }
     return (
-        <Table>
+        <Table verticalSpacing={2}>
             <Table.Thead>
                 <Table.Tr>
                     <Table.Th colSpan={2}>
-                        <Flex justify='center' align='center'>Special Abilities</Flex>
+                        <Flex justify='center' align='center'>{title}</Flex>
                     </Table.Th>
                 </Table.Tr>
             </Table.Thead>
