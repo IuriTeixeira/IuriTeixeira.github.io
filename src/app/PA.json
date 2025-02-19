@@ -41,7 +41,9 @@
         "Name (Global)": "Nova Strike",
         "Potency": "2369",
         "PP Cost": 20,
-        "DEX Correction": 1
+        "DEX Correction": 1,
+        "Charge": true,
+        "Distribution": [25,25,25,25]
     },
     {
         "Weapon Type": "Sword",
@@ -50,7 +52,9 @@
         "Name (Global)": "Ride Slash",
         "Potency": "2702",
         "PP Cost": 25,
-        "DEX Correction": 1
+        "DEX Correction": 1,
+        "Charge": true,
+        "Distribution": [25,25,25,25]
     },
     {
         "Weapon Type": "Sword",
@@ -59,7 +63,9 @@
         "Name (Global)": "Cross Cut",
         "Potency": "3596",
         "PP Cost": 40,
-        "DEX Correction": 1
+        "DEX Correction": 1,
+        "Charge": false,
+        "Distribution": [20,20,20,20,60]
     },
     {
         "Weapon Type": "Sword",
@@ -68,7 +74,9 @@
         "Name (Global)": "Blade Bash",
         "Potency": "572",
         "PP Cost": 15,
-        "DEX Correction": 1
+        "DEX Correction": 1,
+        "Charge": false,
+        "Distribution": [100]
     },
     {
         "Weapon Type": "Sword",
@@ -77,7 +85,9 @@
         "Name (Global)": "Sonic Arrow",
         "Potency": "555",
         "PP Cost": 25,
-        "DEX Correction": 1
+        "DEX Correction": 1,
+        "Charge": true,
+        "Distribution": [50,50,50]
     },
     {
         "Weapon Type": "Sword",
@@ -86,7 +96,9 @@
         "Name (Global)": "Merciless Throw",
         "Potency": "2880",
         "PP Cost": 20,
-        "DEX Correction": 1
+        "DEX Correction": 1,
+        "Charge": false,
+        "Distribution": [20,80]
     },
     {
         "Weapon Type": "Sword",
@@ -95,7 +107,9 @@
         "Name (Global)": "Guilty Break",
         "Potency": "1364",
         "PP Cost": 20,
-        "DEX Correction": 1
+        "DEX Correction": 1,
+        "Charge": true,
+        "Distribution": [50,50]
     },
     {
         "Weapon Type": "Sword",
@@ -104,7 +118,9 @@
         "Name (Global)": "Sacrificial Bite",
         "Potency": "1478",
         "PP Cost": 20,
-        "DEX Correction": 1
+        "DEX Correction": 1,
+        "Charge": false,
+        "Distribution": [25,13,13,13,36]
     },
     {
         "Weapon Type": "Sword",
@@ -113,7 +129,11 @@
         "Name (Global)": "Sacrificial Bite Zero",
         "Potency": "1479",
         "PP Cost": 20,
-        "DEX Correction": 1
+        "DEX Correction": 1,
+        "Charge": false,
+        "Distribution": [25,25,25,25],
+        "Power Craft": [0, 98],
+        "PP Craft": [0, 10]
     },
     {
         "Weapon Type": "Sword",
@@ -122,6 +142,19 @@
         "Name (Global)": "Blaze Parry",
         "Potency": "2301",
         "PP Cost": 20,
-        "DEX Correction": 1
+        "DEX Correction": 1,
+        "Charge": true,
+        "Distribution": [30,10,10,10,90,90]
+    },
+    {
+        "Weapon Type": "Wired Lance",
+        "Name (JP)": "バインドスルー",
+        "Name (English)": "Bind Through",
+        "Name (Global)": "Wire Driver",
+        "Potency": "1732",
+        "PP Cost": 20,
+        "DEX Correction": 1,
+        "Charge": true,
+        "Distribution": [10,90]
     }
 ]
