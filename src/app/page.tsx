@@ -12,19 +12,20 @@ import raceStats from './races.json'
 import classStats from './classes.json'
 import weapons from './geardata/weapons/weapons.json'
 import units from './geardata/units/units.json'
+import localization from './localization.json'
 
 export default function Home() {
     const language = useLanguageContext()
 
     const raceList: string[] = raceStats.map(item => item[`Name (${language.language})`])
-    const magTypeList: string[] = ['S-ATK', 'R-ATK', 'T-ATK', 'DEX', 'S-DEF', 'R-DEF', 'T-DEF']
+    const magTypeList: string[] = localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map(item => item[`Name (${language.language})`]) //['S-ATK', 'R-ATK', 'T-ATK', 'DEX', 'S-DEF', 'R-DEF', 'T-DEF']
     const mainClassList = classStats.filter(item => item["Name (English)"] !== 'None').map(item => item[`Name (${language.language})`]);
     const subClassList: string[] = classStats.map(item => item[`Name (${language.language})`])
     const successorClassList: string[] = classStats.filter(item => item["Successor"]).map(item => item[`Name (English)`])
     const nonSuccessorClassList: string[] = classStats.filter(item => !item["Successor"]).map(item => item[`Name (${language.language})`])
 
     const [race, setRace] = useState<string>(raceList[3])
-    const [magType, setMagType] = useState<string>('S-ATK')
+    const [magType, setMagType] = useState<string>(magTypeList[0])
     const [mainClass, setMainClass] = useState<string>(mainClassList[11])
     const [subClass, setSubClass] = useState<string>(subClassList[0])
     const [weapon, setWeapon] = useState<string>('Lightweaver Cras Glide')
@@ -113,10 +114,10 @@ export default function Home() {
         value: item["Name (English)"],
         label: item[`Name (${language.language})`],
     }));
-    const magTypeOptions = magTypeList.map((item) => ({
-        value: item,
-        label: item,
-    }));
+    const [magTypeOptions, setMagTypeOptions] = useState(localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map((item) => ({
+        value: item["Name (English)"],
+        label: item[`Name (${language.language})`],
+    })));
     const mainClassOptions = classStats.filter(item => item["Name (English)"] !== 'None').map((item) => ({
         value: item["Name (English)"],
         label: item[`Name (${language.language})`],
@@ -170,6 +171,10 @@ export default function Home() {
     }
 
     function updateMag(type: string) {
+        setMagTypeOptions(localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map((item) => ({
+            value: item["Name (English)"],
+            label: item[`Name (${language.language})`],
+        })))
         setMagType(type)
         updateStats(classBoosts, type)
     }
@@ -381,30 +386,100 @@ export default function Home() {
             value: item["Name (English)"],
             label: item[`Name (${language.language})`],
         })))
+        setMagTypeOptions(localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map((item) => ({
+            value: item["Name (English)"],
+            label: item[`Name (${language.language})`],
+        })))
     }, [language.language]);
 
     let loc: string[]
 
     switch (language.language) {
         case 'Global':
-            loc = ['Pwr', 'Def', 'DEX', 'Damage Boosts', 'Resistances', 'Class Boosts', 'Weapon', 'Back', 'Arms', 'Legs']
+            loc = [
+                'Pwr',
+                'Def',
+                'DEX',
+                'Damage Boosts',
+                'Resistances',
+                'Class Boosts',
+                'Weapon',
+                'Back',
+                'Arms',
+                'Legs',
+                'Classes with the Lv75 stat boost title acquired',
+                'CHARACTER INFO',
+                'GEAR',
+                'SKILLS',
+                'Select Skills',
+                'Select Weapon',
+                'Select Back Unit',
+                'Select Arms Unit',
+                'Select Legs Unit',
+                'Not available for Scion Class',
+                'PSO2 Character Planner'
+            ]
             break
         case 'JP':
-            loc = ['力', '防御', '技量', 'Damage Boosts', 'Resistances', 'Class Boosts', '武器', 'リア', 'アーム', 'レッグ']
+            loc = [
+                '力',
+                '防御',
+                '技量',
+                '力高める',
+                '耐性',
+                'クラスタイトルからのボーナス',
+                '武器',
+                'リア',
+                'アーム',
+                'レッグ',
+                'Lv75ステータスブースト称号を獲得したクラス',
+                '文字情報',
+                '装置',
+                'スキル',
+                'スキルを選択します',
+                '武器を選択します',
+                'リア防具を選択します',
+                'アーム防具を選択します',
+                'レッグ防具を選択します',
+                '後継クラスでは利用できません',
+                'PSO2キャラクタープランナー'
+            ]
             break
         default:
-            loc = ['ATK', 'DEF', 'DEX', 'Damage Boosts', 'Resistances', 'Class Boosts', 'Weapon', 'Rear', 'Arm', 'Leg']
+            loc = [
+                'ATK',
+                'DEF',
+                'DEX',
+                'Damage Boosts',
+                'Resistances',
+                'Class Boosts',
+                'Weapon',
+                'Rear',
+                'Arm',
+                'Leg',
+                'Classes with the Lv75 stat boost title acquired',
+                'CHARACTER INFO',
+                'GEAR',
+                'SKILLS',
+                'Select Skills',
+                'Select Weapon',
+                'Select Rear Unit',
+                'Select Arm Unit',
+                'Select Leg Unit',
+                'Not available for Successor Class',
+                'PSO2 Character Planner'
+            ]
             break
 
     }
     return (
         <>
-            <Flex justify="center" align="center" key={uuidv4()} gap={5}><h1>PSO2 Character Simulator</h1></Flex>
+            <Flex justify="center" align="center" key={uuidv4()} gap={5}><h1>{loc[20]}</h1></Flex>
             <Table withTableBorder withColumnBorders w='95%' align='center'>
                 <Table.Thead>
                     <Table.Tr>
                         <Table.Th colSpan={10} style={{ backgroundColor: '#151515' }}>
-                            <Flex justify='center'><Text fz="h4"><strong>CHARACTER INFO</strong></Text></Flex>
+                            <Flex justify='center'><Text fz="h4"><strong>{loc[11]}</strong></Text></Flex>
                         </Table.Th>
                     </Table.Tr>
                 </Table.Thead>
@@ -476,7 +551,7 @@ export default function Home() {
                                     onChange={(value) => { updateClass(mainClass, value) }}
                                 />
                             }
-                            {successorClassList.includes(mainClass) && <Flex justify='center'>Not available for Successor Class</Flex>}
+                            {successorClassList.includes(mainClass) && <Flex justify='center'>{loc[19]}</Flex>}
                         </Table.Td>
                         <Table.Th colSpan={3}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[4]}</Flex></Table.Th>
                     </Table.Tr>
@@ -516,7 +591,7 @@ export default function Home() {
                     <Table.Tr>
                         <Table.Td colSpan={3}>
                             <Flex justify='center'>
-                                <Checkbox.Group description="Classes with the Lv75 stat boost title acquired" value={classBoosts} onChange={(val) => updateStats(val, magType)}>
+                                <Checkbox.Group description={loc[10]} value={classBoosts} onChange={(val) => updateStats(val, magType)}>
                                     <Group mt="xs">
                                         <Checkbox value="Hunter" label={nonSuccessorClassList[1]} checked />
                                         <Checkbox value="Ranger" label={nonSuccessorClassList[2]} checked />
@@ -538,7 +613,7 @@ export default function Home() {
                 <Table.Thead>
                     <Table.Tr>
                         <Table.Th colSpan={10} style={{ backgroundColor: '#151515' }}>
-                            <Flex justify='center'><Text fz="h4"><strong>GEAR</strong></Text></Flex>
+                            <Flex justify='center'><Text fz="h4"><strong>{loc[12]}</strong></Text></Flex>
                         </Table.Th>
                     </Table.Tr>
                 </Table.Thead>
@@ -551,16 +626,16 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td colSpan={2} align='center'>
-                            <Button size="compact-sm">Choose Weapon</Button>
+                            <Button size="compact-sm">{loc[15]}</Button>
                         </Table.Td>
                         <Table.Td colSpan={2} align='center'>
-                            <Button size="compact-sm">Choose Rear Unit</Button>
+                            <Button size="compact-sm">{loc[16]}</Button>
                         </Table.Td>
                         <Table.Td colSpan={2} align='center'>
-                            <Button size="compact-sm">Choose Arm Unit</Button>
+                            <Button size="compact-sm">{loc[17]}</Button>
                         </Table.Td>
                         <Table.Td colSpan={2} align='center'>
-                            <Button size="compact-sm">Choose Leg Unit</Button>
+                            <Button size="compact-sm">{loc[18]}</Button>
                         </Table.Td>
                     </Table.Tr>
                     <Table.Tr>
@@ -611,13 +686,13 @@ export default function Home() {
                 <Table.Thead>
                     <Table.Tr>
                         <Table.Th style={{ backgroundColor: '#151515' }}>
-                            <Flex justify='center'><Text fz="h4"><strong>SKILLS</strong></Text></Flex>
+                            <Flex justify='center'><Text fz="h4"><strong>{loc[13]}</strong></Text></Flex>
                         </Table.Th>
                     </Table.Tr>
                 </Table.Thead>
                 <Table.Tbody>
                     <Table.Tr>
-                        <Table.Td><Flex justify='center'><Button>Select Skills</Button></Flex></Table.Td>
+                        <Table.Td><Flex justify='center'><Button>{loc[14]}</Button></Flex></Table.Td>
                     </Table.Tr>
                 </Table.Tbody>
             </Table>
