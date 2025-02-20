@@ -8,7 +8,7 @@ import { theme } from './theme';
 import GlobalHeaderComponent from "./components/GlobalHeaderComponent";
 
 export const metadata: Metadata = {
-    title: "PSO2 Character Simulator",
+    title: "PSO2 Character Planner",
     description: "",
 };
 
