@@ -4435,7 +4435,7 @@
             null,
             "Increases damage against enemies weak to Fire based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Ripper"],
+        "Effect": ["Unique","Ripper"],
         "Restriction": "Weapon"
     },
     {
@@ -4454,7 +4454,7 @@
             null,
             "Increases damage against enemies weak to Ice based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Ripper"],
+        "Effect": ["Unique", "Ripper"],
         "Restriction": "Weapon"
     },
     {
@@ -4473,7 +4473,7 @@
             null,
             "Increases damage against enemies weak to Lightning based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Ripper"],
+        "Effect": ["Unique", "Ripper"],
         "Restriction": "Weapon"
     },
     {
@@ -4492,7 +4492,7 @@
             null,
             "Increases damage against enemies weak to Wind based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Ripper"],
+        "Effect": ["Unique", "Ripper"],
         "Restriction": "Weapon"
     },
     {
@@ -4511,7 +4511,7 @@
             null,
             "Increases damage against enemies weak to Light based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Ripper"],
+        "Effect": ["Unique", "Ripper"],
         "Restriction": "Weapon"
     },
     {
@@ -4530,7 +4530,7 @@
             null,
             "Increases damage against enemies weak to Dark based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Ripper"],
+        "Effect": ["Unique", "Ripper"],
         "Restriction": "Weapon"
     },
     {
@@ -4549,7 +4549,7 @@
             null,
             "Increases damage against Sylvants based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Slayer"],
+        "Effect": ["Unique", "Slayer"],
         "Restriction": "Weapon"
     },
     {
@@ -4568,7 +4568,7 @@
             null,
             "Increases damage against Draconians based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Slayer"],
+        "Effect": ["Unique", "Slayer"],
         "Restriction": "Weapon"
     },
     {
@@ -4587,7 +4587,7 @@
             null,
             "Increases damage against Automatas based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Slayer"],
+        "Effect": ["Unique", "Slayer"],
         "Restriction": "Weapon"
     },
     {
@@ -4606,7 +4606,7 @@
             null,
             "Increases damage against Oceanids based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Slayer"],
+        "Effect": ["Unique", "Slayer"],
         "Restriction": "Weapon"
     },
     {
@@ -4625,7 +4625,7 @@
             null,
             "Increases damage against Phantasms based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Slayer"],
+        "Effect": ["Unique", "Slayer"],
         "Restriction": "Weapon"
     },
     {
@@ -4644,7 +4644,7 @@
             null,
             "Increases damage against Falspawn based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Slayer"],
+        "Effect": ["Unique", "Slayer"],
         "Restriction": "Weapon"
     },
     {
@@ -4663,7 +4663,7 @@
             null,
             "Increases damage against Luminmechs based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
-        "Effect": ["Conditional Damage Multiplier Slayer"],
+        "Effect": ["Unique", "Slayer"],
         "Restriction": "Weapon"
     },
     {
@@ -5643,11 +5643,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases natural PP recovery by 20% for 20 seconds after standing still for 5 seconds."
+            "Increases Natural PP Recovery by 20% for 20 seconds after standing still for 5 seconds."
         ],
         "Effect (Global)": [
             null,
-            "Increases natural PP recovery by 20% for 20 seconds after standing still for 5 seconds."
+            "Increases Natural PP Recovery by 20% for 20 seconds after standing still for 5 seconds."
         ],
         "Effect": ["Conditional Natural PP Recovery Multiplier", 1.2]
     },
@@ -6007,7 +6007,7 @@
             null,
             "Increases damage every second to a maximum of 4% after 30 seconds."
         ],
-        "Effect": ["Stacking Conditional Damage Multiplier", 1.00133, 1.04]
+        "Effect": ["Time Based Conditional Damage Multiplier", 1.00133, 1.04]
     },
     {
         "SSA Slot": 1,
@@ -6280,7 +6280,7 @@
             null,
             "Increases damage by 3% but take 6% more damage while your weapon is drawn."
         ],
-        "Effect": ["Conditional Damage Multiplier", 1.03, "Conditional Damage Taken Multiplier", 0.94]
+        "Effect": ["Conditional Damage Multiplier", 1.03, "Conditional Damage Taken Multiplier", 1.06]
     },
     {
         "SSA Slot": 2,
@@ -6784,7 +6784,7 @@
         ],
         "Effect (Global)": [
             null,
-            "While Moongleam, Leafgleam, or Shadowgleam are active, natural PP recovery is increased by 25%."
+            "While Moongleam, Leafgleam, or Shadowgleam are active, Natural PP Recovery is increased by 25%."
         ],
         "Effect": ["Conditional Natural PP Recovery Multiplier", 1.25]
     },
@@ -6803,7 +6803,7 @@
         ],
         "Effect (Global)": [
             null,
-            "While Moongleam, Leafgleam, or Shadowgleam are active, natural PP recovery is increased by 25%."
+            "While Moongleam, Leafgleam, or Shadowgleam are active, Natural PP Recovery is increased by 25%."
         ],
         "Effect": ["Conditional Natural PP Recovery Multiplier", 1.25]
     },
@@ -6824,7 +6824,7 @@
             null,
             "While Moongleam, Leafgleam, or Shadowgleam are active, damage increases every second. Maxes out at 5% after 37.5 seconds."
         ],
-        "Effect": ["Stacking Conditional Damage Multiplier", 1.00133, 1.05]
+        "Effect": ["Time Based Conditional Damage Multiplier", 1.00133, 1.05]
     },
     {
         "SSA Slot": 2,
@@ -6843,7 +6843,7 @@
             null,
             "While Moongleam, Leafgleam, or Shadowgleam are active, damage increases every second. Maxes out at 7% after 37.5 seconds."
         ],
-        "Effect": ["Stacking Conditional Damage Multiplier", 1.001866, 1.07]
+        "Effect": ["Time Based Conditional Damage Multiplier", 1.001866, 1.07]
     },
     {
         "SSA Slot": 2,
@@ -7344,7 +7344,8 @@
         "Effect (Global)": [
             null,
             "Increases Critical Hit Rate by 12%."
-        ]
+        ],
+        "Effect": ["Critical Hit Rate Increase", 12]
     },
     {
         "SSA Slot": 3,
@@ -7362,7 +7363,8 @@
         "Effect (Global)": [
             null,
             "Increases Natural PP recovery by 17%."
-        ]
+        ],
+        "Effect": ["Natural PP Recovery Multiplier", 1.17]
     },
     {
         "SSA Slot": 3,
@@ -7380,7 +7382,8 @@
         "Effect (Global)": [
             null,
             "Increases Natural PP recovery by 20%."
-        ]
+        ],
+        "Effect": ["Natural PP Recovery Multiplier", 1.20]
     },
     {
         "SSA Slot": 3,
@@ -7398,7 +7401,8 @@
         "Effect (Global)": [
             null,
             "Increases active PP recovery by 20%."
-        ]
+        ],
+        "Effect": ["Active PP Recovery Multiplier", 1.20]
     },
     {
         "SSA Slot": 3,
@@ -7416,7 +7420,8 @@
         "Effect (Global)": [
             null,
             "Increases active PP recovery by 23%."
-        ]
+        ],
+        "Effect": ["Active PP Recovery Multiplier", 1.23]
     },
     {
         "SSA Slot": 3,
@@ -7434,7 +7439,8 @@
         "Effect (Global)": [
             null,
             "Increases active PP recovery by 35%."
-        ]
+        ],
+        "Effect": ["Active PP Recovery Multiplier", 1.35]
     },
     {
         "SSA Slot": 3,
@@ -7506,7 +7512,8 @@
         "Effect (Global)": [
             null,
             "Reduces damage taken by 7%."
-        ]
+        ],
+        "Effect": ["Damage Taken Multiplier", 0.93]
     },
     {
         "SSA Slot": 3,
@@ -7524,7 +7531,8 @@
         "Effect (Global)": [
             null,
             "Increases Critical Hit damage by 4%."
-        ]
+        ],
+        "Effect": ["Critical Hit Damage Multiplier", 1.04]
     },
     {
         "SSA Slot": 3,
@@ -7542,7 +7550,8 @@
         "Effect (Global)": [
             null,
             "Increases Critical Hit damage by 5%."
-        ]
+        ],
+        "Effect": ["Critical Hit Damage Multiplier", 1.05]
     },
     {
         "SSA Slot": 3,
@@ -7560,7 +7569,8 @@
         "Effect (Global)": [
             null,
             "Increases damage dealt to bosses by 4%."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.04]
     },
     {
         "SSA Slot": 3,
@@ -7578,7 +7588,8 @@
         "Effect (Global)": [
             null,
             "Increases damage against breakable parts by 4%."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.04]
     },
     {
         "SSA Slot": 3,
@@ -7596,7 +7607,8 @@
         "Effect (Global)": [
             null,
             "Increases damage by 2%."
-        ]
+        ],
+        "Effect": ["Damage Multiplier", 1.02]
     },
     {
         "SSA Slot": 3,
@@ -7614,7 +7626,8 @@
         "Effect (Global)": [
             null,
             "Reduces PP consumption by 7%."
-        ]
+        ],
+        "Effect": ["PP Consumption Multiplier", 0.93]
     },
     {
         "SSA Slot": 3,
@@ -7668,7 +7681,8 @@
         "Effect (Global)": [
             null,
             "Increases damage by 3% when consecutively chaining different PAs or Techniques with Perfect Attacks."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.03]
     },
     {
         "SSA Slot": 3,
@@ -7686,7 +7700,8 @@
         "Effect (Global)": [
             null,
             "Increases damage by 3% while HP is above 80%."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.03]
     },
     {
         "SSA Slot": 3,
@@ -7704,7 +7719,8 @@
         "Effect (Global)": [
             null,
             "Increases damage by 5% while HP is above 80%."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.05]
     },
     {
         "SSA Slot": 3,
@@ -7722,7 +7738,8 @@
         "Effect (Global)": [
             null,
             "While Petalgleam, Seagleam, or Snowgleam are active, Active PP recovery is increased by 28%."
-        ]
+        ],
+        "Effect": ["Conditional Active PP Recovery Multiplier", 1.28]
     },
     {
         "SSA Slot": 3,
@@ -7740,7 +7757,8 @@
         "Effect (Global)": [
             null,
             "While Petalgleam, Seagleam, or Snowgleam are active, damage taken is reduced by 10%."
-        ]
+        ],
+        "Effect": ["Conditional Damage Taken Multiplier", 0.9]
     },
     {
         "SSA Slot": 3,
@@ -7757,8 +7775,9 @@
         ],
         "Effect (Global)": [
             null,
-            "While Petalgleam, Seagleam, or Snowgleam are active, natural PP recovery is increased by 23%."
-        ]
+            "While Petalgleam, Seagleam, or Snowgleam are active, Natural PP Recovery is increased by 23%."
+        ],
+        "Effect": ["Conditional Natural PP Recovery Multiplier", 1.23]
     },
     {
         "SSA Slot": 3,
@@ -7775,8 +7794,9 @@
         ],
         "Effect (Global)": [
             null,
-            "While Petalgleam, Seagleam, or Snowgleam are active, natural PP recovery is increased by 25%."
-        ]
+            "While Petalgleam, Seagleam, or Snowgleam are active, Natural PP Recovery is increased by 25%."
+        ],
+        "Effect": ["Conditional Natural PP Recovery Multiplier", 1.25]
     },
     {
         "SSA Slot": 3,
@@ -7794,7 +7814,8 @@
         "Effect (Global)": [
             null,
             "While Petalgleam, Seagleam, or Snowgleam are active, damage increases every second. Maxes out at 5% after 37.5 seconds."
-        ]
+        ],
+        "Effect": ["Time Based Conditional Damage Multiplier", 0.00133, 1.05]
     },
     {
         "SSA Slot": 3,
@@ -7812,7 +7833,8 @@
         "Effect (Global)": [
             null,
             "While Petalgleam, Seagleam, or Snowgleam are active, damage increases every second. Maxes out at 7% after 37.5 seconds."
-        ]
+        ],
+        "Effect": ["Time Based Conditional Damage Multiplier", 0.001866, 1.07]
     },
     {
         "SSA Slot": 3,
@@ -7848,7 +7870,8 @@
         "Effect (Global)": [
             null,
             "While Moongleam, Leafgleam, or Shadowgleam are active, damage is increased by 3%."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.03]
     },
     {
         "SSA Slot": 3,
@@ -7866,7 +7889,8 @@
         "Effect (Global)": [
             null,
             "While Moongleam, Leafgleam, or Shadowgleam are active, PP consumption is reduced by 14%."
-        ]
+        ],
+        "Effect": ["Conditional PP Consumption Multiplier", 0.86]
     },
     {
         "SSA Slot": 3,
@@ -7884,7 +7908,8 @@
         "Effect (Global)": [
             null,
             "While Moongleam, Leafgleam, or Shadowgleam are active, Critical Hit Rate is increased by 20%."
-        ]
+        ],
+        "Effect": ["Conditional Critical Hit Rate Increase", 20]
     },
     {
         "SSA Slot": 3,
@@ -7920,7 +7945,8 @@
         "Effect (Global)": [
             null,
             "While Petalgleam, Seagleam, Snowgleam, Moongleam, Leafgleam, or Shadowgleam are active, active PP recovery is increased by 45%."
-        ]
+        ],
+        "Effect": ["Conditional Active PP Recovery Multiplier", 1.45]
     },
     {
         "SSA Slot": 3,
@@ -7937,8 +7963,9 @@
         ],
         "Effect (Global)": [
             null,
-            "While Petalgleam, Seagleam, Snowgleam, Moongleam, Leafgleam, or Shadowgleam are active, natural PP recovery is increased by 40%."
-        ]
+            "While Petalgleam, Seagleam, Snowgleam, Moongleam, Leafgleam, or Shadowgleam are active, Natural PP Recovery is increased by 40%."
+        ],
+        "Effect": ["Conditional Natural PP Recovery Multiplier", 1.40]
     },
     {
         "SSA Slot": 3,
@@ -7956,25 +7983,8 @@
         "Effect (Global)": [
             null,
             "Reduces PP consumption by 7%."
-        ]
-    },
-    {
-        "SSA Slot": 3,
-        "Name (JP)": "S3:光子縮減",
-        "Name (English)": "S3:Photon Reduction",
-        "Name (Global)": "S3: Photon Descent",
-        "Effect (JP)": [
-            null,
-            "PP消費量を7%軽減。"
         ],
-        "Effect (English)": [
-            null,
-            "Reduces PP consumption by 7%."
-        ],
-        "Effect (Global)": [
-            null,
-            "Reduces PP consumption by 7%."
-        ]
+        "Effect": ["PP Consumption Multiplier", 0.93]
     },
     {
         "SSA Slot": 3,
@@ -7987,12 +7997,13 @@
         ],
         "Effect (English)": [
             null,
-            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects are lost when damage is taken (180s cooldown)."
+            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nNatural PP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects are lost when damage is taken (180s cooldown)."
         ],
         "Effect (Global)": [
             null,
-            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nPP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects are lost when damage is taken (180s cooldown)."
-        ]
+            "Increases damage by 4% and Critical Hit Rate by 5%.\nEnhances PP efficiency as follows:\nNatural PP recovery +10%\nActive PP recovery +15%\nPP consumption -5%.\nEffects are lost when damage is taken (180s cooldown)."
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.04, "Conditional Critical Hit Rate Increase", 5, "Conditional Natural PP Recovery Multiplier", 1.10, "Conditional Active PP Recovery Multiplier", 1.15, "Conditional Damage Taken Multiplier", 0.95]
     },
     {
         "SSA Slot": 3,
@@ -8010,7 +8021,8 @@
         "Effect (Global)": [
             null,
             "Reduces PP consumption based on the Photon Blast Gauge.\n0~3 bars: 4%\n4~7 bars: 8%\nFull charge: 12%"
-        ]
+        ],
+        "Effect": ["Unique", "Phantasmal Reduction"]
     },
     {
         "SSA Slot": 3,
@@ -8046,7 +8058,8 @@
         "Effect (Global)": [
             null,
             "Reduces damage taken by 1% for every 300,000 damage dealt. Maxes at 15%."
-        ]
+        ],
+        "Effect": ["Stacking Conditional Damage Taken Multiplier", 0.01, 0.85]
     },
     {
         "SSA Slot": 3,
@@ -8064,7 +8077,8 @@
         "Effect (Global)": [
             null,
             "Reduces PP consumption by 1% for every 300,000 damage dealt. Maxes at 15%."
-        ]
+        ],
+        "Effect": ["Stacking Conditional PP Consumption Multiplier", 0.01, 0.85]
     },
     {
         "SSA Slot": 3,
@@ -8082,7 +8096,8 @@
         "Effect (Global)": [
             null,
             "Increases Critical Hit Rate by 2% for every 300,000 damage dealt. Maxes at 30%."
-        ]
+        ],
+        "Effect": ["Stacking Critical Hit Rate Increase", 2, 30]
     },
     {
         "SSA Slot": 3,
@@ -8118,7 +8133,8 @@
         "Effect (Global)": [
             null,
             "Increases damage by 4% but take 8% more damage while your weapon is drawn."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.04, "Conditional Damage Taken Multiplier", 1.08]
     },
     {
         "SSA Slot": 3,
@@ -8131,9 +8147,10 @@
         ],
         "Effect (English)": [
             null,
-            "Increases damage by 4% but take 8% more damage when weapon is drawn."
+            "Increases Natural and Active PP Recovery by 3% for each successful Just Attack that hits an enemy, up to 45%. Does not end when you miss a Just Attack."
         ],
-        "Effect (Global)": null
+        "Effect (Global)": null,
+        "Effect": ["Stacking Conditional Natural PP Recovery Multiplier", 1.03, 1.45, "Stacking Conditional Active PP Recovery Multiplier", 1.03, 1.45]
     },
     {
         "SSA Slot": 3,
@@ -8151,23 +8168,8 @@
         "Effect (Global)": [
             null,
             "Increases Critical Hit damage against breakable parts by 9%."
-        ]
-    },
-    {
-        "SSA Slot": 3,
-        "Name (JP)": "S3:素撃の志",
-        "Name (English)": null,
-        "Name (Global)": "S3: Precision Partbreaker's Will",
-        "Effect (JP)": null,
-        "Effect (English)": [
-            null,
-            "Increases the damage of non-Critical Hits by 5%."
         ],
-        "Effect (Global)": [
-            null,
-            "Increases Critical Hit damage against breakable parts by 9%."
-        ],
-        "Not Implemented": true
+        "Effect": ["Conditional Critical Damage Multiplier", 1.09]
     },
     {
         "SSA Slot": 3,
@@ -8234,7 +8236,8 @@
         "Effect (Global)": [
             null,
             "Improves Natural and Active PP recovery and reduces PP consumption based on your maximum PP, up to 30% at 420 max PP.\nAmount:\n(MaxPP - 120)/10"
-        ]
+        ],
+        "Effect": ["Unique", "Radiant Response"]
     },
     {
         "SSA Slot": 4,
@@ -8252,7 +8255,8 @@
         "Effect (Global)": [
             null,
             "Critical Hit Rate of frontal attacks is increased by 30% while [Valiant Stance] is active."
-        ]
+        ],
+        "Effect": ["Conditional Critical Hit Rate Increase", 30]
     },
     {
         "SSA Slot": 4,
@@ -8288,7 +8292,8 @@
         "Effect (Global)": [
             null,
             "Frontal attack damage is increased by 15% while [Wise Stance] is active."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.15]
     },
     {
         "SSA Slot": 4,
@@ -8414,7 +8419,8 @@
         "Effect (Global)": [
             null,
             "Increases the damage of all attacks done with a Bow by 3% while [Rapid Fire] is active."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.03]
     },
     {
         "SSA Slot": 4,
@@ -8432,7 +8438,8 @@
         "Effect (Global)": [
             null,
             "Increases the potency of [Element Conversion] by 5% for non-matching weapon elements."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.05]
     },
     {
         "SSA Slot": 4,
@@ -8504,7 +8511,8 @@
         "Effect (Global)": [
             null,
             "Reduces Critical Hit Rate by 50% and increases Critical Hit damage by 6%."
-        ]
+        ],
+        "Effect": ["Conditional Critical Hit Rate Increase", -50, "Conditional Critical Damage Multiplier", 1.06]
     },
     {
         "SSA Slot": 4,
@@ -8522,7 +8530,8 @@
         "Effect (Global)": [
             null,
             "Enables Natural PP Recovery while Guarding, and increases PP recovery rate by 300%."
-        ]
+        ],
+        "Effect": ["Conditional Natural PP Recovery Multiplier", 3]
     },
     {
         "SSA Slot": 4,
@@ -8540,7 +8549,8 @@
         "Effect (Global)": [
             null,
             "Increases Normal Attack damage by 13%."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.13]
     },
     {
         "SSA Slot": 4,
@@ -8558,7 +8568,8 @@
         "Effect (Global)": [
             null,
             "Deploys a barrier that reduces damage taken by 60%, and grants immunity to flinch and knockback, every 45 seconds.\nEffect ends after being damaged once."
-        ]
+        ],
+        "Effect": ["Conditional Damage Taken Multiplier", 0.4]
     },
     {
         "SSA Slot": 4,
@@ -8576,7 +8587,8 @@
         "Effect (Global)": [
             null,
             "While Petalgleam, Seagleam, Snowgleam, Moongleam, Leafgleam, or Shadowgleam are active, decreases PP consumption by 30%, but decreases Natural PP Recovery by 30%"
-        ]
+        ],
+        "Effect": ["Conditional PP Consumption Multiplier", 0.7, "Conditional Natural PP Recovery Multiplier", 0.7]
     },
     {
         "SSA Slot": 4,
@@ -8594,7 +8606,8 @@
         "Effect (Global)": [
             null,
             "Upon hitting with a PA/Technique, tracks 30% of damage dealt within the next 4 seconds, and then deals additional damage to the next PA/Technique based on the damage dealt, up to 250,000 damage.\nAdditional damage only affects 1 target, but damage is tracked from all targets.\nIs always considered an attack from behind.\n10 seconds cooldown."
-        ]
+        ],
+        "Effect": ["Unique", "Raising Pursuit"]
     },
     {
         "SSA Slot": 4,
@@ -8612,7 +8625,8 @@
         "Effect (Global)": [
             null,
             "Critical Hit Rate increased by 50% when attacking an enemy affected by any Status Ailment, including Jellen and Blight Rounds."
-        ]
+        ],
+        "Effect": ["Conditional Critical Hit Rate Increase", 50]
     },
     {
         "SSA Slot": 4,
@@ -8684,7 +8698,8 @@
         "Effect (Global)": [
             null,
             "Increases Active PP Recovery by 60% when attacking enemies afflicted by a status ailment, Jellen, or Blight Rounds."
-        ]
+        ],
+        "Effect": ["Conditional Active PP Recovery Multiplier", 1.6]
     },
     {
         "SSA Slot": 4,
@@ -8721,6 +8736,7 @@
             null,
             "Increases damage by 4% when attacking enemies afflicted by a status ailment, Jellen, or Blight Rounds."
         ],
+        "Effect": ["Conditional Damage Multiplier", 1.04],
         "Not Implemented": true
     },
     {
@@ -8740,6 +8756,7 @@
             null,
             "Performance changes when Perfect Guarding with a Weapon Action.\nSealed Form: Recovers 15% HP every 10s, immunity to flinch and knockback.\nUnsealed Form: Increases damage by 4%, reduces PP consumption by 15%, 10% chance when hit to reduce damage by 99%.\nReturns to Sealed Form when Sword Focus Gauge depletes.\nSword only."
         ],
+        "Effect": ["Unique", "Release Parry"],
         "Type":"Sword"
     },
     {
@@ -8759,6 +8776,7 @@
             null,
             " Increases damage by 2%.\nUpon successfully executing a Perfect Guard, Focus is no longer consumed for 15 seconds.\nWired Lance only."
         ],
+        "Effect": ["Damage Multiplier", 1.02],
         "Type":"Wired Lance"
     },
     {
@@ -8778,6 +8796,7 @@
             null,
             "Increases damage by 2%.\nInflicts 300% potency damage when you touch an enemy while running. Unleashes a 1000% potency shockwave forwards when you stop running.\nPartisan only."
         ],
+        "Effect": ["Unique", "Rushing Bolt"],
         "Type":"Partizan"
     },
     {
@@ -8797,6 +8816,7 @@
             null,
             "Increases damage by 2%.\nWhen Focus Gauge is maxed, Partisan Focus Gauge will not be consumed while airborne.\nPartisan only."
         ],
+        "Effect": ["Damage Multiplier", 1.02],
         "Type":"Partizan"
     },
     {
@@ -8810,12 +8830,13 @@
         ],
         "Effect (English)": [
             null,
-            "Reduces natural PP recovery to 0 while PP is above 50%.\nReduces PP consumption by 30% and increases Natural PP Recovery by 100% while PP is below 50%.\nTwin Daggers only."
+            "Reduces Natural PP Recovery to 0 while PP is above 50%.\nReduces PP consumption by 30% and increases Natural PP Recovery by 100% while PP is below 50%.\nTwin Daggers only."
         ],
         "Effect (Global)": [
             null,
-            "Reduces natural PP recovery to 0 while PP is above 50%.\nReduces PP consumption by 30% and increases Natural PP Recovery by 100% while PP is below 50%.\nTwin Daggers only."
+            "Reduces Natural PP Recovery to 0 while PP is above 50%.\nReduces PP consumption by 30% and increases Natural PP Recovery by 100% while PP is below 50%.\nTwin Daggers only."
         ],
+        "Effect": ["Conditional Natural PP Recovery Multiplier", 0, "Conditional PP Consumption Multiplier", 0.7, "Conditional Natural PP Recovery Multiplier", 2],
         "Type":"Twin Daggers"
     },
     {
@@ -8835,6 +8856,7 @@
             null,
             "Increases damage by 2%.\nUpon successfully executing a [Double Saber Wind Parry], Gear Gauge is set to maximum and unleash a counterattack with Scissor Slash.\nCounterattack uses 4x potency of your currently learned level of Scissor Slash. Treated as Lv1 if Scissor Slash is not learned.\nDouble Saber only."
         ],
+        "Effect": ["Unique", "Evasive Mirage"],
         "Type":"Double Saber"
     },
     {
@@ -8854,6 +8876,7 @@
             null,
             "Increases damage by 2%.\nUpon successfully evading an attack with Sway, unleashes a counterattack with a large Meteor Fist.\nCounterattack uses 0.7x potency of your currently learned level of Meteor Fist's large meteor. Treated as Lv1 if Meteor Fist is not learned.\nKnuckles only."
         ],
+        "Effect": ["Unique", "Evasive Meteor"],
         "Type":"Knuckles"
     },
     {
@@ -8873,6 +8896,7 @@
             null,
             "Increases damage by 2%.\nStops Natural PP Recovery. Increases Active PP Recovery by 50%.\nRestores 100 PP upon successfully evading an attack with Sway or Step.\nKnuckles only."
         ],
+        "Effect": ["Damage Multiplier", 1.02, "Natural PP Recovery Multiplier", 0, "Active PP Recovery Multiplier", 1.5],
         "Type":"Knuckles"
     },
     {
@@ -8892,6 +8916,7 @@
             null,
             "Increases damage by 2%.\nIncreases the damage dealt with Braver's [Counter Edge] by 15% and Phantom's [Dodge Counter Bullet] by 10%.\nGenerates Braver Focus Gauge when successfully performing Katana Counter.\nKatana only."
         ],
+        "Effect": ["Unique", "Hangeki Edge"],
         "Type":"Katana"
     },
     {
@@ -8911,6 +8936,7 @@
             null,
             "Upon using a PA, generates blades of lightning with 200% potency (25% for Étoile) that attack the target.\nSoaring Blades only."
         ],
+        "Effect": ["Unique", "Thundering Pursuit"],
         "Type":"Dual Blades"
     },
     {
@@ -8930,7 +8956,7 @@
             null,
             "Increases Critical Hit Rate by 20%. Critical deal an additional 2% damage and recover 1% of the damage dealt as HP, up to 30 HP per hit"
         ],
-        "Type":"Dual Blades"
+        "Effect": ["Critical Hit Rate Increase", 20, "Critical Hit Damage Multiplier", 1.02]
     },
     {
         "SSA Slot": 5,
@@ -8949,6 +8975,7 @@
             null,
             "Increases damage by 2%.\nIncreases Positron Blast's damage by 5% and reduces its cost to 1 PP. 60 seconds cooldown.\nCooldown resets upon successfully evading an attack with Dive Roll.\nAssault Rifle only."
         ],
+        "Effect": ["Unique", "Firey End"],
         "Type":"Assault Rifle"
     },
     {
@@ -8968,6 +8995,7 @@
             null,
             "Increases damage by 2%.\nAdds an extra attack to Normal Attacks that has a chance to stun enemies.\nDamage of the extra attack depends on distance.\nClose Range: 250% potency for Ranger, 75% potency for Phantom\nLong Range: 200% potency for Ranger, 60% potency for Phantom.\nAssault Rifle only."
         ],
+        "Effect": ["Unique", "Calming Expanse"],
         "Type":"Assault Rifle"
     },
     {
@@ -8987,6 +9015,7 @@
             null,
             "Increases damage by 2%.\nIncreases Contact Blast's damage by 150% and reduces its cost to 1 PP. 60 seconds cooldown.\nCooldown resets upon successfully evading an attack with Dive Roll.\nLauncher only."
         ],
+        "Effect": ["Unique", "Firey Zero"],
         "Type":"Launcher"
     },
     {
@@ -9006,6 +9035,7 @@
             null,
             "Changes Normal Attack into 4 homing shells, but decreases the damage of Normal Attacks by 67%. \nLauncher only."
         ],
+        "Effect": ["Unique", "Calming Quartet"],
         "Type":"Launcher"
     },
     {
@@ -9044,6 +9074,7 @@
             null,
             "On [Chain Trigger] activation, fully recovers PP, and increases damage by 3% for 60 seconds.\nTwin Machineguns only."
         ],
+        "Effect": ["Conditional Damage Multiplier", 1.03],
         "Type":"Twin Machineguns"
     },
     {
@@ -9063,6 +9094,7 @@
             null,
             "All Bow PAs except for Banishing Arrow will produce a Chaser Arrow upon hitting an enemy.\nSuccessfully evading an attack with [Sidestep] will increase the damage of this ability by 100% for 15 seconds.\nBow only."
         ],
+        "Effect": ["Unique", "Auxiliary Arrow"],
         "Type":"Bullet Bow"
     },
     {
@@ -9082,6 +9114,7 @@
             null,
             "Increases the attack speed of Rod Normal Attacks by 1.38x (1.08x for Phantom Rod), negates hitstop, and increases the damage of Photon Bullet by 100%.\nRod only."
         ],
+        "Effect": ["Normal Attack Damage Multiplier", 2],
         "Type":"Rod"
     },
     {
@@ -9101,6 +9134,7 @@
             null,
             "All Support Techniques have instant charge time.\nThe damage of Zondeel is reduced by 34%.\nThe following techniques are considered Support Techniques: Shifta, Deband, Resta, Anti, Zondeel, Zanverse, Megiverse\nTalis only."
         ],
+        "Effect": ["Unique", "Speedy Support"],
         "Type":"Talis"
     },
     {
@@ -9120,6 +9154,7 @@
             null,
             "Increases damage by 2%\nNormal Attacks negate hitstop.\nEvery 3rd hit of a Normal Attack combo will generate a shockwave with 250% potency that recovers 15 PP upon hit.\nHeavy Hammer also generates a shockwave when charged, with 600% potency at charge stage 1, and 900% potency at charge stage 2.\nWand only."
         ],
+        "Effect": ["Unique", "Calming Shockwave"],
         "Type":"Wand"
     },
     {
@@ -9139,6 +9174,7 @@
             null,
             "Increases [Elemental Burst] potency by 30%.\nAutomatically activates [Elemental Burst] upon using Jet Boots Variant Attacks.\nJet Boots only."
         ],
+        "Effect": ["Unique", "Rhythmic Pursuer"],
         "Type":"Jet Boots"
     },
     {
@@ -9157,7 +9193,8 @@
         "Effect (Global)": [
             null,
             "Doubles the effects of HP, PP, Pwr, Def, and Dex Augments on this weapon."
-        ]
+        ],
+        "Effect": ["Unique", "Anthesis Cultivation"]
     },
     {
         "SSA Slot": 5,
@@ -9175,7 +9212,8 @@
         "Effect (Global)": [
             null,
             "Reduces Technique damage by 40%.\nDifferent Techniques with the same element that are chained together with a Perfect Attack will have instant charge times.\nOnly the second technique needs to be a Perfect Attack.\nDoes not affect Nabarta, Nabarta Zero, Gigrants Zero, or Namegid's charge time.\nThe following techniques do not trigger this ability: Shifta, Deband, Resta, Anti, Zondeel, Zanverse, Megiverse\nDoes not get cancelled by Normal Attacks."
-        ]
+        ],
+        "Effect": ["Tech Damage Multiplier", 0.6]
     },
     {
         "SSA Slot": 5,
@@ -9193,7 +9231,8 @@
         "Effect (Global)": [
             null,
             "Grants bonuses when your max HP is at 1000 and every 500 max HP afterwards, up to 3000 HP.\n1000 HP: Reduces damage taken by 5%.\n1500 HP: Recover 5% of maximum HP every 10s.\n2000 HP: Increases damage by 0.4% for every 10% of max HP remaining. (min: 0%, max: 4%)\n2500 HP: Recover 30 HP on attack.\n3000 HP: Become immune to flinch and knockback."
-        ]
+        ],
+        "Effect": ["Unique", "Vigorous Response"]
     },
     {
         "SSA Slot": 5,
@@ -9211,7 +9250,8 @@
         "Effect (Global)": [
             null,
             "Increases damage against enemies inflicted with a status effect by 3%.\n40% chance to inflict Bind on enemies inflicted with a status effect."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.03]
     },
     {
         "SSA Slot": 5,
@@ -9229,7 +9269,8 @@
         "Effect (Global)": [
             null,
             "Grants bonus effects to [Critical Field] and [Elemental PP Restorate Field] (EPPR Field) when either are active.\n[Critical Field]: Critical Damage + 3%.\n[EPPR Field]: Normal Attacks recover an additional 2 PP and Jet Boots Variant Attacks recover 5 PP per hit."
-        ]
+        ],
+        "Effect": ["Unique", "Area Support"]
     },
     {
         "SSA Slot": 5,
@@ -9248,6 +9289,7 @@
             null,
             "Increases damage by 4%.\nReduces damage taken by 25% but you lose 20 PP every time you take damage.\nForce only"
         ],
+        "Effect": ["Damage Multiplier", 1.04, "Damage Taken Multiplier", 0.75],
         "Type":"Force"
     },
     {
@@ -9266,7 +9308,8 @@
         "Effect (Global)": [
             null,
             "Increases damage by 2%.\nRecovers HP and PP when sheathing your weapon based on the amount of damage dealt when unsheathed.\n400,000+ damage: 20% HP and 30 PP\n700,000+ damage: 60% HP and 70 PP."
-        ]
+        ],
+        "Effect": ["Damage Multiplier", 1.02]
     },
     {
         "SSA Slot": 6,
@@ -9284,7 +9327,8 @@
         "Effect (Global)": [
             null,
             "Reduces damage taken by 7%."
-        ]
+        ],
+        "Effect": ["Damage Taken Multiplier", 0.93]
     },
     {
         "SSA Slot": 6,
@@ -9374,7 +9418,8 @@
         "Effect (Global)": [
             null,
             "Increases Critical Hit Rate by 15%."
-        ]
+        ],
+        "Effect": ["Critical Hit Rate Increase", 15]
     },
     {
         "SSA Slot": 6,
@@ -9399,17 +9444,9 @@
         "Name (JP)": "S6:活器上昇",
         "Name (English)": "S6:HP Up",
         "Name (Global)": "S6: Fortified Life Vessel",
-        "Effect (JP)": [
-            null,
-            "最大HPが40上昇。"
-        ],
         "Effect (English)": [
-            null,
-            "HP +40"
-        ],
-        "Effect (Global)": [
-            null,
-            "HP +40"
+            "HP",
+            40
         ]
     },
     {
@@ -9417,17 +9454,9 @@
         "Name (JP)": "S6:輝器上昇",
         "Name (English)": "S6:PP Up",
         "Name (Global)": "S6: Fortified Photon Vessel",
-        "Effect (JP)": [
-            null,
-            "最大PPが4上昇。"
-        ],
         "Effect (English)": [
-            null,
-            "PP +4"
-        ],
-        "Effect (Global)": [
-            null,
-            "PP +4"
+            "PP",
+            4
         ]
     },
     {
@@ -9446,7 +9475,8 @@
         "Effect (Global)": [
             null,
             "MEL Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base S-ATK Up", 30]
     },
     {
         "SSA Slot": 6,
@@ -9464,7 +9494,8 @@
         "Effect (Global)": [
             null,
             "RNG Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base R-ATK Up", 30]
     },
     {
         "SSA Slot": 6,
@@ -9482,7 +9513,8 @@
         "Effect (Global)": [
             null,
             "TEC Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base T-ATK Up", 30]
     },
     {
         "SSA Slot": 6,
@@ -9518,7 +9550,8 @@
         "Effect (Global)": [
             null,
             "Gain a 10% chance to reduce damage taken by 70%."
-        ]
+        ],
+        "Effect": ["Conditional Damage Taken Multiplier", 0.3]
     },
     {
         "SSA Slot": 6,
@@ -9536,7 +9569,8 @@
         "Effect (Global)": [
             null,
             "Reduces damage taken by 40% for 3 seconds when your HP is at 50% or lower.\n30 second cooldown."
-        ]
+        ],
+        "Effect": ["Damage Taken Multiplier", 0.6]
     },
     {
         "SSA Slot": 6,
@@ -9590,7 +9624,8 @@
         "Effect (Global)": [
             null,
             "Increases maximum HP by 50% while [Overload] is active.\nThis effectively makes you have 37.5% of your regular max HP during [Overload], but still counts as 25% for all effects and purposes."
-        ]
+        ],
+        "Effect": ["Unique", "Overlimit"]
     },
     {
         "SSA Slot": 6,
@@ -9644,7 +9679,8 @@
         "Effect (Global)": [
             null,
             "Grants 20% chance to reduce damage taken to 1 while S1:Petalgleam, S1:Seagleam, S1:Snowgleam, S1:Moongleam, S1:Leafgleam, or S1:Shadowgleam are active."
-        ]
+        ],
+        "Effect": ["Conditional Damage Taken Multiplier", 0]
     },
     {
         "SSA Slot": 7,
@@ -9669,17 +9705,9 @@
         "Name (JP)": "S7:活器上昇",
         "Name (English)": "S7:HP Up",
         "Name (Global)": "S7: Fortified Life Vessel",
-        "Effect (JP)": [
-            null,
-            "最大HPが40上昇。"
-        ],
         "Effect (English)": [
-            null,
-            "HP +40"
-        ],
-        "Effect (Global)": [
-            null,
-            "HP +40"
+            "HP",
+            40
         ]
     },
     {
@@ -9687,17 +9715,9 @@
         "Name (JP)": "S7:輝器上昇",
         "Name (English)": "S7:PP Up",
         "Name (Global)": "S7: Fortified Photon Vessel",
-        "Effect (JP)": [
-            null,
-            "最大PPが4上昇。"
-        ],
         "Effect (English)": [
-            null,
-            "PP +4"
-        ],
-        "Effect (Global)": [
-            null,
-            "PP +4"
+            "PP",
+            4
         ]
     },
     {
@@ -9716,7 +9736,8 @@
         "Effect (Global)": [
             null,
             "MEL Pwr +25, RNG Pwr +25, TEC Pwr +25\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base S-ATK Up", 25, "Base R-ATK Up", 25, "Base T-ATK Up", 25]
     },
     {
         "SSA Slot": 7,
@@ -9734,7 +9755,8 @@
         "Effect (Global)": [
             null,
             "MEL Pwr +45, RNG Pwr +45, TEC Pwr +45\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base S-ATK Up", 25, "Base R-ATK Up", 25, "Base T-ATK Up", 25]
     },
     {
         "SSA Slot": 7,
@@ -9752,7 +9774,8 @@
         "Effect (Global)": [
             null,
             "MEL Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base S-ATK Up", 30]
     },
     {
         "SSA Slot": 7,
@@ -9770,7 +9793,8 @@
         "Effect (Global)": [
             null,
             "MEL Pwr +50\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base S-ATK Up", 50]
     },
     {
         "SSA Slot": 7,
@@ -9788,7 +9812,8 @@
         "Effect (Global)": [
             null,
             "RNG Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base R-ATK Up", 30]
     },
     {
         "SSA Slot": 7,
@@ -9806,7 +9831,27 @@
         "Effect (Global)": [
             null,
             "RNG Pwr +50\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base R-ATK Up", 50]
+    },
+    {
+        "SSA Slot": 7,
+        "Name (JP)": "S7:法撃上昇",
+        "Name (English)": "S7:T-ATK Up",
+        "Name (Global)": "S7: Fortified Technique",
+        "Effect (JP)": [
+            null,
+            "法撃力が30上昇。"
+        ],
+        "Effect (English)": [
+            null,
+            "T-ATK +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
+        ],
+        "Effect (Global)": [
+            null,
+            "TEC Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
+        ],
+        "Effect": ["Base T-ATK Up", 30]
     },
     {
         "SSA Slot": 7,
@@ -9824,7 +9869,8 @@
         "Effect (Global)": [
             null,
             "TEC Pwr +50\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base T-ATK Up", 50]
     },
     {
         "SSA Slot": 7,
@@ -9841,7 +9887,7 @@
         ],
         "Effect (Global)": [
             null,
-            "Gain a 10% chance to stun enemies with Perfect Attacks. "
+            "Gain a 10% chance to stun enemies with Perfect Attacks."
         ]
     },
     {
@@ -9914,7 +9960,8 @@
         "Effect (Global)": [
             null,
             "Increase Power by 1% and reduces damage taken by 15% from enemies targeting you.\nYou can tell an enemy is targetting you by the red icon that shows in their name plate."
-        ]
+        ],
+        "Effect": ["Conditional Damage Multiplier", 1.01, "Conditional Damage Taken Multiplier", 0.85]
     },
     {
         "SSA Slot": 7,
@@ -9932,7 +9979,8 @@
         "Effect (Global)": [
             null,
             "Increases Critical Hit Rate by 30% while S1:Petalgleam, S1:Seagleam, S1:Snowgleam, S1:Moongleam, S1:Leafgleam, or S1:Shadowgleam are active."
-        ]
+        ],
+        "Effect": ["Conditional Critical Hit Rate Increase", 30]
     },
     {
         "SSA Slot": 7,
@@ -9972,38 +10020,12 @@
     },
     {
         "SSA Slot": 8,
-        "Name (JP)": "S8:舞空の援",
-        "Name (English)": "S8:Sky Dance's Boon",
-        "Name (Global)": "S8: Skydance Support",
-        "Effect (JP)": [
-            null,
-            "2秒間、滞空状態が続くと、10秒間ごとにシフタ、デバンド発動。"
-        ],
-        "Effect (English)": [
-            null,
-            "After being airborne for 2 seconds, automatically casts Shifta and Deband on self, then recasts it every 10 seconds as long as you stay airborne. Uses your currently learned levels of Shifta and Deband."
-        ],
-        "Effect (Global)": [
-            null,
-            "After being airborne for 2 seconds, automatically casts Shifta and Deband on self, then recasts it every 10 seconds as long as you stay airborne. Uses your currently learned levels of Shifta and Deband."
-        ]
-    },
-    {
-        "SSA Slot": 8,
         "Name (JP)": "S8:活器上昇",
         "Name (English)": "S8:HP Up",
         "Name (Global)": "S8: Fortified Life Vessel",
-        "Effect (JP)": [
-            null,
-            "最大HPが40上昇。"
-        ],
         "Effect (English)": [
-            null,
-            "HP +40"
-        ],
-        "Effect (Global)": [
-            null,
-            "HP +40"
+            "HP",
+            40
         ]
     },
     {
@@ -10011,17 +10033,9 @@
         "Name (JP)": "S8:活器上昇2",
         "Name (English)": "S8:HP Up 2",
         "Name (Global)": "S8: Fortified Life Vessel 2",
-        "Effect (JP)": [
-            null,
-            "最大HPが60上昇。"
-        ],
         "Effect (English)": [
-            null,
-            "HP +60"
-        ],
-        "Effect (Global)": [
-            null,
-            "HP +60"
+            "HP",
+            60
         ]
     },
     {
@@ -10029,17 +10043,9 @@
         "Name (JP)": "S8:輝器上昇",
         "Name (English)": "S8:PP Up",
         "Name (Global)": "S8: Fortified Photon Vessel",
-        "Effect (JP)": [
-            null,
-            "最大PPが4上昇。"
-        ],
         "Effect (English)": [
-            null,
-            "PP +4"
-        ],
-        "Effect (Global)": [
-            null,
-            "PP +4"
+            "PP",
+            4
         ]
     },
     {
@@ -10047,17 +10053,9 @@
         "Name (JP)": "S8:輝器上昇2",
         "Name (English)": "S8:PP Up 2",
         "Name (Global)": "S8: Fortified Photon Vessel 2",
-        "Effect (JP)": [
-            null,
-            "最大PPが6上昇。"
-        ],
         "Effect (English)": [
-            null,
-            "PP +6"
-        ],
-        "Effect (Global)": [
-            null,
-            "PP +6"
+            "PP",
+            6
         ]
     },
     {
@@ -10076,7 +10074,8 @@
         "Effect (Global)": [
             null,
             "MEL Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base S-ATK Up", 30]
     },
     {
         "SSA Slot": 8,
@@ -10094,7 +10093,8 @@
         "Effect (Global)": [
             null,
             "RNG Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base R-ATK Up", 30]
     },
     {
         "SSA Slot": 8,
@@ -10112,7 +10112,8 @@
         "Effect (Global)": [
             null,
             "TEC Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
-        ]
+        ],
+        "Effect": ["Base T-ATK Up", 30]
     },
     {
         "SSA Slot": 8,
