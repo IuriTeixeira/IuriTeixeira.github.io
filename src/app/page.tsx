@@ -13,6 +13,7 @@ import classStats from './classes.json'
 import weapons from './geardata/weapons/weapons.json'
 import units from './geardata/units/units.json'
 import localization from './localization.json'
+import abilityData from './geardata/abilities.json'
 
 export default function Home() {
     const language = useLanguageContext()
@@ -59,6 +60,7 @@ export default function Home() {
     const [windRes, setWindRes] = useState<number>(0)
     const [lightRes, setLightRes] = useState<number>(0)
     const [darkRes, setDarkRes] = useState<number>(0)
+    const [abilityStats, setAbilityStats] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
     const [classBoosts, setClassBoosts] = useState<string[]>(classStats.filter(item => !item["Successor"]).map(item => item[`Name (${language.language})`]))
     const [weaponAbilities, setWeaponAbilities] = useState<string[]>([
         'S1:Augment Intent 2',
@@ -191,8 +193,10 @@ export default function Home() {
         updateStats(classBoosts, magType)
     }
 
-    function updateStats(value: string[], mag: string) {
-        setClassBoosts(value)
+    function updateStats(classboosts: string[], mag: string) {
+        const abStats: number[] = parseAbilities()
+        console.log(abStats)
+        setClassBoosts(classboosts)
         //0 = HP
         //1 = PP
         //2 = S-ATK
@@ -204,52 +208,52 @@ export default function Home() {
         //8 = T-DEF
         let bonusBaseStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-        if (value.includes('Hunter')) {
+        if (classboosts.includes('Hunter')) {
             bonusBaseStats[0] += 50
             bonusBaseStats[3] += 15
             bonusBaseStats[6] += 40
         }
-        if (value.includes('Ranger')) {
+        if (classboosts.includes('Ranger')) {
             bonusBaseStats[3] += 20
             bonusBaseStats[4] += 15
             bonusBaseStats[7] += 40
         }
-        if (value.includes('Force')) {
+        if (classboosts.includes('Force')) {
             bonusBaseStats[3] += 15
             bonusBaseStats[4] += 20
             bonusBaseStats[8] += 40
         }
-        if (value.includes('Fighter')) {
+        if (classboosts.includes('Fighter')) {
             bonusBaseStats[1] += 2
             bonusBaseStats[2] += 50
             bonusBaseStats[4] += 15
             bonusBaseStats[8] += 10
         }
-        if (value.includes('Gunner')) {
+        if (classboosts.includes('Gunner')) {
             bonusBaseStats[1] += 2
             bonusBaseStats[2] += 15
             bonusBaseStats[3] += 50
             bonusBaseStats[6] += 10
         }
-        if (value.includes('Techer')) {
+        if (classboosts.includes('Techer')) {
             bonusBaseStats[1] += 2
             bonusBaseStats[2] += 15
             bonusBaseStats[4] += 50
             bonusBaseStats[7] += 10
         }
-        if (value.includes('Braver')) {
+        if (classboosts.includes('Braver')) {
             bonusBaseStats[1] += 2
             bonusBaseStats[2] += 20
             bonusBaseStats[3] += 20
             bonusBaseStats[5] += 30
         }
-        if (value.includes('Bouncer')) {
+        if (classboosts.includes('Bouncer')) {
             bonusBaseStats[1] += 2
             bonusBaseStats[2] += 20
             bonusBaseStats[4] += 20
             bonusBaseStats[5] += 30
         }
-        if (value.includes('Summoner')) {
+        if (classboosts.includes('Summoner')) {
             bonusBaseStats[0] += 10
             bonusBaseStats[6] += 40
             bonusBaseStats[7] += 40
@@ -332,16 +336,15 @@ export default function Home() {
                 totalBaseTDef += 200; break;
         }
 
-        let totalBonusHp: number = (weaponData["HP"] || 0) + (rearData["HP"] || 0) + (armData["HP"] || 0) + (legData["HP"] || 0)
-        let totalBonusPp: number = (weaponData["PP"] || 0) + (rearData["PP"] || 0) + (armData["PP"] || 0) + (legData["PP"] || 0)
-        let totalBonusSAtk: number = (weaponData["S-ATK"] || 0) + (rearData["S-ATK"] || 0) + (armData["S-ATK"] || 0) + (legData["S-ATK"] || 0)
-        let totalBonusRAtk: number = (weaponData["R-ATK"] || 0) + (rearData["R-ATK"] || 0) + (armData["R-ATK"] || 0) + (legData["R-ATK"] || 0)
-        let totalBonusTAtk: number = (weaponData["T-ATK"] || 0) + (rearData["T-ATK"] || 0) + (armData["T-ATK"] || 0) + (legData["T-ATK"] || 0)
-        let totalBonusDex: number = (weaponData["DEX"] || 0) + (rearData["DEX"] || 0) + (armData["DEX"] || 0) + (legData["DEX"] || 0)
-        let totalBonusSDef: number = (weaponData["S-DEF"] || 0) + (rearData["S-DEF"] || 0) + (armData["S-DEF"] || 0) + (legData["S-DEF"] || 0)
-        let totalBonusRDef: number = (weaponData["R-DEF"] || 0) + (rearData["R-DEF"] || 0) + (armData["R-DEF"] || 0) + (legData["R-DEF"] || 0)
-        let totalBonusTDef: number = (weaponData["T-DEF"] || 0) + (rearData["T-DEF"] || 0) + (armData["T-DEF"] || 0) + (legData["T-DEF"] || 0)
-
+        let totalBonusHp: number = (weaponData["HP"] || 0) + (rearData["HP"] || 0) + (armData["HP"] || 0) + (legData["HP"] || 0) + (abStats[0] || 0)
+        let totalBonusPp: number = (weaponData["PP"] || 0) + (rearData["PP"] || 0) + (armData["PP"] || 0) + (legData["PP"] || 0) + (abStats[1] || 0)
+        let totalBonusSAtk: number = (weaponData["S-ATK"] || 0) + (rearData["S-ATK"] || 0) + (armData["S-ATK"] || 0) + (legData["S-ATK"] || 0) + (abStats[2] || 0)
+        let totalBonusRAtk: number = (weaponData["R-ATK"] || 0) + (rearData["R-ATK"] || 0) + (armData["R-ATK"] || 0) + (legData["R-ATK"] || 0) + (abStats[3] || 0)
+        let totalBonusTAtk: number = (weaponData["T-ATK"] || 0) + (rearData["T-ATK"] || 0) + (armData["T-ATK"] || 0) + (legData["T-ATK"] || 0) + (abStats[4] || 0)
+        let totalBonusDex: number = (weaponData["DEX"] || 0) + (rearData["DEX"] || 0) + (armData["DEX"] || 0) + (legData["DEX"] || 0) + (abStats[5] || 0)
+        let totalBonusSDef: number = (weaponData["S-DEF"] || 0) + (rearData["S-DEF"] || 0) + (armData["S-DEF"] || 0) + (legData["S-DEF"] || 0) + (abStats[6] || 0)
+        let totalBonusRDef: number = (weaponData["R-DEF"] || 0) + (rearData["R-DEF"] || 0) + (armData["R-DEF"] || 0) + (legData["R-DEF"] || 0) + (abStats[7] || 0)
+        let totalBonusTDef: number = (weaponData["T-DEF"] || 0) + (rearData["T-DEF"] || 0) + (armData["T-DEF"] || 0) + (legData["T-DEF"] || 0) + (abStats[8] || 0)
 
         setTotalHp(totalBaseHp + totalBonusHp)
         setTotalPp(totalBasePp + totalBonusPp)
@@ -363,21 +366,22 @@ export default function Home() {
         setBonusRDef(totalBonusRDef)
         setBonusTDef(totalBonusTDef)
 
-        setStrikeRes(((rearData["Strike Resistance"] || 0) + (armData["Strike Resistance"] || 0) + (legData["Strike Resistance"] || 0)) / 100)
-        setRangedRes(((rearData["Ranged Resistance"] || 0) + (armData["Ranged Resistance"] || 0) + (legData["Ranged Resistance"] || 0)) / 100)
-        setTechRes(((rearData["Tech Resistance"] || 0) + (armData["Tech Resistance"] || 0) + (legData["Tech Resistance"] || 0)) / 100)
-        setFireRes(((rearData["Fire Resistance"] || 0) + (armData["Fire Resistance"] || 0) + (legData["Fire Resistance"] || 0)) / 100)
-        setIceRes(((rearData["Ice Resistance"] || 0) + (armData["Ice Resistance"] || 0) + (legData["Ice Resistance"] || 0)) / 100)
-        setLightningRes(((rearData["Lightning Resistance"] || 0) + (armData["Lightning Resistance"] || 0) + (legData["Lightning Resistance"] || 0)) / 100)
-        setWindRes(((rearData["Wind Resistance"] || 0) + (armData["Wind Resistance"] || 0) + (legData["Wind Resistance"] || 0)) / 100)
-        setLightRes(((rearData["Light Resistance"] || 0) + (armData["Light Resistance"] || 0) + (legData["Light Resistance"] || 0)) / 100)
-        setDarkRes(((rearData["Dark Resistance"] || 0) + (armData["Dark Resistance"] || 0) + (legData["Dark Resistance"] || 0)) / 100)
+        setStrikeRes(((rearData["Strike Resistance"] || 0) + (armData["Strike Resistance"] || 0) + (legData["Strike Resistance"] || 0)) / 100 + ((abStats[9]) || 0) / 100)
+        setRangedRes(((rearData["Ranged Resistance"] || 0) + (armData["Ranged Resistance"] || 0) + (legData["Ranged Resistance"] || 0)) / 100 + ((abStats[10]) || 0) / 100)
+        setTechRes(((rearData["Tech Resistance"] || 0) + (armData["Tech Resistance"] || 0) + (legData["Tech Resistance"] || 0)) / 100 + ((abStats[11]) || 0) / 100)
+        setFireRes(((rearData["Fire Resistance"] || 0) + (armData["Fire Resistance"] || 0) + (legData["Fire Resistance"] || 0)) / 100 + ((abStats[12]) || 0) / 100)
+        setIceRes(((rearData["Ice Resistance"] || 0) + (armData["Ice Resistance"] || 0) + (legData["Ice Resistance"] || 0)) / 100 + ((abStats[13]) || 0) / 100)
+        setLightningRes(((rearData["Lightning Resistance"] || 0) + (armData["Lightning Resistance"] || 0) + (legData["Lightning Resistance"] || 0)) / 100 + ((abStats[14]) || 0) / 100)
+        setWindRes(((rearData["Wind Resistance"] || 0) + (armData["Wind Resistance"] || 0) + (legData["Wind Resistance"] || 0)) / 100 + ((abStats[15]) || 0) / 100)
+        setLightRes(((rearData["Light Resistance"] || 0) + (armData["Light Resistance"] || 0) + (legData["Light Resistance"] || 0)) / 100 + ((abStats[16]) || 0) / 100)
+        setDarkRes(((rearData["Dark Resistance"] || 0) + (armData["Dark Resistance"] || 0) + (legData["Dark Resistance"] || 0)) / 100 + ((abStats[17]) || 0) / 100)
     }
 
     useEffect(() => {
         updateClass(mainClass, subClass);
         updateMag(magType);
         updateGear(weapon, rear, arm, leg);
+        parseAbilities()
         updateStats(classBoosts, magType)
     }, []);
 
@@ -472,6 +476,171 @@ export default function Home() {
             break
 
     }
+
+    function parseAbilities(): number[] {
+        let weaponAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        let rearAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        let armAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        let legAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        for (let i = 0; i < weaponAbilities.length; i++) {
+            const parsedAbility: number[] = parseAbility(weaponAbilities[i])
+            for (let j = 0; j < weaponAbStats.length; j++) {
+                weaponAbStats[j] += parsedAbility[j]
+            }
+        }
+        console.log('waponAbStats: ', weaponAbStats)
+        for (let i = 0; i < rearAbilities.length; i++) {
+            const parsedAbility: number[] = parseAbility(rearAbilities[i])
+            for (let j = 0; j < rearAbStats.length; j++) {
+                rearAbStats[j] += parsedAbility[j]
+            }
+        }
+        for (let i = 0; i < armAbilities.length; i++) {
+            const parsedAbility: number[] = parseAbility(armAbilities[i])
+            for (let j = 0; j < armAbStats.length; j++) {
+                armAbStats[j] += parsedAbility[j]
+            }
+        }
+        for (let i = 0; i < legAbilities.length; i++) {
+            const parsedAbility: number[] = parseAbility(legAbilities[i])
+            for (let j = 0; j < legAbStats.length; j++) {
+                legAbStats[j] += parsedAbility[j]
+            }
+        }
+        let returnValue: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        for (let i = 0; i < returnValue.length; i++) {
+            returnValue[i] = weaponAbStats[i] + rearAbStats[i] + armAbStats[i] + legAbStats[i]
+        }
+        console.log(returnValue)
+        return returnValue
+    }
+
+    function parseAbility(ability: string): number[] {
+        const ab = abilityData.find(name => name["Name (English)"] === ability);
+
+        let hp: number = 0;
+        let pp: number = 0;
+        let satk: number = 0;
+        let ratk: number = 0;
+        let tatk: number = 0;
+        let dex: number = 0;
+        let sdef: number = 0;
+        let rdef: number = 0;
+        let tdef: number = 0;
+        let sres: number = 0;
+        let rres: number = 0;
+        let tres: number = 0;
+        let fireres: number = 0;
+        let iceres: number = 0;
+        let lightningres: number = 0;
+        let windres: number = 0;
+        let lightres: number = 0;
+        let darkres: number = 0;
+
+        if (ab) {
+            console.log('Ability: ', ab["Name (English)"])
+            if (ab["Effect (English)"][0]) {
+                for (let i = 0; i < ab["Effect (English)"].length; i += 2) {
+                    const item: string = String(ab["Effect (English)"][i]);
+                    const number: number = Number(ab["Effect (English)"][i + 1]);
+                    switch (item) {
+                        case 'HP':
+                            hp += number;
+                            break;
+                        case 'PP':
+                            pp += number;
+                            break;
+                        case 'All Stats':
+                            satk += number;
+                            ratk += number;
+                            tatk += number;
+                            dex += number;
+                            sdef += number;
+                            rdef += number;
+                            tdef += number;
+                            break;
+                        case 'ATK':
+                            satk += number;
+                            ratk += number;
+                            tatk += number;
+                            break;
+                        case 'DEF':
+                            sdef += number;
+                            rdef += number;
+                            tdef += number;
+                            break;
+                        case 'S-ATK':
+                            satk += number;
+                            break;
+                        case 'R-ATK':
+                            ratk += number;
+                            break;
+                        case 'T-ATK':
+                            tatk += number;
+                            break;
+                        case 'DEX':
+                            dex += number;
+                            break;
+                        case 'S-DEF':
+                            sdef += number;
+                            break;
+                        case 'R-DEF':
+                            rdef += number;
+                            break;
+                        case 'T-DEF':
+                            tdef += number;
+                            break;
+                        case 'All Resistance':
+                            sres += number;
+                            rres += number;
+                            tres += number;
+                            fireres += number;
+                            iceres += number;
+                            lightningres += number;
+                            windres += number;
+                            lightres += number;
+                            darkres += number;
+                            break;
+                        case 'Strike Resistance':
+                            sres += number;
+                            break;
+                        case 'Ranged Resistance':
+                            rres += number;
+                            break;
+                        case 'Technique Resistance':
+                            tres += number;
+                            break;
+                        case 'Fire Resistance':
+                            fireres += number;
+                            break;
+                        case 'Ice Resistance':
+                            iceres += number;
+                            break;
+                        case 'Lightning Resistance':
+                            lightningres += number;
+                            break;
+                        case 'Wind Resistance':
+                            windres += number;
+                            break;
+                        case 'Light Resistance':
+                            lightres += number;
+                            break;
+                        case 'Dark Resistance':
+                            darkres += number;
+                            break;
+                        default:
+                            console.warn('Unknown item type:', item);
+                            break;
+                    }
+                }
+            }
+        }
+
+        const returnValue: number[] = [hp, pp, satk, ratk, tatk, dex, sdef, rdef, tdef, sres, rres, tres, fireres, iceres, lightningres, windres, lightres, darkres];
+        console.log('Return value:', returnValue);
+        return returnValue;
+    }
+
     return (
         <>
             <Flex justify="center" align="center" key={uuidv4()} gap={5}><h1>{loc[20]}</h1></Flex>

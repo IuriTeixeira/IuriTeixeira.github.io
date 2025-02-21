@@ -8961,7 +8961,7 @@
     {
         "SSA Slot": 5,
         "Name (JP)": "S5:妙の巧志",
-        "Name (English)": "S5:Firey End",
+        "Name (English)": "S5:Fiery End",
         "Name (Global)": "S5: Fatal Round",
         "Effect (JP)": [
             null,
@@ -8975,7 +8975,7 @@
             null,
             "Increases damage by 2%.\nIncreases Positron Blast's damage by 5% and reduces its cost to 1 PP. 60 seconds cooldown.\nCooldown resets upon successfully evading an attack with Dive Roll.\nAssault Rifle only."
         ],
-        "Effect": ["Unique", "Firey End"],
+        "Effect": ["Unique", "Fiery End"],
         "Type":"Assault Rifle"
     },
     {
@@ -9001,7 +9001,7 @@
     {
         "SSA Slot": 5,
         "Name (JP)": "S5:烈零射砲",
-        "Name (English)": "S5:Firey Zero",
+        "Name (English)": "S5:Fiery Zero",
         "Name (Global)": "S5: Obliterating Blast",
         "Effect (JP)": [
             null,
@@ -9015,7 +9015,7 @@
             null,
             "Increases damage by 2%.\nIncreases Contact Blast's damage by 150% and reduces its cost to 1 PP. 60 seconds cooldown.\nCooldown resets upon successfully evading an attack with Dive Roll.\nLauncher only."
         ],
-        "Effect": ["Unique", "Firey Zero"],
+        "Effect": ["Unique", "Fiery Zero"],
         "Type":"Launcher"
     },
     {
