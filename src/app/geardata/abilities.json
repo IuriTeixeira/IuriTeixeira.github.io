@@ -4682,8 +4682,7 @@
             "Rare Drop Rate",
             5
         ],
-        "Effect": ["Rare Drop Rate Multiplier", 1.05],
-        "Category": "Gift"
+        "Effect": ["Rare Drop Rate Multiplier", 1.05]
     },
     {
         "Name (JP)": "ラッキーライズⅡ",
@@ -4701,8 +4700,7 @@
             "Rare Drop Rate",
             7
         ],
-        "Effect": ["Rare Drop Rate Multiplier", 1.07],
-        "Category": "Gift"
+        "Effect": ["Rare Drop Rate Multiplier", 1.07]
     },
     {
         "Name (JP)": "ラッキーライズⅢ",
@@ -4720,8 +4718,7 @@
             "Rare Drop Rate",
             10
         ],
-        "Effect": ["Rare Drop Rate Multiplier", 1.1],
-        "Category": "Gift"
+        "Effect": ["Rare Drop Rate Multiplier", 1.1]
     },
     {
         "Name (JP)": "メセタフィーバーⅠ",
@@ -4739,8 +4736,7 @@
             "Meseta Earned",
             5
         ],
-        "Effect": ["Meseta Earned Multiplier", 1.05],
-        "Category": "Gift"
+        "Effect": ["Meseta Earned Multiplier", 1.05]
     },
     {
         "Name (JP)": "メセタフィーバーⅡ",
@@ -4758,8 +4754,7 @@
             "Meseta Earned",
             7
         ],
-        "Effect": ["Meseta Earned Multiplier", 1.07],
-        "Category": "Gift"
+        "Effect": ["Meseta Earned Multiplier", 1.07]
     },
     {
         "Name (JP)": "メセタフィーバーⅢ",
@@ -4777,8 +4772,7 @@
             "Meseta Earned",
             10
         ],
-        "Effect": ["Meseta Earned Multiplier", 1.1],
-        "Category": "Gift"
+        "Effect": ["Meseta Earned Multiplier", 1.1]
     },
     {
         "Name (JP)": "EXPブーストⅠ",
@@ -4796,8 +4790,7 @@
             "Experience Earned",
             5
         ],
-        "Effect": ["Experience Earned Multiplier", 1.05],
-        "Category": "Gift"
+        "Effect": ["Experience Earned Multiplier", 1.05]
     },
     {
         "Name (JP)": "EXPブーストⅡ",
@@ -4815,8 +4808,7 @@
             "Experience Earned",
             7
         ],
-        "Effect": ["Experience Earned Multiplier", 1.07],
-        "Category": "Gift"
+        "Effect": ["Experience Earned Multiplier", 1.07]
     },
     {
         "Name (JP)": "EXPブーストⅢ",
@@ -4834,8 +4826,7 @@
             "Experience Earned",
             10
         ],
-        "Effect": ["Experience Earned Multiplier", 1.1],
-        "Category": "Gift"
+        "Effect": ["Experience Earned Multiplier", 1.1]
     },
     {
         "Name (JP)": "イクシードレセプター",
