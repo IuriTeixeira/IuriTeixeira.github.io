@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { Image, Button, Flex, Table, InputBase, Checkbox, Group, Select, Text } from "@mantine/core";
+import { Image, Button, Flex, Table, InputBase, Checkbox, Group, Select, Text, SimpleGrid } from "@mantine/core";
 import { useLanguageContext } from "./language-provider";
 import { v4 as uuidv4 } from 'uuid';
 import displayGearStats from './components/displayGearStats';
@@ -482,7 +482,13 @@ export default function Home() {
                 'Select Arms Unit',
                 'Select Legs Unit',
                 'Not available for Scion Class',
-                'PSO2 Character Planner'
+                'PSO2 Character Planner',
+                'PP Recovery',
+                'Natural PP Recovery',
+                'Active PP Recovery',
+                'Critical Hit',
+                'Critical Hit Rate',
+                'Critical Hit Damage'
             ]
             break
         case 'JP':
@@ -507,7 +513,13 @@ export default function Home() {
                 'アームユニットを選ぶ',
                 'レッグユニットを選ぶ',
                 '後継クラスでは利用できません',
-                'PSO2 キャラクターシミュレーター'
+                'PSO2 キャラクターシミュレーター',
+                'PP回復',
+                'PPの自然回復速度',
+                '攻撃時のPP回復',
+                'クリティカル',
+                'クリティカル率',
+                'クリティカル時の与ダメージ'
             ]
             break
         default:
@@ -532,7 +544,13 @@ export default function Home() {
                 'Select Arm Unit',
                 'Select Leg Unit',
                 'Not available for Successor Class',
-                'PSO2 Character Planner'
+                'PSO2 Character Planner',
+                'PP Recovery',
+                'Natural PP Recovery',
+                'Active PP Recovery',
+                'Critical Hit',
+                'Critical Hit Rate',
+                'Critical Hit Damage'
             ]
             break
 
@@ -813,9 +831,9 @@ export default function Home() {
                             <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('T-DEF', Math.floor(totalTDef))}</Flex>
                         </Table.Td>
                         <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('S-ATK', Math.trunc((strikeDmgBoost-1)*100))}%</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('R-ATK', Math.trunc((rangedDmgBoost-1)*100))}%</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('T-ATK', Math.trunc((techDmgBoost-1)*100))}%</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('S-ATK', Math.trunc((strikeDmgBoost - 1) * 100))}%</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('R-ATK', Math.trunc((rangedDmgBoost - 1) * 100))}%</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('T-ATK', Math.trunc((techDmgBoost - 1) * 100))}%</Flex>
                         </Table.Td>
                     </Table.Tr>
                     <Table.Tr>
@@ -833,23 +851,51 @@ export default function Home() {
                             }
                             {successorClassList.includes(mainClass) && <Flex justify='center'>{loc[19]}</Flex>}
                         </Table.Td>
-                        <Table.Th colSpan={3}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[4]}</Flex></Table.Th>
+                        <Table.Th>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[4]}</Flex>
+                        </Table.Th>
+                        <Table.Th>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[21]}</Flex>
+                        </Table.Th>
+                        <Table.Th>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[24]}</Flex>
+                        </Table.Th>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Strike Resistance', Math.trunc(strikeRes * 100))}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Ranged Resistance', Math.trunc(rangedRes * 100))}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Tech Resistance', Math.trunc(techRes * 100))}</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>
+                                <SimpleGrid key={uuidv4()} cols={3} spacing='xs' verticalSpacing={0}>
+                                    {displayResistance('Strike Resistance', Math.trunc(strikeRes * 100))}
+                                    {displayResistance('Ranged Resistance', Math.trunc(rangedRes * 100))}
+                                    {displayResistance('Tech Resistance', Math.trunc(techRes * 100))}
+                                    {displayResistance('Fire Resistance', Math.trunc(fireRes * 100))}
+                                    {displayResistance('Ice Resistance', Math.trunc(iceRes * 100))}
+                                    {displayResistance('Lightning Resistance', Math.trunc(lightningRes * 100))}
+                                    {displayResistance('Wind Resistance', Math.trunc(windRes * 100))}
+                                    {displayResistance('Light Resistance', Math.trunc(lightRes * 100))}
+                                    {displayResistance('Dark Resistance', Math.trunc(darkRes * 100))}
+                                </SimpleGrid>
+                            </Flex>
                         </Table.Td>
                         <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Fire Resistance', Math.trunc(fireRes * 100))}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Ice Resistance', Math.trunc(iceRes * 100))}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Lightning Resistance', Math.trunc(lightningRes * 100))}</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>
+                                <SimpleGrid key={uuidv4()} cols={2} spacing='xs' verticalSpacing={0}>
+                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[22]}</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{naturalPpRecovery * 100}%</Flex>
+                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[23]}</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{activePpRecovery * 100}%</Flex>
+                                </SimpleGrid>
+                            </Flex>
                         </Table.Td>
                         <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Wind Resistance', Math.trunc(windRes * 100))}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Light Resistance', Math.trunc(lightRes * 100))}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayResistance('Dark Resistance', Math.trunc(darkRes * 100))}</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>
+                                <SimpleGrid key={uuidv4()} cols={2} spacing='xs' verticalSpacing={0}>
+                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[25]}</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{critRateIncrease}%</Flex>
+                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[26]}</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(critDmgBoost - 1) * 100}%</Flex>
+                                </SimpleGrid>
+                            </Flex>
                         </Table.Td>
                     </Table.Tr>
                     <Table.Tr>
