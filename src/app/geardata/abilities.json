@@ -5753,7 +5753,7 @@
             null,
             "Increases damage by 0.5% for every augment affixed to this weapon. Maxes at 4% for 8 Augments."
         ],
-        "Effect": ["Stacking Conditional Damage Multiplier", 1.005, 1.04]
+        "Effect": ["Unique", "Augment Intent"]
     },
     {
         "SSA Slot": 1,
@@ -5772,7 +5772,7 @@
             null,
             "Increases damage by 0.75% for every augment affixed to this weapon. Maxes at 6% for 8 Augments."
         ],
-        "Effect": ["Stacking Conditional Damage Multiplier", 1.0075, 1.06]
+        "Effect": ["Unique", "Augment Intent 2"]
     },
     {
         "SSA Slot": 1,

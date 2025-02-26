@@ -72,6 +72,14 @@ export default function Home() {
     const [ppConsumption, setPpConsumption] = useState<number>(1)
     const [abilityStats, setAbilityStats] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1])
     const [classBoosts, setClassBoosts] = useState<string[]>(classStats.filter(item => !item["Successor"]).map(item => item[`Name (${language.language})`]))
+    const [weaponAbilitiesConditionals, setWeaponAbilitiesConditionals] = useState<boolean[][]>([[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]])
+    const [weaponAbilitiesStacks, setWeaponAbilitiesStacks] = useState<number[][]>([[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]])
+    const [rearAbilitiesConditionals, setRearAbilitiesConditionals] = useState<boolean[][]>([[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]])
+    const [rearAbilitiesStacks, setRearAbilitiesStacks] = useState<number[][]>([[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]])
+    const [armAbilitiesConditionals, setArmAbilitiesConditionals] = useState<boolean[][]>([[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]])
+    const [armAbilitiesStacks, setArmAbilitiesStacks] = useState<number[][]>([[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]])
+    const [legAbilitiesConditionals, setLegAbilitiesConditionals] = useState<boolean[][]>([[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]])
+    const [legAbilitiesStacks, setLegAbilitiesStacks] = useState<number[][]>([[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]])
     const [weaponAbilities, setWeaponAbilities] = useState<string[]>([
         'S1:Augment Intent 2',
         'S2:Skilled Intent 2',
@@ -456,6 +464,9 @@ export default function Home() {
             label: item[`Name (${language.language})`],
         })))
     }, [language.language]);
+    useEffect(() => {
+        updateStats(classBoosts, magType)
+    }, [weaponAbilitiesConditionals,rearAbilitiesConditionals,armAbilitiesConditionals,legAbilitiesConditionals]);
 
     let loc: string[]
 
@@ -994,16 +1005,16 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(weaponAbilities)}
+                            {displayGearAbilities(weaponAbilities,weaponAbilitiesConditionals, setWeaponAbilitiesConditionals, weaponAbilitiesStacks, setWeaponAbilitiesStacks)}
                         </Table.Td>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(rearAbilities)}
+                            {displayGearAbilities(rearAbilities,rearAbilitiesConditionals, setRearAbilitiesConditionals, rearAbilitiesStacks, setRearAbilitiesStacks)}
                         </Table.Td>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(armAbilities)}
+                            {displayGearAbilities(armAbilities,armAbilitiesConditionals, setArmAbilitiesConditionals, armAbilitiesStacks, setArmAbilitiesStacks)}
                         </Table.Td>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(legAbilities)}
+                            {displayGearAbilities(legAbilities,legAbilitiesConditionals, setLegAbilitiesConditionals, legAbilitiesStacks, setLegAbilitiesStacks)}
                         </Table.Td>
                     </Table.Tr>
                 </Table.Tbody>
