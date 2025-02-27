@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { Image, Button, Flex, Table, InputBase, Checkbox, Group, Select, Text, SimpleGrid } from "@mantine/core";
+import { Image, Button, Flex, Table, Checkbox, Group, Select, Text, SimpleGrid } from "@mantine/core";
 import { useLanguageContext } from "./language-provider";
 import { v4 as uuidv4 } from 'uuid';
 import displayGearStats from './components/displayGearStats';
@@ -72,14 +72,14 @@ export default function Home() {
     const [ppConsumption, setPpConsumption] = useState<number>(1)
     const [abilityStats, setAbilityStats] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1])
     const [classBoosts, setClassBoosts] = useState<string[]>(classStats.filter(item => !item["Successor"]).map(item => item[`Name (${language.language})`]))
-    const [weaponAbilitiesConditionals, setWeaponAbilitiesConditionals] = useState<boolean[][]>([[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]])
-    const [weaponAbilitiesStacks, setWeaponAbilitiesStacks] = useState<number[][]>([[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]])
-    const [rearAbilitiesConditionals, setRearAbilitiesConditionals] = useState<boolean[][]>([[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]])
-    const [rearAbilitiesStacks, setRearAbilitiesStacks] = useState<number[][]>([[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]])
-    const [armAbilitiesConditionals, setArmAbilitiesConditionals] = useState<boolean[][]>([[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]])
-    const [armAbilitiesStacks, setArmAbilitiesStacks] = useState<number[][]>([[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]])
-    const [legAbilitiesConditionals, setLegAbilitiesConditionals] = useState<boolean[][]>([[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false],[false,false,false]])
-    const [legAbilitiesStacks, setLegAbilitiesStacks] = useState<number[][]>([[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]])
+    const [weaponAbilitiesConditionals, setWeaponAbilitiesConditionals] = useState<boolean[][]>([[false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false]])
+    const [weaponAbilitiesStacks, setWeaponAbilitiesStacks] = useState<number[][]>([[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]])
+    const [rearAbilitiesConditionals, setRearAbilitiesConditionals] = useState<boolean[][]>([[false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false]])
+    const [rearAbilitiesStacks, setRearAbilitiesStacks] = useState<number[][]>([[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]])
+    const [armAbilitiesConditionals, setArmAbilitiesConditionals] = useState<boolean[][]>([[false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false]])
+    const [armAbilitiesStacks, setArmAbilitiesStacks] = useState<number[][]>([[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]])
+    const [legAbilitiesConditionals, setLegAbilitiesConditionals] = useState<boolean[][]>([[false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false]])
+    const [legAbilitiesStacks, setLegAbilitiesStacks] = useState<number[][]>([[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]])
     const [weaponAbilities, setWeaponAbilities] = useState<string[]>([
         'S1:Augment Intent 2',
         'S2:Skilled Intent 2',
@@ -466,7 +466,7 @@ export default function Home() {
     }, [language.language]);
     useEffect(() => {
         updateStats(classBoosts, magType)
-    }, [weaponAbilitiesConditionals,rearAbilitiesConditionals,armAbilitiesConditionals,legAbilitiesConditionals]);
+    }, [weaponAbilitiesConditionals, rearAbilitiesConditionals, armAbilitiesConditionals, legAbilitiesConditionals]);
 
     let loc: string[]
 
@@ -784,7 +784,7 @@ export default function Home() {
     return (
         <>
             <Flex justify="center" align="center" key={uuidv4()} gap={5}><h1>{loc[20]}</h1></Flex>
-            <Table withTableBorder withColumnBorders w='95%' align='center'>
+            <Table withTableBorder withColumnBorders w='90%' align='center'>
                 <Table.Thead>
                     <Table.Tr>
                         <Table.Th colSpan={10} style={{ backgroundColor: '#151515' }}>
@@ -946,7 +946,7 @@ export default function Home() {
                     </Table.Tr>
                 </Table.Tbody>
             </Table>
-            <Table withTableBorder withColumnBorders w='95%' align='center'>
+            <Table withTableBorder withColumnBorders w='90%' align='center'>
                 <Table.Thead>
                     <Table.Tr>
                         <Table.Th colSpan={10} style={{ backgroundColor: '#151515' }}>
@@ -956,10 +956,8 @@ export default function Home() {
                 </Table.Thead>
                 <Table.Tbody>
                     <Table.Tr>
-                        <Table.Th w='25%' colSpan={2}><Flex justify='center'>{loc[6]}</Flex></Table.Th>
-                        <Table.Th w='25%' colSpan={2}><Flex justify='center'>{loc[7]}</Flex></Table.Th>
-                        <Table.Th w='25%' colSpan={2}><Flex justify='center'>{loc[8]}</Flex></Table.Th>
-                        <Table.Th w='25%' colSpan={2}><Flex justify='center'>{loc[9]}</Flex></Table.Th>
+                        <Table.Th w='50%' colSpan={2}><Flex justify='center'>{loc[6]}</Flex></Table.Th>
+                        <Table.Th w='50%' colSpan={2}><Flex justify='center'>{loc[7]}</Flex></Table.Th>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td colSpan={2} align='center'>
@@ -968,6 +966,36 @@ export default function Home() {
                         <Table.Td colSpan={2} align='center'>
                             <Button size="compact-sm">{loc[16]}</Button>
                         </Table.Td>
+                    </Table.Tr>
+                    <Table.Tr>
+                        <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${weaponData["Weapon Type"]}/${weapon.replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
+                        <Table.Td w='50%'>
+                            <Flex justify='center' align='center' direction='column'>
+                                {displayGearStats(weapon)}
+                            </Flex>
+                        </Table.Td>
+                        <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${rearData["Type"]}/${rear.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
+                        <Table.Td w='50%'>
+                            <Flex justify='center' direction='column'>
+                                {displayGearStats(rear)}
+                            </Flex>
+                        </Table.Td>
+                        {/* L / Easy Connect +20
+                                R / C Strike Striking +20 */}
+                    </Table.Tr>
+                    <Table.Tr>
+                        <Table.Td colSpan={2}>
+                            {displayGearAbilities(weaponAbilities, weaponAbilitiesConditionals, setWeaponAbilitiesConditionals, weaponAbilitiesStacks, setWeaponAbilitiesStacks)}
+                        </Table.Td>
+                        <Table.Td colSpan={2}>
+                            {displayGearAbilities(rearAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, rearAbilitiesStacks, setRearAbilitiesStacks)}
+                        </Table.Td>
+                    </Table.Tr>
+                    <Table.Tr>
+                        <Table.Th w='50%' colSpan={2}><Flex justify='center'>{loc[8]}</Flex></Table.Th>
+                        <Table.Th w='50%' colSpan={2}><Flex justify='center'>{loc[9]}</Flex></Table.Th>
+                    </Table.Tr>
+                    <Table.Tr>
                         <Table.Td colSpan={2} align='center'>
                             <Button size="compact-sm">{loc[17]}</Button>
                         </Table.Td>
@@ -976,50 +1004,30 @@ export default function Home() {
                         </Table.Td>
                     </Table.Tr>
                     <Table.Tr>
-                        <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${weaponData["Weapon Type"]}/${weapon.replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
-                        <Table.Td w='25%'>
-                            <Flex justify='center' align='center' direction='column'>
-                                {displayGearStats(weapon)}
-                            </Flex>
-                        </Table.Td>
-                        <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${rearData["Type"]}/${rear.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
-                        <Table.Td w='25%'>
-                            <Flex justify='center' direction='column'>
-                                {displayGearStats(rear)}
-                            </Flex>
-                        </Table.Td>
                         <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${armData["Type"]}/${arm.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
-                        <Table.Td w='25%'>
+                        <Table.Td w='50%'>
                             <Flex justify='center' direction='column'>
                                 {displayGearStats(arm)}
                             </Flex>
                         </Table.Td>
                         <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${legData["Type"]}/${leg.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
-                        <Table.Td w='25%'>
+                        <Table.Td w='50%'>
                             <Flex justify='center' direction='column'>
                                 {displayGearStats(leg)}
                             </Flex>
                         </Table.Td>
-                        {/* L / Easy Connect +20
-                                R / C Strike Striking +20 */}
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(weaponAbilities,weaponAbilitiesConditionals, setWeaponAbilitiesConditionals, weaponAbilitiesStacks, setWeaponAbilitiesStacks)}
+                            {displayGearAbilities(armAbilities, armAbilitiesConditionals, setArmAbilitiesConditionals, armAbilitiesStacks, setArmAbilitiesStacks)}
                         </Table.Td>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(rearAbilities,rearAbilitiesConditionals, setRearAbilitiesConditionals, rearAbilitiesStacks, setRearAbilitiesStacks)}
-                        </Table.Td>
-                        <Table.Td colSpan={2}>
-                            {displayGearAbilities(armAbilities,armAbilitiesConditionals, setArmAbilitiesConditionals, armAbilitiesStacks, setArmAbilitiesStacks)}
-                        </Table.Td>
-                        <Table.Td colSpan={2}>
-                            {displayGearAbilities(legAbilities,legAbilitiesConditionals, setLegAbilitiesConditionals, legAbilitiesStacks, setLegAbilitiesStacks)}
+                            {displayGearAbilities(legAbilities, legAbilitiesConditionals, setLegAbilitiesConditionals, legAbilitiesStacks, setLegAbilitiesStacks)}
                         </Table.Td>
                     </Table.Tr>
                 </Table.Tbody>
             </Table >
-            <Table withTableBorder withColumnBorders w='95%' align='center'>
+            <Table withTableBorder withColumnBorders w='90%' align='center'>
                 <Table.Thead>
                     <Table.Tr>
                         <Table.Th style={{ backgroundColor: '#151515' }}>

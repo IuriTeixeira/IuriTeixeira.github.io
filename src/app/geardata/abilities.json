@@ -4372,13 +4372,14 @@
         ],
         "Effect (English)": [
             null,
-            "Increases damage  by 5% against enemies inflicted with Jellen."
+            "Increases damage by 5% against enemies inflicted with Jellen."
         ],
         "Effect (Global)": [
             null,
-            "Increases damage  by 5% against enemies inflicted with Jellen."
+            "Increases damage by 5% against enemies inflicted with Jellen."
         ],
         "Effect": ["Conditional Damage Multiplier", 1.05],
+        "Condition (English)": ["Enemy inflicted with Jellen."],
         "Category": "Phrase"
     },
     {
@@ -8138,10 +8139,11 @@
         ],
         "Effect (English)": [
             null,
-            "Increases Natural and Active PP Recovery by 3% for each successful Just Attack that hits an enemy, up to 45%. Does not end when you miss a Just Attack."
+            "Increases Natural and Active PP Recovery by 3% for each successful Just Attack that hits an enemy, up to 45%.\nDoes not end when a Just Attack misses.\nEffect ends when switching to a different weapon, even if it also has this Ability."
         ],
         "Effect (Global)": null,
-        "Effect": ["Stacking Conditional Natural PP Recovery Multiplier", 1.03, 1.45, "Stacking Conditional Active PP Recovery Multiplier", 1.03, 1.45]
+        "Effect": ["Stacking Conditional Natural PP Recovery Multiplier", 1.03, 1.45, "Stacking Conditional Active PP Recovery Multiplier", 1.03, 1.45],
+        "Condition (English)": ["Number of Just Attacks"]
     },
     {
         "SSA Slot": 3,
