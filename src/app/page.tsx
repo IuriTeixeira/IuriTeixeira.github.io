@@ -64,13 +64,14 @@ export default function Home() {
     const [strikeDmgBoost, setStrikeDmgBoost] = useState<number>(1)
     const [rangedDmgBoost, setRangedDmgBoost] = useState<number>(1)
     const [techDmgBoost, setTechDmgBoost] = useState<number>(1)
+    const [normalAtkDmgBoost, setNormalAtkDmgBoost] = useState<number>(1)
     const [paDmgBoost, setPaDmgBoost] = useState<number>(1)
     const [techniqueDmgBoost, setTechniqueDmgBoost] = useState<number>(1)
     const [critDmgBoost, setCritDmgBoost] = useState<number>(1)
     const [naturalPpRecovery, setNaturalPpRecovery] = useState<number>(1)
     const [activePpRecovery, setActivePpRecovery] = useState<number>(1)
     const [ppConsumption, setPpConsumption] = useState<number>(1)
-    const [abilityStats, setAbilityStats] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1])
+    const [abilityStats, setAbilityStats] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1])
     const [classBoosts, setClassBoosts] = useState<string[]>(classStats.filter(item => !item["Successor"]).map(item => item[`Name (${language.language})`]))
     const [weaponAbilitiesConditionals, setWeaponAbilitiesConditionals] = useState<boolean[][]>([[false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false], [false, false, false]])
     const [weaponAbilitiesStacks, setWeaponAbilitiesStacks] = useState<number[][]>([[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]])
@@ -426,17 +427,19 @@ export default function Home() {
         let totalStrikeDmgBoost = abStats[19]
         let totalRangedDmgBoost = abStats[19]
         let totalTechDmgBoost = abStats[19]
-        let totalPaDmgBoost = abStats[20]
-        let totalTechniqueDmgBoost = abStats[21]
-        let totalCritDmgBoost = abStats[22]
-        let totalNaturalPpRecovery = abStats[23]
-        let totalActivePpRecovery = abStats[24]
-        let totalPpConsumption = abStats[25]
+        let totalNormalAtkDmgBoost = abStats[20]
+        let totalPaDmgBoost = abStats[21]
+        let totalTechniqueDmgBoost = abStats[22]
+        let totalCritDmgBoost = abStats[23]
+        let totalNaturalPpRecovery = abStats[24]
+        let totalActivePpRecovery = abStats[25]
+        let totalPpConsumption = abStats[26]
 
         setCritRateIncrease(totalCritRateIncrease)
         setStrikeDmgBoost(totalStrikeDmgBoost)
         setRangedDmgBoost(totalRangedDmgBoost)
         setTechDmgBoost(totalTechDmgBoost)
+        setNormalAtkDmgBoost(totalNormalAtkDmgBoost)
         setPaDmgBoost(totalPaDmgBoost)
         setTechniqueDmgBoost(totalTechniqueDmgBoost)
         setCritDmgBoost(totalCritDmgBoost)
@@ -568,10 +571,10 @@ export default function Home() {
     }
 
     function parseAbilities(): number[] {
-        let weaponAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
-        let rearAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
-        let armAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
-        let legAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+        let weaponAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+        let rearAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+        let armAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+        let legAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
         for (let i = 0; i < weaponAbilities.length; i++) {
             const parsedAbility: number[] = parseAbility(weaponAbilities[i])
             for (let j = 0; j < weaponAbStats.length; j++) {
@@ -600,7 +603,7 @@ export default function Home() {
                 else legAbStats[j] *= parsedAbility[j]
             }
         }
-        let returnValue: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+        let returnValue: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
         for (let i = 0; i < weaponAbStats.length; i++) {
             if (i < 18) returnValue[i] = weaponAbStats[i] + rearAbStats[i] + armAbStats[i] + legAbStats[i]
             else returnValue[i] = weaponAbStats[i] * rearAbStats[i] * armAbStats[i] * legAbStats[i]
@@ -631,6 +634,7 @@ export default function Home() {
         let darkres: number = 0;
         let critrateincrease: number = 0;
         let dmgboost: number = 1;
+        let normaldmgboost: number = 1;
         let padmgboost: number = 1;
         let techdmgboost: number = 1;
         let critdmgboost: number = 1
@@ -741,6 +745,10 @@ export default function Home() {
                                     dmgboost *= Number(ab["Effect"][i + 1])
                                     i++
                                     break
+                                case 'Normal Attack Damage Multiplier':
+                                    normaldmgboost *= Number(ab["Effect"][i + 1])
+                                    i++
+                                    break
                                 case 'PA Damage Multiplier':
                                     padmgboost *= Number(ab["Effect"][i + 1])
                                     i++
@@ -777,7 +785,7 @@ export default function Home() {
                 }
             }
         }
-        const returnValue: number[] = [hp, pp, satk, ratk, tatk, dex, sdef, rdef, tdef, sres, rres, tres, fireres, iceres, lightningres, windres, lightres, darkres, critrateincrease, dmgboost, padmgboost, techdmgboost, critdmgboost, naturalpprecovery, activepprecovery, ppconsumption];
+        const returnValue: number[] = [hp, pp, satk, ratk, tatk, dex, sdef, rdef, tdef, sres, rres, tres, fireres, iceres, lightningres, windres, lightres, darkres, critrateincrease, dmgboost, normaldmgboost, padmgboost, techdmgboost, critdmgboost, naturalpprecovery, activepprecovery, ppconsumption];
         return returnValue;
     }
 
@@ -842,9 +850,9 @@ export default function Home() {
                             <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('T-DEF', Math.floor(totalTDef))}</Flex>
                         </Table.Td>
                         <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('S-ATK', Math.trunc((strikeDmgBoost - 1) * 100))}%</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('R-ATK', Math.trunc((rangedDmgBoost - 1) * 100))}%</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('T-ATK', Math.trunc((techDmgBoost - 1) * 100))}%</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('S-ATK', Math.trunc(strikeDmgBoost * 100))}%</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('R-ATK', Math.trunc(rangedDmgBoost * 100))}%</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('T-ATK', Math.trunc(techDmgBoost * 100))}%</Flex>
                         </Table.Td>
                     </Table.Tr>
                     <Table.Tr>

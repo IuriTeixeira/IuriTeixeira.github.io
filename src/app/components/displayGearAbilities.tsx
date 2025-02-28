@@ -89,38 +89,38 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
 
     switch (language.language) {
         case 'Global':
-            loc = ['Augments', 'Slot ', 'Active Conditions']
+            loc = ['Augments', 'Augment Name', 'Active Conditions']
             break
         case 'JP':
-            loc = ['特殊能力追加', 'Slot ', 'Active Conditions']
+            loc = ['特殊能力追加', 'Ability Name', 'Active Conditions']
             break
         default:
-            loc = ['Special Abilities', 'Slot ', 'Active Conditions']
+            loc = ['Special Abilities', 'Ability Name', 'Active Conditions',]
     }
     return (
         <Table verticalSpacing={2} withColumnBorders>
-            <Table.Thead>
+            <Table.Thead style={{ borderBottom: '1px solid var(--mantine-color-dark-4)'}}>
                 <Table.Tr>
                     <Table.Th colSpan={4}>
                         <Flex justify='center' align='center'>{loc[0]}</Flex>
                     </Table.Th>
                 </Table.Tr>
+                <Table.Tr>
+                    <Table.Th w='33%'>
+                        <Flex justify='center' align='center'>{loc[1]}</Flex>
+                    </Table.Th>
+                    <Table.Th colSpan={2} w='66%'>
+                        <Flex justify='center' align='center'>{loc[2]}</Flex>
+                    </Table.Th>
+                </Table.Tr>
             </Table.Thead>
             <Table.Tbody>
                 <Table.Tr>
-                    <Table.Th w='25%'>
-                        <Flex justify='center' align='center'>{loc[1]} 1</Flex>
-                    </Table.Th>
                     <Table.Td>
                         {ab[0] && displayAbilities([ab[0]["Name (English)"]])}
                     </Table.Td>
-                </Table.Tr>
-                {abEffectCondCount[0] > 0 &&
-                    <Table.Tr>
-                        <Table.Th w='25%'>
-                            <Flex justify='center' align='center'>{loc[2]}</Flex>
-                        </Table.Th>
-                        <Table.Td w='75%'>
+                    <Table.Td w='75%'>
+                        {abEffectCondCount[0] > 0 &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
                                     ab[0] &&
@@ -183,24 +183,15 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                         />}
                                     </Flex>
                                 }
-
-                            </Flex>
-                        </Table.Td>
-                    </Table.Tr>}
+                            </Flex>}
+                    </Table.Td>
+                </Table.Tr>
                 <Table.Tr>
-                    <Table.Th w='25%'>
-                        <Flex justify='center' align='center'>{loc[1]} 2</Flex>
-                    </Table.Th>
                     <Table.Td>
                         {ab[1] && displayAbilities([ab[1]["Name (English)"]])}
                     </Table.Td>
-                </Table.Tr>
-                {abEffectCondCount[1] > 0 &&
-                    <Table.Tr>
-                        <Table.Th w='25%'>
-                            <Flex justify='center' align='center'>{loc[2]}</Flex>
-                        </Table.Th>
-                        <Table.Td w='75%'>
+                    <Table.Td w='75%'>
+                        {abEffectCondCount[1] > 0 &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
                                     ab[1] &&
@@ -263,24 +254,15 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                         />}
                                     </Flex>
                                 }
-
-                            </Flex>
-                        </Table.Td>
-                    </Table.Tr>}
+                            </Flex>}
+                    </Table.Td>
+                </Table.Tr>
                 <Table.Tr>
-                    <Table.Th w='25%'>
-                        <Flex justify='center' align='center'>{loc[1]} 3</Flex>
-                    </Table.Th>
                     <Table.Td>
                         {ab[2] && displayAbilities([ab[2]["Name (English)"]])}
                     </Table.Td>
-                </Table.Tr>
-                {abEffectCondCount[2] > 0 &&
-                    <Table.Tr>
-                        <Table.Th w='25%'>
-                            <Flex justify='center' align='center'>{loc[2]}</Flex>
-                        </Table.Th>
-                        <Table.Td w='75%'>
+                    <Table.Td w='75%'>
+                        {abEffectCondCount[2] > 0 &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
                                     ab[2] &&
@@ -343,24 +325,15 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                         />}
                                     </Flex>
                                 }
-
-                            </Flex>
-                        </Table.Td>
-                    </Table.Tr>}
+                            </Flex>}
+                    </Table.Td>
+                </Table.Tr>
                 <Table.Tr>
-                    <Table.Th w='25%'>
-                        <Flex justify='center' align='center'>{loc[1]} 4</Flex>
-                    </Table.Th>
                     <Table.Td>
                         {ab[3] && displayAbilities([ab[3]["Name (English)"]])}
                     </Table.Td>
-                </Table.Tr>
-                {abEffectCondCount[3] > 0 &&
-                    <Table.Tr>
-                        <Table.Th w='25%'>
-                            <Flex justify='center' align='center'>{loc[2]}</Flex>
-                        </Table.Th>
-                        <Table.Td w='75%'>
+                    <Table.Td w='75%'>
+                        {abEffectCondCount[3] > 0 &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
                                     ab[3] &&
@@ -423,24 +396,15 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                         />}
                                     </Flex>
                                 }
-
-                            </Flex>
-                        </Table.Td>
-                    </Table.Tr>}
+                            </Flex>}
+                    </Table.Td>
+                </Table.Tr>
                 <Table.Tr>
-                    <Table.Th w='25%'>
-                        <Flex justify='center' align='center'>{loc[1]} 5</Flex>
-                    </Table.Th>
                     <Table.Td>
                         {ab[4] && displayAbilities([ab[4]["Name (English)"]])}
                     </Table.Td>
-                </Table.Tr>
-                {abEffectCondCount[4] > 0 &&
-                    <Table.Tr>
-                        <Table.Th w='25%'>
-                            <Flex justify='center' align='center'>{loc[2]}</Flex>
-                        </Table.Th>
-                        <Table.Td w='75%'>
+                    <Table.Td w='75%'>
+                        {abEffectCondCount[4] > 0 &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
                                     ab[4] &&
@@ -504,23 +468,15 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     </Flex>
                                 }
 
-                            </Flex>
-                        </Table.Td>
-                    </Table.Tr>}
+                            </Flex>}
+                    </Table.Td>
+                </Table.Tr>
                 <Table.Tr>
-                    <Table.Th w='25%'>
-                        <Flex justify='center' align='center'>{loc[1]} 6</Flex>
-                    </Table.Th>
                     <Table.Td>
                         {ab[5] && displayAbilities([ab[5]["Name (English)"]])}
                     </Table.Td>
-                </Table.Tr>
-                {abEffectCondCount[5] > 0 &&
-                    <Table.Tr>
-                        <Table.Th w='25%'>
-                            <Flex justify='center' align='center'>{loc[2]}</Flex>
-                        </Table.Th>
-                        <Table.Td w='75%'>
+                    <Table.Td w='75%'>
+                        {abEffectCondCount[5] > 0 &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
                                     ab[5] &&
@@ -583,24 +539,15 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                         />}
                                     </Flex>
                                 }
-
-                            </Flex>
-                        </Table.Td>
-                    </Table.Tr>}
+                            </Flex>}
+                    </Table.Td>
+                </Table.Tr>
                 <Table.Tr>
-                    <Table.Th w='25%'>
-                        <Flex justify='center' align='center'>{loc[1]} 7</Flex>
-                    </Table.Th>
                     <Table.Td>
                         {ab[6] && displayAbilities([ab[6]["Name (English)"]])}
                     </Table.Td>
-                </Table.Tr>
-                {abEffectCondCount[6] > 0 &&
-                    <Table.Tr>
-                        <Table.Th w='25%'>
-                            <Flex justify='center' align='center'>{loc[2]}</Flex>
-                        </Table.Th>
-                        <Table.Td w='75%'>
+                    <Table.Td w='75%'>
+                        {abEffectCondCount[6] > 0 &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
                                     ab[6] &&
@@ -663,24 +610,15 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                         />}
                                     </Flex>
                                 }
-
-                            </Flex>
-                        </Table.Td>
-                    </Table.Tr>}
+                            </Flex>}
+                    </Table.Td>
+                </Table.Tr>
                 <Table.Tr>
-                    <Table.Th w='25%' rowSpan={2}>
-                        <Flex justify='center' align='center'>{loc[1]} 8</Flex>
-                    </Table.Th>
                     <Table.Td>
                         {ab[7] && displayAbilities([ab[7]["Name (English)"]])}
                     </Table.Td>
-                </Table.Tr>
-                {abEffectCondCount[7] > 0 &&
-                    <Table.Tr>
-                        <Table.Th w='25%'>
-                            <Flex justify='center' align='center'>{loc[2]}</Flex>
-                        </Table.Th>
-                        <Table.Td w='75%'>
+                    <Table.Td w='75%'>
+                        {abEffectCondCount[7] > 0 &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
                                     ab[7] &&
@@ -743,10 +681,9 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                         />}
                                     </Flex>
                                 }
-
-                            </Flex>
-                        </Table.Td>
-                    </Table.Tr>}
+                            </Flex>}
+                    </Table.Td>
+                </Table.Tr>
             </Table.Tbody>
         </Table>
     )
