@@ -4494,7 +4494,7 @@
             1.05
         ],
         "Condition (English)": [
-            "Enemy inflicted with Jellen."
+            "Enemy afflicted with Jellen."
         ],
         "Category": "Phrase"
     },
@@ -5667,7 +5667,7 @@
             "Increases damage by 2% when performing successive Perfect Attacks. Maxes at 3%."
         ],
         "Effect": [
-            "Stacking Conditional Damage Multiplier",
+            "Stacking Damage Multiplier",
             1.02,
             1.03
         ]
@@ -6242,7 +6242,7 @@
             "Increases damage based on the Photon Gauge. (1% at 0~3 bars, 2% at 4~7 bars, 3% at full charge)"
         ],
         "Effect": [
-            "Stacking Conditional Damage Multiplier",
+            "Stacking Damage Multiplier",
             1.01,
             1.03
         ]
@@ -6354,7 +6354,7 @@
             "Increases damage by 4% but reduces HP by 5% of max HP every 20 seconds."
         ],
         "Effect": [
-            "Stacking Conditional Damage Multiplier",
+            "Stacking Damage Multiplier",
             1.04
         ]
     },
@@ -7917,7 +7917,7 @@
         "Effect": [
             "Conditional Critical Hit Rate Increase",
             15,
-            "Conditional Critical Damage Multiplier",
+            "Conditional Critical Hit Damage Multiplier",
             1.02
         ],
         "Condition (English)": [
@@ -8819,7 +8819,7 @@
             "Reduces PP consumption based on the Photon Blast Gauge.\n0~3 bars: 4%\n4~7 bars: 8%\nFull charge: 12%"
         ],
         "Effect": [
-            "Stacking Conditional PP Consumption Multiplier",
+            "Stacking PP Consumption Multiplier",
             0.04,
             0.88
         ],
@@ -8864,7 +8864,7 @@
             "Reduces damage taken by 1% for every 300,000 damage dealt. Maxes at 15%."
         ],
         "Effect": [
-            "Stacking Conditional Damage Taken Multiplier",
+            "Stacking Damage Taken Multiplier",
             0.01,
             0.85
         ]
@@ -8887,7 +8887,7 @@
             "Reduces PP consumption by 1% for every 300,000 damage dealt. Maxes at 15%."
         ],
         "Effect": [
-            "Stacking Conditional PP Consumption Multiplier",
+            "Stacking PP Consumption Multiplier",
             0.01,
             0.85
         ]
@@ -8975,10 +8975,10 @@
         ],
         "Effect (Global)": null,
         "Effect": [
-            "Stacking Conditional Natural PP Recovery Multiplier",
+            "Stacking Natural PP Recovery Multiplier",
             1.03,
             1.45,
-            "Stacking Conditional Active PP Recovery Multiplier",
+            "Stacking Active PP Recovery Multiplier",
             1.03,
             1.45
         ],
@@ -9004,7 +9004,7 @@
             "Increases Critical Hit damage against breakable parts by 9%."
         ],
         "Effect": [
-            "Conditional Critical Damage Multiplier",
+            "Conditional Critical Hit Damage Multiplier",
             1.09
         ],
         "Condition (English)": [
@@ -9383,7 +9383,7 @@
         "Effect": [
             "Critical Hit Rate Increase",
             -50,
-            "Critical Damage Multiplier",
+            "Critical Hit Damage Multiplier",
             1.06
         ]
     },
@@ -10273,7 +10273,7 @@
             "Grants bonus effects to [Critical Field] and [Elemental PP Restorate Field] (EPPR Field) when either are active.\n[Critical Field]: Critical Damage + 3%.\n[EPPR Field]: Normal Attacks recover an additional 2 PP and Jet Boots Variant Attacks recover 5 PP per hit."
         ],
         "Effect": [
-            "Conditional Critical Damage Multiplier",
+            "Conditional Critical Hit Damage Multiplier",
             1.03
         ],
         "Condition (English)": [
