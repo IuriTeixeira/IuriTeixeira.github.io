@@ -14,6 +14,7 @@ import weapons from './geardata/weapons/weapons.json'
 import units from './geardata/units/units.json'
 import localization from './localization.json'
 import abilityData from './geardata/abilities.json'
+import Decimal from 'decimal.js';
 
 export default function Home() {
     const language = useLanguageContext()
@@ -33,45 +34,45 @@ export default function Home() {
     const [rear, setRear] = useState<string>('Rear / Cras Dyne')
     const [arm, setArm] = useState<string>('Arm / Cras Noom')
     const [leg, setLeg] = useState<string>('Leg / Cras Ment')
-    const [bonusHp, setBonusHp] = useState<number>(0)
-    const [totalHp, setTotalHp] = useState<number>(0)
-    const [bonusPp, setBonusPp] = useState<number>(0)
-    const [totalPp, setTotalPp] = useState<number>(0)
-    const [bonusSAtk, setBonusSAtk] = useState<number>(0)
-    const [totalSAtk, setTotalSAtk] = useState<number>(0)
-    const [bonusRAtk, setBonusRAtk] = useState<number>(0)
-    const [totalRAtk, setTotalRAtk] = useState<number>(0)
-    const [bonusTAtk, setBonusTAtk] = useState<number>(0)
-    const [totalTAtk, setTotalTAtk] = useState<number>(0)
-    const [bonusDex, setBonusDex] = useState<number>(0)
-    const [totalDex, setTotalDex] = useState<number>(0)
-    const [bonusSDef, setBonusSDef] = useState<number>(0)
-    const [totalSDef, setTotalSDef] = useState<number>(0)
-    const [bonusRDef, setBonusRDef] = useState<number>(0)
-    const [totalRDef, setTotalRDef] = useState<number>(0)
-    const [bonusTDef, setBonusTDef] = useState<number>(0)
-    const [totalTDef, setTotalTDef] = useState<number>(0)
-    const [strikeRes, setStrikeRes] = useState<number>(0)
-    const [rangedRes, setRangedRes] = useState<number>(0)
-    const [techRes, setTechRes] = useState<number>(0)
-    const [fireRes, setFireRes] = useState<number>(0)
-    const [iceRes, setIceRes] = useState<number>(0)
-    const [lightningRes, setLightningRes] = useState<number>(0)
-    const [windRes, setWindRes] = useState<number>(0)
-    const [lightRes, setLightRes] = useState<number>(0)
-    const [darkRes, setDarkRes] = useState<number>(0)
-    const [critRateIncrease, setCritRateIncrease] = useState<number>(0)
-    const [strikeDmgBoost, setStrikeDmgBoost] = useState<number>(1)
-    const [rangedDmgBoost, setRangedDmgBoost] = useState<number>(1)
-    const [techDmgBoost, setTechDmgBoost] = useState<number>(1)
-    const [normalAtkDmgBoost, setNormalAtkDmgBoost] = useState<number>(1)
-    const [paDmgBoost, setPaDmgBoost] = useState<number>(1)
-    const [techniqueDmgBoost, setTechniqueDmgBoost] = useState<number>(1)
-    const [critDmgBoost, setCritDmgBoost] = useState<number>(1)
-    const [naturalPpRecovery, setNaturalPpRecovery] = useState<number>(1)
-    const [activePpRecovery, setActivePpRecovery] = useState<number>(1)
-    const [ppConsumption, setPpConsumption] = useState<number>(1)
-    const [abilityStats, setAbilityStats] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1])
+    const [bonusHp, setBonusHp] = useState<Decimal>(new Decimal(0))
+    const [totalHp, setTotalHp] = useState<Decimal>(new Decimal(0))
+    const [bonusPp, setBonusPp] = useState<Decimal>(new Decimal(0))
+    const [totalPp, setTotalPp] = useState<Decimal>(new Decimal(0))
+    const [bonusSAtk, setBonusSAtk] = useState<Decimal>(new Decimal(0))
+    const [totalSAtk, setTotalSAtk] = useState<Decimal>(new Decimal(0))
+    const [bonusRAtk, setBonusRAtk] = useState<Decimal>(new Decimal(0))
+    const [totalRAtk, setTotalRAtk] = useState<Decimal>(new Decimal(0))
+    const [bonusTAtk, setBonusTAtk] = useState<Decimal>(new Decimal(0))
+    const [totalTAtk, setTotalTAtk] = useState<Decimal>(new Decimal(0))
+    const [bonusDex, setBonusDex] = useState<Decimal>(new Decimal(0))
+    const [totalDex, setTotalDex] = useState<Decimal>(new Decimal(0))
+    const [bonusSDef, setBonusSDef] = useState<Decimal>(new Decimal(0))
+    const [totalSDef, setTotalSDef] = useState<Decimal>(new Decimal(0))
+    const [bonusRDef, setBonusRDef] = useState<Decimal>(new Decimal(0))
+    const [totalRDef, setTotalRDef] = useState<Decimal>(new Decimal(0))
+    const [bonusTDef, setBonusTDef] = useState<Decimal>(new Decimal(0))
+    const [totalTDef, setTotalTDef] = useState<Decimal>(new Decimal(0))
+    const [strikeRes, setStrikeRes] = useState<Decimal>(new Decimal(0))
+    const [rangedRes, setRangedRes] = useState<Decimal>(new Decimal(0))
+    const [techRes, setTechRes] = useState<Decimal>(new Decimal(0))
+    const [fireRes, setFireRes] = useState<Decimal>(new Decimal(0))
+    const [iceRes, setIceRes] = useState<Decimal>(new Decimal(0))
+    const [lightningRes, setLightningRes] = useState<Decimal>(new Decimal(0))
+    const [windRes, setWindRes] = useState<Decimal>(new Decimal(0))
+    const [lightRes, setLightRes] = useState<Decimal>(new Decimal(0))
+    const [darkRes, setDarkRes] = useState<Decimal>(new Decimal(0))
+    const [critRateIncrease, setCritRateIncrease] = useState<Decimal>(new Decimal(0))
+    const [strikeDmgBoost, setStrikeDmgBoost] = useState<Decimal>(new Decimal(1))
+    const [rangedDmgBoost, setRangedDmgBoost] = useState<Decimal>(new Decimal(1))
+    const [techDmgBoost, setTechDmgBoost] = useState<Decimal>(new Decimal(1))
+    const [normalAtkDmgBoost, setNormalAtkDmgBoost] = useState<Decimal>(new Decimal(1))
+    const [paDmgBoost, setPaDmgBoost] = useState<Decimal>(new Decimal(1))
+    const [techniqueDmgBoost, setTechniqueDmgBoost] = useState<Decimal>(new Decimal(1))
+    const [critDmgBoost, setCritDmgBoost] = useState<Decimal>(new Decimal(1))
+    const [naturalPpRecovery, setNaturalPpRecovery] = useState<Decimal>(new Decimal(1))
+    const [activePpRecovery, setActivePpRecovery] = useState<Decimal>(new Decimal(1))
+    const [ppConsumption, setPpConsumption] = useState<Decimal>(new Decimal(1))
+    const [abilityStats, setAbilityStats] = useState<Decimal[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num)))
     const [classBoosts, setClassBoosts] = useState<string[]>(classStats.filter(item => !item["Successor"]).map(item => item[`Name (${language.language})`]))
     const [weaponAbilitiesConditionals, setWeaponAbilitiesConditionals] = useState<boolean[]>([false, false, false, false, false, false, false, false])
     const [weaponAbilitiesStacks, setWeaponAbilitiesStacks] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0])
@@ -240,7 +241,7 @@ export default function Home() {
         //24 = Natural PP Recovery
         //25 = Active PP Recovery
         //26 = PP Consumption
-        const abStats: number[] = parseAbilities()
+        const abStats: number[] | Decimal[] = parseAbilities()
         setAbilityStats(abStats)
         /* console.log(
             'HP', abStats[0], '\n',
@@ -337,101 +338,102 @@ export default function Home() {
             bonusBaseStats[8] += 40
         }
 
-        let totalBaseHp: number
-        let totalBasePp: number
-        let totalBaseSAtk: number
-        let totalBaseRAtk: number
-        let totalBaseTAtk: number
-        let totalBaseDex: number
-        let totalBaseSDef: number
-        let totalBaseRDef: number
-        let totalBaseTDef: number
+        let totalBaseHp: Decimal = new Decimal(0)
+        let totalBasePp: Decimal = new Decimal(0)
+        let totalBaseSAtk: Decimal = new Decimal(0)
+        let totalBaseRAtk: Decimal = new Decimal(0)
+        let totalBaseTAtk: Decimal = new Decimal(0)
+        let totalBaseDex: Decimal = new Decimal(0)
+        let totalBaseSDef: Decimal = new Decimal(0)
+        let totalBaseRDef: Decimal = new Decimal(0)
+        let totalBaseTDef: Decimal = new Decimal(0)
+
         if (subClassData) {
-            totalBaseHp = ((mainClassData["HP"] * raceData["HP"]) + (subClassData["HP"] * 0.2) + bonusBaseStats[0])
-            totalBasePp = ((mainClassData["PP"] * raceData["PP"]) + (subClassData["PP"] * 0.2) + bonusBaseStats[1])
-            totalBaseSAtk = ((mainClassData["S-ATK"] * raceData["S-ATK"]) + (subClassData["S-ATK"] * 0.2) + bonusBaseStats[2])
-            totalBaseRAtk = ((mainClassData["R-ATK"] * raceData["R-ATK"]) + (subClassData["R-ATK"] * 0.2) + bonusBaseStats[3])
-            totalBaseTAtk = ((mainClassData["T-ATK"] * raceData["T-ATK"]) + (subClassData["T-ATK"] * 0.2) + bonusBaseStats[4])
-            totalBaseDex = ((mainClassData["DEX"] * raceData["DEX"]) + (subClassData["DEX"] * 0.2) + bonusBaseStats[5])
-            totalBaseSDef = ((mainClassData["S-DEF"] * raceData["S-DEF"]) + (subClassData["S-DEF"] * 0.2) + bonusBaseStats[6])
-            totalBaseRDef = ((mainClassData["R-DEF"] * raceData["R-DEF"]) + (subClassData["R-DEF"] * 0.2) + bonusBaseStats[7])
-            totalBaseTDef = ((mainClassData["T-DEF"] * raceData["T-DEF"]) + (subClassData["T-DEF"] * 0.2) + bonusBaseStats[8])
+            totalBaseHp = totalBaseHp.plus(((mainClassData["HP"] * raceData["HP"]) + (subClassData["HP"] * 0.2) + bonusBaseStats[0]))
+            totalBasePp = totalBasePp.plus(((mainClassData["PP"] * raceData["PP"]) + (subClassData["PP"] * 0.2) + bonusBaseStats[1]))
+            totalBaseSAtk = totalBaseSAtk.plus(((mainClassData["S-ATK"] * raceData["S-ATK"]) + (subClassData["S-ATK"] * 0.2) + bonusBaseStats[2]))
+            totalBaseRAtk = totalBaseRAtk.plus(((mainClassData["R-ATK"] * raceData["R-ATK"]) + (subClassData["R-ATK"] * 0.2) + bonusBaseStats[3]))
+            totalBaseTAtk = totalBaseTAtk.plus(((mainClassData["T-ATK"] * raceData["T-ATK"]) + (subClassData["T-ATK"] * 0.2) + bonusBaseStats[4]))
+            totalBaseDex = totalBaseDex.plus(((mainClassData["DEX"] * raceData["DEX"]) + (subClassData["DEX"] * 0.2) + bonusBaseStats[5]))
+            totalBaseSDef = totalBaseSDef.plus(((mainClassData["S-DEF"] * raceData["S-DEF"]) + (subClassData["S-DEF"] * 0.2) + bonusBaseStats[6]))
+            totalBaseRDef = totalBaseRDef.plus(((mainClassData["R-DEF"] * raceData["R-DEF"]) + (subClassData["R-DEF"] * 0.2) + bonusBaseStats[7]))
+            totalBaseTDef = totalBaseTDef.plus(((mainClassData["T-DEF"] * raceData["T-DEF"]) + (subClassData["T-DEF"] * 0.2) + bonusBaseStats[8]))
         } else {
-            totalBaseHp = ((mainClassData["HP"] * raceData["HP"]) + bonusBaseStats[0])
-            totalBasePp = ((mainClassData["PP"] * raceData["PP"]) + bonusBaseStats[1])
-            totalBaseSAtk = ((mainClassData["S-ATK"] * raceData["S-ATK"]) + bonusBaseStats[2])
-            totalBaseRAtk = ((mainClassData["R-ATK"] * raceData["R-ATK"]) + bonusBaseStats[3])
-            totalBaseTAtk = ((mainClassData["T-ATK"] * raceData["T-ATK"]) + bonusBaseStats[4])
-            totalBaseDex = ((mainClassData["DEX"] * raceData["DEX"]) + bonusBaseStats[5])
-            totalBaseSDef = ((mainClassData["S-DEF"] * raceData["S-DEF"]) + bonusBaseStats[6])
-            totalBaseRDef = ((mainClassData["R-DEF"] * raceData["R-DEF"]) + bonusBaseStats[7])
-            totalBaseTDef = ((mainClassData["T-DEF"] * raceData["T-DEF"]) + bonusBaseStats[8])
+            totalBaseHp = totalBaseHp.plus(((mainClassData["HP"] * raceData["HP"]) + bonusBaseStats[0]))
+            totalBasePp = totalBasePp.plus(((mainClassData["PP"] * raceData["PP"]) + bonusBaseStats[1]))
+            totalBaseSAtk = totalBaseSAtk.plus(((mainClassData["S-ATK"] * raceData["S-ATK"]) + bonusBaseStats[2]))
+            totalBaseRAtk = totalBaseRAtk.plus(((mainClassData["R-ATK"] * raceData["R-ATK"]) + bonusBaseStats[3]))
+            totalBaseTAtk = totalBaseTAtk.plus(((mainClassData["T-ATK"] * raceData["T-ATK"]) + bonusBaseStats[4]))
+            totalBaseDex = totalBaseDex.plus(((mainClassData["DEX"] * raceData["DEX"]) + bonusBaseStats[5]))
+            totalBaseSDef = totalBaseSDef.plus(((mainClassData["S-DEF"] * raceData["S-DEF"]) + bonusBaseStats[6]))
+            totalBaseRDef = totalBaseRDef.plus(((mainClassData["R-DEF"] * raceData["R-DEF"]) + bonusBaseStats[7]))
+            totalBaseTDef = totalBaseTDef.plus(((mainClassData["T-DEF"] * raceData["T-DEF"]) + bonusBaseStats[8]))
         }
         switch (mag) {
             case 'S-ATK':
-                totalBaseSAtk += 200;
+                totalBaseSAtk = totalBaseSAtk.plus(200);
                 if (mainClass === 'Hero' || mainClass === 'Etoile' || mainClass === 'Luster' || subClass === 'Etoile' || subClass === 'Luster') {
-                    totalBaseRAtk += 200;
-                    totalBaseTAtk += 200;
+                    totalBaseRAtk = totalBaseRAtk.plus(200);
+                    totalBaseTAtk = totalBaseTAtk.plus(200);
                 }
                 break;
             case 'R-ATK':
-                totalBaseRAtk += 200;
+                totalBaseRAtk = totalBaseRAtk.plus(200);
                 if (mainClass === 'Hero' || mainClass === 'Etoile' || mainClass === 'Luster' || subClass === 'Etoile' || subClass === 'Luster') {
-                    totalBaseSAtk += 200;
-                    totalBaseTAtk += 200;
+                    totalBaseSAtk = totalBaseSAtk.plus(200);
+                    totalBaseTAtk = totalBaseTAtk.plus(200);
                 }
                 break;
             case 'T-ATK':
-                totalBaseTAtk += 200;
+                totalBaseTAtk = totalBaseTAtk.plus(200);
                 if (mainClass === 'Hero' || mainClass === 'Etoile' || mainClass === 'Luster' || subClass === 'Etoile' || subClass === 'Luster') {
-                    totalBaseSAtk += 200;
-                    totalBaseRAtk += 200;
+                    totalBaseSAtk = totalBaseSAtk.plus(200);
+                    totalBaseRAtk = totalBaseRAtk.plus(200);
                 }
                 break;
             case 'DEX':
-                totalBaseDex += 200;
+                totalBaseDex = totalBaseDex.plus(200);
                 if (mainClass === 'Phantom' || subClass === 'Phantom') {
-                    totalBaseSAtk += 200;
-                    totalBaseRAtk += 200;
-                    totalBaseTAtk += 200;
+                    totalBaseSAtk = totalBaseSAtk.plus(200);
+                    totalBaseRAtk = totalBaseRAtk.plus(200);
+                    totalBaseTAtk = totalBaseTAtk.plus(200);
                 }
                 if (mainClass === 'Braver' || subClass === 'Braver') {
-                    totalBaseSAtk += 200;
-                    totalBaseRAtk += 200;
+                    totalBaseSAtk = totalBaseSAtk.plus(200);
+                    totalBaseRAtk = totalBaseRAtk.plus(200);
                 }
                 if (mainClass === 'Bouncer' || subClass === 'Bouncer') {
-                    totalBaseSAtk += 200;
-                    totalBaseTAtk += 200;
+                    totalBaseSAtk = totalBaseSAtk.plus(200);
+                    totalBaseTAtk = totalBaseTAtk.plus(200);
                 }
                 break;
             case 'S-DEF':
-                totalBaseSDef += 200; break;
+                totalBaseSDef = totalBaseSDef.plus(200); break;
             case 'R-DEF':
-                totalBaseRDef += 200; break;
+                totalBaseRDef = totalBaseRDef.plus(200); break;
             case 'T-DEF':
-                totalBaseTDef += 200; break;
+                totalBaseTDef = totalBaseTDef.plus(200); break;
         }
 
-        let totalBonusHp: number = (weaponData["HP"] || 0) + (rearData["HP"] || 0) + (armData["HP"] || 0) + (legData["HP"] || 0) + (abStats[0] || 0)
-        let totalBonusPp: number = (weaponData["PP"] || 0) + (rearData["PP"] || 0) + (armData["PP"] || 0) + (legData["PP"] || 0) + (abStats[1] || 0)
-        let totalBonusSAtk: number = (weaponData["S-ATK"] || 0) + (rearData["S-ATK"] || 0) + (armData["S-ATK"] || 0) + (legData["S-ATK"] || 0) + (abStats[2] || 0)
-        let totalBonusRAtk: number = (weaponData["R-ATK"] || 0) + (rearData["R-ATK"] || 0) + (armData["R-ATK"] || 0) + (legData["R-ATK"] || 0) + (abStats[3] || 0)
-        let totalBonusTAtk: number = (weaponData["T-ATK"] || 0) + (rearData["T-ATK"] || 0) + (armData["T-ATK"] || 0) + (legData["T-ATK"] || 0) + (abStats[4] || 0)
-        let totalBonusDex: number = (weaponData["DEX"] || 0) + (rearData["DEX"] || 0) + (armData["DEX"] || 0) + (legData["DEX"] || 0) + (abStats[5] || 0)
-        let totalBonusSDef: number = (weaponData["S-DEF"] || 0) + (rearData["S-DEF"] || 0) + (armData["S-DEF"] || 0) + (legData["S-DEF"] || 0) + (abStats[6] || 0)
-        let totalBonusRDef: number = (weaponData["R-DEF"] || 0) + (rearData["R-DEF"] || 0) + (armData["R-DEF"] || 0) + (legData["R-DEF"] || 0) + (abStats[7] || 0)
-        let totalBonusTDef: number = (weaponData["T-DEF"] || 0) + (rearData["T-DEF"] || 0) + (armData["T-DEF"] || 0) + (legData["T-DEF"] || 0) + (abStats[8] || 0)
+        let totalBonusHp: Decimal = new Decimal(abStats[0].plus(weaponData["HP"] || 0).plus(rearData["HP"] || 0).plus(armData["HP"] || 0).plus(legData["HP"] || 0))
+        let totalBonusPp: Decimal = new Decimal(abStats[1].plus(weaponData["PP"] || 0).plus(rearData["PP"] || 0).plus(armData["PP"] || 0).plus(legData["PP"] || 0))
+        let totalBonusSAtk: Decimal = new Decimal(abStats[2].plus(weaponData["S-ATK"] || 0).plus(rearData["S-ATK"] || 0).plus(armData["S-ATK"] || 0).plus(legData["S-ATK"] || 0))
+        let totalBonusRAtk: Decimal = new Decimal(abStats[3].plus(weaponData["R-ATK"] || 0).plus(rearData["R-ATK"] || 0).plus(armData["R-ATK"] || 0).plus(legData["R-ATK"] || 0))
+        let totalBonusTAtk: Decimal = new Decimal(abStats[4].plus(weaponData["T-ATK"] || 0).plus(rearData["T-ATK"] || 0).plus(armData["T-ATK"] || 0).plus(legData["T-ATK"] || 0))
+        let totalBonusDex: Decimal = new Decimal(abStats[5].plus(weaponData["DEX"] || 0).plus(rearData["DEX"] || 0).plus(armData["DEX"] || 0).plus(legData["DEX"] || 0))
+        let totalBonusSDef: Decimal = new Decimal(abStats[6].plus(weaponData["S-DEF"] || 0).plus(rearData["S-DEF"] || 0).plus(armData["S-DEF"] || 0).plus(legData["S-DEF"] || 0))
+        let totalBonusRDef: Decimal = new Decimal(abStats[7].plus(weaponData["R-DEF"] || 0).plus(rearData["R-DEF"] || 0).plus(armData["R-DEF"] || 0).plus(legData["R-DEF"] || 0))
+        let totalBonusTDef: Decimal = new Decimal(abStats[8].plus(weaponData["T-DEF"] || 0).plus(rearData["T-DEF"] || 0).plus(armData["T-DEF"] || 0).plus(legData["T-DEF"] || 0))
 
-        setTotalHp(totalBaseHp + totalBonusHp)
-        setTotalPp(totalBasePp + totalBonusPp)
-        setTotalSAtk(totalBaseSAtk + totalBonusSAtk)
-        setTotalRAtk(totalBaseRAtk + totalBonusRAtk)
-        setTotalTAtk(totalBaseTAtk + totalBonusTAtk)
-        setTotalDex(totalBaseDex + totalBonusDex)
-        setTotalSDef(totalBaseSDef + totalBonusSDef)
-        setTotalRDef(totalBaseRDef + totalBonusRDef)
-        setTotalTDef(totalBaseTDef + totalBonusTDef)
+        setTotalHp(totalBaseHp.plus(totalBonusHp))
+        setTotalPp(totalBasePp.plus(totalBonusPp))
+        setTotalSAtk(totalBaseSAtk.plus(totalBonusSAtk))
+        setTotalRAtk(totalBaseRAtk.plus(totalBonusRAtk))
+        setTotalTAtk(totalBaseTAtk.plus(totalBonusTAtk))
+        setTotalDex(totalBaseDex.plus(totalBonusDex))
+        setTotalSDef(totalBaseSDef.plus(totalBonusSDef))
+        setTotalRDef(totalBaseRDef.plus(totalBonusRDef))
+        setTotalTDef(totalBaseTDef.plus(totalBonusTDef))
 
         setBonusHp(totalBonusHp)
         setBonusPp(totalBonusPp)
@@ -443,27 +445,28 @@ export default function Home() {
         setBonusRDef(totalBonusRDef)
         setBonusTDef(totalBonusTDef)
 
-        setStrikeRes(((rearData["Strike Resistance"] || 0) + (armData["Strike Resistance"] || 0) + (legData["Strike Resistance"] || 0)) / 100 + ((abStats[9]) || 0) / 100)
-        setRangedRes(((rearData["Ranged Resistance"] || 0) + (armData["Ranged Resistance"] || 0) + (legData["Ranged Resistance"] || 0)) / 100 + ((abStats[10]) || 0) / 100)
-        setTechRes(((rearData["Tech Resistance"] || 0) + (armData["Tech Resistance"] || 0) + (legData["Tech Resistance"] || 0)) / 100 + ((abStats[11]) || 0) / 100)
-        setFireRes(((rearData["Fire Resistance"] || 0) + (armData["Fire Resistance"] || 0) + (legData["Fire Resistance"] || 0)) / 100 + ((abStats[12]) || 0) / 100)
-        setIceRes(((rearData["Ice Resistance"] || 0) + (armData["Ice Resistance"] || 0) + (legData["Ice Resistance"] || 0)) / 100 + ((abStats[13]) || 0) / 100)
-        setLightningRes(((rearData["Lightning Resistance"] || 0) + (armData["Lightning Resistance"] || 0) + (legData["Lightning Resistance"] || 0)) / 100 + ((abStats[14]) || 0) / 100)
-        setWindRes(((rearData["Wind Resistance"] || 0) + (armData["Wind Resistance"] || 0) + (legData["Wind Resistance"] || 0)) / 100 + ((abStats[15]) || 0) / 100)
-        setLightRes(((rearData["Light Resistance"] || 0) + (armData["Light Resistance"] || 0) + (legData["Light Resistance"] || 0)) / 100 + ((abStats[16]) || 0) / 100)
-        setDarkRes(((rearData["Dark Resistance"] || 0) + (armData["Dark Resistance"] || 0) + (legData["Dark Resistance"] || 0)) / 100 + ((abStats[17]) || 0) / 100)
+        setStrikeRes(new Decimal(abStats[9].plus((rearData["Strike Resistance"] || 0)/100).plus((armData["Strike Resistance"] || 0)/100).plus((legData["Strike Resistance"] || 0)/100)))
+        setRangedRes(new Decimal(abStats[10].plus((rearData["Ranged Resistance"] || 0)/100).plus((armData["Ranged Resistance"] || 0)/100).plus((legData["Ranged Resistance"] || 0)/100)))
+        setTechRes(new Decimal(abStats[11].plus((rearData["Tech Resistance"] || 0)/100).plus((armData["Tech Resistance"] || 0)/100).plus((legData["Tech Resistance"] || 0)/100)))
+        setFireRes(new Decimal(abStats[12].plus((rearData["Fire Resistance"] || 0)/100).plus((armData["Fire Resistance"] || 0)/100).plus((legData["Fire Resistance"] || 0)/100)))
+        setIceRes(new Decimal(abStats[13].plus((rearData["Ice Resistance"] || 0)/100).plus((armData["Ice Resistance"] || 0)/100).plus((legData["Ice Resistance"] || 0)/100)))
+        setLightningRes(new Decimal(abStats[14].plus((rearData["Lightning Resistance"] || 0)/100).plus((armData["Lightning Resistance"] || 0)/100).plus((legData["Lightning Resistance"] || 0)/100)))
+        setWindRes(new Decimal(abStats[15].plus((rearData["Wind Resistance"] || 0)/100).plus((armData["Wind Resistance"] || 0)/100).plus((legData["Wind Resistance"] || 0)/100)))
+        setLightRes(new Decimal(abStats[16].plus((rearData["Light Resistance"] || 0)/100).plus((armData["Light Resistance"] || 0)/100).plus((legData["Light Resistance"] || 0)/100)))
+        setDarkRes(new Decimal(abStats[17].plus((rearData["Dark Resistance"] || 0)/100).plus((armData["Dark Resistance"] || 0)/100).plus((legData["Dark Resistance"] || 0)/100)))
 
-        let totalCritRateIncrease = 5 + abStats[18]
-        let totalStrikeDmgBoost = abStats[19]
-        let totalRangedDmgBoost = abStats[19]
-        let totalTechDmgBoost = abStats[19]
-        let totalNormalAtkDmgBoost = abStats[20]
-        let totalPaDmgBoost = abStats[21]
-        let totalTechniqueDmgBoost = abStats[22]
-        let totalCritDmgBoost = abStats[23]
-        let totalNaturalPpRecovery = abStats[24]
-        let totalActivePpRecovery = abStats[25]
-        let totalPpConsumption = abStats[26]
+
+        let totalCritRateIncrease: Decimal = abStats[18].plus(5)
+        let totalStrikeDmgBoost: Decimal = abStats[19]
+        let totalRangedDmgBoost: Decimal = abStats[19]
+        let totalTechDmgBoost: Decimal = abStats[19]
+        let totalNormalAtkDmgBoost: Decimal = abStats[20]
+        let totalPaDmgBoost: Decimal = abStats[21]
+        let totalTechniqueDmgBoost: Decimal = abStats[22]
+        let totalCritDmgBoost: Decimal = abStats[23]
+        let totalNaturalPpRecovery: Decimal = abStats[24]
+        let totalActivePpRecovery: Decimal = abStats[25]
+        let totalPpConsumption: Decimal = abStats[26]
 
         setCritRateIncrease(totalCritRateIncrease)
         setStrikeDmgBoost(totalStrikeDmgBoost)
@@ -616,48 +619,48 @@ export default function Home() {
 
     }
 
-    function parseAbilities(): number[] {
-        let weaponAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1]
-        let rearAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1]
-        let armAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1]
-        let legAbStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1]
+    function parseAbilities(): Decimal[] {
+        let weaponAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let rearAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let armAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let legAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
         for (let i = 0; i < weaponAbilities.length; i++) {
-            const parsedAbility: number[] = parseAbility(weaponAbilities[i], 'Weapon', i)
+            const parsedAbility: Decimal[] = parseAbility(weaponAbilities[i], 'Weapon', i)
             for (let j = 0; j < weaponAbStats.length; j++) {
-                if (j < 18) weaponAbStats[j] += parsedAbility[j]
-                else weaponAbStats[j] *= parsedAbility[j]
+                if (j < 18) weaponAbStats[j] = weaponAbStats[j].plus(parsedAbility[j])
+                else weaponAbStats[j] = weaponAbStats[j].times(parsedAbility[j])
             }
         }
         for (let i = 0; i < rearAbilities.length; i++) {
-            const parsedAbility: number[] = parseAbility(rearAbilities[i], 'Rear', i)
+            const parsedAbility: Decimal[] = parseAbility(rearAbilities[i], 'Rear', i)
             for (let j = 0; j < rearAbStats.length; j++) {
-                if (j < 18) rearAbStats[j] += parsedAbility[j]
-                else rearAbStats[j] *= parsedAbility[j]
+                if (j < 18) rearAbStats[j] = rearAbStats[j].plus(parsedAbility[j])
+                else rearAbStats[j] = rearAbStats[j].times(parsedAbility[j])
             }
         }
         for (let i = 0; i < armAbilities.length; i++) {
-            const parsedAbility: number[] = parseAbility(armAbilities[i], 'Arm', i)
+            const parsedAbility: Decimal[] = parseAbility(armAbilities[i], 'Arm', i)
             for (let j = 0; j < armAbStats.length; j++) {
-                if (j < 18) armAbStats[j] += parsedAbility[j]
-                else armAbStats[j] *= parsedAbility[j]
+                if (j < 18) armAbStats[j] = armAbStats[j].plus(parsedAbility[j])
+                else armAbStats[j] = armAbStats[j].times(parsedAbility[j])
             }
         }
         for (let i = 0; i < legAbilities.length; i++) {
-            const parsedAbility: number[] = parseAbility(legAbilities[i], 'Leg', i)
+            const parsedAbility: Decimal[] = parseAbility(legAbilities[i], 'Leg', i)
             for (let j = 0; j < legAbStats.length; j++) {
-                if (j < 18) legAbStats[j] += parsedAbility[j]
-                else legAbStats[j] *= parsedAbility[j]
+                if (j < 18) legAbStats[j] = legAbStats[j].plus(parsedAbility[j])
+                else legAbStats[j] = legAbStats[j].times(parsedAbility[j])
             }
         }
-        let returnValue: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+        let returnValue: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
         for (let i = 0; i < weaponAbStats.length; i++) {
-            if (i < 18) returnValue[i] = weaponAbStats[i] + rearAbStats[i] + armAbStats[i] + legAbStats[i]
-            else returnValue[i] = weaponAbStats[i] * rearAbStats[i] * armAbStats[i] * legAbStats[i]
+            if (i < 18) returnValue[i] = returnValue[i].plus(weaponAbStats[i]).plus(rearAbStats[i]).plus(armAbStats[i]).plus(legAbStats[i])
+            else returnValue[i] = returnValue[i].times(weaponAbStats[i]).times(rearAbStats[i]).times(armAbStats[i]).times(legAbStats[i])
         }
         return returnValue
     }
 
-    function parseAbility(ability: string, gearType: string, abilitySlot: number): number[] {
+    function parseAbility(ability: string, gearType: string, abilitySlot: number): Decimal[] {
         const ab = abilityData.find(name => name["Name (English)"] === ability);
 
         let hp: number = 0;
@@ -679,14 +682,14 @@ export default function Home() {
         let lightres: number = 0;
         let darkres: number = 0;
         let critrateincrease: number = 0;
-        let dmgboost: number = 1;
-        let normaldmgboost: number = 1;
-        let padmgboost: number = 1;
-        let techdmgboost: number = 1;
-        let critdmgboost: number = 1
-        let naturalpprecovery: number = 1;
-        let activepprecovery: number = 1;
-        let ppconsumption: number = 1;
+        let dmgboost: Decimal = new Decimal(1);
+        let normaldmgboost: Decimal = new Decimal(1);
+        let padmgboost: Decimal = new Decimal(1);
+        let techdmgboost: Decimal = new Decimal(1);
+        let critdmgboost: Decimal = new Decimal(1);
+        let naturalpprecovery: Decimal = new Decimal(1);
+        let activepprecovery: Decimal = new Decimal(1);
+        let ppconsumption: Decimal = new Decimal(1);
 
         if (ab) {
             if (ab["Effect (English)"][0]) {
@@ -805,23 +808,23 @@ export default function Home() {
                                 if (gearConditionals[abilitySlot]) {
                                     switch (ab["Effect"][i]) {
                                         case 'Conditional Damage Multiplier':
-                                            dmgboost *= Number(ab["Effect"][i + 1])
+                                            dmgboost = dmgboost.times(Number(ab["Effect"][i + 1]))
                                             i++
                                             break
                                         case 'Conditional Normal Attack Damage Multiplier':
-                                            normaldmgboost *= Number(ab["Effect"][i + 1])
+                                            normaldmgboost = normaldmgboost.times(Number(ab["Effect"][i + 1]))
                                             i++
                                             break
                                         case 'Conditional PA Damage Multiplier':
-                                            padmgboost *= Number(ab["Effect"][i + 1])
+                                            padmgboost = padmgboost.times(Number(ab["Effect"][i + 1]))
                                             i++
                                             break
                                         case 'Conditional Tech Damage Multiplier':
-                                            techdmgboost *= Number(ab["Effect"][i + 1])
+                                            techdmgboost = techdmgboost.times(Number(ab["Effect"][i + 1]))
                                             i++
                                             break
                                         case 'Conditional Critical Hit Damage Multiplier':
-                                            critdmgboost *= Number(ab["Effect"][i + 1])
+                                            critdmgboost = critdmgboost.times(Number(ab["Effect"][i + 1]))
                                             i++
                                             break
                                         case 'Conditional Critical Hit Rate Increase':
@@ -829,15 +832,15 @@ export default function Home() {
                                             i++
                                             break
                                         case 'Conditional Natural PP Recovery Multiplier':
-                                            naturalpprecovery *= Number(ab["Effect"][i + 1])
+                                            naturalpprecovery = naturalpprecovery.times(Number(ab["Effect"][i + 1]))
                                             i++
                                             break
                                         case 'Conditional Active PP Recovery Multiplier':
-                                            activepprecovery *= Number(ab["Effect"][i + 1])
+                                            activepprecovery = activepprecovery.times(Number(ab["Effect"][i + 1]))
                                             i++
                                             break
                                         case 'Conditional PP Consumption Multiplier':
-                                            ppconsumption *= Number(ab["Effect"][i + 1])
+                                            ppconsumption = ppconsumption.times(Number(ab["Effect"][i + 1]))
                                             i++
                                             break
                                         default:
@@ -847,23 +850,23 @@ export default function Home() {
                             } else {
                                 switch (ab["Effect"][i]) {
                                     case 'Damage Multiplier':
-                                        dmgboost *= Number(ab["Effect"][i + 1])
+                                        dmgboost = dmgboost.times(Number(ab["Effect"][i + 1]))
                                         i++
                                         break
                                     case 'Normal Attack Damage Multiplier':
-                                        normaldmgboost *= Number(ab["Effect"][i + 1])
+                                        normaldmgboost = normaldmgboost.times(Number(ab["Effect"][i + 1]))
                                         i++
                                         break
                                     case 'PA Damage Multiplier':
-                                        padmgboost *= Number(ab["Effect"][i + 1])
+                                        padmgboost = padmgboost.times(Number(ab["Effect"][i + 1]))
                                         i++
                                         break
                                     case 'Tech Damage Multiplier':
-                                        techdmgboost *= Number(ab["Effect"][i + 1])
+                                        techdmgboost = techdmgboost.times(Number(ab["Effect"][i + 1]))
                                         i++
                                         break
                                     case 'Critical Hit Damage Multiplier':
-                                        critdmgboost *= Number(ab["Effect"][i + 1])
+                                        critdmgboost = critdmgboost.times(Number(ab["Effect"][i + 1]))
                                         i++
                                         break
                                     case 'Critical Hit Rate Increase':
@@ -871,15 +874,15 @@ export default function Home() {
                                         i++
                                         break
                                     case 'Natural PP Recovery Multiplier':
-                                        naturalpprecovery *= Number(ab["Effect"][i + 1])
+                                        naturalpprecovery = naturalpprecovery.times(Number(ab["Effect"][i + 1]))
                                         i++
                                         break
                                     case 'Active PP Recovery Multiplier':
-                                        activepprecovery *= Number(ab["Effect"][i + 1])
+                                        activepprecovery = activepprecovery.times(Number(ab["Effect"][i + 1]))
                                         i++
                                         break
                                     case 'PP Consumption Multiplier':
-                                        ppconsumption *= Number(ab["Effect"][i + 1])
+                                        ppconsumption = ppconsumption.times(Number(ab["Effect"][i + 1]))
                                         i++
                                         break
                                     default:
@@ -891,7 +894,7 @@ export default function Home() {
                 }
             }
         }
-        const returnValue: number[] = [hp, pp, satk, ratk, tatk, dex, sdef, rdef, tdef, sres, rres, tres, fireres, iceres, lightningres, windres, lightres, darkres, critrateincrease, dmgboost, normaldmgboost, padmgboost, techdmgboost, critdmgboost, naturalpprecovery, activepprecovery, ppconsumption];
+        const returnValue: Decimal[] = [hp, pp, satk, ratk, tatk, dex, sdef, rdef, tdef, sres, rres, tres, fireres, iceres, lightningres, windres, lightres, darkres, critrateincrease, dmgboost, normaldmgboost, padmgboost, techdmgboost, critdmgboost, naturalpprecovery, activepprecovery, ppconsumption].map(num => new Decimal(num));
         return returnValue;
     }
 
@@ -924,9 +927,9 @@ export default function Home() {
                         <Table.Th colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[2]}</Flex></Table.Th>
                     </Table.Tr>
                     <Table.Tr>
-                        <Table.Td><Flex justify="center" align="center" key={uuidv4()} gap={5}>{Math.trunc(totalHp)}</Flex></Table.Td>
-                        <Table.Td><Flex justify="center" align="center" key={uuidv4()} gap={5}>{Math.trunc(totalPp)}</Flex></Table.Td>
-                        <Table.Td colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('DEX', Math.trunc(totalDex))}</Flex></Table.Td>
+                        <Table.Td><Flex justify="center" align="center" key={uuidv4()} gap={5}>{totalHp.trunc().toString()}</Flex></Table.Td>
+                        <Table.Td><Flex justify="center" align="center" key={uuidv4()} gap={5}>{totalPp.trunc().toString()}</Flex></Table.Td>
+                        <Table.Td colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('DEX', totalDex.trunc())}</Flex></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Th rowSpan={2}>
@@ -946,29 +949,29 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('S-ATK', Math.trunc(totalSAtk))}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('R-ATK', Math.trunc(totalRAtk))}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('T-ATK', Math.trunc(totalTAtk))}</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('S-ATK', totalSAtk.trunc())}</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('R-ATK', totalRAtk.trunc())}</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('T-ATK', totalTAtk.trunc())}</Flex>
                         </Table.Td>
                         <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('S-DEF', Math.trunc(totalSDef))}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('R-DEF', Math.trunc(totalRDef))}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('T-DEF', Math.trunc(totalTDef))}</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('S-DEF', totalSDef.trunc())}</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('R-DEF', totalRDef.trunc())}</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('T-DEF', totalTDef.trunc())}</Flex>
                         </Table.Td>
                         <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('S-ATK', Number(((strikeDmgBoost - 1) * 100).toFixed(2)))}%</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('R-ATK', Number(((rangedDmgBoost - 1) * 100).toFixed(2)))}%</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('T-ATK', Number(((techDmgBoost - 1) * 100).toFixed(2)))}%</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('S-ATK', ((strikeDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('R-ATK', ((rangedDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('T-ATK', ((techDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
                         </Table.Td>
                         <Table.Td w='20%'>
                             <Flex justify="center" align="center" key={uuidv4()} gap={0}>
                                 <SimpleGrid key={uuidv4()} cols={2} spacing={7} verticalSpacing={0}>
                                     <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[27]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((normalAtkDmgBoost - 1) * 100).toFixed(2)}%</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((normalAtkDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
                                     <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[28]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((paDmgBoost - 1) * 100).toFixed(2)}%</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((paDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
                                     <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[29]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((techniqueDmgBoost - 1) * 100).toFixed(2)}%</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((techniqueDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
                                 </SimpleGrid>
                             </Flex>
                         </Table.Td>
@@ -1002,15 +1005,15 @@ export default function Home() {
                         <Table.Td w='20%'>
                             <Flex justify="center" align="center" key={uuidv4()} gap={5}>
                                 <SimpleGrid key={uuidv4()} cols={3} spacing='xs' verticalSpacing={0}>
-                                    {displayResistance('Strike Resistance', Math.trunc(strikeRes * 100))}
-                                    {displayResistance('Ranged Resistance', Math.trunc(rangedRes * 100))}
-                                    {displayResistance('Tech Resistance', Math.trunc(techRes * 100))}
-                                    {displayResistance('Fire Resistance', Math.trunc(fireRes * 100))}
-                                    {displayResistance('Ice Resistance', Math.trunc(iceRes * 100))}
-                                    {displayResistance('Lightning Resistance', Math.trunc(lightningRes * 100))}
-                                    {displayResistance('Wind Resistance', Math.trunc(windRes * 100))}
-                                    {displayResistance('Light Resistance', Math.trunc(lightRes * 100))}
-                                    {displayResistance('Dark Resistance', Math.trunc(darkRes * 100))}
+                                    {displayResistance('Strike Resistance', strikeRes.times(100))}
+                                    {displayResistance('Ranged Resistance', rangedRes.times(100))}
+                                    {displayResistance('Tech Resistance', techRes.times(100))}
+                                    {displayResistance('Fire Resistance', fireRes.times(100))}
+                                    {displayResistance('Ice Resistance', iceRes.times(100))}
+                                    {displayResistance('Lightning Resistance', lightningRes.times(100))}
+                                    {displayResistance('Wind Resistance', windRes.times(100))}
+                                    {displayResistance('Light Resistance', lightRes.times(100))}
+                                    {displayResistance('Dark Resistance', darkRes.times(100))}
                                 </SimpleGrid>
                             </Flex>
                         </Table.Td>
@@ -1018,9 +1021,9 @@ export default function Home() {
                             <Flex justify="center" align="center" key={uuidv4()} gap={0}>
                                 <SimpleGrid key={uuidv4()} cols={2} spacing='xs' verticalSpacing={0}>
                                     <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[22]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(naturalPpRecovery * 100).toFixed(2)}%</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(naturalPpRecovery.times(100)).toFixed(2)}%</Flex>
                                     <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[23]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(activePpRecovery * 100).toFixed(2)}%</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(activePpRecovery.times(100)).toFixed(2)}%</Flex>
                                 </SimpleGrid>
                             </Flex>
                         </Table.Td>
@@ -1030,7 +1033,7 @@ export default function Home() {
                                     <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[25]}</Flex>
                                     <Flex justify="left" align="center" key={uuidv4()} gap={5}>{critRateIncrease.toFixed(2)}%</Flex>
                                     <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[26]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((critDmgBoost - 1) * 100).toFixed(2)}%</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(critDmgBoost.minus(1).times(100)).toFixed(2)}%</Flex>
                                 </SimpleGrid>
                             </Flex>
                         </Table.Td>
