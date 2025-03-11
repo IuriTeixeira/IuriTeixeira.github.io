@@ -4568,6 +4568,10 @@
             "Unique",
             "Ripper"
         ],
+        "Condition (English)": [
+            "Unique",
+            "Ripper"
+        ],
         "Restriction": "Weapon"
     },
     {
@@ -4587,6 +4591,10 @@
             "Increases damage against enemies weak to Ice based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
         "Effect": [
+            "Unique",
+            "Ripper"
+        ],
+        "Condition (English)": [
             "Unique",
             "Ripper"
         ],
@@ -4612,6 +4620,10 @@
             "Unique",
             "Ripper"
         ],
+        "Condition (English)": [
+            "Unique",
+            "Ripper"
+        ],
         "Restriction": "Weapon"
     },
     {
@@ -4631,6 +4643,10 @@
             "Increases damage against enemies weak to Wind based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
         "Effect": [
+            "Unique",
+            "Ripper"
+        ],
+        "Condition (English)": [
             "Unique",
             "Ripper"
         ],
@@ -4656,6 +4672,10 @@
             "Unique",
             "Ripper"
         ],
+        "Condition (English)": [
+            "Unique",
+            "Ripper"
+        ],
         "Restriction": "Weapon"
     },
     {
@@ -4675,6 +4695,10 @@
             "Increases damage against enemies weak to Dark based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
         "Effect": [
+            "Unique",
+            "Ripper"
+        ],
+        "Condition (English)": [
             "Unique",
             "Ripper"
         ],
@@ -4700,6 +4724,10 @@
             "Unique",
             "Slayer"
         ],
+        "Condition (English)": [
+            "Unique",
+            "Slayer"
+        ],
         "Restriction": "Weapon"
     },
     {
@@ -4719,6 +4747,10 @@
             "Increases damage against Draconians based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
         "Effect": [
+            "Unique",
+            "Slayer"
+        ],
+        "Condition (English)": [
             "Unique",
             "Slayer"
         ],
@@ -4744,6 +4776,10 @@
             "Unique",
             "Slayer"
         ],
+        "Condition (English)": [
+            "Unique",
+            "Slayer"
+        ],
         "Restriction": "Weapon"
     },
     {
@@ -4763,6 +4799,10 @@
             "Increases damage against Oceanids based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
         "Effect": [
+            "Unique",
+            "Slayer"
+        ],
+        "Condition (English)": [
             "Unique",
             "Slayer"
         ],
@@ -4788,6 +4828,10 @@
             "Unique",
             "Slayer"
         ],
+        "Condition (English)": [
+            "Unique",
+            "Slayer"
+        ],
         "Restriction": "Weapon"
     },
     {
@@ -4810,6 +4854,10 @@
             "Unique",
             "Slayer"
         ],
+        "Condition (English)": [
+            "Unique",
+            "Slayer"
+        ],
         "Restriction": "Weapon"
     },
     {
@@ -4829,6 +4877,10 @@
             "Increases damage against Luminmechs based on weapon rarity.\n★1-10: 12%\n★11-13: 7%\n★14: 3%\n★15: 1%"
         ],
         "Effect": [
+            "Unique",
+            "Slayer"
+        ],
+        "Condition (English)": [
             "Unique",
             "Slayer"
         ],
@@ -6331,7 +6383,7 @@
             "Increases damage every second to a maximum of 4% after 30 seconds."
         ],
         "Effect": [
-            "Time Based Conditional Damage Multiplier",
+            "Time Based Stacking Damage Multiplier",
             1.00133,
             1.04
         ]
@@ -7324,7 +7376,7 @@
             "While Moongleam, Leafgleam, or Shadowgleam are active, damage increases every second. Maxes out at 5% after 37.5 seconds."
         ],
         "Effect": [
-            "Time Based Conditional Damage Multiplier",
+            "Time Based Stacking Damage Multiplier",
             1.00133,
             1.05
         ],
@@ -7351,7 +7403,7 @@
             "While Moongleam, Leafgleam, or Shadowgleam are active, damage increases every second. Maxes out at 7% after 37.5 seconds."
         ],
         "Effect": [
-            "Time Based Conditional Damage Multiplier",
+            "Time Based Stacking Damage Multiplier",
             1.001866,
             1.07
         ],
@@ -8535,7 +8587,7 @@
             "While Petalgleam, Seagleam, or Snowgleam are active, damage increases every second. Maxes out at 5% after 37.5 seconds."
         ],
         "Effect": [
-            "Time Based Conditional Damage Multiplier",
+            "Time Based Stacking Damage Multiplier",
             0.00133,
             1.05
         ],
@@ -8562,7 +8614,7 @@
             "While Petalgleam, Seagleam, or Snowgleam are active, damage increases every second. Maxes out at 7% after 37.5 seconds."
         ],
         "Effect": [
-            "Time Based Conditional Damage Multiplier",
+            "Time Based Stacking Damage Multiplier",
             0.001866,
             1.07
         ],
