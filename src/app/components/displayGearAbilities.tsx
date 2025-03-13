@@ -3,12 +3,12 @@ import displayAbilities from "./displayAbilities"
 import { useLanguageContext } from "../language-provider";
 import abilityData from '../geardata/abilities.json'
 
-export default function displayGearAbilities(abilities: any[], conditionals: boolean[], setConditionals: any, stacks: number[], setStacks: any): any {
+export default function displayGearAbilities(abilities: any[], conditionals: boolean[], setConditionals: any, stacks: number[], setStacks: any, weaponAbilities:string[], rearAbilitiesConditionals:boolean[], setRearAbilitiesConditionals:any, armAbilitiesConditionals:boolean[], setArmAbilitiesConditionals:any, legAbilitiesConditionals:boolean[], setLegAbilitiesConditionals:any): any {
     const language = useLanguageContext()
     let loc: string[]
     let ab: any[] = []
     let abEffectCondCount: boolean[] = [false, false, false, false, false, false, false, false]
-
+    
     for (let i = 0; i < abilities.length; i++) {
         ab.push(abilityData.find(ab => ab['Name (English)'] === abilities[i]))
         if (ab[i]) {
@@ -27,12 +27,151 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
     function handleNumberInputChange(index: number) {
         //TODO
     }
+
     function handleCheckboxChange(index: number) {
         setConditionals(prevArray =>
             prevArray.map((value, cIndex) =>
                 cIndex === index ? !value : value
             )
         )
+        if (weaponAbilities[0] === 'S1:Red Petal Flash' ||
+            weaponAbilities[0] === 'S1:Blue Ocean Flash' ||
+            weaponAbilities[0] === 'S1:White Snow Flash' ||
+            weaponAbilities[0] === 'S1:Yellow Moon Flash' ||
+            weaponAbilities[0] === 'S1:Green Leaf Flash' ||
+            weaponAbilities[0] === 'S1:Black Shadow Flash') {
+            for (let i = 1; i < abilities.length; i++) {
+                if (ab[i]["Condition (English)"] && ab[i]["Condition (English)"].length > 1) {
+                    if (ab[i]["Condition (English)"][1].includes('Rainbow') ||
+                        ab[i]["Condition (English)"][1].includes('Nature') ||
+                        ab[i]["Condition (English)"][1].includes('Umbrageous')) {
+                        handleRainbowCheckboxChange(i)
+                    }
+                }
+            }
+        }
+    }
+
+    function handleRainbowCheckboxChange(index: number) {
+        setConditionals(prevArray =>
+            prevArray.map((value, cIndex) =>
+                cIndex === index ? !value : value
+            )
+        )
+        setRearAbilitiesConditionals(prevArray =>
+            prevArray.map((value, cIndex) =>
+                cIndex === index ? !value : value
+            )
+        )
+        setArmAbilitiesConditionals(prevArray =>
+            prevArray.map((value, cIndex) =>
+                cIndex === index ? !value : value
+            )
+        )
+        setLegAbilitiesConditionals(prevArray =>
+            prevArray.map((value, cIndex) =>
+                cIndex === index ? !value : value
+            )
+        )
+    }
+
+    let uniqueCondition: any[] = [null, null, null, null, null, null, null, null]
+    let conditionText: string[] = [null, null, null, null, null, null, null, null]
+    let checkRainbow: boolean = false
+    for (let i = 0; i < abilities.length; i++) {
+        if (ab[i]["Condition (English)"]) {
+            if (ab[i]["Condition (English)"][0] === 'Unique') {
+                switch (ab[i]["Condition (English)"][1]) {
+                    case 'Nature':
+                        switch (language.language) {
+                            case 'Global':
+                                conditionText[i] = 'Petalgleam, Seagleam, or Snowgleam is active.'
+                                break
+                            case 'JP':
+                                conditionText[i] = '花ノ赤閃・海ノ青閃・雪ノ白閃が発動中'
+                                break
+                            default:
+                                conditionText[i] = 'S1:Red Petal Flash, S1:Blue Ocean Flash, or S1:White Snow Flash is active.'
+                        }
+                        if (weaponAbilities[0] === 'S1:Red Petal Flash' ||
+                            weaponAbilities[0] === 'S1:Blue Ocean Flash' ||
+                            weaponAbilities[0] === 'S1:White Snow Flash') {
+                            checkRainbow = conditionals[0]
+                        } else {
+                            checkRainbow = false
+                        }
+                        uniqueCondition[i] =
+                            <Flex justify='center' align='flex-start' direction='row' gap={5}>
+                                <Checkbox
+                                    disabled
+                                    checked={checkRainbow}
+                                    onChange={() => handleRainbowCheckboxChange(i)}
+                                />
+                                {conditionText[i]}
+                            </Flex>
+                        break;
+                    case 'Umbrageous':
+                        switch (language.language) {
+                            case 'Global':
+                                conditionText[i] = 'Moongleam, Leafgleam, or Shadowgleam is active.'
+                                break
+                            case 'JP':
+                                conditionText[i] = '月ノ黄閃・葉ノ緑閃・影ノ黒閃が発動中'
+                                break
+                            default:
+                                conditionText[i] = 'S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash is active.'
+                        }
+                        if (weaponAbilities[0] === 'S1:Yellow Moon Flash' ||
+                            weaponAbilities[0] === 'S1:Green Leaf Flash' ||
+                            weaponAbilities[0] === 'S1:Black Shadow Flash') {
+                            checkRainbow = conditionals[0]
+                        } else {
+                            checkRainbow = false
+                        }
+                        uniqueCondition[i] =
+                            <Flex justify='center' align='flex-start' direction='row' gap={5}>
+                                <Checkbox
+                                    disabled
+                                    checked={checkRainbow}
+                                    onChange={() => handleRainbowCheckboxChange(i)}
+                                />
+                                {conditionText[i]}
+                            </Flex>
+                        break;
+                    case 'Rainbow':
+                        switch (language.language) {
+                            case 'Global':
+                                conditionText[i] = 'Petalgleam, Seagleam, Snowgleam, Moongleam, Leafgleam, or Shadowgleam is active.'
+                                break
+                            case 'JP':
+                                conditionText[i] = '花・海・葉・月・雪・影のいずれかが発動中与ダ'
+                                break
+                            default:
+                                conditionText[i] = 'S1:Red Petal Flash, S1:Blue Ocean Flash, S1:White Snow Flash, S1:Yellow Moon Flash, S1:Green Leaf Flash, or S1:Black Shadow Flash is active.'
+                        }
+                        if (weaponAbilities[0] === 'S1:Red Petal Flash' ||
+                            weaponAbilities[0] === 'S1:Blue Ocean Flash' ||
+                            weaponAbilities[0] === 'S1:White Snow Flash' ||
+                            weaponAbilities[0] === 'S1:Yellow Moon Flash' ||
+                            weaponAbilities[0] === 'S1:Green Leaf Flash' ||
+                            weaponAbilities[0] === 'S1:Black Shadow Flash') {
+                            checkRainbow = conditionals[0]
+                        } else {
+                            checkRainbow = false
+                        }
+                        uniqueCondition[i] =
+                            <Flex justify='center' align='flex-start' direction='row' gap={5}>
+                                <Checkbox
+                                    disabled
+                                    checked={checkRainbow}
+                                    onChange={() => handleRainbowCheckboxChange(i)}
+                                />
+                                {conditionText[i]}
+                            </Flex>
+                        break;
+                }
+            }
+        }
     }
 
     switch (language.language) {
@@ -43,7 +182,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
             loc = ['特殊能力追加', 'Ability Name', 'Active Conditions']
             break
         default:
-            loc = ['Special Abilities', 'Ability Name', 'Active Conditions',]
+            loc = ['Special Abilities', 'Ability Name', 'Active Conditions']
     }
     return (
         <Table verticalSpacing={2} withColumnBorders>
@@ -74,25 +213,34 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[0] &&
                                     ab[0]["Effect"] &&
                                     ab[0]["Effect"][0].includes("Conditional") &&
+                                    ab[0]["Condition (English)"][0] !== 'Unique' && 
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[0]}
                                             onChange={() => handleCheckboxChange(0)}
                                         />
-                                        {ab[0]["Condition (English)"] !== 'Unique' && ab[0]["Condition (English)"]}
+                                        {ab[0]["Condition (English)"]}
                                     </Flex>
+                                }
+                                {
+                                    ab[0] &&
+                                    ab[0]["Effect"] &&
+                                    ab[0]["Effect"][0].includes("Conditional") &&
+                                    ab[0]["Condition (English)"][0] === 'Unique' &&
+                                    uniqueCondition[0]
                                 }
                                 {
                                     ab[0] &&
                                     ab[0]["Effect"] &&
                                     typeof (ab[0]["Effect"][2]) === 'string' &&
                                     ab[0]["Effect"][2].includes("Conditional") &&
+                                    ab[0]["Condition (English)"][0] !== 'Unique' && 
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[0]}
                                             onChange={() => handleCheckboxChange(0)}
                                         />
-                                        {ab[0]["Condition (English)"] !== 'Unique' && ab[0]["Condition (English)"]}
+                                        {ab[0]["Condition (English)"]}
                                     </Flex>
                                 }
                                 {
@@ -104,7 +252,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                             checked={conditionals[0]}
                                             onChange={() => handleCheckboxChange(0)}
                                         />}
-                                        {ab[0]["Condition (English)"] !== 'Unique' && ab[0]["Condition (English)"]}
+                                        {ab[0]["Condition (English)"][0] !== 'Unique' && ab[0]["Condition (English)"]}
                                         {<NumberInput
                                             size='xs'
                                             w={70}
@@ -130,25 +278,34 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[1] &&
                                     ab[1]["Effect"] &&
                                     ab[1]["Effect"][0].includes("Conditional") &&
+                                    ab[1]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[1]}
                                             onChange={() => handleCheckboxChange(1)}
                                         />
-                                        {ab[1]["Condition (English)"] !== 'Unique' && ab[1]["Condition (English)"]}
+                                        {ab[1]["Condition (English)"]}
                                     </Flex>
+                                }
+                                {
+                                    ab[1] &&
+                                    ab[1]["Effect"] &&
+                                    ab[1]["Effect"][0].includes("Conditional") &&
+                                    ab[1]["Condition (English)"][0] === 'Unique' &&
+                                    uniqueCondition[1]
                                 }
                                 {
                                     ab[1] &&
                                     ab[1]["Effect"] &&
                                     typeof (ab[1]["Effect"][2]) === 'string' &&
                                     ab[1]["Effect"][2].includes("Conditional") &&
+                                    ab[1]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[1]}
                                             onChange={() => handleCheckboxChange(1)}
                                         />
-                                        {ab[1]["Condition (English)"] !== 'Unique' && ab[1]["Condition (English)"]}
+                                        {ab[1]["Condition (English)"]}
                                     </Flex>
                                 }
                                 {
@@ -160,7 +317,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                             checked={conditionals[1]}
                                             onChange={() => handleCheckboxChange(1)}
                                         />}
-                                        {ab[1]["Condition (English)"] !== 'Unique' && ab[1]["Condition (English)"]}
+                                        {ab[1]["Condition (English)"][0] !== 'Unique' && ab[1]["Condition (English)"]}
                                         {ab[1]["Name (English)"] !== 'S3:Immediate Brilliance' && <NumberInput
                                             size='xs'
                                             w={70}
@@ -186,25 +343,34 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[2] &&
                                     ab[2]["Effect"] &&
                                     ab[2]["Effect"][0].includes("Conditional") &&
+                                    ab[2]["Condition (English)"][0] !== 'Unique' && 
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[2]}
                                             onChange={() => handleCheckboxChange(2)}
                                         />
-                                        {ab[2]["Condition (English)"] !== 'Unique' && ab[2]["Condition (English)"]}
+                                        {ab[2]["Condition (English)"]}
                                     </Flex>
+                                }
+                                {
+                                    ab[2] &&
+                                    ab[2]["Effect"] &&
+                                    ab[2]["Effect"][0].includes("Conditional") &&
+                                    ab[2]["Condition (English)"][0] === 'Unique' &&
+                                    uniqueCondition[2]
                                 }
                                 {
                                     ab[2] &&
                                     ab[2]["Effect"] &&
                                     typeof (ab[2]["Effect"][2]) === 'string' &&
                                     ab[2]["Effect"][2].includes("Conditional") &&
+                                    ab[2]["Condition (English)"][0] !== 'Unique' && 
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[2]}
                                             onChange={() => handleCheckboxChange(2)}
                                         />
-                                        {ab[2]["Condition (English)"] !== 'Unique' && ab[2]["Condition (English)"]}
+                                        {ab[2]["Condition (English)"]}
                                     </Flex>
                                 }
                                 {
@@ -216,7 +382,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                             checked={conditionals[2]}
                                             onChange={() => handleCheckboxChange(2)}
                                         />}
-                                        {ab[2]["Condition (English)"] !== 'Unique' && ab[2]["Condition (English)"]}
+                                        {ab[2]["Condition (English)"][0] !== 'Unique' && ab[2]["Condition (English)"]}
                                         {<NumberInput
                                             size='xs'
                                             w={70}
@@ -242,25 +408,34 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[3] &&
                                     ab[3]["Effect"] &&
                                     ab[3]["Effect"][0].includes("Conditional") &&
+                                    ab[3]["Condition (English)"][0] !== 'Unique' && 
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[3]}
                                             onChange={() => handleCheckboxChange(3)}
                                         />
-                                        {ab[3]["Condition (English)"] !== 'Unique' && ab[3]["Condition (English)"]}
+                                        {ab[3]["Condition (English)"]}
                                     </Flex>
+                                }
+                                {
+                                    ab[3] &&
+                                    ab[3]["Effect"] &&
+                                    ab[3]["Effect"][0].includes("Conditional") &&
+                                    ab[3]["Condition (English)"][0] === 'Unique' &&
+                                    uniqueCondition[3]
                                 }
                                 {
                                     ab[3] &&
                                     ab[3]["Effect"] &&
                                     typeof (ab[3]["Effect"][2]) === 'string' &&
                                     ab[3]["Effect"][2].includes("Conditional") &&
+                                    ab[3]["Condition (English)"][0] !== 'Unique' && 
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[3]}
                                             onChange={() => handleCheckboxChange(3)}
                                         />
-                                        {ab[3]["Condition (English)"] !== 'Unique' && ab[3]["Condition (English)"]}
+                                        {ab[3]["Condition (English)"]}
                                     </Flex>
                                 }
                                 {
@@ -276,7 +451,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                             checked={conditionals[3]}
                                             onChange={() => handleCheckboxChange(3)}
                                         />}
-                                        {ab[3]["Condition (English)"] !== 'Unique' && ab[3]["Condition (English)"]}
+                                        {ab[3]["Condition (English)"][0] !== 'Unique' && ab[3]["Condition (English)"]}
                                         {ab[3]["Name (English)"] !== 'S3:Immediate Brilliance' && <NumberInput
                                             size='xs'
                                             w={70}
@@ -302,25 +477,34 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[4] &&
                                     ab[4]["Effect"] &&
                                     ab[4]["Effect"][0].includes("Conditional") &&
+                                    ab[4]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[4]}
                                             onChange={() => handleCheckboxChange(4)}
                                         />
-                                        {ab[4]["Condition (English)"] !== 'Unique' && ab[4]["Condition (English)"]}
+                                        {ab[4]["Condition (English)"]}
                                     </Flex>
+                                }
+                                {
+                                    ab[4] &&
+                                    ab[4]["Effect"] &&
+                                    ab[4]["Effect"][0].includes("Conditional") &&
+                                    ab[4]["Condition (English)"][0] === 'Unique' &&
+                                    uniqueCondition[4]
                                 }
                                 {
                                     ab[4] &&
                                     ab[4]["Effect"] &&
                                     typeof (ab[4]["Effect"][2]) === 'string' &&
                                     ab[4]["Effect"][2].includes("Conditional") &&
+                                    ab[4]["Condition (English)"][0] !== 'Unique' && 
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[4]}
                                             onChange={() => handleCheckboxChange(4)}
                                         />
-                                        {ab[4]["Condition (English)"] !== 'Unique' && ab[4]["Condition (English)"]}
+                                        {ab[4]["Condition (English)"]}
                                     </Flex>
                                 }
                                 {
@@ -336,7 +520,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                             checked={conditionals[4]}
                                             onChange={() => handleCheckboxChange(4)}
                                         />}
-                                        {ab[4]["Condition (English)"] !== 'Unique' && ab[4]["Condition (English)"]}
+                                        {ab[4]["Condition (English)"][0] !== 'Unique' && ab[4]["Condition (English)"]}
                                         {ab[4]["Name (English)"] !== 'S3:Immediate Brilliance' && <NumberInput
                                             size='xs'
                                             w={70}
@@ -363,25 +547,34 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[5] &&
                                     ab[5]["Effect"] &&
                                     ab[5]["Effect"][0].includes("Conditional") &&
+                                    ab[5]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[5]}
                                             onChange={() => handleCheckboxChange(5)}
                                         />
-                                        {ab[5]["Condition (English)"] !== 'Unique' && ab[5]["Condition (English)"]}
+                                        {ab[5]["Condition (English)"]}
                                     </Flex>
+                                }
+                                {
+                                    ab[5] &&
+                                    ab[5]["Effect"] &&
+                                    ab[5]["Effect"][0].includes("Conditional") &&
+                                    ab[5]["Condition (English)"][0] === 'Unique' &&
+                                    uniqueCondition[5]
                                 }
                                 {
                                     ab[5] &&
                                     ab[5]["Effect"] &&
                                     typeof (ab[5]["Effect"][2]) === 'string' &&
                                     ab[5]["Effect"][2].includes("Conditional") &&
+                                    ab[5]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[5]}
                                             onChange={() => handleCheckboxChange(5)}
                                         />
-                                        {ab[5]["Condition (English)"] !== 'Unique' && ab[5]["Condition (English)"]}
+                                        {ab[5]["Condition (English)"]}
                                     </Flex>
                                 }
                                 {
@@ -397,7 +590,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                             checked={conditionals[5]}
                                             onChange={() => handleCheckboxChange(5)}
                                         />}
-                                        {ab[5]["Condition (English)"] !== 'Unique' && ab[5]["Condition (English)"]}
+                                        {ab[5]["Condition (English)"][0] !== 'Unique' && ab[5]["Condition (English)"]}
                                         {ab[5]["Name (English)"] !== 'S3:Immediate Brilliance' && <NumberInput
                                             size='xs'
                                             w={70}
@@ -423,25 +616,34 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[6] &&
                                     ab[6]["Effect"] &&
                                     ab[6]["Effect"][0].includes("Conditional") &&
+                                    ab[6]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[6]}
                                             onChange={() => handleCheckboxChange(6)}
                                         />
-                                        {ab[6]["Condition (English)"] !== 'Unique' && ab[6]["Condition (English)"]}
+                                        {ab[6]["Condition (English)"]}
                                     </Flex>
+                                }
+                                {
+                                    ab[6] &&
+                                    ab[6]["Effect"] &&
+                                    ab[6]["Effect"][0].includes("Conditional") &&
+                                    ab[6]["Condition (English)"][0] === 'Unique' &&
+                                    uniqueCondition[6]
                                 }
                                 {
                                     ab[6] &&
                                     ab[6]["Effect"] &&
                                     typeof (ab[6]["Effect"][2]) === 'string' &&
                                     ab[6]["Effect"][2].includes("Conditional") &&
+                                    ab[6]["Condition (English)"][0] !== 'Unique' && 
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[6]}
                                             onChange={() => handleCheckboxChange(6)}
                                         />
-                                        {ab[6]["Condition (English)"] !== 'Unique' && ab[6]["Condition (English)"]}
+                                        {ab[6]["Condition (English)"]}
                                     </Flex>
                                 }
                                 {
@@ -457,7 +659,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                             checked={conditionals[6]}
                                             onChange={() => handleCheckboxChange(6)}
                                         />}
-                                        {ab[6]["Condition (English)"] !== 'Unique' && ab[6]["Condition (English)"]}
+                                        {ab[6]["Condition (English)"][0] !== 'Unique' && ab[6]["Condition (English)"]}
                                         {ab[6]["Name (English)"] !== 'S3:Immediate Brilliance' && <NumberInput
                                             size='xs'
                                             w={70}
@@ -483,25 +685,34 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[7] &&
                                     ab[7]["Effect"] &&
                                     ab[7]["Effect"][0].includes("Conditional") &&
+                                    ab[7]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[7]}
                                             onChange={() => handleCheckboxChange(7)}
                                         />
-                                        {ab[7]["Condition (English)"] !== 'Unique' && ab[7]["Condition (English)"]}
+                                        {ab[7]["Condition (English)"]}
                                     </Flex>
+                                }
+                                {
+                                    ab[7] &&
+                                    ab[7]["Effect"] &&
+                                    ab[7]["Effect"][0].includes("Conditional") &&
+                                    ab[7]["Condition (English)"][0] === 'Unique' &&
+                                    uniqueCondition[7]
                                 }
                                 {
                                     ab[7] &&
                                     ab[7]["Effect"] &&
                                     typeof (ab[7]["Effect"][2]) === 'string' &&
                                     ab[7]["Effect"][2].includes("Conditional") &&
+                                    ab[7]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[7]}
                                             onChange={() => handleCheckboxChange(7)}
                                         />
-                                        {ab[7]["Condition (English)"] !== 'Unique' && ab[7]["Condition (English)"]}
+                                        {ab[7]["Condition (English)"]}
                                     </Flex>
                                 }
                                 {
@@ -513,7 +724,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                             checked={conditionals[7]}
                                             onChange={() => handleCheckboxChange(7)}
                                         />}
-                                        {ab[7]["Condition (English)"] !== 'Unique' && ab[7]["Condition (English)"]}
+                                        {ab[7]["Condition (English)"][0] !== 'Unique' && ab[7]["Condition (English)"]}
                                         {ab[7]["Name (English)"] !== 'S3:Immediate Brilliance' && <NumberInput
                                             size='xs'
                                             w={70}

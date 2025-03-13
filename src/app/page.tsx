@@ -72,7 +72,7 @@ export default function Home() {
     const [naturalPpRecovery, setNaturalPpRecovery] = useState<Decimal>(new Decimal(1))
     const [activePpRecovery, setActivePpRecovery] = useState<Decimal>(new Decimal(1))
     const [ppConsumption, setPpConsumption] = useState<Decimal>(new Decimal(1))
-    const [abilityStats, setAbilityStats] = useState<Decimal[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num)))
+    const [abilityStats, setAbilityStats] = useState<Decimal[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num)))
     const [classBoosts, setClassBoosts] = useState<string[]>(classStats.filter(item => !item["Successor"]).map(item => item[`Name (${language.language})`]))
     const [weaponAbilitiesConditionals, setWeaponAbilitiesConditionals] = useState<boolean[]>([false, false, false, false, false, false, false, false])
     const [weaponAbilitiesStacks, setWeaponAbilitiesStacks] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0])
@@ -83,44 +83,44 @@ export default function Home() {
     const [legAbilitiesConditionals, setLegAbilitiesConditionals] = useState<boolean[]>([false, false, false, false, false, false, false, false])
     const [legAbilitiesStacks, setLegAbilitiesStacks] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0])
     const [weaponAbilities, setWeaponAbilities] = useState<string[]>([
-        'S1:Spirited Response',
-        'S2:Brilliant Intent',
-        'S3:Powering Intent',
-        'S4:Saint Shield',
-        'S5:Tethered Eclipse',
-        'Astral Soul',
-        'Ether Factor',
-        'Phrase Decay'
+        "S1:Red Petal Flash",
+        "S2:Nature's Skill",
+        "S3:Umbrageous Intent",
+        "S4:Harmonized Rainbow",
+        "S5:Tethered Eclipse",
+        "Astral Soul",
+        "Ether Factor",
+        "Phrase Decay"
     ])
     const [rearAbilities, setRearAbilities] = useState<string[]>([
-        'S6:Wise Skill',
-        'Ex-Ares Soul',
-        'Grace Stamina',
-        'Persona Reverie',
-        'Power V',
-        'Sentence Power',
-        'Lesser Stamina IV',
-        'ARKS Fever'
+        "S6:Rainbow's Shield",
+        "Ex-Ares Soul",
+        "Grace Stamina",
+        "Persona Reverie",
+        "Power V",
+        "Sentence Power",
+        "Lesser Stamina IV",
+        "ARKS Fever"
     ])
     const [armAbilities, setArmAbilities] = useState<string[]>([
-        'S7:S-ATK Up 2',
-        'Ex-Ares Soul',
-        'Grace Power',
-        'Persona Reverie',
-        'Mitra Glare',
-        'Power V',
-        'Sentence Power',
-        'ARKS Fever'
+        "S7:Rainbow's Skill",
+        "Ex-Ares Soul",
+        "Grace Power",
+        "Persona Reverie",
+        "Mitra Glare",
+        "Power V",
+        "Sentence Power",
+        "ARKS Fever"
     ])
     const [legAbilities, setLegAbilities] = useState<string[]>([
-        'S8:Sky Dance\'s Boon',
-        'Ex-Ares Soul',
-        'Grace Power',
-        'Persona Reverie',
-        'Varuna Glare',
-        'Power V',
-        'Sentence Power',
-        'ARKS Fever'
+        "S8:Rainbow's Decay",
+        "Ex-Ares Soul",
+        "Grace Power",
+        "Persona Reverie",
+        "Varuna Glare",
+        "Power V",
+        "Sentence Power",
+        "ARKS Fever"
     ])
 
     let weaponData: any = weapons.find(selectedWeapon => selectedWeapon["Name (English)"] === weapon)
@@ -232,49 +232,23 @@ export default function Home() {
         //15 = Wind Resistance
         //16 = Light Resistance
         //17 = Dark Resistance
-        //18 = Critical Hit Rate
-        //19 = Generic Damage Boost
-        //20 = Normal Attack Damage Boost
-        //21 = PA Damage Boost
-        //22 = Technique Damage Boost
-        //23 = Critical Damage Boost
-        //24 = Natural PP Recovery
-        //25 = Active PP Recovery
-        //26 = PP Consumption
-        //27 = Strike Damage Boost
-        //28 = Ranged Damage Boost
-        //29 = Tech Damage Boost
+        //18 = Base S-ATK
+        //19 = Base R-ATK
+        //20 = Base T-ATK
+        //21 = Critical Hit Rate
+        //22 = Generic Damage Boost
+        //23 = Strike Damage Boost
+        //24 = Ranged Damage Boost
+        //25 = Tech Damage Boost
+        //26 = Normal Attack Damage Boost
+        //27 = PA Damage Boost
+        //28 = Technique Damage Boost
+        //29 = Critical Damage Boost
+        //30 = Natural PP Recovery
+        //31 = Active PP Recovery
+        //32 = PP Consumption
         const abStats: number[] | Decimal[] = parseAbilities()
         setAbilityStats(abStats)
-        /* console.log(
-            'HP', abStats[0], '\n',
-            'PP', abStats[1], '\n',
-            'S-ATK', abStats[2], '\n',
-            'R-ATK', abStats[3], '\n',
-            'T-ATK', abStats[4], '\n',
-            'DEX', abStats[5], '\n',
-            'S-DEF', abStats[6], '\n',
-            'R-DEF', abStats[7], '\n',
-            'T-DEF', abStats[8], '\n',
-            'S-RES', abStats[9], '\n',
-            'R-RES', abStats[10], '\n',
-            'T-RES', abStats[11], '\n',
-            'Fire RES', abStats[12], '\n',
-            'Ice RES', abStats[13], '\n',
-            'Elec RES', abStats[14], '\n',
-            'Wind RES', abStats[15], '\n',
-            'Light RES', abStats[16], '\n',
-            'Dark RES', abStats[17], '\n',
-            'Crit Rate', abStats[18], '\n',
-            'dmg boost', abStats[19], '\n',
-            'normal atk', abStats[20], '\n',
-            'pa dmg', abStats[21], '\n',
-            'tech dmg', abStats[22], '\n',
-            'crit dmg', abStats[23], '\n',
-            'N PP', abStats[24], '\n',
-            'A PP', abStats[25], '\n',
-            'PP cost', abStats[26], '\n'
-        ) */
 
         setClassBoosts(classboosts)
 
@@ -288,6 +262,11 @@ export default function Home() {
         //7 = R-DEF
         //8 = T-DEF
         let bonusBaseStats: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+        //adding base stats from unit SSAs
+        bonusBaseStats[2] += abStats[18].toNumber()
+        bonusBaseStats[3] += abStats[19].toNumber()
+        bonusBaseStats[4] += abStats[20].toNumber()
 
         if (classboosts.includes('Hunter')) {
             bonusBaseStats[0] += 50
@@ -458,18 +437,17 @@ export default function Home() {
         setLightRes(new Decimal(abStats[16].plus((rearData["Light Resistance"] || 0) / 100).plus((armData["Light Resistance"] || 0) / 100).plus((legData["Light Resistance"] || 0) / 100)))
         setDarkRes(new Decimal(abStats[17].plus((rearData["Dark Resistance"] || 0) / 100).plus((armData["Dark Resistance"] || 0) / 100).plus((legData["Dark Resistance"] || 0) / 100)))
 
-
-        let totalCritRateIncrease: Decimal = abStats[18].plus(5)
-        let totalStrikeDmgBoost: Decimal = abStats[19].times(abStats[27])
-        let totalRangedDmgBoost: Decimal = abStats[19].times(abStats[28])
-        let totalTechDmgBoost: Decimal = abStats[19].times(abStats[29])
-        let totalNormalAtkDmgBoost: Decimal = abStats[20]
-        let totalPaDmgBoost: Decimal = abStats[21]
-        let totalTechniqueDmgBoost: Decimal = abStats[22]
-        let totalCritDmgBoost: Decimal = abStats[23]
-        let totalNaturalPpRecovery: Decimal = abStats[24]
-        let totalActivePpRecovery: Decimal = abStats[25]
-        let totalPpConsumption: Decimal = abStats[26]
+        let totalCritRateIncrease: Decimal = abStats[21].plus(5)
+        let totalStrikeDmgBoost: Decimal = abStats[22].times(abStats[23])
+        let totalRangedDmgBoost: Decimal = abStats[22].times(abStats[24])
+        let totalTechDmgBoost: Decimal = abStats[22].times(abStats[25])
+        let totalNormalAtkDmgBoost: Decimal = abStats[26]
+        let totalPaDmgBoost: Decimal = abStats[27]
+        let totalTechniqueDmgBoost: Decimal = abStats[28]
+        let totalCritDmgBoost: Decimal = abStats[29]
+        let totalNaturalPpRecovery: Decimal = abStats[30]
+        let totalActivePpRecovery: Decimal = abStats[31]
+        let totalPpConsumption: Decimal = abStats[32]
 
         setCritRateIncrease(totalCritRateIncrease)
         setStrikeDmgBoost(totalStrikeDmgBoost)
@@ -508,10 +486,6 @@ export default function Home() {
     //updates ability conditional values when toggling ability conditionals
     useEffect(() => {
         updateStats(classBoosts, magType)
-        /* console.log(weaponAbilitiesConditionals, '\n',
-            rearAbilitiesConditionals, '\n',
-            armAbilitiesConditionals, '\n',
-            legAbilitiesConditionals) */
     }, [weaponAbilitiesConditionals, rearAbilitiesConditionals, armAbilitiesConditionals, legAbilitiesConditionals]);
 
     let loc: string[]
@@ -623,56 +597,56 @@ export default function Home() {
     }
 
     function parseAbilities(): Decimal[] {
-        let weaponAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
-        let rearAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
-        let armAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
-        let legAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let weaponAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let rearAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let armAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let legAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
         for (let i = 0; i < weaponAbilities.length; i++) {
             const parsedAbility: Decimal[] = parseAbility(weaponAbilities[i], 'Weapon', i)
             for (let j = 0; j < weaponAbStats.length; j++) {
-                if (j < 18) weaponAbStats[j] = weaponAbStats[j].plus(parsedAbility[j])
+                if (j < 22) weaponAbStats[j] = weaponAbStats[j].plus(parsedAbility[j])
                 else weaponAbStats[j] = weaponAbStats[j].times(parsedAbility[j])
             }
         }
-        if(weaponAbilities.includes('S1:Strike Boost')){
-            let strikeCount:number = weaponAbStats[2].dividedBy(60).trunc().dividedBy(100).toNumber()
-            if(weaponAbStats[2].greaterThanOrEqualTo(200)) strikeCount += 0.02
+        if (weaponAbilities.includes('S1:Strike Boost')) {
+            let strikeCount: number = weaponAbStats[2].dividedBy(60).trunc().dividedBy(100).toNumber()
+            if (weaponAbStats[2].greaterThanOrEqualTo(200)) strikeCount += 0.02
             weaponAbStats[27] = weaponAbStats[27].times(strikeCount)
         }
-        if(weaponAbilities.includes('S1:Shoot Boost')){
-            let strikeCount:number = weaponAbStats[3].dividedBy(60).trunc().dividedBy(100).toNumber()
-            if(weaponAbStats[3].greaterThanOrEqualTo(200)) strikeCount += 0.02
+        if (weaponAbilities.includes('S1:Shoot Boost')) {
+            let strikeCount: number = weaponAbStats[3].dividedBy(60).trunc().dividedBy(100).toNumber()
+            if (weaponAbStats[3].greaterThanOrEqualTo(200)) strikeCount += 0.02
             weaponAbStats[28] = weaponAbStats[28].times(strikeCount)
         }
-        if(weaponAbilities.includes('S1:Technique Boost')){
-            let strikeCount:number = weaponAbStats[4].dividedBy(60).trunc().dividedBy(100).toNumber()
-            if(weaponAbStats[4].greaterThanOrEqualTo(200)) strikeCount += 0.02
+        if (weaponAbilities.includes('S1:Technique Boost')) {
+            let strikeCount: number = weaponAbStats[4].dividedBy(60).trunc().dividedBy(100).toNumber()
+            if (weaponAbStats[4].greaterThanOrEqualTo(200)) strikeCount += 0.02
             weaponAbStats[29] = weaponAbStats[29].times(strikeCount)
         }
         for (let i = 0; i < rearAbilities.length; i++) {
             const parsedAbility: Decimal[] = parseAbility(rearAbilities[i], 'Rear', i)
             for (let j = 0; j < rearAbStats.length; j++) {
-                if (j < 18) rearAbStats[j] = rearAbStats[j].plus(parsedAbility[j])
+                if (j < 22) rearAbStats[j] = rearAbStats[j].plus(parsedAbility[j])
                 else rearAbStats[j] = rearAbStats[j].times(parsedAbility[j])
             }
         }
         for (let i = 0; i < armAbilities.length; i++) {
             const parsedAbility: Decimal[] = parseAbility(armAbilities[i], 'Arm', i)
             for (let j = 0; j < armAbStats.length; j++) {
-                if (j < 18) armAbStats[j] = armAbStats[j].plus(parsedAbility[j])
+                if (j < 22) armAbStats[j] = armAbStats[j].plus(parsedAbility[j])
                 else armAbStats[j] = armAbStats[j].times(parsedAbility[j])
             }
         }
         for (let i = 0; i < legAbilities.length; i++) {
             const parsedAbility: Decimal[] = parseAbility(legAbilities[i], 'Leg', i)
             for (let j = 0; j < legAbStats.length; j++) {
-                if (j < 18) legAbStats[j] = legAbStats[j].plus(parsedAbility[j])
+                if (j < 22) legAbStats[j] = legAbStats[j].plus(parsedAbility[j])
                 else legAbStats[j] = legAbStats[j].times(parsedAbility[j])
             }
         }
-        let returnValue: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let returnValue: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
         for (let i = 0; i < weaponAbStats.length; i++) {
-            if (i < 18) returnValue[i] = returnValue[i].plus(weaponAbStats[i]).plus(rearAbStats[i]).plus(armAbStats[i]).plus(legAbStats[i])
+            if (i < 22) returnValue[i] = returnValue[i].plus(weaponAbStats[i]).plus(rearAbStats[i]).plus(armAbStats[i]).plus(legAbStats[i])
             else returnValue[i] = returnValue[i].times(weaponAbStats[i]).times(rearAbStats[i]).times(armAbStats[i]).times(legAbStats[i])
         }
         return returnValue
@@ -699,8 +673,14 @@ export default function Home() {
         let windres: number = 0;
         let lightres: number = 0;
         let darkres: number = 0;
+        let basesatk: number = 0;
+        let baseratk: number = 0;
+        let basetatk: number = 0;
         let critrateincrease: number = 0;
         let dmgboost: Decimal = new Decimal(1);
+        let strikeatkdmgboost: Decimal = new Decimal(1);
+        let rangedatkdmgboost: Decimal = new Decimal(1);
+        let techatkdmgboost: Decimal = new Decimal(1);
         let normaldmgboost: Decimal = new Decimal(1);
         let padmgboost: Decimal = new Decimal(1);
         let techdmgboost: Decimal = new Decimal(1);
@@ -708,9 +688,6 @@ export default function Home() {
         let naturalpprecovery: Decimal = new Decimal(1);
         let activepprecovery: Decimal = new Decimal(1);
         let ppconsumption: Decimal = new Decimal(1);
-        let strikeatkdmgboost: Decimal = new Decimal(1);
-        let rangedatkdmgboost: Decimal = new Decimal(1);
-        let techatkdmgboost: Decimal = new Decimal(1);
 
         if (ab) {
             if (ab["Effect (English)"][0]) {
@@ -853,7 +830,7 @@ export default function Home() {
                                 case 'Augment Intent 2':
                                     let dmgMultiplier: number
                                     let slotMultiplier: number
-                                    if(ab["Effect"][i + 1] === 'Augment Intent 2') slotMultiplier = 0.75
+                                    if (ab["Effect"][i + 1] === 'Augment Intent 2') slotMultiplier = 0.75
                                     else slotMultiplier = 0.5
                                     switch (gearType) {
                                         case 'Weapon':
@@ -969,6 +946,18 @@ export default function Home() {
                                         ppconsumption = ppconsumption.times(Number(ab["Effect"][i + 1]))
                                         i++
                                         break
+                                    case 'Base S-ATK':
+                                        basesatk += Number(ab["Effect"][i + 1])
+                                        i++
+                                        break;
+                                    case 'Base R-ATK':
+                                        baseratk += Number(ab["Effect"][i + 1])
+                                        i++
+                                        break;
+                                    case 'Base T-ATK':
+                                        basetatk += Number(ab["Effect"][i + 1])
+                                        i++
+                                        break;
                                     default:
                                         break
                                 }
@@ -978,7 +967,7 @@ export default function Home() {
                 }
             }
         }
-        const returnValue: Decimal[] = [hp, pp, satk, ratk, tatk, dex, sdef, rdef, tdef, sres, rres, tres, fireres, iceres, lightningres, windres, lightres, darkres, critrateincrease, dmgboost, normaldmgboost, padmgboost, techdmgboost, critdmgboost, naturalpprecovery, activepprecovery, ppconsumption].map(num => new Decimal(num));
+        const returnValue: Decimal[] = [hp, pp, satk, ratk, tatk, dex, sdef, rdef, tdef, sres, rres, tres, fireres, iceres, lightningres, windres, lightres, darkres, basesatk, baseratk, basetatk, critrateincrease, dmgboost, strikeatkdmgboost, rangedatkdmgboost, techatkdmgboost, normaldmgboost, padmgboost, techdmgboost, critdmgboost, naturalpprecovery, activepprecovery, ppconsumption].map(num => new Decimal(num));
         return returnValue;
     }
 
@@ -1198,10 +1187,10 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(weaponAbilities, weaponAbilitiesConditionals, setWeaponAbilitiesConditionals, weaponAbilitiesStacks, setWeaponAbilitiesStacks)}
+                            {displayGearAbilities(weaponAbilities, weaponAbilitiesConditionals, setWeaponAbilitiesConditionals, weaponAbilitiesStacks, setWeaponAbilitiesStacks, weaponAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, armAbilitiesConditionals, setArmAbilitiesConditionals, legAbilitiesConditionals, setLegAbilitiesConditionals)}
                         </Table.Td>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(rearAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, rearAbilitiesStacks, setRearAbilitiesStacks)}
+                            {displayGearAbilities(rearAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, rearAbilitiesStacks, setRearAbilitiesStacks, weaponAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, armAbilitiesConditionals, setArmAbilitiesConditionals, legAbilitiesConditionals, setLegAbilitiesConditionals)}
                         </Table.Td>
                     </Table.Tr>
                     <Table.Tr>
@@ -1232,10 +1221,10 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(armAbilities, armAbilitiesConditionals, setArmAbilitiesConditionals, armAbilitiesStacks, setArmAbilitiesStacks)}
+                            {displayGearAbilities(armAbilities, armAbilitiesConditionals, setArmAbilitiesConditionals, armAbilitiesStacks, setArmAbilitiesStacks, weaponAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, armAbilitiesConditionals, setArmAbilitiesConditionals, legAbilitiesConditionals, setLegAbilitiesConditionals)}
                         </Table.Td>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(legAbilities, legAbilitiesConditionals, setLegAbilitiesConditionals, legAbilitiesStacks, setLegAbilitiesStacks)}
+                            {displayGearAbilities(legAbilities, legAbilitiesConditionals, setLegAbilitiesConditionals, legAbilitiesStacks, setLegAbilitiesStacks, weaponAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, armAbilitiesConditionals, setArmAbilitiesConditionals, legAbilitiesConditionals, setLegAbilitiesConditionals)}
                         </Table.Td>
                     </Table.Tr>
                 </Table.Tbody>

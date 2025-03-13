@@ -6563,7 +6563,7 @@
         ],
         "Condition (English)": [
             "Unique",
-            "Collaborator Liberator"
+            "Collaborator Liberator 2"
         ]
     },
     {
@@ -7225,11 +7225,11 @@
         ],
         "Effect (Global)": [
             null,
-            "While Petalgleam, Seagleam, or Snowgleam are active, damage is increased by 3%."
+            "While Petalgleam, Seagleam, or Snowgleam are active, increases Critical Hit Rate by 20%."
         ],
         "Effect": [
-            "Conditional Damage Multiplier",
-            1.03
+            "Conditional Critical Hit Rate Increase",
+            20
         ],
         "Condition (English)": [
             "Unique",
@@ -7304,6 +7304,10 @@
         "Effect (Global)": [
             null,
             "While Petalgleam, Seagleam, or Snowgleam are active, recover 2% of max HP every second."
+        ],
+        "Condition (English)": [
+            "Unique",
+            "Nature"
         ]
     },
     {
@@ -7506,6 +7510,10 @@
         "Effect (Global)": [
             null,
             "While Petalgleam, Seagleam, Snowgleam, Moongleam, Leafgleam, or Shadowgleam are active, recover 3% max HP every second."
+        ],
+        "Condition (English)": [
+            "Unique",
+            "Rainbow"
         ]
     },
     {
@@ -8639,6 +8647,10 @@
         "Effect (Global)": [
             null,
             "While Moongleam, Leafgleam, or Shadowgleam are active, recover 2% of max HP every second."
+        ],
+        "Condition (English)": [
+            "Unique",
+            "Umbrageous"
         ]
     },
     {
@@ -10551,7 +10563,7 @@
             "MEL Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base S-ATK Up",
+            "Base S-ATK",
             30
         ]
     },
@@ -10573,7 +10585,7 @@
             "RNG Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base R-ATK Up",
+            "Base R-ATK",
             30
         ]
     },
@@ -10595,7 +10607,7 @@
             "TEC Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base T-ATK Up",
+            "Base T-ATK",
             30
         ]
     },
@@ -10843,11 +10855,11 @@
             "MEL Pwr +25, RNG Pwr +25, TEC Pwr +25\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base S-ATK Up",
+            "Base S-ATK",
             25,
-            "Base R-ATK Up",
+            "Base R-ATK",
             25,
-            "Base T-ATK Up",
+            "Base T-ATK",
             25
         ]
     },
@@ -10869,11 +10881,11 @@
             "MEL Pwr +45, RNG Pwr +45, TEC Pwr +45\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base S-ATK Up",
+            "Base S-ATK",
             25,
-            "Base R-ATK Up",
+            "Base R-ATK",
             25,
-            "Base T-ATK Up",
+            "Base T-ATK",
             25
         ]
     },
@@ -10895,7 +10907,7 @@
             "MEL Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base S-ATK Up",
+            "Base S-ATK",
             30
         ]
     },
@@ -10917,7 +10929,7 @@
             "MEL Pwr +50\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base S-ATK Up",
+            "Base S-ATK",
             50
         ]
     },
@@ -10939,7 +10951,7 @@
             "RNG Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base R-ATK Up",
+            "Base R-ATK",
             30
         ]
     },
@@ -10961,7 +10973,7 @@
             "RNG Pwr +50\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base R-ATK Up",
+            "Base R-ATK",
             50
         ]
     },
@@ -10983,7 +10995,7 @@
             "TEC Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base T-ATK Up",
+            "Base T-ATK",
             30
         ]
     },
@@ -11005,7 +11017,7 @@
             "TEC Pwr +50\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base T-ATK Up",
+            "Base T-ATK",
             50
         ]
     },
@@ -11228,7 +11240,7 @@
             "MEL Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base S-ATK Up",
+            "Base S-ATK",
             30
         ]
     },
@@ -11250,7 +11262,7 @@
             "RNG Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base R-ATK Up",
+            "Base R-ATK",
             30
         ]
     },
@@ -11272,7 +11284,7 @@
             "TEC Pwr +30\nThis effect is considered a base stat and, as such, is affected by Shifta."
         ],
         "Effect": [
-            "Base T-ATK Up",
+            "Base T-ATK",
             30
         ]
     },
@@ -11328,6 +11340,10 @@
         "Effect (Global)": [
             null,
             "Attacks inflict random Status Effects while S1:Petalgleam, S1:Seagleam, S1:Snowgleam, S1:Moongleam, S1:Leafgleam, or S1:Shadowgleam are active."
+        ],
+        "Condition (English)": [
+            "Unique",
+            "Rainbow"
         ]
     }
 ]
