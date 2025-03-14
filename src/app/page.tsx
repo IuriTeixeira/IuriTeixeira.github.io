@@ -1187,10 +1187,10 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(weaponAbilities, weaponAbilitiesConditionals, setWeaponAbilitiesConditionals, weaponAbilitiesStacks, setWeaponAbilitiesStacks, weaponAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, armAbilitiesConditionals, setArmAbilitiesConditionals, legAbilitiesConditionals, setLegAbilitiesConditionals)}
+                            {displayGearAbilities(weaponAbilities, weaponAbilitiesConditionals, setWeaponAbilitiesConditionals, weaponAbilitiesStacks, setWeaponAbilitiesStacks, weaponAbilities, weaponAbilitiesConditionals)}
                         </Table.Td>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(rearAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, rearAbilitiesStacks, setRearAbilitiesStacks, weaponAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, armAbilitiesConditionals, setArmAbilitiesConditionals, legAbilitiesConditionals, setLegAbilitiesConditionals)}
+                            {displayGearAbilities(rearAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, rearAbilitiesStacks, setRearAbilitiesStacks, weaponAbilities, weaponAbilitiesConditionals)}
                         </Table.Td>
                     </Table.Tr>
                     <Table.Tr>
@@ -1221,10 +1221,10 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(armAbilities, armAbilitiesConditionals, setArmAbilitiesConditionals, armAbilitiesStacks, setArmAbilitiesStacks, weaponAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, armAbilitiesConditionals, setArmAbilitiesConditionals, legAbilitiesConditionals, setLegAbilitiesConditionals)}
+                            {displayGearAbilities(armAbilities, armAbilitiesConditionals, setArmAbilitiesConditionals, armAbilitiesStacks, setArmAbilitiesStacks, weaponAbilities, weaponAbilitiesConditionals)}
                         </Table.Td>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(legAbilities, legAbilitiesConditionals, setLegAbilitiesConditionals, legAbilitiesStacks, setLegAbilitiesStacks, weaponAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, armAbilitiesConditionals, setArmAbilitiesConditionals, legAbilitiesConditionals, setLegAbilitiesConditionals)}
+                            {displayGearAbilities(legAbilities, legAbilitiesConditionals, setLegAbilitiesConditionals, legAbilitiesStacks, setLegAbilitiesStacks, weaponAbilities, weaponAbilitiesConditionals)}
                         </Table.Td>
                     </Table.Tr>
                 </Table.Tbody>

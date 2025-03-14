@@ -2,13 +2,51 @@ import { Flex, Table, Button, Checkbox, NumberInput } from "@mantine/core"
 import displayAbilities from "./displayAbilities"
 import { useLanguageContext } from "../language-provider";
 import abilityData from '../geardata/abilities.json'
+import { useEffect } from "react";
 
-export default function displayGearAbilities(abilities: any[], conditionals: boolean[], setConditionals: any, stacks: number[], setStacks: any, weaponAbilities:string[], rearAbilitiesConditionals:boolean[], setRearAbilitiesConditionals:any, armAbilitiesConditionals:boolean[], setArmAbilitiesConditionals:any, legAbilitiesConditionals:boolean[], setLegAbilitiesConditionals:any): any {
+export default function displayGearAbilities(abilities: any[], conditionals: boolean[], setConditionals: any, stacks: number[], setStacks: any, weaponAbilities: string[], weaponAbilitiesConditionals: boolean[]): any {
     const language = useLanguageContext()
     let loc: string[]
     let ab: any[] = []
     let abEffectCondCount: boolean[] = [false, false, false, false, false, false, false, false]
-    
+
+    useEffect(() => {
+        if (weaponAbilities[0] === 'S1:Red Petal Flash' ||
+            weaponAbilities[0] === 'S1:Blue Ocean Flash' ||
+            weaponAbilities[0] === 'S1:White Snow Flash' ||
+            weaponAbilities[0] === 'S1:Yellow Moon Flash' ||
+            weaponAbilities[0] === 'S1:Green Leaf Flash' ||
+            weaponAbilities[0] === 'S1:Black Shadow Flash') {
+            for (let i = 0; i < abilities.length; i++) {
+                if (ab[i]["Condition (English)"] && ab[i]["Condition (English)"].length > 1) {
+                    if (ab[i]["Condition (English)"][1].includes('Rainbow') ||
+                        ab[i]["Condition (English)"][1].includes('Nature') ||
+                        ab[i]["Condition (English)"][1].includes('Umbrageous')) {
+                        switch (ab[i]["Condition (English)"][1]) {
+                            case 'Nature':
+                                if (weaponAbilities[0] === 'S1:Red Petal Flash' ||
+                                    weaponAbilities[0] === 'S1:Blue Ocean Flash' ||
+                                    weaponAbilities[0] === 'S1:White Snow Flash') {
+                                    handleRainbowCheckboxChange(i)
+                                }
+                                break
+                            case 'Umbrageous':
+                                if (weaponAbilities[0] === 'S1:Yellow Moon Flash' ||
+                                    weaponAbilities[0] === 'S1:Green Leaf Flash' ||
+                                    weaponAbilities[0] === 'S1:Black Shadow Flash') {
+                                    handleRainbowCheckboxChange(i)
+                                }
+                                break
+                            case 'Rainbow':
+                                handleRainbowCheckboxChange(i)
+                                break
+                        }
+                    }
+                }
+            }
+        }
+    }, [weaponAbilities[0], weaponAbilitiesConditionals[0]]);
+
     for (let i = 0; i < abilities.length; i++) {
         ab.push(abilityData.find(ab => ab['Name (English)'] === abilities[i]))
         if (ab[i]) {
@@ -34,43 +72,12 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                 cIndex === index ? !value : value
             )
         )
-        if (weaponAbilities[0] === 'S1:Red Petal Flash' ||
-            weaponAbilities[0] === 'S1:Blue Ocean Flash' ||
-            weaponAbilities[0] === 'S1:White Snow Flash' ||
-            weaponAbilities[0] === 'S1:Yellow Moon Flash' ||
-            weaponAbilities[0] === 'S1:Green Leaf Flash' ||
-            weaponAbilities[0] === 'S1:Black Shadow Flash') {
-            for (let i = 1; i < abilities.length; i++) {
-                if (ab[i]["Condition (English)"] && ab[i]["Condition (English)"].length > 1) {
-                    if (ab[i]["Condition (English)"][1].includes('Rainbow') ||
-                        ab[i]["Condition (English)"][1].includes('Nature') ||
-                        ab[i]["Condition (English)"][1].includes('Umbrageous')) {
-                        handleRainbowCheckboxChange(i)
-                    }
-                }
-            }
-        }
     }
 
     function handleRainbowCheckboxChange(index: number) {
         setConditionals(prevArray =>
             prevArray.map((value, cIndex) =>
-                cIndex === index ? !value : value
-            )
-        )
-        setRearAbilitiesConditionals(prevArray =>
-            prevArray.map((value, cIndex) =>
-                cIndex === index ? !value : value
-            )
-        )
-        setArmAbilitiesConditionals(prevArray =>
-            prevArray.map((value, cIndex) =>
-                cIndex === index ? !value : value
-            )
-        )
-        setLegAbilitiesConditionals(prevArray =>
-            prevArray.map((value, cIndex) =>
-                cIndex === index ? !value : value
+                cIndex === index ? weaponAbilitiesConditionals[0] : value
             )
         )
     }
@@ -96,7 +103,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                         if (weaponAbilities[0] === 'S1:Red Petal Flash' ||
                             weaponAbilities[0] === 'S1:Blue Ocean Flash' ||
                             weaponAbilities[0] === 'S1:White Snow Flash') {
-                            checkRainbow = conditionals[0]
+                            checkRainbow = weaponAbilitiesConditionals[0]
                         } else {
                             checkRainbow = false
                         }
@@ -213,7 +220,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[0] &&
                                     ab[0]["Effect"] &&
                                     ab[0]["Effect"][0].includes("Conditional") &&
-                                    ab[0]["Condition (English)"][0] !== 'Unique' && 
+                                    ab[0]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[0]}
@@ -234,7 +241,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[0]["Effect"] &&
                                     typeof (ab[0]["Effect"][2]) === 'string' &&
                                     ab[0]["Effect"][2].includes("Conditional") &&
-                                    ab[0]["Condition (English)"][0] !== 'Unique' && 
+                                    ab[0]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[0]}
@@ -343,7 +350,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[2] &&
                                     ab[2]["Effect"] &&
                                     ab[2]["Effect"][0].includes("Conditional") &&
-                                    ab[2]["Condition (English)"][0] !== 'Unique' && 
+                                    ab[2]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[2]}
@@ -364,7 +371,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[2]["Effect"] &&
                                     typeof (ab[2]["Effect"][2]) === 'string' &&
                                     ab[2]["Effect"][2].includes("Conditional") &&
-                                    ab[2]["Condition (English)"][0] !== 'Unique' && 
+                                    ab[2]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[2]}
@@ -408,7 +415,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[3] &&
                                     ab[3]["Effect"] &&
                                     ab[3]["Effect"][0].includes("Conditional") &&
-                                    ab[3]["Condition (English)"][0] !== 'Unique' && 
+                                    ab[3]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[3]}
@@ -429,7 +436,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[3]["Effect"] &&
                                     typeof (ab[3]["Effect"][2]) === 'string' &&
                                     ab[3]["Effect"][2].includes("Conditional") &&
-                                    ab[3]["Condition (English)"][0] !== 'Unique' && 
+                                    ab[3]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[3]}
@@ -498,7 +505,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[4]["Effect"] &&
                                     typeof (ab[4]["Effect"][2]) === 'string' &&
                                     ab[4]["Effect"][2].includes("Conditional") &&
-                                    ab[4]["Condition (English)"][0] !== 'Unique' && 
+                                    ab[4]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[4]}
@@ -637,7 +644,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                     ab[6]["Effect"] &&
                                     typeof (ab[6]["Effect"][2]) === 'string' &&
                                     ab[6]["Effect"][2].includes("Conditional") &&
-                                    ab[6]["Condition (English)"][0] !== 'Unique' && 
+                                    ab[6]["Condition (English)"][0] !== 'Unique' &&
                                     <Flex justify='center' align='flex-start' direction='row' gap={5}>
                                         <Checkbox
                                             checked={conditionals[6]}
