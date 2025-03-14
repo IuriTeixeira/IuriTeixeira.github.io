@@ -10791,8 +10791,7 @@
             "Grants 20% chance to reduce damage taken to 1 while S1:Petalgleam, S1:Seagleam, S1:Snowgleam, S1:Moongleam, S1:Leafgleam, or S1:Shadowgleam are active."
         ],
         "Effect": [
-            "Conditional Damage Taken Multiplier",
-            0
+            "Dummy Conditional"
         ],
         "Condition (English)": [
             "Unique",
@@ -11340,6 +11339,9 @@
         "Effect (Global)": [
             null,
             "Attacks inflict random Status Effects while S1:Petalgleam, S1:Seagleam, S1:Snowgleam, S1:Moongleam, S1:Leafgleam, or S1:Shadowgleam are active."
+        ],
+        "Effect": [
+            "Dummy Conditional"
         ],
         "Condition (English)": [
             "Unique",
