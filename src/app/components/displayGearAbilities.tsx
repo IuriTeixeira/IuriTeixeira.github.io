@@ -66,6 +66,10 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
         //TODO
     }
 
+    function handleVigorousResponseInputChange(index: number){
+        //TODO
+    }
+
     function handleCheckboxChange(index: number) {
         setConditionals(prevArray =>
             prevArray.map((value, cIndex) =>
@@ -248,6 +252,28 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                                             onChange={() => handleCheckboxChange(0)}
                                         />
                                         {ab[0]["Condition (English)"]}
+                                    </Flex>
+                                }
+                                {
+                                    ab[0] &&
+                                    ab[0]["Effect"] &&
+                                    ab[0]["Effect"][0].includes("Unique") &&
+                                    ab[0]["Effect"][1].includes("Vigorous Response") &&
+                                    <Flex justify='center' align='center' direction='row' gap={5}>
+                                        {<Checkbox
+                                            checked={conditionals[0]}
+                                            onChange={() => handleCheckboxChange(0)}
+                                        />}
+                                        {ab[0]["Condition (English)"][0] !== 'Unique' && ab[0]["Condition (English)"]}
+                                        {<NumberInput
+                                            size='xs'
+                                            w={70}
+                                            startValue={1}
+                                            allowDecimal={false}
+                                            min={1}
+                                            max={100}
+                                            onChange={() => handleVigorousResponseInputChange(0)}
+                                        />}
                                     </Flex>
                                 }
                                 {

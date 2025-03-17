@@ -7868,7 +7868,8 @@
         "Effect": [
             "Unique",
             "Skill Reduction"
-        ]
+        ],
+        "Condition (English)": ["33% chance proc"]
     },
     {
         "SSA Slot": 2,
@@ -7915,7 +7916,8 @@
         "Effect": [
             "Unique",
             "Heavenly Keeper"
-        ]
+        ],
+        "Condition (English)":["Is airborne"]
     },
     {
         "SSA Slot": 2,
@@ -7936,7 +7938,7 @@
         ],
         "Effect": [
             "Unique",
-            "Heavenly Keeper"
+            "Heavenly Keeper 2"
         ]
     },
     {
@@ -9340,12 +9342,11 @@
             "Increases the damage of all attacks done with a Bow by 3% while [Rapid Fire] is active."
         ],
         "Effect": [
-            "Conditional Damage Multiplier",
-            1.03
-        ],
-        "Condition (English)": [
             "Unique",
             "Rapid-fire Arrow"
+        ],
+        "Condition (English)": [
+            "Rapid-fire is active"
         ]
     },
     {
@@ -9567,10 +9568,6 @@
         "Effect (Global)": [
             null,
             "Upon hitting with a PA/Technique, tracks 30% of damage dealt within the next 4 seconds, and then deals additional damage to the next PA/Technique based on the damage dealt, up to 250,000 damage.\nAdditional damage only affects 1 target, but damage is tracked from all targets.\nIs always considered an attack from behind.\n10 seconds cooldown."
-        ],
-        "Effect": [
-            "Unique",
-            "Raising Pursuit"
         ]
     },
     {
@@ -9836,16 +9833,11 @@
             "Reduces Natural PP Recovery to 0 while PP is above 50%.\nReduces PP consumption by 30% and increases Natural PP Recovery by 100% while PP is below 50%.\nTwin Daggers only."
         ],
         "Effect": [
-            "Conditional Natural PP Recovery Multiplier",
-            0,
-            "Conditional PP Consumption Multiplier",
-            0.7,
-            "Conditional Natural PP Recovery Multiplier",
-            2
-        ],
-        "Condition (English)": [
             "Unique",
             "Shining Cyclone"
+        ],
+        "Condition (English)": [
+            "PP > 50%"
         ],
         "Type": "Twin Daggers"
     },
@@ -10292,7 +10284,8 @@
         "Effect": [
             "Unique",
             "Vigorous Response"
-        ]
+        ],
+        "Condition (English)": ["Reamining HP%"]
     },
     {
         "SSA Slot": 5,
@@ -10731,10 +10724,6 @@
         "Effect (Global)": [
             null,
             "Increases maximum HP by 50% while [Overload] is active.\nThis effectively makes you have 37.5% of your regular max HP during [Overload], but still counts as 25% for all effects and purposes."
-        ],
-        "Effect": [
-            "Unique",
-            "Overlimit"
         ]
     },
     {

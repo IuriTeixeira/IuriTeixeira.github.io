@@ -71,8 +71,9 @@ export default function Home() {
     const [critDmgBoost, setCritDmgBoost] = useState<Decimal>(new Decimal(1))
     const [naturalPpRecovery, setNaturalPpRecovery] = useState<Decimal>(new Decimal(1))
     const [activePpRecovery, setActivePpRecovery] = useState<Decimal>(new Decimal(1))
+    const [dmgTaken, setDmgTaken] = useState<Decimal>(new Decimal(1))
     const [ppConsumption, setPpConsumption] = useState<Decimal>(new Decimal(1))
-    const [abilityStats, setAbilityStats] = useState<Decimal[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num)))
+    const [abilityStats, setAbilityStats] = useState<Decimal[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num)))
     const [classBoosts, setClassBoosts] = useState<string[]>(classStats.filter(item => !item["Successor"]).map(item => item[`Name (${language.language})`]))
     const [weaponAbilitiesConditionals, setWeaponAbilitiesConditionals] = useState<boolean[]>([false, false, false, false, false, false, false, false])
     const [weaponAbilitiesStacks, setWeaponAbilitiesStacks] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0])
@@ -247,6 +248,7 @@ export default function Home() {
         //30 = Natural PP Recovery
         //31 = Active PP Recovery
         //32 = PP Consumption
+        //33 = Damage Taken
         const abStats: number[] | Decimal[] = parseAbilities()
         setAbilityStats(abStats)
 
@@ -448,6 +450,7 @@ export default function Home() {
         let totalNaturalPpRecovery: Decimal = abStats[30]
         let totalActivePpRecovery: Decimal = abStats[31]
         let totalPpConsumption: Decimal = abStats[32]
+        let totalDmgTaken: Decimal = abStats[33]
 
         setCritRateIncrease(totalCritRateIncrease)
         setStrikeDmgBoost(totalStrikeDmgBoost)
@@ -460,6 +463,7 @@ export default function Home() {
         setNaturalPpRecovery(totalNaturalPpRecovery)
         setActivePpRecovery(totalActivePpRecovery)
         setPpConsumption(totalPpConsumption)
+        setDmgTaken(totalDmgTaken)
     }
 
     //runs once at first load
@@ -514,7 +518,7 @@ export default function Home() {
                 'Select Legs Unit',
                 'Not available for Scion Class',
                 'PSO2 Character Planner',
-                'PP Recovery',
+                'Others',
                 'Natural PP Recovery',
                 'Active PP Recovery',
                 'Critical Hit',
@@ -522,7 +526,8 @@ export default function Home() {
                 'Critical Hit Damage',
                 'Normal Attack',
                 'Photon Art',
-                "Technique"
+                "Technique",
+                "Damage Reduction"
             ]
             break
         case 'JP':
@@ -548,7 +553,7 @@ export default function Home() {
                 'レッグユニットを選ぶ',
                 '後継クラスでは利用できません',
                 'PSO2 キャラクターシミュレーター',
-                'PP回復',
+                'その他',
                 'PPの自然回復速度',
                 '攻撃時のPP回復',
                 'クリティカル',
@@ -556,7 +561,8 @@ export default function Home() {
                 'クリティカル時の与ダメージ',
                 'Normal Attack',
                 'Photon Art',
-                "Technique"
+                "Technique",
+                "Damage Reduction"
             ]
             break
         default:
@@ -582,7 +588,7 @@ export default function Home() {
                 'Select Leg Unit',                                      //18
                 'Not available for Successor Class',                    //19
                 'PSO2 Character Planner',                               //20
-                'PP Recovery',                                          //21
+                'Others',                                               //21
                 'Natural PP Recovery',                                  //22
                 'Active PP Recovery',                                   //23
                 'Critical Hit',                                         //24
@@ -590,22 +596,30 @@ export default function Home() {
                 'Critical Hit Damage',                                  //26
                 'Normal Attack',                                        //27
                 'Photon Art',                                           //28
-                "Technique"                                             //29
+                "Technique",                                            //29
+                "Damage Reduction"                                      //30
             ]
             break
 
     }
 
     function parseAbilities(): Decimal[] {
-        let weaponAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
-        let rearAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
-        let armAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
-        let legAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let weaponAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let rearAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let armAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let legAbStats: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let checkAnthesis: boolean = false
         for (let i = 0; i < weaponAbilities.length; i++) {
+            if (weaponAbilities[i] === 'S5:Anthesis Cultivation') checkAnthesis = true
             const parsedAbility: Decimal[] = parseAbility(weaponAbilities[i], 'Weapon', i)
             for (let j = 0; j < weaponAbStats.length; j++) {
                 if (j < 22) weaponAbStats[j] = weaponAbStats[j].plus(parsedAbility[j])
                 else weaponAbStats[j] = weaponAbStats[j].times(parsedAbility[j])
+            }
+        }
+        if (checkAnthesis) {
+            for (let i = 0; i < 8; i++) {
+                weaponAbStats[i] = weaponAbStats[i].times(2)
             }
         }
         if (weaponAbilities.includes('S1:Strike Boost')) {
@@ -644,7 +658,7 @@ export default function Home() {
                 else legAbStats[j] = legAbStats[j].times(parsedAbility[j])
             }
         }
-        let returnValue: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
+        let returnValue: Decimal[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num))
         for (let i = 0; i < weaponAbStats.length; i++) {
             if (i < 22) returnValue[i] = returnValue[i].plus(weaponAbStats[i]).plus(rearAbStats[i]).plus(armAbStats[i]).plus(legAbStats[i])
             else returnValue[i] = returnValue[i].times(weaponAbStats[i]).times(rearAbStats[i]).times(armAbStats[i]).times(legAbStats[i])
@@ -688,6 +702,7 @@ export default function Home() {
         let naturalpprecovery: Decimal = new Decimal(1);
         let activepprecovery: Decimal = new Decimal(1);
         let ppconsumption: Decimal = new Decimal(1);
+        let dmgtaken: Decimal = new Decimal(1)
 
         if (ab) {
             if (ab["Effect (English)"][0]) {
@@ -784,6 +799,21 @@ export default function Home() {
             } else {
                 if (ab["Effect"]) {
                     for (let i = 0; i < ab["Effect"].length; i++) {
+                        let gearConditionals: boolean[]
+                        switch (gearType) {
+                            case 'Weapon':
+                                gearConditionals = weaponAbilitiesConditionals
+                                break
+                            case 'Rear':
+                                gearConditionals = rearAbilitiesConditionals
+                                break
+                            case 'Arm':
+                                gearConditionals = armAbilitiesConditionals
+                                break
+                            case 'Leg':
+                                gearConditionals = legAbilitiesConditionals
+                                break
+                        }
                         if (ab["Effect"][i] === 'Unique') {
                             switch (ab["Effect"][i + 1]) {
                                 case 'Ripper':
@@ -848,24 +878,65 @@ export default function Home() {
                                     }
                                     dmgboost = dmgboost.times(dmgMultiplier)
                                     break;
+                                case 'Skill Reduction':
+                                    if (gearConditionals[abilitySlot]) {
+                                        ppconsumption = ppconsumption.times(0.7)
+                                    } else {
+                                        ppconsumption = ppconsumption.times(0.95)
+                                    }
+                                    break
+                                case 'Heavenly Keeper':
+                                case 'Heavenly Keeper 2':
+                                    let heavenlyppreduction: number
+                                    let heavenlypprecovery: number
+                                    if (ab["Effect"][i + 1] === 'Heavenly Keeper 2') {
+                                        heavenlyppreduction = 0.85
+                                        heavenlypprecovery = 1.25
+                                    } else {
+                                        heavenlyppreduction = 0.92
+                                        heavenlypprecovery = 1.2
+                                    }
+                                    if (gearConditionals[abilitySlot]) {
+                                        ppconsumption = ppconsumption.times(heavenlyppreduction)
+                                    } else {
+                                        naturalpprecovery = naturalpprecovery.times(heavenlypprecovery)
+                                        activepprecovery = activepprecovery.times(heavenlypprecovery)
+                                    }
+                                    break
+                                case 'Radiant Response':
+                                    let radiantvalue: Decimal = new Decimal(totalPp.minus(120).dividedBy(1000))
+                                    ppconsumption = ppconsumption.times(1 - radiantvalue.toNumber())
+                                    naturalpprecovery = naturalpprecovery.times(radiantvalue.plus(1))
+                                    activepprecovery = activepprecovery.times(radiantvalue.plus(1))
+                                    break
+                                case 'Rapid-fire Arrow':
+                                    if (gearConditionals[abilitySlot] && weaponData["Weapon Type"] === 'Bullet Bow') {
+                                        dmgboost = dmgboost.times(1.03)
+                                    }
+                                    break
+                                case 'Shining Cyclone':
+                                    if (weaponData["Weapon Type"] === 'Twin Daggers') {
+                                        if (gearConditionals[abilitySlot]) {
+                                            naturalpprecovery = naturalpprecovery.times(0)
+                                        } else {
+                                            ppconsumption = ppconsumption.times(0.7)
+                                            naturalpprecovery = naturalpprecovery.times(2)
+                                        }
+                                    }
+                                    break
+                                case 'Vigorous Response':
+                                    if (totalHp.greaterThanOrEqualTo(1000)) {
+                                        dmgtaken = dmgtaken.times(0.95)
+                                        if (totalHp.greaterThanOrEqualTo(2000)) {
+                                            dmgboost = dmgboost.times(0.04 * weaponAbilitiesStacks[abilitySlot])
+                                        }
+                                    }
+                                    break
+                                default:
+                                    break
                             }
                         } else {
                             if (String(ab["Effect"][i]).includes("Conditional")) {
-                                let gearConditionals: boolean[]
-                                switch (gearType) {
-                                    case 'Weapon':
-                                        gearConditionals = weaponAbilitiesConditionals
-                                        break
-                                    case 'Rear':
-                                        gearConditionals = rearAbilitiesConditionals
-                                        break
-                                    case 'Arm':
-                                        gearConditionals = armAbilitiesConditionals
-                                        break
-                                    case 'Leg':
-                                        gearConditionals = legAbilitiesConditionals
-                                        break
-                                }
                                 if (gearConditionals[abilitySlot]) {
                                     switch (ab["Effect"][i]) {
                                         case 'Conditional Damage Multiplier':
@@ -904,6 +975,9 @@ export default function Home() {
                                             ppconsumption = ppconsumption.times(Number(ab["Effect"][i + 1]))
                                             i++
                                             break
+                                        case 'Damage Taken Multiplier':
+                                            dmgtaken = dmgtaken.times(Number(ab["Effect"][i + 1]))
+                                            i++
                                         default:
                                             break
                                     }
@@ -946,6 +1020,9 @@ export default function Home() {
                                         ppconsumption = ppconsumption.times(Number(ab["Effect"][i + 1]))
                                         i++
                                         break
+                                    case 'Damage Taken Multiplier':
+                                        dmgtaken = dmgtaken.times(Number(ab["Effect"][i + 1]))
+                                        i++
                                     case 'Base S-ATK':
                                         basesatk += Number(ab["Effect"][i + 1])
                                         i++
@@ -967,7 +1044,7 @@ export default function Home() {
                 }
             }
         }
-        const returnValue: Decimal[] = [hp, pp, satk, ratk, tatk, dex, sdef, rdef, tdef, sres, rres, tres, fireres, iceres, lightningres, windres, lightres, darkres, basesatk, baseratk, basetatk, critrateincrease, dmgboost, strikeatkdmgboost, rangedatkdmgboost, techatkdmgboost, normaldmgboost, padmgboost, techdmgboost, critdmgboost, naturalpprecovery, activepprecovery, ppconsumption].map(num => new Decimal(num));
+        const returnValue: Decimal[] = [hp, pp, satk, ratk, tatk, dex, sdef, rdef, tdef, sres, rres, tres, fireres, iceres, lightningres, windres, lightres, darkres, basesatk, baseratk, basetatk, critrateincrease, dmgboost, strikeatkdmgboost, rangedatkdmgboost, techatkdmgboost, normaldmgboost, padmgboost, techdmgboost, critdmgboost, naturalpprecovery, activepprecovery, ppconsumption, dmgtaken].map(num => new Decimal(num));
         return returnValue;
     }
 
@@ -995,12 +1072,12 @@ export default function Home() {
                                 onChange={updateRace}
                             />
                         </Table.Td>
-                        <Table.Th><Flex justify="center" align="center" key={uuidv4()} gap={5}>HP</Flex></Table.Th>
+                        <Table.Th colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>HP</Flex></Table.Th>
                         <Table.Th><Flex justify="center" align="center" key={uuidv4()} gap={5}>PP</Flex></Table.Th>
                         <Table.Th colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[2]}</Flex></Table.Th>
                     </Table.Tr>
                     <Table.Tr>
-                        <Table.Td><Flex justify="center" align="center" key={uuidv4()} gap={5}>{totalHp.trunc().toString()}</Flex></Table.Td>
+                        <Table.Td colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{totalHp.trunc().toString()}</Flex></Table.Td>
                         <Table.Td><Flex justify="center" align="center" key={uuidv4()} gap={5}>{totalPp.trunc().toString()}</Flex></Table.Td>
                         <Table.Td colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('DEX', totalDex.trunc())}</Flex></Table.Td>
                     </Table.Tr>
@@ -1016,12 +1093,12 @@ export default function Home() {
                                 onChange={(value) => updateClass(value, subClass)}
                             />
                         </Table.Td>
-                        <Table.Th><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[0]}</Flex></Table.Th>
+                        <Table.Th colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[0]}</Flex></Table.Th>
                         <Table.Th><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[1]}</Flex></Table.Th>
-                        <Table.Th colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[3]}</Flex></Table.Th>
+                        <Table.Th><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[4]}</Flex></Table.Th>
                     </Table.Tr>
                     <Table.Tr>
-                        <Table.Td>
+                        <Table.Td colSpan={2}>
                             <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('S-ATK', totalSAtk.trunc())}</Flex>
                             <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('R-ATK', totalRAtk.trunc())}</Flex>
                             <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('T-ATK', totalTAtk.trunc())}</Flex>
@@ -1031,20 +1108,18 @@ export default function Home() {
                             <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('R-DEF', totalRDef.trunc())}</Flex>
                             <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('T-DEF', totalTDef.trunc())}</Flex>
                         </Table.Td>
-                        <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('S-ATK', ((strikeDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('R-ATK', ((rangedDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('T-ATK', ((techDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
-                        </Table.Td>
                         <Table.Td w='20%'>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>
-                                <SimpleGrid key={uuidv4()} cols={2} spacing={7} verticalSpacing={0}>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[27]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((normalAtkDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[28]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((paDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[29]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((techniqueDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>
+                                <SimpleGrid key={uuidv4()} cols={3} spacing='xs' verticalSpacing={0}>
+                                    {displayResistance('Strike Resistance', strikeRes.times(100))}
+                                    {displayResistance('Ranged Resistance', rangedRes.times(100))}
+                                    {displayResistance('Tech Resistance', techRes.times(100))}
+                                    {displayResistance('Fire Resistance', fireRes.times(100))}
+                                    {displayResistance('Ice Resistance', iceRes.times(100))}
+                                    {displayResistance('Lightning Resistance', lightningRes.times(100))}
+                                    {displayResistance('Wind Resistance', windRes.times(100))}
+                                    {displayResistance('Light Resistance', lightRes.times(100))}
+                                    {displayResistance('Dark Resistance', darkRes.times(100))}
                                 </SimpleGrid>
                             </Flex>
                         </Table.Td>
@@ -1064,49 +1139,53 @@ export default function Home() {
                             }
                             {successorClassList.includes(mainClass) && <Flex justify='center'>{loc[19]}</Flex>}
                         </Table.Td>
+                        <Table.Th colSpan={2}>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[3]}</Flex>
+                        </Table.Th>
                         <Table.Th>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[4]}</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[24]}</Flex>
                         </Table.Th>
                         <Table.Th>
                             <Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[21]}</Flex>
                         </Table.Th>
-                        <Table.Th colSpan={2}>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[24]}</Flex>
-                        </Table.Th>
                     </Table.Tr>
                     <Table.Tr>
+                        <Table.Td>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('S-ATK', ((strikeDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('R-ATK', ((rangedDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('T-ATK', ((techDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
+                        </Table.Td>
                         <Table.Td w='20%'>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>
-                                <SimpleGrid key={uuidv4()} cols={3} spacing='xs' verticalSpacing={0}>
-                                    {displayResistance('Strike Resistance', strikeRes.times(100))}
-                                    {displayResistance('Ranged Resistance', rangedRes.times(100))}
-                                    {displayResistance('Tech Resistance', techRes.times(100))}
-                                    {displayResistance('Fire Resistance', fireRes.times(100))}
-                                    {displayResistance('Ice Resistance', iceRes.times(100))}
-                                    {displayResistance('Lightning Resistance', lightningRes.times(100))}
-                                    {displayResistance('Wind Resistance', windRes.times(100))}
-                                    {displayResistance('Light Resistance', lightRes.times(100))}
-                                    {displayResistance('Dark Resistance', darkRes.times(100))}
-                                </SimpleGrid>
-                            </Flex>
-                        </Table.Td>
-                        <Table.Td w='30%'>
                             <Flex justify="center" align="center" key={uuidv4()} gap={0}>
-                                <SimpleGrid key={uuidv4()} cols={2} spacing='xs' verticalSpacing={0}>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[22]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(naturalPpRecovery.times(100)).toFixed(2)}%</Flex>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[23]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(activePpRecovery.times(100)).toFixed(2)}%</Flex>
+                                <SimpleGrid key={uuidv4()} cols={2} spacing={7} verticalSpacing={0}>
+                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[27]}</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((normalAtkDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
+                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[28]}</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((paDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
+                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[29]}</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((techniqueDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
                                 </SimpleGrid>
                             </Flex>
                         </Table.Td>
-                        <Table.Td colSpan={2}>
+                        <Table.Td>
                             <Flex justify="center" align="center" key={uuidv4()} gap={0}>
                                 <SimpleGrid key={uuidv4()} cols={2} spacing='xs' verticalSpacing={0}>
                                     <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[25]}</Flex>
                                     <Flex justify="left" align="center" key={uuidv4()} gap={5}>{critRateIncrease.toFixed(2)}%</Flex>
                                     <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[26]}</Flex>
                                     <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(critDmgBoost.minus(1).times(100)).toFixed(2)}%</Flex>
+                                </SimpleGrid>
+                            </Flex>
+                        </Table.Td>
+                        <Table.Td>
+                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>
+                                <SimpleGrid key={uuidv4()} cols={2} spacing='xs' verticalSpacing={0}>
+                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[22]}</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(naturalPpRecovery.times(100)).toFixed(2)}%</Flex>
+                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[23]}</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(activePpRecovery.times(100)).toFixed(2)}%</Flex>
+                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[30]}</Flex>
+                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(dmgTaken.minus(1).times(100)).toFixed(2)}%</Flex>
                                 </SimpleGrid>
                             </Flex>
                         </Table.Td>
