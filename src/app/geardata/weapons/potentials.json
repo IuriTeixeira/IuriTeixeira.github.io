@@ -859,7 +859,7 @@
         "Name (JP)": "死中活性",
         "Name (English)": "Fatal Activity",
         "Name (Global)": "Fatal Activity",
-        "Effect (JP)": "一定間隔でダメージを負う代わりに与ダメージとPP回復速度が上昇。(20秒毎に最大HPの5%ダメージ　与ダメージ3%/7%/15%・PP回復速度10%上昇)",
+        "Effect (JP)": "一定間隔でダメージを負う代わりに与ダメージとPP回復速度が上昇。(20秒毎に最大HPの5%ダメージ 与ダメージ3%/7%/15%・PP回復速度10%上昇)",
         "Effect (English)": "Increases damage by 3% and Natural PP Recovery by 10%, but loses 5% HP every 20 seconds.",
         "Effect (Global)": "Increases damage by 3% and Natural PP Recovery by 10%, but loses 5% HP every 20 seconds."
     },
@@ -1917,8 +1917,12 @@
         "Effect (Global)": "When hitting an enemy weakspot, increases damage by 6% and Critical Hit damage by 10%."
     },
     {
+        "Name (JP)": "気光転換",
         "Name (English)": "Light Conversion",
-        "Effect (English)": "Recover 15% of Max PP when taking damage."
+        "Name (Global)": "Light Conversion",
+        "Effect (JP)": "ダメージを受けた際にPPが回復する。(最大PPの15%)",
+        "Effect (English)": "Recover 15% of Max PP when taking damage.",
+        "Effect (Global)": "Recover 15% of Max PP when taking damage."
     },
     {
         "Name (English)": "Absolute Void",
@@ -1936,7 +1940,7 @@
         "Name (JP)": "機動応変・一式",
         "Name (English)": "Urgent Maneuver 1",
         "Name (Global)": "Rapid Response I",
-        "Effect (JP)": "納刀時のPP回復速度が低下し、威力(8%)と抜刀時のPP回復量(20%)が上昇。\n(納刀時:PP自動回復速度-60%　攻撃時:PP回復量20%)",
+        "Effect (JP)": "納刀時のPP回復速度が低下し、威力(8%)と抜刀時のPP回復量(20%)が上昇。\n(納刀時:PP自動回復速度-60% 攻撃時:PP回復量20%)",
         "Effect (English)": "Increases Natural PP Recovery by 200% while sheathed. While unsheathed, disables Natural PP Recovery, increases Active PP Recovery by 60% and increases damage by 13%.",
         "Effect (Global)": "Increases Natural PP Recovery by 200% while sheathed. While unsheathed, disables Natural PP Recovery, increases Active PP Recovery by 60% and increases damage by 13%."
     },
@@ -1944,7 +1948,7 @@
         "Name (JP)": "機動応変・二式",
         "Name (English)": "Urgent Maneuver 2",
         "Name (Global)": "Urgent Maneuver II",
-        "Effect (JP)": "納刀時のPP回復速度が低下し、威力(8%)と抜刀時のPP回復量(20%)が上昇。\n(納刀時:PP自動回復速度-60%　攻撃時:PP回復量20%)",
+        "Effect (JP)": "納刀時のPP回復速度が低下し、威力(8%)と抜刀時のPP回復量(20%)が上昇。\n(納刀時:PP自動回復速度-60% 攻撃時:PP回復量20%)",
         "Effect (English)": "Decreases Natural PP Recovery by 60% while sheathed. While unsheathed, increases Natural PP Recovery by 20%, increases Active PP Recovery by 20% and increases damage by 8%.",
         "Effect (Global)": "Decreases Natural PP Recovery by 60% while sheathed. While unsheathed, increases Natural PP Recovery by 20%, increases Active PP Recovery by 20% and increases damage by 8%."
     },
@@ -1969,7 +1973,7 @@
         "Name (JP)": "機装の印",
         "Name (English)": "Machine's Mark",
         "Name (Global)": "Gear Ward",
-        "Effect (JP)": "PPの回復効果が減少(-60%)し、クリティカル性能と与ダメージが10%上昇。\n(クリティカル率+13%　クリティカル威力+7%)",
+        "Effect (JP)": "PPの回復効果が減少(-60%)し、クリティカル性能と与ダメージが10%上昇。\n(クリティカル率+13% クリティカル威力+7%)",
         "Effect (English)": "Increases damage by 10%, Critical Hit Rate by 13% and Critical Hit damage by 7%, but reduces Natural and Active PP Recovery by 60%.",
         "Effect (Global)": "Increases damage by 10%, Critical Hit Rate by 13% and Critical Hit damage by 7%, but reduces Natural and Active PP Recovery by 60%."
     },
@@ -2106,8 +2110,12 @@
         "Effect (Global)": "Increases critical chance by 30% during Break Stance."
     },
     {
+        "Name (JP)": "輝翔覚醒",
         "Name (English)": "Stimulating Radiance",
-        "Effect (English)": "Increases the damage of photon blades by ?% during photon blade fever."
+        "Name (Global)": "Photon Awakening",
+        "Effect (JP)": "Pブレードフィーバー時のPブレードの威力が上昇する。(15%)",
+        "Effect (English)": "Increases the damage of Photon Blades by 15% during Photon Blade Fever.",
+        "Effect (Global)": "Increases the damage of Photon Blades by 15% during Photon Blade Fever."
     },
     {
         "Name (JP)": "天輪滅砲",
@@ -2190,8 +2198,12 @@
         "Effect (Global)": "Increases damage by 6% and an additional 0.2% every second, up to 20% total after 70 seconds. Resets if a Mate item is used."
     },
     {
+        "Name (JP)": "闘志の昂揚",
         "Name (English)": "Offensive Reverence",
-        "Effect (English)": "Damage is increased by 6% and gradually increases over time up to 20% total. Resets if hit (takes 50 seconds to max)."
+        "Name (Global)": "Spirited Ascension",
+        "Effect (JP)": "時間経過で最大20%威力上昇、ダメージを受けると上昇分が消失。 (初期状態6%上昇、1秒ごとに0.280%上昇し50秒で効果最大)",
+        "Effect (English)": "Increases damage by 6% and an additional 0.28% every second, up to 20% total after 50 seconds. Resets when any damage is taken.",
+        "Effect (Global)": "Increases damage by 6% and an additional 0.28% every second, up to 20% total after 50 seconds. Resets when any damage is taken."
     },
     {
         "Name (English)": "Offensive Approach",
@@ -2310,12 +2322,20 @@
         "Effect (Global)": "When hitting an enemy weak to Fire, Ice, or the weapon's element, increases damage by 14% and recover 1% of damage dealt as HP, up to 50 HP per hit. Using Techniques with different elements rely on the weapon's element, not the Technique's element. If the weapon's element was changed by an effect, will track the current element appropriately."
     },
     {
+        "Name (JP)": "祝福の季節",
         "Name (English)": "Blessed Season",
-        "Effect (English)": "Increases the damage of Photon Arts/Techniques by 10% and reduce their PP consumption by 20%."
+        "Name (Global)": "Season of Blessings",
+        "Effect (JP)": "PA・テクニック使用時にPP消費量が20%減少し、威力が10%上昇する。",
+        "Effect (English)": "Increases the damage of Photon Arts and Techniques by 10% and reduces their PP consumption by 20%.",
+        "Effect (Global)": "Increases the damage of Photon Arts and Techniques by 10% and reduces their PP consumption by 20%."
     },
     {
+        "Name (JP)": "天撃地光",
         "Name (English)": "Divine Radiance",
-        "Effect (English)": "Increases damage by 11% and increases Automatic PP Regeneration by 100% in midair. Increases Active PP Regeneration by 40% on the ground."
+        "Name (Global)": "Paratrooper",
+        "Effect (JP)": "空中時の威力とPP自然回復が増加し、地上時の攻撃PP回復力が増加。 \n(空中:威力11%・PP自動回復100% 地上:攻撃時PP回復40%)",
+        "Effect (English)": "Increases damage by 11%. Increases Natural PP Recovery by 100% while airborne. Increases Active PP Recovery by 40% while on the ground.",
+        "Effect (Global)": "Increases damage by 11%. Increases Natural PP Recovery by 100% while airborne. Increases Active PP Recovery by 40% while on the ground."
     },
     {
         "Name (JP)": "風の囁き",
@@ -2405,7 +2425,7 @@
         "Name (JP)": "徒花討華",
         "Name (English)": "Perennial Conqueror",
         "Name (Global)": "Barren Blossom",
-        "Effect (JP)": "「輝光を屠る輪廻の徒花」にて、威力が上昇し被ダメージが減少(40%)する。\n(与ダメージ　プレイヤー:+20% / ペット:+3%)",
+        "Effect (JP)": "「輝光を屠る輪廻の徒花」にて、威力が上昇し被ダメージが減少(40%)する。\n(与ダメージ プレイヤー:+20% / ペット:+3%)",
         "Effect (English)": "In the Quest \"The Endless Darkness\", increases damage by 20% and Pet damage by 3%, and decreases damage taken by 40%.",
         "Effect (Global)": "In the Quest \"Barren Blossom, Butcher of Light\", increases damage by 20% and Pet damage by 3%, and decreases damage taken by 40%."
     },
@@ -2511,8 +2531,12 @@
         "Effect (Global)": "Performance changes when Perfect Guarding with a Weapon Action.\n\nSealed Form: Recovers 10% HP every 10 seconds, fills Focus gauge over time (does not affect Hero Focus), and grants immunity to flinch and knockback.\n\nUnsealed Form: Increases damage by 12%, reduces PP consumption by 20%, and when taking damage there's a 10% chance to reduce damage taken by 99%.\n\nReturns to Sealed Form when Focus is depleted."
     },
     {
+        "Name (JP)": "天雷の飛翔剣",
         "Name (English)": "Thundering Blades",
-        "Effect (English)": "When using a PA, Lightning charged Photon Blades are generated. (damage: 8%, Blades: 250%)"
+        "Name (Global)": "Thundering Blades",
+        "Effect (JP)": "威力が8%上昇。PAを使用すると雷光を纏ったフォトンが発生する。(追撃250%)",
+        "Effect (English)": "Increases damage by 8%. Photon Arts throw a homing projectile that does 250% the damage of a Normal Attack and penetrates enemies (but can only hit each enemy once). Projectile does not increase Gear gauge or recover PP, but does benefit from Deband Attack PP Restorate.",
+        "Effect (Global)": "Increases damage by 8%. Photon Arts throw a homing projectile that does 250% the damage of a Normal Attack and penetrates enemies (but can only hit each enemy once). Projectile does not increase Focus gauge or recover PP, but does benefit from Deband Attack PP Restorate."
     },
     {
         "Name (English)": "Inversive Polarity",
@@ -2715,8 +2739,12 @@
         "Effect (Global)": "Increases damage by 6%, and reduces damage taken by 0%. Increases damage by an additional 0.2% per second, up to 20% (after 70 seconds), and reduces damage taken by an additional 0.278% per second, up to 50% (after 180 seconds). Bonuses are reset if damage is taken, or a different potential is equipped. Bonuses do not begin increasing until the Quest actually begins (after leaving the Campship or teleporting inside, depending on the Quest)."
     },
     {
+        "Name (JP)": "黒の戦術",
         "Name (English)": "Black Tactics",
-        "Effect (English)": "When using PAs or Techs, PP consumption is reduced by 20% and damage is increased by 5%."
+        "Name (Global)": "Nightfall Tactics",
+        "Effect (JP)": "PA・テクニック使用時にPP消費量が20%減少し、威力が5%上昇する。",
+        "Effect (English)": "Increases damage of PAs and Techniques by 5%. Reduces PP consumption by 20%.",
+        "Effect (Global)": "Increases damage of PAs and Techniques by 5%. Reduces PP consumption by 20%."
     },
     {
         "Name (English)": "Water Bullet",
@@ -2743,14 +2771,18 @@
         "Effect (English)": "Increases damage by 7%. Change Normal Attack into four homing shells."
     },
     {
+        "Name (JP)": "聖鳥の導き",
         "Name (English)": "Angelic Guidance",
-        "Effect (English)": "Increases damage by 8%. Automatically charge Gear while in mid-air (Bouncer only)."
+        "Name (Global)": "Sacred Bird Guidance",
+        "Effect (JP)": "威力が8%上昇し、空中時にデュアルブレードギアが自動上昇する。",
+        "Effect (English)": "Increases damage by 8%. Automatically charges Gear gauge while airborne. Does not work on Etoile.",
+        "Effect (Global)": "Increases damage by 8%. Automatically charges Focus gauge while airborne. Does not work on Étoile."
     },
     {
         "Name (JP)": "閃光の自在槍",
         "Name (English)": "Gleaming Lance",
         "Name (Global)": "Gleaming Wired Lance",
-        "Effect (JP)": "威力が4%上昇し、ジャストガード成功時一定時間ギア消費なし。\n(JG成功時:15秒間ギア消費無し　ギアゲージ最大時:ホールドPAの威力10%上昇)",
+        "Effect (JP)": "威力が4%上昇し、ジャストガード成功時一定時間ギア消費なし。\n(JG成功時:15秒間ギア消費無し ギアゲージ最大時:ホールドPAの威力10%上昇)",
         "Effect (English)": "Increases damage by 4%. Increases the damage of Grappling PAs by 10% when Gear is maxed. Consumes no Gear for 15 seconds after performing a Just Guard.",
         "Effect (Global)": "Increases damage by 4%. Increases the damage of Grappling PAs by 10% when Focus is maxed. Consumes no Focus for 15 seconds after performing a Perfect Guard."
     },
@@ -2842,7 +2874,7 @@
         "Name (JP)": "猛威の奮激",
         "Name (English)": "Furious Inspiration",
         "Name (Global)": "Persistent Fury",
-        "Effect (JP)": "威力とPP回復性能が上昇。PP消費量軽減。被ダメージで消失。一定時間で効果が復活。\n(威力16%・PP自動回復量20%・攻撃時PP回復量30%・消費PP-10%　再発動180秒)",
+        "Effect (JP)": "威力とPP回復性能が上昇。PP消費量軽減。被ダメージで消失。一定時間で効果が復活。\n(威力16%・PP自動回復量20%・攻撃時PP回復量30%・消費PP-10% 再発動180秒)",
         "Effect (English)": "Increases damage by 16%, Natural PP Recovery by 20% and Active PP Recovery by 30%. Reduces PP consumption by 10%. Effect ends when damage is taken. 180 seconds recast timer from the moment the effect ends.",
         "Effect (Global)": "Increases damage by 16%, Natural PP Recovery by 20% and Active PP Recovery by 30%. Reduces PP consumption by 10%. Effect ends when damage is taken. 180 seconds recast timer from the moment the effect ends."
     },
@@ -3103,8 +3135,12 @@
         "Effect (Global)": "Increases damage by 5%."
     },
     {
+        "Name (JP)": "精励領域",
         "Name (English)": "Diligent Domain",
-        "Effect (English)": "Increases damage by 12%. Apply bonus effects based on the active Field Skills."
+        "Name (Global)": "Field Work",
+        "Effect (JP)": "威力が12%上昇。クリティカルフィールド EPPRFの効果が有効時、フィールド毎に追加効果が発生する。",
+        "Effect (English)": "Increases damage by 12%. Grants bonus effects to Critical Field and Elemental PP Restorate Field (EPPR Field) when either are active.\nCritical Field: +4% Critical Hit damage.\nEPPR Field: +70% Active PP Recovery (does not work on Photon Blades).",
+        "Effect (Global)": "Increases damage by 12%. Grants bonus effects to Critical Field and Elemental PP Restorate Field (EPPR Field) when either are active.\nCritical Field: +4% Critical Hit damage.\nEPPR Field: +70% Active PP Recovery (does not work on Photon Blades)."
     },
     {
         "Name (JP)": "金煌騎士の祝福",
@@ -3162,13 +3198,17 @@
         "Name (JP)": "機動応変・三式",
         "Name (English)": "Urgent Maneuver 3",
         "Name (Global)": "Rapid Response III",
-        "Effect (JP)": "納刀、抜刀でPP回復速度が変化し、攻撃時のPP回復量と威力が上昇。PP最大状態で抜刀時に一定時間PA威力が上昇。\n(威力:6% 納刀時:PP自然回復速度+200%　抜刀時：PP自然回復停止　\n　攻撃時：PP回復量60%　追加PA威力:12%、効果時間14秒)",
+        "Effect (JP)": "納刀、抜刀でPP回復速度が変化し、攻撃時のPP回復量と威力が上昇。PP最大状態で抜刀時に一定時間PA威力が上昇。\n(威力:6% 納刀時:PP自然回復速度+200% 抜刀時:PP自然回復停止 \n 攻撃時:PP回復量60% 追加PA威力:12%、効果時間14秒)",
         "Effect (English)": "Increases Natural PP Recovery by 250% while sheathed. While unsheathed, disables Natural PP Recovery, increases Active PP Recovery by 50% and increases damage by 6%. Increases PA damage by 12% for 14 seconds when the weapon is unsheathed while at maximum PP.",
         "Effect (Global)": "Increases Natural PP Recovery by 250% while sheathed. While unsheathed, disables Natural PP Recovery, increases Active PP Recovery by 50% and increases damage by 6%. Increases PA damage by 12% for 14 seconds when the weapon is unsheathed while at maximum PP."
     },
     {
+        "Name (JP)": "灼出の刃",
         "Name (English)": "Scorching Blade",
-        "Effect (English)": "Increases damage by 11%. Enhance the properties of Normal Attacks."
+        "Name (Global)": "Illuminating Blade",
+        "Effect (JP)": "威力が11%上昇。通常攻撃の性能が変化する。\n(通常攻撃範囲増加 通常攻撃威力:+40% Etは通常攻撃威力:+20%)",
+        "Effect (English)": "Increases damage by 11%. Increases the range of Normal Attacks. Increases the damage of Normal Attacks by 40% (20% on Etoile).",
+        "Effect (Global)": "Increases damage by 11%. Increases the range of Normal Attacks. Increases the the damage of Normal Attacks by 40% (20% on Etoile)."
     },
     {
         "Name (JP)": "集輝の重恵",
@@ -3207,8 +3247,12 @@
         "Effect (English)": "Increases damage by 10%. Enhance the performance of Shift Period when the Gear gauge is above a certain level."
     },
     {
+        "Name (JP)": "閃影の斬撃",
         "Name (English)": "Luminecho Guillotine",
-        "Effect (English)": "Increases damage by 15%. When the Gear gauge is maxed, enhance the performance of Distract Wing and consume Gear on activation."
+        "Name (Global)": "Luminous Slash",
+        "Effect (JP)": "威力が15%上昇。ギア最大状態でディストラクトウィング使用時、追加でギア消費し斬撃を飛ばす。",
+        "Effect (English)": "Increases damage by 15%. When the Gear gauge is maxed, increases damage of Distract Wing by 500% and recovers 20 PP on hit with the PA, but spends Gear on usage.",
+        "Effect (Global)": "Increases damage by 15%. When the Focus gauge is maxed, increases damage of Dash Wing by 500% and recovers 20 PP on hit with the PA, but spends Focus on usage."
     },
     {
         "Name (JP)": "閃影の鎚撃",
@@ -3375,8 +3419,12 @@
         "Effect (English)": "Increases damage by 10% and increases damage taken by 50%. If you are incapacitated, this Potential's effect is disabled for the rest of the Quest."
     },
     {
+        "Name (JP)": "朱雀の盟",
         "Name (English)": "Suzaku Alliance",
-        "Effect (English)": "Increases attack speed over time. Taking 10% of HP in damage or more resets the attack speed increases."
+        "Name (Global)": "Suzaku's Covenant",
+        "Effect (JP)": "時間経過で徐々に攻撃速度が上昇する。最大HPの10%を超えるダメージを受けると攻撃速度がリセット。",
+        "Effect (English)": "Increases damage by 3%. Increases attack speed over time, maxing out at 10% after 6 seconds. Taking 10% or more of max HP in damage resets the attack speed increase.",
+        "Effect (Global)": "Increases damage by 3%. Increases attack speed over time, maxing out at 10% after 6 seconds. Taking 10% or more of max HP in damage resets the attack speed increase."
     },
     {
         "Name (JP)": "白虎の掟",
@@ -3615,8 +3663,12 @@
         "Effect (Global)": "Increases damage by 14%. Increases the effect of Mark PP Drain and Mark Heal by 200%."
     },
     {
+        "Name (JP)": "転身攻勢",
         "Name (English)": "Irregular Offensive",
-        "Effect (English)": "Increases Damage by 15%. Step Attacks Fire a homing shot when you successfully dodge using Step."
+        "Name (Global)": "Shifting Offense",
+        "Effect (JP)": "威力15%上昇。ステップ回避成功後ステップアタック発動で追尾弾を発射する。",
+        "Effect (English)": "Increases damage by 15%. After performing a successful dodge using Step, gains a charge (max 1). Using a Step Attack consumes the charge to throw a homing projectile that does damage and recovers 20 PP when it hits.",
+        "Effect (Global)": "Increases damage by 15%. After performing a successful dodge using Sidestep, gains a charge (max 1). Using a Sidestep Attack consumes the charge to throw a homing projectile that does damage and recovers 20 PP when it hits."
     },
     {
         "Name (JP)": "銀の追奏曲",
@@ -3673,8 +3725,12 @@
         "Special": "Hidden"
     },
     {
+        "Name (JP)": "必撃烈打",
         "Name (English)": "Absolute Strike",
-        "Effect (English)": "Increases Critical Hit Rate by 25%, increases damage by 22%.",
+        "Name (Global)": "Absolute Strike",
+        "Effect (JP)": "クリティカル率(25%)とクリティカル時のダメージ(22%)を上昇させる。",
+        "Effect (English)": "Increases damage by 22% and Critical Hit Rate by 25%.",
+        "Effect (Global)": "Increases damage by 22% and Critical Hit Rate by 25%.",
         "Special": "Hidden"
     },
     {
@@ -3767,8 +3823,12 @@
         "Special": "Hidden"
     },
     {
+        "Name (JP)": "死天斬",
         "Name (English)": "Heavenly Death",
-        "Effect (English)": "Recover 1% of damage dealt as HP. (30 HP MAX)",
+        "Name (Global)": "Heavenly Death",
+        "Effect (JP)": "与えたダメージの1%をHPとして吸収する。(1ヒットの吸収上限30)",
+        "Effect (English)": "Restores HP equal to 1% of damage dealt, up to 30 per hit.",
+        "Effect (Global)": "Restores HP equal to 1% of damage dealt, up to 30 per hit.",
         "Special": "Hidden"
     },
     {
@@ -3995,7 +4055,7 @@
         "Name (JP)": "瞬護の連華",
         "Name (English)": "Prestigious Protection",
         "Name (Global)": "Garland Guard",
-        "Effect (JP)": "ジャストガード毎に威力・PP回復効果上昇。ガード以外の被ダメージで消失。\n(威力5%(上限15%)　PP回復効果7%(上限20%))",
+        "Effect (JP)": "ジャストガード毎に威力・PP回復効果上昇。ガード以外の被ダメージで消失。\n(威力5%(上限15%) PP回復効果7%(上限20%))",
         "Effect (English)": "For every successful Just Guard, increases damage by 5% (up to 15%) and PP Recovery by 7% (up to 20%). Effect ends when taking damage without Just Guarding",
         "Effect (Global)": "For every successful Perfect Guard, increases damage by 5% (up to 15%) and PP Recovery by 7% (up to 20%). Effect ends when taking damage without Perfect Guarding",
         "Special": "Weaponoid"
@@ -4277,8 +4337,12 @@
         "Special": "Luminmech"
     },
     {
+        "Name (JP)": "天雷の飛翔剣・改",
         "Name (English)": "Thundering Blades Plus",
-        "Effect (English)": "Increases damage by 20%. When using a PA, Lightning charged Photon Blades are generated. (Blades: 350%)",
+        "Name (Global)": "Thundering Blades Redux",
+        "Effect (JP)": "威力が20%上昇。PAを使用すると雷光を纏ったフォトンが発生する。(追撃350%)",
+        "Effect (English)": "Increases damage by 20%. Photon Arts throw a homing projectile that does 350% the damage of a Normal Attack and penetrates enemies (but can only hit each enemy once). Projectile does not increase Gear gauge or recover PP, but does benefit from Deband Attack PP Restorate.",
+        "Effect (Global)": "Increases damage by 20%. Photon Arts throw a homing projectile that does 350% the damage of a Normal Attack and penetrates enemies (but can only hit each enemy once). Projectile does not increase Focus gauge or recover PP, but does benefit from Deband Attack PP Restorate.",
         "Special": "Ultimate"
     },
     {
@@ -4403,8 +4467,12 @@
         "Special": "Ultimate"
     },
     {
+        "Name (JP)": "聖鳥の導き・改",
         "Name (English)": "Angelic Guidance Plus",
-        "Effect (English)": "Increases damage by 22%. Automatically charge Gear while in mid-air.",
+        "Name (Global)": "Sacred Bird Guidance Redux",
+        "Effect (JP)": "威力が22%上昇し、空中時にデュアルブレードギアが自動上昇する。",
+        "Effect (English)": "Increases damage by 22%. Automatically charges Gear gauge while airborne. Does not work on Etoile.",
+        "Effect (Global)": "Increases damage by 22%. Automatically charges Focus gauge while airborne. Does not work on Étoile.",
         "Special": "Ultimate"
     },
     {
