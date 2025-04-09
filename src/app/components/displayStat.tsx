@@ -5,10 +5,15 @@ import localization from "../localization.json"
 import Decimal from 'decimal.js';
 import { useLanguageContext } from "../language-provider";
 
-export default function displayStat(key: string, value: number | string | Decimal): any[] {
+interface DisplayStatProps{
+    stat: string;
+    value: number|string|Decimal
+}
+
+export default function DisplayStat({stat, value}: DisplayStatProps): any[] {
     const language = useLanguageContext()
     let buffer: any[] = []
-    let statName: any = localization.find(name => name['Name (English)'] === key)
+    let statName: any = localization.find(name => name['Name (English)'] === stat)
     let name: string
     let returnValue: number|string
 
@@ -33,7 +38,7 @@ export default function displayStat(key: string, value: number | string | Decima
     }
     buffer.push(
         <Flex align="center" key={uuidv4()} gap={5}>
-            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${key}.png`} alt={name} title={name} w={16} h={16} />
+            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${stat}.png`} alt={name} title={name} w={16} h={16} />
             {returnValue}
         </Flex>);
     return buffer

@@ -8,10 +8,10 @@ import displayClasses from './displayClasses';
 import displayElement from './displayElement';
 import displayPA from './displayPA';
 import displayPotentials from './displayPotentials';
-import displayRarity from './displayRarity';
+import DisplayRarity from './DisplayRarity';
 import displaySet from './displaySet';
 import displaySSA from './displaySSA';
-import displayStat from './displayStat';
+import DisplayStat from './DisplayStat';
 import weapons from '../geardata/weapons/weapons.json'
 
 export default function WeaponTableComponent({ type, visible, setVisible }) {
@@ -100,20 +100,20 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                             return (
                                 <Table.Tr key={`row-${row.id}`}>
                                     {//weapon icon
-                                        row["Name (English)"] !== "Takt-NT" &&
-                                        <Table.Td key={`icon-cell-${row.id}`}>
-                                            <Flex align="center" justify="center" key={`icon-flex-${row.id}`} gap={5}>
-                                                <Image fallbackSrc='/Blank.png' key={`icon-${row.id}`} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('/Global', '').replace('/', '')}.png`} alt={iconLabel} w={64} h={64} />
-                                            </Flex>
-                                        </Table.Td>
-                                    }
-                                    {//weapon icon exception, since Takt-NT is the only NT weapon with a different icon from its OT counterpart
-                                        row["Name (English)"] === "Takt-NT" &&
-                                        <Table.Td key={`icon-cell-${row.id}`}>
-                                            <Flex align="center" justify="center" key={`icon-flex-${row.id}`} gap={5}>
-                                                <Image fallbackSrc='/Blank.png' key={`icon-${row.id}`} src={`/weapons/Takt/Takt-NT.png`} alt={iconLabel} w={64} h={64} />
-                                            </Flex>
-                                        </Table.Td>
+                                        row["Name (English)"] !== "Takt-NT" ?
+                                            <Table.Td key={`icon-cell-${row.id}`}>
+                                                <Flex align="center" justify="center" key={`icon-flex-${row.id}`} gap={5}>
+                                                    <Image fallbackSrc='/Blank.png' key={`icon-${row.id}`} src={`/weapons/${type}/${row['Name (English)'].replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('/Global', '').replace('/', '')}.png`} alt={iconLabel} w={64} h={64} />
+                                                </Flex>
+                                            </Table.Td>
+                                            :
+                                            //Takt-NT is the only NT weapon with a different icon from its OT counterpart
+                                            row["Name (English)"] === "Takt-NT" &&
+                                            <Table.Td key={`icon-cell-${row.id}`}>
+                                                <Flex align="center" justify="center" key={`icon-flex-${row.id}`} gap={5}>
+                                                    <Image fallbackSrc='/Blank.png' key={`icon-${row.id}`} src={`/weapons/Takt/Takt-NT.png`} alt={iconLabel} w={64} h={64} />
+                                                </Flex>
+                                            </Table.Td>
                                     }
                                     {theadData.map((key: string, index: any) => {
                                         let itemName: any
@@ -160,23 +160,23 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                                             case 'id':
                                                 return
                                             case 'Rarity':
-                                                return <Table.Td key={`rarity-cell-${row.id}`}><Flex align="center" justify="center" key={`rarity-flex-${row.id}`} gap={5}>{displayRarity(row[key])}</Flex></Table.Td>
+                                                return <Table.Td key={`rarity-cell-${row.id}`}><Flex align="center" justify="center" key={`rarity-flex-${row.id}`} gap={5}>{<DisplayRarity key={`rarity-${row.id}`} rarity={row["Rarity"]}/>}</Flex></Table.Td>
                                             case 'Requirement':
-                                                return <Table.Td key={`req-cell-${row.id}`}><Flex align="center" justify="center" key={`req-flex-${row.id}`} gap={5}>{displayStat(row[key][0], row[key][1])}</Flex></Table.Td>
+                                                return <Table.Td key={`req-cell-${row.id}`}><Flex align="center" justify="center" key={`req-flex-${row.id}`} gap={5}><DisplayStat key={`req-${row.id}`} stat={row[key][0]} value={row[key][1]}/></Flex></Table.Td>
                                             case 'S-ATK':
                                             case 'R-ATK':
                                             case 'T-ATK':
                                                 if (row['S-ATK']) {
-                                                    bufferATK.push(displayStat('S-ATK', row['S-ATK']));
-                                                    bufferATKMax.push(displayStat('S-ATK', calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
+                                                    bufferATK.push(<DisplayStat key={`satk-${row.id}`} stat={'S-ATK'} value={row['S-ATK']} />);
+                                                    bufferATKMax.push(<DisplayStat key={`satk-max-${row.id}`} stat={'S-ATK'} value={calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'], row['Potential'])} />);
                                                 }
                                                 if (row['R-ATK']) {
-                                                    bufferATK.push(displayStat('R-ATK', row['R-ATK']));
-                                                    bufferATKMax.push(displayStat('R-ATK', calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
+                                                    bufferATK.push(<DisplayStat key={`ratk-${row.id}`} stat={'R-ATK'} value={row['R-ATK']} />);
+                                                    bufferATKMax.push(<DisplayStat key={`ratk-max-${row.id}`} stat={'R-ATK'} value={calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'], row['Potential'])} />);
                                                 }
                                                 if (row['T-ATK']) {
-                                                    bufferATK.push(displayStat('T-ATK', row['T-ATK']));
-                                                    bufferATKMax.push(displayStat('T-ATK', calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'], row['Potential'])));
+                                                    bufferATK.push(<DisplayStat key={`tatk-${row.id}`} stat={'T-ATK'} value={row['T-ATK']} />);
+                                                    bufferATKMax.push(<DisplayStat key={`tatk-max-${row.id}`} stat={'T-ATK'} value={calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'], row['Potential'])} />);
                                                 }
                                                 if (index === 6) {
                                                     if (!bufferATK[0]) {
