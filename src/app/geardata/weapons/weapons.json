@@ -12,6 +12,7 @@
         "SAF":null,
         "Abilities":null,
         "Potential":null,
+        "PA_enabled":null,
         "Element": null,
         "Classes":["Hu","Hr"],
         "SSA Slots":null

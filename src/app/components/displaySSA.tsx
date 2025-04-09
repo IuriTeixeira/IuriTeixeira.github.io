@@ -1,13 +1,11 @@
 import { Image, Flex } from "@mantine/core"
 import { v4 as uuidv4 } from 'uuid';
-import { useLanguageContext } from "../language-provider";
 
 export default function displaySSA(listSSA: any[]): any {
-    const language = useLanguageContext()
     let buffer: any[] = []
     let returnList:any[] = []
     for (let i = 0; i < listSSA.length; i++) {
-        switch (language.language) {
+        switch (localStorage.getItem('appLanguage')) {
             case 'English':
                 buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`SSA Slot ${listSSA[i]} enabled`} title={`SSA Slot ${listSSA[i]} enabled`} w={18} h={18} />)
                 break;

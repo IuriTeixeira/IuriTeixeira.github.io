@@ -2,18 +2,19 @@
 
 import TableComponent from "../../components/UnitTableComponent";
 import HeaderComponent from "../../components/UnitHeaderComponent";
-import units from "./units.json";
 import React from "react";
 import { useState } from "react";
+import { useDisclosure } from '@mantine/hooks';
 
 export default function Units() {
-    const [unitData, setUnitData]:any = useState(units)
     const [unitType, setUnitType]:any = useState("Rear")
+    const [visible, setVisible] = useDisclosure(true)
+
     return (
         <>
-            <HeaderComponent setUnitData={setUnitData} setUnitType={setUnitType}/>
-            <TableComponent data={unitData} type={unitType}/>
-            <HeaderComponent setUnitData={setUnitData} setUnitType={setUnitType}/>
+            <HeaderComponent setUnitType={setUnitType} setVisible={setVisible} />
+            <TableComponent type={unitType} visible={visible} setVisible={setVisible} />
+            <HeaderComponent setUnitType={setUnitType} setVisible={setVisible} />
         </>
     )
 }

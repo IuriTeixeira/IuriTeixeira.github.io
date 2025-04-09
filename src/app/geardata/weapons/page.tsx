@@ -2,18 +2,19 @@
 
 import TableComponent from "../../components/WeaponTableComponent";
 import HeaderComponent from "../../components/WeaponHeaderComponent";
-import weapons from '../../geardata/weapons/weapons.json'
 import React from "react";
 import { useState } from "react";
+import { useDisclosure } from '@mantine/hooks';
 
 export default function Weapons() {
-    const [weaponData, setWeaponData]:any = useState(weapons)
-    const [weaponType, setWeaponType]:any = useState("Sword")
+    const [weaponType, setWeaponType] = useState<string>("Sword")
+    const [visible, setVisible] = useDisclosure(true)
+
     return (
         <>
-            <HeaderComponent setWeaponData={setWeaponData} setWeaponType={setWeaponType}/>
-            <TableComponent data={weaponData} type={weaponType}/>
-            <HeaderComponent setWeaponData={setWeaponData} setWeaponType={setWeaponType}/>
+            <HeaderComponent setWeaponType={setWeaponType} setVisible={setVisible}/>
+            <TableComponent type={weaponType} visible={visible} setVisible={setVisible}/>
+            <HeaderComponent setWeaponType={setWeaponType} setVisible={setVisible}/>
         </>
     )
 }

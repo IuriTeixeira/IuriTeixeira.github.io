@@ -1,11 +1,9 @@
 import { Flex, Table, Button, Checkbox, NumberInput } from "@mantine/core"
 import displayAbilities from "./displayAbilities"
-import { useLanguageContext } from "../language-provider";
 import abilityData from '../geardata/abilities.json'
 import { useEffect } from "react";
 
 export default function displayGearAbilities(abilities: any[], conditionals: boolean[], setConditionals: any, stacks: number[], setStacks: any, weaponAbilities: string[], weaponAbilitiesConditionals: boolean[]): any {
-    const language = useLanguageContext()
     let loc: string[]
     let ab: any[] = []
     let abEffectCondCount: boolean[] = [false, false, false, false, false, false, false, false]
@@ -94,7 +92,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
             if (ab[i]["Condition (English)"][0] === 'Unique') {
                 switch (ab[i]["Condition (English)"][1]) {
                     case 'Nature':
-                        switch (language.language) {
+                        switch (localStorage.getItem('appLanguage')) {
                             case 'Global':
                                 conditionText[i] = 'Petalgleam, Seagleam, or Snowgleam is active.'
                                 break
@@ -122,7 +120,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                             </Flex>
                         break;
                     case 'Umbrageous':
-                        switch (language.language) {
+                        switch (localStorage.getItem('appLanguage')) {
                             case 'Global':
                                 conditionText[i] = 'Moongleam, Leafgleam, or Shadowgleam is active.'
                                 break
@@ -150,7 +148,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                             </Flex>
                         break;
                     case 'Rainbow':
-                        switch (language.language) {
+                        switch (localStorage.getItem('appLanguage')) {
                             case 'Global':
                                 conditionText[i] = 'Petalgleam, Seagleam, Snowgleam, Moongleam, Leafgleam, or Shadowgleam is active.'
                                 break
@@ -185,7 +183,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
         }
     }
 
-    switch (language.language) {
+    switch (localStorage.getItem('appLanguage')) {
         case 'Global':
             loc = ['Augments', 'Augment Name', 'Active Conditions']
             break

@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react'
 import { Image, Button, Flex, Table, Checkbox, Group, Select, Text, SimpleGrid } from "@mantine/core";
-import { useLanguageContext } from "./language-provider";
 import { v4 as uuidv4 } from 'uuid';
 import displayGearStats from './components/displayGearStats';
 import displayGearAbilities from './components/displayGearAbilities';
@@ -17,14 +16,12 @@ import abilityData from './geardata/abilities.json'
 import Decimal from 'decimal.js';
 
 export default function Home() {
-    const language = useLanguageContext()
-
-    const raceList: string[] = raceStats.map(item => item[`Name (${language.language})`])
-    const magTypeList: string[] = localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map(item => item[`Name (${language.language})`]) //['S-ATK', 'R-ATK', 'T-ATK', 'DEX', 'S-DEF', 'R-DEF', 'T-DEF']
-    const mainClassList = classStats.filter(item => item["Name (English)"] !== 'None').map(item => item[`Name (${language.language})`]);
-    const subClassList: string[] = classStats.map(item => item[`Name (${language.language})`])
+    const raceList: string[] = raceStats.map(item => item[`Name (${localStorage.getItem('appLanguage')})`])
+    const magTypeList: string[] = localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map(item => item[`Name (${localStorage.getItem('appLanguage')})`]) //['S-ATK', 'R-ATK', 'T-ATK', 'DEX', 'S-DEF', 'R-DEF', 'T-DEF']
+    const mainClassList = classStats.filter(item => item["Name (English)"] !== 'None').map(item => item[`Name (${localStorage.getItem('appLanguage')})`]);
+    const subClassList: string[] = classStats.map(item => item[`Name (${localStorage.getItem('appLanguage')})`])
     const successorClassList: string[] = classStats.filter(item => item["Successor"]).map(item => item[`Name (English)`])
-    const nonSuccessorClassList: string[] = classStats.filter(item => !item["Successor"]).map(item => item[`Name (${language.language})`])
+    const nonSuccessorClassList: string[] = classStats.filter(item => !item["Successor"]).map(item => item[`Name (${localStorage.getItem('appLanguage')})`])
 
     const [race, setRace] = useState<string>(raceList[3])
     const [magType, setMagType] = useState<string>(magTypeList[0])
@@ -74,7 +71,7 @@ export default function Home() {
     const [dmgTaken, setDmgTaken] = useState<Decimal>(new Decimal(1))
     const [ppConsumption, setPpConsumption] = useState<Decimal>(new Decimal(1))
     const [abilityStats, setAbilityStats] = useState<Decimal[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num)))
-    const [classBoosts, setClassBoosts] = useState<string[]>(classStats.filter(item => !item["Successor"]).map(item => item[`Name (${language.language})`]))
+    const [classBoosts, setClassBoosts] = useState<string[]>(classStats.filter(item => !item["Successor"]).map(item => item[`Name (${localStorage.getItem('appLanguage')})`]))
     const [weaponAbilitiesConditionals, setWeaponAbilitiesConditionals] = useState<boolean[]>([false, false, false, false, false, false, false, false])
     const [weaponAbilitiesStacks, setWeaponAbilitiesStacks] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0])
     const [rearAbilitiesConditionals, setRearAbilitiesConditionals] = useState<boolean[]>([false, false, false, false, false, false, false, false])
@@ -135,20 +132,20 @@ export default function Home() {
 
     const raceOptions = raceStats.map((item) => ({
         value: item["Name (English)"],
-        label: item[`Name (${language.language})`],
+        label: item[`Name (${localStorage.getItem('appLanguage')})`],
     }));
     const [magTypeOptions, setMagTypeOptions] = useState(localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map((item) => ({
         value: item["Name (English)"],
-        label: item[`Name (${language.language})`],
+        label: item[`Name (${localStorage.getItem('appLanguage')})`],
     })));
     const mainClassOptions = classStats.filter(item => item["Name (English)"] !== 'None').map((item) => ({
         value: item["Name (English)"],
-        label: item[`Name (${language.language})`],
+        label: item[`Name (${localStorage.getItem('appLanguage')})`],
     }));
 
     const [subClassOptions, setSubClassOptions] = useState(classStats.map((item) => ({
         value: item["Name (English)"],
-        label: item[`Name (${language.language})`],
+        label: item[`Name (${localStorage.getItem('appLanguage')})`],
     })))
 
     function updateRace(value: string) {
@@ -161,12 +158,12 @@ export default function Home() {
         if (sub === 'None') {
             setSubClassOptions(classStats.filter((item) => (!item["Name (English)"].includes(main))).map((item) => (item)).map((item) => ({
                 value: item["Name (English)"],
-                label: item[`Name (${language.language})`],
+                label: item[`Name (${localStorage.getItem('appLanguage')})`],
             })))
         } else {
             setSubClassOptions(classStats.map((item) => ({
                 value: item["Name (English)"],
-                label: item[`Name (${language.language})`],
+                label: item[`Name (${localStorage.getItem('appLanguage')})`],
             })))
         }
         if (main === sub) {
@@ -196,7 +193,7 @@ export default function Home() {
     function updateMag(type: string) {
         setMagTypeOptions(localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map((item) => ({
             value: item["Name (English)"],
-            label: item[`Name (${language.language})`],
+            label: item[`Name (${localStorage.getItem('appLanguage')})`],
         })))
         setMagType(type)
         updateStats(classBoosts, type)
@@ -479,13 +476,13 @@ export default function Home() {
     useEffect(() => {
         setSubClassOptions(classStats.map((item) => ({
             value: item["Name (English)"],
-            label: item[`Name (${language.language})`],
+            label: item[`Name (${localStorage.getItem('appLanguage')})`],
         })))
         setMagTypeOptions(localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map((item) => ({
             value: item["Name (English)"],
-            label: item[`Name (${language.language})`],
+            label: item[`Name (${localStorage.getItem('appLanguage')})`],
         })))
-    }, [language.language]);
+    }, [localStorage.getItem('appLanguage')]);
 
     //updates ability conditional values when toggling ability conditionals
     useEffect(() => {
@@ -494,7 +491,7 @@ export default function Home() {
 
     let loc: string[]
 
-    switch (language.language) {
+    switch (localStorage.getItem('appLanguage')) {
         case 'Global':
             loc = [
                 'Pwr',
@@ -1062,8 +1059,8 @@ export default function Home() {
                 <Table.Tbody>
                     <Table.Tr>
                         <Table.Th rowSpan={2}>
-                            {language.language !== 'JP' && 'Race'}
-                            {language.language === 'JP' && '種族'}
+                            {localStorage.getItem('appLanguage') !== 'JP' && 'Race'}
+                            {localStorage.getItem('appLanguage') === 'JP' && '種族'}
                         </Table.Th>
                         <Table.Td rowSpan={2}>
                             <Select
@@ -1083,8 +1080,8 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Th rowSpan={2}>
-                            {language.language !== 'JP' && 'Main Class'}
-                            {language.language === 'JP' && 'メインクラス'}
+                            {localStorage.getItem('appLanguage') !== 'JP' && 'Main Class'}
+                            {localStorage.getItem('appLanguage') === 'JP' && 'メインクラス'}
                         </Table.Th>
                         <Table.Td rowSpan={2}>
                             <Select
@@ -1126,8 +1123,8 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Th rowSpan={2}>
-                            {language.language !== 'JP' && 'Sub Class'}
-                            {language.language === 'JP' && 'サブクラス'}
+                            {localStorage.getItem('appLanguage') !== 'JP' && 'Sub Class'}
+                            {localStorage.getItem('appLanguage') === 'JP' && 'サブクラス'}
                         </Table.Th>
                         <Table.Td rowSpan={2}>
                             {!successorClassList.includes(mainClass) &&
@@ -1192,8 +1189,8 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Th rowSpan={2}>
-                            {language.language !== 'JP' && 'MAG'}
-                            {language.language === 'JP' && 'マグ'}
+                            {localStorage.getItem('appLanguage') !== 'JP' && 'MAG'}
+                            {localStorage.getItem('appLanguage') === 'JP' && 'マグ'}
                         </Table.Th>
                         <Table.Td rowSpan={2}>
                             <Select

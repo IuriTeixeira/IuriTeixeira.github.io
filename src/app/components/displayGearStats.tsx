@@ -1,5 +1,4 @@
 import { Flex, SimpleGrid } from "@mantine/core";
-import { useLanguageContext } from "../language-provider";
 import weapons from '../geardata/weapons/weapons.json'
 import units from '../geardata/units/units.json'
 import displayRarity from "./displayRarity";
@@ -12,7 +11,6 @@ import displaySet from "./displaySet";
 
 
 export default function displayGearStats(gear: any): any {
-    const language = useLanguageContext()
     let gearData: any = units.find(unit => unit["Name (English)"] === gear)
     if (!gearData) gearData = weapons.find(unit => unit["Name (English)"] === gear)
     return (
@@ -20,7 +18,7 @@ export default function displayGearStats(gear: any): any {
             <Flex justify='center' align='center' gap='xs'>
                 {displayRarity(gearData["Rarity"])}
                 <strong>
-                    {gearData[`Name (${language.language})`]}
+                    {gearData[`Name (${localStorage.getItem('appLanguage')})`]}
                 </strong>
             </Flex>
             {gearData["SSA Slots"] && displaySSA(gearData["SSA Slots"])}

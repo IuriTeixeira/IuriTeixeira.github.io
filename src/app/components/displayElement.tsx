@@ -1,17 +1,15 @@
 import { Image, Flex } from "@mantine/core";
-import { useLanguageContext } from "../language-provider";
 import { v4 as uuidv4 } from 'uuid';
 import localization from '../localization.json'
 
 export default function displayElement(array: [string, number]): any[] {
-    const language = useLanguageContext()
     let buffer: any[] = []
 
     let statName: any = localization.find(name => name['Name (English)'] === array[0])
     let name: string
 
     if (statName) {
-        switch (language.language) {
+        switch (localStorage.getItem('appLanguage')) {
             case 'Global':
                 name = statName['Name (Global)']
                 break;

@@ -4,10 +4,8 @@ import variantSet from "../geardata/sets/letter-variant-sets.json"
 import weapons from "../geardata/weapons/weapons.json"
 import units from "../geardata/units/units.json"
 import { v4 as uuidv4 } from 'uuid';
-import { useLanguageContext } from "../language-provider";
 
 export default function displaySet(setName: string, name: string): any {
-    const language = useLanguageContext()
     let set = setEffects.find(set => set.Name === setName)
     let variant = variantSet.find(variant => variant.Set === setName)
 
@@ -61,7 +59,7 @@ export default function displaySet(setName: string, name: string): any {
             let itemName: string = null
             bufferMembers.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${set.Pieces[i].replace(' ', '')}.png`} alt={set.Pieces[i]} title={set.Pieces[i]} w={16} h={16} />, ' ')
 
-            switch (language.language) {
+            switch (localStorage.getItem('appLanguage')) {
                 case 'English':
                     if (set.Pieces[i] === 'Rear' || set.Pieces[i] === 'Arm' || set.Pieces[i] === 'Leg') {
                         itemName = set.Pieces[i] + ' / ' + set.Pieces[i + 1]
@@ -101,7 +99,7 @@ export default function displaySet(setName: string, name: string): any {
             }
             if (itemName) {
                 if (set.Pieces[i] === 'Rear' || set.Pieces[i] === 'Arm' || set.Pieces[i] === 'Leg') {
-                    switch (language.language) {
+                    switch (localStorage.getItem('appLanguage')) {
                         case 'English':
                             if (itemName[itemName.length - 2] === ' ') {
                                 itemName = itemName.slice(0, -2)
@@ -144,7 +142,7 @@ export default function displaySet(setName: string, name: string): any {
         }
 
         let bufferMembers: any[] = []
-        switch (language.language) {
+        switch (localStorage.getItem('appLanguage')) {
             case 'English':
             case 'Global':
                 if (doubleEffect) bufferMembers.push(`Requires ${set.Required + 1} pieces`, <br key={uuidv4()} />, <br key={uuidv4()} />)
@@ -163,7 +161,7 @@ export default function displaySet(setName: string, name: string): any {
         }
 
         if (variant) {
-            switch (language.language) {
+            switch (localStorage.getItem('appLanguage')) {
                 case 'English':
                     bufferMembers.push(<br key={uuidv4()} />, <strong key={uuidv4()}>Note: </strong>, 'Any variant (a/b/c) combination works for this set');
                     break;
@@ -182,7 +180,7 @@ export default function displaySet(setName: string, name: string): any {
     if (set) {
         let bufferReturn: any = []
         let bufferSetInfo: any = []
-        switch (language.language) {
+        switch (localStorage.getItem('appLanguage')) {
             case 'English':
             case 'Global':
                 bufferSetInfo.push(<strong key={uuidv4()}>Set Effect:</strong>, <br key={uuidv4()} />, displaySetEffect(set, false), <br key={uuidv4()} />, <strong key={uuidv4()}>Set Pieces:</strong>, <br key={uuidv4()} />, displaySetMembers(set, name, false))

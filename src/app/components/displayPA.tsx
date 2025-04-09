@@ -1,12 +1,10 @@
 import { Tooltip, Flex, Image } from "@mantine/core";
-import { useLanguageContext } from "../language-provider";
 import { v4 as uuidv4 } from 'uuid';
 
 export default function displayPA(namePA: string[]): any[] {
-    const language = useLanguageContext()
     let buffer: any[] = []
     if (namePA) {
-        switch (language.language) {
+        switch (localStorage.getItem('appLanguage')) {
             case "Global":
                 buffer.push(
                     <Tooltip className='centerCell' key={uuidv4()} label={`Enables usage of specific Photon Arts/Techniques regardless of class or equipment requirements`} color="dark">
