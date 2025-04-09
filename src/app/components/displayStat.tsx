@@ -3,15 +3,17 @@ import { Flex, Image } from '@mantine/core';
 import { v4 as uuidv4 } from 'uuid';
 import localization from "../localization.json"
 import Decimal from 'decimal.js';
+import { useLanguageContext } from "../language-provider";
 
 export default function displayStat(key: string, value: number | string | Decimal): any[] {
+    const language = useLanguageContext()
     let buffer: any[] = []
     let statName: any = localization.find(name => name['Name (English)'] === key)
     let name: string
     let returnValue: number|string
 
     if (statName) {
-        switch (localStorage.getItem('appLanguage')) {
+        switch (language.language) {
             case 'English':
                 name = statName['Name (English)']
                 break;

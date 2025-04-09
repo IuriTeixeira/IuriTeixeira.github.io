@@ -1,6 +1,6 @@
 'use client'
 
-import React, { createContext, useState, useContext, useEffect } from 'react'
+import React, { createContext, useState, useContext } from 'react'
 import { Radio, Group } from '@mantine/core';
 
 export type LanguageType = {
@@ -27,23 +27,11 @@ export function LanguageProvider({ children }: Props) {
         language
     }
 
-    useEffect(() => {
-        const lang = localStorage.getItem('appLanguage')
-        if(lang && ['English', 'Global', 'JP'].includes(lang)){
-            setLanguage(lang)
-        }
-    }, [])
-
-    const changeLanguage = (lang: string) => {
-        localStorage.setItem('appLanguage', lang)
-        setLanguage(lang)
-    }
-
     return (
         <>
             <Radio.Group
                 value={language}
-                onChange={changeLanguage}
+                onChange={setLanguage}
                 name="favoriteFramework"
                 label="Language"
             >

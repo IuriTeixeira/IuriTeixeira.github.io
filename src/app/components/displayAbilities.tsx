@@ -2,8 +2,10 @@ import React from "react";
 import abilityData from "../geardata/abilities.json"
 import { Flex, Image, SimpleGrid, Tooltip } from '@mantine/core';
 import { v4 as uuidv4 } from 'uuid';
+import { useLanguageContext } from "../language-provider";
 
 export default function displayAbilities(abilities: any[]): any {
+    const language = useLanguageContext()
     let buffer: any[] = []
     let imageIcon: string = 'Ability';
 
@@ -184,7 +186,7 @@ export default function displayAbilities(abilities: any[]): any {
         let ab: any
         if (typeof (abilities) === 'string') {
             ab = abilityData.find(ab => ab['Name (English)'] === abilities)
-            switch (localStorage.getItem('appLanguage')) {
+            switch (language.language) {
                 case 'Global':
                     if (ab) {
                         name = ab['Name (Global)'];
@@ -241,7 +243,7 @@ export default function displayAbilities(abilities: any[]): any {
             return buffer
         } else {
             let imageLabel: string
-            switch (localStorage.getItem('appLanguage')) {
+            switch (language.language) {
                 case "JP":
                     imageLabel = "特殊能力追加"
                     break;
@@ -254,7 +256,7 @@ export default function displayAbilities(abilities: any[]): any {
             let image = <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${imageIcon}.png`} alt={imageLabel} title={imageLabel} w={16} h={16} />
             for (let i = 0; i < abilities.length; i++) {
                 let ab: any = abilityData.find(ab => ab['Name (English)'] === abilities[i])
-                switch (localStorage.getItem('appLanguage')) {
+                switch (language.language) {
                     case 'Global':
                         if (ab) {
                             name = ab['Name (Global)'];

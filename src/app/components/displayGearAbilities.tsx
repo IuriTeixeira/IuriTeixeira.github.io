@@ -2,8 +2,10 @@ import { Flex, Table, Button, Checkbox, NumberInput } from "@mantine/core"
 import displayAbilities from "./displayAbilities"
 import abilityData from '../geardata/abilities.json'
 import { useEffect } from "react";
+import { useLanguageContext } from "../language-provider";
 
 export default function displayGearAbilities(abilities: any[], conditionals: boolean[], setConditionals: any, stacks: number[], setStacks: any, weaponAbilities: string[], weaponAbilitiesConditionals: boolean[]): any {
+    const language = useLanguageContext()
     let loc: string[]
     let ab: any[] = []
     let abEffectCondCount: boolean[] = [false, false, false, false, false, false, false, false]
@@ -92,7 +94,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
             if (ab[i]["Condition (English)"][0] === 'Unique') {
                 switch (ab[i]["Condition (English)"][1]) {
                     case 'Nature':
-                        switch (localStorage.getItem('appLanguage')) {
+                        switch (language.language) {
                             case 'Global':
                                 conditionText[i] = 'Petalgleam, Seagleam, or Snowgleam is active.'
                                 break
@@ -120,7 +122,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                             </Flex>
                         break;
                     case 'Umbrageous':
-                        switch (localStorage.getItem('appLanguage')) {
+                        switch (language.language) {
                             case 'Global':
                                 conditionText[i] = 'Moongleam, Leafgleam, or Shadowgleam is active.'
                                 break
@@ -148,7 +150,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                             </Flex>
                         break;
                     case 'Rainbow':
-                        switch (localStorage.getItem('appLanguage')) {
+                        switch (language.language) {
                             case 'Global':
                                 conditionText[i] = 'Petalgleam, Seagleam, Snowgleam, Moongleam, Leafgleam, or Shadowgleam is active.'
                                 break
@@ -183,7 +185,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
         }
     }
 
-    switch (localStorage.getItem('appLanguage')) {
+    switch (language.language) {
         case 'Global':
             loc = ['Augments', 'Augment Name', 'Active Conditions']
             break
@@ -197,15 +199,15 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
         <Table verticalSpacing={2} withColumnBorders>
             <Table.Thead style={{ borderBottom: '1px solid var(--mantine-color-dark-4)' }}>
                 <Table.Tr>
-                    <Table.Th colSpan={4}>
+                    <Table.Th colSpan={2}>
                         <Flex justify='center' align='center'>{loc[0]}</Flex>
                     </Table.Th>
                 </Table.Tr>
                 <Table.Tr>
-                    <Table.Th w='33%'>
+                    <Table.Th w='30%'>
                         <Flex justify='center' align='center'>{loc[1]}</Flex>
                     </Table.Th>
-                    <Table.Th colSpan={2} w='66%'>
+                    <Table.Th w='70%'>
                         <Flex justify='center' align='center'>{loc[2]}</Flex>
                     </Table.Th>
                 </Table.Tr>
@@ -215,7 +217,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                     <Table.Td>
                         {ab[0] && displayAbilities([ab[0]["Name (English)"]])}
                     </Table.Td>
-                    <Table.Td w='75%'>
+                    <Table.Td w='70%'>
                         {abEffectCondCount[0] &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
@@ -302,7 +304,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                     <Table.Td>
                         {ab[1] && displayAbilities([ab[1]["Name (English)"]])}
                     </Table.Td>
-                    <Table.Td w='75%'>
+                    <Table.Td w='70%'>
                         {abEffectCondCount[1] &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
@@ -367,7 +369,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                     <Table.Td>
                         {ab[2] && displayAbilities([ab[2]["Name (English)"]])}
                     </Table.Td>
-                    <Table.Td w='75%'>
+                    <Table.Td w='70%'>
                         {abEffectCondCount[2] &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
@@ -432,7 +434,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                     <Table.Td>
                         {ab[3] && displayAbilities([ab[3]["Name (English)"]])}
                     </Table.Td>
-                    <Table.Td w='75%'>
+                    <Table.Td w='70%'>
                         {abEffectCondCount[3] &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
@@ -501,7 +503,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                     <Table.Td>
                         {ab[4] && displayAbilities([ab[4]["Name (English)"]])}
                     </Table.Td>
-                    <Table.Td w='75%'>
+                    <Table.Td w='70%'>
                         {abEffectCondCount[4] &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
@@ -571,7 +573,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                     <Table.Td>
                         {ab[5] && displayAbilities([ab[5]["Name (English)"]])}
                     </Table.Td>
-                    <Table.Td w='75%'>
+                    <Table.Td w='70%'>
                         {abEffectCondCount[5] &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
@@ -640,7 +642,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                     <Table.Td>
                         {ab[6] && displayAbilities([ab[6]["Name (English)"]])}
                     </Table.Td>
-                    <Table.Td w='75%'>
+                    <Table.Td w='70%'>
                         {abEffectCondCount[6] &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {
@@ -709,7 +711,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                     <Table.Td>
                         {ab[7] && displayAbilities([ab[7]["Name (English)"]])}
                     </Table.Td>
-                    <Table.Td w='75%'>
+                    <Table.Td w='70%'>
                         {abEffectCondCount[7] &&
                             <Flex justify='center' align='flex-start' direction='column'>
                                 {

@@ -2,13 +2,15 @@ import React from 'react';
 import { Flex, Image } from '@mantine/core';
 import { v4 as uuidv4 } from 'uuid';
 import localization from "../localization.json"
+import { useLanguageContext } from '../language-provider';
 
 export default function displayClasses(classes: any[]): any {
+    const language = useLanguageContext()
     let classList: any[] = []
     if (classes) {
         if (classes[0] === 'All') {
             let classNames: string[] = []
-            switch (localStorage.getItem('appLanguage')) {
+            switch (language.language) {
                 case 'Global': classNames = ["Hunter", "Ranger", "Force", "Fighter", "Gunner", "Techer", "Braver", "Bouncer", "Summoner", "Hero", "Phantom", "Etoile", "Luster"]; break;
                 case 'JP': classNames = ["Hunter", "Ranger", "Force", "Fighter", "Gunner", "Techter", "Braver", "Bouncer", "Summoner", "Hero", "Phantom", "Étoile", "Luster"]; break;
                 default: classNames = ["ハンター", "レンジャー", "フォース", "ファイター", "ガンナー", "テクター", "ブレイバー", "バウンサー", "サモナー", "ヒーロー", "ファントム", "エトワール", "ラスター"]
@@ -45,7 +47,7 @@ export default function displayClasses(classes: any[]): any {
             for (let i = 0; i < classes.length; i++) {
                 loc = localization.find(name => name['Abbreviation'] === classes[i])
                 let currentClass: any = null
-                let className: string = loc[`Name (${localStorage.getItem('appLanguage')})`];
+                let className: string = loc[`Name (${language.language})`];
                 currentClass = <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${classes[i]}.png`} alt={className} title={className} w={16} h={16} />
                 classListAux.push(currentClass)
                 switch (classes.length) {

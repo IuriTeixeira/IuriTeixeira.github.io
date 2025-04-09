@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
+import { useLanguageContext } from "./language-provider";
 import { Image, Button, Flex, Table, Checkbox, Group, Select, Text, SimpleGrid } from "@mantine/core";
-import { v4 as uuidv4 } from 'uuid';
 import displayGearStats from './components/displayGearStats';
 import displayGearAbilities from './components/displayGearAbilities';
 import displayResistance from './components/displayResistance';
@@ -16,12 +16,13 @@ import abilityData from './geardata/abilities.json'
 import Decimal from 'decimal.js';
 
 export default function Home() {
-    const raceList: string[] = raceStats.map(item => item[`Name (${localStorage.getItem('appLanguage')})`])
-    const magTypeList: string[] = localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map(item => item[`Name (${localStorage.getItem('appLanguage')})`]) //['S-ATK', 'R-ATK', 'T-ATK', 'DEX', 'S-DEF', 'R-DEF', 'T-DEF']
-    const mainClassList = classStats.filter(item => item["Name (English)"] !== 'None').map(item => item[`Name (${localStorage.getItem('appLanguage')})`]);
-    const subClassList: string[] = classStats.map(item => item[`Name (${localStorage.getItem('appLanguage')})`])
+    const language = useLanguageContext()
+    const raceList: string[] = raceStats.map(item => item[`Name (${language.language})`])
+    const magTypeList: string[] = localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map(item => item[`Name (${language.language})`]) //['S-ATK', 'R-ATK', 'T-ATK', 'DEX', 'S-DEF', 'R-DEF', 'T-DEF']
+    const mainClassList = classStats.filter(item => item["Name (English)"] !== 'None').map(item => item[`Name (${language.language})`]);
+    const subClassList: string[] = classStats.map(item => item[`Name (${language.language})`])
     const successorClassList: string[] = classStats.filter(item => item["Successor"]).map(item => item[`Name (English)`])
-    const nonSuccessorClassList: string[] = classStats.filter(item => !item["Successor"]).map(item => item[`Name (${localStorage.getItem('appLanguage')})`])
+    const nonSuccessorClassList: string[] = classStats.filter(item => !item["Successor"]).map(item => item[`Name (${language.language})`])
 
     const [race, setRace] = useState<string>(raceList[3])
     const [magType, setMagType] = useState<string>(magTypeList[0])
@@ -71,7 +72,7 @@ export default function Home() {
     const [dmgTaken, setDmgTaken] = useState<Decimal>(new Decimal(1))
     const [ppConsumption, setPpConsumption] = useState<Decimal>(new Decimal(1))
     const [abilityStats, setAbilityStats] = useState<Decimal[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(num => new Decimal(num)))
-    const [classBoosts, setClassBoosts] = useState<string[]>(classStats.filter(item => !item["Successor"]).map(item => item[`Name (${localStorage.getItem('appLanguage')})`]))
+    const [classBoosts, setClassBoosts] = useState<string[]>(classStats.filter(item => !item["Successor"]).map(item => item[`Name (${language.language})`]))
     const [weaponAbilitiesConditionals, setWeaponAbilitiesConditionals] = useState<boolean[]>([false, false, false, false, false, false, false, false])
     const [weaponAbilitiesStacks, setWeaponAbilitiesStacks] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0])
     const [rearAbilitiesConditionals, setRearAbilitiesConditionals] = useState<boolean[]>([false, false, false, false, false, false, false, false])
@@ -132,20 +133,20 @@ export default function Home() {
 
     const raceOptions = raceStats.map((item) => ({
         value: item["Name (English)"],
-        label: item[`Name (${localStorage.getItem('appLanguage')})`],
+        label: item[`Name (${language.language})`],
     }));
     const [magTypeOptions, setMagTypeOptions] = useState(localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map((item) => ({
         value: item["Name (English)"],
-        label: item[`Name (${localStorage.getItem('appLanguage')})`],
+        label: item[`Name (${language.language})`],
     })));
     const mainClassOptions = classStats.filter(item => item["Name (English)"] !== 'None').map((item) => ({
         value: item["Name (English)"],
-        label: item[`Name (${localStorage.getItem('appLanguage')})`],
+        label: item[`Name (${language.language})`],
     }));
 
     const [subClassOptions, setSubClassOptions] = useState(classStats.map((item) => ({
         value: item["Name (English)"],
-        label: item[`Name (${localStorage.getItem('appLanguage')})`],
+        label: item[`Name (${language.language})`],
     })))
 
     function updateRace(value: string) {
@@ -158,12 +159,12 @@ export default function Home() {
         if (sub === 'None') {
             setSubClassOptions(classStats.filter((item) => (!item["Name (English)"].includes(main))).map((item) => (item)).map((item) => ({
                 value: item["Name (English)"],
-                label: item[`Name (${localStorage.getItem('appLanguage')})`],
+                label: item[`Name (${language.language})`],
             })))
         } else {
             setSubClassOptions(classStats.map((item) => ({
                 value: item["Name (English)"],
-                label: item[`Name (${localStorage.getItem('appLanguage')})`],
+                label: item[`Name (${language.language})`],
             })))
         }
         if (main === sub) {
@@ -193,7 +194,7 @@ export default function Home() {
     function updateMag(type: string) {
         setMagTypeOptions(localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map((item) => ({
             value: item["Name (English)"],
-            label: item[`Name (${localStorage.getItem('appLanguage')})`],
+            label: item[`Name (${language.language})`],
         })))
         setMagType(type)
         updateStats(classBoosts, type)
@@ -476,13 +477,13 @@ export default function Home() {
     useEffect(() => {
         setSubClassOptions(classStats.map((item) => ({
             value: item["Name (English)"],
-            label: item[`Name (${localStorage.getItem('appLanguage')})`],
+            label: item[`Name (${language.language})`],
         })))
         setMagTypeOptions(localization.filter(item => item["Name (English)"].includes('-ATK') || item["Name (English)"].includes('-DEF') || item["Name (English)"] === 'DEX').map((item) => ({
             value: item["Name (English)"],
-            label: item[`Name (${localStorage.getItem('appLanguage')})`],
+            label: item[`Name (${language.language})`],
         })))
-    }, [localStorage.getItem('appLanguage')]);
+    }, [language.language]);
 
     //updates ability conditional values when toggling ability conditionals
     useEffect(() => {
@@ -491,7 +492,7 @@ export default function Home() {
 
     let loc: string[]
 
-    switch (localStorage.getItem('appLanguage')) {
+    switch (language.language) {
         case 'Global':
             loc = [
                 'Pwr',
@@ -1047,7 +1048,7 @@ export default function Home() {
 
     return (
         <>
-            <Flex justify="center" align="center" key={uuidv4()} gap={5}><h1>{loc[20]}</h1></Flex>
+            <Flex justify="center" align="center" gap={5}><h1>{loc[20]}</h1></Flex>
             <Table withTableBorder withColumnBorders w='95%' align='center'>
                 <Table.Thead>
                     <Table.Tr>
@@ -1059,8 +1060,7 @@ export default function Home() {
                 <Table.Tbody>
                     <Table.Tr>
                         <Table.Th rowSpan={2}>
-                            {localStorage.getItem('appLanguage') !== 'JP' && 'Race'}
-                            {localStorage.getItem('appLanguage') === 'JP' && '種族'}
+                            {language.language !== 'JP' ? 'Race' : '種族'}
                         </Table.Th>
                         <Table.Td rowSpan={2}>
                             <Select
@@ -1069,19 +1069,18 @@ export default function Home() {
                                 onChange={updateRace}
                             />
                         </Table.Td>
-                        <Table.Th colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>HP</Flex></Table.Th>
-                        <Table.Th><Flex justify="center" align="center" key={uuidv4()} gap={5}>PP</Flex></Table.Th>
-                        <Table.Th colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[2]}</Flex></Table.Th>
+                        <Table.Th colSpan={2}><Flex justify="center" align="center" gap={5}>HP</Flex></Table.Th>
+                        <Table.Th><Flex justify="center" align="center" gap={5}>PP</Flex></Table.Th>
+                        <Table.Th colSpan={2}><Flex justify="center" align="center" gap={5}>{loc[2]}</Flex></Table.Th>
                     </Table.Tr>
                     <Table.Tr>
-                        <Table.Td colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{totalHp.trunc().toString()}</Flex></Table.Td>
-                        <Table.Td><Flex justify="center" align="center" key={uuidv4()} gap={5}>{totalPp.trunc().toString()}</Flex></Table.Td>
-                        <Table.Td colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('DEX', totalDex.trunc())}</Flex></Table.Td>
+                        <Table.Td colSpan={2}><Flex justify="center" align="center" gap={5}>{totalHp.trunc().toString()}</Flex></Table.Td>
+                        <Table.Td><Flex justify="center" align="center" gap={5}>{totalPp.trunc().toString()}</Flex></Table.Td>
+                        <Table.Td colSpan={2}><Flex justify="center" align="center" gap={5}>{displayStat('DEX', totalDex.trunc())}</Flex></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Th rowSpan={2}>
-                            {localStorage.getItem('appLanguage') !== 'JP' && 'Main Class'}
-                            {localStorage.getItem('appLanguage') === 'JP' && 'メインクラス'}
+                            {language.language !== 'JP' ? 'Main Class' : 'メインクラス'}
                         </Table.Th>
                         <Table.Td rowSpan={2}>
                             <Select
@@ -1090,24 +1089,24 @@ export default function Home() {
                                 onChange={(value) => updateClass(value, subClass)}
                             />
                         </Table.Td>
-                        <Table.Th colSpan={2}><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[0]}</Flex></Table.Th>
-                        <Table.Th><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[1]}</Flex></Table.Th>
-                        <Table.Th><Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[4]}</Flex></Table.Th>
+                        <Table.Th colSpan={2}><Flex justify="center" align="center" gap={5}>{loc[0]}</Flex></Table.Th>
+                        <Table.Th><Flex justify="center" align="center" gap={5}>{loc[1]}</Flex></Table.Th>
+                        <Table.Th><Flex justify="center" align="center" gap={5}>{loc[4]}</Flex></Table.Th>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td colSpan={2}>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('S-ATK', totalSAtk.trunc())}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('R-ATK', totalRAtk.trunc())}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('T-ATK', totalTAtk.trunc())}</Flex>
+                            <Flex justify="center" align="center" gap={5}>{displayStat('S-ATK', totalSAtk.trunc())}</Flex>
+                            <Flex justify="center" align="center" gap={5}>{displayStat('R-ATK', totalRAtk.trunc())}</Flex>
+                            <Flex justify="center" align="center" gap={5}>{displayStat('T-ATK', totalTAtk.trunc())}</Flex>
                         </Table.Td>
                         <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('S-DEF', totalSDef.trunc())}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('R-DEF', totalRDef.trunc())}</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{displayStat('T-DEF', totalTDef.trunc())}</Flex>
+                            <Flex justify="center" align="center" gap={5}>{displayStat('S-DEF', totalSDef.trunc())}</Flex>
+                            <Flex justify="center" align="center" gap={5}>{displayStat('R-DEF', totalRDef.trunc())}</Flex>
+                            <Flex justify="center" align="center" gap={5}>{displayStat('T-DEF', totalTDef.trunc())}</Flex>
                         </Table.Td>
                         <Table.Td w='20%'>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>
-                                <SimpleGrid key={uuidv4()} cols={3} spacing='xs' verticalSpacing={0}>
+                            <Flex justify="center" align="center" gap={5}>
+                                <SimpleGrid cols={3} spacing='xs' verticalSpacing={0}>
                                     {displayResistance('Strike Resistance', strikeRes.times(100))}
                                     {displayResistance('Ranged Resistance', rangedRes.times(100))}
                                     {displayResistance('Tech Resistance', techRes.times(100))}
@@ -1123,8 +1122,7 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Th rowSpan={2}>
-                            {localStorage.getItem('appLanguage') !== 'JP' && 'Sub Class'}
-                            {localStorage.getItem('appLanguage') === 'JP' && 'サブクラス'}
+                            {language.language !== 'JP' ? 'Sub Class' : 'サブクラス'}
                         </Table.Th>
                         <Table.Td rowSpan={2}>
                             {!successorClassList.includes(mainClass) &&
@@ -1137,60 +1135,59 @@ export default function Home() {
                             {successorClassList.includes(mainClass) && <Flex justify='center'>{loc[19]}</Flex>}
                         </Table.Td>
                         <Table.Th colSpan={2}>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[3]}</Flex>
+                            <Flex justify="center" align="center" gap={5}>{loc[3]}</Flex>
                         </Table.Th>
                         <Table.Th>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[24]}</Flex>
+                            <Flex justify="center" align="center" gap={5}>{loc[24]}</Flex>
                         </Table.Th>
                         <Table.Th>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[21]}</Flex>
+                            <Flex justify="center" align="center" gap={5}>{loc[21]}</Flex>
                         </Table.Th>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('S-ATK', ((strikeDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('R-ATK', ((rangedDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>{displayStat('T-ATK', ((techDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
+                            <Flex justify="center" align="center" gap={0}>{displayStat('S-ATK', ((strikeDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
+                            <Flex justify="center" align="center" gap={0}>{displayStat('R-ATK', ((rangedDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
+                            <Flex justify="center" align="center" gap={0}>{displayStat('T-ATK', ((techDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
                         </Table.Td>
                         <Table.Td w='20%'>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>
-                                <SimpleGrid key={uuidv4()} cols={2} spacing={7} verticalSpacing={0}>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[27]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((normalAtkDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[28]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((paDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[29]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{((techniqueDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
+                            <Flex justify="center" align="center" gap={0}>
+                                <SimpleGrid cols={2} spacing={7} verticalSpacing={0}>
+                                    <Flex justify="right" align="center" gap={5}>{loc[27]}</Flex>
+                                    <Flex justify="left" align="center" gap={5}>{((normalAtkDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
+                                    <Flex justify="right" align="center" gap={5}>{loc[28]}</Flex>
+                                    <Flex justify="left" align="center" gap={5}>{((paDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
+                                    <Flex justify="right" align="center" gap={5}>{loc[29]}</Flex>
+                                    <Flex justify="left" align="center" gap={5}>{((techniqueDmgBoost.minus(1)).times(100)).toFixed(2)}%</Flex>
                                 </SimpleGrid>
                             </Flex>
                         </Table.Td>
                         <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>
-                                <SimpleGrid key={uuidv4()} cols={2} spacing='xs' verticalSpacing={0}>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[25]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{critRateIncrease.toFixed(2)}%</Flex>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[26]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(critDmgBoost.minus(1).times(100)).toFixed(2)}%</Flex>
+                            <Flex justify="center" align="center" gap={0}>
+                                <SimpleGrid cols={2} spacing='xs' verticalSpacing={0}>
+                                    <Flex justify="right" align="center" gap={5}>{loc[25]}</Flex>
+                                    <Flex justify="left" align="center" gap={5}>{critRateIncrease.toFixed(2)}%</Flex>
+                                    <Flex justify="right" align="center" gap={5}>{loc[26]}</Flex>
+                                    <Flex justify="left" align="center" gap={5}>{(critDmgBoost.minus(1).times(100)).toFixed(2)}%</Flex>
                                 </SimpleGrid>
                             </Flex>
                         </Table.Td>
                         <Table.Td>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={0}>
-                                <SimpleGrid key={uuidv4()} cols={2} spacing='xs' verticalSpacing={0}>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[22]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(naturalPpRecovery.times(100)).toFixed(2)}%</Flex>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[23]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(activePpRecovery.times(100)).toFixed(2)}%</Flex>
-                                    <Flex justify="right" align="center" key={uuidv4()} gap={5}>{loc[30]}</Flex>
-                                    <Flex justify="left" align="center" key={uuidv4()} gap={5}>{(dmgTaken.minus(1).times(100)).toFixed(2)}%</Flex>
+                            <Flex justify="center" align="center" gap={0}>
+                                <SimpleGrid cols={2} spacing='xs' verticalSpacing={0}>
+                                    <Flex justify="right" align="center" gap={5}>{loc[22]}</Flex>
+                                    <Flex justify="left" align="center" gap={5}>{(naturalPpRecovery.times(100)).toFixed(2)}%</Flex>
+                                    <Flex justify="right" align="center" gap={5}>{loc[23]}</Flex>
+                                    <Flex justify="left" align="center" gap={5}>{(activePpRecovery.times(100)).toFixed(2)}%</Flex>
+                                    <Flex justify="right" align="center" gap={5}>{loc[30]}</Flex>
+                                    <Flex justify="left" align="center" gap={5}>{(dmgTaken.minus(1).times(100)).toFixed(2)}%</Flex>
                                 </SimpleGrid>
                             </Flex>
                         </Table.Td>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Th rowSpan={2}>
-                            {localStorage.getItem('appLanguage') !== 'JP' && 'MAG'}
-                            {localStorage.getItem('appLanguage') === 'JP' && 'マグ'}
+                            {language.language !== 'JP' ? 'MAG' : 'マグ'}
                         </Table.Th>
                         <Table.Td rowSpan={2}>
                             <Select
@@ -1200,7 +1197,7 @@ export default function Home() {
                             />
                         </Table.Td>
                         <Table.Th colSpan={4}>
-                            <Flex justify="center" align="center" key={uuidv4()} gap={5}>{loc[5]}</Flex>
+                            <Flex justify="center" align="center" gap={5}>{loc[5]}</Flex>
                         </Table.Th>
                     </Table.Tr>
                     <Table.Tr>
@@ -1246,13 +1243,13 @@ export default function Home() {
                         </Table.Td>
                     </Table.Tr>
                     <Table.Tr>
-                        <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/weapons/${weaponData["Weapon Type"]}/${weapon.replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
+                        <Table.Td><Flex align="center" justify="center" gap={5}><Image fallbackSrc='/Blank.png' src={`/weapons/${weaponData["Weapon Type"]}/${weapon.replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
                         <Table.Td w='50%'>
                             <Flex justify='center' align='center' direction='column'>
                                 {displayGearStats(weapon)}
                             </Flex>
                         </Table.Td>
-                        <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${rearData["Type"]}/${rear.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
+                        <Table.Td><Flex align="center" justify="center" gap={5}><Image fallbackSrc='/Blank.png' src={`/units/${rearData["Type"]}/${rear.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
                         <Table.Td w='50%'>
                             <Flex justify='center' direction='column'>
                                 {displayGearStats(rear)}
@@ -1282,13 +1279,13 @@ export default function Home() {
                         </Table.Td>
                     </Table.Tr>
                     <Table.Tr>
-                        <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${armData["Type"]}/${arm.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
+                        <Table.Td><Flex align="center" justify="center" gap={5}><Image fallbackSrc='/Blank.png' src={`/units/${armData["Type"]}/${arm.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
                         <Table.Td w='50%'>
                             <Flex justify='center' direction='column'>
                                 {displayGearStats(arm)}
                             </Flex>
                         </Table.Td>
-                        <Table.Td key={uuidv4()}><Flex align="center" justify="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/units/${legData["Type"]}/${leg.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
+                        <Table.Td><Flex align="center" justify="center" gap={5}><Image fallbackSrc='/Blank.png' src={`/units/${legData["Type"]}/${leg.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
                         <Table.Td w='50%'>
                             <Flex justify='center' direction='column'>
                                 {displayGearStats(leg)}

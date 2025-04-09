@@ -8,9 +8,10 @@ import displayPotentials from "./displayPotentials";
 import displayPA from "./displayPA";
 import displaySSA from "./displaySSA";
 import displaySet from "./displaySet";
-
+import { useLanguageContext } from "../language-provider";
 
 export default function displayGearStats(gear: any): any {
+    const language = useLanguageContext()
     let gearData: any = units.find(unit => unit["Name (English)"] === gear)
     if (!gearData) gearData = weapons.find(unit => unit["Name (English)"] === gear)
     return (
@@ -18,7 +19,7 @@ export default function displayGearStats(gear: any): any {
             <Flex justify='center' align='center' gap='xs'>
                 {displayRarity(gearData["Rarity"])}
                 <strong>
-                    {gearData[`Name (${localStorage.getItem('appLanguage')})`]}
+                    {gearData[`Name (${language.language})`]}
                 </strong>
             </Flex>
             {gearData["SSA Slots"] && displaySSA(gearData["SSA Slots"])}
