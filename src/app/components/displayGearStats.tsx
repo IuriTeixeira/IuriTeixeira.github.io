@@ -1,11 +1,11 @@
 import { Flex, SimpleGrid } from "@mantine/core";
 import weapons from '../geardata/weapons/weapons.json'
 import units from '../geardata/units/units.json'
-import displayRarity from "./displayRarity";
-import displayStat from "./displayStat";
+import DisplayRarity from "./DisplayRarity";
+import DisplayStat from "./DisplayStat";
 import displayResistance from "./displayResistance";
 import displayPotentials from "./displayPotentials";
-import displayPA from "./displayPA";
+import DisplayPA from "./DisplayPA";
 import displaySSA from "./displaySSA";
 import displaySet from "./displaySet";
 import { useLanguageContext } from "../language-provider";
@@ -17,20 +17,20 @@ export default function displayGearStats(gear: any): any {
     return (
         <Flex justify='center' align='center' direction='column' >
             <Flex justify='center' align='center' gap='xs'>
-                {displayRarity(gearData["Rarity"])}
+                {<DisplayRarity rarity={gearData["Rarity"]} />}
                 <strong>
                     {gearData[`Name (${language.language})`]}
                 </strong>
             </Flex>
             {gearData["SSA Slots"] && displaySSA(gearData["SSA Slots"])}
             <SimpleGrid cols={3} verticalSpacing='0' spacing='xs'>
-                {gearData["S-ATK"] && displayStat('S-ATK', gearData["S-ATK"])}
-                {gearData["R-ATK"] && displayStat('R-ATK', gearData["R-ATK"])}
-                {gearData["T-ATK"] && displayStat('T-ATK', gearData["T-ATK"])}
-                {gearData["DEX"] && displayStat('DEX', gearData["DEX"])}
-                {gearData["S-DEF"] && displayStat('S-DEF', gearData["S-DEF"])}
-                {gearData["R-DEF"] && displayStat('R-DEF', gearData["R-DEF"])}
-                {gearData["T-DEF"] && displayStat('T-DEF', gearData["T-DEF"])}
+                {gearData["S-ATK"] && <DisplayStat stat={'S-ATK'} value={gearData["S-ATK"]} />}
+                {gearData["R-ATK"] && <DisplayStat stat={'R-ATK'} value={gearData["R-ATK"]} />}
+                {gearData["T-ATK"] && <DisplayStat stat={'T-ATK'} value={gearData["T-ATK"]} />}
+                {gearData["DEX"] && <DisplayStat stat={'DEX'} value={gearData["DEX"]} />}
+                {gearData["S-DEF"] && <DisplayStat stat={'S-DEF'} value={gearData["S-DEF"]} />}
+                {gearData["R-DEF"] && <DisplayStat stat={'R-DEF'} value={gearData["R-DEF"]} />}
+                {gearData["T-DEF"] && <DisplayStat stat={'T-DEF'} value={gearData["T-DEF"]} />}
                 {gearData["Strike Resistance"] && displayResistance('Strike Resistance', gearData["Strike Resistance"])}
                 {gearData["Ranged Resistance"] && displayResistance('Ranged Resistance', gearData["Ranged Resistance"])}
                 {gearData["Tech Resistance"] && displayResistance('Tech Resistance', gearData["Tech Resistance"])}
@@ -41,7 +41,7 @@ export default function displayGearStats(gear: any): any {
                 {gearData["Light Resistance"] && displayResistance('Light Resistance', gearData["Light Resistance"])}
                 {gearData["Dark Resistance"] && displayResistance('Dark Resistance', gearData["Dark Resistance"])}
             </SimpleGrid>
-            {gearData["PA_enabled"] && displayPA(gearData["PA_enabled"])}
+            {gearData["PA_enabled"] && <DisplayPA namePA={gearData["PA_enabled"]} />}
             {gearData["Potential"] && displayPotentials(gearData["Potential"])}
             {gearData["Set"] && displaySet(gearData["Set"], gearData["Name (English)"])}
         </Flex>

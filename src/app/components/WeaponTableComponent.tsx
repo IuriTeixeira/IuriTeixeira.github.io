@@ -3,10 +3,10 @@ import React, { useEffect } from 'react';
 import Link from 'next/link'
 import { useLanguageContext } from "../language-provider";
 import { Flex, Image, LoadingOverlay, SimpleGrid, Table } from '@mantine/core';
-import displayAbilities from './displayAbilities';
-import displayClasses from './displayClasses';
+import DisplayAbilities from './DisplayAbilities';
+import DisplayClasses from './DisplayClasses';
 import displayElement from './displayElement';
-import displayPA from './displayPA';
+import DisplayPA from './DisplayPA';
 import displayPotentials from './displayPotentials';
 import DisplayRarity from './DisplayRarity';
 import displaySet from './displaySet';
@@ -87,7 +87,7 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                 }
                 {!visible &&
                     <Table.Tbody>
-                        {filteredData.map((row: any, index: any) => {
+                        {filteredData.map((row: any) => {
                             let iconLabelEnglish: string = `Icon of ${row['Name (English)']}`
                             let iconLabelGlobal: string = `Icon of ${row['Name (Global)']}`
                             let iconLabelJP: string = `${row['Name (JP)']}のアイコン`
@@ -162,21 +162,21 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                                             case 'Rarity':
                                                 return <Table.Td key={`rarity-cell-${row.id}`}><Flex align="center" justify="center" key={`rarity-flex-${row.id}`} gap={5}>{<DisplayRarity key={`rarity-${row.id}`} rarity={row["Rarity"]}/>}</Flex></Table.Td>
                                             case 'Requirement':
-                                                return <Table.Td key={`req-cell-${row.id}`}><Flex align="center" justify="center" key={`req-flex-${row.id}`} gap={5}><DisplayStat key={`req-${row.id}`} stat={row[key][0]} value={row[key][1]}/></Flex></Table.Td>
+                                                return <Table.Td key={`req-cell-${row.id}`}><Flex align="center" justify="center" key={`req-flex-${row.id}`} gap={5}><DisplayStat key={`req-${row.id}`} stat={row[key][0]} value={row[key][1]} id={row.id} /></Flex></Table.Td>
                                             case 'S-ATK':
                                             case 'R-ATK':
                                             case 'T-ATK':
                                                 if (row['S-ATK']) {
-                                                    bufferATK.push(<DisplayStat key={`satk-${row.id}`} stat={'S-ATK'} value={row['S-ATK']} />);
-                                                    bufferATKMax.push(<DisplayStat key={`satk-max-${row.id}`} stat={'S-ATK'} value={calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'], row['Potential'])} />);
+                                                    bufferATK.push(<DisplayStat key={`satk-${row.id}`} stat={'S-ATK'} value={row['S-ATK']} id={row.id}/>);
+                                                    bufferATKMax.push(<DisplayStat key={`satk-max-${row.id}`} stat={'S-ATK'} value={calculateMaxAtk(row['S-ATK'], row['Rarity'], row['SAF'], row['Potential'])} id={row.id} />);
                                                 }
                                                 if (row['R-ATK']) {
-                                                    bufferATK.push(<DisplayStat key={`ratk-${row.id}`} stat={'R-ATK'} value={row['R-ATK']} />);
-                                                    bufferATKMax.push(<DisplayStat key={`ratk-max-${row.id}`} stat={'R-ATK'} value={calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'], row['Potential'])} />);
+                                                    bufferATK.push(<DisplayStat key={`ratk-${row.id}`} stat={'R-ATK'} value={row['R-ATK']} id={row.id} />);
+                                                    bufferATKMax.push(<DisplayStat key={`ratk-max-${row.id}`} stat={'R-ATK'} value={calculateMaxAtk(row['R-ATK'], row['Rarity'], row['SAF'], row['Potential'])} id={row.id} />);
                                                 }
                                                 if (row['T-ATK']) {
-                                                    bufferATK.push(<DisplayStat key={`tatk-${row.id}`} stat={'T-ATK'} value={row['T-ATK']} />);
-                                                    bufferATKMax.push(<DisplayStat key={`tatk-max-${row.id}`} stat={'T-ATK'} value={calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'], row['Potential'])} />);
+                                                    bufferATK.push(<DisplayStat key={`tatk-${row.id}`} stat={'T-ATK'} value={row['T-ATK']} id={row.id} />);
+                                                    bufferATKMax.push(<DisplayStat key={`tatk-max-${row.id}`} stat={'T-ATK'} value={calculateMaxAtk(row['T-ATK'], row['Rarity'], row['SAF'], row['Potential'])} id={row.id} />);
                                                 }
                                                 if (index === 6) {
                                                     if (!bufferATK[0]) {
@@ -202,13 +202,13 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                                             case 'PA_enabled':
                                             case 'Set':
                                                 if (row['Abilities']) {
-                                                    bufferProperties.push(displayAbilities(row['Abilities']))
+                                                    bufferProperties.push(<DisplayAbilities abilities={row['Abilities']}/>)
                                                 }
                                                 if (row['Element']) {
                                                     bufferProperties.push(displayElement(row['Element']));
                                                 }
                                                 if (row['PA_enabled']) {
-                                                    bufferProperties.push(displayPA(row['PA_enabled']));
+                                                    bufferProperties.push(<DisplayPA namePA={row['PA_enabled']} id={row.id}/>);
                                                 }
                                                 if (row['Set']) {
                                                     bufferProperties.push(displaySet(row['Set'], row['Name (English)']));
@@ -221,7 +221,7 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                                                 }
                                             case 'SAF':
                                                 if (row[key]) {
-                                                    return <Table.Td key={`saf-${row.id}`}><Flex align="center" key={`saf-flex-${row.id}`} gap={5}>{displayAbilities(row['SAF'])}</Flex></Table.Td>
+                                                    return <Table.Td key={`saf-${row.id}`}><Flex align="center" key={`saf-flex-${row.id}`} gap={5}>{<DisplayAbilities abilities={row['SAF']}/>}</Flex></Table.Td>
                                                 } else {
                                                     return <Table.Td key={`saf-${row.id}`}><Flex justify="center" align="center" direction="column" key={`saf-flex-${row.id}`} gap={0}>-</Flex></Table.Td>
                                                 }
@@ -231,7 +231,7 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                                                 } else {
                                                     return <Table.Td key={`ssa-${row.id}`}><Flex justify="center" align="center" direction="column" key={`ssa-flex-${row.id}`} gap={0}>-</Flex></Table.Td>
                                                 }
-                                            case 'Classes': return <Table.Td key={`classes-${row.id}`}>{displayClasses(row[key])}</Table.Td>
+                                            case 'Classes': return <Table.Td key={`classes-${row.id}`}><DisplayClasses classes={row[key]} id={row.id} /></Table.Td>
                                         }
                                     })}
                                 </Table.Tr>

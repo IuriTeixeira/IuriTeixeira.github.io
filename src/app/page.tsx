@@ -6,7 +6,7 @@ import { Image, Button, Flex, Table, Checkbox, Group, Select, Text, SimpleGrid }
 import displayGearStats from './components/displayGearStats';
 import displayGearAbilities from './components/displayGearAbilities';
 import displayResistance from './components/displayResistance';
-import displayStat from './components/displayStat';
+import DisplayStat from './components/DisplayStat';
 import raceStats from './races.json'
 import classStats from './classes.json'
 import weapons from './geardata/weapons/weapons.json'
@@ -1076,7 +1076,7 @@ export default function Home() {
                     <Table.Tr>
                         <Table.Td colSpan={2}><Flex justify="center" align="center" gap={5}>{totalHp.trunc().toString()}</Flex></Table.Td>
                         <Table.Td><Flex justify="center" align="center" gap={5}>{totalPp.trunc().toString()}</Flex></Table.Td>
-                        <Table.Td colSpan={2}><Flex justify="center" align="center" gap={5}>{displayStat('DEX', totalDex.trunc())}</Flex></Table.Td>
+                        <Table.Td colSpan={2}><Flex justify="center" align="center" gap={5}><DisplayStat stat={'DEX'} value={totalDex.trunc()} /></Flex></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Th rowSpan={2}>
@@ -1095,14 +1095,14 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td colSpan={2}>
-                            <Flex justify="center" align="center" gap={5}>{displayStat('S-ATK', totalSAtk.trunc())}</Flex>
-                            <Flex justify="center" align="center" gap={5}>{displayStat('R-ATK', totalRAtk.trunc())}</Flex>
-                            <Flex justify="center" align="center" gap={5}>{displayStat('T-ATK', totalTAtk.trunc())}</Flex>
+                            <Flex justify="center" align="center" gap={5}><DisplayStat stat={'S-ATK'} value={totalSAtk.trunc()} /></Flex>
+                            <Flex justify="center" align="center" gap={5}><DisplayStat stat={'R-ATK'} value={totalRAtk.trunc()} /></Flex>
+                            <Flex justify="center" align="center" gap={5}><DisplayStat stat={'T-ATK'} value={totalTAtk.trunc()} /></Flex>
                         </Table.Td>
                         <Table.Td>
-                            <Flex justify="center" align="center" gap={5}>{displayStat('S-DEF', totalSDef.trunc())}</Flex>
-                            <Flex justify="center" align="center" gap={5}>{displayStat('R-DEF', totalRDef.trunc())}</Flex>
-                            <Flex justify="center" align="center" gap={5}>{displayStat('T-DEF', totalTDef.trunc())}</Flex>
+                            <Flex justify="center" align="center" gap={5}><DisplayStat stat={'S-DEF'} value={totalSDef.trunc()} /></Flex>
+                            <Flex justify="center" align="center" gap={5}><DisplayStat stat={'R-DEF'} value={totalRDef.trunc()} /></Flex>
+                            <Flex justify="center" align="center" gap={5}><DisplayStat stat={'T-DEF'} value={totalTDef.trunc()} /></Flex>
                         </Table.Td>
                         <Table.Td w='20%'>
                             <Flex justify="center" align="center" gap={5}>
@@ -1146,9 +1146,9 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td>
-                            <Flex justify="center" align="center" gap={0}>{displayStat('S-ATK', ((strikeDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
-                            <Flex justify="center" align="center" gap={0}>{displayStat('R-ATK', ((rangedDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
-                            <Flex justify="center" align="center" gap={0}>{displayStat('T-ATK', ((techDmgBoost.minus(1)).times(100)).toFixed(2))}%</Flex>
+                            <Flex justify="center" align="center" gap={0}><DisplayStat stat={'S-ATK'} value={((strikeDmgBoost.times(100)).toFixed(2))} />%</Flex>
+                            <Flex justify="center" align="center" gap={0}><DisplayStat stat={'R-ATK'} value={((rangedDmgBoost.times(100)).toFixed(2))} />%</Flex>
+                            <Flex justify="center" align="center" gap={0}><DisplayStat stat={'T-ATK'} value={((techDmgBoost.times(100)).toFixed(2))} />%</Flex>
                         </Table.Td>
                         <Table.Td w='20%'>
                             <Flex justify="center" align="center" gap={0}>

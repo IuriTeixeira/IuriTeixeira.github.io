@@ -2,12 +2,12 @@
 import React, { useEffect } from 'react';
 import { useLanguageContext } from "../language-provider";
 import { Image, Flex, SimpleGrid, Table, LoadingOverlay } from '@mantine/core';
-import displayAbilities from './displayAbilities';
+import DisplayAbilities from './DisplayAbilities';
 import displaySet from './displaySet';
-import displayStat from './displayStat';
+import DisplayStat from './DisplayStat';
 import displayResistance from './displayResistance';
 import Link from 'next/link';
-import displayRarity from './displayRarity';
+import displayRarity from './DisplayRarity';
 import units from '../geardata/units/units.json'
 
 //import localFont from 'next/font/local'
@@ -129,21 +129,21 @@ export default function UnitTableComponent({ type, visible, setVisible }) {
                                         case 'Rarity':
                                             return <Table.Td key={`rarity-${row.id}`} className="centerCell"><Flex align="center" justify="center" key={`rarity-flex-${row.id}`} gap={5}>{displayRarity(row[key])}</Flex></Table.Td>
                                         case 'Requirement':
-                                            return <Table.Td key={`req-${row.id}`}><Flex align="center" justify="center" key={`req-flex-${row.id}`} gap={5}>{displayStat(row[key][0], row[key][1])}</Flex></Table.Td>
+                                            return <Table.Td key={`req-${row.id}`}><Flex align="center" justify="center" key={`req-flex-${row.id}`} gap={5}>{DisplayStat(row[key][0], row[key][1])}</Flex></Table.Td>
                                         case 'S-DEF':
                                         case 'R-DEF':
                                         case 'T-DEF':
                                             if (row['S-DEF'] >= 0) {
-                                                bufferDEF.push(displayStat('S-DEF', row['S-DEF']));
-                                                bufferDEFMax.push(displayStat('S-DEF', calculateMaxDef(row['S-DEF'])));
+                                                bufferDEF.push(DisplayStat('S-DEF', row['S-DEF']));
+                                                bufferDEFMax.push(DisplayStat('S-DEF', calculateMaxDef(row['S-DEF'])));
                                             }
                                             if (row['R-DEF'] >= 0) {
-                                                bufferDEF.push(displayStat('R-DEF', row['R-DEF']));
-                                                bufferDEFMax.push(displayStat('R-DEF', calculateMaxDef(row['R-DEF'])));
+                                                bufferDEF.push(DisplayStat('R-DEF', row['R-DEF']));
+                                                bufferDEFMax.push(DisplayStat('R-DEF', calculateMaxDef(row['R-DEF'])));
                                             }
                                             if (row['T-DEF'] >= 0) {
-                                                bufferDEF.push(displayStat('T-DEF', row['T-DEF']));
-                                                bufferDEFMax.push(displayStat('T-DEF', calculateMaxDef(row['T-DEF'])));
+                                                bufferDEF.push(DisplayStat('T-DEF', row['T-DEF']));
+                                                bufferDEFMax.push(DisplayStat('T-DEF', calculateMaxDef(row['T-DEF'])));
                                             }
                                             if (index === 6) {
                                                 return (
@@ -158,16 +158,16 @@ export default function UnitTableComponent({ type, visible, setVisible }) {
                                         case 'T-ATK':
                                         case 'DEX':
                                             if (row['S-ATK']) {
-                                                bufferATK.push(displayStat('S-ATK', row['S-ATK']));
+                                                bufferATK.push(DisplayStat('S-ATK', row['S-ATK']));
                                             }
                                             if (row['R-ATK']) {
-                                                bufferATK.push(displayStat('R-ATK', row['R-ATK']));
+                                                bufferATK.push(DisplayStat('R-ATK', row['R-ATK']));
                                             }
                                             if (row['T-ATK']) {
-                                                bufferATK.push(displayStat('T-ATK', row['T-ATK']));
+                                                bufferATK.push(DisplayStat('T-ATK', row['T-ATK']));
                                             }
                                             if (row['DEX']) {
-                                                bufferATK.push(displayStat('DEX', row['DEX']));
+                                                bufferATK.push(DisplayStat('DEX', row['DEX']));
                                             }
                                             if (index === 11) {
                                                 if (bufferATK[0]) return <Table.Td key={`atk-${row.id}`}><Flex justify="center" align="center" direction="column" key={`atk-flex-${row.id}`} gap={0}>{bufferATK}</Flex></Table.Td>
@@ -217,10 +217,10 @@ export default function UnitTableComponent({ type, visible, setVisible }) {
                                         case 'Abilities':
                                         case 'SAF':
                                             if (row['SAF']) {
-                                                bufferProperties.push(displayAbilities(row['SAF']))
+                                                bufferProperties.push(DisplayAbilities(row['SAF']))
                                             }
                                             if (row['Abilities']) {
-                                                bufferProperties.push(displayAbilities(row['Abilities']))
+                                                bufferProperties.push(DisplayAbilities(row['Abilities']))
                                             }
                                             if (index === 23) {
                                                 if (bufferProperties[0]) return <Table.Td key={`properties-${row.id}`}><SimpleGrid key={`properties-grid-${row.id}`} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
