@@ -1,13 +1,17 @@
 import { Image, Flex } from "@mantine/core";
-import { v4 as uuidv4 } from 'uuid';
 import localization from '../localization.json'
 import { useLanguageContext } from "../language-provider";
 
-export default function displayElement(array: [string, number]): any[] {
-    const language = useLanguageContext()
-    let buffer: any[] = []
+interface DisplayElementProps {
+    element: [string, number]
+    id?: number
+}
 
-    let statName: any = localization.find(name => name['Name (English)'] === array[0])
+export default function DisplayElement({element, id}: DisplayElementProps): any {
+    const language = useLanguageContext()
+    if(!id) id = 0
+
+    let statName: any = localization.find(name => name['Name (English)'] === element[0])
     let name: string
 
     if (statName) {
@@ -23,8 +27,7 @@ export default function displayElement(array: [string, number]): any[] {
         }
     }
 
-    if (!isNaN(array[1])) {
-        buffer.push(<Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${array[0]}.png`} alt={name} title={name} w={16} h={16} /> {array[1]}</Flex>)
+    if (!isNaN(element[1])) {
+        return <Flex align="center" key={`element-flex-${id}`} gap={5}><Image fallbackSrc='/Blank.png' key={`element-${id}`} src={`/icons/${element[0]}.png`} alt={name} title={name} w={16} h={16} /> {element[1]}</Flex>
     }
-    return buffer;
 }

@@ -4,7 +4,7 @@ import units from '../geardata/units/units.json'
 import DisplayRarity from "./DisplayRarity";
 import DisplayStat from "./DisplayStat";
 import displayResistance from "./displayResistance";
-import displayPotentials from "./displayPotentials";
+import DisplayPotentials from "./DisplayPotentials";
 import DisplayPA from "./DisplayPA";
 import displaySSA from "./displaySSA";
 import displaySet from "./displaySet";
@@ -42,7 +42,7 @@ export default function displayGearStats(gear: any): any {
                 {gearData["Dark Resistance"] && displayResistance('Dark Resistance', gearData["Dark Resistance"])}
             </SimpleGrid>
             {gearData["PA_enabled"] && <DisplayPA namePA={gearData["PA_enabled"]} />}
-            {gearData["Potential"] && displayPotentials(gearData["Potential"])}
+            {gearData["Potential"] && <DisplayPotentials potentialList={gearData["Potential"]} />}
             {gearData["Set"] && displaySet(gearData["Set"], gearData["Name (English)"])}
         </Flex>
     )

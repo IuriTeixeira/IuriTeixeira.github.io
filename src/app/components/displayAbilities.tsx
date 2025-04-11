@@ -198,16 +198,16 @@ export default function DisplayAbilities({ abilities, id }: DisplayAbilitiesProp
                 let abPrint: any = printLayout(abEffect, abEffect.length, check)
                 if (checkLength) {
                     buffer.push(
-                        <Tooltip className='centerCell' key={`tooltip-${id}`} label={abPrint} color="dark" multiline>
-                            <Flex align="center" key={`tooltip-flex-${id}`} gap={5}>
+                        <Tooltip className='centerCell' key={`tooltip-saf-${id}`} label={abPrint} color="dark" multiline>
+                            <Flex align="center" key={`tooltip-saf-flex-${id}`} gap={5}>
                                 {image} {name}
                             </Flex>
                         </Tooltip>
                     )
                 } else {
                     buffer.push(
-                        <Tooltip className='centerCell' key={`tooltip-${id}`} label={abPrint} color="dark">
-                            <Flex align="center" key={`tooltip-flex-${id}`} gap={5}>
+                        <Tooltip className='centerCell' key={`tooltip-saf-${id}`} label={abPrint} color="dark">
+                            <Flex align="center" key={`tooltip-saf-flex-${id}`} gap={5}>
                                 {image} {name}
                             </Flex>
                         </Tooltip>
@@ -266,16 +266,16 @@ export default function DisplayAbilities({ abilities, id }: DisplayAbilitiesProp
                     let abPrint: any = printLayout(abEffect, abEffect.length, check)
                     if (checkLength) {
                         buffer.push(
-                            <Tooltip className='centerCell' key={`tooltip-${id}`} label={abPrint} color="dark" multiline>
-                                <Flex align="center" key={`tooltip-flex-${id}`} gap={5}>
+                            <Tooltip className='centerCell' key={`tooltip-ab-${i}-${id}`} label={abPrint} color="dark" multiline>
+                                <Flex align="center" key={`tooltip-ab-flex-${i}-${id}`} gap={5}>
                                     {image} {name}
                                 </Flex>
                             </Tooltip>
                         )
                     } else {
                         buffer.push(
-                            <Tooltip className='centerCell' key={`tooltip-${id}`} label={abPrint} color="dark">
-                                <Flex align="center" key={`tooltip-flex-${id}`} gap={5}>
+                            <Tooltip className='centerCell' key={`tooltip-ab-${i}-${id}`} label={abPrint} color="dark">
+                                <Flex align="center" key={`tooltip-ab-flex-${i}-${id}`} gap={5}>
                                     {image} {name}
                                 </Flex>
                             </Tooltip>

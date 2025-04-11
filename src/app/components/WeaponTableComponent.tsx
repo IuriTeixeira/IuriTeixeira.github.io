@@ -5,9 +5,9 @@ import { useLanguageContext } from "../language-provider";
 import { Flex, Image, LoadingOverlay, SimpleGrid, Table } from '@mantine/core';
 import DisplayAbilities from './DisplayAbilities';
 import DisplayClasses from './DisplayClasses';
-import displayElement from './displayElement';
+import DisplayElement from './DisplayElement';
 import DisplayPA from './DisplayPA';
-import displayPotentials from './displayPotentials';
+import DisplayPotentials from './DisplayPotentials';
 import DisplayRarity from './DisplayRarity';
 import displaySet from './displaySet';
 import displaySSA from './displaySSA';
@@ -160,7 +160,7 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                                             case 'id':
                                                 return
                                             case 'Rarity':
-                                                return <Table.Td key={`rarity-cell-${row.id}`}><Flex align="center" justify="center" key={`rarity-flex-${row.id}`} gap={5}>{<DisplayRarity key={`rarity-${row.id}`} rarity={row["Rarity"]}/>}</Flex></Table.Td>
+                                                return <Table.Td key={`rarity-cell-${row.id}`}><Flex align="center" justify="center" key={`rarity-flex-${row.id}`} gap={5}><DisplayRarity key={`rarity-${row.id}`} rarity={row["Rarity"]}/></Flex></Table.Td>
                                             case 'Requirement':
                                                 return <Table.Td key={`req-cell-${row.id}`}><Flex align="center" justify="center" key={`req-flex-${row.id}`} gap={5}><DisplayStat key={`req-${row.id}`} stat={row[key][0]} value={row[key][1]} id={row.id} /></Flex></Table.Td>
                                             case 'S-ATK':
@@ -193,7 +193,7 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                                                 return
                                             case 'Potential':
                                                 if (row[key]) {
-                                                    return <Table.Td key={`potential-${row.id}`}>{displayPotentials(row[key])}</Table.Td>
+                                                    return <Table.Td key={`potential-${row.id}`}><DisplayPotentials potentialList={row[key]} id={row.id}/></Table.Td>
                                                 } else {
                                                     return <Table.Td key={`potential-${row.id}`}><Flex justify="center" align="center" direction="column" key={`potential-flex-${row.id}`} gap={0}>-</Flex></Table.Td>
                                                 }
@@ -205,7 +205,7 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                                                     bufferProperties.push(<DisplayAbilities abilities={row['Abilities']}/>)
                                                 }
                                                 if (row['Element']) {
-                                                    bufferProperties.push(displayElement(row['Element']));
+                                                    bufferProperties.push(<DisplayElement element={row['Element']} id={row.id}/>);
                                                 }
                                                 if (row['PA_enabled']) {
                                                     bufferProperties.push(<DisplayPA namePA={row['PA_enabled']} id={row.id}/>);
@@ -221,7 +221,7 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                                                 }
                                             case 'SAF':
                                                 if (row[key]) {
-                                                    return <Table.Td key={`saf-${row.id}`}><Flex align="center" key={`saf-flex-${row.id}`} gap={5}>{<DisplayAbilities abilities={row['SAF']}/>}</Flex></Table.Td>
+                                                    return <Table.Td key={`saf-${row.id}`}><Flex align="center" key={`saf-flex-${row.id}`} gap={5}><DisplayAbilities abilities={row['SAF']}/></Flex></Table.Td>
                                                 } else {
                                                     return <Table.Td key={`saf-${row.id}`}><Flex justify="center" align="center" direction="column" key={`saf-flex-${row.id}`} gap={0}>-</Flex></Table.Td>
                                                 }
