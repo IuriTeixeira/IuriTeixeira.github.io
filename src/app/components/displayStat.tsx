@@ -1,16 +1,22 @@
 import React from 'react';
 import { Flex, Image } from '@mantine/core';
-import { v4 as uuidv4 } from 'uuid';
 import localization from "../localization.json"
 import Decimal from 'decimal.js';
 import { useLanguageContext } from "../language-provider";
 
-export default function displayStat(key: string, value: number | string | Decimal): any[] {
+interface DisplayStatProps{
+    stat: string;
+    value: number|string|Decimal
+    id?: number
+}
+
+export default function DisplayStat({stat, value, id}: DisplayStatProps): any[] {
     const language = useLanguageContext()
     let buffer: any[] = []
-    let statName: any = localization.find(name => name['Name (English)'] === key)
+    let statName: any = localization.find(name => name['Name (English)'] === stat)
     let name: string
     let returnValue: number|string
+    if(!id) id = 0
 
     if (statName) {
         switch (language.language) {
@@ -32,8 +38,8 @@ export default function displayStat(key: string, value: number | string | Decima
         returnValue = value.toString()
     }
     buffer.push(
-        <Flex align="center" key={uuidv4()} gap={5}>
-            <Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/${key}.png`} alt={name} title={name} w={16} h={16} />
+        <Flex align="center" key={`flex-${stat}-${id}`} gap={5}>
+            <Image fallbackSrc='/Blank.png' key={`${stat}-${id}`} src={`/icons/${stat}.png`} alt={name} title={name} w={16} h={16} />
             {returnValue}
         </Flex>);
     return buffer

@@ -1,28 +1,28 @@
 import { Image, Flex } from "@mantine/core"
-import { v4 as uuidv4 } from 'uuid';
 import { useLanguageContext } from "../language-provider";
 
-export default function displaySSA(listSSA: any[]): any {
+interface DisplaySSAProps {
+    listSSA: number[]
+    id?: number
+}
+
+export default function displaySSA({listSSA, id}: DisplaySSAProps): any {
     const language = useLanguageContext()
+    if(!id) id = 0
+
     let buffer: any[] = []
     let returnList:any[] = []
+    
     for (let i = 0; i < listSSA.length; i++) {
-        switch (language.language) {
-            case 'English':
-                buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`SSA Slot ${listSSA[i]} enabled`} title={`SSA Slot ${listSSA[i]} enabled`} w={18} h={18} />)
-                break;
-            case 'Global':
-                buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`SGA Slot ${listSSA[i]} enabled`} title={`SGA Slot ${listSSA[i]} enabled`} w={18} h={18} />)
-                break;
-            case 'JP':
-                buffer.push(<Image fallbackSrc='/Blank.png' key={uuidv4()} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={`S級特殊能力スロット${listSSA[i]}有効`} title={`S級特殊能力スロット${listSSA[i]}有効`} w={18} h={18} />)
-                break;
-        }
+        let labelSSA:string = ''
+        language.language !== 'JP' ? labelSSA = `SSA Slot ${listSSA[i]} enabled` : labelSSA = `S級特殊能力スロット${listSSA[i]}有効`
+        
+        buffer.push(<Image fallbackSrc='/Blank.png' key={`ssa-image-${i}-${id}`} src={`/icons/SClassAbility${listSSA[i]}.png`} alt={labelSSA} title={labelSSA} w={18} h={18} />)
 
         if(buffer.length >= 3 || !listSSA[i+1]) {
-            returnList.push(<Flex align="center" key={uuidv4()} gap={0}>{buffer}</Flex>);
+            returnList.push(<Flex align="center" key={`ssa-flex-${i}-${id}`} gap={0}>{buffer}</Flex>);
             buffer = []
         }
     }
-    return <Flex direction="column" key={uuidv4()} gap={0}>{returnList}</Flex>
+    return <Flex direction="column" key={`ssa-flex-return-${id}`} gap={0}>{returnList}</Flex>
 }

@@ -1,10 +1,21 @@
-import { Flex, Table, Button, Checkbox, NumberInput } from "@mantine/core"
-import displayAbilities from "./displayAbilities"
+import { Flex, Table, Checkbox, NumberInput } from "@mantine/core"
+import DisplayAbilities from "./DisplayAbilities"
 import abilityData from '../geardata/abilities.json'
 import { useEffect } from "react";
 import { useLanguageContext } from "../language-provider";
 
-export default function displayGearAbilities(abilities: any[], conditionals: boolean[], setConditionals: any, stacks: number[], setStacks: any, weaponAbilities: string[], weaponAbilitiesConditionals: boolean[]): any {
+interface DisplayGearAbilitiesProps{
+    abilities: string[];
+    conditionals: boolean[]
+    setConditionals: any
+    stacks: number[]
+    setStacks: any
+    weaponAbilities: string[]
+    weaponAbilitiesConditionals: boolean[]
+    id?: number
+}
+
+export default function DisplayGearAbilities({abilities, conditionals, setConditionals, stacks, setStacks, weaponAbilities, weaponAbilitiesConditionals}: DisplayGearAbilitiesProps) {
     const language = useLanguageContext()
     let loc: string[]
     let ab: any[] = []
@@ -215,7 +226,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
             <Table.Tbody>
                 <Table.Tr>
                     <Table.Td>
-                        {ab[0] && displayAbilities([ab[0]["Name (English)"]])}
+                        {ab[0] && <DisplayAbilities abilities={[ab[0]["Name (English)"]]}/>}
                     </Table.Td>
                     <Table.Td w='70%'>
                         {abEffectCondCount[0] &&
@@ -302,7 +313,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                 </Table.Tr>
                 <Table.Tr>
                     <Table.Td>
-                        {ab[1] && displayAbilities([ab[1]["Name (English)"]])}
+                        {ab[1] && <DisplayAbilities abilities={[ab[1]["Name (English)"]]}/>}
                     </Table.Td>
                     <Table.Td w='70%'>
                         {abEffectCondCount[1] &&
@@ -367,7 +378,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                 </Table.Tr>
                 <Table.Tr>
                     <Table.Td>
-                        {ab[2] && displayAbilities([ab[2]["Name (English)"]])}
+                        {ab[2] && <DisplayAbilities abilities={[ab[2]["Name (English)"]]}/>}
                     </Table.Td>
                     <Table.Td w='70%'>
                         {abEffectCondCount[2] &&
@@ -432,7 +443,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                 </Table.Tr>
                 <Table.Tr>
                     <Table.Td>
-                        {ab[3] && displayAbilities([ab[3]["Name (English)"]])}
+                        {ab[3] && <DisplayAbilities abilities={[ab[3]["Name (English)"]]}/>}
                     </Table.Td>
                     <Table.Td w='70%'>
                         {abEffectCondCount[3] &&
@@ -501,7 +512,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                 </Table.Tr>
                 <Table.Tr>
                     <Table.Td>
-                        {ab[4] && displayAbilities([ab[4]["Name (English)"]])}
+                        {ab[4] && <DisplayAbilities abilities={[ab[4]["Name (English)"]]}/>}
                     </Table.Td>
                     <Table.Td w='70%'>
                         {abEffectCondCount[4] &&
@@ -571,7 +582,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                 </Table.Tr>
                 <Table.Tr>
                     <Table.Td>
-                        {ab[5] && displayAbilities([ab[5]["Name (English)"]])}
+                        {ab[5] && <DisplayAbilities abilities={[ab[5]["Name (English)"]]}/>}
                     </Table.Td>
                     <Table.Td w='70%'>
                         {abEffectCondCount[5] &&
@@ -640,7 +651,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                 </Table.Tr>
                 <Table.Tr>
                     <Table.Td>
-                        {ab[6] && displayAbilities([ab[6]["Name (English)"]])}
+                        {ab[6] && <DisplayAbilities abilities={[ab[6]["Name (English)"]]}/>}
                     </Table.Td>
                     <Table.Td w='70%'>
                         {abEffectCondCount[6] &&
@@ -709,7 +720,7 @@ export default function displayGearAbilities(abilities: any[], conditionals: boo
                 </Table.Tr>
                 <Table.Tr>
                     <Table.Td>
-                        {ab[7] && displayAbilities([ab[7]["Name (English)"]])}
+                        {ab[7] && <DisplayAbilities abilities={[ab[7]["Name (English)"]]}/>}
                     </Table.Td>
                     <Table.Td w='70%'>
                         {abEffectCondCount[7] &&
