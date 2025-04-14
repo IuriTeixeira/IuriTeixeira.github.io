@@ -1,6 +1,5 @@
 import React from 'react';
-import { Text, Flex, Image, SimpleGrid, Tooltip, List } from '@mantine/core';
-import { v4 as uuidv4 } from 'uuid';
+import { Text, Flex, Image, SimpleGrid, Tooltip } from '@mantine/core';
 import potentialData from "../geardata/weapons/potentials.json"
 import { useLanguageContext } from '../language-provider';
 
@@ -13,6 +12,7 @@ export default function DisplayPotentials({ potentialList, id }: DisplayPotentia
     const language = useLanguageContext()
     let buffer: any[] = []
     if (!id) id = 0
+
     for (let i = 0; i < potentialList.length; i++) {
         let pot = potentialData.find(pot => pot[`Name (English)`] === potentialList[i])
         if (pot) {
@@ -27,15 +27,15 @@ export default function DisplayPotentials({ potentialList, id }: DisplayPotentia
                 let potEffectWithLineBreaks: any[] = []
                 for (let i = 0; i < pot[`Effect (${language.language})`].length; i++) {
                     if (pot[`Effect (${language.language})`][i] === '\n') {
-                        potEffectWithLineBreaks.push(<br key={uuidv4()} />)
+                        potEffectWithLineBreaks.push(<br key={`pot-effect-line-break-${i}-${id}`} />)
                     } else {
                         potEffectWithLineBreaks.push(pot[`Effect (${language.language})`][i])
                     }
                 }
-                potEffect = <Text key={uuidv4()}>{potEffectWithLineBreaks}</Text>
+                potEffect = <Text key={`pot-effect-text-${id}`}>{potEffectWithLineBreaks}</Text>
             } else {
                 potName = pot["Name (English)"].replace('(クリファド)', '').replace(' (Qliphad)', '').replace(' (Clifard)', '');
-                potEffect = <Text key={uuidv4()}>{pot[`Effect (English})`]}</Text>
+                potEffect = <Text key={`pot-effect-text-${id}`}>{pot[`Effect (English})`]}</Text>
             }
 
             switch (pot.Special) {
@@ -43,9 +43,9 @@ export default function DisplayPotentials({ potentialList, id }: DisplayPotentia
                     potTypeColor = 'paleturquoise'
                     if (language.language === 'JP') {
                         unlockItem = 'フォトンドロップ'
-                        potTypeName = 'NT潜在能力'
+                        potTypeName = '★1~6潜在能力'
                     } else {
-                        language.language === 'Global' ? potTypeName = 'Common Rarity' : potTypeName = 'New-Type'
+                        language.language === 'Global' ? potTypeName = '★1~6' : potTypeName = '★1~6'
                         unlockItem = 'Photon Drop'
                     }
                     break;
@@ -136,51 +136,54 @@ export default function DisplayPotentials({ potentialList, id }: DisplayPotentia
             let potUnlockString: any;
             language.language === 'JP' ?
                 potUnlockString =
-                <Flex align="center" key={uuidv4()} gap={5}>
+                <Flex align="center" key={`pot-unlock-flex-${id}`} gap={5}>
                     ※ {potTypeName}潜在能力を解放するには
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Tool.png" alt="Tool" w={16} h={16} />
-                    <strong key={uuidv4()}>{unlockItem}</strong>が必要です。
+                    <Image fallbackSrc='/Blank.png' key={`pot-unlock-image-${id}`} src="/icons/Tool.png" alt="Tool" w={16} h={16} />
+                    <strong key={`pot-unlock-strong-${id}`}>{unlockItem}</strong>が必要です。
                 </Flex>
                 :
                 potUnlockString =
-                <Flex align="center" key={uuidv4()} gap={5}>
+                <Flex align="center" key={`pot-unlock-flex-${id}`} gap={5}>
                     ※ Requires
-                    <Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Tool.png" alt="Tool" w={16} h={16} />
-                    <strong key={uuidv4()}>{unlockItem}s</strong> to unlock {potTypeName && potTypeName + ' '}Potential
+                    <Image fallbackSrc='/Blank.png' key={`pot-unlock-image-${id}`} src="/icons/Tool.png" alt="Tool" w={16} h={16} />
+                    <strong key={`pot-unlock-strong-${id}`}>{unlockItem}s</strong> to unlock {potTypeName && potTypeName + ' '}Potential
                 </Flex>
-            let tooltipText: any = <SimpleGrid key={uuidv4()} cols={1} spacing={0} verticalSpacing={5}>{potEffect}{potUnlockString}</SimpleGrid>
-            if (pot[`Effect (English)`].length > 70) {
-                //if (pot[`Effect (${language.language})`].length > 70) {
-                if (language.language === "JP") {
-                    buffer.push(
-                        <Tooltip key={uuidv4()} label={tooltipText} color="dark" multiline w={600}>
-                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="潜在能力" title="潜在能力" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potName}</Text></Flex>
-                        </Tooltip>
-                    )
-                } else {
-                    buffer.push(
-                        <Tooltip key={uuidv4()} label={tooltipText} color="dark" multiline w={600}>
-                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potName}</Text></Flex>
-                        </Tooltip>
-                    )
-                }
-            } else {
-                if (language.language === "JP") {
-                    buffer.push(
-                        <Tooltip key={uuidv4()} label={tooltipText} color="dark">
-                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="潜在能力" title="潜在能力" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potName}</Text></Flex>
-                        </Tooltip>
-                    )
-                } else {
-                    buffer.push(
-                        <Tooltip key={uuidv4()} label={tooltipText} color="dark">
-                            <Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/Potential.png" alt="Potential" title="Potential" w={16} h={16} /> <Text c={potTypeColor} key={uuidv4()}>{potName}</Text></Flex>
-                        </Tooltip>
-                    )
-                }
-            }
+            let tooltipText: any = <SimpleGrid key={`pot-tooltip-${id}`} cols={1} spacing={0} verticalSpacing={5}>{potEffect}{potUnlockString}</SimpleGrid>
+            let potLoc: string = ''
+            language.language === "JP" ? potLoc = '潜在能力' : potLoc = 'Potential'
+            pot[`Effect (English)`].length > 70
+                //pot[`Effect (${language.language})`].length > 70
+                ?
+                buffer.push(
+                    <Tooltip key={`pot-tooltip-${id}`} label={tooltipText} color="dark" multiline w={600}>
+                        <Flex align="center" key={`pot-tooltip-flex-${id}`} gap={5}>
+                            <Image fallbackSrc='/Blank.png' key={`pot-tooltip-image-${id}`} src="/icons/Potential.png" alt={potLoc} title={potLoc} w={16} h={16} />
+                            <Text c={potTypeColor} key={`pot-tooltip-text-${id}`}>
+                                {potName}
+                            </Text>
+                        </Flex>
+                    </Tooltip>
+                )
+                :
+                buffer.push(
+                    <Tooltip key={`pot-tooltip-${id}`} label={tooltipText} color="dark">
+                        <Flex align="center" key={`pot-tooltip-flex-${id}`} gap={5}>
+                            <Image fallbackSrc='/Blank.png' key={`pot-tooltip-image-${id}`} src="/icons/Potential.png" alt={potLoc} title={potLoc} w={16} h={16} />
+                            <Text c={potTypeColor} key={`pot-tooltip-text-${id}`}>
+                                {potName}
+                            </Text>
+                        </Flex>
+                    </Tooltip>
+                )
         } else {
-            buffer.push(<Flex align="center" key={uuidv4()} gap={5}><Image fallbackSrc='/Blank.png' key={uuidv4()} src="/icons/RestrictedYellow.png" alt="Potential" title="Potential" w={16} h={16} /> !Potential not found: {potentialList[i]}</Flex>)
+            buffer.push(
+                <Flex align="center" key={`pot-error-flex-${id}`} gap={5}>
+                    <Image fallbackSrc='/Blank.png' key={`pot-error-image-${id}`} src="/icons/RestrictedYellow.png" alt="Potential" title="Potential" w={16} h={16} />
+                    <Text c='red' key={`pot-tooltip-text-${id}`}>
+                        !Error: Potential not found: {potentialList[i]!}
+                    </Text>
+                </Flex>
+            )
         }
     }
     return buffer;

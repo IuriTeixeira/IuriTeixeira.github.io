@@ -4,7 +4,18 @@ import abilityData from '../geardata/abilities.json'
 import { useEffect } from "react";
 import { useLanguageContext } from "../language-provider";
 
-export default function displayGearAbilities(abilities: any[], conditionals: boolean[], setConditionals: any, stacks: number[], setStacks: any, weaponAbilities: string[], weaponAbilitiesConditionals: boolean[]): any {
+interface DisplayGearAbilitiesProps{
+    abilities: string[];
+    conditionals: boolean[]
+    setConditionals: any
+    stacks: number[]
+    setStacks: any
+    weaponAbilities: string[]
+    weaponAbilitiesConditionals: boolean[]
+    id?: number
+}
+
+export default function DisplayGearAbilities({abilities, conditionals, setConditionals, stacks, setStacks, weaponAbilities, weaponAbilitiesConditionals}: DisplayGearAbilitiesProps) {
     const language = useLanguageContext()
     let loc: string[]
     let ab: any[] = []

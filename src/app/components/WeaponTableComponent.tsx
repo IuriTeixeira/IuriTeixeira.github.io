@@ -9,8 +9,8 @@ import DisplayElement from './DisplayElement';
 import DisplayPA from './DisplayPA';
 import DisplayPotentials from './DisplayPotentials';
 import DisplayRarity from './DisplayRarity';
-import displaySet from './displaySet';
-import displaySSA from './displaySSA';
+import DisplaySet from './DisplaySet';
+import DisplaySSA from './DisplaySSA';
 import DisplayStat from './DisplayStat';
 import weapons from '../geardata/weapons/weapons.json'
 
@@ -160,9 +160,9 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                                             case 'id':
                                                 return
                                             case 'Rarity':
-                                                return <Table.Td key={`rarity-cell-${row.id}`}><Flex align="center" justify="center" key={`rarity-flex-${row.id}`} gap={5}><DisplayRarity key={`rarity-${row.id}`} rarity={row["Rarity"]}/></Flex></Table.Td>
+                                                return <Table.Td key={`rarity-cell-${row.id}`}><Flex align="center" justify="center" key={`rarity-flex-${row.id}`} gap={5}><DisplayRarity key={`rarity-component-${row.id}`} rarity={row["Rarity"]}/></Flex></Table.Td>
                                             case 'Requirement':
-                                                return <Table.Td key={`req-cell-${row.id}`}><Flex align="center" justify="center" key={`req-flex-${row.id}`} gap={5}><DisplayStat key={`req-${row.id}`} stat={row[key][0]} value={row[key][1]} id={row.id} /></Flex></Table.Td>
+                                                return <Table.Td key={`req-cell-${row.id}`}><Flex align="center" justify="center" key={`req-flex-${row.id}`} gap={5}><DisplayStat key={`req-component-${row.id}`} stat={row[key][0]} value={row[key][1]} id={row.id} /></Flex></Table.Td>
                                             case 'S-ATK':
                                             case 'R-ATK':
                                             case 'T-ATK':
@@ -193,25 +193,25 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                                                 return
                                             case 'Potential':
                                                 if (row[key]) {
-                                                    return <Table.Td key={`potential-${row.id}`}><DisplayPotentials potentialList={row[key]} id={row.id}/></Table.Td>
+                                                    return <Table.Td key={`potential-cell-${row.id}`}><DisplayPotentials key={`potential-component-${row.id}`} potentialList={row[key]} id={row.id}/></Table.Td>
                                                 } else {
-                                                    return <Table.Td key={`potential-${row.id}`}><Flex justify="center" align="center" direction="column" key={`potential-flex-${row.id}`} gap={0}>-</Flex></Table.Td>
+                                                    return <Table.Td key={`potential-cell-${row.id}`}><Flex justify="center" align="center" direction="column" key={`potential-flex-${row.id}`} gap={0}>-</Flex></Table.Td>
                                                 }
                                             case 'Abilities':
                                             case 'Element':
                                             case 'PA_enabled':
                                             case 'Set':
                                                 if (row['Abilities']) {
-                                                    bufferProperties.push(<DisplayAbilities abilities={row['Abilities']}/>)
+                                                    bufferProperties.push(<DisplayAbilities key={`ab-component-${row.id}`} abilities={row['Abilities']}/>)
                                                 }
                                                 if (row['Element']) {
-                                                    bufferProperties.push(<DisplayElement element={row['Element']} id={row.id}/>);
+                                                    bufferProperties.push(<DisplayElement key={`element-component-${row.id}`} element={row['Element']} id={row.id}/>);
                                                 }
                                                 if (row['PA_enabled']) {
-                                                    bufferProperties.push(<DisplayPA namePA={row['PA_enabled']} id={row.id}/>);
+                                                    bufferProperties.push(<DisplayPA key={`pa-component-${row.id}`} namePA={row['PA_enabled']} id={row.id}/>);
                                                 }
                                                 if (row['Set']) {
-                                                    bufferProperties.push(displaySet(row['Set'], row['Name (English)']));
+                                                    bufferProperties.push(<DisplaySet key={`set-component-${row.id}`} setName={row['Set']} name={row['Name (English)']}/>);
                                                 }
                                                 if (index === 10) {
                                                     if (bufferProperties[0]) return <Table.Td key={`properties-${row.id}`}><SimpleGrid key={`properties-grid-${row.id}`} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
@@ -221,13 +221,13 @@ export default function WeaponTableComponent({ type, visible, setVisible }) {
                                                 }
                                             case 'SAF':
                                                 if (row[key]) {
-                                                    return <Table.Td key={`saf-${row.id}`}><Flex align="center" key={`saf-flex-${row.id}`} gap={5}><DisplayAbilities abilities={row['SAF']}/></Flex></Table.Td>
+                                                    return <Table.Td key={`saf-${row.id}`}><Flex align="center" key={`saf-flex-${row.id}`} gap={5}><DisplayAbilities key={`saf-component-${row.id}`} abilities={row['SAF']}/></Flex></Table.Td>
                                                 } else {
                                                     return <Table.Td key={`saf-${row.id}`}><Flex justify="center" align="center" direction="column" key={`saf-flex-${row.id}`} gap={0}>-</Flex></Table.Td>
                                                 }
                                             case 'SSA Slots':
                                                 if (row[key]) {
-                                                    return <Table.Td key={`ssa-${row.id}`}>{displaySSA(row[key])}</Table.Td>
+                                                    return <Table.Td key={`ssa-${row.id}`}><DisplaySSA key={`ssa-component-${row.id}`} listSSA={row[key]}/></Table.Td>
                                                 } else {
                                                     return <Table.Td key={`ssa-${row.id}`}><Flex justify="center" align="center" direction="column" key={`ssa-flex-${row.id}`} gap={0}>-</Flex></Table.Td>
                                                 }

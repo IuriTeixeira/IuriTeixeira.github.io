@@ -1,13 +1,13 @@
 'use client'
 import React, { useEffect } from 'react';
+import Link from 'next/link';
 import { useLanguageContext } from "../language-provider";
 import { Image, Flex, SimpleGrid, Table, LoadingOverlay } from '@mantine/core';
 import DisplayAbilities from './DisplayAbilities';
-import displaySet from './displaySet';
+import DisplaySet from './DisplaySet';
 import DisplayStat from './DisplayStat';
-import displayResistance from './displayResistance';
-import Link from 'next/link';
-import displayRarity from './DisplayRarity';
+import DisplayResistance from './DisplayResistance';
+import DisplayRarity from './DisplayRarity';
 import units from '../geardata/units/units.json'
 
 //import localFont from 'next/font/local'
@@ -127,23 +127,23 @@ export default function UnitTableComponent({ type, visible, setVisible }) {
                                         case 'id':
                                             return
                                         case 'Rarity':
-                                            return <Table.Td key={`rarity-${row.id}`} className="centerCell"><Flex align="center" justify="center" key={`rarity-flex-${row.id}`} gap={5}>{displayRarity(row[key])}</Flex></Table.Td>
+                                            return <Table.Td key={`rarity-${row.id}`} className="centerCell"><Flex align="center" justify="center" key={`rarity-flex-${row.id}`} gap={5}><DisplayRarity key={`rarity-component-${row.id}`} rarity={row[key]} /></Flex></Table.Td>
                                         case 'Requirement':
-                                            return <Table.Td key={`req-${row.id}`}><Flex align="center" justify="center" key={`req-flex-${row.id}`} gap={5}>{DisplayStat(row[key][0], row[key][1])}</Flex></Table.Td>
+                                            return <Table.Td key={`req-${row.id}`}><Flex align="center" justify="center" key={`req-flex-${row.id}`} gap={5}><DisplayStat key={`req-component-${row.id}`} stat={row[key][0]} value={row[key][1]}/></Flex></Table.Td>
                                         case 'S-DEF':
                                         case 'R-DEF':
                                         case 'T-DEF':
                                             if (row['S-DEF'] >= 0) {
-                                                bufferDEF.push(DisplayStat('S-DEF', row['S-DEF']));
-                                                bufferDEFMax.push(DisplayStat('S-DEF', calculateMaxDef(row['S-DEF'])));
+                                                bufferDEF.push(<DisplayStat key={`stat-component-sdef-${row.id}`} stat='S-DEF' value={row['S-DEF']} id={row.id}/>);
+                                                bufferDEFMax.push(<DisplayStat key={`stat-component-sdef-max-${row.id}`} stat='S-DEF' value={calculateMaxDef(row['S-DEF'])} id={row.id}/>);
                                             }
                                             if (row['R-DEF'] >= 0) {
-                                                bufferDEF.push(DisplayStat('R-DEF', row['R-DEF']));
-                                                bufferDEFMax.push(DisplayStat('R-DEF', calculateMaxDef(row['R-DEF'])));
+                                                bufferDEF.push(<DisplayStat key={`stat-component-rdef-${row.id}`} stat='R-DEF' value={row['R-DEF']} id={row.id}/>);
+                                                bufferDEFMax.push(<DisplayStat key={`stat-component-rdef-max-${row.id}`} stat='R-DEF' value={calculateMaxDef(row['R-DEF'])} id={row.id}/>);
                                             }
                                             if (row['T-DEF'] >= 0) {
-                                                bufferDEF.push(DisplayStat('T-DEF', row['T-DEF']));
-                                                bufferDEFMax.push(DisplayStat('T-DEF', calculateMaxDef(row['T-DEF'])));
+                                                bufferDEF.push(<DisplayStat key={`stat-component-tdef-${row.id}`} stat='T-DEF' value={row['T-DEF']} id={row.id}/>);
+                                                bufferDEFMax.push(<DisplayStat key={`stat-component-tdef-max-${row.id}`} stat='T-DEF' value={calculateMaxDef(row['T-DEF'])} id={row.id}/>);
                                             }
                                             if (index === 6) {
                                                 return (
@@ -158,16 +158,16 @@ export default function UnitTableComponent({ type, visible, setVisible }) {
                                         case 'T-ATK':
                                         case 'DEX':
                                             if (row['S-ATK']) {
-                                                bufferATK.push(DisplayStat('S-ATK', row['S-ATK']));
+                                                bufferATK.push(<DisplayStat key={`stat-component-satk-${row.id}`} stat='S-ATK' value={row['S-ATK']} id={row.id}/>);
                                             }
                                             if (row['R-ATK']) {
-                                                bufferATK.push(DisplayStat('R-ATK', row['R-ATK']));
+                                                bufferATK.push(<DisplayStat key={`stat-component-ratk-${row.id}`} stat='R-ATK' value={row['R-ATK']} id={row.id}/>);
                                             }
                                             if (row['T-ATK']) {
-                                                bufferATK.push(DisplayStat('T-ATK', row['T-ATK']));
+                                                bufferATK.push(<DisplayStat key={`stat-component-tatk-${row.id}`} stat='T-ATK' value={row['T-ATK']} id={row.id}/>);
                                             }
                                             if (row['DEX']) {
-                                                bufferATK.push(DisplayStat('DEX', row['DEX']));
+                                                bufferATK.push(<DisplayStat key={`stat-component-dex-${row.id}`} stat='DEX' value={row['DEX']} id={row.id}/>);
                                             }
                                             if (index === 11) {
                                                 if (bufferATK[0]) return <Table.Td key={`atk-${row.id}`}><Flex justify="center" align="center" direction="column" key={`atk-flex-${row.id}`} gap={0}>{bufferATK}</Flex></Table.Td>
@@ -183,31 +183,31 @@ export default function UnitTableComponent({ type, visible, setVisible }) {
                                         case 'Light Resistance':
                                         case 'Dark Resistance':
                                             if (row['Strike Resistance']) {
-                                                bufferResistance.push(displayResistance('Strike Resistance', row['Strike Resistance']));
+                                                bufferResistance.push(<DisplayResistance key={`resist-component-Strike-${row.id}`} resist={'Strike Resistance'} value={row['Strike Resistance']} id={row.id} />);
                                             }
                                             if (row['Ranged Resistance']) {
-                                                bufferResistance.push(displayResistance('Ranged Resistance', row['Ranged Resistance']));
+                                                bufferResistance.push(<DisplayResistance key={`resist-component-Ranged-${row.id}`} resist={'Ranged Resistance'} value={row['Ranged Resistance']} id={row.id} />);
                                             }
                                             if (row['Tech Resistance']) {
-                                                bufferResistance.push(displayResistance('Tech Resistance', row['Tech Resistance']));
+                                                bufferResistance.push(<DisplayResistance key={`resist-component-Tech-${row.id}`} resist={'Tech Resistance'} value={row['Tech Resistance']} id={row.id} />);
                                             }
                                             if (row['Fire Resistance']) {
-                                                bufferResistance.push(displayResistance('Fire Resistance', row['Fire Resistance']));
+                                                bufferResistance.push(<DisplayResistance key={`resist-component-Fire-${row.id}`} resist={'Fire Resistance'} value={row['Fire Resistance']} id={row.id} />);
                                             }
                                             if (row['Ice Resistance']) {
-                                                bufferResistance.push(displayResistance('Ice Resistance', row['Ice Resistance']));
+                                                bufferResistance.push(<DisplayResistance key={`resist-component-Ice-${row.id}`} resist={'Ice Resistance'} value={row['Ice Resistance']} id={row.id} />);
                                             }
                                             if (row['Lightning Resistance']) {
-                                                bufferResistance.push(displayResistance('Lightning Resistance', row['Lightning Resistance']));
+                                                bufferResistance.push(<DisplayResistance key={`resist-component-Lightning-${row.id}`} resist={'Lightning Resistance'} value={row['Lightning Resistance']} id={row.id} />);
                                             }
                                             if (row['Wind Resistance']) {
-                                                bufferResistance.push(displayResistance('Wind Resistance', row['Wind Resistance']));
+                                                bufferResistance.push(<DisplayResistance key={`resist-component-Wind-${row.id}`} resist={'Wind Resistance'} value={row['Wind Resistance']} id={row.id} />);
                                             }
                                             if (row['Light Resistance']) {
-                                                bufferResistance.push(displayResistance('Light Resistance', row['Light Resistance']));
+                                                bufferResistance.push(<DisplayResistance key={`resist-component-Light-${row.id}`} resist={'Light Resistance'} value={row['Light Resistance']} id={row.id} />);
                                             }
                                             if (row['Dark Resistance']) {
-                                                bufferResistance.push(displayResistance('Dark Resistance', row['Dark Resistance']));
+                                                bufferResistance.push(<DisplayResistance key={`resist-component-Dark-${row.id}`} resist={'Dark Resistance'} value={row['Dark Resistance']} id={row.id} />);
                                             }
                                             if (index === 14) {
                                                 if (bufferResistance[0]) return <Table.Td key={`res-${row.id}`}><Flex justify="center" align="center" key={`res-flex-${row.id}`} gap={5}><SimpleGrid key={`res-grid-${row.id}`} cols={3} spacing="xs" verticalSpacing={0}>{bufferResistance}</SimpleGrid></Flex></Table.Td>
@@ -217,10 +217,10 @@ export default function UnitTableComponent({ type, visible, setVisible }) {
                                         case 'Abilities':
                                         case 'SAF':
                                             if (row['SAF']) {
-                                                bufferProperties.push(DisplayAbilities(row['SAF']))
+                                                bufferProperties.push(<DisplayAbilities key={`saf-component-${row.id}`} abilities={row['SAF']} id={row.id} />)
                                             }
                                             if (row['Abilities']) {
-                                                bufferProperties.push(DisplayAbilities(row['Abilities']))
+                                                bufferProperties.push(<DisplayAbilities key={`ability-component-${row.id}`} abilities={row['Abilities']} id={row.id} />)
                                             }
                                             if (index === 23) {
                                                 if (bufferProperties[0]) return <Table.Td key={`properties-${row.id}`}><SimpleGrid key={`properties-grid-${row.id}`} cols={1} spacing={0} verticalSpacing={5}>{bufferProperties}</SimpleGrid></Table.Td>
@@ -229,7 +229,7 @@ export default function UnitTableComponent({ type, visible, setVisible }) {
                                                 return;
                                             }
                                         case 'Set':
-                                            return <Table.Td key={`set-${row.id}`}><Flex justify="center" align="center" direction="column" key={`set-flex-${row.id}`} gap={0}>{displaySet(row[key], row['Name (English)'])}</Flex></Table.Td>
+                                            return <Table.Td key={`set-${row.id}`}><Flex justify="center" align="center" direction="column" key={`set-flex-${row.id}`} gap={0}><DisplaySet key={`set-component-${row.id}`} setName={row[key]} name={row['Name (English)']} id={row.id} /></Flex></Table.Td>
                                         case 'HP':
                                             if(row["HP"]){
                                                 return <Table.Td key={`hp-${row.id}`}><Flex justify="center" align="center" direction="column" key={`hp-flex-${row.id}`} gap={0}>{row["HP"]}</Flex></Table.Td>

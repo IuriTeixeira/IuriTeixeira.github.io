@@ -3,9 +3,9 @@
 import React, { useEffect, useState } from 'react'
 import { useLanguageContext } from "./language-provider";
 import { Image, Button, Flex, Table, Checkbox, Group, Select, Text, SimpleGrid } from "@mantine/core";
-import displayGearStats from './components/displayGearStats';
-import displayGearAbilities from './components/displayGearAbilities';
-import displayResistance from './components/displayResistance';
+import DisplayGearStats from './components/DisplayGearStats';
+import DisplayGearAbilities from './components/displayGearAbilities';
+import DisplayResistance from './components/DisplayResistance';
 import DisplayStat from './components/DisplayStat';
 import raceStats from './races.json'
 import classStats from './classes.json'
@@ -1107,15 +1107,15 @@ export default function Home() {
                         <Table.Td w='20%'>
                             <Flex justify="center" align="center" gap={5}>
                                 <SimpleGrid cols={3} spacing='xs' verticalSpacing={0}>
-                                    {displayResistance('Strike Resistance', strikeRes.times(100))}
-                                    {displayResistance('Ranged Resistance', rangedRes.times(100))}
-                                    {displayResistance('Tech Resistance', techRes.times(100))}
-                                    {displayResistance('Fire Resistance', fireRes.times(100))}
-                                    {displayResistance('Ice Resistance', iceRes.times(100))}
-                                    {displayResistance('Lightning Resistance', lightningRes.times(100))}
-                                    {displayResistance('Wind Resistance', windRes.times(100))}
-                                    {displayResistance('Light Resistance', lightRes.times(100))}
-                                    {displayResistance('Dark Resistance', darkRes.times(100))}
+                                    <DisplayResistance resist='Strike Resistance' value={strikeRes.times(100)} />
+                                    <DisplayResistance resist='Ranged Resistance' value={rangedRes.times(100)} />
+                                    <DisplayResistance resist='Tech Resistance' value={techRes.times(100)} />
+                                    <DisplayResistance resist='Fire Resistance' value={fireRes.times(100)} />
+                                    <DisplayResistance resist='Ice Resistance' value={iceRes.times(100)} />
+                                    <DisplayResistance resist='Lightning Resistance' value={lightningRes.times(100)} />
+                                    <DisplayResistance resist='Wind Resistance' value={windRes.times(100)} />
+                                    <DisplayResistance resist='Light Resistance' value={lightRes.times(100)} />
+                                    <DisplayResistance resist='Dark Resistance' value={darkRes.times(100)} />
                                 </SimpleGrid>
                             </Flex>
                         </Table.Td>
@@ -1246,13 +1246,13 @@ export default function Home() {
                         <Table.Td><Flex align="center" justify="center" gap={5}><Image fallbackSrc='/Blank.png' src={`/weapons/${weaponData["Weapon Type"]}/${weapon.replace('\'', '').replace(/ /g, '').replace('/', '').replace('-NT', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
                         <Table.Td w='50%'>
                             <Flex justify='center' align='center' direction='column'>
-                                {displayGearStats(weapon)}
+                                <DisplayGearStats gear={weapon} />
                             </Flex>
                         </Table.Td>
                         <Table.Td><Flex align="center" justify="center" gap={5}><Image fallbackSrc='/Blank.png' src={`/units/${rearData["Type"]}/${rear.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
                         <Table.Td w='50%'>
                             <Flex justify='center' direction='column'>
-                                {displayGearStats(rear)}
+                                <DisplayGearStats gear={rear} />
                             </Flex>
                         </Table.Td>
                         {/* L / Easy Connect +20
@@ -1260,10 +1260,10 @@ export default function Home() {
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(weaponAbilities, weaponAbilitiesConditionals, setWeaponAbilitiesConditionals, weaponAbilitiesStacks, setWeaponAbilitiesStacks, weaponAbilities, weaponAbilitiesConditionals)}
+                            <DisplayGearAbilities abilities={weaponAbilities} conditionals={weaponAbilitiesConditionals} setConditionals={setWeaponAbilitiesConditionals} stacks={weaponAbilitiesStacks} setStacks={setWeaponAbilitiesStacks} weaponAbilities={weaponAbilities} weaponAbilitiesConditionals={weaponAbilitiesConditionals} />
                         </Table.Td>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(rearAbilities, rearAbilitiesConditionals, setRearAbilitiesConditionals, rearAbilitiesStacks, setRearAbilitiesStacks, weaponAbilities, weaponAbilitiesConditionals)}
+                            <DisplayGearAbilities abilities={rearAbilities} conditionals={rearAbilitiesConditionals} setConditionals={setRearAbilitiesConditionals} stacks={rearAbilitiesStacks} setStacks={setRearAbilitiesStacks} weaponAbilities={weaponAbilities} weaponAbilitiesConditionals={weaponAbilitiesConditionals} />
                         </Table.Td>
                     </Table.Tr>
                     <Table.Tr>
@@ -1282,22 +1282,22 @@ export default function Home() {
                         <Table.Td><Flex align="center" justify="center" gap={5}><Image fallbackSrc='/Blank.png' src={`/units/${armData["Type"]}/${arm.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
                         <Table.Td w='50%'>
                             <Flex justify='center' direction='column'>
-                                {displayGearStats(arm)}
+                                <DisplayGearStats gear={arm} />
                             </Flex>
                         </Table.Td>
                         <Table.Td><Flex align="center" justify="center" gap={5}><Image fallbackSrc='/Blank.png' src={`/units/${legData["Type"]}/${leg.replace(' a', '').replace(' b', '').replace(' c', '').replace(' d', '').replace(' e', '').replace('\'', '').replace(/ /g, '').replace('-NT', '').replace('Rear/', '').replace('Arm/', '').replace('Leg/', '').replace('Sub/', '')}.png`} alt={`Icon of ${rear}`} w={64} h={64} /></Flex></Table.Td>
                         <Table.Td w='50%'>
                             <Flex justify='center' direction='column'>
-                                {displayGearStats(leg)}
+                                <DisplayGearStats gear={leg} />
                             </Flex>
                         </Table.Td>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(armAbilities, armAbilitiesConditionals, setArmAbilitiesConditionals, armAbilitiesStacks, setArmAbilitiesStacks, weaponAbilities, weaponAbilitiesConditionals)}
+                            <DisplayGearAbilities abilities={armAbilities} conditionals={armAbilitiesConditionals} setConditionals={setArmAbilitiesConditionals} stacks={armAbilitiesStacks} setStacks={setArmAbilitiesStacks} weaponAbilities={weaponAbilities} weaponAbilitiesConditionals={weaponAbilitiesConditionals} />
                         </Table.Td>
                         <Table.Td colSpan={2}>
-                            {displayGearAbilities(legAbilities, legAbilitiesConditionals, setLegAbilitiesConditionals, legAbilitiesStacks, setLegAbilitiesStacks, weaponAbilities, weaponAbilitiesConditionals)}
+                            <DisplayGearAbilities abilities={legAbilities} conditionals={legAbilitiesConditionals} setConditionals={setLegAbilitiesConditionals} stacks={legAbilitiesStacks} setStacks={setLegAbilitiesStacks} weaponAbilities={weaponAbilities} weaponAbilitiesConditionals={weaponAbilitiesConditionals} />
                         </Table.Td>
                     </Table.Tr>
                 </Table.Tbody>

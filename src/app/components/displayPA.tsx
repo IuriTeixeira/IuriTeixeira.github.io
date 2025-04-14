@@ -1,5 +1,4 @@
 import { Tooltip, Flex, Image } from "@mantine/core";
-import { v4 as uuidv4 } from 'uuid';
 import { useLanguageContext } from "../language-provider";
 
 interface DisplayPAProps {
