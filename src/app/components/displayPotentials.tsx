@@ -32,10 +32,10 @@ export default function DisplayPotentials({ potentialList, id }: DisplayPotentia
                         potEffectWithLineBreaks.push(pot[`Effect (${language.language})`][i])
                     }
                 }
-                potEffect = <Text key={`pot-effect-text-${id}`}>{potEffectWithLineBreaks}</Text>
+                potEffect = <Text key={`pot-effect-text-${i}-${id}`}>{potEffectWithLineBreaks}</Text>
             } else {
                 potName = pot["Name (English)"].replace('(クリファド)', '').replace(' (Qliphad)', '').replace(' (Clifard)', '');
-                potEffect = <Text key={`pot-effect-text-${id}`}>{pot[`Effect (English})`]}</Text>
+                potEffect = <Text key={`pot-effect-text-${i}-${id}`}>{pot[`Effect (English})`]}</Text>
             }
 
             switch (pot.Special) {
@@ -136,29 +136,29 @@ export default function DisplayPotentials({ potentialList, id }: DisplayPotentia
             let potUnlockString: any;
             language.language === 'JP' ?
                 potUnlockString =
-                <Flex align="center" key={`pot-unlock-flex-${id}`} gap={5}>
+                <Flex align="center" key={`pot-unlock-flex-${i}-${id}`} gap={5}>
                     ※ {potTypeName}潜在能力を解放するには
-                    <Image fallbackSrc='/Blank.png' key={`pot-unlock-image-${id}`} src="/icons/Tool.png" alt="Tool" w={16} h={16} />
-                    <strong key={`pot-unlock-strong-${id}`}>{unlockItem}</strong>が必要です。
+                    <Image fallbackSrc='/Blank.png' key={`pot-unlock-image-${i}-${id}`} src="/icons/Tool.png" alt="Tool" w={16} h={16} />
+                    <strong key={`pot-unlock-strong-${i}-${id}`}>{unlockItem}</strong>が必要です。
                 </Flex>
                 :
                 potUnlockString =
-                <Flex align="center" key={`pot-unlock-flex-${id}`} gap={5}>
+                <Flex align="center" key={`pot-unlock-flex-${i}-${id}`} gap={5}>
                     ※ Requires
-                    <Image fallbackSrc='/Blank.png' key={`pot-unlock-image-${id}`} src="/icons/Tool.png" alt="Tool" w={16} h={16} />
-                    <strong key={`pot-unlock-strong-${id}`}>{unlockItem}s</strong> to unlock {potTypeName && potTypeName + ' '}Potential
+                    <Image fallbackSrc='/Blank.png' key={`pot-unlock-image-${i}-${id}`} src="/icons/Tool.png" alt="Tool" w={16} h={16} />
+                    <strong key={`pot-unlock-strong-${i}-${id}`}>{unlockItem}s</strong> to unlock {potTypeName && potTypeName + ' '}Potential
                 </Flex>
-            let tooltipText: any = <SimpleGrid key={`pot-tooltip-${id}`} cols={1} spacing={0} verticalSpacing={5}>{potEffect}{potUnlockString}</SimpleGrid>
+            let tooltipText: any = <SimpleGrid key={`pot-tooltip-${i}-${id}`} cols={1} spacing={0} verticalSpacing={5}>{potEffect}{potUnlockString}</SimpleGrid>
             let potLoc: string = ''
             language.language === "JP" ? potLoc = '潜在能力' : potLoc = 'Potential'
             pot[`Effect (English)`].length > 70
                 //pot[`Effect (${language.language})`].length > 70
                 ?
                 buffer.push(
-                    <Tooltip key={`pot-tooltip-${id}`} label={tooltipText} color="dark" multiline w={600}>
-                        <Flex align="center" key={`pot-tooltip-flex-${id}`} gap={5}>
-                            <Image fallbackSrc='/Blank.png' key={`pot-tooltip-image-${id}`} src="/icons/Potential.png" alt={potLoc} title={potLoc} w={16} h={16} />
-                            <Text c={potTypeColor} key={`pot-tooltip-text-${id}`}>
+                    <Tooltip key={`pot-tooltip-${i}-${id}`} label={tooltipText} color="dark" multiline w={600}>
+                        <Flex align="center" key={`pot-tooltip-flex-${i}-${id}`} gap={5}>
+                            <Image fallbackSrc='/Blank.png' key={`pot-tooltip-image-${i}-${id}`} src="/icons/Potential.png" alt={potLoc} title={potLoc} w={16} h={16} />
+                            <Text c={potTypeColor} key={`pot-tooltip-text-${i}-${id}`}>
                                 {potName}
                             </Text>
                         </Flex>
@@ -166,10 +166,10 @@ export default function DisplayPotentials({ potentialList, id }: DisplayPotentia
                 )
                 :
                 buffer.push(
-                    <Tooltip key={`pot-tooltip-${id}`} label={tooltipText} color="dark">
-                        <Flex align="center" key={`pot-tooltip-flex-${id}`} gap={5}>
-                            <Image fallbackSrc='/Blank.png' key={`pot-tooltip-image-${id}`} src="/icons/Potential.png" alt={potLoc} title={potLoc} w={16} h={16} />
-                            <Text c={potTypeColor} key={`pot-tooltip-text-${id}`}>
+                    <Tooltip key={`pot-tooltip-${i}-${id}`} label={tooltipText} color="dark">
+                        <Flex align="center" key={`pot-tooltip-flex-${i}-${id}`} gap={5}>
+                            <Image fallbackSrc='/Blank.png' key={`pot-tooltip-image-${i}-${id}`} src="/icons/Potential.png" alt={potLoc} title={potLoc} w={16} h={16} />
+                            <Text c={potTypeColor} key={`pot-tooltip-text-${i}-${id}`}>
                                 {potName}
                             </Text>
                         </Flex>
@@ -177,9 +177,9 @@ export default function DisplayPotentials({ potentialList, id }: DisplayPotentia
                 )
         } else {
             buffer.push(
-                <Flex align="center" key={`pot-error-flex-${id}`} gap={5}>
-                    <Image fallbackSrc='/Blank.png' key={`pot-error-image-${id}`} src="/icons/RestrictedYellow.png" alt="Potential" title="Potential" w={16} h={16} />
-                    <Text c='red' key={`pot-tooltip-text-${id}`}>
+                <Flex align="center" key={`pot-error-flex-${i}-${id}`} gap={5}>
+                    <Image fallbackSrc='/Blank.png' key={`pot-error-image-${i}-${id}`} src="/icons/RestrictedYellow.png" alt="Potential" title="Potential" w={16} h={16} />
+                    <Text c='red' key={`pot-tooltip-text-${i}-${id}`}>
                         !Error: Potential not found: {potentialList[i]!}
                     </Text>
                 </Flex>

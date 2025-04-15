@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useLanguageContext } from "./language-provider";
 import { Image, Button, Flex, Table, Checkbox, Group, Select, Text, SimpleGrid } from "@mantine/core";
 import DisplayGearStats from './components/DisplayGearStats';
-import DisplayGearAbilities from './components/displayGearAbilities';
+import DisplayGearAbilities from './components/DisplayGearAbilities';
 import DisplayResistance from './components/DisplayResistance';
 import DisplayStat from './components/DisplayStat';
 import raceStats from './races.json'
